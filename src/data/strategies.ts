@@ -1,3 +1,4 @@
+import { researchedSatRanges } from "./sat-research.ts";
 import { expandedEvidence } from "./evidence.ts";
 import type { Strategy } from "../types.ts";
 const V = "Very High Reach",
@@ -172,5 +173,17 @@ for (const e of expandedEvidence) {
     fit: e.fit,
     priority: e.priority,
     range: e.range,
+  };
+}
+
+// Newly inspected official CDS composite distributions; retain the actual cohort.
+for (const range of researchedSatRanges) {
+  if (!strategies[range.id])
+    throw new Error(`Unknown SAT research school: ${range.id}`);
+  strategies[range.id].range = {
+    low: range.low,
+    high: range.high,
+    cohort: range.cohort,
+    sourceIds: range.sourceIds,
   };
 }

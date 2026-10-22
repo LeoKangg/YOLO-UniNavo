@@ -15,6 +15,8 @@ import {
   compareSat,
   meetsPublishedAlternative,
 } from "./comparison.ts";
+import { SAT_BANDS, groupSatBand } from "./sat-bands.ts";
+import type { SatBand } from "./sat-bands.ts";
 import comparisonContext from "../research/comparison-context.json" with { type: "json" };
 import existingRankings from "../research/existing-rankings.json" with { type: "json" };
 import { strategies } from "./data/strategies.ts";
@@ -41,7 +43,7 @@ let planner = normalizePlanner(readLocal("planner"), timeline);
 let undoPlanner: { planner: typeof planner; checked: string[] } | null = null;
 let plannerNotice = "";
 const words = (en: string, ko: string) => (getLanguage() === "ko" ? ko : en);
-let universityMode = "compare",
+let universityMode = "sat-bands",
   difficulty = "",
   recognition = "",
   testing = "",
@@ -249,6 +251,47 @@ function scoreLabel(id: string, score: number) {
   };
   return labels[position];
 }
+function satBandSchools(schools: University[]) {
+  const schoolItem = (u: University) => {
+    const strategy = strategies[u.id],
+      range = strategy.range!;
+    const scope: Record<string, string> = {
+      colorado: words("Arts & Sciences", "문리대"),
+      "rutgers-new-brunswick": words("Arts & Sciences", "문리대"),
+      "purdue-west-lafayette": words(
+        "WL + Indianapolis",
+        "WL·인디애나폴리스 합산",
+      ),
+    };
+    return `<li><button class="sat-band-school" data-detail="${u.id}"><span>${esc(translate(u.name))}</span><span class="sat-band-range">${range.low}–${range.high}${scope[u.id] ? ` · ${scope[u.id]}` : ""}${strategy.selectivity === "exceptional" ? ` · ${words("Admission remains a reach", "입학은 상향 검토")}` : ""}</span></button></li>`;
+  };
+  if (!schools.length)
+    return `<span class="sat-band-empty">${words("No verified schools", "해당 대학 없음")}</span>`;
+  return `<ul class="sat-band-schools">${schools.slice(0, 4).map(schoolItem).join("")}</ul>${schools.length > 4 ? `<details class="sat-band-more"><summary>${words(`Show ${schools.length - 4} more schools`, `외 ${schools.length - 4}곳 더 보기`)}</summary><ul class="sat-band-schools">${schools.slice(4).map(schoolItem).join("")}</ul></details>` : ""}`;
+}
+function satBandsPanel(list: University[]) {
+  const verified = list.filter((u) => strategies[u.id].range),
+    unknown = list.filter((u) => !strategies[u.id].range);
+  const row = (band: SatBand) => {
+    const groups = groupSatBand(band, list, strategies),
+      active =
+        profile.sat !== null &&
+        profile.sat >= band.low &&
+        profile.sat <= band.high;
+    return `<tr ${active ? 'class="my-sat-band"' : ""}><th scope="row"><strong>${band.low === band.high ? band.low : `${band.low}–${band.high}`}</strong>${active ? `<span>${words("My SAT score", "내 SAT 점수")}</span>` : ""}</th>${(["above", "overlap", "below"] as const).map((position) => `<td class="band-${position}">${satBandSchools(groups[position])}</td>`).join("")}</tr>`;
+  };
+  return `<section class="sat-band-panel" aria-label="${words("Universities by SAT score band", "SAT 점수대별 대학 분포 표")}"><div class="sat-band-note"><strong>${words("How to read the columns", "표 읽는 법")}</strong><p>${words("Numbers under school names show the official SAT middle 50%. Score advantage does not guarantee admission; check school grades and program requirements too.", "대학명 아래 숫자는 공식 SAT 중간 50%입니다. ‘점수상 여유’도 합격을 보장하지 않으므로 학교 성적·전공 요건을 함께 확인하세요.")}</p></div><div class="table-wrap sat-band-wrap" tabindex="0" aria-label="${words("Scroll the SAT score-band table", "SAT 점수대별 대학 표 가로 스크롤")}"><table class="sat-band-table"><caption>${words(`${verified.length} of ${list.length} schools have verified composite ranges · scores 1100–1600`, `${list.length}개 대학 중 총점 분포 확인 ${verified.length}곳 · SAT 1100–1600점`)}</caption><thead><tr><th scope="col">${words("SAT score", "SAT 점수")}</th><th scope="col" class="band-above">${words("Score advantage", "점수상 여유")}<span>${words("Entire band above the 75th percentile", "구간 전체가 75백분위 초과")}</span></th><th scope="col" class="band-overlap">${words("Range overlap", "분포와 겹침")}<span>${words("Band intersects the middle 50%", "공개 중간 50%와 겹치는 구간")}</span></th><th scope="col" class="band-below">${words("Score stretch", "점수상 도전")}<span>${words("Entire band below the 25th percentile", "구간 전체가 25백분위 미만")}</span></th></tr></thead><tbody>${SAT_BANDS.map(row).join("")}</tbody></table></div><p class="small">${words("Schools can appear in every row; their column changes with the score. Up to four nearby distributions appear first in each cell; expand to see all. A school at a boundary belongs in the overlap column.", "같은 대학도 점수가 달라지면 열이 바뀝니다. 각 칸은 점수와 가까운 대학 4곳을 먼저 표시하며, ‘더 보기’에서 모두 확인할 수 있습니다. 경계에 걸친 구간은 ‘분포와 겹침’에 들어갑니다.")}</p>${unknown.length ? `<aside class="sat-unclassified"><h3>${words("Composite range not verified", "총점 분포를 확인하지 못한 대학")}</h3><p>${words("These schools remain in the planner. No numeric SAT column is assigned without a verified composite range.", "아래 대학도 대학 찾기에 포함되어 있습니다. 확인된 SAT 총점 분포가 없어 점수별 열에는 배치하지 않았습니다.")}</p><div>${unknown.map((u) => `<button class="text-button" data-detail="${u.id}">${esc(translate(u.name))} →</button>`).join("")}</div></aside>` : ""}<details class="methodology sat-band-evidence"><summary>${words("Official score ranges, cohorts & sources", "학교별 공식 점수 범위 · 연도 · 출처")}</summary><p class="small">${words("These are historical profiles of score submitters, not 2028 cutoffs or distributions for all applicants. Cohorts differ by campus/college and admitted versus enrolled status.", "시험 점수를 제출한 과거 집단의 자료이며 2028년 합격선이나 전체 지원자 분포가 아닙니다. 캠퍼스·단과대와 합격자·등록자 구분을 함께 확인하세요.")}</p><div class="table-wrap"><table class="sat-cohort-table"><thead><tr><th>${words("University", "대학교")}</th><th>SAT 25–75%</th><th>${words("Cohort & official source", "집단 · 공식 출처")}</th></tr></thead><tbody>${[
+    ...verified,
+  ]
+    .sort(byRank)
+    .map((u) => {
+      const range = strategies[u.id].range!;
+      return `<tr><th scope="row"><button class="school-table-link" data-detail="${u.id}">${esc(translate(u.name))}</button></th><td>${range.low}–${range.high}</td><td><p>${esc(translate(range.cohort))}</p>${refs(range.sourceIds)}</td></tr>`;
+    })
+    .join(
+      "",
+    )}</tbody></table></div><p>${words("UC campuses currently do not use SAT/ACT for admission. The system’s 2026 review has not determined Fall 2028 policy, so those campuses are not assigned SAT admission categories here.", "UC 계열은 현재 SAT·ACT를 입학 심사에 반영하지 않습니다. 2026년 정책 검토에서 2028년 규정은 아직 결정되지 않아, 이 표에 SAT별 지원 분류를 만들지 않았습니다.")}</p>${refs(["sat-bands-uc-current-policy", "sat-bands-uc-policy-review"])}</details></section>`;
+}
 function comparisonPanel(list: University[]) {
   if (!profile.band)
     return `<div class="comparison-empty"><span>01</span><h2>${words("Choose an Ontario grade band above.", "위에서 온타리오 성적 구간을 선택하세요.")}</h2><p>${words("Compare five SAT scores across all 20 universities, with entry rules and major evidence alongside.", "20개 대학을 SAT 1100 · 1200 · 1300 · 1400 · 1500점으로 비교합니다. 지원 요건과 전공별 근거도 함께 확인하세요.")}</p></div>`;
@@ -299,7 +342,8 @@ function universitiesPage() {
           .includes(universitySearch.toLowerCase()))
     );
   });
-  return `<div class="page-intro"><h1>Find universities</h1><p>Choose a grade range. Explore your options.</p></div>${profilePanel()}<div class="tabs" aria-label="University view">${[
+  return `<div class="page-intro"><h1>${universityMode === "sat-bands" ? words("Universities by SAT score band", "SAT 점수대별 대학 분포 표") : words("Find universities", "대학 찾기")}</h1><p>${words("Compare SAT score bands, school grades and program requirements.", "SAT 점수대와 학교 성적, 전공별 지원 요건을 비교하세요.")}</p></div>${universityMode === "sat-bands" ? "" : profilePanel()}<div class="tabs" aria-label="University view">${[
+    ["sat-bands", words("SAT score bands", "SAT 점수대별 대학")],
     ["compare", words("Grade × SAT", "성적 × SAT 비교")],
     ["explore", "All universities"],
     ["rankings", words("Rankings & majors", "순위 · 전공")],
@@ -312,7 +356,7 @@ function universitiesPage() {
     )
     .join(
       "",
-    )}</div><div class="filter-bar"><label class="search-field"><span class="sr-only">Search universities or majors</span><input id="university-search" type="search" placeholder="Search a university or subject" value="${esc(universitySearch)}"></label><button class="text-button" id="advanced-toggle" aria-expanded="${advancedExpanded}">Advanced filters ${advancedExpanded ? "−" : "+"}</button><span class="small muted" role="status">${list.length} ${list.length === 1 ? "university" : "universities"}</span></div>${advancedExpanded ? `<div class="advanced-filters">${filterSelect("difficulty", "Planning category", ["Very High Reach", "Reach", "Target", "More Realistic"], difficulty)}${filterSelect("recognition", "Brand reference", ["Very High", "High", "Moderate"], recognition)}${filterSelect("testing", "Published SAT policy", ["Test optional", "Test required", "Confirm policy"], testing)}${filterSelect("state", "State", [...new Set(universities.map((u) => u.state))].sort(), state)}${filterSelect("sector", "University type", ["Public", "Private"], sector)}<button class="text-button" id="clear-filters">Clear filters</button></div>` : ""}<p class="planning-disclaimer">This is planning guidance, not an admission guarantee. Categories are editorial exploration scenarios, not validated Ontario cutoffs. ${profile.program === "specialized" ? "Specialized-program fit requires a separate review." : ""}</p>${profile.band && GRADE_BANDS.indexOf(profile.band) < 3 && !["compare", "rankings"].includes(universityMode) ? pathwayPanel() : ""}${universityMode === "picks" ? `<div class="notice">${profile.band ? "Up to six working picks, balancing available planning categories before brand reference. We do not fill a list with unsuitable names. “Target” still requires a full transcript assessment; “More Realistic” appears only after course checks and strong preparation are reported." : "Choose a grade range to generate your working shortlist."}</div>` : ""}${universityMode === "compare" ? comparisonPanel(list) : universityMode === "rankings" ? rankingsPanel(list) : list.length ? `<div class="cards">${list.map((u) => card(u)).join("")}</div>` : `<div class="empty-state"><h3>${universityMode === "saved" ? "Build your own shortlist." : "No matching universities."}</h3><p>${universityMode === "saved" ? "Use the + button on a university card to save it here." : "Adjust your filters, or review the separate pathway strategy. An empty shortlist is more honest than an invented fit."}</p><button class="text-button" id="clear-filters-empty">Clear filters</button></div>`}<details class="methodology"><summary>How these recommendations work</summary><p>Grade bands select manually authored, conservative exploration scenarios. Course eligibility and course rigor constrain “More Realistic”; specialized interests and an unreviewed U.S. applicant route prevent more favorable labels. SAT scores are compared with verified distributions for planning and never automatically raise the category. Acceptance rates, where verified, describe a cohort and are not individualized probabilities.</p><p>Brand Recognition is an editorial reference based on broad national/international visibility, not a measured Korean survey or a ranking. “Very High”, “High” and “Moderate” describe this limited comparison set. Major suggestions reflect breadth and documented program structures, not easier admission.</p><p>No transcript has been reviewed by this website. Grades 9–12, rigor, essays, activities, recommendations where required, English evidence, citizenship and program-specific rules can materially change an assessment. NYU is always a reach; no school here is a guaranteed safety.</p></details>`;
+    )}</div><div class="filter-bar"><label class="search-field"><span class="sr-only">Search universities or majors</span><input id="university-search" type="search" placeholder="Search a university or subject" value="${esc(universitySearch)}"></label><button class="text-button" id="advanced-toggle" aria-expanded="${advancedExpanded}">Advanced filters ${advancedExpanded ? "−" : "+"}</button><span class="small muted" role="status">${list.length} ${list.length === 1 ? "university" : "universities"}</span></div>${advancedExpanded ? `<div class="advanced-filters">${filterSelect("difficulty", "Planning category", ["Very High Reach", "Reach", "Target", "More Realistic"], difficulty)}${filterSelect("recognition", "Brand reference", ["Very High", "High", "Moderate"], recognition)}${filterSelect("testing", "Published SAT policy", ["Test optional", "Test required", "Confirm policy"], testing)}${filterSelect("state", "State", [...new Set(universities.map((u) => u.state))].sort(), state)}${filterSelect("sector", "University type", ["Public", "Private"], sector)}<button class="text-button" id="clear-filters">Clear filters</button></div>` : ""}${universityMode === "sat-bands" ? "" : `<p class="planning-disclaimer">This is planning guidance, not an admission guarantee. Categories are editorial exploration scenarios, not validated Ontario cutoffs. ${profile.program === "specialized" ? "Specialized-program fit requires a separate review." : ""}</p>`}${profile.band && GRADE_BANDS.indexOf(profile.band) < 3 && !["sat-bands", "compare", "rankings"].includes(universityMode) ? pathwayPanel() : ""}${universityMode === "picks" ? `<div class="notice">${profile.band ? "Up to six working picks, balancing available planning categories before brand reference. We do not fill a list with unsuitable names. “Target” still requires a full transcript assessment; “More Realistic” appears only after course checks and strong preparation are reported." : "Choose a grade range to generate your working shortlist."}</div>` : ""}${universityMode === "sat-bands" ? satBandsPanel(list) : universityMode === "compare" ? comparisonPanel(list) : universityMode === "rankings" ? rankingsPanel(list) : list.length ? `<div class="cards">${list.map((u) => card(u)).join("")}</div>` : `<div class="empty-state"><h3>${universityMode === "saved" ? "Build your own shortlist." : "No matching universities."}</h3><p>${universityMode === "saved" ? "Use the + button on a university card to save it here." : "Adjust your filters, or review the separate pathway strategy. An empty shortlist is more honest than an invented fit."}</p><button class="text-button" id="clear-filters-empty">Clear filters</button></div>`}<details class="methodology"><summary>How these recommendations work</summary><p>Grade bands select manually authored, conservative exploration scenarios. Course eligibility and course rigor constrain “More Realistic”; specialized interests and an unreviewed U.S. applicant route prevent more favorable labels. SAT scores are compared with verified distributions for planning and never automatically raise the category. Acceptance rates, where verified, describe a cohort and are not individualized probabilities.</p><p>Brand Recognition is an editorial reference based on broad national/international visibility, not a measured Korean survey or a ranking. “Very High”, “High” and “Moderate” describe this limited comparison set. Major suggestions reflect breadth and documented program structures, not easier admission.</p><p>No transcript has been reviewed by this website. Grades 9–12, rigor, essays, activities, recommendations where required, English evidence, citizenship and program-specific rules can materially change an assessment. NYU is always a reach; no school here is a guaranteed safety.</p></details>`;
 }
 function filterSelect(
   id: string,

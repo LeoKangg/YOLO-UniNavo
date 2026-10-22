@@ -1,3 +1,4 @@
+import { researchedSatRanges, satResearchSources } from "./sat-research.ts";
 import expansionEast from "../../research/expansion-east.json" with { type: "json" };
 import expansionMidwest from "../../research/expansion-midwest.json" with { type: "json" };
 import expansionAccess from "../../research/expansion-access.json" with { type: "json" };
@@ -19,6 +20,26 @@ export const universities: University[] = [
   ...expansionMidwest,
   ...expansionAccess,
 ] as University[];
+// Refresh previously unverified score facts with the newly inspected official cohorts.
+for (const r of researchedSatRanges) {
+  const u = universities.find((u) => u.id === r.id)!;
+  const key = u.facts.satRange ? "satRange" : "satMiddle50";
+  u.facts[key] = {
+    text: `Official composite SAT middle 50%: ${r.low}–${r.high}. ${r.cohort} This is a historical score-submitter distribution, not an admission cutoff.`,
+    status: "verified",
+    sourceIds: r.sourceIds,
+  };
+  if (u.facts.satTarget)
+    u.facts.satTarget = {
+      text: "Use the dated official composite distribution as a score reference; confirm Fall 2028 testing policy and assess the full transcript and program requirements before deciding whether to submit scores.",
+      status: "planning-guidance",
+      sourceIds: r.sourceIds,
+    };
+  for (const id of r.sourceIds) {
+    const source = satResearchSources.find((s) => s.id === id);
+    if (source && !u.sources.some((s) => s.id === id)) u.sources.push(source);
+  }
+}
 export const planning = planningData;
 export const pathways = pathwaysData;
 export const sources: Source[] = [
@@ -26,6 +47,7 @@ export const sources: Source[] = [
     [
       ...universities.flatMap((u) => u.sources),
       ...planning.sources,
+      ...satResearchSources,
       ...comparisonContext.sources,
       ...existingRankings.flatMap((r) => (r.source ? [r.source] : [])),
       ...pathways.sources,

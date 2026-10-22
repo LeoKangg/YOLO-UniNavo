@@ -1,3 +1,4 @@
+import { researchedSatRanges } from "../data/sat-research.ts";
 import { expandedEvidence } from "../data/evidence.ts";
 import { universities, planning, pathways } from "../data/index.ts";
 import { strategies } from "../data/strategies.ts";
@@ -310,3 +311,6 @@ Object.assign(contentKo, {
   "New Jersey": "뉴저지",
   Ohio: "오하이오",
 });
+
+for (const range of researchedSatRanges)
+  contentKo[range.cohort] = range.cohortKo;

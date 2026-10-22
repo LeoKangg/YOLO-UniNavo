@@ -1,0 +1,20 @@
+{
+  "sources": [
+    {
+      "id": "sat-bands-uc-current-policy",
+      "title": "First-Year Requirements — standardized testing",
+      "url": "https://admission.ucla.edu/apply/first-year/first-year-requirements",
+      "publisher": "UCLA Undergraduate Admission",
+      "verified": "2026-10-22",
+      "cycle": "Current policy: SAT/ACT not considered for admission or scholarships; do not generalize to an unannounced future cycle"
+    },
+    {
+      "id": "sat-bands-uc-policy-review",
+      "title": "Academic Senate Review of Admissions — current policy and Fall 2028 uncertainty",
+      "url": "https://www.universityofcalifornia.edu/news/press-releases-and-statements/academic-senate-review-admissions",
+      "publisher": "University of California",
+      "verified": "2026-10-22",
+      "cycle": "2026 admissions policy review; no Fall 2028 testing decision announced"
+    }
+  ]
+}

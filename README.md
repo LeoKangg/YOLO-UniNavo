@@ -32,7 +32,7 @@ No account, API key, database or backend is required. Language preference, profi
 - Language: the header’s **한국어 / English** button switches all five views, university facts and the complete timeline. The choice persists in this browser; filters, saved schools and task IDs stay unchanged. Korean university/major search is supported. Official source document titles, publishers, reference cycles and book titles retain their original wording. No translation API is used.
 
 - Timeline (home): 23 months, October 2026–August 2028, and 72 original tasks. All months and task details are expanded. The month chart shows progress and links to each month. Add, edit, move, delete and complete tasks; completed tasks hide by default and can be revealed. Single-step undo and JSON backup/restore are available. Edited official reminders retain their original guidance and sources. The stage dropdown defaults to “Select”.
-- Universities: 20 schools, eight Ontario grade bands from 60–65% through 95–100%, and five SAT scenarios from 1100 to 1500. Compare 40 combinations, export all 800 school-scenario rows, inspect rankings/major evidence, browse school cards and keep up to six working recommendations. Saved schools remain separate from generated picks.
+- Universities: the first tab presents nine SAT score bands (1100–1600) as a school distribution table. Sixteen schools have verified official composite ranges; four remain explicitly unclassified. Whole-band position is shown as score advantage / overlap / score stretch, with actual ranges, campus/college scope, source cohorts and clickable school details. Each cell initially shows four schools and can reveal the rest. The detailed comparison retains 20 schools, eight Ontario grade bands from 60–65% through 95–100%, and five SAT scenarios from 1100 to 1500. Compare 40 combinations, export all 800 school-scenario rows, inspect rankings/major evidence, browse school cards and keep up to six working recommendations. Saved schools remain separate from generated picks.
 - SAT & AP: confirmed 2026–27 SAT dates, separately labeled anticipated 2027–28 dates, four AP priorities and university-specific credit examples.
 - Study resources: purpose and link first; publisher editions, explanations and sources expand on demand. Preorder information is preserved.
 - Sources: searchable source register with exact URLs, publisher, reviewed date and applicable cycle.
@@ -60,7 +60,8 @@ research/iowa.json          Iowa State
 research/expansion-*.json    Eleven additional schools and supporting metadata
 research/existing-rankings.json  Dated ranks for the original nine schools
 research/comparison-context.json  Additional program evidence and full catalogs
-research/*-method.md         Comparison and recognition research boundaries
+research/sat-band-*.json     New official score distributions and policy context
+research/*-method.md         Comparison, score-band and recognition research boundaries
 research/planning.json      Official exam calendars, Ontario/entry guidance, books
 research/pathways.json      Transfer strategy, separate from freshman admission
 research/link-check.json    HTTP verification results, not a claim-accuracy audit
@@ -119,9 +120,11 @@ After reviewing and committing source/data updates, run `pnpm build:pages`. Publ
 
 ### Verification record
 
-- Local validation, typecheck, lint, 23 behavioral tests and Pages production build passed for 20 schools, 300 source records, 23 months and 72 original tasks.
-- New tests cover all 40 grade/SAT scenarios, CSV generation (800 rows), score boundaries, conditional international rules, source references, and personal-plan editing/moving/deleting/serialization.
+- Local validation, typecheck, lint, 27 behavioral tests and Pages production build passed for 20 schools, 309 source records, 23 months and 72 original tasks.
+- New tests cover all 40 grade/SAT scenarios, CSV generation (800 rows), score boundaries, conditional international rules, source references, score-band boundary crossings, all-school classification, and personal-plan editing/moving/deleting/serialization.
 - Browser checks cover adding/editing/moving/deleting tasks, completed-item hiding, undo and reload persistence; grade changes and the 20-school comparison; and university details with program distributions and catalog links.
 - Mobile 390px inspection shows no document-level horizontal overflow; the comparison table scrolls inside its container. Download content is tested directly; browser download completion was not verified because the automation download wait timed out.
 
 ![Desktop preview](docs/preview.jpg)
+
+The SAT band table uses official composite percentiles, not Safety/Match/Reach admission guarantees. Newly inspected 2025–26 CDS data add Penn State University Park (1280–1410), Ohio State Columbus (1300–1440), Wisconsin Madison (1400–1490) and Iowa State (1153–1360), all Fall 2025 enrolled SAT submitters. ASU composite fields are blank; Oregon/NYU primary report access could not be verified, and Buffalo composite percentiles remain unverified. See `research/sat-band-method.md` for grouping and source limitations.

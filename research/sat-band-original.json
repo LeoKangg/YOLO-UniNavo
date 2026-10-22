@@ -1,0 +1,60 @@
+{
+  "sources": [
+    {
+      "id": "sat-isu-cds-2025-26",
+      "title": "Iowa State University Common Data Set 2025–26, C9 (PDF page 11)",
+      "url": "https://www.ir.iastate.edu/files/documents/cds/CDS-25-26.pdf",
+      "publisher": "Iowa State University, Institutional Research",
+      "verified": "2026-10-22",
+      "cycle": "2025–26 CDS; Fall 2025 enrolled first-year cohort"
+    },
+    {
+      "id": "sat-asu-cds-2025-26",
+      "title": "Arizona State University Campus Immersion Common Data Set 2025–2026, C9 (PDF page 11)",
+      "url": "https://uoia.asu.edu/sites/g/files/litvpz1436/files/2026-06/CDS%202025-26%20-%20ASU%20Campus%20Immersion.pdf",
+      "publisher": "Arizona State University, Institutional Analysis",
+      "verified": "2026-10-22",
+      "cycle": "2025–26 CDS; Fall 2025 enrolled first-year cohort; SAT fields blank"
+    },
+    {
+      "id": "sat-asu-cds-2024-25",
+      "title": "Arizona State University Campus Immersion Common Data Set 2024–2025, C9 (PDF page 11)",
+      "url": "https://uoia.asu.edu/sites/default/files/2025-04/ASU%20Campus%20Immersion%20-%20Common%20Data%20Set%202024-25.pdf",
+      "publisher": "Arizona State University, Institutional Analysis",
+      "verified": "2026-10-22",
+      "cycle": "2024–25 CDS; Fall 2024 enrolled first-year cohort; SAT fields blank"
+    },
+    {
+      "id": "sat-oregon-cds-index",
+      "title": "University of Oregon Common Data Set official report index",
+      "url": "https://data.uoregon.edu/uo-overview/common-data-set",
+      "publisher": "University of Oregon, Office of Data Enablement",
+      "verified": "2026-10-22",
+      "cycle": "Lists 2025–26 and 2024–25 CDS reports; report content inaccessible in this check"
+    }
+  ],
+  "ranges": [
+    {
+      "id": "iowa-state",
+      "low": 1153,
+      "high": 1360,
+      "cohort": "Fall 2025 enrolled first-year SAT submitters, Iowa State University (Ames); 12% submitted SAT (744 students); 2025–26 CDS C9, composite 25th–75th percentiles.",
+      "cohortKo": "아이오와 주립대 에임스 · 2025년 가을 등록 신입생 중 SAT 제출자 · SAT 제출 12%(744명) · 2025–26 CDS C9 합계 점수 25–75백분위.",
+      "sourceIds": ["sat-isu-cds-2025-26"]
+    }
+  ],
+  "notes": [
+    {
+      "id": "asu",
+      "text": "No numeric composite range verified: ASU Campus Immersion C9 composite percentile and score-submitter fields are blank in both official 2025–26 and 2024–25 CDS PDFs. These reports cover Campus Immersion, not Tempe alone. Blank fields do not prove zero SAT submitters. Do not substitute section-score sums or an admission aptitude threshold for an observed composite range.",
+      "textKo": "ASU Campus Immersion의 공식 2025–26 및 2024–25 CDS C9에서 SAT 합계 백분위와 제출자 항목이 비어 있어 수치 범위를 넣지 않았습니다. 템피 단독 자료가 아니며, 빈칸은 제출자가 0명이라는 뜻이 아닙니다. 영역별 점수 합산이나 지원 자격 점수를 합계 분포로 대체하지 않습니다.",
+      "sourceIds": ["sat-asu-cds-2025-26", "sat-asu-cds-2024-25"]
+    },
+    {
+      "id": "oregon",
+      "text": "The official University of Oregon CDS index links its 2025–26 report at https://uoregon.sharepoint.com/:b:/s/UOInstitutionalResearchPublicMaterials/IQCLb9PtNAxlQJCsPE6Rb8vcAVNYDIH7gnTYVb6ekL74NGU?e=QOIWky . The report could not be retrieved by the research browser, and a direct download attempt returned HTTP 403. A secondary extract reports 1050–1320, but this has not been verified in the official PDF and is intentionally excluded from the numeric ranges.",
+      "textKo": "오리건대 공식 CDS 목록에서 2025–26 보고서 링크를 확인했으나 SharePoint 보고서를 열지 못했고 직접 다운로드도 HTTP 403을 반환했습니다. 비공식 추출 자료의 1050–1320은 원문 PDF에서 검증하지 못해 수치 범위에서 제외했습니다.",
+      "sourceIds": ["sat-oregon-cds-index"]
+    }
+  ]
+}

@@ -947,6 +947,7 @@ progress::-moz-progress-bar {
 }
 .tabs {
   display: flex;
+  flex-wrap: wrap;
   gap: 30px;
   border-bottom: 1px solid var(--line);
   margin: 6px 0 20px;
@@ -3298,4 +3299,197 @@ footer > a {
 }
 .scenario-table .references a {
   font-size: 14px;
+}
+
+/* Score-band map: a readable overview beside the detailed grade/SAT matrix. */
+.sat-band-intro {
+  margin: 26px 0 18px;
+}
+.sat-band-intro h2 {
+  margin: 8px 0 10px;
+  font-size: 29px;
+  letter-spacing: -0.035em;
+}
+.sat-band-intro p {
+  font-size: 18px;
+  max-width: 760px;
+}
+.sat-band-note {
+  border-left: 4px solid #647d68;
+  background: #eef3ec;
+  border-radius: 0 10px 10px 0;
+  padding: 18px 22px;
+  margin-bottom: 24px;
+}
+.sat-band-note strong {
+  font-size: 17px;
+  color: #294846;
+}
+.sat-band-note p {
+  margin: 7px 0 0;
+  font-size: 16px;
+  line-height: 1.65;
+}
+.sat-band-table {
+  min-width: 860px;
+  table-layout: fixed;
+  width: 100%;
+}
+.sat-band-table caption {
+  text-align: left;
+  font-size: 15px;
+  padding: 0 0 13px;
+  color: #53655c;
+}
+.sat-band-table thead th {
+  color: #263f3d;
+  padding: 19px 16px;
+  font-size: 19px;
+  background: #e5ece3;
+  vertical-align: top;
+}
+.sat-band-table thead th:first-child {
+  width: 142px;
+  background: #234c4e;
+  color: white;
+}
+.sat-band-table thead span {
+  display: block;
+  font-size: 14px;
+  font-weight: 400;
+  margin-top: 7px;
+  line-height: 1.5;
+}
+.sat-band-table tbody > tr > th {
+  background: #f0f3ee;
+  padding: 24px 15px;
+  vertical-align: top;
+  color: #284b4c;
+}
+.sat-band-table tbody > tr > th strong {
+  font-size: 21px;
+  letter-spacing: -0.03em;
+  white-space: nowrap;
+}
+.sat-band-table tbody > tr > th span {
+  display: block;
+  font-size: 14px;
+  margin-top: 10px;
+}
+.sat-band-table td {
+  padding: 17px 16px;
+  vertical-align: top;
+  border-left: 1px solid #dce3da;
+}
+.sat-band-table .band-above {
+  background: #f1f6ee;
+}
+.sat-band-table .band-overlap {
+  background: #f5f7f7;
+}
+.sat-band-table .band-below {
+  background: #faf5ef;
+}
+.sat-band-table thead .band-above {
+  background: #dce8d6;
+}
+.sat-band-table thead .band-overlap {
+  background: #dfe9e9;
+}
+.sat-band-table thead .band-below {
+  background: #eee1d3;
+}
+.sat-band-schools {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 15px;
+}
+.sat-band-school {
+  display: block;
+  width: 100%;
+  border: 0;
+  background: transparent;
+  text-align: left;
+  padding: 0;
+  cursor: pointer;
+  color: #284b4c;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.5;
+}
+.sat-band-school:hover > span:first-child {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+.sat-band-range {
+  display: block;
+  font-size: 14px;
+  font-weight: 400;
+  color: #626e66;
+  margin-top: 3px;
+}
+.sat-band-more {
+  margin-top: 16px;
+}
+.sat-band-more summary {
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 600;
+  color: #37615f;
+}
+.sat-band-more[open] .sat-band-schools {
+  margin-top: 16px;
+}
+.sat-band-empty {
+  font-size: 16px;
+  color: #6c736c;
+}
+.sat-band-table .my-sat-band > th {
+  background: #234c4e;
+  color: white;
+}
+.sat-unclassified {
+  background: #f4f3ee;
+  border-radius: 12px;
+  padding: 22px 25px;
+  margin: 26px 0;
+}
+.sat-unclassified h3 {
+  margin: 0;
+  font-size: 20px;
+}
+.sat-unclassified p {
+  font-size: 16px;
+  margin: 10px 0;
+}
+.sat-unclassified > div {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 24px;
+}
+.sat-cohort-table {
+  min-width: 750px;
+}
+.sat-cohort-table th {
+  text-align: left;
+}
+.sat-cohort-table td {
+  vertical-align: top;
+}
+.sat-cohort-table p {
+  margin: 0 0 8px;
+  font-size: 15px;
+}
+@media (max-width: 600px) {
+  .sat-band-intro h2 {
+    font-size: 25px;
+  }
+  .sat-band-note {
+    padding: 16px;
+  }
+  .sat-band-table thead th:first-child {
+    width: 130px;
+  }
 }

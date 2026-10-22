@@ -1,0 +1,61 @@
+{
+  "sources": [
+    {
+      "id": "sat-band-psu-cds-2025-26",
+      "title": "University Park Common Data Set 2025–2026, C9 (page 14)",
+      "url": "https://bpb-us-e1.wpmucdn.com/sites.psu.edu/dist/d/114442/files/2026/06/UniversityPark_CDS_2025_2026.pdf",
+      "publisher": "Pennsylvania State University, Office of Planning, Assessment, and Institutional Research",
+      "verified": "2026-10-22",
+      "cycle": "2025–2026 CDS; Fall 2025 enrolled first-time, first-year students"
+    },
+    {
+      "id": "sat-band-osu-cds-2025-26",
+      "title": "Ohio State Columbus Common Data Set 2025–2026, C9 (page 19)",
+      "url": "https://irp.osu.edu/sites/default/files/documents/2026/03/CDS-2025-2026-OSU-Columbus-Campus.pdf",
+      "publisher": "The Ohio State University, Institutional Research and Planning",
+      "verified": "2026-10-22",
+      "cycle": "2025–2026 CDS; Fall 2025 enrolled first-time, first-year students"
+    },
+    {
+      "id": "sat-band-wisc-cds-2025-26",
+      "title": "UW–Madison Common Data Set 2025–2026, CDS-C C9 (rows 160–179)",
+      "url": "https://uwmadison.box.com/index.php?file_id=f_2339108500297&rm=box_download_shared_file&shared_name=ilx9kil11ninf8vwj1z87vumhuvpw4px",
+      "publisher": "University of Wisconsin–Madison, Data, Academic Planning & Institutional Research",
+      "verified": "2026-10-22",
+      "cycle": "2025–2026 CDS; Fall 2025 enrolled first-time, first-year students"
+    }
+  ],
+  "ranges": [
+    {
+      "id": "penn-state",
+      "low": 1280,
+      "high": 1410,
+      "cohort": "University Park; Fall 2025 enrolled first-time, first-year SAT submitters (28.60%; 2,616 students). CDS 2025–2026, C9.",
+      "cohortKo": "유니버시티파크 · 2025년 가을 신입 입학생 중 SAT 제출자 (28.60%, 2,616명). 2025–2026 CDS C9.",
+      "sourceIds": ["sat-band-psu-cds-2025-26"]
+    },
+    {
+      "id": "ohio-state-columbus",
+      "low": 1300,
+      "high": 1440,
+      "cohort": "Columbus campus; Fall 2025 enrolled first-time, first-year SAT submitters (25%; 2,099 students). CDS 2025–2026, C9.",
+      "cohortKo": "콜럼버스 캠퍼스 · 2025년 가을 신입 입학생 중 SAT 제출자 (25%, 2,099명). 2025–2026 CDS C9.",
+      "sourceIds": ["sat-band-osu-cds-2025-26"]
+    },
+    {
+      "id": "wisconsin-madison",
+      "low": 1400,
+      "high": 1490,
+      "cohort": "Madison campus; Fall 2025 enrolled first-time, first-year SAT submitters (11.8%; 1,000 students). CDS 2025–2026, C9.",
+      "cohortKo": "매디슨 캠퍼스 · 2025년 가을 신입 입학생 중 SAT 제출자 (11.8%, 1,000명). 2025–2026 CDS C9.",
+      "sourceIds": ["sat-band-wisc-cds-2025-26"]
+    }
+  ],
+  "notes": [
+    "These are directly reported composite SAT 25th and 75th percentiles. Component percentiles were not added. They describe score submitters among enrolled first-years, not all applicants or all admitted students, not admission cutoffs, not program-specific minimums, and not Ontario grade equivalents.",
+    "Penn State official CDS landing page https://opair.psu.edu/institutional-research/projects/cds/ identifies the University Park 2025–2026 report. Verified C9 in official PDF text, with Fall 2025 cohort defined by section C1/C9.",
+    "Ohio State official PDF contains the reported numeric table as rendered graphics; web text extraction omits numbers. The original official PDF was downloaded and page 19 rendered and visually inspected: composite 1300 / 1380 / 1440; SAT submitters 25.00%, 2099; Fall 2025 cohort.",
+    "Wisconsin official CDS page https://data.wisc.edu/common-data-set-and-rankings/ returned 403 to browsing, but the university-hosted public Box XLSX downloaded successfully. CDS-A identifies UW–Madison and the official CDS page; CDS-C rows 160–179 directly report Fall 2025, composite 1400 / 1450 / 1490, 11.8%, and 1000 SAT submitters. The Box URL is the actual inspected primary source.",
+    "NYU omitted from ranges: the official latest PDF https://www.nyu.edu/content/dam/nyu/institutionalResearch/documents/cds-2025-2026/CDS%202025-2026%20FINAL%20%28no%20G%29.pdf and official institutional research page returned 405/403. Secondary sites consistently report 1480–1550 for Fall 2025, but this task requires direct official-source verification; that range has not been imported. Do not label it verified from this file."
+  ]
+}

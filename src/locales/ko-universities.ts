@@ -1,3 +1,4 @@
+import { researchedSatRanges } from "../data/sat-research.ts";
 import { expandedEvidence } from "../data/evidence.ts";
 // Translations preserve reference cycles, uncertainty, eligibility and numerical caveats.
 export const universityKo: Record<string, Record<string, string>> = {
@@ -273,3 +274,13 @@ export const universityKo: Record<string, Record<string, string>> = {
 };
 
 for (const e of expandedEvidence) universityKo[e.id] = e.ko.facts;
+
+for (const r of researchedSatRanges) {
+  const facts = universityKo[r.id];
+  const key = r.id === "iowa-state" ? "satRange" : "satMiddle50";
+  facts[key] =
+    `공식 SAT 총점 중간 50%: ${r.low}–${r.high}. ${r.cohortKo} 과거 점수 제출자 분포이며 합격선이 아닙니다.`;
+  if (facts.satTarget)
+    facts.satTarget =
+      "연도가 명시된 공식 총점 분포를 점수 참고 자료로 활용하세요. 시험 점수 제출 여부는 2028년 가을 규정과 전체 성적표·전공 요건을 확인한 뒤 결정하세요.";
+}
