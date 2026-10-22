@@ -2877,8 +2877,14 @@ footer > a {
   align-items: flex-start;
   gap: 16px;
 }
-.task-heading label {
+.editable-timeline .task-heading label {
   flex: 1;
+  font-size: 18px;
+  line-height: 1.55;
+}
+.editable-timeline .is-complete .task-heading label span {
+  text-decoration: line-through;
+  color: #53665b;
 }
 .task-actions {
   display: flex;
