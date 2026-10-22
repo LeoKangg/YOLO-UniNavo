@@ -34,7 +34,7 @@ let phase = "all",
 let profileExpanded = false,
   advancedExpanded = false;
 const openedDetails = new Set<string>();
-const openedMonths = new Set(["2026-10"]);
+const openedMonths = new Set(timeline.map((month) => month.id));
 const nav = [
   { id: "overview", label: "Overview", icon: "⌂" },
   { id: "timeline", label: "My timeline", icon: "◷" },
@@ -136,7 +136,7 @@ function card(u: University) {
   return `<article class="university-card"><div class="card-top"><span class="monogram" style="--school:${s.color}">${s.initials}</span><button class="save-button ${saved.has(u.id) ? "saved" : ""}" data-save="${u.id}" aria-label="${saved.has(u.id) ? "Remove" : "Save"} ${esc(u.name)} ${saved.has(u.id) ? "from" : "to"} my shortlist" aria-pressed="${saved.has(u.id)}">${saved.has(u.id) ? "✓" : "+"}</button></div><span class="small muted">${esc(u.state)} · ${u.type.toLowerCase().includes("private") ? "Private" : "Public"}</span><h3>${esc(u.name)}</h3>${badge(u.id)}<p class="card-subjects">${esc(s.majors.join(" · "))}</p><p class="small muted">Fall 2028 policies need checking.</p><button class="detail-button" data-detail="${u.id}">View details <span aria-hidden="true">↗</span></button></article>`;
 }
 function taskRow(t: Task) {
-  return `<div class="task-row ${checked.has(t.id) ? "is-complete" : ""}"><label><input type="checkbox" data-task="${t.id}" ${checked.has(t.id) ? "checked" : ""}><span>${esc(t.title)}</span></label><details class="task-help" data-disclosure="task-${t.id}"><summary>How to do it</summary><div class="task-detail"><p>${esc(t.detail)}</p><span class="fact-status">${t.kind}</span>${refs(t.sourceIds)}</div></details></div>`;
+  return `<div class="task-row ${checked.has(t.id) ? "is-complete" : ""}"><label><input type="checkbox" data-task="${t.id}" ${checked.has(t.id) ? "checked" : ""}><span>${esc(t.title)}</span></label><div class="task-detail"><p>${esc(t.detail)}</p><span class="fact-status">${t.kind}</span>${refs(t.sourceIds)}</div></div>`;
 }
 function pathwayPanel() {
   return `<aside class="pathway"><span class="eyebrow">A DIFFERENT ROUTE</span><h3>Build options, not false certainty.</h3><p>At 60–70%, this research does not support a balanced direct-entry shortlist at the featured universities. At 70–75%, the few options shown are research leads, not targets. Prioritize stronger marks and a transcript assessment.</p>${pathways.facts.map((f) => fact(f)).join("")}<p class="small">Conditional English admission is not an academic waiver. A branch-campus offer is not an offer at the flagship campus. Check the exact campus, pathway contract and progression rules.</p></aside>`;
@@ -155,7 +155,7 @@ function timelinePage() {
   const tasks = timeline.flatMap((m) => m.tasks),
     count = tasks.filter((t) => checked.has(t.id)).length;
   const shown = timeline.filter((m) => phase === "all" || m.phase === phase);
-  return `<div class="page-intro"><h1>My timeline</h1><p>From October 2026 to your Fall 2028 arrival. A clear next step, every month.</p></div><div class="timeline-toolbar"><div><strong>${count} of ${tasks.length} tasks complete</strong><progress value="${count}" max="${tasks.length}" aria-label="Timeline completion"></progress><span class="small muted">Saved in this browser · no account needed</span></div><label>Show a stage<select id="phase"><option value="all">Entire journey</option>${[...new Set(timeline.map((m) => m.phase))].map((p) => `<option ${phase === p ? "selected" : ""}>${p}</option>`).join("")}</select></label><label class="checkline"><input type="checkbox" id="hide-completed" ${hideCompleted ? "checked" : ""}>Hide completed tasks</label></div><div class="notice">This is a planning calendar anchored to October 21, 2026. College application dates for Fall 2028 remain unconfirmed; future task months are preparation windows, not official deadlines. ${refs(["sat-dates", "ap-order"])}</div><div class="timeline">${shown
+  return `<div class="page-intro"><h1>My timeline</h1><p>From October 2026 to your Fall 2028 arrival. A clear next step, every month.</p></div><div class="timeline-toolbar"><div><strong>${count} of ${tasks.length} tasks complete</strong><progress value="${count}" max="${tasks.length}" aria-label="Timeline completion"></progress><span class="small muted">Saved in this browser · no account needed</span></div><label>Show a stage<select id="phase"><option value="all">Select</option>${[...new Set(timeline.map((m) => m.phase))].map((p) => `<option ${phase === p ? "selected" : ""}>${p}</option>`).join("")}</select></label><label class="checkline"><input type="checkbox" id="hide-completed" ${hideCompleted ? "checked" : ""}>Hide completed tasks</label></div><div class="notice">This is a planning calendar anchored to October 21, 2026. College application dates for Fall 2028 remain unconfirmed; future task months are preparation windows, not official deadlines. ${refs(["sat-dates", "ap-order"])}</div><div class="timeline">${shown
     .map((m) => {
       const allDone = m.tasks.every((t) => checked.has(t.id));
       const visible = m.tasks.filter(

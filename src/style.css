@@ -2359,18 +2359,8 @@ html[lang="ko"] .page-intro h1 {
 .priority-list .task-row {
   margin: 0;
 }
-.task-help {
-  margin: 10px 0 0 38px;
-}
-.task-help summary {
-  color: #476959;
-  font-size: 16px;
-  font-weight: 500;
-  padding: 6px 0;
-  cursor: pointer;
-}
 .task-detail {
-  margin: 12px 0 0;
+  margin: 14px 0 0 38px;
   padding: 0;
 }
 .task-detail p,
@@ -2658,9 +2648,6 @@ footer > a {
   }
   .task-row input[type="checkbox"] {
     margin-top: 2px;
-  }
-  .task-help {
-    margin-left: 38px;
   }
   .task-detail p {
     font-size: 16px;

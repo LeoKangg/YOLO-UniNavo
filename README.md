@@ -31,14 +31,14 @@ No account, API key, database or backend is required. Language preference, profi
 
 - Language: the header’s **한국어 / English** button switches all six views, university facts and the complete timeline. The choice persists in this browser; filters, saved schools and task IDs stay unchanged. Korean university/major search is supported. Official source document titles, publishers, reference cycles and book titles retain their original wording. No translation API is used.
 
-- Overview: three current priorities with large checkboxes, on-demand instructions, and two clear routes to universities or SAT/AP. The fourth habit and Ontario requirements remain under an optional disclosure. Profile editing lives on the university page.
-- Timeline: 23 months, October 2026–August 2028, 72 tasks, checkboxes, stage filter and hide-completed option.
+- Overview: three current priorities with large checkboxes, always-visible instructions, and two clear routes to universities or SAT/AP. The fourth habit and Ontario requirements remain under an optional disclosure. Profile editing lives on the university page.
+- Timeline: 23 months, October 2026–August 2028, 72 tasks, all months initially expanded, visible task details, checkboxes, a stage filter with the default label “Select”, and a hide-completed option.
 - Universities: nine concise cards, seven grade ranges, advanced filters, expandable source-linked detail sections and up to six working recommendations. Saved schools are separate from generated picks.
 - SAT & AP: confirmed 2026–27 SAT dates, separately labeled anticipated 2027–28 dates, four AP priorities and university-specific credit examples.
 - Study resources: purpose and link first; publisher editions, explanations and sources expand on demand. Preorder information is preserved.
 - Sources: searchable source register with exact URLs, publisher, reviewed date and applicable cycle.
 
-Body text is 16–18px and secondary text is at least 14px. Desktop university/AP cards use two columns and mobile uses one. SAT score comparisons, score-submission rules and AP credit details are folded until requested. Task disclosures remain open through checkbox or language changes. Important entry-year uncertainty remains visible.
+Body text is 16–18px and secondary text is at least 14px. Desktop university/AP cards use two columns and mobile uses one. SAT score comparisons, score-submission rules and AP credit details are folded until requested. Task instructions and their sources are shown directly, without a separate expand button, in both languages. Important entry-year uncertainty remains visible.
 
 ## Structure
 
