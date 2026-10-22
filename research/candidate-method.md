@@ -1,6 +1,6 @@
 # Ten research candidates per Ontario × SAT scenario
 
-Reviewed 22 October 2026. The live explorer contains 71 researched universities and 40 editorial shortlists (eight Ontario bands × SAT1100/1200/1300/1400/1500), each with ten distinct universities. The source is `src/candidate-plans.ts`; these lists are not an eligibility engine. The applicant is a Korean citizen studying in Ontario, applying as an international first-year student, with humanities/history/sociology as the program focus.
+Reviewed 22 October 2026. The live explorer contains 72 researched universities and 40 editorial shortlists (eight Ontario bands × SAT1100/1200/1300/1400/1500), each with ten distinct universities. The source is `src/candidate-plans.ts`; these lists are not an eligibility engine. The applicant is a Korean citizen studying in Ontario, applying as an international first-year student, with humanities/history/sociology as the program focus.
 
 ## Evidence and judgment are separate
 
@@ -12,7 +12,7 @@ At70–80%, lists include Ontario-percentage routes (Iowa, James Madison, Portla
 
 At80–90%, lists broaden across general liberal-arts entries and named college profiles. At90–100%, more selective institutions are research options, with required vs optional tests and score position displayed. Strong grades are not assumed to compensate for a below-range test. Some high-rank choices are ambitious research, not safe or matched universities. SAT above a cohort's75th percentile is not a guarantee. A test-optional policy's actual entry-year scope is displayed; future Fall2028 policies remain unconfirmed where appropriate.
 
-Selection order is editorial research order. Historical2026 National Universities ranks are displayed separately when verified. Regional university ranks are not mixed into that column. No measured Korean-recognition rank is claimed. Some low-grade lists repeat across higher SAT totals because higher scores do not remove academic requirements. No artificial list rotation is used to imply an unsupported admission advantage.
+Shortlists are displayed in English university-name order, with no ordinal recommendation badges or CSV research-order column. Historical2026 National Universities ranks are displayed separately when verified. Regional university ranks are not mixed into that column. No measured Korean-recognition rank is claimed. Some low-grade lists repeat across higher SAT totals because higher scores do not remove academic requirements. No artificial list rotation is used to imply an unsupported admission advantage.
 
 ## Current evidence updates
 
@@ -30,3 +30,7 @@ Only SAT is an editable profile field. Existing stored route, grading-basis conf
 The matrix previews names and opens ten cards. Cards show program, official academic rule, testing policy, score comparison and cohort, with primary-source links. The CSV includes400 entries, official requirements, source URLs and explicit editorial status. The strict component engine remains separately tested and does not supply the live candidate count. SAT study-reference cards share the updated scenario catalog, and stale duplicate academic/testing fields are omitted from supplemental original-school details.
 
 Tests cover40×10 unique records, source existence, distinct grade/SAT lists, stale profile normalization, no SAT advantage for test-blind schools, conditional SAT alternatives, scope/year retention, SAT-only UI and400-row CSV. Browser checks cover low/middle/high cases, details, Korean/English and narrow-screen containment.
+
+## Harvard omission correction
+
+Harvard was absent because the catalog was incomplete, not because SAT1500 excluded the applicant. `candidate-harvard.json` records six official Harvard sources checked22 October2026. It is now a very ambitious research option in the90–95 and95–100 / SAT1500 reference lists, and available in the full catalog for any score. These editorial placements do not establish a minimum Ontario grade or SAT. The official FAQ has no test cutoff; the Class of2029 reports47,893 applicants and2,003 admits, about4.2% overall, never a personal probability. There is no admission by academic program or field quota, so History/Sociology is not represented as an easier entry route. The CDS PDF could not be retrieved; no composite SAT range is manufactured by adding section percentiles. The unknown2026 rank remains null. Michigan's former first position was manual research order, not a proven best choice. This correction does not imply that all other highly selective U.S. universities have now been researched.

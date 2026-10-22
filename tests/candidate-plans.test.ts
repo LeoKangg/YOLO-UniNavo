@@ -125,7 +125,7 @@ test("reviewed profiles preserve college scope, conflicting dates and current so
 test("live explorer uses names and ten candidates, with one SAT input and no hidden eligibility claim", () => {
   const matrix = renderExplorer(input(), "all-scenarios", "", new Set());
   assert.equal((matrix.match(/data-scenario-choice=/g) ?? []).length, 40);
-  assert.match(matrix, /The University of Toledo/);
+  assert.match(matrix, /Fort Hays State University/);
   assert.match(matrix, /eligibility is not confirmed/);
   assert.equal((matrix.match(/<input /g) ?? []).length, 1);
   assert.doesNotMatch(
@@ -138,6 +138,7 @@ test("live explorer uses names and ten candidates, with one SAT input and no hid
     10,
   );
   assert.match(result, /not confirmed eligible/);
+  assert.match(result, /The University of Toledo/);
   assert.doesNotMatch(result, /verified component matches|short of10/);
 });
 test("CSV exports400 research entries with requirements, official links and explicit editorial status", () => {
@@ -152,4 +153,35 @@ test("CSV exports400 research entries with requirements, official links and expl
   );
   assert.match(csv, /https:\/\/www\.utoledo\.edu/);
   assert.match(csv, /college|College/);
+});
+
+test("Harvard is not excluded at1500 or presented as safe at1600; list order is not a recommendation ranking", () => {
+  const harvard = scenarioSchoolMap.get("harvard")!;
+  assert.ok(harvard);
+  assert.equal(harvard.ontario.minimum, null);
+  assert.equal(harvard.entry.easierMajorVerified, false);
+  assert.match(harvard.entry.text, /does not admit by academic program/);
+  assert.match(harvard.testing.text, /no testing cutoffs/);
+  for (const sat of [1500, 1600]) {
+    const plan = candidatePlan(input("95–100%", sat));
+    assert.ok(plan.selected.some((s) => s.id === "harvard"));
+    assert.match(candidateSatAdvice(harvard, sat, false), /very ambitious/);
+  }
+  for (const cell of candidateMatrix()) {
+    const names = cell.selected.map((s) => s.name);
+    assert.deepEqual(
+      names,
+      [...names].sort((a, b) => a.localeCompare(b, "en")),
+    );
+  }
+  const html = renderExplorer(
+    input("95–100%", 1500),
+    "scenario",
+    "",
+    new Set(),
+  );
+  assert.match(html, /Harvard University/);
+  assert.match(html, /not recommendation rank/);
+  assert.doesNotMatch(html, /scenario-order/);
+  assert.doesNotMatch(candidateCsv(), /Research order/);
 });

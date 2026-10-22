@@ -441,7 +441,7 @@ const rows: Record<GradeBand, string[][]> = {
       "rutgers-new-brunswick",
       "purdue-west-lafayette",
       "florida-state",
-      "minnesota-twin-cities",
+      "harvard",
       "southern-california",
     ],
   ],
@@ -504,7 +504,7 @@ const rows: Record<GradeBand, string[][]> = {
       "ohio-state-columbus",
       "rutgers-new-brunswick",
       "purdue-west-lafayette",
-      "florida-state",
+      "harvard",
     ],
   ],
 };
@@ -533,11 +533,13 @@ export function candidatePlan(input: ScenarioInput) {
   return {
     kind: "editorial-review" as const,
     referenceSat,
-    selected: ids.map((id) => {
-      const school = scenarioSchoolMap.get(id);
-      if (!school) throw new Error(`Missing researched school: ${id}`);
-      return school;
-    }),
+    selected: ids
+      .map((id) => {
+        const school = scenarioSchoolMap.get(id);
+        if (!school) throw new Error(`Missing researched school: ${id}`);
+        return school;
+      })
+      .sort((a, b) => a.name.localeCompare(b.name, "en")),
   };
 }
 export function candidateMatrix() {
@@ -568,6 +570,10 @@ export function gradeResearchNote(band: GradeBand | "", ko: boolean) {
     : "Include highly ranked universities as ambitious research options. At lower SAT scores, prioritize reviewing test-optional policies and their applicable years. Strong grades and scores do not guarantee admission or a humanities advantage.";
 }
 export function candidateRoute(s: ScenarioSchool, ko: boolean) {
+  if (s.id === "harvard")
+    return ko
+      ? "매우 높은 도전 · 편집 판단"
+      : "Very ambitious reach · editorial assessment";
   if (s.id === "washington-state")
     return ko
       ? "직접 입학 / Foundation 별도 검토"
@@ -615,6 +621,10 @@ export function candidateSatAdvice(
       ? `SAT ${s.satAlternative.minimum}+ 대체 경로의 총점에 해당합니다.${sections ? ` 영역별 ${sections.readingWriting}/${sections.math} 조건도 확인해야 합니다.` : ""} GPA 항목에 한하며 필수 과목·영어·졸업 요건은 별도입니다.`
       : `Meets the ${s.satAlternative.minimum}+ total for a GPA-component alternative.${sections ? ` Check section minima ${sections.readingWriting}/${sections.math}.` : ""} Coursework, English and graduation requirements remain.`;
   }
+  if (s.id === "harvard")
+    return ko
+      ? `SAT ${sat}점 자체로 지원이 배제되지는 않습니다. 공식 시험 최저점 제한은 없습니다. 점수만으로 적정·안정 지원으로 분류할 수 없으며 만점이어도 매우 높은 도전 후보입니다. 검증된 총점 분포는 기재하지 않았습니다.`
+      : `SAT ${sat} alone does not exclude an application: Harvard has no testing cutoff. A score alone cannot establish a match or safety; even a perfect score leaves this a very ambitious option. No verified composite distribution is asserted.`;
   if (!s.satRange)
     return ko
       ? "검증된 총점 분포가 없어 점수상 적정·안정으로 분류하지 않습니다. 아래 시험 규정과 학업 요건을 확인하세요."
@@ -632,7 +642,6 @@ export function candidateCsv() {
   const fields = [
     "Ontario band (editorial)",
     "SAT",
-    "Research order",
     "University",
     "Program",
     "Route",
@@ -646,11 +655,10 @@ export function candidateCsv() {
   const quote = (x: unknown) => `"${String(x ?? "").replaceAll('"', '""')}"`;
   const result = [fields];
   for (const cell of candidateMatrix())
-    cell.selected.forEach((s, index) =>
+    cell.selected.forEach((s) =>
       result.push([
         cell.band,
         String(cell.sat),
-        String(index + 1),
         s.name,
         s.entry.program,
         candidateRoute(s, false),

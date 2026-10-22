@@ -1,3 +1,4 @@
+import harvard from "../../research/candidate-harvard.json" with { type: "json" };
 import access from "../../research/scenario-access.json" with { type: "json" };
 import mid from "../../research/scenario-mid.json" with { type: "json" };
 import selective from "../../research/scenario-selective.json" with { type: "json" };
@@ -21,6 +22,7 @@ export const additionalScenarioSchools = [
   ...root.schools,
   ...ontario.schools,
   ...lowReview.newSchools,
+  ...harvard.schools,
 ] as unknown as ScenarioSchool[];
 export const scenarioRuleUpdates = updates.updates as unknown as {
   id: string;

@@ -1,0 +1,102 @@
+{
+  "checked": "2026-10-22",
+  "method": "Corrects a catalog omission, not a new admission cutoff. No composite SAT range is asserted: the official CDS PDF could not be retrieved and section percentiles must not be added.",
+  "schools": [
+    {
+      "id": "harvard",
+      "name": "Harvard University",
+      "nameKo": "하버드 대학교",
+      "state": "Massachusetts",
+      "city": "Cambridge",
+      "type": "Private",
+      "rank": {
+        "edition": "2026",
+        "value": null,
+        "sourceIds": []
+      },
+      "ontario": {
+        "minimum": null,
+        "basis": "No Ontario percentage admission cutoff verified. Harvard reviews the full school record in context; this shortlist placement is not a minimum requirement.",
+        "basisKo": "확인된 온타리오 백분율 합격선은 없습니다. 학교 환경과 전체 학업 기록을 심사하며 이 표의 구간 배치는 최소 지원 요건이 아닙니다.",
+        "sourceIds": ["harvard-apply", "harvard-international"]
+      },
+      "academic": {
+        "text": "The full application includes the transcript, school report, two teacher recommendations, essays and activities. The Class of 2029 had 47,893 applicants and 2,003 admits (about 4.2% overall, not an individual probability). Treat Harvard as a very ambitious option even with excellent grades and scores.",
+        "textKo": "성적표·학교 보고서·교사 추천서 2부·에세이·활동 등 전체 지원서를 심사합니다. 2029년 졸업 예정 학번은 지원자 47,893명 중 2,003명 선발(전체 약 4.2%, 개인 합격 확률 아님). 높은 성적·점수에서도 매우 높은 도전 후보로 검토합니다.",
+        "sourceIds": ["harvard-apply", "harvard-statistics"]
+      },
+      "testing": {
+        "policy": "required",
+        "text": "The current first-year policy requires SAT or ACT, with alternatives only in exceptional access cases. Harvard states that it has no testing cutoffs. Recheck the policy for the actual entry year.",
+        "textKo": "현행 신입학 규정은 SAT 또는 ACT 필수이며 시험 접근이 어려운 예외적 상황에 대체 시험을 허용합니다. 공식 안내에 시험 최저점 제한이 없다고 명시되어 있습니다. 실제 입학 연도 규정을 다시 확인하세요.",
+        "sourceIds": ["harvard-cutoff", "harvard-apply"]
+      },
+      "satRange": null,
+      "entry": {
+        "program": "History / Sociology, B.A.",
+        "programKo": "역사학 / 사회학 B.A.",
+        "unit": "Harvard College",
+        "unitKo": "하버드 칼리지",
+        "easierMajorVerified": false,
+        "text": "Both concentrations are offered. Harvard does not admit by academic program and has no field-specific quotas or targets. Students choose their concentration in sophomore year; these interests are not a verified easier admission route.",
+        "textKo": "역사학·사회학 전공을 운영합니다. 하버드는 학과별 입학이나 학문 분야별 정원·목표를 두지 않습니다. 전공은 2학년 때 선택하므로 이 전공들을 더 쉬운 입학 경로로 안내할 수 없습니다.",
+        "sourceIds": ["harvard-tips", "harvard-programs"]
+      },
+      "applicantScope": {
+        "text": "Applicants of all nationalities follow the same procedures and are considered in the same pool. A Korean citizen studying in Ontario may apply; Harvard still assesses the full application. English proficiency is essential, but a separate English-proficiency test is not required for first-year applicants.",
+        "textKo": "국적과 관계없이 같은 지원 절차와 심사 집단을 적용합니다. 온타리오에서 공부하는 한국 시민권자도 지원할 수 있으며 전체 지원서 심사는 별도로 필요합니다. 영어 능력은 중요하지만 신입생에게 별도 영어 공인시험은 필수가 아닙니다.",
+        "sourceIds": ["harvard-international"]
+      },
+      "sources": [
+        {
+          "id": "harvard-cutoff",
+          "title": "SAT/ACT minimum score FAQ",
+          "publisher": "Harvard College",
+          "url": "https://college.harvard.edu/resources/faq/do-i-need-minimum-required-sat-or-act-score",
+          "verified": "2026-10-22",
+          "cycle": "Current page checked 2026-10-22; recheck for Fall 2028"
+        },
+        {
+          "id": "harvard-apply",
+          "title": "First-year application requirements",
+          "publisher": "Harvard College",
+          "url": "https://college.harvard.edu/admissions/apply/first-year-applicants",
+          "verified": "2026-10-22",
+          "cycle": "Current page checked 2026-10-22; recheck for Fall 2028"
+        },
+        {
+          "id": "harvard-international",
+          "title": "International applicants",
+          "publisher": "Harvard College",
+          "url": "https://college.harvard.edu/admissions/apply/international-applicants",
+          "verified": "2026-10-22",
+          "cycle": "Current page checked 2026-10-22; recheck for Fall 2028"
+        },
+        {
+          "id": "harvard-programs",
+          "title": "Undergraduate concentrations",
+          "publisher": "Harvard College",
+          "url": "https://college.harvard.edu/academics/liberal-arts-sciences/concentrations",
+          "verified": "2026-10-22",
+          "cycle": "Current page checked 2026-10-22; recheck for Fall 2028"
+        },
+        {
+          "id": "harvard-tips",
+          "title": "Application tips: fields of study",
+          "publisher": "Harvard College",
+          "url": "https://college.harvard.edu/guides/application-tips",
+          "verified": "2026-10-22",
+          "cycle": "Current page checked 2026-10-22; recheck for Fall 2028"
+        },
+        {
+          "id": "harvard-statistics",
+          "title": "Admissions statistics: Class of 2029",
+          "publisher": "Harvard College",
+          "url": "https://college.harvard.edu/admissions/admissions-statistics",
+          "verified": "2026-10-22",
+          "cycle": "Class of 2029"
+        }
+      ]
+    }
+  ]
+}
