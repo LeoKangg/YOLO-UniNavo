@@ -19,15 +19,17 @@ Open the URL printed by Vite, normally `http://127.0.0.1:5173/`.
 pnpm validate     # data completeness, references, dates and IDs
 pnpm typecheck
 pnpm lint
-pnpm test         # 11 recommendation, validation and calendar regression tests
+pnpm test         # 16 recommendation, calendar and localization regression tests
 pnpm build       # production output in dist/
 pnpm preview     # preview the production build
 pnpm check:links  # network check; writes research/link-check.json
 ```
 
-No account, API key, database or backend is required. Profile, task completion and saved schools use browser localStorage. A blocked/corrupt store falls back to the current session. Browser data is not synchronized across devices. Google Fonts is the only runtime third-party asset request; system fonts are fallbacks. There is no analytics or form submission.
+No account, API key, database or backend is required. Language preference, profile, task completion and saved schools use browser localStorage. A blocked/corrupt store falls back to the current session. Browser data is not synchronized across devices. Google Fonts is the only runtime third-party asset request; system fonts are fallbacks. There is no analytics or form submission.
 
 ## Experience
+
+- Language: the header’s **한국어 / English** button switches all six views, university facts and the complete timeline. The choice persists in this browser; filters, saved schools and task IDs stay unchanged. Korean university/major search is supported. Official source document titles, publishers, reference cycles and book titles retain their original wording. No translation API is used.
 
 - Overview: Grade 11 → Grade 12 → Fall 2028, current priorities, grade-band selector and grounded SAT references.
 - Timeline: 23 months, October 2026–August 2028, 72 tasks, checkboxes, stage filter and hide-completed option.
@@ -44,6 +46,8 @@ src/style.css               Responsive layout and focus/reduced-motion styles
 src/types.ts                Shared types and supported grade bands
 src/recommendations.ts      Transparent conservative planning scenarios
 src/storage.ts              Resilient browser-local persistence
+src/i18n.ts                 Saved language, text localization, stable option values
+src/locales/ko-*.ts          Korean UI, university, planning and timeline translations
 src/data/index.ts           Research loading and source register
 src/data/strategies.ts      Editorial choices, majors and sourced score ranges
 src/data/timeline.ts        Monthly tasks with stable completion IDs
@@ -91,7 +95,7 @@ Important open items:
 2. Update the corresponding JSON fact, source IDs, status and source cycle. Record the actual review date; do not bulk-renew dates without reviewing the underlying sources. If updates are incremental, relax the current single-snapshot date assertion in `scripts/validate.ts` to validate per-source dates and update the UI snapshot labeling appropriately.
 3. Preserve unknowns/conflicts until resolved. Record statistics with cohort, counts/denominator where applicable, and score-submitter/admitted/enrolled scope. Never infer Ontario equivalencies.
 4. Review affected strategies in `src/data/strategies.ts`, score ranges and timeline entries. Keep task IDs stable for browser checklist continuity, or deliberately version the storage key if semantics change.
-5. Run validate, typecheck, lint, tests and build. Check changed source links, and inspect desktop/tablet/mobile, keyboard navigation and the detail dialog.
+5. Update the corresponding Korean text in `src/locales/` when changing English content. The English research remains canonical; preserve the same uncertainties, dates and exclusions in Korean. Run validate, typecheck, lint, tests and build. Check changed source links, and inspect desktop/tablet/mobile, keyboard navigation and the detail dialog.
 6. Update this README and the research coverage notes. Review the actual 2027–28 application cycle before using this snapshot to submit applications.
 
 ## Repository and deployment

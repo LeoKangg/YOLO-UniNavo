@@ -1,4 +1,5 @@
 import "./style.css";
+import { getLanguage, setLanguage, translate, localize } from "./i18n.ts";
 import {
   universities,
   sources,
@@ -54,22 +55,30 @@ const route = () =>
     ? location.hash.slice(1)
     : "overview";
 const date = (s: string) =>
-  new Date(`${s}T12:00:00Z`).toLocaleDateString("en-CA", {
-    month: "short",
-    day: "numeric",
-    year: "numeric",
-    timeZone: "UTC",
-  });
+  new Date(`${s}T12:00:00Z`).toLocaleDateString(
+    getLanguage() === "ko" ? "ko-KR" : "en-CA",
+    {
+      month: "short",
+      day: "numeric",
+      year: "numeric",
+      timeZone: "UTC",
+    },
+  );
 const month = (s: string) =>
-  new Date(`${s}-01T12:00:00Z`).toLocaleDateString("en-CA", {
-    month: "long",
-    year: "numeric",
-    timeZone: "UTC",
-  });
+  new Date(`${s}-01T12:00:00Z`).toLocaleDateString(
+    getLanguage() === "ko" ? "ko-KR" : "en-CA",
+    {
+      month: "long",
+      year: "numeric",
+      timeZone: "UTC",
+    },
+  );
 const link = (url: string, label: string, cls = "") =>
   `<a class="${cls}" href="${esc(url)}" target="_blank" rel="noopener noreferrer">${esc(label)} <span aria-hidden="true">↗</span></a>`;
 function refs(ids: string[]) {
-  return `<span class="references">${[...new Set(ids)]
+  return `<span class="references" data-original-language lang="en">${[
+    ...new Set(ids),
+  ]
     .map((id) => {
       const s = sourceMap.get(id);
       return s ? link(s.url, s.title) : "";
@@ -192,7 +201,7 @@ function universitiesPage() {
       (!state || u.state === state) &&
       (!sector || u.type.toLowerCase().includes(sector.toLowerCase())) &&
       (!universitySearch ||
-        `${u.name} ${s.majors.join(" ")}`
+        `${u.name} ${s.majors.join(" ")} ${translate(u.name, "ko")} ${s.majors.map((m) => translate(m, "ko")).join(" ")}`
           .toLowerCase()
           .includes(universitySearch.toLowerCase()))
     );
@@ -255,18 +264,29 @@ function resourcesPage() {
 }
 function sourcesPage() {
   const list = sources.filter((s) =>
-    `${s.title} ${s.publisher} ${s.url} ${s.cycle}`
+    `${s.title} ${s.publisher} ${s.url} ${s.cycle} ${universities
+      .filter((u) => u.sources.some((source) => source.id === s.id))
+      .map((u) => translate(u.name, "ko"))
+      .join(" ")}`
       .toLowerCase()
       .includes(sourceSearch.toLowerCase()),
   );
-  return `<div class="page-intro"><span class="eyebrow">FOLLOW THE EVIDENCE</span><h1>Clear sources.<br><em>Honest unknowns.</em></h1><p>Admissions offices, university catalogs, College Board, Ontario education and official government guidance. Every link opens the underlying page.</p></div><div class="source-summary"><div><strong>${universities.length}</strong><span>universities researched</span></div><div><strong>${sources.length}</strong><span>source records</span></div><div><strong>Oct 21, 2026</strong><span>research snapshot</span></div></div><div class="notice">“Verified” records when a source was reviewed, not a guarantee that every field is known or still current. Source cycle and each fact’s status distinguish historical references, conflicts, editorial guidance and unverified information.</div><div class="filter-bar"><label class="search-field"><span class="sr-only">Search sources</span><input type="search" id="source-search" placeholder="Search publisher, topic or university" value="${esc(sourceSearch)}"></label><span role="status" class="small muted">${list.length} source records</span></div><div class="source-list">${list.map((s) => `<article><div><span class="eyebrow">${esc(s.publisher)}</span><h2>${link(s.url, s.title)}</h2><p class="source-url">${esc(s.url)}</p><p class="small">${esc(s.cycle)}</p></div><span class="small muted">Reviewed<br>${date(s.verified)}</span></article>`).join("") || '<p class="empty-state">No sources match this search.</p>'}</div><details class="methodology"><summary>Research method & known limitations</summary><p>University admissions and program pages take precedence over aggregators. Official testing bodies, government agencies and publishers support testing, travel and materials. Books and essay advice are supplemental, not admissions requirements. An inaccessible or conflicting source is disclosed rather than filled with a guessed fact.</p><p>Fall 2028 application deadlines and most testing-policy commitments require rechecking. 2027–28 SAT dates are anticipated; 2028 AP dates are not yet published in the reviewed schedule. Cost figures retain their published year and exclusions. Ontario equivalents and English waivers require school-specific assessment.</p><p>This is an independently prepared planning tool, not a university service or an admissions prediction model.</p></details>`;
+  return `<div class="page-intro"><span class="eyebrow">FOLLOW THE EVIDENCE</span><h1>Clear sources.<br><em>Honest unknowns.</em></h1><p>Admissions offices, university catalogs, College Board, Ontario education and official government guidance. Every link opens the underlying page.</p><p class="small muted">Source document titles, publishers and reference cycles retain their original wording for verification.</p></div><div class="source-summary"><div><strong>${universities.length}</strong><span>universities researched</span></div><div><strong>${sources.length}</strong><span>source records</span></div><div><strong>Oct 21, 2026</strong><span>research snapshot</span></div></div><div class="notice">“Verified” records when a source was reviewed, not a guarantee that every field is known or still current. Source cycle and each fact’s status distinguish historical references, conflicts, editorial guidance and unverified information.</div><div class="filter-bar"><label class="search-field"><span class="sr-only">Search sources</span><input type="search" id="source-search" placeholder="Search publisher, topic or university" value="${esc(sourceSearch)}"></label><span role="status" class="small muted">${list.length} source records</span></div><div class="source-list">${list.map((s) => `<article><div><span class="eyebrow" data-original-language lang="en">${esc(s.publisher)}</span><h2 data-original-language lang="en">${link(s.url, s.title)}</h2><p class="source-url">${esc(s.url)}</p><p class="small" data-original-language lang="en">${esc(s.cycle)}</p></div><span class="small muted">Reviewed<br>${date(s.verified)}</span></article>`).join("") || '<p class="empty-state">No sources match this search.</p>'}</div><details class="methodology"><summary>Research method & known limitations</summary><p>University admissions and program pages take precedence over aggregators. Official testing bodies, government agencies and publishers support testing, travel and materials. Books and essay advice are supplemental, not admissions requirements. An inaccessible or conflicting source is disclosed rather than filled with a guessed fact.</p><p>Fall 2028 application deadlines and most testing-policy commitments require rechecking. 2027–28 SAT dates are anticipated; 2028 AP dates are not yet published in the reviewed schedule. Cost figures retain their published year and exclusions. Ontario equivalents and English waivers require school-specific assessment.</p><p>This is an independently prepared planning tool, not a university service or an admissions prediction model.</p></details>`;
 }
 function render(restoreFocus = false) {
   const active = document.activeElement as HTMLInputElement | null;
   const focusId = restoreFocus ? active?.id : "";
   const selection = active?.type === "search" ? active.selectionStart : null;
   const r = route();
-  app.innerHTML = `<aside class="sidebar"><a class="brand" href="#overview" aria-label="UniNavo home"><span class="brand-symbol">u<span>↗</span></span><span>UniNavo<span class="brand-sub">YOUR NEXT CHAPTER</span></span></a><nav aria-label="Main navigation">${nav.map((n) => `<a href="#${n.id}" ${r === n.id ? 'aria-current="page"' : ""}><span aria-hidden="true">${n.icon}</span>${n.label}${n.id === "timeline" ? "<i></i>" : ""}</a>`).join("")}</nav><div class="sidebar-bottom"><div class="student-icon">11</div><strong>Ontario, Canada</strong><span>Grade 11 · Semester 1</span><span class="sidebar-tag">FALL 2028 ENTRY</span><p>One thoughtful step<br>at a time.</p></div></aside><div class="workspace"><header class="topbar"><span>YOUR U.S. UNIVERSITY PLANNER</span><span class="top-status"><i></i> Planning from October 2026</span></header><main id="main" tabindex="-1">${r === "overview" ? overview() : r === "timeline" ? timelinePage() : r === "universities" ? universitiesPage() : r === "exams" ? examsPage() : r === "resources" ? resourcesPage() : sourcesPage()}</main><footer><a class="footer-brand" href="#overview">UniNavo</a><div><strong>Built around your next step.</strong><p>Last verified: October 21, 2026. Admission policies and deadlines can change. Always confirm final requirements on the university’s official admissions website before applying.</p><span>This is planning guidance, not an admission guarantee. ${persistenceAvailable ? "Your checklist and profile stay in this browser." : "Browser storage is unavailable. Changes are kept for this session only."}</span></div><a href="#sources">View sources ↗</a></footer></div><dialog id="university-dialog" aria-labelledby="dialog-title"></dialog><div id="live-status" class="sr-only" role="status" aria-live="polite"></div>`;
+  app.innerHTML = `<aside class="sidebar"><a class="brand" href="#overview" aria-label="UniNavo home"><span class="brand-symbol">u<span>↗</span></span><span>UniNavo<span class="brand-sub">YOUR NEXT CHAPTER</span></span></a><nav aria-label="Main navigation">${nav.map((n) => `<a href="#${n.id}" ${r === n.id ? 'aria-current="page"' : ""}><span aria-hidden="true">${n.icon}</span>${n.label}${n.id === "timeline" ? "<i></i>" : ""}</a>`).join("")}</nav><div class="sidebar-bottom"><div class="student-icon">11</div><strong>Ontario, Canada</strong><span>Grade 11 · Semester 1</span><span class="sidebar-tag">FALL 2028 ENTRY</span><p>One thoughtful step<br>at a time.</p></div></aside><div class="workspace"><header class="topbar"><span>YOUR U.S. UNIVERSITY PLANNER</span><div class="top-actions"><span class="top-status"><i></i> Planning from October 2026</span><button id="language-toggle" class="language-toggle" lang="${getLanguage() === "en" ? "ko" : "en"}" aria-label="${getLanguage() === "en" ? "한국어로 보기" : "Switch to English"}"><span aria-hidden="true">◎</span> ${getLanguage() === "en" ? "한국어" : "English"}</button></div></header><main id="main" tabindex="-1">${r === "overview" ? overview() : r === "timeline" ? timelinePage() : r === "universities" ? universitiesPage() : r === "exams" ? examsPage() : r === "resources" ? resourcesPage() : sourcesPage()}</main><footer><a class="footer-brand" href="#overview">UniNavo</a><div><strong>Built around your next step.</strong><p>Last verified: October 21, 2026. Admission policies and deadlines can change. Always confirm final requirements on the university’s official admissions website before applying.</p><span>This is planning guidance, not an admission guarantee. ${persistenceAvailable ? "Your checklist and profile stay in this browser." : "Browser storage is unavailable. Changes are kept for this session only."}</span></div><a href="#sources">View sources ↗</a></footer></div><dialog id="university-dialog" aria-labelledby="dialog-title"></dialog><div id="live-status" class="sr-only" role="status" aria-live="polite"></div>`;
+  document.documentElement.lang = getLanguage();
+  document.title =
+    getLanguage() === "ko"
+      ? "UniNavo | 온타리오 학생을 위한 미국 대학 입학 플래너"
+      : "UniNavo | Ontario to U.S. College Planner";
+  const skip = document.querySelector(".skip");
+  if (skip) skip.textContent = translate("Skip to content");
+  localize(app);
   bind();
   if (focusId) {
     const node = document.getElementById(focusId) as HTMLInputElement | null;
@@ -284,6 +304,11 @@ function clearFilters() {
   render();
 }
 function bind() {
+  document.getElementById("language-toggle")?.addEventListener("click", () => {
+    persistenceAvailable =
+      setLanguage(getLanguage() === "en" ? "ko" : "en") && persistenceAvailable;
+    render(true);
+  });
   document
     .querySelector<HTMLSelectElement>("#grade-band")
     ?.addEventListener("change", (e) => {
@@ -476,7 +501,7 @@ function openUniversity(id: string) {
     .map(([key, f]) => fact(f, factLabels[key] ?? key))
     .join(
       "",
-    )}</div><section class="detail-sources"><h3>Official sources</h3>${u.sources.map((source) => `<div>${link(source.url, source.title)}<p class="source-url">${esc(source.url)}</p><small>${esc(source.publisher)} · ${esc(source.cycle)} · Reviewed ${date(source.verified)}</small></div>`).join("")}</section></div>`;
+    )}</div><section class="detail-sources"><h3>Official sources</h3>${u.sources.map((source) => `<div>${link(source.url, source.title)}<p class="source-url">${esc(source.url)}</p><small><span data-original-language lang="en">${esc(source.publisher)} · ${esc(source.cycle)}</span> · <span>Reviewed</span> ${date(source.verified)}</small></div>`).join("")}</section></div>`;
   dialog
     .querySelector(".close-dialog")!
     .addEventListener("click", () => dialog.close());
@@ -492,6 +517,7 @@ function openUniversity(id: string) {
         dialog.close();
     }
   };
+  localize(dialog);
   dialog.showModal();
 }
 document.querySelector(".skip")?.addEventListener("click", (event) => {
