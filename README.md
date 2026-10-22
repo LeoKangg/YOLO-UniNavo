@@ -1,5 +1,7 @@
 # UniNavo
 
+**Live site:** https://ivyparc.github.io/UniNavo/ · **Implementation PR:** https://github.com/ivyparc/UniNavo/pull/1
+
 A source-linked U.S. university admission planner for an Ontario student in Grade 11, Semester 1 (October 2026), targeting Fall 2028 entry. The planner assumes normal progression to Grade 12 in 2027–28 and high-school graduation in June 2028. This is planning guidance, not an admission guarantee.
 
 ## Run locally
@@ -99,3 +101,17 @@ The only project repository is **https://github.com/ivyparc/UniNavo**. Work is p
 The production `dist/` output is static. `pnpm build:pages` builds with the `/UniNavo/` asset base for GitHub Pages. Hash-based routes need no server-side fallback beyond `index.html`.
 
 GitHub Pages publication uses a separate `codex/site` branch in this same repository containing only the built static output and `.nojekyll`. Source development remains on `codex/us-college-planner`. Updating the deployed build requires rebuilding and publishing that artifact branch; source changes do not silently redeploy the site.
+
+### Republishing the existing Pages branch
+
+After reviewing and committing source/data updates, run `pnpm build:pages`. Publish the resulting `dist/` files to the root of the existing `codex/site` branch, retaining `.nojekyll`, with a normal new commit and fast-forward push to **ivyparc/UniNavo**. Use a separate working tree for that branch so generated files cannot replace the source checkout. Never force-push or change repository identity. Check the repository's Pages deployment result and open the live URL before claiming the update is published. No Pages settings change is needed for subsequent artifact updates.
+
+### Verification record
+
+- Local validation, typecheck, lint, 11 tests and both standard/Pages production builds passed.
+- GitHub Actions `Validate planner` passed for the implementation commit.
+- Browser inspection at 1440px desktop, 820px tablet and 390px mobile found no document-level horizontal overflow. The mobile SAT table scrolls inside its container.
+- Verified grade filtering, six-pick generation, low-band empty state, advanced state filter, university detail sources, Escape/focus return, AP tab, source search, checklist persistence and saved-school persistence.
+- The deployed Pages URL loaded successfully with no observed console errors; navigation and the university detail dialog worked on the production bundle.
+
+![Desktop preview](docs/preview.jpg)
