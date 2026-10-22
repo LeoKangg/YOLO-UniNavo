@@ -1,0 +1,812 @@
+[
+  {
+    "id": "michigan-ann-arbor",
+    "name": "University of Michigan–Ann Arbor",
+    "city": "Ann Arbor",
+    "state": "Michigan",
+    "type": "Public",
+    "recognition": "Very High",
+    "sources": [
+      {
+        "id": "umich-app",
+        "title": "First-year requirements and deadlines",
+        "publisher": "University of Michigan Undergraduate Admissions",
+        "url": "https://admissions.umich.edu/apply/first-year-applicants/requirements-deadlines",
+        "verified": "2026-10-22",
+        "cycle": "Current 2026–27 application cycle; Fall2028 unconfirmed"
+      },
+      {
+        "id": "umich-country",
+        "title": "Requirements by country — Canada/Ontario",
+        "publisher": "University of Michigan Undergraduate Admissions",
+        "url": "https://admissions.umich.edu/apply/international-applicants/requirements-deadlines/requirements-country",
+        "verified": "2026-10-22",
+        "cycle": "Current curriculum requirements; recheck2028"
+      },
+      {
+        "id": "umich-prep",
+        "title": "College preparation",
+        "publisher": "University of Michigan Undergraduate Admissions",
+        "url": "https://admissions.umich.edu/apply/first-year-applicants/college-preparation",
+        "verified": "2026-10-22",
+        "cycle": "Current school/college course expectations"
+      },
+      {
+        "id": "umich-cds",
+        "title": "Common Data Set2025–2026, C9",
+        "publisher": "University of Michigan Office of Budget and Planning",
+        "url": "https://obp.umich.edu/wp-content/uploads/pubdata/cds/cds_2025-26_umaa.pdf",
+        "verified": "2026-10-22",
+        "cycle": "Fall2025 enrolled first-year cohort"
+      },
+      {
+        "id": "umich-english",
+        "title": "Exams and visas — English proficiency",
+        "publisher": "University of Michigan Undergraduate Admissions",
+        "url": "https://admissions.umich.edu/apply/international-applicants/exams-visas",
+        "verified": "2026-10-22",
+        "cycle": "Current page includes TOEFL scale from Jan21,2026"
+      },
+      {
+        "id": "umich-majors",
+        "title": "LSA major declaration guidelines",
+        "publisher": "University of Michigan College of LSA",
+        "url": "https://lsa.umich.edu/lsa/academics/lsa-requirements/majors.html",
+        "verified": "2026-10-22",
+        "cycle": "Current LSA degree rules"
+      },
+      {
+        "id": "umich-soc",
+        "title": "Sociology advising and declaration",
+        "publisher": "University of Michigan Sociology",
+        "url": "https://lsa.umich.edu/soc/undergraduates/advising.html",
+        "verified": "2026-10-22",
+        "cycle": "Current declaration rules"
+      },
+      {
+        "id": "umich-history",
+        "title": "History major",
+        "publisher": "University of Michigan College of LSA",
+        "url": "https://lsa.umich.edu/lsa/academics/majors-minors/history-major.html",
+        "verified": "2026-10-22",
+        "cycle": "Current major requirements"
+      },
+      {
+        "id": "umich-anthro",
+        "title": "Anthropology advising",
+        "publisher": "University of Michigan Anthropology",
+        "url": "https://lsa.umich.edu/anthro/undergraduates/advising.html",
+        "verified": "2026-10-22",
+        "cycle": "Current declaration rules"
+      },
+      {
+        "id": "umich-ap",
+        "title": "AP and IB credit",
+        "publisher": "University of Michigan Undergraduate Admissions",
+        "url": "https://admissions.umich.edu/apply/first-year-applicants/ap-ib-credit",
+        "verified": "2026-10-22",
+        "cycle": "Current credit overview;2028 awards may differ"
+      },
+      {
+        "id": "umich-cost",
+        "title": "Estimating costs",
+        "publisher": "University of Michigan Financial Aid",
+        "url": "https://finaid.umich.edu/getting-started/estimating-costs",
+        "verified": "2026-10-22",
+        "cycle": "2026–27 approved rates; LSA budget"
+      },
+      {
+        "id": "umich-intl",
+        "title": "International applicants",
+        "publisher": "University of Michigan Undergraduate Admissions",
+        "url": "https://admissions.umich.edu/apply/international-applicants",
+        "verified": "2026-10-22",
+        "cycle": "Current international funding guidance"
+      },
+      {
+        "id": "umich-rank",
+        "title": "U-M ranks high on U.S. News & World Report lists",
+        "publisher": "University of Michigan Annual Report",
+        "url": "https://www.umichbonds.umich.edu/regents-of-the-university-of-michigan-mi/about/news/i6587?newsId=57908",
+        "verified": "2026-10-22",
+        "cycle": "2026 U.S. News National Universities; university report published September 23, 2025"
+      },
+      {
+        "id": "umich-all-programs",
+        "title": "Majors and degrees",
+        "publisher": "University of Michigan Undergraduate Admissions",
+        "url": "https://admissions.umich.edu/academics-majors/majors-degrees",
+        "verified": "2026-10-22",
+        "cycle": "Current undergraduate program directory;2028 offerings may change"
+      }
+    ],
+    "facts": {
+      "admission": {
+        "text": "School/college review is selective. An Ontario average alone cannot establish admission; treat Michigan as a high reach.",
+        "sourceIds": ["umich-prep"],
+        "status": "editorial"
+      },
+      "acceptanceRate": {
+        "text": "No admission percentage is used in this planner.",
+        "sourceIds": [],
+        "status": "not-verified"
+      },
+      "sat": {
+        "text": "The current application permits optional SAT/ACT submission and self-reporting. Enrolling score submitters must provide official results. Fall2028 policy requires confirmation.",
+        "sourceIds": ["umich-app"],
+        "status": "confirm"
+      },
+      "satMiddle50": {
+        "text": "SAT1370–1530: middle50% of Fall2025 enrolled first-year SAT submitters.55% submitted SAT; this is not an Ontario cutoff.",
+        "sourceIds": ["umich-cds"],
+        "status": "verified"
+      },
+      "satTarget": {
+        "text": "Use the published range as score context only; even1500 cannot establish admission or compensate automatically for low school marks.",
+        "sourceIds": ["umich-cds"],
+        "status": "editorial"
+      },
+      "deadlines": {
+        "text": "Fall2028 deadlines are not yet verified. Current reference: binding ED and nonbinding EA November1; RD February1. Music/Theatre/Dance has a separate December1 deadline.",
+        "sourceIds": ["umich-app"],
+        "status": "future-unpublished"
+      },
+      "application": {
+        "text": "Common App, USD75, transcript, School Report, one academic recommendation and applicable English proof. Additional college portfolios/auditions may apply; confirm future essays.",
+        "sourceIds": ["umich-app"],
+        "status": "verified"
+      },
+      "ontario": {
+        "text": "At least five Grade12 U courses, including Grade12 U English, leading to OSSD are required. Apply during senior year. No Ontario percentage minimum is stated.",
+        "sourceIds": ["umich-country"],
+        "status": "verified"
+      },
+      "coursework": {
+        "text": "LSA expects English4 years, math/science/social studies3 each and world language2; four language years are encouraged. Confirm Ontario course equivalencies with Admissions.",
+        "sourceIds": ["umich-prep"],
+        "status": "verified"
+      },
+      "international": {
+        "text": "Ontario schooling and citizenship are separate questions. Use the international curriculum instructions and confirm status-specific funding rules.",
+        "sourceIds": ["umich-country", "umich-intl"],
+        "status": "confirm"
+      },
+      "english": {
+        "text": "IELTS guidance:7.0 with sections6.5+. The stated waiver combines SAT reading/writing650+ (or ACT English and Reading27+) AND four recent rigorous years in listed countries including Canada except Quebec. Confirm individual eligibility.",
+        "sourceIds": ["umich-english"],
+        "status": "verified"
+      },
+      "majorStructure": {
+        "text": "LSA majors are normally declared in sophomore year. Sociology requires a qualifying introductory course at C− or better; History and Anthropology use departmental advising. These are post-enrollment rules, not freshman cutoffs.",
+        "sourceIds": [
+          "umich-majors",
+          "umich-soc",
+          "umich-history",
+          "umich-anthro"
+        ],
+        "status": "verified"
+      },
+      "recommendedMajors": {
+        "text": "Sociology, History and Anthropology are flexible LSA subjects to explore if they match your interests. No easier-entry advantage is established.",
+        "sourceIds": ["umich-soc", "umich-history", "umich-anthro"],
+        "status": "editorial"
+      },
+      "ap": {
+        "text": "High AP exam results may earn advanced standing under school-specific tables. AP enrollment alone does not earn credit; recheck the2028 table.",
+        "sourceIds": ["umich-ap"],
+        "status": "verified"
+      },
+      "cost": {
+        "text": "2026–27 LSA nonresident lower-division estimated annual budget: USD88,394, including tuition/fees67,096. This is a two-semester estimate, not a2028 international bill; program and individual costs vary.",
+        "sourceIds": ["umich-cost"],
+        "status": "verified"
+      },
+      "aid": {
+        "text": "The admissions office says temporary-visa international students are ineligible for financial aid and should plan to pay full attendance costs. Confirm exceptional departmental awards and citizenship-based eligibility; no CSS-based grant is promised.",
+        "sourceIds": ["umich-intl"],
+        "status": "verified"
+      }
+    }
+  },
+  {
+    "id": "wisconsin-madison",
+    "name": "University of Wisconsin–Madison",
+    "city": "Madison",
+    "state": "Wisconsin",
+    "type": "Public",
+    "recognition": "Very High",
+    "sources": [
+      {
+        "id": "wisc-review",
+        "title": "What we look for",
+        "publisher": "UW–Madison Admissions",
+        "url": "https://admissions.wisc.edu/can-i-get-in-to-uw-madison/",
+        "verified": "2026-10-22",
+        "cycle": "Current holistic review and direct-entry policy"
+      },
+      {
+        "id": "wisc-app",
+        "title": "Apply as a first-year student",
+        "publisher": "UW–Madison Admissions",
+        "url": "https://admissions.wisc.edu/apply-as-a-freshman/",
+        "verified": "2026-10-22",
+        "cycle": "Current application; test optional through spring2028 only"
+      },
+      {
+        "id": "wisc-materials",
+        "title": "Required application materials",
+        "publisher": "UW–Madison Admissions",
+        "url": "https://admissions.wisc.edu/required-materials/",
+        "verified": "2026-10-22",
+        "cycle": "Current application checklist"
+      },
+      {
+        "id": "wisc-intl",
+        "title": "International students applying",
+        "publisher": "UW–Madison Admissions",
+        "url": "https://admissions.wisc.edu/international/",
+        "verified": "2026-10-22",
+        "cycle": "Current transcripts and English; TOEFL2026 scale"
+      },
+      {
+        "id": "wisc-courses",
+        "title": "First-year academic requirements",
+        "publisher": "UW–Madison Admissions",
+        "url": "https://admissions.wisc.edu/first-year-academic-requirements/",
+        "verified": "2026-10-22",
+        "cycle": "Current high-school course rules"
+      },
+      {
+        "id": "wisc-soc",
+        "title": "Sociology BA",
+        "publisher": "UW–Madison Guide",
+        "url": "https://guide.wisc.edu/undergraduate/letters-science/sociology/sociology-ba/",
+        "verified": "2026-10-22",
+        "cycle": "2026–27 catalog"
+      },
+      {
+        "id": "wisc-history",
+        "title": "History BA",
+        "publisher": "UW–Madison Guide",
+        "url": "https://guide.wisc.edu/undergraduate/letters-science/history/history-ba/",
+        "verified": "2026-10-22",
+        "cycle": "2026–27 catalog"
+      },
+      {
+        "id": "wisc-anthro",
+        "title": "Anthropology BA",
+        "publisher": "UW–Madison Guide",
+        "url": "https://guide.wisc.edu/undergraduate/letters-science/anthropology/anthropology-ba/",
+        "verified": "2026-10-22",
+        "cycle": "2026–27 catalog"
+      },
+      {
+        "id": "wisc-ap",
+        "title": "Test credit evaluation",
+        "publisher": "UW–Madison Registrar",
+        "url": "https://registrar.wisc.edu/test-credit/",
+        "verified": "2026-10-22",
+        "cycle": "Current exam-credit process"
+      },
+      {
+        "id": "wisc-cost",
+        "title": "Tuition and fees",
+        "publisher": "UW–Madison Bursar",
+        "url": "https://bursar.wisc.edu/tuition-and-fees",
+        "verified": "2026-10-22",
+        "cycle": "2026–27 tuition announcement and rate workbook"
+      },
+      {
+        "id": "wisc-aid",
+        "title": "International scholarships",
+        "publisher": "UW–Madison Admissions",
+        "url": "https://admissions.wisc.edu/international-scholarships/",
+        "verified": "2026-10-22",
+        "cycle": "Current international scholarship rules"
+      },
+      {
+        "id": "wisc-rank",
+        "title": "UW rises to36th overall in U.S.News",
+        "publisher": "UW–Madison News",
+        "url": "https://news.wisc.edu/uw-rises-to-36th-overall-12th-among-publics-in-u-s-news-rankings/",
+        "verified": "2026-10-22",
+        "cycle": "2026 Best Colleges; published September23,2025"
+      },
+      {
+        "id": "wisc-all-programs",
+        "title": "Undergraduate Guide",
+        "publisher": "UW–Madison",
+        "url": "https://guide.wisc.edu/undergraduate/",
+        "verified": "2026-10-22",
+        "cycle": "Current undergraduate program directory;2028 offerings may change"
+      }
+    ],
+    "facts": {
+      "admission": {
+        "text": "Holistic review emphasizes strong academic preparation and achievement. UW explicitly does not use admission formulas or charts. No Ontario average cutoff was verified.",
+        "sourceIds": ["wisc-review"],
+        "status": "verified"
+      },
+      "acceptanceRate": {
+        "text": "No defined-cohort admission percentage is used here.",
+        "sourceIds": [],
+        "status": "not-verified"
+      },
+      "sat": {
+        "text": "SAT/ACT are optional only through spring2028 in the published authorization. This does not establish the Fall2028 policy.",
+        "sourceIds": ["wisc-app"],
+        "status": "confirm"
+      },
+      "satMiddle50": {
+        "text": "A current official SAT cohort table could not be verified in this research; no range is invented.",
+        "sourceIds": [],
+        "status": "not-verified"
+      },
+      "satTarget": {
+        "text": "Confirm the Fall2028 test policy and a dated score distribution before setting a submission target.",
+        "sourceIds": ["wisc-app"],
+        "status": "editorial"
+      },
+      "deadlines": {
+        "text": "Fall2028 dates are not yet verified. Current fall reference: EA November1, materials November9; RD January15, materials January22. EA is nonbinding.",
+        "sourceIds": ["wisc-app"],
+        "status": "future-unpublished"
+      },
+      "application": {
+        "text": "Common App or Universities of Wisconsin Application; USD80; two essays, courses/grades for Grades9–12, one academic recommendation and applicable English proof.",
+        "sourceIds": ["wisc-materials", "wisc-app"],
+        "status": "verified"
+      },
+      "ontario": {
+        "text": "For an unlisted curriculum, send official Grades9–12-equivalent records and graduation credentials. No Ontario top-six formula or percentage minimum is verified; confirm U/M course equivalencies.",
+        "sourceIds": ["wisc-intl"],
+        "status": "confirm"
+      },
+      "coursework": {
+        "text": "Minimums: English4 years; math, natural science and social science3 each; electives4. Math must include algebra, geometry and advanced math. Statistics alone does not satisfy the math requirement.",
+        "sourceIds": ["wisc-courses"],
+        "status": "verified"
+      },
+      "international": {
+        "text": "International students use the same first-year application, with curriculum-specific records. Funding eligibility depends on citizenship/visa status.",
+        "sourceIds": ["wisc-intl", "wisc-aid"],
+        "status": "verified"
+      },
+      "english": {
+        "text": "For applicants educated in non-English-speaking countries: English-medium study for all four secondary years may waive testing. Otherwise IELTS6.5+, DET115+, or TOEFL4.5 for tests from January21,2026 (80 for earlier tests). SAT/AP do not waive it.",
+        "sourceIds": ["wisc-intl"],
+        "status": "verified"
+      },
+      "majorStructure": {
+        "text": "Business, engineering, music and dance have direct-entry review. Sociology, History and Anthropology list no separate application, course, credit or GPA threshold to declare after university admission.",
+        "sourceIds": ["wisc-review", "wisc-soc", "wisc-history", "wisc-anthro"],
+        "status": "verified"
+      },
+      "recommendedMajors": {
+        "text": "Sociology, History and Anthropology are options for academic exploration. Their open declaration rules are not lower freshman admission thresholds.",
+        "sourceIds": ["wisc-soc", "wisc-history", "wisc-anthro"],
+        "status": "editorial"
+      },
+      "ap": {
+        "text": "AP may earn credit under the exam-specific Guide table. Send official College Board results; AP exams must be completed in high school. Credit is not an admission guarantee.",
+        "sourceIds": ["wisc-ap"],
+        "status": "verified"
+      },
+      "cost": {
+        "text": "Tuition depends on program, credits and residency; the Bursar publishes the2026–27 rate workbook. A complete current international annual budget was not verified here. Request tuition, housing, insurance and travel totals before shortlisting.",
+        "sourceIds": ["wisc-cost"],
+        "status": "confirm"
+      },
+      "aid": {
+        "text": "International applicants can search WiSH scholarships. F/J international students do not qualify for federal or Wisconsin state aid. Scholarship deadlines are often February1 or earlier; confirm2028 and any CSS requirement with Financial Aid.",
+        "sourceIds": ["wisc-aid"],
+        "status": "verified"
+      }
+    }
+  },
+  {
+    "id": "ohio-state-columbus",
+    "name": "The Ohio State University–Columbus",
+    "city": "Columbus",
+    "state": "Ohio",
+    "type": "Public",
+    "recognition": "High",
+    "sources": [
+      {
+        "id": "osu-review",
+        "title": "Who gets in — international first-years",
+        "publisher": "Ohio State Undergraduate Admissions",
+        "url": "https://undergrad.osu.edu/apply/international-freshmen/who-gets-in",
+        "verified": "2026-10-22",
+        "cycle": "Current page; admitted-score chart year not identified"
+      },
+      {
+        "id": "osu-app",
+        "title": "Apply step-by-step — international first-years",
+        "publisher": "Ohio State Undergraduate Admissions",
+        "url": "https://undergrad.osu.edu/apply/international-freshmen/apply-step-by-step",
+        "verified": "2026-10-22",
+        "cycle": "Autumn2027 application; Fall2028 unconfirmed"
+      },
+      {
+        "id": "osu-common",
+        "title": "Common Application — international first-years",
+        "publisher": "Ohio State Undergraduate Admissions",
+        "url": "https://undergrad.osu.edu/apply/international-freshmen/common-app",
+        "verified": "2026-10-22",
+        "cycle": "Current application fee and major choice"
+      },
+      {
+        "id": "osu-units",
+        "title": "International enrollment criteria",
+        "publisher": "Ohio State Undergraduate Admissions",
+        "url": "https://undergrad.osu.edu/apply/international-enrollment-criteria",
+        "verified": "2026-10-22",
+        "cycle": "Current college/major enrollment rules"
+      },
+      {
+        "id": "osu-history",
+        "title": "History BA",
+        "publisher": "Ohio State Undergraduate Admissions",
+        "url": "https://undergrad.osu.edu/majors-and-academics/majors/detail/80",
+        "verified": "2026-10-22",
+        "cycle": "Current undergraduate program"
+      },
+      {
+        "id": "osu-soc",
+        "title": "Sociology BA/BS",
+        "publisher": "Ohio State Undergraduate Admissions",
+        "url": "https://undergrad.osu.edu/majors-and-academics/majors/detail/147",
+        "verified": "2026-10-22",
+        "cycle": "Current undergraduate program"
+      },
+      {
+        "id": "osu-classics",
+        "title": "Ancient History and Classics BA",
+        "publisher": "Ohio State Undergraduate Admissions",
+        "url": "https://undergrad.osu.edu/majors-and-academics/majors/detail/11",
+        "verified": "2026-10-22",
+        "cycle": "Current undergraduate program"
+      },
+      {
+        "id": "osu-ap",
+        "title": "Advanced Placement credit",
+        "publisher": "Ohio State Registrar",
+        "url": "https://registrar.osu.edu/prior-learning-assessment/examination-credit/advanced-placement-ap/",
+        "verified": "2026-10-22",
+        "cycle": "Current equivalencies; admission-term policy governs"
+      },
+      {
+        "id": "osu-cost",
+        "title": "Basic costs",
+        "publisher": "Ohio State Undergraduate Admissions",
+        "url": "https://undergrad.osu.edu/cost-and-aid/basic-costs",
+        "verified": "2026-10-22",
+        "cycle": "2026–27 international budget"
+      },
+      {
+        "id": "osu-aid",
+        "title": "Merit scholarships",
+        "publisher": "Ohio State Undergraduate Admissions",
+        "url": "https://undergrad.osu.edu/cost-and-aid/merit-based-Scholarships",
+        "verified": "2026-10-22",
+        "cycle": "Current university-funded first-year merit eligibility"
+      },
+      {
+        "id": "osu-funds",
+        "title": "After admission — international first-years",
+        "publisher": "Ohio State Undergraduate Admissions",
+        "url": "https://undergrad.osu.edu/apply/international-freshmen/after-you-are-admitted",
+        "verified": "2026-10-22",
+        "cycle": "Current financial support requirement"
+      },
+      {
+        "id": "osu-rank",
+        "title": "Ohio State maintains position among top public universities",
+        "publisher": "Ohio State News",
+        "url": "https://news.osu.edu/ohio-state-maintains-position-as-one-of-nations-top-public-universities-in-new-rankings/",
+        "verified": "2026-10-22",
+        "cycle": "2026 Best Colleges; September2025"
+      },
+      {
+        "id": "osu-all-programs",
+        "title": "Majors and degrees",
+        "publisher": "Ohio State Undergraduate Admissions",
+        "url": "https://undergrad.osu.edu/majors-and-academics/majors",
+        "verified": "2026-10-22",
+        "cycle": "Current undergraduate program directory;2028 offerings may change"
+      }
+    ],
+    "facts": {
+      "admission": {
+        "text": "Holistic review; Ohio State states no minimum GPA, class rank or SAT/ACT score. This does not mean low grades are competitive.",
+        "sourceIds": ["osu-review"],
+        "status": "verified"
+      },
+      "acceptanceRate": {
+        "text": "No defined-cohort acceptance percentage is used.",
+        "sourceIds": [],
+        "status": "not-verified"
+      },
+      "sat": {
+        "text": "ACT or SAT is required for first-year Columbus applicants in the current Autumn2027 instructions. Official scores and superscoring are used; confirm Fall2028.",
+        "sourceIds": ["osu-app"],
+        "status": "confirm"
+      },
+      "satMiddle50": {
+        "text": "The current admissions page shows1280–1470 for the admitted-student SAT middle50%, but does not identify the year. It is retained as an undated reference, not used as a dated comparison cohort.",
+        "sourceIds": ["osu-review"],
+        "status": "confirm"
+      },
+      "satTarget": {
+        "text": "No Ontario-grade×SAT formula is published.1100–1500 scenarios cannot establish admission from a score alone.",
+        "sourceIds": ["osu-review"],
+        "status": "editorial"
+      },
+      "deadlines": {
+        "text": "Fall2028 deadlines are not yet verified. Autumn2027: EA November1,2026; RD January15,2027; acceptance fee May1,2027. All required materials must arrive by the application deadline.",
+        "sourceIds": ["osu-app"],
+        "status": "future-unpublished"
+      },
+      "application": {
+        "text": "Common App; international fee USD70. Official Grades9–12 records and testing; recommendations optional (maximum two).",
+        "sourceIds": ["osu-app", "osu-common"],
+        "status": "verified"
+      },
+      "ontario": {
+        "text": "Send original official records for the final four secondary years. No Ontario top-six formula or percentage minimum is published in the reviewed guidance.",
+        "sourceIds": ["osu-app"],
+        "status": "confirm"
+      },
+      "coursework": {
+        "text": "University-preparatory coursework, rigor and achievement are reviewed. Ask Admissions to confirm Ontario U/M equivalencies for the intended program.",
+        "sourceIds": ["osu-review"],
+        "status": "confirm"
+      },
+      "international": {
+        "text": "International classification excludes U.S. citizens, permanent residents, refugees and asylees. International applicants must choose a degree major; undecided/University Exploration is unavailable.",
+        "sourceIds": ["osu-app", "osu-common"],
+        "status": "verified"
+      },
+      "english": {
+        "text": "Examples: IELTS6.5, DET120, SAT reading/writing550; TOEFL4.0 from January21,2026. Canadian citizenship outside Quebec is listed among exemptions; Ontario attendance alone is not that exemption. Confirm individual status.",
+        "sourceIds": ["osu-app"],
+        "status": "verified"
+      },
+      "majorStructure": {
+        "text": "Admission is reviewed first, then enrollment in the intended college/major. Humanities generally admit directly; some other fields start as competitive pre-majors. This is not proof of easier university admission.",
+        "sourceIds": ["osu-units"],
+        "status": "verified"
+      },
+      "recommendedMajors": {
+        "text": "History and Ancient History/Classics permit declaration upon university admission. Sociology is available as BA/BS; its curriculum lists Sociology1101 before declaration. No first-year Ontario cutoff is stated for these majors.",
+        "sourceIds": ["osu-history", "osu-classics", "osu-soc"],
+        "status": "verified"
+      },
+      "ap": {
+        "text": "AP3+ earns credit under the subject table. Psychology3+ gives PSYCH1100; Statistics3 gives STAT1450,4+ gives STAT2450. Send College Board scores; the entry-term policy controls awards.",
+        "sourceIds": ["osu-ap"],
+        "status": "verified"
+      },
+      "cost": {
+        "text": "2026–27 international annual components: tuition/fees USD47,374; housing/food15,630; books1,020; insurance4,108; personal4,046. Listed components total USD72,178; travel and individual costs can add more. Not2028 prices.",
+        "sourceIds": ["osu-cost"],
+        "status": "verified"
+      },
+      "aid": {
+        "text": "International students are excluded from the university-funded first-year merit awards listed on the admissions page and must demonstrate funds for tuition/living costs. Confirm external/departmental options and2028 CSS needs directly.",
+        "sourceIds": ["osu-aid", "osu-funds"],
+        "status": "verified"
+      }
+    }
+  },
+  {
+    "id": "purdue-west-lafayette",
+    "name": "Purdue University–West Lafayette",
+    "city": "West Lafayette",
+    "state": "Indiana",
+    "type": "Public",
+    "recognition": "Very High",
+    "sources": [
+      {
+        "id": "purdue-criteria",
+        "title": "First-year admission criteria",
+        "publisher": "Purdue Undergraduate Admissions",
+        "url": "https://admissions.purdue.edu/become-student/first-year-criteria/",
+        "verified": "2026-10-22",
+        "cycle": "Current holistic program-based review"
+      },
+      {
+        "id": "purdue-guide",
+        "title": "Application guide",
+        "publisher": "Purdue Undergraduate Admissions",
+        "url": "https://admissions.purdue.edu/become-student/guide/",
+        "verified": "2026-10-22",
+        "cycle": "Current page; includes2026 test-submission data"
+      },
+      {
+        "id": "purdue-intl",
+        "title": "International curriculum requirements",
+        "publisher": "Purdue Undergraduate Admissions",
+        "url": "https://admissions.purdue.edu/become-student/international/",
+        "verified": "2026-10-22",
+        "cycle": "Current Ontario document and4U/4M guidance"
+      },
+      {
+        "id": "purdue-profile",
+        "title": "Class profile",
+        "publisher": "Purdue Undergraduate Admissions",
+        "url": "https://admission.purdue.edu/become-student/class-profile/",
+        "verified": "2026-10-22",
+        "cycle": "Fall2026 West Lafayette+Indianapolis aggregate and college breakdowns"
+      },
+      {
+        "id": "purdue-english",
+        "title": "English proficiency",
+        "publisher": "Purdue Undergraduate Admissions",
+        "url": "https://admissions.purdue.edu/become-student/english-proficiency/",
+        "verified": "2026-10-22",
+        "cycle": "Current page; updated TOEFL scale from January21,2026"
+      },
+      {
+        "id": "purdue-apply",
+        "title": "Apply to Purdue",
+        "publisher": "Purdue Undergraduate Admissions",
+        "url": "https://admission.purdue.edu/become-student/apply/",
+        "verified": "2026-10-22",
+        "cycle": "Current recurring application calendar;2028 unconfirmed"
+      },
+      {
+        "id": "purdue-common",
+        "title": "Purdue on Common App",
+        "publisher": "Common Application / Purdue University",
+        "url": "https://www.commonapp.org/explore/purdue-university/",
+        "verified": "2026-10-22",
+        "cycle": "Current Purdue-provided application guidance"
+      },
+      {
+        "id": "purdue-soc",
+        "title": "Sociology BA",
+        "publisher": "Purdue Undergraduate Admissions",
+        "url": "https://admissions.purdue.edu/majors/sociology/",
+        "verified": "2026-10-22",
+        "cycle": "Current West Lafayette program"
+      },
+      {
+        "id": "purdue-history",
+        "title": "History BA",
+        "publisher": "Purdue Undergraduate Admissions",
+        "url": "https://admissions.purdue.edu/majors/history/",
+        "verified": "2026-10-22",
+        "cycle": "Current West Lafayette program"
+      },
+      {
+        "id": "purdue-education",
+        "title": "Elementary Education BA",
+        "publisher": "Purdue Undergraduate Admissions",
+        "url": "https://admissions.purdue.edu/majors/a-to-z/elementary-education.php",
+        "verified": "2026-10-22",
+        "cycle": "Published2025 program page; confirm2028 teacher-preparation rules"
+      },
+      {
+        "id": "purdue-ap",
+        "title": "College Board Advanced Placement credit",
+        "publisher": "Purdue Undergraduate Admissions",
+        "url": "https://admissions.purdue.edu/become-student/transfer/credit/ap/",
+        "verified": "2026-10-22",
+        "cycle": "Current exam-credit table"
+      },
+      {
+        "id": "purdue-cost",
+        "title": "Undergraduate tuition and fees2026–27",
+        "publisher": "Purdue Bursar",
+        "url": "https://www.purdue.edu/treasurer/finance/bursar-office/tuition/fee-rates-2026-2027/undergraduate-tuition-and-fees-2026-2027/",
+        "verified": "2026-10-22",
+        "cycle": "2026–27; tuition and program differentials"
+      },
+      {
+        "id": "purdue-rank",
+        "title": "U.S.News2026 rankings",
+        "publisher": "Purdue Brand Studio",
+        "url": "https://marcom.purdue.edu/contentpkg/u-s-news-world-report-rankings-2026/",
+        "verified": "2026-10-22",
+        "cycle": "2026 Best Colleges; September2025"
+      },
+      {
+        "id": "purdue-all-programs",
+        "title": "Undergraduate majors directory",
+        "publisher": "Purdue Undergraduate Admissions",
+        "url": "https://admissions.purdue.edu/academics/majors/",
+        "verified": "2026-10-22",
+        "cycle": "Current undergraduate program directory;2028 offerings may change"
+      }
+    ],
+    "facts": {
+      "admission": {
+        "text": "Purdue evaluates preparation and competition within the chosen major. It does not offer one admission formula; campus and program capacity matter.",
+        "sourceIds": ["purdue-criteria"],
+        "status": "verified"
+      },
+      "acceptanceRate": {
+        "text": "The2026 class-profile page reports53.3% overall for West Lafayette+Indianapolis together. This combined rate is not an Ontario, international or specific-major probability.",
+        "sourceIds": ["purdue-profile"],
+        "status": "verified"
+      },
+      "sat": {
+        "text": "Purdue expects SAT, ACT or CLT scores; applications without testing are allowed in exceptional cases. The2026 guide says98.3% of admitted students provided a test score. Recheck Fall2028.",
+        "sourceIds": ["purdue-guide"],
+        "status": "confirm"
+      },
+      "satMiddle50": {
+        "text": "Fall2026 published SAT middle50%: overall1230–1480, Liberal Arts1110–1348, Education1040–1208, Engineering1390–1520. The page covers West Lafayette+Indianapolis together; college figures are not major-specific minimums.",
+        "sourceIds": ["purdue-profile"],
+        "status": "verified"
+      },
+      "satTarget": {
+        "text": "Compare your score with the intended college, not only the university aggregate. A lower college distribution does not guarantee entry, particularly with weak school grades.",
+        "sourceIds": ["purdue-profile"],
+        "status": "editorial"
+      },
+      "deadlines": {
+        "text": "Fall2028 dates are not verified. Current reference: November1 EA for priority majors, Honors and merit consideration; fall applications close January15. Recheck program availability.",
+        "sourceIds": ["purdue-common", "purdue-apply"],
+        "status": "future-unpublished"
+      },
+      "application": {
+        "text": "Common App essay, Purdue responses, self-reported grades and testing, fee or eligible waiver. Choose campus and major; an alternate is allowed. Current international undergraduate fee amount was not verified here.",
+        "sourceIds": ["purdue-guide"],
+        "status": "confirm"
+      },
+      "ontario": {
+        "text": "Submit Grades9–11 while in school; graduates submit Grades9–12 and OSSD. Purdue encourages at least six4U/4M courses to be competitive. No Ontario percentage minimum is given.",
+        "sourceIds": ["purdue-intl"],
+        "status": "verified"
+      },
+      "coursework": {
+        "text": "Published Sociology minimum preparation: English4 years, math4, lab science3, social studies3, world language2. International curriculum exceptions may apply; confirm Ontario equivalents.",
+        "sourceIds": ["purdue-soc", "purdue-intl"],
+        "status": "verified"
+      },
+      "international": {
+        "text": "International curriculum records and English requirements apply as relevant; some citizenship categories have additional review. Confirm status-specific instructions rather than treating Ontario attendance as citizenship.",
+        "sourceIds": ["purdue-intl"],
+        "status": "verified"
+      },
+      "english": {
+        "text": "Current guidance: IELTS6.5 with each6.0; DET115 with each110; TOEFL4.5 with each4.0 for tests from January21,2026. SAT reading/writing600 is accepted. Three English-medium years with B-equivalent English grades and strong academics may be considered.",
+        "sourceIds": ["purdue-english"],
+        "status": "verified"
+      },
+      "majorStructure": {
+        "text": "Apply directly to a major and location. Sociology/History are West Lafayette Liberal Arts; Elementary Education is in Education. A later change of major or campus is never guaranteed.",
+        "sourceIds": [
+          "purdue-guide",
+          "purdue-soc",
+          "purdue-history",
+          "purdue-education"
+        ],
+        "status": "verified"
+      },
+      "recommendedMajors": {
+        "text": "Explore Sociology, History or Elementary Education only for genuine interest. Education has its own teaching preparation and licensing pathway. College-level SAT differences are evidence for comparing cohorts, not a lowest-entry major ranking.",
+        "sourceIds": ["purdue-profile", "purdue-education"],
+        "status": "editorial"
+      },
+      "ap": {
+        "text": "AP Psychology4/5 maps to PSY12000; Statistics4/5 to STAT30100; English Language4/5 to ENGL10600. Scores3 may yield undistributed credit. Send official scores and recheck2028 equivalencies.",
+        "sourceIds": ["purdue-ap"],
+        "status": "verified"
+      },
+      "cost": {
+        "text": "2026–27 full-time annual international tuition components shown: general service USD9,718, nonresident18,802, international3,310, fitness234, activity40, differential general service1,800. Housing, food and other expenses are additional; specialized programs add differentials. Not2028 prices.",
+        "sourceIds": ["purdue-cost"],
+        "status": "verified"
+      },
+      "aid": {
+        "text": "The Purdue Common App page restricts its full range of freshman merit scholarships to U.S. citizens/permanent residents. Do not assume a Canadian applicant qualifies. Confirm any separate international awards and CSS/need-based process directly.",
+        "sourceIds": ["purdue-common"],
+        "status": "verified"
+      }
+    }
+  }
+]

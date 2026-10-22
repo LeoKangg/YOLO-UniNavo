@@ -6,6 +6,7 @@ export const GRADE_BANDS = [
   "80–85%",
   "85–90%",
   "90–95%",
+  "95–100%",
 ] as const;
 export type GradeBand = (typeof GRADE_BANDS)[number];
 export type Category =

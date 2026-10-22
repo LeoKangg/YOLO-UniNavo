@@ -1,0 +1,312 @@
+[
+  {
+    "id": "minnesota-twin-cities",
+    "shortName": "Minnesota Twin Cities",
+    "initials": "UMN",
+    "color": "#7a243a",
+    "recognition": "High",
+    "majors": ["History", "Sociology", "Anthropology"],
+    "structure": "Freshman-admitting college; College of Liberal Arts options",
+    "selectivity": "selective",
+    "priority": 13,
+    "ranking": {
+      "edition": "2026",
+      "publisher": "U.S. News & World Report",
+      "category": "National Universities",
+      "rank": 59,
+      "url": "https://bringmethenews.com/minnesota-news/same-15-minnesota-colleges-make-2026-us-news-rankings",
+      "sourceId": "umn-rank-2026-secondary",
+      "verification": "reported-by-secondary"
+    },
+    "eligibility": {
+      "ontarioMinimum": null,
+      "ontarioRule": "No Ontario numeric minimum verified; report original marks without conversion. College-specific holistic review.",
+      "satAlternative": null,
+      "sourceIds": ["umn-apply", "umn-profile"]
+    },
+    "majorEvidence": [
+      {
+        "name": "History",
+        "admissionUnit": "College of Liberal Arts",
+        "minimum": null,
+        "advantage": "not-established",
+        "sourceIds": ["umn-majors", "umn-profile"]
+      },
+      {
+        "name": "Sociology",
+        "admissionUnit": "College of Liberal Arts",
+        "minimum": null,
+        "advantage": "not-established",
+        "sourceIds": ["umn-majors", "umn-profile"]
+      },
+      {
+        "name": "Anthropology",
+        "admissionUnit": "College of Liberal Arts",
+        "minimum": null,
+        "advantage": "not-established",
+        "sourceIds": ["umn-majors", "umn-profile"]
+      }
+    ],
+    "ko": {
+      "name": "미네소타 대학교 트윈시티스",
+      "facts": {
+        "admission": "학업 준비, 관심 분야, 정원을 종합 심사하여 신입생을 단과대학에 선발합니다. 확인된 온타리오 백분율 합격선은 없습니다.",
+        "acceptanceRate": "합격률 추정치를 사용하지 않습니다. 합격자 수와 실제 등록자 수는 다릅니다.",
+        "sat": "2028년 가을을 포함하여 2029년 가을까지 SAT/ACT 선택 제출입니다. 미제출자도 입학·장학금·아너스 심사를 온전히 받습니다.",
+        "satMiddle50": "2026년 가을 합격자 중 점수 제출자의 SAT 중간 50%는 대학 전체 1350–1490, 문리대(CLA) 1330–1470입니다. 최저점이 아니며 플래너는 전체와 단과대학 범위를 구분합니다.",
+        "satTarget": "제출한다면 CLA의 공개 범위와 비교하세요. 높은 SAT가 성적표를 대체하거나 지원 자격을 보장하지는 않습니다.",
+        "deadlines": "2028년 가을 마감일은 아직 확인되지 않았습니다. 현행 2027년 참고 일정: EA I 11월 1일, EA II 12월 1일, 일반 1월 1일, 간호 11월 1일.",
+        "application": "Common App, 수수료 미화 55달러. 9–12학년 성적과 이수 중인 과목을 직접 입력합니다. 등록 전 최종 공식 기록이 필요하며 전공별 추가 서류가 있을 수 있습니다.",
+        "ontario": "온타리오 성적을 원본 그대로 입력하세요. 평균 계산·가중치 적용·환산을 하지 않습니다. 상위 6과목 공식이나 온타리오 최저 평균은 확인되지 않았습니다.",
+        "coursework": "핵심 교과 준비와 난도를 평가합니다. 공식 이수 과목 안내를 확인하고 온타리오 과목의 동등 인정 여부를 입학처에 문의하세요.",
+        "international": "미국 임시 학생 체류 자격이 필요한 지원자는 요청 시 재정 증빙을 제출합니다. 온타리오 학교 재학만으로 미국 내국인 전형 대상이 되지는 않습니다.",
+        "english": "퀘벡 제외 캐나다 출신은 영어가 모국어일 때 면제됩니다. 다른 충족 방법에는 디지털 SAT 읽기·쓰기 550, IELTS 종합·쓰기 각 6.5, DET 종합·쓰기 각 120 등이 있습니다. 본인의 면제 여부를 확인하세요.",
+        "majorStructure": "단과대학으로 입학합니다. CLA에 역사학·사회학·인류학이 있습니다. 단과대학별 분포는 공개되지만 전공별로 더 낮은 신입학 합격선은 확인되지 않았습니다.",
+        "recommendedMajors": "역사학·사회학·인류학은 적성에 맞춰 탐색할 수 있는 CLA 전공이며, 입학이 더 쉽다고 입증된 전공은 아닙니다.",
+        "ap": "AP 3점 이상은 시험에 따라 학점으로 인정될 수 있습니다. 검토한 표는 2026년 가을 기준이며 입학 학기에 따라 달라지므로 2028년 기준을 다시 확인해야 합니다.",
+        "cost": "2026–27년 국제학생 예상 비용: 9개월 미화 67,085달러, I-20용 12개월 73,002달러. 등록금·수수료 44,743달러. 2028년 금액은 아닙니다.",
+        "aid": "기한 내 지원한 국제학생은 경쟁 선발 Global Excellence 장학금 자동 심사 대상입니다. 수혜는 보장되지 않습니다. CSS Profile 및 2028년 필요 기반 지원 자격은 확인이 필요합니다."
+      },
+      "fit": "관심 분야에 맞춰 문리대(CLA)를 검토하세요. 공대와 공개 성적 분포는 다르지만 온타리오 합격선이나 가장 쉬운 전공은 확인되지 않았습니다.",
+      "majorNames": ["역사학", "사회학", "인류학"],
+      "ontarioRule": "온타리오 최저 수치는 확인되지 않았습니다. 원래 성적을 환산하지 않고 제출하며 단과대학별 종합 심사를 받습니다.",
+      "structure": "단과대학별 신입학; 문리대(CLA) 전공",
+      "majorEvidence": [
+        {
+          "name": "역사학",
+          "admissionUnit": "문리대(CLA)",
+          "minimum": null,
+          "advantage": "더 낮은 신입학 합격선은 확인되지 않았습니다."
+        },
+        {
+          "name": "사회학",
+          "admissionUnit": "문리대(CLA)",
+          "minimum": null,
+          "advantage": "더 낮은 신입학 합격선은 확인되지 않았습니다."
+        },
+        {
+          "name": "인류학",
+          "admissionUnit": "문리대(CLA)",
+          "minimum": null,
+          "advantage": "더 낮은 신입학 합격선은 확인되지 않았습니다."
+        }
+      ],
+      "programRanges": [
+        {
+          "name": "문리대(CLA)",
+          "cohort": "2026년 가을 CLA 합격자 중 시험 점수 제출자"
+        }
+      ]
+    },
+    "fit": "Compare the College of Liberal Arts with your genuine interests. Its published score profile differs from engineering, but no Ontario cutoff or easiest major is established.",
+    "range": {
+      "low": 1350,
+      "high": 1490,
+      "cohort": "Fall 2026 admitted freshman applicants who submitted scores; university overall",
+      "sourceIds": ["umn-profile"]
+    },
+    "catalog": {
+      "url": "https://majors.umn.edu/",
+      "sourceId": "umn-all-majors"
+    },
+    "programRanges": [
+      {
+        "low": 1330,
+        "high": 1470,
+        "cohort": "Fall 2026 admitted College of Liberal Arts applicants who submitted scores",
+        "sourceIds": ["umn-profile"],
+        "unit": "College of Liberal Arts"
+      }
+    ],
+    "testing": "Test optional",
+    "testingThrough": "Fall 2029"
+  },
+  {
+    "id": "kansas",
+    "shortName": "Kansas",
+    "initials": "KU",
+    "color": "#245c9b",
+    "recognition": "Moderate",
+    "majors": ["History", "Anthropology"],
+    "structure": "College of Liberal Arts & Sciences; international academic evaluation",
+    "selectivity": "broad",
+    "priority": 17,
+    "ranking": {
+      "edition": "2026",
+      "publisher": "U.S. News & World Report",
+      "category": "National Universities",
+      "rank": 143,
+      "url": "https://kansasreflector.com/2026/04/22/university-of-kansas-has-plummeted-in-national-rankings-as-academic-focus-shifts-from-core-subjects/",
+      "sourceId": "ku-rank-2026-secondary",
+      "verification": "reported-by-secondary"
+    },
+    "eligibility": {
+      "ontarioMinimum": null,
+      "ontarioRule": "International minimum GPA 2.5/4.0 is assessed by KU. Canada uses province-sensitive review; no Ontario percentage minimum. Do not apply domestic assured SAT rules automatically.",
+      "satAlternative": null,
+      "sourceIds": ["ku-apply", "ku-credentials"]
+    },
+    "majorEvidence": [
+      {
+        "name": "History",
+        "admissionUnit": "College of Liberal Arts & Sciences",
+        "minimum": null,
+        "advantage": "not-established",
+        "sourceIds": ["ku-history", "ku-credentials"]
+      },
+      {
+        "name": "Anthropology",
+        "admissionUnit": "College of Liberal Arts & Sciences",
+        "minimum": null,
+        "advantage": "not-established",
+        "sourceIds": ["ku-anthro", "ku-credentials"]
+      }
+    ],
+    "ko": {
+      "name": "캔자스 대학교",
+      "facts": {
+        "admission": "국제학생은 이전 이수 과목 GPA 2.5/4.0 이상 기준을 제시합니다. KU가 학력을 평가하며 전공별 추가 조건이 있을 수 있습니다. 온타리오 백분율 합격선이 아닙니다.",
+        "acceptanceRate": "개별 온타리오 지원자의 가능성을 추정하는 합격률을 사용하지 않습니다.",
+        "sat": "국제학생은 대체로 SAT/ACT 선택 제출이지만 전공별로 요구할 수 있습니다. 내국인 입학 보장 규칙을 자동 적용하지 마세요. 2028년 정책을 확인하세요.",
+        "satMiddle50": "2025–26 CDS C9 기준 2025년 가을 신입 등록자 중 SAT 제출자의 중간 50%는 1080–1280입니다. SAT 제출자는 7.1%(358명)입니다. 온타리오 합격선이 아닙니다.",
+        "satTarget": "SAT 1100–1500 비교는 등록자 점수 분포에서의 위치를 뜻하며 국제학생 학업 평가 면제를 뜻하지 않습니다.",
+        "deadlines": "2028년 가을 날짜는 아직 확인되지 않았습니다. 현행 국제학생 일정: 미국 밖 지원자의 가을 입학·장학금 5월 1일, 미국 내 지원자의 가을 입학 7월 25일.",
+        "application": "KU 국제학생 온라인 지원서, 면제 불가 미화 90달러 수수료. 학업 기록·졸업 증빙·영어 증명이 필요하며 등록 전에 공식 기록을 제출합니다.",
+        "ontario": "캐나다: 공식 성적표와 졸업장. 주별 평가 체계와 대학 준비 교과를 반영하여 평균을 심사합니다. 성적 환산은 이 플래너가 아닌 KU가 합니다. 이 안내에 온타리오 최저 수치는 없습니다.",
+        "coursework": "대학 준비 교과 이수가 요구됩니다. 일반적으로 최근 3년간의 중등 학업 기록을 제출하며 온타리오 U/M 과목 요건은 국제입학처에 확인하세요.",
+        "international": "지원 절차를 선택하기 전에 시민권에 따른 지원자 분류를 KU에 확인하세요.",
+        "english": "학위 과정 전일제 수업 기준 예: IELTS 종합 6.5·영역별 6.0 또는 SAT EBRW 590. 영어권 캐나다 고교 면제는 대학 준비 영어 4년 및 졸업 GPA 2.5 이상을 요구합니다. 미충족 시 학위 수업 전이나 병행하여 영어 과정을 들을 수 있습니다.",
+        "majorStructure": "역사학·인류학은 문리대 소속입니다. 인류학 전공 선언은 지도교수와 진행합니다. 일부 다른 단과대학·전공은 추가 입학 조건이 있으며 두 전공의 더 낮은 온타리오 합격선은 확인되지 않았습니다.",
+        "recommendedMajors": "역사학(BA/BGS)과 인류학은 폭넓은 선택지입니다. 확인되지 않은 입학 이점 대신 관심과 교육과정으로 고르세요.",
+        "ap": "KU는 AP 시험별 학점·배치 표를 공개합니다. 문자 성적 대신 학점이 부여됩니다. 2028년 입학에 적용되는 표를 재확인하세요.",
+        "cost": "현재 국제학생 연간 예상액은 미화 52,278달러(등록금·수수료 33,854, 생활비 18,424)입니다. 출처에 학년도가 명시되어 있지 않으며 2028년 견적이 아닙니다.",
+        "aid": "현행 국제 신입생 장학금은 KU 평가 GPA에 따라 연 미화 8,000–16,000달러이며 표의 최저 구간은 GPA 3.25부터입니다. 갱신은 전일제 등록·KU GPA 3.0이 필요합니다. 향후 금액·CSS Profile·필요 기반 지원 자격은 확인해야 합니다."
+      },
+      "fit": "국제학생 학업 기준이 공개된 추가 검토 학교입니다. KU가 온타리오 성적을 직접 평가하며 미국 내국인 SAT 보장 규칙을 캐나다 백분율로 바꿀 수는 없습니다.",
+      "majorNames": ["역사학", "인류학"],
+      "ontarioRule": "국제학생 GPA 2.5/4.0 최저 기준은 KU가 평가합니다. 캐나다는 주별 평가를 반영하며 온타리오 최저 백분율은 없습니다. 내국인 SAT 보장 규칙을 자동 적용하지 마세요.",
+      "structure": "문리대(CLAS); 국제학생 학업 평가",
+      "majorEvidence": [
+        {
+          "name": "역사학",
+          "admissionUnit": "문리대(CLAS)",
+          "minimum": null,
+          "advantage": "더 낮은 신입학 합격선은 확인되지 않았습니다."
+        },
+        {
+          "name": "인류학",
+          "admissionUnit": "문리대(CLAS)",
+          "minimum": null,
+          "advantage": "더 낮은 신입학 합격선은 확인되지 않았습니다."
+        }
+      ]
+    },
+    "fit": "A useful additional research option with published international academic criteria. KU evaluates Ontario records itself; the domestic SAT assurance rule is not a Canadian percentage conversion.",
+    "range": {
+      "low": 1080,
+      "high": 1280,
+      "cohort": "Fall 2025 enrolled first-year SAT submitters; 7.1% submitted",
+      "sourceIds": ["ku-cds"]
+    },
+    "catalog": {
+      "url": "https://catalog.ku.edu/",
+      "sourceId": "ku-all-majors"
+    },
+    "testing": "Test optional",
+    "testingThrough": "Fall 2028 requires confirmation"
+  },
+  {
+    "id": "alabama",
+    "shortName": "Alabama",
+    "initials": "UA",
+    "color": "#9e3348",
+    "recognition": "Moderate",
+    "majors": ["History", "Anthropology"],
+    "structure": "University admission; College of Arts and Sciences majors",
+    "selectivity": "broad",
+    "priority": 18,
+    "ranking": {
+      "edition": "2026",
+      "publisher": "U.S. News & World Report",
+      "category": "National Universities",
+      "rank": 169,
+      "url": "https://thebamabuzz.com/auburn-holds-top-state-spot-alabama-moves-up-in-2026-u-s-news-university-rankings/",
+      "sourceId": "ua-rank-2026-secondary",
+      "verification": "reported-by-secondary"
+    },
+    "eligibility": {
+      "ontarioMinimum": null,
+      "ontarioRule": "Overseas-school applicants: cumulative GPA 3.0/4.0 considered; NACES course-by-course GPA evaluation required. No Ontario percentage threshold. SAT/ACT required for 2028, with no minimum test score.",
+      "satAlternative": null,
+      "sourceIds": ["ua-international", "ua-testing"]
+    },
+    "majorEvidence": [
+      {
+        "name": "History",
+        "admissionUnit": "College of Arts and Sciences",
+        "minimum": null,
+        "advantage": "not-established",
+        "sourceIds": ["ua-history"]
+      },
+      {
+        "name": "Anthropology",
+        "admissionUnit": "College of Arts and Sciences",
+        "minimum": null,
+        "advantage": "not-established",
+        "sourceIds": ["ua-anthro"]
+      }
+    ],
+    "ko": {
+      "name": "앨라배마 대학교",
+      "facts": {
+        "admission": "개별 경쟁 심사입니다. 미국 밖 고교 졸업자는 모든 이수 과목의 누적 GPA 3.0/4.0 기준으로 검토합니다. 합격 보장이나 온타리오 백분율 합격선이 아닙니다.",
+        "acceptanceRate": "대학 전체 통계에서 개인 합격 확률을 추정하지 않습니다.",
+        "sat": "2028년 입학하는 모든 신입생은 SAT 또는 ACT를 제출해야 합니다. 대학은 입학 시험 최저점이 없으며 종합 심사에 보조 자료로 사용한다고 명시합니다.",
+        "satMiddle50": "2025–26 CDS C9 기준 2025년 가을 신입 등록자 중 SAT 제출자의 중간 50%는 1100–1360입니다. 제출자는 19%(1,511명)입니다. 선택 제출 시기의 분포로 2028년 요건이 아닙니다.",
+        "satTarget": "2028년 필수 시험을 준비하세요. 1100–1500점 시나리오는 과거 분포와 비교하되 성적표 평가와 구분합니다.",
+        "deadlines": "2028년 가을 마감일은 아직 확인되지 않았습니다. 현행 국제학생 우선 마감: 가을·여름 12월 4일, 봄 11월 2일. 입학 연도 지원서를 다시 확인하세요.",
+        "application": "본교 신입생은 UA Undergraduate App 또는 Common App을 이용합니다. 국제학생 수수료는 2027년 입학 기준 미화 50달러이며 2028년은 확인이 필요합니다. 필수 학업 기록·시험 증빙을 제출하세요.",
+        "ontario": "미국 밖 고교 졸업자는 NACES 회원 기관의 과목별 성적표 평가와 GPA 계산이 필요합니다. 온타리오 백분율 환산이나 U/M 상위 6과목 공식은 확인되지 않았습니다.",
+        "coursework": "최저 이수 단위: 영어 4, 수학 3, 자연과학 3(실험 포함 2과목), 기타 학술 과목 10. 온타리오 과목 동등 인정을 확인하세요.",
+        "international": "미국 밖 고교를 졸업하는 국제학생은 해외 학교 요건을 따릅니다. F-1/J-1 대상자는 이민·재정 서류도 제출합니다.",
+        "english": "예시 기준: IELTS 6.0, DET 110 또는 SAT EBRW 550. 면제 목록에는 퀘벡 제외 캐나다 시민·거주자가 포함되며 본인 자격은 확인하세요. 일부 학생은 추가 영어 지원 수업이 필요합니다.",
+        "majorStructure": "역사학 BA는 지도교수와 전공을 선언하며 인류학 BA는 전공 진입 선수 조건이 없다고 명시합니다. 이는 대학 입학 후 전공 선언 구조이며 낮은 신입학 합격선을 뜻하지 않습니다.",
+        "recommendedMajors": "역사학·인류학은 문리대의 폭넓은 선택지입니다. 두 전공 모두 온타리오 지원자의 입학상 이점이 확인되지 않았습니다.",
+        "ap": "AP 시험·점수에 따라 학점이 달라집니다. 예를 들어 현행 Calculus AB 3점은 MATH 125 학점으로 인정됩니다. 입학 연도 규칙과 전공 적용 여부를 재확인해야 합니다.",
+        "cost": "2026–27년 국제학생 예산의 연간 등록금은 미화 35,924달러, 국제학생 수수료 200, 교과·단과대 수수료 800, 보험 2,428이며 주거·식비 등은 별도입니다. 전체 재정 표를 확인하세요. 2028년 비용은 미정입니다.",
+        "aid": "2027년 자동 성적 장학금은 GPA 3.50 이상과 한 번의 시험 점수를 요구합니다. SAT 1200–1250은 연 미화 6,000달러, 1420–1600은 28,000달러입니다. 입학 합격선이 아닌 장학금 기준입니다. 2028년 장학금·CSS Profile·필요 기반 지원 자격은 확인해야 합니다."
+      },
+      "fit": "2028년 시험 제출 의무가 명시된 폭넓은 검토 대상입니다. 인류학은 전공 진입 선수 조건이 없지만 신입학 요건이 낮아지는 것은 아닙니다.",
+      "majorNames": ["역사학", "인류학"],
+      "ontarioRule": "미국 밖 고교 졸업자는 누적 GPA 3.0/4.0 기준으로 검토하며 NACES 과목별 GPA 평가가 필요합니다. 온타리오 최저 백분율은 없습니다. 2028년은 SAT/ACT 필수이며 시험 최저점은 없습니다.",
+      "structure": "대학 신입학 후 문리대 전공",
+      "majorEvidence": [
+        {
+          "name": "역사학",
+          "admissionUnit": "문리대",
+          "minimum": null,
+          "advantage": "더 낮은 신입학 합격선은 확인되지 않았습니다."
+        },
+        {
+          "name": "인류학",
+          "admissionUnit": "문리대",
+          "minimum": null,
+          "advantage": "더 낮은 신입학 합격선은 확인되지 않았습니다."
+        }
+      ]
+    },
+    "fit": "A broader university option with an explicit 2028 testing requirement. Anthropology has no major-entry prerequisites, but this does not lower freshman admission requirements.",
+    "range": {
+      "low": 1100,
+      "high": 1360,
+      "cohort": "Fall 2025 enrolled first-year SAT submitters; 19% submitted",
+      "sourceIds": ["ua-cds"]
+    },
+    "catalog": {
+      "url": "https://catalog.ua.edu/programs/",
+      "sourceId": "ua-all-majors"
+    },
+    "testing": "Test required",
+    "testingThrough": "2028 entry required"
+  }
+]

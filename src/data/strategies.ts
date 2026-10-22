@@ -1,3 +1,4 @@
+import { expandedEvidence } from "./evidence.ts";
 import type { Strategy } from "../types.ts";
 const V = "Very High Reach",
   R = "Reach",
@@ -14,7 +15,7 @@ export const strategies: Record<string, Strategy> = {
     majors: ["History BA", "Sociology BS"],
     structure: "Program-sensitive university admission",
     selectivity: "broad",
-    bands: [V, V, R, T, M, M, M],
+    bands: [V, V, R, T, M, M, M, M],
     testing: "Test optional",
     fit: "A broad public-university option with general-entry humanities to explore. Ask ASU to assess your actual Ontario transcript.",
     priority: 7,
@@ -27,7 +28,7 @@ export const strategies: Record<string, Strategy> = {
     majors: ["Sociology BA", "History"],
     structure: "University / program rules vary",
     selectivity: "broad",
-    bands: [V, V, R, T, T, M, M],
+    bands: [V, V, R, T, T, M, M, M],
     testing: "Test optional",
     fit: "A recognizable public university with broad social-science options. Canadian curriculum criteria still need confirmation.",
     priority: 6,
@@ -46,7 +47,7 @@ export const strategies: Record<string, Strategy> = {
     majors: ["Sociology", "History", "General Social Sciences"],
     structure: "CAS exploration; program requirements vary",
     selectivity: "broad",
-    bands: [V, V, V, R, T, T, M],
+    bands: [V, V, V, R, T, T, M, M],
     testing: "Test optional",
     fit: "Explore broad College of Arts and Sciences subjects. Check English exemption, course equivalencies and the full cost.",
     priority: 5,
@@ -59,7 +60,7 @@ export const strategies: Record<string, Strategy> = {
     majors: ["Sociology BA", "History BA", "Humanities BA"],
     structure: "College / school admission",
     selectivity: "selective",
-    bands: [V, V, V, R, R, T, T],
+    bands: [V, V, V, R, R, T, T, T],
     testing: "Test optional",
     fit: "A useful Arts and Sciences stretch with a verified admitted-student score range. A later move into business or engineering is not assured.",
     priority: 4,
@@ -78,7 +79,7 @@ export const strategies: Record<string, Strategy> = {
     majors: ["Sociology", "History", "Anthropology"],
     structure: "University admission; later major requirements",
     selectivity: "broad",
-    bands: [V, V, V, R, T, T, M],
+    bands: [V, V, V, R, T, T, M, M],
     testing: "Test optional",
     fit: "Broad social-science choices and a verified SAT profile make MSU a useful comparison school. English waiver rules need individual attention.",
     priority: 3,
@@ -97,7 +98,7 @@ export const strategies: Record<string, Strategy> = {
     majors: ["Sociology BA", "History BA"],
     structure: "College / school admission",
     selectivity: "selective",
-    bands: [V, V, V, V, R, T, T],
+    bands: [V, V, V, V, R, T, T, T],
     testing: "Test optional",
     fit: "IU publishes specific Ontario transcript instructions. Explore CAS for genuine academic interests; Kelley has a separate admission path.",
     priority: 2,
@@ -116,7 +117,7 @@ export const strategies: Record<string, Strategy> = {
     majors: ["Sociology BA", "Anthropology BA"],
     structure: "Campus / college admission; later major entry",
     selectivity: "selective",
-    bands: [V, V, V, V, R, R, T],
+    bands: [V, V, V, V, R, R, T, T],
     testing: "Test optional",
     fit: "This entry is University Park. Another campus or a 2+2 route is a different offer; changing majors usually does not change campus admission.",
     priority: 1,
@@ -129,7 +130,7 @@ export const strategies: Record<string, Strategy> = {
     majors: ["Sociology", "History", "Anthropology"],
     structure: "College / school admission",
     selectivity: "exceptional",
-    bands: [V, V, V, V, V, V, R],
+    bands: [V, V, V, V, V, V, R, R],
     testing: "Confirm policy",
     fit: "A reach-only exploration choice. CAS offers flexible subjects, but choosing an undecided or humanities interest is not an admissions shortcut.",
     priority: 0,
@@ -142,9 +143,34 @@ export const strategies: Record<string, Strategy> = {
     majors: ["Sociology", "Communication Studies", "Political Science"],
     structure: "University admission with college requirements",
     selectivity: "broad",
-    bands: [V, V, R, T, M, M, M],
+    bands: [V, V, R, T, M, M, M, M],
     testing: "Test optional",
     fit: "A practical option with explicit current test alternatives to its GPA requirement. Other academic, language and funding requirements still apply.",
     priority: 8,
   },
 };
+
+// These are conservative editorial exploration bands, not university grade requirements.
+// SAT context and documented GPA alternatives are displayed separately from these labels.
+for (const e of expandedEvidence) {
+  const bands: Strategy["bands"] =
+    e.selectivity === "exceptional"
+      ? [V, V, V, V, V, V, R, R]
+      : e.selectivity === "broad"
+        ? [V, V, R, R, T, T, M, M]
+        : [V, V, V, V, R, R, T, T];
+  strategies[e.id] = {
+    shortName: e.shortName,
+    initials: e.initials,
+    color: e.color,
+    recognition: e.recognition,
+    majors: e.majors,
+    structure: e.structure,
+    selectivity: e.selectivity,
+    bands,
+    testing: e.testing ?? "Confirm policy",
+    fit: e.fit,
+    priority: e.priority,
+    range: e.range,
+  };
+}

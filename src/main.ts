@@ -8,19 +8,40 @@ import {
   pathways,
   RESEARCH_DATE,
 } from "./data/index.ts";
+import { evidenceMap } from "./data/evidence.ts";
+import {
+  comparisonCsv,
+  SAT_SCENARIOS,
+  compareSat,
+  meetsPublishedAlternative,
+} from "./comparison.ts";
+import comparisonContext from "../research/comparison-context.json" with { type: "json" };
+import existingRankings from "../research/existing-rankings.json" with { type: "json" };
 import { strategies } from "./data/strategies.ts";
 import { timeline } from "./data/timeline.ts";
+import { normalizePlanner, personalTimeline, saveTaskEdit } from "./planner.ts";
+import type { PersonalTask } from "./planner.ts";
 import { GRADE_BANDS } from "./types.ts";
-import type { Fact, University, Task } from "./types.ts";
+import type { Fact, University } from "./types.ts";
 import { categoryFor, recommend, scoreContext } from "./recommendations.ts";
-import { loadProfile, loadChecked, loadSaved, writeLocal } from "./storage.ts";
+import {
+  loadProfile,
+  loadChecked,
+  loadSaved,
+  readLocal,
+  writeLocal,
+} from "./storage.ts";
 
 const app = document.querySelector<HTMLDivElement>("#app")!;
 const profile = loadProfile();
 const checked = loadChecked(),
   saved = loadSaved();
 let persistenceAvailable = true;
-let universityMode = "explore",
+let planner = normalizePlanner(readLocal("planner"), timeline);
+let undoPlanner: { planner: typeof planner; checked: string[] } | null = null;
+let plannerNotice = "";
+const words = (en: string, ko: string) => (getLanguage() === "ko" ? ko : en);
+let universityMode = "compare",
   difficulty = "",
   recognition = "",
   testing = "",
@@ -28,15 +49,14 @@ let universityMode = "explore",
   sector = "",
   universitySearch = "";
 let phase = "all",
-  hideCompleted = false,
+  hideCompleted = true,
   examTab = "sat",
   sourceSearch = "";
 let profileExpanded = false,
   advancedExpanded = false;
 const openedDetails = new Set<string>();
-const openedMonths = new Set(timeline.map((month) => month.id));
+
 const nav = [
-  { id: "overview", label: "Overview", icon: "⌂" },
   { id: "timeline", label: "My timeline", icon: "◷" },
   { id: "universities", label: "Universities", icon: "▦" },
   { id: "exams", label: "SAT & AP", icon: "✧" },
@@ -54,7 +74,7 @@ const esc = (s: unknown) =>
 const route = () =>
   nav.some((n) => n.id === location.hash.slice(1))
     ? location.hash.slice(1)
-    : "overview";
+    : "timeline";
 const date = (s: string) =>
   new Date(`${s}T12:00:00Z`).toLocaleDateString(
     getLanguage() === "ko" ? "ko-KR" : "en-CA",
@@ -135,37 +155,128 @@ function card(u: University) {
   const s = strategies[u.id];
   return `<article class="university-card"><div class="card-top"><span class="monogram" style="--school:${s.color}">${s.initials}</span><button class="save-button ${saved.has(u.id) ? "saved" : ""}" data-save="${u.id}" aria-label="${saved.has(u.id) ? "Remove" : "Save"} ${esc(u.name)} ${saved.has(u.id) ? "from" : "to"} my shortlist" aria-pressed="${saved.has(u.id)}">${saved.has(u.id) ? "✓" : "+"}</button></div><span class="small muted">${esc(u.state)} · ${u.type.toLowerCase().includes("private") ? "Private" : "Public"}</span><h3>${esc(u.name)}</h3>${badge(u.id)}<p class="card-subjects">${esc(s.majors.join(" · "))}</p><p class="small muted">Fall 2028 policies need checking.</p><button class="detail-button" data-detail="${u.id}">View details <span aria-hidden="true">↗</span></button></article>`;
 }
-function taskRow(t: Task) {
-  return `<div class="task-row ${checked.has(t.id) ? "is-complete" : ""}"><label><input type="checkbox" data-task="${t.id}" ${checked.has(t.id) ? "checked" : ""}><span>${esc(t.title)}</span></label><div class="task-detail"><p>${esc(t.detail)}</p><span class="fact-status">${t.kind}</span>${refs(t.sourceIds)}</div></div>`;
+function taskRow(t: PersonalTask) {
+  return `<article class="task-row ${checked.has(t.id) ? "is-complete" : ""}"><div class="task-heading"><label><input type="checkbox" data-task="${t.id}" ${checked.has(t.id) ? "checked" : ""}><span ${t.personal ? "data-original-language" : ""}>${esc(t.title)}</span></label><div class="task-actions"><button data-edit-task="${t.id}" aria-label="${esc(words("Edit task", "할 일 수정"))}">${words("Edit / move", "수정 · 이동")}</button><button data-delete-task="${t.id}" aria-label="${esc(words("Delete task", "할 일 삭제"))}">${words("Delete", "삭제")}</button></div></div><div class="task-detail"><p ${t.personal ? "data-original-language" : ""}>${esc(t.detail)}</p><span class="fact-status">${t.personal ? words("My plan", "내가 수정한 계획") : t.kind}</span>${refs(t.sourceIds)}${t.original ? `<details class="source-disclosure"><summary>${words("Original guidance & sources", "수정 전 안내와 출처")}</summary><p>${esc(t.original.detail)}</p>${refs(t.original.sourceIds)}</details>` : ""}</div></article>`;
 }
 function pathwayPanel() {
   return `<aside class="pathway"><span class="eyebrow">A DIFFERENT ROUTE</span><h3>Build options, not false certainty.</h3><p>At 60–70%, this research does not support a balanced direct-entry shortlist at the featured universities. At 70–75%, the few options shown are research leads, not targets. Prioritize stronger marks and a transcript assessment.</p>${pathways.facts.map((f) => fact(f)).join("")}<p class="small">Conditional English admission is not an academic waiver. A branch-campus offer is not an offer at the flagship campus. Check the exact campus, pathway contract and progression rules.</p></aside>`;
 }
-function overview() {
-  const now = timeline[0];
-  const priorities = now.tasks.slice(0, 3);
-  const done = priorities.filter((t) => checked.has(t.id)).length;
-  return `<div class="home-focus"><header class="focus-heading"><div><span class="eyebrow">October 2026 · Grade 11</span><h1>Do this now</h1><p>Start with these three. Check them off as you go.</p></div><span class="progress-label">${done} / ${priorities.length} complete</span></header>
-  <section class="priority-list" aria-label="This month's priorities">${priorities.map(taskRow).join("")}</section>
-  <a class="text-link full-plan" href="#timeline">See the full monthly plan →</a>
-  <nav class="next-destinations" aria-label="Next steps"><a href="#universities"><strong>Find universities</strong><span>Choose a grade range. Explore your options.</span><b aria-hidden="true">↗</b></a><a href="#exams"><strong>SAT & AP</strong><span>Pick your next test or practice session.</span><b aria-hidden="true">↗</b></a></nav>
-  <details class="methodology home-extra" data-disclosure="home-extra"><summary>More preparation & Ontario requirements</summary>${now.tasks.slice(3).map(taskRow).join("")}<h2>Ontario diploma & transcript checklist</h2>${planFact("ossd-cohort")}${planFact("ossd-financial-literacy")}${planFact("ontario-um")}${planFact("ontario-gpa")}<p>Planning assumes normal grade progression and graduation in June 2028.</p></details></div>`;
-}
 function timelinePage() {
-  const tasks = timeline.flatMap((m) => m.tasks),
+  const months = personalTimeline(timeline, planner);
+  const tasks = months.flatMap((m) => m.tasks),
     count = tasks.filter((t) => checked.has(t.id)).length;
-  const shown = timeline.filter((m) => phase === "all" || m.phase === phase);
-  return `<div class="page-intro"><h1>My timeline</h1><p>From October 2026 to your Fall 2028 arrival. A clear next step, every month.</p></div><div class="timeline-toolbar"><div><strong>${count} of ${tasks.length} tasks complete</strong><progress value="${count}" max="${tasks.length}" aria-label="Timeline completion"></progress><span class="small muted">Saved in this browser · no account needed</span></div><label>Show a stage<select id="phase"><option value="all">Select</option>${[...new Set(timeline.map((m) => m.phase))].map((p) => `<option ${phase === p ? "selected" : ""}>${p}</option>`).join("")}</select></label><label class="checkline"><input type="checkbox" id="hide-completed" ${hideCompleted ? "checked" : ""}>Hide completed tasks</label></div><div class="notice">This is a planning calendar anchored to October 21, 2026. College application dates for Fall 2028 remain unconfirmed; future task months are preparation windows, not official deadlines. ${refs(["sat-dates", "ap-order"])}</div><div class="timeline">${shown
+  const shown = months.filter((m) => phase === "all" || m.phase === phase);
+  return `<div class="planner-heading"><div><span class="eyebrow">MY ROADMAP · 2026—2028</span><h1>${words("One step at a time.", "한 달씩, 하나씩.")}</h1><p>${words("Change the plan. Check things off. Keep moving.", "계획은 바꿔도 괜찮아요. 끝낸 일은 체크하고, 다음 할 일로.")}</p></div><div class="planner-total"><strong>${Math.round((count / Math.max(tasks.length, 1)) * 100)}<span>%</span></strong><span>${count} / ${tasks.length} ${words("complete", "완료")}</span></div></div>
+  <section class="journey-chart" aria-label="${words("Monthly progress chart", "월별 진행률 차트")}">${months
     .map((m) => {
-      const allDone = m.tasks.every((t) => checked.has(t.id));
+      const done = m.tasks.filter((t) => checked.has(t.id)).length;
+      return `<a href="#month-${m.id}" data-jump-month="${m.id}" aria-label="${esc(month(m.id))}: ${done}/${m.tasks.length}" title="${esc(month(m.id))}: ${done}/${m.tasks.length}"><span class="chart-track"><i style="height:${Math.max((done / Math.max(m.tasks.length, 1)) * 100, 4)}%"></i></span><small>${m.id.slice(5)}</small><span class="chart-year">${m.id.endsWith("-01") || m.id === "2026-10" ? m.id.slice(0, 4) : ""}</span></a>`;
+    })
+    .join("")}</section>
+  <div class="timeline-toolbar"><label>Show a stage<select id="phase"><option value="all">Select</option>${[...new Set(timeline.map((m) => m.phase))].map((p) => `<option ${phase === p ? "selected" : ""}>${p}</option>`).join("")}</select></label><label class="checkline"><input type="checkbox" id="hide-completed" ${hideCompleted ? "checked" : ""}>Hide completed tasks</label><button class="text-button" id="export-plan">${words("Back up plan ↓", "계획 백업 ↓")}</button><label class="import-plan">${words("Restore backup", "백업 불러오기")}<input id="import-plan" type="file" accept="application/json,.json" class="sr-only"></label></div>
+  <div class="planner-save-note">${words("Automatically saved in this browser. Back up your plan before changing devices or clearing browser data.", "이 브라우저에 자동 저장됩니다. 기기를 바꾸거나 브라우저 데이터를 지우기 전에는 백업하세요.")}</div>
+  ${plannerNotice ? `<div class="planner-notice" role="status">${esc(plannerNotice)} ${undoPlanner ? `<button id="undo-plan" class="text-button">${words("Undo", "실행 취소")}</button>` : ""}</div>` : ""}
+  <div class="timeline editable-timeline">${shown
+    .map((m, i) => {
+      const done = m.tasks.filter((t) => checked.has(t.id)).length;
       const visible = m.tasks.filter(
         (t) => !hideCompleted || !checked.has(t.id),
       );
-      return `<details class="month-card ${m.id === "2026-10" ? "current" : ""}" data-month="${m.id}" ${openedMonths.has(m.id) ? "open" : ""}><summary><div class="month-date"><span>${esc(month(m.id))}</span><small>${esc(m.phase)}</small></div><div class="month-summary"><span class="eyebrow">${m.id === "2026-10" ? "NOW" : m.id < "2027-07" ? "NEXT" : "LATER"} · ${m.priority.toUpperCase()} PRIORITY</span><h2>${esc(m.title)}</h2><p>${esc(m.focus)}</p></div><span class="month-count">${m.tasks.filter((t) => checked.has(t.id)).length}/${m.tasks.length} ${allDone ? "✓" : "+"}</span></summary><div class="month-tasks">${visible.length ? visible.map(taskRow).join("") : '<p class="empty-state">All tasks for this month are complete.</p>'}</div></details>`;
+      return `<section class="month-card ${m.id === "2026-10" ? "current" : ""}" id="month-${m.id}"><header class="month-header"><div class="month-date"><span class="month-number">${m.id.slice(5)}</span><span>${esc(month(m.id))}</span><small>${esc(m.phase)}</small></div><div class="month-summary"><span class="eyebrow">${String(i + 1).padStart(2, "0")} / ${String(shown.length).padStart(2, "0")}</span><h2>${esc(m.title)}</h2><p>${esc(m.focus)}</p><div class="month-progress"><progress value="${done}" max="${Math.max(m.tasks.length, 1)}" aria-label="${esc(month(m.id))}"></progress><span>${done}/${m.tasks.length}</span></div></div></header><div class="month-tasks">${visible.length ? visible.map(taskRow).join("") : `<div class="month-finished"><span>✓</span><p>${words("Nothing left here. Add a new task whenever plans change.", "남은 할 일이 없어요. 계획이 바뀌면 새로 추가하세요.")}</p></div>`}<button class="add-task" data-add-task="${m.id}">＋ ${words("Add a task", "할 일 추가")}</button></div></section>`;
+    })
+    .join("")}</div>
+  <details class="methodology"><summary>${words("Official dates & Ontario requirements", "공식 일정과 온타리오 준비 기준")}</summary><p>This is a planning calendar anchored to October 21, 2026. College application dates for Fall 2028 remain unconfirmed; future task months are preparation windows, not official deadlines.</p>${planFact("ossd-cohort")}${planFact("ontario-um")}${planFact("early-options")}${planFact("canadian-entry")}${planFact("federal-aid")}</details>`;
+}
+function rememberPlan() {
+  undoPlanner = { planner: structuredClone(planner), checked: [...checked] };
+}
+function persistPlan() {
+  persistenceAvailable =
+    writeLocal("planner", planner) &&
+    writeLocal("checked", [...checked]) &&
+    persistenceAvailable;
+  render();
+}
+function openTaskEditor(id?: string, monthId?: string) {
+  const months = personalTimeline(timeline, planner);
+  const containing = months.find((m) => m.tasks.some((t) => t.id === id));
+  const task = containing?.tasks.find((t) => t.id === id);
+  const dialog = document.querySelector<HTMLDialogElement>("#task-dialog")!;
+  dialog.innerHTML = `<form id="task-form"><div class="dialog-header"><h2 id="task-dialog-title">${task ? words("Edit your plan", "계획 수정") : words("A new task", "새 할 일")}</h2><button type="button" class="close-dialog" aria-label="${words("Cancel", "취소")}">×</button></div><div class="task-form-fields"><label>${words("Task", "할 일")}<input name="title" required maxlength="180" value="${esc(task ? translate(task.title) : "")}"></label><label>${words("Month · choose another to move", "월 · 다른 달을 선택하면 이동합니다")}<select name="monthId">${timeline.map((m) => `<option value="${m.id}" ${m.id === (containing?.id ?? monthId) ? "selected" : ""}>${esc(month(m.id))}</option>`).join("")}</select></label><label>${words("Details / my notes", "자세한 내용 / 내 메모")}<textarea name="detail" rows="7" maxlength="5000">${esc(task ? translate(task.detail) : "")}</textarea></label><p class="small">${words("Your edits are personal planning notes. Original official guidance remains available under the task.", "수정 내용은 개인 계획으로 저장됩니다. 기존 공식 안내와 출처는 항목 아래에서 다시 확인할 수 있어요.")}</p><div class="form-actions"><button type="button" id="cancel-task" class="text-button">${words("Cancel", "취소")}</button><button class="button" type="submit">${words("Save plan", "저장하기")}</button></div></div></form>`;
+  dialog
+    .querySelector(".close-dialog")!
+    .addEventListener("click", () => dialog.close());
+  dialog
+    .querySelector("#cancel-task")!
+    .addEventListener("click", () => dialog.close());
+  dialog.querySelector("form")!.addEventListener("submit", (event) => {
+    event.preventDefault();
+    const form = event.currentTarget as HTMLFormElement;
+    const data = new FormData(form),
+      title = String(data.get("title") ?? "").trim();
+    if (!title) {
+      (form.elements.namedItem("title") as HTMLInputElement).focus();
+      return;
+    }
+    rememberPlan();
+    planner = saveTaskEdit(planner, {
+      id: id ?? `custom-${crypto.randomUUID()}`,
+      monthId: String(data.get("monthId")),
+      title,
+      detail: String(data.get("detail") ?? ""),
+    });
+    plannerNotice = words("Plan saved.", "계획을 저장했어요.");
+    dialog.close();
+    persistPlan();
+  });
+  dialog.showModal();
+}
+const rankFor = (id: string) =>
+  evidenceMap.get(id)?.ranking ?? existingRankings.find((r) => r.id === id);
+const byRank = (a: University, b: University) =>
+  (rankFor(a.id)?.rank ?? 999) - (rankFor(b.id)?.rank ?? 999);
+function rankLabel(id: string) {
+  const r = rankFor(id);
+  return r?.rank ? `#${r.rank}` : words("Not verified", "미확인");
+}
+function scoreLabel(id: string, score: number) {
+  const position = compareSat(score, strategies[id].range);
+  const labels = {
+    below: words("Below range", "분포 미만"),
+    within: words("Within range", "분포 내"),
+    above: words("Above range", "분포 초과"),
+    unknown: words("No verified range", "분포 미확인"),
+  };
+  return labels[position];
+}
+function comparisonPanel(list: University[]) {
+  if (!profile.band)
+    return `<div class="comparison-empty"><span>01</span><h2>${words("Choose an Ontario grade band above.", "위에서 온타리오 성적 구간을 선택하세요.")}</h2><p>${words("Compare five SAT scores across all 20 universities, with entry rules and major evidence alongside.", "20개 대학을 SAT 1100 · 1200 · 1300 · 1400 · 1500점으로 비교합니다. 지원 요건과 전공별 근거도 함께 확인하세요.")}</p></div>`;
+  const sorted = [...list].sort(byRank);
+  return `<section class="comparison-intro"><div><span class="eyebrow">ONTARIO × SAT</span><h2>${esc(profile.band)} + SAT</h2><p>${words("Five score scenarios. One complete transcript still matters.", "SAT 5개 점수 시나리오를 나란히 비교하세요.")}</p></div><button class="text-button" id="export-comparison">${words("Download all 40 scenarios ↓", "전체 40개 조합 내려받기 ↓")}</button></section>
+  <div class="comparison-key"><span class="sat-below">${words("Below published middle 50%", "공개 중간 50% 미만")}</span><span class="sat-within">${words("Within published middle 50%", "공개 중간 50% 안")}</span><span class="sat-above">${words("Above published middle 50%", "공개 중간 50% 초과")}</span></div>
+  <details class="methodology comparison-help"><summary>${words("How to read this comparison", "비교표 읽는 법")}</summary><p class="small">${words("These are score distributions, not admission cutoffs. Cohorts differ by school; the last column identifies them. The Ontario column is an editorial planning category, not confirmed eligibility. Grade bands use the lower bound inclusively and upper bound exclusively, except 100% is included.", "색상은 합격선이 아니라 시험 점수 분포 비교입니다. 학교별 집단·연도가 다르므로 마지막 열을 확인하세요. 온타리오 분류는 지원 전략 참고이며 지원 자격 확정이 아닙니다. 성적 구간은 하한 포함·상한 미포함이며 마지막 구간은 100%를 포함합니다.")}</p></details>
+  ${profile.citizenship !== "us" && GRADE_BANDS.indexOf(profile.band) < 3 ? `<aside class="conditional-route"><strong>${words("A verified conditional route: Iowa State", "공식 규정으로 확인된 조건부 검토: 아이오와 주립대")}</strong><p>${words("At SAT1200+, the current international rule satisfies the GPA component only. This can be worth checking even in the60–65% band. Remaining coursework, English, credential and financial conditions still need review; Fall2028 continuation is unconfirmed.", "SAT 1200 이상은 현재 국제학생 규정의 GPA 항목을 충족합니다. 60–65% 구간에서도 이 규정의 적용 여부를 문의할 가치가 있습니다. 필수 과목·영어·졸업 자격·재정 요건은 별도 심사하며 2028년 적용은 재확인해야 합니다.")}</p>${refs(["isu-admissions"])}</aside>` : ""}
+  <div class="table-wrap scenario-wrap" tabindex="0" aria-label="${words("Scroll the SAT comparison table", "SAT 비교표 가로 스크롤")}"><table class="scenario-table"><caption>${esc(profile.band)} · ${list.length} ${words("schools · SAT scenarios, not admission predictions", "개 대학 · SAT 시나리오, 합격 예측 아님")}</caption><thead><tr><th>${words("University / U.S. rank¹", "대학교 / 미국 순위¹")}</th><th>${words("Ontario planning²", "온타리오 검토 분류²")}</th>${SAT_SCENARIOS.map((n) => `<th>SAT ${n}</th>`).join("")}<th>${words("Official cohort & evidence", "공식 집단 · 근거")}</th></tr></thead><tbody>${sorted
+    .map((u) => {
+      const strategy = strategies[u.id];
+      return `<tr><th><button class="school-table-link" data-detail="${u.id}">${esc(translate(u.name))}</button><span class="small">${rankLabel(u.id)} · 2026</span><span class="table-majors">${strategy.majors.map((m) => esc(translate(m))).join(" · ")}</span></th><td>${badge(u.id)}</td>${SAT_SCENARIOS.map((score) => `<td class="sat-${compareSat(score, strategy.range)}"><strong>${scoreLabel(u.id, score)}</strong>${meetsPublishedAlternative(u.id, score, profile) ? `<span class="conditional-chip">${words("International GPA alternative*", "국제지원 GPA 대체*")}</span>` : ""}<span class="small">${words("Transcript review", "성적표 심사 필요")}</span></td>`).join("")}<td>${strategy.range ? `<strong>${strategy.range.low}–${strategy.range.high}</strong><p>${esc(translate(strategy.range.cohort))}</p>${refs(strategy.range.sourceIds)}` : words("A verified composite middle50% is unavailable in this review.", "이번 조사에서 총점 중간 50% 분포를 확인하지 못했습니다.")}<button class="text-button" data-detail="${u.id}">${words("Rules & majors →", "지원 요건 · 전공 →")}</button></td></tr>`;
     })
     .join(
       "",
-    )}</div><section class="section"><h2>Application plans, without the confusion.</h2>${planFact("early-options")}<p>Regular Decision has a published standard deadline; rolling admission reviews applications over a period, often while space remains. Neither guarantees admission. University-specific deadlines and required-material dates belong to the actual entry year.</p><a href="#universities" class="text-link">Check each university’s published reference dates →</a></section><section class="section"><h2>Before you cross the border</h2>${planFact("canadian-entry")}${planFact("federal-aid")}</section>`;
+    )}</tbody></table></div><p class="small">${words("¹ U.S.News2026 National Universities, including public and private institutions. Historical common edition, not the latest2027 edition or a ranking of all U.S.institutions. ² Editorial scenarios; neither SAT1500 nor an upper grade band guarantees admission. *International GPA component only; citizenship and entry year require confirmation.", "¹ U.S. News 2026년판 National Universities: 공립·사립 종합대학 비교. 최신 2027년판이나 미국 모든 대학 유형을 합친 순위가 아닙니다. ² 편집상 시나리오로, SAT 1500이나 높은 학교 성적도 합격을 보장하지 않습니다. *국제학생 GPA 항목에 한함. 국적별 적용과 입학 연도를 확인하세요.")}</p>`;
+}
+function rankingsPanel(list: University[]) {
+  return `<section class="ranking-intro"><h2>${words("Rankings, recognition & majors", "미국 순위 · 인지도 · 전공")}</h2><p>${words("All schools use the same2026 U.S.News National Universities edition, verified through institutional releases or dated news reports. Korean recognition has no verified representative ranking in this review: the brand tiers are editorial references only, not Korea-specific survey results. QS employer reputation is global and cannot substitute for a Korean recognition poll.", "미국 순위는 학교 발표 또는 해당 연도 보도에서 확인한 U.S. News 2026년판 National Universities로 통일했습니다. 한국 내 인지도를 비교한 대표성 있는 조사 순위는 이번 조사에서 확인하지 못했습니다. 브랜드 등급은 편집상 참고이며 한국인 대상 설문 결과가 아닙니다. QS의 고용주 평판도 세계 조사이므로 한국 인지도 순위로 바꿔 쓰지 않습니다.")}</p>${refs(["qs-methodology"])}</section><div class="table-wrap"><table class="ranking-table"><caption>U.S. News · 2026 · National Universities</caption><thead><tr><th>${words("U.S.rank", "미국 순위")}</th><th>${words("University", "대학교")}</th><th>${words("Brand reference · editorial", "브랜드 참고 · 편집")}</th><th>${words("Majors to investigate", "검토할 전공")}</th><th>${words("Ontario minimum / lowest-entry major", "온타리오 최저점 / 최저 입학 전공")}</th></tr></thead><tbody>${[
+    ...list,
+  ]
+    .sort(byRank)
+    .map((u) => {
+      const rank = rankFor(u.id),
+        e = evidenceMap.get(u.id);
+      return `<tr><td>${rank?.url ? link(rank.url, rankLabel(u.id)) : rankLabel(u.id)}${rank && "verification" in rank && rank.verification === "reported-by-secondary" ? `<span class="small">${words("Dated news report", "해당 연도 보도 확인")}</span>` : ""}</td><th><button class="school-table-link" data-detail="${u.id}">${esc(translate(u.name))}</button></th><td>${esc(translate(strategies[u.id].recognition))}<span class="small">${words("Not a Korean rank", "한국 인지도 순위 아님")}</span></td><td>${strategies[u.id].majors.map((m) => esc(translate(m))).join("<br>")}</td><td>${e?.eligibility.ontarioMinimum ?? words("No verified percentage cutoff", "검증된 % 합격선 없음")}<span class="small">${words("No proven lowest-entry major; see unit-specific evidence.", "최저 입학 전공을 단정할 수 없음. 모집 단위별 근거를 확인하세요.")}</span><button class="text-button" data-detail="${u.id}">${words("View evidence →", "근거 보기 →")}</button></td></tr>`;
+    })
+    .join("")}</tbody></table></div>`;
 }
 function universitiesPage() {
   let list =
@@ -189,7 +300,9 @@ function universitiesPage() {
     );
   });
   return `<div class="page-intro"><h1>Find universities</h1><p>Choose a grade range. Explore your options.</p></div>${profilePanel()}<div class="tabs" aria-label="University view">${[
+    ["compare", words("Grade × SAT", "성적 × SAT 비교")],
     ["explore", "All universities"],
+    ["rankings", words("Rankings & majors", "순위 · 전공")],
     ["picks", "My 6 picks"],
     ["saved", `Saved (${saved.size})`],
   ]
@@ -199,7 +312,7 @@ function universitiesPage() {
     )
     .join(
       "",
-    )}</div><div class="filter-bar"><label class="search-field"><span class="sr-only">Search universities or majors</span><input id="university-search" type="search" placeholder="Search a university or subject" value="${esc(universitySearch)}"></label><button class="text-button" id="advanced-toggle" aria-expanded="${advancedExpanded}">Advanced filters ${advancedExpanded ? "−" : "+"}</button><span class="small muted" role="status">${list.length} ${list.length === 1 ? "university" : "universities"}</span></div>${advancedExpanded ? `<div class="advanced-filters">${filterSelect("difficulty", "Planning category", ["Very High Reach", "Reach", "Target", "More Realistic"], difficulty)}${filterSelect("recognition", "Brand reference", ["Very High", "High", "Moderate"], recognition)}${filterSelect("testing", "Published SAT policy", ["Test optional", "Test required", "Confirm policy"], testing)}${filterSelect("state", "State", [...new Set(universities.map((u) => u.state))].sort(), state)}${filterSelect("sector", "University type", ["Public", "Private"], sector)}<button class="text-button" id="clear-filters">Clear filters</button></div>` : ""}<p class="planning-disclaimer">This is planning guidance, not an admission guarantee. Categories are editorial exploration scenarios, not validated Ontario cutoffs. ${profile.program === "specialized" ? "Specialized-program fit requires a separate review." : ""}</p>${profile.band && GRADE_BANDS.indexOf(profile.band) < 3 ? pathwayPanel() : ""}${universityMode === "picks" ? `<div class="notice">${profile.band ? "Up to six working picks, balancing available planning categories before brand reference. We do not fill a list with unsuitable names. “Target” still requires a full transcript assessment; “More Realistic” appears only after course checks and strong preparation are reported." : "Choose a grade range to generate your working shortlist."}</div>` : ""}${list.length ? `<div class="cards">${list.map((u) => card(u)).join("")}</div>` : `<div class="empty-state"><h3>${universityMode === "saved" ? "Build your own shortlist." : "No matching universities."}</h3><p>${universityMode === "saved" ? "Use the + button on a university card to save it here." : "Adjust your filters, or review the separate pathway strategy. An empty shortlist is more honest than an invented fit."}</p><button class="text-button" id="clear-filters-empty">Clear filters</button></div>`}<details class="methodology"><summary>How these recommendations work</summary><p>Grade bands select manually authored, conservative exploration scenarios. Course eligibility and course rigor constrain “More Realistic”; specialized interests and an unreviewed U.S. applicant route prevent more favorable labels. SAT scores are compared with verified distributions for planning and never automatically raise the category. Acceptance rates, where verified, describe a cohort and are not individualized probabilities.</p><p>Brand Recognition is an editorial reference based on broad national/international visibility, not a measured Korean survey or a ranking. “Very High”, “High” and “Moderate” describe this limited comparison set. Major suggestions reflect breadth and documented program structures, not easier admission.</p><p>No transcript has been reviewed by this website. Grades 9–12, rigor, essays, activities, recommendations where required, English evidence, citizenship and program-specific rules can materially change an assessment. NYU is always a reach; no school here is a guaranteed safety.</p></details>`;
+    )}</div><div class="filter-bar"><label class="search-field"><span class="sr-only">Search universities or majors</span><input id="university-search" type="search" placeholder="Search a university or subject" value="${esc(universitySearch)}"></label><button class="text-button" id="advanced-toggle" aria-expanded="${advancedExpanded}">Advanced filters ${advancedExpanded ? "−" : "+"}</button><span class="small muted" role="status">${list.length} ${list.length === 1 ? "university" : "universities"}</span></div>${advancedExpanded ? `<div class="advanced-filters">${filterSelect("difficulty", "Planning category", ["Very High Reach", "Reach", "Target", "More Realistic"], difficulty)}${filterSelect("recognition", "Brand reference", ["Very High", "High", "Moderate"], recognition)}${filterSelect("testing", "Published SAT policy", ["Test optional", "Test required", "Confirm policy"], testing)}${filterSelect("state", "State", [...new Set(universities.map((u) => u.state))].sort(), state)}${filterSelect("sector", "University type", ["Public", "Private"], sector)}<button class="text-button" id="clear-filters">Clear filters</button></div>` : ""}<p class="planning-disclaimer">This is planning guidance, not an admission guarantee. Categories are editorial exploration scenarios, not validated Ontario cutoffs. ${profile.program === "specialized" ? "Specialized-program fit requires a separate review." : ""}</p>${profile.band && GRADE_BANDS.indexOf(profile.band) < 3 && !["compare", "rankings"].includes(universityMode) ? pathwayPanel() : ""}${universityMode === "picks" ? `<div class="notice">${profile.band ? "Up to six working picks, balancing available planning categories before brand reference. We do not fill a list with unsuitable names. “Target” still requires a full transcript assessment; “More Realistic” appears only after course checks and strong preparation are reported." : "Choose a grade range to generate your working shortlist."}</div>` : ""}${universityMode === "compare" ? comparisonPanel(list) : universityMode === "rankings" ? rankingsPanel(list) : list.length ? `<div class="cards">${list.map((u) => card(u)).join("")}</div>` : `<div class="empty-state"><h3>${universityMode === "saved" ? "Build your own shortlist." : "No matching universities."}</h3><p>${universityMode === "saved" ? "Use the + button on a university card to save it here." : "Adjust your filters, or review the separate pathway strategy. An empty shortlist is more honest than an invented fit."}</p><button class="text-button" id="clear-filters-empty">Clear filters</button></div>`}<details class="methodology"><summary>How these recommendations work</summary><p>Grade bands select manually authored, conservative exploration scenarios. Course eligibility and course rigor constrain “More Realistic”; specialized interests and an unreviewed U.S. applicant route prevent more favorable labels. SAT scores are compared with verified distributions for planning and never automatically raise the category. Acceptance rates, where verified, describe a cohort and are not individualized probabilities.</p><p>Brand Recognition is an editorial reference based on broad national/international visibility, not a measured Korean survey or a ranking. “Very High”, “High” and “Moderate” describe this limited comparison set. Major suggestions reflect breadth and documented program structures, not easier admission.</p><p>No transcript has been reviewed by this website. Grades 9–12, rigor, essays, activities, recommendations where required, English evidence, citizenship and program-specific rules can materially change an assessment. NYU is always a reach; no school here is a guaranteed safety.</p></details>`;
 }
 function filterSelect(
   id: string,
@@ -253,7 +366,7 @@ function sourcesPage() {
       .toLowerCase()
       .includes(sourceSearch.toLowerCase()),
   );
-  return `<div class="page-intro"><h1>Sources</h1><p>Admissions offices, university catalogs, College Board, Ontario education and official government guidance. Every link opens the underlying page.</p><p class="small muted">Source document titles, publishers and reference cycles retain their original wording for verification.</p></div><div class="source-summary"><div><strong>${universities.length}</strong><span>universities researched</span></div><div><strong>${sources.length}</strong><span>source records</span></div><div><strong>Oct 21, 2026</strong><span>research snapshot</span></div></div><div class="notice">“Verified” records when a source was reviewed, not a guarantee that every field is known or still current. Source cycle and each fact’s status distinguish historical references, conflicts, editorial guidance and unverified information.</div><div class="filter-bar"><label class="search-field"><span class="sr-only">Search sources</span><input type="search" id="source-search" placeholder="Search publisher, topic or university" value="${esc(sourceSearch)}"></label><span role="status" class="small muted">${list.length} source records</span></div><div class="source-list">${list.map((s) => `<article><div><span class="eyebrow" data-original-language lang="en">${esc(s.publisher)}</span><h2 data-original-language lang="en">${link(s.url, s.title)}</h2><p class="source-url">${esc(s.url)}</p><p class="small" data-original-language lang="en">${esc(s.cycle)}</p></div><span class="small muted">Reviewed<br>${date(s.verified)}</span></article>`).join("") || '<p class="empty-state">No sources match this search.</p>'}</div><details class="methodology"><summary>Research method & known limitations</summary><p>University admissions and program pages take precedence over aggregators. Official testing bodies, government agencies and publishers support testing, travel and materials. Books and essay advice are supplemental, not admissions requirements. An inaccessible or conflicting source is disclosed rather than filled with a guessed fact.</p><p>Fall 2028 application deadlines and most testing-policy commitments require rechecking. 2027–28 SAT dates are anticipated; 2028 AP dates are not yet published in the reviewed schedule. Cost figures retain their published year and exclusions. Ontario equivalents and English waivers require school-specific assessment.</p><p>This is an independently prepared planning tool, not a university service or an admissions prediction model.</p></details>`;
+  return `<div class="page-intro"><h1>Sources</h1><p>${words("Admissions offices, university catalogs, official testing and government guidance, plus dated ranking reports. Every link opens the underlying page.", "대학 입학처·학과 안내·공식 시험 및 정부 자료와 해당 연도 순위 보도를 모았습니다. 각 링크에서 원문을 확인할 수 있습니다.")}</p><p class="small muted">Source document titles, publishers and reference cycles retain their original wording for verification.</p></div><div class="source-summary"><div><strong>${universities.length}</strong><span>universities researched</span></div><div><strong>${sources.length}</strong><span>source records</span></div><div><strong>Oct 21–22, 2026</strong><span>research snapshot</span></div></div><div class="notice">“Verified” records when a source was reviewed, not a guarantee that every field is known or still current. Source cycle and each fact’s status distinguish historical references, conflicts, editorial guidance and unverified information.</div><div class="filter-bar"><label class="search-field"><span class="sr-only">Search sources</span><input type="search" id="source-search" placeholder="Search publisher, topic or university" value="${esc(sourceSearch)}"></label><span role="status" class="small muted">${list.length} source records</span></div><div class="source-list">${list.map((s) => `<article><div><span class="eyebrow" data-original-language lang="en">${esc(s.publisher)}</span><h2 data-original-language lang="en">${link(s.url, s.title)}</h2><p class="source-url">${esc(s.url)}</p><p class="small" data-original-language lang="en">${esc(s.cycle)}</p></div><span class="small muted">Reviewed<br>${date(s.verified)}</span></article>`).join("") || '<p class="empty-state">No sources match this search.</p>'}</div><details class="methodology"><summary>Research method & known limitations</summary><p>University admissions and program pages take precedence over aggregators. Official testing bodies, government agencies and publishers support testing, travel and materials. Books and essay advice are supplemental, not admissions requirements. An inaccessible or conflicting source is disclosed rather than filled with a guessed fact.</p><p>Fall 2028 application deadlines and most testing-policy commitments require rechecking. 2027–28 SAT dates are anticipated; 2028 AP dates are not yet published in the reviewed schedule. Cost figures retain their published year and exclusions. Ontario equivalents and English waivers require school-specific assessment.</p><p>This is an independently prepared planning tool, not a university service or an admissions prediction model.</p></details>`;
 }
 function render(restoreFocus = false) {
   const active = document.activeElement as HTMLInputElement | null;
@@ -266,7 +379,7 @@ function render(restoreFocus = false) {
       else openedDetails.delete(d.dataset.disclosure!);
     });
   const r = route();
-  app.innerHTML = `<aside class="sidebar"><a class="brand" href="#overview" aria-label="UniNavo home"><span class="brand-symbol">u<span>↗</span></span><span>UniNavo<span class="brand-sub">YOUR NEXT CHAPTER</span></span></a><nav aria-label="Main navigation">${nav.map((n) => `<a href="#${n.id}" ${r === n.id ? 'aria-current="page"' : ""}><span aria-hidden="true">${n.icon}</span>${n.label}${n.id === "timeline" ? "<i></i>" : ""}</a>`).join("")}</nav></aside><div class="workspace"><header class="topbar"><span>Grade 11 → Fall 2028</span><div class="top-actions"><button id="language-toggle" class="language-toggle" lang="${getLanguage() === "en" ? "ko" : "en"}" aria-label="${getLanguage() === "en" ? "한국어로 보기" : "Switch to English"}"><span aria-hidden="true">◎</span> ${getLanguage() === "en" ? "한국어" : "English"}</button></div></header><main id="main" tabindex="-1">${r === "overview" ? overview() : r === "timeline" ? timelinePage() : r === "universities" ? universitiesPage() : r === "exams" ? examsPage() : r === "resources" ? resourcesPage() : sourcesPage()}</main><footer><p>Planning guidance, not an admission guarantee.</p><details class="footer-notes"><summary>Sources & important notes</summary><p>Last verified: October 21, 2026. Admission policies and deadlines can change. Always confirm final requirements on the university’s official admissions website before applying.</p><p>${persistenceAvailable ? "Your checklist and profile stay in this browser." : "Browser storage is unavailable. Changes are kept for this session only."}</p></details><a href="#sources">View sources ↗</a></footer></div><dialog id="university-dialog" aria-labelledby="dialog-title"></dialog><div id="live-status" class="sr-only" role="status" aria-live="polite"></div>`;
+  app.innerHTML = `<aside class="sidebar"><a class="brand" href="#timeline" aria-label="UniNavo home"><span class="brand-symbol">u<span>↗</span></span><span>UniNavo<span class="brand-sub">YOUR NEXT CHAPTER</span></span></a><nav aria-label="Main navigation">${nav.map((n) => `<a href="#${n.id}" ${r === n.id ? 'aria-current="page"' : ""}><span aria-hidden="true">${n.icon}</span>${n.label}${n.id === "timeline" ? "<i></i>" : ""}</a>`).join("")}</nav></aside><div class="workspace"><header class="topbar"><span>Grade 11 → Fall 2028</span><div class="top-actions"><button id="language-toggle" class="language-toggle" lang="${getLanguage() === "en" ? "ko" : "en"}" aria-label="${getLanguage() === "en" ? "한국어로 보기" : "Switch to English"}"><span aria-hidden="true">◎</span> ${getLanguage() === "en" ? "한국어" : "English"}</button></div></header><main id="main" tabindex="-1">${r === "timeline" ? timelinePage() : r === "universities" ? universitiesPage() : r === "exams" ? examsPage() : r === "resources" ? resourcesPage() : sourcesPage()}</main><footer><p>Planning guidance, not an admission guarantee.</p><details class="footer-notes"><summary>Sources & important notes</summary><p>Research reviewed: October 21–22, 2026. Admission policies and deadlines can change. Always confirm final requirements on the university’s official admissions website before applying.</p><p>${persistenceAvailable ? "Your checklist and profile stay in this browser." : "Browser storage is unavailable. Changes are kept for this session only."}</p></details><a href="#sources">View sources ↗</a></footer></div><dialog id="task-dialog" aria-labelledby="task-dialog-title"></dialog><dialog id="university-dialog" aria-labelledby="dialog-title"></dialog><div id="live-status" class="sr-only" role="status" aria-live="polite"></div>`;
   document.documentElement.lang = getLanguage();
   document.title =
     getLanguage() === "ko"
@@ -297,6 +410,117 @@ function clearFilters() {
   render();
 }
 function bind() {
+  document
+    .querySelector("#export-comparison")
+    ?.addEventListener("click", () => {
+      const csv = comparisonCsv(profile, (id) => rankFor(id)?.rank ?? null);
+      const url = URL.createObjectURL(
+          new Blob([csv], { type: "text/csv;charset=utf-8" }),
+        ),
+        a = document.createElement("a");
+      a.href = url;
+      a.download = "uninavo-40-scenarios-20-schools.csv";
+      a.click();
+      setTimeout(() => URL.revokeObjectURL(url), 1000);
+    });
+
+  document
+    .querySelectorAll<HTMLButtonElement>("[data-edit-task]")
+    .forEach((b) =>
+      b.addEventListener("click", () => openTaskEditor(b.dataset.editTask)),
+    );
+  document
+    .querySelectorAll<HTMLButtonElement>("[data-add-task]")
+    .forEach((b) =>
+      b.addEventListener("click", () =>
+        openTaskEditor(undefined, b.dataset.addTask),
+      ),
+    );
+  document
+    .querySelectorAll<HTMLButtonElement>("[data-delete-task]")
+    .forEach((b) =>
+      b.addEventListener("click", () => {
+        rememberPlan();
+        planner.deleted.push(b.dataset.deleteTask!);
+        plannerNotice = words(
+          "Task removed. You can undo this.",
+          "할 일을 삭제했어요. 실행 취소할 수 있습니다.",
+        );
+        persistPlan();
+      }),
+    );
+  document.querySelector("#undo-plan")?.addEventListener("click", () => {
+    if (!undoPlanner) return;
+    planner = undoPlanner.planner;
+    checked.clear();
+    undoPlanner.checked.forEach((id) => checked.add(id));
+    undoPlanner = null;
+    plannerNotice = words("Change undone.", "변경을 취소했어요.");
+    persistPlan();
+  });
+  document
+    .querySelectorAll<HTMLAnchorElement>("[data-jump-month]")
+    .forEach((a) =>
+      a.addEventListener("click", (e) => {
+        e.preventDefault();
+        phase = "all";
+        render();
+        document
+          .getElementById(`month-${a.dataset.jumpMonth}`)
+          ?.scrollIntoView({ behavior: "smooth", block: "start" });
+      }),
+    );
+  document.querySelector("#export-plan")?.addEventListener("click", () => {
+    const blob = new Blob(
+      [
+        JSON.stringify(
+          { app: "UniNavo", planner, checked: [...checked] },
+          null,
+          2,
+        ),
+      ],
+      { type: "application/json" },
+    );
+    const url = URL.createObjectURL(blob),
+      a = document.createElement("a");
+    a.href = url;
+    a.download = "uninavo-plan.json";
+    a.click();
+    setTimeout(() => URL.revokeObjectURL(url), 1000);
+  });
+  document
+    .querySelector<HTMLInputElement>("#import-plan")
+    ?.addEventListener("change", async (e) => {
+      const file = (e.target as HTMLInputElement).files?.[0];
+      if (!file) return;
+      try {
+        if (file.size > 2000000) throw new Error("size");
+        const data = JSON.parse(await file.text());
+        if (
+          data.app !== "UniNavo" ||
+          data.planner?.version !== 1 ||
+          !Array.isArray(data.planner.edits) ||
+          !Array.isArray(data.planner.deleted) ||
+          !Array.isArray(data.checked)
+        )
+          throw new Error("format");
+        rememberPlan();
+        planner = normalizePlanner(data.planner, timeline);
+        checked.clear();
+        data.checked
+          .filter((x: unknown) => typeof x === "string")
+          .forEach((id: string) => checked.add(id));
+        plannerNotice = words("Backup restored.", "백업을 불러왔어요.");
+        persistPlan();
+      } catch {
+        plannerNotice = words(
+          "Could not read this backup. Your plan was not changed.",
+          "백업 파일을 읽을 수 없어요. 기존 계획은 그대로입니다.",
+        );
+        render();
+      }
+    });
+
   document.getElementById("language-toggle")?.addEventListener("click", () => {
     persistenceAvailable =
       setLanguage(getLanguage() === "en" ? "ko" : "en") && persistenceAvailable;
@@ -373,6 +597,10 @@ function bind() {
   document.querySelectorAll<HTMLInputElement>("[data-task]").forEach((box) =>
     box.addEventListener("change", () => {
       const id = box.dataset.task!;
+      rememberPlan();
+      plannerNotice = box.checked
+        ? words("Task completed and saved.", "완료했어요. 저장되었습니다.")
+        : words("Task reopened.", "다시 할 일로 옮겼어요.");
       if (box.checked) checked.add(id);
       else checked.delete(id);
       persistenceAvailable =
@@ -381,12 +609,6 @@ function bind() {
       document
         .querySelector<HTMLInputElement>(`[data-task="${id}"]`)
         ?.focus({ preventScroll: true });
-    }),
-  );
-  document.querySelectorAll<HTMLDetailsElement>("[data-month]").forEach((d) =>
-    d.addEventListener("toggle", () => {
-      if (d.open) openedMonths.add(d.dataset.month!);
-      else openedMonths.delete(d.dataset.month!);
     }),
   );
   document
@@ -483,12 +705,50 @@ const factLabels: Record<string, string> = {
   cost: "Tuition & cost context",
   aid: "Financial aid & CSS Profile",
 };
+function researchDetails(u: University) {
+  const e = evidenceMap.get(u.id),
+    s = strategies[u.id];
+  const rule =
+    u.facts.ontario ??
+    u.facts.canadian ??
+    u.facts.requirements ??
+    u.facts.admission;
+  const structure =
+    u.facts.majorStructure ??
+    u.facts.admissionStructure ??
+    u.facts.structure ??
+    u.facts.majors;
+  const catalogs = comparisonContext.catalogs as Record<string, string>;
+  const rank = rankFor(u.id);
+  const catalog =
+    catalogs[u.id] ??
+    e?.catalog?.url ??
+    e?.majorsDirectory?.url ??
+    u.sources.find((source) =>
+      /full.*(major|program|catalog)|undergraduate.*(program|major).*directory|all.*(major|program)/i.test(
+        source.title,
+      ),
+    )?.url;
+  return `<section class="school-evidence"><div class="ranking-summary"><strong>${rank?.url ? link(rank.url, rankLabel(u.id)) : rankLabel(u.id)}</strong> <span>U.S. News · 2026 · National Universities</span><p>${words("Brand reference", "브랜드 참고")}: ${translate(s.recognition)} · ${words("Editorial; no verified Korean survey rank", "편집상 참고 · 한국 조사 순위 미확인")}</p></div><h3>${words("Ontario credentials & entry rules", "온타리오 학력 · 지원 요건")}</h3>${rule ? fact(rule) : ""}<h3>${words("Which majors have lower entry requirements?", "입학 요건이 낮은 전공은?")}</h3><p>${words("No verified lowest Ontario admission mark is available for these majors. Where colleges publish distinct requirements or score profiles, they are shown below. A declaration rule after enrollment is not a freshman admission cutoff.", "아래 전공의 온타리오 최저 합격점은 확인되지 않았습니다. 단과대별 요건이나 점수 분포 차이가 공개된 경우 아래에 표시했습니다. 입학 후 전공 선언 조건은 신입학 합격선이 아닙니다.")}</p>${u.id === "asu" ? `<div class="conditional-route"><p>${esc(words(comparisonContext.asuComparison.text, comparisonContext.asuComparison.ko))}</p>${refs(comparisonContext.asuComparison.sourceIds)}</div>` : ""}${structure ? fact(structure) : ""}
+  ${
+    e
+      ? `<div class="major-evidence">${e.majorEvidence
+          .map((m, i) => {
+            const ko = e.ko.majorEvidence?.[i];
+            return `<article><h4>${esc(words(m.name, ko?.name ?? e.ko.majorNames[i] ?? translate(m.name)))}</h4><p>${esc(words(m.admissionUnit, ko?.admissionUnit ?? translate(m.admissionUnit)))}</p><p>${m.minimum ? esc(words(m.minimum, ko?.minimum ?? m.minimum)) : words("No published major-specific admission minimum verified.", "공개된 전공별 신입학 최저점 미확인.")}</p>${refs(m.sourceIds)}</article>`;
+          })
+          .join("")}</div>`
+      : ""
+  }
+  ${e?.programRanges?.length ? `<h3>${words("College-specific SAT references", "단과대별 SAT 참고 범위")}</h3><p>${words("Middle50% of the named cohort; not minimums. Differences do not prove that changing majors causes admission.", "명시한 집단의 중간 50% 분포이며 최저점이 아닙니다. 점수 분포 차이가 전공 변경으로 합격할 수 있음을 뜻하지 않습니다.")}</p><div class="program-range-list">${e.programRanges.map((r) => `<article><span>${esc(translate(r.unit))}</span><strong>${r.low}–${r.high}</strong><p class="small">${esc(translate(r.cohort))}</p>${refs(r.sourceIds)}</article>`).join("")}</div>` : ""}
+  ${catalog ? `<p>${link(catalog, words("Browse the full official major directory", "공식 전체 학과 목록 보기"), "text-link")}</p><p class="small">${words("Filter the directory to bachelor’s programs at this campus. The focused subjects above are not the full catalog; other programs may add auditions, portfolios or separate admission.", "학사 과정과 해당 캠퍼스로 필터하세요. 위 전공은 집중 검토한 후보이며 전체 학과 목록이 아닙니다. 다른 학과는 실기·포트폴리오·별도 선발을 요구할 수 있습니다.")}</p>` : ""}</section>`;
+}
 function openUniversity(id: string) {
   const u = universities.find((u) => u.id === id)!;
   const s = strategies[id];
   const dialog =
     document.querySelector<HTMLDialogElement>("#university-dialog")!;
-  dialog.innerHTML = `<div class="dialog-header"><span class="monogram" style="--school:${s.color}">${s.initials}</span><button class="close-dialog" aria-label="Close university details">×</button></div><div class="dialog-body"><span class="eyebrow">${esc(u.city)}, ${esc(u.state)} · ${esc(u.type)}</span><h2 id="dialog-title">${esc(u.name)}</h2>${badge(id)}<p class="lead">${esc(s.fit)}</p><div class="notice">Fall 2028 entry: do not reuse reference-cycle deadlines as your application deadlines. ${s.testing === "Confirm policy" ? "NYU New York testing policy needs direct confirmation." : "Published test-optional policy is not a verified Fall 2028 commitment."}</div><section><h3>Academic direction</h3><p>${esc(s.majors.join(" · "))}</p><p class="small">${esc(s.structure)} · Brand reference: ${s.recognition} (editorial, not an admissions metric).</p><p class="small">${esc(scoreContext(s, profile))}</p></section><div class="detail-facts">${Object.entries(
+  dialog.innerHTML = `<div class="dialog-header"><span class="monogram" style="--school:${s.color}">${s.initials}</span><button class="close-dialog" aria-label="Close university details">×</button></div><div class="dialog-body"><span class="eyebrow">${esc(u.city)}, ${esc(u.state)} · ${esc(u.type)}</span><h2 id="dialog-title">${esc(u.name)}</h2>${badge(id)}<p class="lead">${esc(s.fit)}</p><div class="notice">Fall 2028 entry: do not reuse reference-cycle deadlines as your application deadlines. ${s.testing === "Confirm policy" ? "Confirm the testing policy for the selected school and Fall 2028." : "Read the school-specific test requirement and applicable entry year below."}</div><section><h3>Academic direction</h3><p>${esc(s.majors.join(" · "))}</p><p class="small">${esc(s.structure)} · Brand reference: ${s.recognition} (editorial, not an admissions metric).</p><p class="small">${esc(scoreContext(s, profile))}</p></section>${researchDetails(u)}<div class="detail-facts">${Object.entries(
     u.facts,
   )
     .map(([key, f]) => fact(f, factLabels[key] ?? key))

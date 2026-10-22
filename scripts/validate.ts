@@ -38,7 +38,10 @@ export function validateData(): string[] {
       errors.push(`${s.id}: malformed URL`);
     }
     check(s.title && s.publisher && s.cycle, `${s.id}: incomplete metadata`);
-    check(s.verified === RESEARCH_DATE, `${s.id}: verification date mismatch`);
+    check(
+      /^2026-10-(21|22)$/.test(s.verified) && s.verified <= RESEARCH_DATE,
+      `${s.id}: verification date mismatch`,
+    );
   }
   const checkFact = (f: Fact, location: string) => {
     check(f.text && f.status, `${location}: incomplete fact`);

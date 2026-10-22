@@ -1,0 +1,821 @@
+[
+  {
+    "id": "rutgers-new-brunswick",
+    "name": "Rutgers University–New Brunswick",
+    "city": "New Brunswick",
+    "state": "New Jersey",
+    "type": "Public",
+    "recognition": "High",
+    "recognitionNote": "Editorial brand reference only; no measured Korean recognition ranking was verified.",
+    "testingPolicy": "Test optional; recheck Fall 2028",
+    "majors": ["Sociology BA", "History BA"],
+    "admissionStructure": "School admission; SAS majors declared after enrollment",
+    "sources": [
+      {
+        "id": "rutgers-new-brunswick-profile",
+        "title": "Admission review, course requirements and Fall 2026 school profiles",
+        "publisher": "Rutgers University–New Brunswick",
+        "url": "https://admissions.rutgers.edu/apply/how-we-make-decisions",
+        "verified": "2026-10-22",
+        "cycle": "Fall 2026 admitted cohort; current requirements"
+      },
+      {
+        "id": "rutgers-new-brunswick-apply",
+        "title": "Required credentials for first-year applicants",
+        "publisher": "Rutgers University–New Brunswick",
+        "url": "https://admissions.rutgers.edu/apply/first-year-applicants",
+        "verified": "2026-10-22",
+        "cycle": "Testing explicitly through 2027; Fall 2028 unconfirmed"
+      },
+      {
+        "id": "rutgers-new-brunswick-international",
+        "title": "International credentials and English proficiency",
+        "publisher": "Rutgers University–New Brunswick",
+        "url": "https://admissions.rutgers.edu/apply/international-applicants",
+        "verified": "2026-10-22",
+        "cycle": "Current page; Fall 2028 unconfirmed"
+      },
+      {
+        "id": "rutgers-new-brunswick-dates",
+        "title": "New Brunswick dates and deadlines",
+        "publisher": "Rutgers University–New Brunswick",
+        "url": "https://admissions.rutgers.edu/apply/dates-deadlines/new-brunswick",
+        "verified": "2026-10-22",
+        "cycle": "Fall 2027"
+      },
+      {
+        "id": "rutgers-new-brunswick-majors",
+        "title": "SAS first-year major declaration and AP guidance",
+        "publisher": "Rutgers University–New Brunswick",
+        "url": "https://sasundergrad.rutgers.edu/resources/faq/first-year-faqs",
+        "verified": "2026-10-22",
+        "cycle": "Current SAS policy"
+      },
+      {
+        "id": "rutgers-new-brunswick-sociology",
+        "title": "Sociology major requirements",
+        "publisher": "Rutgers University–New Brunswick",
+        "url": "https://sociology.sas.rutgers.edu/academics/undergraduate/major-or-minor-in-sociology",
+        "verified": "2026-10-22",
+        "cycle": "Current undergraduate major"
+      },
+      {
+        "id": "rutgers-new-brunswick-history",
+        "title": "History major requirements",
+        "publisher": "Rutgers University–New Brunswick",
+        "url": "https://history.rutgers.edu/academics/undergraduate/major-requirements",
+        "verified": "2026-10-22",
+        "cycle": "Current undergraduate major"
+      },
+      {
+        "id": "rutgers-new-brunswick-cost",
+        "title": "Tuition and fees",
+        "publisher": "Rutgers University–New Brunswick",
+        "url": "https://admissions.newbrunswick.rutgers.edu/costs-and-aid/tuition-fees",
+        "verified": "2026-10-22",
+        "cycle": "2026–27"
+      },
+      {
+        "id": "rutgers-new-brunswick-aid",
+        "title": "New Brunswick international scholarships",
+        "publisher": "Rutgers University–New Brunswick",
+        "url": "https://admissions.rutgers.edu/new-brunswick-scholarships",
+        "verified": "2026-10-22",
+        "cycle": "Current page; Fall 2028 unconfirmed"
+      },
+      {
+        "id": "rutgers-new-brunswick-ranking",
+        "title": "2026 U.S. News National Universities ranking",
+        "publisher": "Rutgers University–New Brunswick",
+        "url": "https://www.rutgers.edu/news/rutgers-highly-ranked-graduates-social-mobility",
+        "verified": "2026-10-22",
+        "cycle": "2026 edition; common comparison vintage, not latest 2027 edition"
+      },
+      {
+        "id": "rutgers-new-brunswick-directory",
+        "title": "Complete undergraduate program directory",
+        "publisher": "Rutgers University–New Brunswick",
+        "url": "https://admissions.rutgers.edu/majors",
+        "verified": "2026-10-22",
+        "cycle": "Current directory; confirm entry-year availability"
+      }
+    ],
+    "facts": {
+      "admission": {
+        "text": "Holistic school-level review of curriculum, grades, trends and other credentials. No Ontario percentage admission threshold was verified.",
+        "sourceIds": ["rutgers-new-brunswick-profile"],
+        "status": "verified"
+      },
+      "acceptanceRate": {
+        "text": "No defined-cohort acceptance rate is used. Entering-class size divided by applications would be yield-related, not an acceptance rate.",
+        "sourceIds": [],
+        "status": "not-verified"
+      },
+      "sat": {
+        "text": "New Brunswick is test optional through 2027. Fall 2028 policy needs confirmation. Submitted scores must come from the testing agency.",
+        "sourceIds": ["rutgers-new-brunswick-apply"],
+        "status": "confirm"
+      },
+      "satMiddle50": {
+        "text": "SAS: 1380–1520, middle 50% of Fall 2026 admitted students submitting scores. This school-specific distribution is neither a minimum nor a guarantee.",
+        "sourceIds": ["rutgers-new-brunswick-profile"],
+        "status": "verified"
+      },
+      "satTarget": {
+        "text": "Use the SAS distribution as submission context. A 1500 score does not prove that a 60–65% Ontario transcript meets admission standards.",
+        "sourceIds": ["rutgers-new-brunswick-profile"],
+        "status": "editorial"
+      },
+      "deadlines": {
+        "text": "Fall 2028 deadlines are not verified. Fall 2027 reference: EA November 1, 2026; RD December 1, 2026; reply May 1, 2027.",
+        "sourceIds": ["rutgers-new-brunswick-dates"],
+        "status": "future-unpublished"
+      },
+      "application": {
+        "text": "Rutgers Application or Common App; USD 70 fee; required essay and STARS record. Recommendations are not requested.",
+        "sourceIds": [
+          "rutgers-new-brunswick-apply",
+          "rutgers-new-brunswick-international"
+        ],
+        "status": "verified"
+      },
+      "ontario": {
+        "text": "International-school students self-report coursework and marks through STARS; official records follow for enrollment. An Ontario top-six formula, U/M equivalencies and minimum percentage were not verified.",
+        "sourceIds": ["rutgers-new-brunswick-international"],
+        "status": "confirm"
+      },
+      "coursework": {
+        "text": "SAS requires 16 academic units: English 4, one foreign language 2, mathematics 3 through Algebra II, science 2, and other academic courses 5. Confirm Ontario equivalencies.",
+        "sourceIds": ["rutgers-new-brunswick-profile"],
+        "status": "confirm"
+      },
+      "international": {
+        "text": "Rutgers international guidance includes students attending high school outside the U.S.; citizenship and immigration questions still determine the relevant documentation.",
+        "sourceIds": ["rutgers-new-brunswick-international"],
+        "status": "verified"
+      },
+      "english": {
+        "text": "For New Brunswick, IELTS 6.5 or DET 115 are listed. English-medium schooling may receive a case-by-case waiver. Do not assume Ontario attendance automatically qualifies. Pharmacy/nursing have higher requirements.",
+        "sourceIds": ["rutgers-new-brunswick-international"],
+        "status": "confirm"
+      },
+      "majorStructure": {
+        "text": "SAS students normally declare during second year, after prerequisites where applicable. Sociology requires introductory sociology plus a listed thematic course before declaration; this is a college-stage rule, not a high-school cutoff.",
+        "sourceIds": [
+          "rutgers-new-brunswick-majors",
+          "rutgers-new-brunswick-sociology"
+        ],
+        "status": "verified"
+      },
+      "recommendedMajors": {
+        "text": "Sociology BA and History BA are genuine SAS options. No lower freshman admission cutoff or major-specific admission advantage was established.",
+        "sourceIds": [
+          "rutgers-new-brunswick-sociology",
+          "rutgers-new-brunswick-history"
+        ],
+        "status": "editorial"
+      },
+      "ap": {
+        "text": "SAS considers official AP scores of 4 or 5 for credit, subject to subject-specific evaluation. AP credit is not a general admission requirement. Recheck the entry-year table.",
+        "sourceIds": ["rutgers-new-brunswick-majors"],
+        "status": "verified"
+      },
+      "cost": {
+        "text": "2026–27 New Brunswick nonresident on-campus tuition, fees, food and housing: USD 62,782. This is not full international cost: insurance, SEVIS administration, books, travel and other expenses are additional.",
+        "sourceIds": ["rutgers-new-brunswick-cost"],
+        "status": "verified"
+      },
+      "aid": {
+        "text": "Admitted international first-years are automatically considered for competitive awards of USD 5,000–16,000 annually. Current renewal requires a 3.25 GPA; awards are not guaranteed. Recheck 2028 terms.",
+        "sourceIds": ["rutgers-new-brunswick-aid"],
+        "status": "verified"
+      }
+    },
+    "satRange": [1380, 1520],
+    "satCohort": "SAS · Fall 2026 admitted score submitters"
+  },
+  {
+    "id": "uconn",
+    "name": "University of Connecticut (Storrs)",
+    "city": "Storrs",
+    "state": "Connecticut",
+    "type": "Public",
+    "recognition": "Moderate",
+    "recognitionNote": "Editorial brand reference only; no measured Korean recognition ranking was verified.",
+    "testingPolicy": "Test optional; recheck Fall 2028",
+    "majors": ["Sociology BA", "History BA", "Anthropology BA"],
+    "admissionStructure": "Campus and program review; CLAS and exploratory pathways",
+    "sources": [
+      {
+        "id": "uconn-international",
+        "title": "International first-year requirements",
+        "publisher": "University of Connecticut (Storrs)",
+        "url": "https://admissions.uconn.edu/apply/international/first-year/",
+        "verified": "2026-10-22",
+        "cycle": "Current page; Fall 2028 must be reconfirmed"
+      },
+      {
+        "id": "uconn-credentials",
+        "title": "International credentials by country",
+        "publisher": "University of Connecticut (Storrs)",
+        "url": "https://admissions.uconn.edu/apply/international/credentials/",
+        "verified": "2026-10-22",
+        "cycle": "Current Canada requirements"
+      },
+      {
+        "id": "uconn-profile",
+        "title": "First-year applicant profile",
+        "publisher": "University of Connecticut (Storrs)",
+        "url": "https://admissions.uconn.edu/apply/first-year/",
+        "verified": "2026-10-22",
+        "cycle": "Fall 2026 admitted students"
+      },
+      {
+        "id": "uconn-apply",
+        "title": "First-year application instructions",
+        "publisher": "University of Connecticut (Storrs)",
+        "url": "https://admissions.uconn.edu/apply/first-year/instructions/",
+        "verified": "2026-10-22",
+        "cycle": "Current page; Fall 2028 must be reconfirmed"
+      },
+      {
+        "id": "uconn-dates",
+        "title": "First-year dates and deadlines",
+        "publisher": "University of Connecticut (Storrs)",
+        "url": "https://admissions.uconn.edu/apply/first-year/deadlines/",
+        "verified": "2026-10-22",
+        "cycle": "Fall 2027"
+      },
+      {
+        "id": "uconn-majors",
+        "title": "College of Liberal Arts and Sciences programs and requirements",
+        "publisher": "University of Connecticut (Storrs)",
+        "url": "https://catalog.uconn.edu/undergraduate/liberal-arts-sciences/",
+        "verified": "2026-10-22",
+        "cycle": "Current undergraduate catalog"
+      },
+      {
+        "id": "uconn-aces",
+        "title": "Exploratory students and application-based majors",
+        "publisher": "University of Connecticut (Storrs)",
+        "url": "https://aces.uconn.edu/about-2/faq/",
+        "verified": "2026-10-22",
+        "cycle": "Current advising guidance"
+      },
+      {
+        "id": "uconn-ap",
+        "title": "AP, IB and A-Level credit",
+        "publisher": "University of Connecticut (Storrs)",
+        "url": "https://admissions.uconn.edu/apply/first-year/special-programs/ap-ib-and-a-level-credit/",
+        "verified": "2026-10-22",
+        "cycle": "Published table labeled 2025–26"
+      },
+      {
+        "id": "uconn-cost",
+        "title": "Storrs direct costs and cost of attendance",
+        "publisher": "University of Connecticut (Storrs)",
+        "url": "https://financialaid.uconn.edu/cost/",
+        "verified": "2026-10-22",
+        "cycle": "2026–27"
+      },
+      {
+        "id": "uconn-aid",
+        "title": "International merit scholarships",
+        "publisher": "University of Connecticut (Storrs)",
+        "url": "https://admissions.uconn.edu/cost-aid/scholarship/",
+        "verified": "2026-10-22",
+        "cycle": "Current scholarships; Fall 2028 must be reconfirmed"
+      },
+      {
+        "id": "uconn-ranking",
+        "title": "2026 U.S. News National Universities ranking",
+        "publisher": "University of Connecticut (Storrs)",
+        "url": "https://bpir.media.uconn.edu/wp-content/uploads/sites/3452/2026/02/Rankings-Overview-10.28.25.pdf",
+        "verified": "2026-10-22",
+        "cycle": "2026 edition; common comparison vintage, not latest 2027 edition"
+      },
+      {
+        "id": "uconn-directory",
+        "title": "Complete undergraduate program directory",
+        "publisher": "University of Connecticut (Storrs)",
+        "url": "https://catalog.uconn.edu/undergraduate/programs/",
+        "verified": "2026-10-22",
+        "cycle": "Current directory; confirm entry-year availability"
+      }
+    ],
+    "facts": {
+      "admission": {
+        "text": "Holistic review; secondary-school completion and university eligibility in the home country are required. No Ontario percentage cutoff was verified.",
+        "sourceIds": ["uconn-international"],
+        "status": "verified"
+      },
+      "acceptanceRate": {
+        "text": "A Storrs-specific acceptance rate for a defined cohort was not verified; no rate is used.",
+        "sourceIds": [],
+        "status": "not-verified"
+      },
+      "sat": {
+        "text": "SAT/ACT are optional for the foreseeable future. UConn superscores submitted official results. Reconfirm Fall 2028 application instructions.",
+        "sourceIds": ["uconn-apply"],
+        "status": "verified"
+      },
+      "satMiddle50": {
+        "text": "Storrs Fall 2026 admitted score submitters: SAT 1320–1460. Regional-campus 970–1250 figures describe a different admission destination.",
+        "sourceIds": ["uconn-profile"],
+        "status": "verified"
+      },
+      "satTarget": {
+        "text": "Compare a submitted score with the Storrs range. A higher SAT does not establish eligibility for a low Ontario average.",
+        "sourceIds": ["uconn-profile"],
+        "status": "editorial"
+      },
+      "deadlines": {
+        "text": "Fall 2028 dates not verified. Fall 2027 reference: ED November 1; merit/Honors priority December 1; Storrs deadline January 15. ED is binding; confirm its agreement before choosing it.",
+        "sourceIds": ["uconn-dates"],
+        "status": "future-unpublished"
+      },
+      "application": {
+        "text": "Common App or Coalition Application; USD 80 fee. Personal essay is required; two recommendations are optional but preferred. Official secondary records are required.",
+        "sourceIds": ["uconn-apply", "uconn-international"],
+        "status": "verified"
+      },
+      "ontario": {
+        "text": "Canada: Grades 9–11 official records during high school; final Grades 9–12 transcript and provincial completion diploma before enrollment. No Ontario U/M or top-six minimum was verified.",
+        "sourceIds": ["uconn-credentials"],
+        "status": "confirm"
+      },
+      "coursework": {
+        "text": "CLAS requires 16 high-school units, including English 4, mathematics 3, one foreign language 2, lab science 2 and social science 2. Ontario equivalencies require confirmation.",
+        "sourceIds": ["uconn-majors"],
+        "status": "confirm"
+      },
+      "international": {
+        "text": "International first-year instructions apply to non-U.S. citizens/non-permanent residents completing secondary school. Citizenship, not Ontario residency alone, matters.",
+        "sourceIds": ["uconn-international"],
+        "status": "verified"
+      },
+      "english": {
+        "text": "Non-native speakers generally need proof: IELTS 6.5 or DET 110. SAT EBRW 510 can qualify for a waiver. Ontario attendance alone is not a listed blanket exemption.",
+        "sourceIds": ["uconn-international"],
+        "status": "confirm"
+      },
+      "majorStructure": {
+        "text": "CLAS offers broad BA majors. Students not directly admitted to an intended program may enter ACES; later admission to application-based majors is a separate process, not guaranteed.",
+        "sourceIds": ["uconn-majors", "uconn-aces"],
+        "status": "verified"
+      },
+      "recommendedMajors": {
+        "text": "Sociology, History and Anthropology BA are CLAS options. No evidence establishes one as the lowest-cutoff freshman major.",
+        "sourceIds": ["uconn-majors"],
+        "status": "editorial"
+      },
+      "ap": {
+        "text": "The published 2025–26 table awards credit for AP English Language, Psychology and Statistics at 4/5, with course-specific awards. Recheck the entry-year policy.",
+        "sourceIds": ["uconn-ap"],
+        "status": "verified"
+      },
+      "cost": {
+        "text": "2026–27 Storrs out-of-state direct-cost reference: USD 59,426 for tuition, standard fees, housing and meals. This is not a complete international budget; insurance, international fees and indirect expenses need separate confirmation.",
+        "sourceIds": ["uconn-cost"],
+        "status": "confirm"
+      },
+      "aid": {
+        "text": "International applicants can be considered for Global Excellence and other listed merit awards. Most merit consideration is automatic; Stamps requires a supplement. Eligibility and future amounts require rechecking.",
+        "sourceIds": ["uconn-aid"],
+        "status": "verified"
+      }
+    },
+    "satRange": [1320, 1460],
+    "satCohort": "Storrs · Fall 2026 admitted score submitters"
+  },
+  {
+    "id": "umass-amherst",
+    "name": "University of Massachusetts Amherst",
+    "city": "Amherst",
+    "state": "Massachusetts",
+    "type": "Public",
+    "recognition": "Moderate",
+    "recognitionNote": "Editorial brand reference only; no measured Korean recognition ranking was verified.",
+    "testingPolicy": "Test optional; recheck Fall 2028",
+    "majors": ["Anthropology BA", "Sociology BA", "Political Science BA"],
+    "admissionStructure": "University and major review; some majors restrict entry",
+    "sources": [
+      {
+        "id": "umass-amherst-international",
+        "title": "International admission requirements",
+        "publisher": "University of Massachusetts Amherst",
+        "url": "https://www.umass.edu/admissions/undergraduate-admissions/apply/international-students/international-admissions",
+        "verified": "2026-10-22",
+        "cycle": "Current indexed official page; direct retrieval returned 403; Fall 2028 reconfirm"
+      },
+      {
+        "id": "umass-amherst-credentials",
+        "title": "International credentials by country and exam",
+        "publisher": "University of Massachusetts Amherst",
+        "url": "https://www.umass.edu/admissions/undergraduate-admissions/apply/international-students/international-credentials-country",
+        "verified": "2026-10-22",
+        "cycle": "Updated August 2025; official indexed Canada table; direct retrieval returned 403"
+      },
+      {
+        "id": "umass-amherst-coursework",
+        "title": "First-year admission requirements",
+        "publisher": "University of Massachusetts Amherst",
+        "url": "https://www.umass.edu/admissions/first-year-admissions-requirements",
+        "verified": "2026-10-22",
+        "cycle": "Current page; Ontario equivalencies need confirmation"
+      },
+      {
+        "id": "umass-amherst-profile",
+        "title": "2025–26 factbook admissions table",
+        "publisher": "University of Massachusetts Amherst",
+        "url": "https://www.umass.edu/uair/media/985/download",
+        "verified": "2026-10-22",
+        "cycle": "Fall 2025 enrolled first-year scores"
+      },
+      {
+        "id": "umass-amherst-dates",
+        "title": "Important dates and deadlines",
+        "publisher": "University of Massachusetts Amherst",
+        "url": "https://www.umass.edu/admissions/important-dates-deadlines",
+        "verified": "2026-10-22",
+        "cycle": "Current recurring dates; Fall 2028 not explicitly published"
+      },
+      {
+        "id": "umass-amherst-english",
+        "title": "English language proficiency",
+        "publisher": "University of Massachusetts Amherst",
+        "url": "https://www.umass.edu/admissions/english-language-proficiency",
+        "verified": "2026-10-22",
+        "cycle": "Current first-year policy including post-January-2026 TOEFL"
+      },
+      {
+        "id": "umass-amherst-majors",
+        "title": "SBS undergraduate major declaration",
+        "publisher": "University of Massachusetts Amherst",
+        "url": "https://www.umass.edu/social-sciences/advising/declaring-undergraduate-major",
+        "verified": "2026-10-22",
+        "cycle": "Current undergraduate advising"
+      },
+      {
+        "id": "umass-amherst-major-choice",
+        "title": "First-year students and major selection",
+        "publisher": "University of Massachusetts Amherst",
+        "url": "https://www.umass.edu/admissions/first-year-students",
+        "verified": "2026-10-22",
+        "cycle": "Current admissions guidance"
+      },
+      {
+        "id": "umass-amherst-ap",
+        "title": "Test and transfer credit",
+        "publisher": "University of Massachusetts Amherst",
+        "url": "https://www.umass.edu/registrar/transferring-credit",
+        "verified": "2026-10-22",
+        "cycle": "Current policy; subject to change"
+      },
+      {
+        "id": "umass-amherst-cost",
+        "title": "2026–27 financial aid guide and costs",
+        "publisher": "University of Massachusetts Amherst",
+        "url": "https://www.umass.edu/financialaid/guide-understanding-financial-aid-2026-2027",
+        "verified": "2026-10-22",
+        "cycle": "2026–27 estimates"
+      },
+      {
+        "id": "umass-amherst-aid",
+        "title": "International student financial-aid eligibility",
+        "publisher": "University of Massachusetts Amherst",
+        "url": "https://www.umass.edu/financialaid/undergraduate/eligibility/international-students",
+        "verified": "2026-10-22",
+        "cycle": "Current policy"
+      },
+      {
+        "id": "umass-amherst-status",
+        "title": "International applicant FAQ",
+        "publisher": "University of Massachusetts Amherst",
+        "url": "https://www.umass.edu/admissions/undergraduate-admissions/apply/international-students/faq-international-applicants",
+        "verified": "2026-10-22",
+        "cycle": "Current applicant classification"
+      },
+      {
+        "id": "umass-amherst-ranking",
+        "title": "2026 U.S. News National Universities ranking",
+        "publisher": "University of Massachusetts Amherst",
+        "url": "https://www.umass.edu/news/article/umass-amherst-places-top-30-among-public-universities-us-news-world-report-2026",
+        "verified": "2026-10-22",
+        "cycle": "2026 edition; common comparison vintage, not latest 2027 edition"
+      },
+      {
+        "id": "umass-amherst-directory",
+        "title": "Complete undergraduate program directory",
+        "publisher": "University of Massachusetts Amherst",
+        "url": "https://www.umass.edu/gateway/academics/explore-our-programs",
+        "verified": "2026-10-22",
+        "cycle": "Current directory; confirm entry-year availability"
+      }
+    ],
+    "facts": {
+      "admission": {
+        "text": "Selective holistic review considers the full application, not a single score. No official Ontario percentage admission threshold was verified.",
+        "sourceIds": ["umass-amherst-international"],
+        "status": "verified"
+      },
+      "acceptanceRate": {
+        "text": "No cohort-specific acceptance percentage is used in this research.",
+        "sourceIds": [],
+        "status": "not-verified"
+      },
+      "sat": {
+        "text": "SAT/ACT submission is optional under current international instructions. Confirm that this remains the rule for Fall 2028.",
+        "sourceIds": ["umass-amherst-international"],
+        "status": "confirm"
+      },
+      "satMiddle50": {
+        "text": "Fall 2025 enrolled score submitters: 1330–1480 combined SAT, 1,322 students with scores. The weighted U.S. GPA statistic is not an Ontario percentage equivalency.",
+        "sourceIds": ["umass-amherst-profile"],
+        "status": "verified"
+      },
+      "satTarget": {
+        "text": "Use 1330–1480 as score context only. A 1500 does not waive transcript, subject or major requirements.",
+        "sourceIds": ["umass-amherst-profile"],
+        "status": "editorial"
+      },
+      "deadlines": {
+        "text": "Fall 2028 dates are not explicitly verified. Current recurring reference: EA November 5; RD January 15; enrollment deposit May 1.",
+        "sourceIds": ["umass-amherst-dates"],
+        "status": "future-unpublished"
+      },
+      "application": {
+        "text": "Common App including UMass questions; official Grades 9–11 records; recommendation; USD 85 international fee; English evidence where required. Submit college transcripts if applicable.",
+        "sourceIds": ["umass-amherst-international"],
+        "status": "verified"
+      },
+      "ontario": {
+        "text": "Canada table: Grades 9–11 official transcript while in high school; after completion, Grades 9–12 plus provincial secondary diploma. No Ontario minimum average or top-six formula is stated in the reviewed table.",
+        "sourceIds": ["umass-amherst-credentials"],
+        "status": "confirm"
+      },
+      "coursework": {
+        "text": "Published units: English 4; math 4 including senior-year math; lab science 3; social science 2; same foreign language 2; electives 2. Confirm Ontario equivalents, including the U.S.-history wording. Engineering, business and CS need advanced math.",
+        "sourceIds": ["umass-amherst-coursework"],
+        "status": "confirm"
+      },
+      "international": {
+        "text": "UMass defines international applicants by non-immigrant visa/status, including certain pending permanent residents. Citizenship and status must be entered accurately.",
+        "sourceIds": ["umass-amherst-status"],
+        "status": "verified"
+      },
+      "english": {
+        "text": "First-year IELTS 6.5 with each section 6.0, or DET 115. The discretionary school waiver specifies four English-medium years with British/American curriculum; Ontario schooling is not automatically covered.",
+        "sourceIds": ["umass-amherst-english"],
+        "status": "confirm"
+      },
+      "majorStructure": {
+        "text": "Applicants choose a major or exploratory track. SBS Anthropology has no declaration prerequisites; Sociology students can declare by meeting an advisor. These are major-declaration rules, not lower freshman admission standards.",
+        "sourceIds": ["umass-amherst-majors", "umass-amherst-major-choice"],
+        "status": "verified"
+      },
+      "recommendedMajors": {
+        "text": "Anthropology, Sociology and Political Science BA are genuine SBS options. No verified lowest-admitted Ontario average or comparative freshman-major advantage is available.",
+        "sourceIds": ["umass-amherst-majors"],
+        "status": "editorial"
+      },
+      "ap": {
+        "text": "AP can yield credit or advanced standing according to exam and score; official scores must be sent. Criteria may change. AP credit does not replace admission requirements.",
+        "sourceIds": ["umass-amherst-ap"],
+        "status": "verified"
+      },
+      "cost": {
+        "text": "2026–27 international 9-month estimated cost of attendance: USD 69,465, including USD 43,819 tuition/fees and listed health insurance. Program-specific fees can be additional. Not a 2028 quote.",
+        "sourceIds": ["umass-amherst-cost"],
+        "status": "verified"
+      },
+      "aid": {
+        "text": "International undergraduates receive automatic admission-stage merit consideration but are ineligible for most financial aid. Federal aid depends on eligible citizenship/status. Merit awards are not guaranteed.",
+        "sourceIds": ["umass-amherst-aid"],
+        "status": "verified"
+      }
+    },
+    "satRange": [1330, 1480],
+    "satCohort": "Fall 2025 enrolled score submitters · 1,322 scored students"
+  },
+  {
+    "id": "buffalo",
+    "name": "University at Buffalo (SUNY)",
+    "city": "Buffalo",
+    "state": "New York",
+    "type": "Public",
+    "recognition": "Moderate",
+    "recognitionNote": "Editorial brand reference only; no measured Korean recognition ranking was verified.",
+    "testingPolicy": "Test optional; recheck Fall 2028",
+    "majors": ["Sociology BA", "History BA", "Anthropology BA"],
+    "admissionStructure": "Intended major; business and engineering receive specific review",
+    "sources": [
+      {
+        "id": "buffalo-international",
+        "title": "International first-year requirements and deadlines",
+        "publisher": "University at Buffalo (SUNY)",
+        "url": "https://www.buffalo.edu/admissions/apply/international/first-year.html",
+        "verified": "2026-10-22",
+        "cycle": "Current page; Fall 2028 needs reconfirmation"
+      },
+      {
+        "id": "buffalo-test",
+        "title": "International test-optional policy",
+        "publisher": "University at Buffalo (SUNY)",
+        "url": "https://www.buffalo.edu/admissions/apply/international/first-year.standardized-tests.html",
+        "verified": "2026-10-22",
+        "cycle": "Current page"
+      },
+      {
+        "id": "buffalo-english",
+        "title": "International English proficiency",
+        "publisher": "University at Buffalo (SUNY)",
+        "url": "https://www.buffalo.edu/admissions/apply/international/first-year.english-proficiency.html",
+        "verified": "2026-10-22",
+        "cycle": "Current table including new TOEFL scale"
+      },
+      {
+        "id": "buffalo-other",
+        "title": "International application other requirements",
+        "publisher": "University at Buffalo (SUNY)",
+        "url": "https://www.buffalo.edu/admissions/apply/international/first-year.other-requirements.html",
+        "verified": "2026-10-22",
+        "cycle": "Current page"
+      },
+      {
+        "id": "buffalo-status",
+        "title": "International applicant classification",
+        "publisher": "University at Buffalo (SUNY)",
+        "url": "https://www.buffalo.edu/admissions/apply/international.html",
+        "verified": "2026-10-22",
+        "cycle": "Current page"
+      },
+      {
+        "id": "buffalo-cds",
+        "title": "Common Data Set 2025–26",
+        "publisher": "University at Buffalo (SUNY)",
+        "url": "https://www.buffalo.edu/content/dam/www/oia/Common-Data-Sets/CDS_2025-2026.pdf",
+        "verified": "2026-10-22",
+        "cycle": "Fall 2025 enrolled students; SAT sections and composite bins only"
+      },
+      {
+        "id": "buffalo-special",
+        "title": "Special requirements for certain majors",
+        "publisher": "University at Buffalo (SUNY)",
+        "url": "https://www.buffalo.edu/admissions/apply/special-majors.html",
+        "verified": "2026-10-22",
+        "cycle": "Current program admission structure"
+      },
+      {
+        "id": "buffalo-sociology",
+        "title": "Sociology undergraduate program",
+        "publisher": "University at Buffalo (SUNY)",
+        "url": "https://www.buffalo.edu/admissions/academics/programs/sociology.html",
+        "verified": "2026-10-22",
+        "cycle": "Current degree offerings"
+      },
+      {
+        "id": "buffalo-history",
+        "title": "History undergraduate program",
+        "publisher": "University at Buffalo (SUNY)",
+        "url": "https://www.buffalo.edu/admissions/academics/programs/history.html",
+        "verified": "2026-10-22",
+        "cycle": "Current degree offerings"
+      },
+      {
+        "id": "buffalo-anthropology",
+        "title": "Anthropology undergraduate program",
+        "publisher": "University at Buffalo (SUNY)",
+        "url": "https://www.buffalo.edu/admissions/academics/programs/anthropology.html",
+        "verified": "2026-10-22",
+        "cycle": "Current degree offerings"
+      },
+      {
+        "id": "buffalo-ap",
+        "title": "Alternative exam and transfer credits",
+        "publisher": "University at Buffalo (SUNY)",
+        "url": "https://www.buffalo.edu/admissions/apply/credits.html",
+        "verified": "2026-10-22",
+        "cycle": "Current credit guidance"
+      },
+      {
+        "id": "buffalo-cost",
+        "title": "International financial details",
+        "publisher": "University at Buffalo (SUNY)",
+        "url": "https://www.buffalo.edu/admissions/costs/tuition/international-financial-form.html",
+        "verified": "2026-10-22",
+        "cycle": "Current estimate; related-expense footnote remains 2025–26"
+      },
+      {
+        "id": "buffalo-aid",
+        "title": "International scholarships and funding",
+        "publisher": "University at Buffalo (SUNY)",
+        "url": "https://www.buffalo.edu/admissions/costs/scholarships.html",
+        "verified": "2026-10-22",
+        "cycle": "Current Flagship Scholarship policy"
+      },
+      {
+        "id": "buffalo-ranking",
+        "title": "2026 U.S. News National Universities ranking",
+        "publisher": "University at Buffalo (SUNY)",
+        "url": "https://www.buffalo.edu/campaign/find-your-cause/jacobs-school-of-medicine-and-biomedical-sciences.host.html/content/shared/university/news/news-center-releases/2025/09/us-news-best-colleges.detail.html",
+        "verified": "2026-10-22",
+        "cycle": "2026 edition; common comparison vintage, not latest 2027 edition"
+      },
+      {
+        "id": "buffalo-directory",
+        "title": "Complete undergraduate program directory",
+        "publisher": "University at Buffalo (SUNY)",
+        "url": "https://www.buffalo.edu/admissions/academics/programs.html",
+        "verified": "2026-10-22",
+        "cycle": "Current directory; confirm entry-year availability"
+      }
+    ],
+    "facts": {
+      "admission": {
+        "text": "UB expects the equivalent of U.S. GPA 3.0/B and gives 83/100 as a generic illustration. Admissions evaluates national grading systems; this is not verified as an Ontario 83% threshold.",
+        "sourceIds": ["buffalo-international"],
+        "status": "confirm"
+      },
+      "acceptanceRate": {
+        "text": "No acceptance percentage is used; aggregate admission results are not a student-specific prediction.",
+        "sourceIds": [],
+        "status": "not-verified"
+      },
+      "sat": {
+        "text": "SAT/ACT are optional for international admission and scholarship consideration under the current policy. Confirm Fall 2028 instructions.",
+        "sourceIds": ["buffalo-test"],
+        "status": "verified"
+      },
+      "satMiddle50": {
+        "text": "Fall 2025 CDS reports SAT EBRW 610–690 and Math 610–700, but no combined-score percentile. Do not add section percentiles. Composite bins: 12% at 1000–1199, 68% at 1200–1399, 20% at 1400–1600.",
+        "sourceIds": ["buffalo-cds"],
+        "status": "verified"
+      },
+      "satTarget": {
+        "text": "No composite middle-50 target is invented. The CDS bins describe score submitters only and cannot turn 1100–1500 into admission probabilities.",
+        "sourceIds": ["buffalo-cds"],
+        "status": "editorial"
+      },
+      "deadlines": {
+        "text": "Fall 2028 dates unconfirmed. Current fall reference: EA November 1; Honors priority December 15; RD completion February 1; later applications only while capacity remains.",
+        "sourceIds": ["buffalo-international"],
+        "status": "future-unpublished"
+      },
+      "application": {
+        "text": "ApplySUNY, Common App or Coalition; submit only one. Fee USD 50. Academic records, essay and other required materials are reviewed; non-English documents need translation. Confirm recommendation requirements in the portal.",
+        "sourceIds": ["buffalo-international", "buffalo-other"],
+        "status": "confirm"
+      },
+      "ontario": {
+        "text": "UB evaluates national grading systems and requires secondary academic records. The Canada selector did not expose a verifiable Ontario U/M/top-six rule. Ask for the OSSD/course requirements and official grade assessment.",
+        "sourceIds": ["buffalo-international"],
+        "status": "confirm"
+      },
+      "coursework": {
+        "text": "The 2025–26 CDS recommends 17 units: English 4, math 3, science 3, foreign language 3, social studies 4. These are recommendations, not an Ontario formula.",
+        "sourceIds": ["buffalo-cds"],
+        "status": "verified"
+      },
+      "international": {
+        "text": "U.S. citizens and permanent residents educated abroad use the domestic route with foreign credentials. Other students needing U.S. study status use international instructions; confirm documentation for Canadian citizenship.",
+        "sourceIds": ["buffalo-status"],
+        "status": "confirm"
+      },
+      "english": {
+        "text": "Current minimum examples: IELTS Academic 6.0, DET 105, SAT EBRW 500, or AP English Language exam 4. Scores generally must be under two years old. Ontario-school waiver is not assumed.",
+        "sourceIds": ["buffalo-english"],
+        "status": "confirm"
+      },
+      "majorStructure": {
+        "text": "Indicate an intended major, with a second choice encouraged. Accounting/business direct entry is capacity limited; engineering has additional math/science review. Arts programs can require auditions or portfolios.",
+        "sourceIds": ["buffalo-special"],
+        "status": "verified"
+      },
+      "recommendedMajors": {
+        "text": "Sociology, History and Anthropology BA are available. No published Ontario freshman cutoff or evidence of the lowest-admission major was verified. Choose these for academic fit.",
+        "sourceIds": [
+          "buffalo-sociology",
+          "buffalo-history",
+          "buffalo-anthropology"
+        ],
+        "status": "editorial"
+      },
+      "ap": {
+        "text": "UB awards advanced-standing credit based on AP/IB and other examinations. Use the current exam equivalency table; admission eligibility and credit awards are different.",
+        "sourceIds": ["buffalo-ap"],
+        "status": "verified"
+      },
+      "cost": {
+        "text": "Current international Fall/Spring estimate totals USD 61,030 for the first year, including tuition, fees, insurance, housing/dining and related expenses. The related-expense footnote remains 2025–26; confirm the full entry-year budget.",
+        "sourceIds": ["buffalo-cost"],
+        "status": "confirm"
+      },
+      "aid": {
+        "text": "Admitted international first-years are automatically considered for variable Flagship Scholarships, renewable up to four years subject to continuing eligibility. Presidential Scholarship requires a separate application. No award is guaranteed.",
+        "sourceIds": ["buffalo-aid"],
+        "status": "verified"
+      }
+    }
+  }
+]

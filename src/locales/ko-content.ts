@@ -1,3 +1,4 @@
+import { expandedEvidence } from "../data/evidence.ts";
 import { universities, planning, pathways } from "../data/index.ts";
 import { strategies } from "../data/strategies.ts";
 import { uiKo } from "./ko-ui.ts";
@@ -255,3 +256,57 @@ Private research university	사립 연구중심 대학교
       .map((line) => line.split("\t")),
   ),
 );
+
+for (const e of expandedEvidence) {
+  const university = universities.find((u) => u.id === e.id)!;
+  contentKo[university.name] = e.ko.name;
+  contentKo[e.fit] = e.ko.fit;
+  if (e.ko.structure) contentKo[e.structure] = e.ko.structure;
+  e.majors.forEach((m, i) => {
+    if (e.ko.majorNames[i]) contentKo[m] = e.ko.majorNames[i];
+  });
+}
+Object.assign(contentKo, {
+  "Research reviewed: October 21–22, 2026. Admission policies and deadlines can change. Always confirm final requirements on the university’s official admissions website before applying.":
+    "조사일: 2026년 10월 21~22일. 입학 정책과 마감일은 바뀔 수 있으므로 지원 전 각 대학 공식 사이트에서 최종 요건을 확인하세요.",
+  "Fall 2028 entry: do not reuse reference-cycle deadlines as your application deadlines. Confirm the testing policy for the selected school and Fall 2028.":
+    "2028년 가을 입학: 과거 주기의 날짜를 지원 마감일로 사용하지 마세요. 선택한 학교의 2028년 시험 정책을 확인하세요.",
+  "Fall 2028 entry: do not reuse reference-cycle deadlines as your application deadlines. Read the school-specific test requirement and applicable entry year below.":
+    "2028년 가을 입학: 과거 주기의 날짜를 지원 마감일로 사용하지 마세요. 아래 학교별 시험 요건과 적용 연도를 확인하세요.",
+  "Liberal Arts": "문리대",
+  Education: "교육대",
+  Engineering: "공대",
+  "College of Liberal Arts": "문리대",
+  "College of Education": "교육대",
+  "College of Engineering": "공대",
+});
+Object.assign(contentKo, {
+  "SAS · Fall 2026 admitted score submitters":
+    "문리대(SAS) · 2026년 가을 합격자 중 점수 제출자",
+  "Storrs · Fall 2026 admitted score submitters":
+    "스토어스 · 2026년 가을 합격자 중 점수 제출자",
+  "Fall 2025 enrolled score submitters · 1,322 scored students":
+    "2025년 가을 등록자 중 점수 제출자 · 1,322명",
+  "Fall2025 enrolled first-year SAT submitters;55% submitted SAT":
+    "2025년 가을 등록 신입생 중 SAT 제출자 · 제출 비율 55%",
+  "Fall2026 published profile, West Lafayette+Indianapolis combined; admitted-score table":
+    "2026년 가을 합격자 점수 표 · 웨스트라피엣과 인디애나폴리스 합산",
+  "Fall2026 class profile; West Lafayette+Indianapolis college aggregate, not a major cutoff":
+    "2026년 가을 단과대별 집단 · 웨스트라피엣과 인디애나폴리스 합산 · 전공 합격선 아님",
+  "Fall 2026 admitted freshman applicants who submitted scores; university overall":
+    "2026년 가을 합격 신입생 중 점수 제출자 · 대학 전체",
+  "Fall 2026 admitted College of Liberal Arts applicants who submitted scores":
+    "2026년 가을 문리대 합격자 중 점수 제출자",
+  "Fall 2025 enrolled first-year SAT submitters; 7.1% submitted":
+    "2025년 가을 등록 신입생 중 SAT 제출자 · 제출 비율 7.1%",
+  "Fall 2025 enrolled first-year SAT submitters; 19% submitted":
+    "2025년 가을 등록 신입생 중 SAT 제출자 · 제출 비율 19%",
+  Wisconsin: "위스콘신",
+  Minnesota: "미네소타",
+  Kansas: "캔자스",
+  Alabama: "앨라배마",
+  Connecticut: "코네티컷",
+  Massachusetts: "매사추세츠",
+  "New Jersey": "뉴저지",
+  Ohio: "오하이오",
+});

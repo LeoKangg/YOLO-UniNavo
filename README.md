@@ -19,26 +19,25 @@ Open the URL printed by Vite, normally `http://127.0.0.1:5173/`.
 pnpm validate     # data completeness, references, dates and IDs
 pnpm typecheck
 pnpm lint
-pnpm test         # 16 recommendation, calendar and localization regression tests
+pnpm test         # behavioral, evidence, comparison and personal-plan tests
 pnpm build       # production output in dist/
 pnpm preview     # preview the production build
 pnpm check:links  # network check; writes research/link-check.json
 ```
 
-No account, API key, database or backend is required. Language preference, profile, task completion and saved schools use browser localStorage. A blocked/corrupt store falls back to the current session. Browser data is not synchronized across devices. Google Fonts is the only runtime third-party asset request; system fonts are fallbacks. There is no analytics or form submission.
+No account, API key, database or backend is required. Language preference, profile, personal monthly plans, task completion and saved schools use browser localStorage. Plans can be backed up and restored as JSON. A blocked/corrupt store falls back to the current session. Browser data is not synchronized across devices. Google Fonts is the only runtime third-party asset request; system fonts are fallbacks. There is no analytics or form submission.
 
 ## Experience
 
-- Language: the header’s **한국어 / English** button switches all six views, university facts and the complete timeline. The choice persists in this browser; filters, saved schools and task IDs stay unchanged. Korean university/major search is supported. Official source document titles, publishers, reference cycles and book titles retain their original wording. No translation API is used.
+- Language: the header’s **한국어 / English** button switches all five views, university facts and the complete timeline. The choice persists in this browser; filters, saved schools and task IDs stay unchanged. Korean university/major search is supported. Official source document titles, publishers, reference cycles and book titles retain their original wording. No translation API is used.
 
-- Overview: three current priorities with large checkboxes, always-visible instructions, and two clear routes to universities or SAT/AP. The fourth habit and Ontario requirements remain under an optional disclosure. Profile editing lives on the university page.
-- Timeline: 23 months, October 2026–August 2028, 72 tasks, all months initially expanded, visible task details, checkboxes, a stage filter with the default label “Select”, and a hide-completed option.
-- Universities: nine concise cards, seven grade ranges, advanced filters, expandable source-linked detail sections and up to six working recommendations. Saved schools are separate from generated picks.
+- Timeline (home): 23 months, October 2026–August 2028, and 72 original tasks. All months and task details are expanded. The month chart shows progress and links to each month. Add, edit, move, delete and complete tasks; completed tasks hide by default and can be revealed. Single-step undo and JSON backup/restore are available. Edited official reminders retain their original guidance and sources. The stage dropdown defaults to “Select”.
+- Universities: 20 schools, eight Ontario grade bands from 60–65% through 95–100%, and five SAT scenarios from 1100 to 1500. Compare 40 combinations, export all 800 school-scenario rows, inspect rankings/major evidence, browse school cards and keep up to six working recommendations. Saved schools remain separate from generated picks.
 - SAT & AP: confirmed 2026–27 SAT dates, separately labeled anticipated 2027–28 dates, four AP priorities and university-specific credit examples.
 - Study resources: purpose and link first; publisher editions, explanations and sources expand on demand. Preorder information is preserved.
 - Sources: searchable source register with exact URLs, publisher, reviewed date and applicable cycle.
 
-Body text is 16–18px and secondary text is at least 14px. Desktop university/AP cards use two columns and mobile uses one. SAT score comparisons, score-submission rules and AP credit details are folded until requested. Task instructions and their sources are shown directly, without a separate expand button, in both languages. Important entry-year uncertainty remains visible.
+Body text is 16–18px and secondary text is at least 14px. Desktop university/AP cards use two columns and mobile uses one. The university SAT matrix is visible after a grade band is selected; detailed exam preparation and AP credit sections expand on demand. Task instructions and their sources are shown directly, without a separate expand button, in both languages. Important entry-year uncertainty remains visible.
 
 ## Structure
 
@@ -48,6 +47,8 @@ src/style.css               Responsive layout and focus/reduced-motion styles
 src/types.ts                Shared types and supported grade bands
 src/recommendations.ts      Transparent conservative planning scenarios
 src/storage.ts              Resilient browser-local persistence
+src/planner.ts              Editable personal timeline and backup normalization
+src/comparison.ts           SAT comparisons and complete scenario CSV
 src/i18n.ts                 Saved language, text localization, stable option values
 src/locales/ko-*.ts          Korean UI, university, planning and timeline translations
 src/data/index.ts           Research loading and source register
@@ -56,17 +57,21 @@ src/data/timeline.ts        Monthly tasks with stable completion IDs
 research/west.json          ASU, Arizona, Oregon, Colorado Boulder
 research/east.json          MSU, IU Bloomington, Penn State University Park, NYU
 research/iowa.json          Iowa State
+research/expansion-*.json    Eleven additional schools and supporting metadata
+research/existing-rankings.json  Dated ranks for the original nine schools
+research/comparison-context.json  Additional program evidence and full catalogs
+research/*-method.md         Comparison and recognition research boundaries
 research/planning.json      Official exam calendars, Ontario/entry guidance, books
 research/pathways.json      Transfer strategy, separate from freshman admission
 research/link-check.json    HTTP verification results, not a claim-accuracy audit
 scripts/validate.ts         Data and source validation
 scripts/check-links.mjs     Conservative link reachability checker
-tests/planner.test.ts      Behavioral/data regression tests
+tests/*.test.ts             Behavioral, localization, evidence and scenario tests
 ```
 
 ## Source policy
 
-Research snapshot: **October 21, 2026**. University admissions pages and official catalogs are primary; institutional profiles/Common Data Sets support cohort statistics. College Board, Common App, Ontario education and U.S. government pages support general guidance. Publisher pages establish book titles/editions. External rankings and admission aggregators are not used to establish requirements.
+Research reviewed: **October 21–22, 2026**. Individual records keep their actual review date. University admissions pages and official catalogs are primary; institutional profiles/Common Data Sets support cohort statistics. College Board, Common App, Ontario education and U.S. government pages support general guidance. Publisher pages establish book titles/editions. The ranking table uses the historical **2026 U.S. News National Universities** edition, not the latest 2027 edition. Institutional releases are preferred; dated secondary reports are identified where used. Rankings and admission aggregators are not used to establish requirements.
 
 Each consequential university fact has text, a status, and source IDs. Sources retain exact URL, title, publisher, date reviewed and cycle. An unknown has an explicit status, rather than a fabricated number. “Not verified” means this research did not establish the value; it is not a claim that the university does not publish it. A current page that lacks an entry year is not relabeled as a Fall 2028 commitment.
 
@@ -78,11 +83,11 @@ The categories are manually authored, conservative **exploration scenarios**, no
 
 “More Realistic” is only displayed after the user reports course eligibility checks and strong preparation; it is still not a safety. Specialized interests and an unreviewed U.S.-citizen/permanent-resident route cannot inherit broad international-program Target labels. SAT comparisons help preparation/submission decisions and never automatically improve a category. Verified acceptance rates are descriptive cohort data, not personal odds.
 
-The six-pick selection first preserves available planning categories, then uses editorial brand/strategy ordering. There may be fewer than six: 60–70% receives no supported direct-entry shortlist in this dataset; 70–75% receives limited Reach exploration leads. Low-band users see a separate transfer strategy. NYU always remains a reach. “Brand Recognition” is an editorial comparison, not a measured Korean recognition survey or an admissions statistic.
+The six-pick selection first preserves available planning categories, then uses editorial brand/strategy ordering. There may be fewer than six: 60–70% receives no supported direct-entry shortlist in this dataset; 70–75% receives limited Reach exploration leads. Low-band users can inspect a separate transfer strategy. The comparison matrix still displays all 20 schools and conditionally identifies Iowa State’s current international SAT 1200 GPA-component alternative; other requirements and Fall 2028 applicability need confirmation. NYU always remains a reach. “Brand Recognition” is an editorial comparison, not a measured Korean recognition survey or an admissions statistic. No representative Korean recognition ranking was established. Focused majors are researched individually and each school links to its full official program directory; this is not an exhaustive research record for every major. No lowest Ontario admission cutoff is invented. ASU BA/BS rules and Purdue/Minnesota college-specific distributions are identified separately.
 
 Important open items:
 
-- Fall 2028 deadlines and most entry-year testing commitments are not yet confirmed.
+- Fall 2028 deadlines and most entry-year testing commitments are not yet confirmed. Minnesota’s published optional-testing period includes Fall 2028; Alabama explicitly requires SAT/ACT for Fall 2028.
 - 2027–28 SAT dates are **anticipated**, including the updated October 9, 2027 date. Registration/release dates remain unpublished. 2028 AP dates remain unpublished in the reviewed schedule.
 - Several Ontario course-equivalency rules, English waivers, CSS Profile/need-aid details and program-specific rules need direct confirmation.
 - ASU current international and general deadline pages show different cycles; Oregon insurance amounts conflict across official pages.
@@ -94,7 +99,7 @@ Important open items:
 ## Updating research
 
 1. Open the exact official source. Identify entry year, applicant category, campus and program before editing any value.
-2. Update the corresponding JSON fact, source IDs, status and source cycle. Record the actual review date; do not bulk-renew dates without reviewing the underlying sources. If updates are incremental, relax the current single-snapshot date assertion in `scripts/validate.ts` to validate per-source dates and update the UI snapshot labeling appropriately.
+2. Update the corresponding JSON fact, source IDs, status and source cycle. Record the actual review date; do not bulk-renew dates without reviewing the underlying sources. For incremental updates, preserve prior review dates and extend the allowed review window in `scripts/validate.ts` and the UI snapshot label appropriately.
 3. Preserve unknowns/conflicts until resolved. Record statistics with cohort, counts/denominator where applicable, and score-submitter/admitted/enrolled scope. Never infer Ontario equivalencies.
 4. Review affected strategies in `src/data/strategies.ts`, score ranges and timeline entries. Keep task IDs stable for browser checklist continuity, or deliberately version the storage key if semantics change.
 5. Update the corresponding Korean text in `src/locales/` when changing English content. The English research remains canonical; preserve the same uncertainties, dates and exclusions in Korean. Run validate, typecheck, lint, tests and build. Check changed source links, and inspect desktop/tablet/mobile, keyboard navigation and the detail dialog.
@@ -114,10 +119,9 @@ After reviewing and committing source/data updates, run `pnpm build:pages`. Publ
 
 ### Verification record
 
-- Local validation, typecheck, lint, 11 tests and both standard/Pages production builds passed.
-- GitHub Actions `Validate planner` passed for the implementation commit.
-- Browser inspection at 1440px desktop, 820px tablet and 390px mobile found no document-level horizontal overflow. The mobile SAT table scrolls inside its container.
-- Verified grade filtering, six-pick generation, low-band empty state, advanced state filter, university detail sources, Escape/focus return, AP tab, source search, checklist persistence and saved-school persistence.
-- The deployed Pages URL loaded successfully with no observed console errors; navigation and the university detail dialog worked on the production bundle.
+- Local validation, typecheck, lint, 23 behavioral tests and Pages production build passed for 20 schools, 300 source records, 23 months and 72 original tasks.
+- New tests cover all 40 grade/SAT scenarios, CSV generation (800 rows), score boundaries, conditional international rules, source references, and personal-plan editing/moving/deleting/serialization.
+- Browser checks cover adding/editing/moving/deleting tasks, completed-item hiding, undo and reload persistence; grade changes and the 20-school comparison; and university details with program distributions and catalog links.
+- Mobile 390px inspection shows no document-level horizontal overflow; the comparison table scrolls inside its container. Download content is tested directly; browser download completion was not verified because the automation download wait timed out.
 
 ![Desktop preview](docs/preview.jpg)

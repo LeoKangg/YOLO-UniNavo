@@ -1,0 +1,108 @@
+{
+  "sources": [
+    {
+      "id": "asu-business-entry",
+      "title": "Direct admission to W. P. Carey — international applicants",
+      "publisher": "Arizona State University",
+      "url": "https://wpcarey.asu.edu/undergraduate/direct-admission",
+      "verified": "2026-10-22",
+      "cycle": "Current policy; recheck for Fall 2028"
+    },
+    {
+      "id": "qs-methodology",
+      "title": "QS World University Rankings methodology",
+      "publisher": "QS",
+      "url": "https://www.topuniversities.com/world-university-rankings/methodology",
+      "verified": "2026-10-22",
+      "cycle": "Current methodology; global employer survey, not Korean recognition"
+    },
+    {
+      "id": "asu-full-catalog",
+      "title": "Full program directory — asu",
+      "publisher": "Arizona State University",
+      "url": "https://degrees.asu.edu/bachelors",
+      "verified": "2026-10-22",
+      "cycle": "Current directory; select the exact campus and undergraduate award"
+    },
+    {
+      "id": "oregon-full-catalog",
+      "title": "Full program directory — oregon",
+      "publisher": "University of Oregon",
+      "url": "https://www.uoregon.edu/academics/undergraduate/explore-programs/",
+      "verified": "2026-10-22",
+      "cycle": "Current directory; select the exact campus and undergraduate award"
+    },
+    {
+      "id": "michigan-state-full-catalog",
+      "title": "Full program directory — michigan-state",
+      "publisher": "Michigan State University",
+      "url": "https://admissions.msu.edu/academics/majors-degrees-programs",
+      "verified": "2026-10-22",
+      "cycle": "Current directory; select the exact campus and undergraduate award"
+    },
+    {
+      "id": "indiana-bloomington-full-catalog",
+      "title": "Full program directory — indiana-bloomington",
+      "publisher": "Indiana University Bloomington",
+      "url": "https://bloomington.iu.edu/academics/degrees-majors/",
+      "verified": "2026-10-22",
+      "cycle": "Current directory; select the exact campus and undergraduate award"
+    },
+    {
+      "id": "penn-state-full-catalog",
+      "title": "Full program directory — penn-state",
+      "publisher": "Penn State — University Park",
+      "url": "https://bulletins.psu.edu/programs/",
+      "verified": "2026-10-22",
+      "cycle": "Current directory; select the exact campus and undergraduate award"
+    },
+    {
+      "id": "iowa-state-full-catalog",
+      "title": "Full program directory — iowa-state",
+      "publisher": "Iowa State University",
+      "url": "https://www.iastate.edu/academics/majors-minors-certificates",
+      "verified": "2026-10-22",
+      "cycle": "Current directory; select the exact campus and undergraduate award"
+    },
+    {
+      "id": "colorado-full-catalog",
+      "title": "Full program directory — colorado",
+      "publisher": "University of Colorado Boulder",
+      "url": "https://www.colorado.edu/academics/programs/majors",
+      "verified": "2026-10-22",
+      "cycle": "Current directory; select the exact campus and undergraduate award"
+    },
+    {
+      "id": "arizona-full-catalog",
+      "title": "Full program directory — arizona",
+      "publisher": "University of Arizona",
+      "url": "https://catalog.arizona.edu/programs",
+      "verified": "2026-10-22",
+      "cycle": "Current directory; filter undergraduate and correct campus"
+    },
+    {
+      "id": "nyu-full-catalog",
+      "title": "Full program directory — nyu",
+      "publisher": "New York University",
+      "url": "https://bulletins.nyu.edu/programs/",
+      "verified": "2026-10-22",
+      "cycle": "Current directory; filter undergraduate and correct campus"
+    }
+  ],
+  "asuComparison": {
+    "text": "W. P. Carey BA programs use ASU international entry requirements; BS programs add a criterion such as SAT 1230, ACT 25, top 8% class rank or ASU-defined 3.4 GPA. General ASU eligibility is still required. This documents different entry requirements, not a lowest Ontario admission mark.",
+    "ko": "W. P. Carey의 BA 과정은 ASU 국제학생 일반 요건을 따릅니다. BS 과정은 여기에 SAT 1230, ACT 25, 학급 상위 8% 또는 ASU 기준 GPA 3.4 중 하나를 추가로 요구합니다. ASU 일반 지원 자격은 여전히 필요합니다. 과정별 요건 차이가 확인된 것이며 온타리오 최저 합격 성적은 아닙니다.",
+    "sourceIds": ["asu-business-entry"]
+  },
+  "catalogs": {
+    "asu": "https://degrees.asu.edu/bachelors",
+    "oregon": "https://www.uoregon.edu/academics/undergraduate/explore-programs/",
+    "michigan-state": "https://admissions.msu.edu/academics/majors-degrees-programs",
+    "indiana-bloomington": "https://bloomington.iu.edu/academics/degrees-majors/",
+    "penn-state": "https://bulletins.psu.edu/programs/",
+    "iowa-state": "https://www.iastate.edu/academics/majors-minors-certificates",
+    "colorado": "https://www.colorado.edu/academics/programs/majors",
+    "arizona": "https://catalog.arizona.edu/programs",
+    "nyu": "https://bulletins.nyu.edu/programs/"
+  }
+}

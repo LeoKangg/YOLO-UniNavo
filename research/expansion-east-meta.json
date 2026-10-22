@@ -1,0 +1,430 @@
+[
+  {
+    "id": "rutgers-new-brunswick",
+    "shortName": "Rutgers–New Brunswick",
+    "initials": "RU",
+    "color": "#93434e",
+    "recognition": "High",
+    "majors": ["Sociology BA", "History BA"],
+    "structure": "School admission; SAS majors declared after enrollment",
+    "selectivity": "selective",
+    "priority": 11,
+    "testing": "Test optional",
+    "fit": "Explore SAS with a school-specific SAT reference; humanities choices do not establish easier admission.",
+    "ranking": {
+      "edition": "2026",
+      "publisher": "U.S. News & World Report",
+      "category": "National Universities",
+      "rank": 42,
+      "url": "https://www.rutgers.edu/news/rutgers-highly-ranked-graduates-social-mobility",
+      "sourceId": "rutgers-new-brunswick-ranking"
+    },
+    "eligibility": {
+      "ontarioMinimum": null,
+      "ontarioRule": "International-school students self-report coursework and marks through STARS; official records follow for enrollment. An Ontario top-six formula, U/M equivalencies and minimum percentage were not verified.",
+      "satAlternative": null,
+      "sourceIds": ["rutgers-new-brunswick-international"]
+    },
+    "majorEvidence": [
+      {
+        "name": "Sociology BA",
+        "admissionUnit": "School of Arts and Sciences",
+        "minimum": "After enrollment: introductory sociology and one listed thematic course before declaration; no Ontario freshman cutoff published.",
+        "advantage": "not-established",
+        "sourceIds": [
+          "rutgers-new-brunswick-sociology",
+          "rutgers-new-brunswick-majors"
+        ]
+      },
+      {
+        "name": "History BA",
+        "admissionUnit": "School of Arts and Sciences",
+        "minimum": null,
+        "advantage": "not-established",
+        "sourceIds": [
+          "rutgers-new-brunswick-history",
+          "rutgers-new-brunswick-majors"
+        ]
+      }
+    ],
+    "ko": {
+      "name": "럿거스 대학교 뉴브런즈윅",
+      "facts": {
+        "admission": "교육과정, 성적과 추이, 기타 자료를 단과대학별로 종합 심사합니다. 온타리오 백분율 합격 기준은 확인되지 않았습니다.",
+        "acceptanceRate": "명확한 모집 연도의 합격률은 사용하지 않습니다. 입학생 수를 지원자 수로 나눈 값은 합격률이 아닙니다.",
+        "sat": "뉴브런즈윅은 2027년까지 SAT 제출 선택입니다. 2028년 정책은 재확인이 필요합니다. 제출 시 시험기관에서 직접 보내야 합니다.",
+        "satMiddle50": "SAS의 2026년 가을 합격자 중 점수 제출자 중간 50%는 1380–1520입니다. 단과대학별 분포이며 최저점이나 합격 보장이 아닙니다.",
+        "satTarget": "SAS 분포를 점수 제출 판단의 참고자료로 쓰세요. SAT 1500점도 온타리오 60–65% 성적이 입학 기준을 충족한다는 뜻은 아닙니다.",
+        "deadlines": "2028년 마감일은 미확인입니다. 2027년 입학 참고: EA 2026년 11월 1일, RD 2026년 12월 1일, 등록 의사 회신 2027년 5월 1일.",
+        "application": "Rutgers Application 또는 Common App, 수수료 USD 70, 에세이와 STARS 성적 기록이 필요합니다. 추천서는 요청하지 않습니다.",
+        "ontario": "해외 고교 학생은 STARS에 과목과 성적을 입력하고 등록 시 공식 서류를 제출합니다. 온타리오 상위 6과목 산식, U/M 대응 기준과 최저 백분율은 확인되지 않았습니다.",
+        "coursework": "SAS는 학업 과목 16단위: 영어 4, 동일 외국어 2, Algebra II까지 수학 3, 과학 2, 기타 학업 과목 5를 요구합니다. 온타리오 과목 대응은 확인하세요.",
+        "international": "Rutgers의 국제 지원 안내에는 미국 밖 고교 재학생이 포함됩니다. 시민권과 체류 자격에 따라 필요한 서류는 달라집니다.",
+        "english": "뉴브런즈윅 기준 IELTS 6.5 또는 DET 115가 명시되어 있습니다. 영어 수업 학교의 면제는 개별 심사입니다. 온타리오 재학만으로 자동 면제라고 보지 마세요. 약학·간호는 더 높은 기준입니다.",
+        "majorStructure": "SAS는 보통 대학 2학년에 전공을 선언하며 전공별 선수 조건이 있습니다. 사회학은 입문 사회학과 지정 주제 과목 하나를 먼저 이수해야 합니다. 대학 재학 중 조건이며 고교 입학 컷이 아닙니다.",
+        "recommendedMajors": "사회학 BA와 역사학 BA는 실제 SAS 전공입니다. 더 낮은 신입생 합격점이나 전공 선택에 따른 입학 우대는 확인되지 않았습니다.",
+        "ap": "SAS는 AP 4·5점의 공식 성적을 과목별로 평가해 학점을 인정할 수 있습니다. AP 학점 인정은 일반 입학 필수 조건이 아닙니다. 입학 연도 표를 재확인하세요.",
+        "cost": "2026–27년 뉴브런즈윅 비거주자 교내 생활 기준 등록금·수수료·식사·주거 합계 USD 62,782. 국제학생 총비용이 아니며 보험, SEVIS 관리비, 교재, 교통 및 기타 비용은 별도입니다.",
+        "aid": "합격한 국제 신입생은 연 USD 5,000–16,000의 경쟁 장학금 자동 심사 대상입니다. 현재 갱신 기준은 GPA 3.25이며 수혜는 보장되지 않습니다. 2028년 조건을 재확인하세요."
+      },
+      "fit": "SAS 단과대학별 SAT 자료를 비교하세요. 인문사회 전공 선택이 더 쉬운 입학을 뜻하지는 않습니다.",
+      "majorNames": ["사회학 BA", "역사학 BA"],
+      "majorsDirectoryScope": "뉴브런즈윅 캠퍼스를 선택하세요. 다른 Rutgers 캠퍼스 전공도 포함합니다.",
+      "ontarioRule": "해외 고교 학생은 STARS에 과목과 성적을 입력하고 등록 시 공식 서류를 제출합니다. 온타리오 상위 6과목 산식, U/M 대응 기준과 최저 백분율은 확인되지 않았습니다.",
+      "majorEvidence": [
+        {
+          "name": "사회학 BA",
+          "admissionUnit": "인문과학대학",
+          "minimum": "SAS는 보통 대학 2학년에 전공을 선언하며 전공별 선수 조건이 있습니다. 사회학은 입문 사회학과 지정 주제 과목 하나를 먼저 이수해야 합니다. 대학 재학 중 조건이며 고교 입학 컷이 아닙니다.",
+          "advantage": "not-established",
+          "sourceIds": [
+            "rutgers-new-brunswick-sociology",
+            "rutgers-new-brunswick-majors"
+          ]
+        },
+        {
+          "name": "역사학 BA",
+          "admissionUnit": "인문과학대학",
+          "minimum": null,
+          "advantage": "not-established",
+          "sourceIds": [
+            "rutgers-new-brunswick-history",
+            "rutgers-new-brunswick-majors"
+          ]
+        }
+      ]
+    },
+    "range": {
+      "low": 1380,
+      "high": 1520,
+      "cohort": "SAS · Fall 2026 admitted score submitters",
+      "sourceIds": ["rutgers-new-brunswick-profile"]
+    },
+    "majorsDirectory": {
+      "url": "https://admissions.rutgers.edu/majors",
+      "sourceId": "rutgers-new-brunswick-directory",
+      "scope": "Select New Brunswick; directory also includes other Rutgers campuses."
+    }
+  },
+  {
+    "id": "uconn",
+    "shortName": "UConn Storrs",
+    "initials": "UC",
+    "color": "#354967",
+    "recognition": "Moderate",
+    "majors": ["Sociology BA", "History BA", "Anthropology BA"],
+    "structure": "Campus and program review; CLAS and exploratory pathways",
+    "selectivity": "selective",
+    "priority": 12,
+    "testing": "Test optional",
+    "fit": "Compare Storrs separately from regional campuses; a regional offer is not a Storrs admission.",
+    "ranking": {
+      "edition": "2026",
+      "publisher": "U.S. News & World Report",
+      "category": "National Universities",
+      "rank": 69,
+      "url": "https://bpir.media.uconn.edu/wp-content/uploads/sites/3452/2026/02/Rankings-Overview-10.28.25.pdf",
+      "sourceId": "uconn-ranking"
+    },
+    "eligibility": {
+      "ontarioMinimum": null,
+      "ontarioRule": "Canada: Grades 9–11 official records during high school; final Grades 9–12 transcript and provincial completion diploma before enrollment. No Ontario U/M or top-six minimum was verified.",
+      "satAlternative": null,
+      "sourceIds": ["uconn-credentials"]
+    },
+    "majorEvidence": [
+      {
+        "name": "Sociology BA",
+        "admissionUnit": "College of Liberal Arts and Sciences",
+        "minimum": null,
+        "advantage": "not-established",
+        "sourceIds": ["uconn-majors"]
+      },
+      {
+        "name": "History BA",
+        "admissionUnit": "College of Liberal Arts and Sciences",
+        "minimum": null,
+        "advantage": "not-established",
+        "sourceIds": ["uconn-majors"]
+      },
+      {
+        "name": "Anthropology BA",
+        "admissionUnit": "College of Liberal Arts and Sciences",
+        "minimum": null,
+        "advantage": "not-established",
+        "sourceIds": ["uconn-majors"]
+      }
+    ],
+    "ko": {
+      "name": "코네티컷 대학교 스토어스",
+      "facts": {
+        "admission": "종합 심사이며 고교 졸업과 본국 대학 진학 자격이 필요합니다. 온타리오 백분율 합격 기준은 확인되지 않았습니다.",
+        "acceptanceRate": "모집 연도가 명확한 스토어스 캠퍼스 합격률은 확인하지 못해 표시하지 않습니다.",
+        "sat": "당분간 SAT/ACT 제출 선택 정책이며 공식 점수를 제출하면 영역별 최고 점수를 합산합니다. 2028년 지원 안내를 재확인하세요.",
+        "satMiddle50": "스토어스 2026년 가을 합격자 중 점수 제출자 SAT 중간 50%는 1320–1460입니다. 지역 캠퍼스의 970–1250은 다른 입학 대상입니다.",
+        "satTarget": "제출할 점수는 스토어스 분포와 비교하세요. 높은 SAT가 낮은 온타리오 평균의 지원 자격을 입증하지는 않습니다.",
+        "deadlines": "2028년 일정은 미확인입니다. 2027년 참고: ED 11월 1일, 장학금·Honors 우선 12월 1일, 스토어스 마감 1월 15일. ED는 등록 약속이 있는 전형이므로 선택 전 약정을 확인하세요.",
+        "application": "Common App 또는 Coalition Application, 수수료 USD 80. 에세이는 필수, 추천서 두 통은 선택이지만 권장입니다. 공식 고교 기록이 필요합니다.",
+        "ontario": "캐나다 재학생은 9–11학년 공식 성적표를, 등록 전에는 9–12학년 최종 성적표와 주정부 고교 졸업장을 제출합니다. 온타리오 U/M 및 상위 6과목 최저점은 확인되지 않았습니다.",
+        "coursework": "CLAS는 고교 16단위를 요구하며 영어 4, 수학 3, 동일 외국어 2, 실험 과학 2, 사회과학 2가 포함됩니다. 온타리오 과목 대응은 확인이 필요합니다.",
+        "international": "국제 신입생 안내는 고교를 마치는 비미국 시민권자·비영주권자에게 적용됩니다. 온타리오 거주만이 아니라 시민권도 중요합니다.",
+        "english": "영어 비원어민은 일반적으로 증명이 필요하며 IELTS 6.5 또는 DET 110이 명시되어 있습니다. SAT EBRW 510은 면제 경로가 될 수 있습니다. 온타리오 재학 자체는 일괄 면제 항목이 아닙니다.",
+        "majorStructure": "CLAS에는 폭넓은 BA 전공이 있습니다. 희망 프로그램에 직접 입학하지 못하면 ACES로 입학할 수 있으며, 이후 별도 지원이 필요한 전공의 진입은 보장되지 않습니다.",
+        "recommendedMajors": "사회학·역사학·인류학 BA는 CLAS의 실제 전공입니다. 이 중 어느 전공이 가장 낮은 점수로 신입생을 선발하는지 입증된 근거는 없습니다.",
+        "ap": "공개된 2025–26년 표는 AP English Language, Psychology, Statistics 4·5점에 과목별 학점을 인정합니다. 실제 입학 연도 정책을 재확인하세요.",
+        "cost": "2026–27년 스토어스 타주 학생 직접비용 참고액은 등록금·일반 수수료·주거·식사 합계 USD 59,426입니다. 완전한 국제학생 예산이 아니며 보험, 국제학생 수수료와 간접비는 별도 확인이 필요합니다.",
+        "aid": "국제학생은 Global Excellence 등 명시된 성적 장학금 심사 대상이 될 수 있습니다. 대부분 자동 심사이며 Stamps는 추가 지원서가 필요합니다. 자격과 향후 금액을 재확인하세요."
+      },
+      "fit": "스토어스와 지역 캠퍼스를 구분하세요. 지역 캠퍼스 합격은 스토어스 합격과 다릅니다.",
+      "majorNames": ["사회학 BA", "역사학 BA", "인류학 BA"],
+      "majorsDirectoryScope": "전체 학부 전공 목록입니다. 캠퍼스별 개설 여부를 확인하세요.",
+      "ontarioRule": "캐나다 재학생은 9–11학년 공식 성적표를, 등록 전에는 9–12학년 최종 성적표와 주정부 고교 졸업장을 제출합니다. 온타리오 U/M 및 상위 6과목 최저점은 확인되지 않았습니다.",
+      "majorEvidence": [
+        {
+          "name": "사회학 BA",
+          "admissionUnit": "인문과학대학",
+          "minimum": null,
+          "advantage": "not-established",
+          "sourceIds": ["uconn-majors"]
+        },
+        {
+          "name": "역사학 BA",
+          "admissionUnit": "인문과학대학",
+          "minimum": null,
+          "advantage": "not-established",
+          "sourceIds": ["uconn-majors"]
+        },
+        {
+          "name": "인류학 BA",
+          "admissionUnit": "인문과학대학",
+          "minimum": null,
+          "advantage": "not-established",
+          "sourceIds": ["uconn-majors"]
+        }
+      ]
+    },
+    "range": {
+      "low": 1320,
+      "high": 1460,
+      "cohort": "Storrs · Fall 2026 admitted score submitters",
+      "sourceIds": ["uconn-profile"]
+    },
+    "majorsDirectory": {
+      "url": "https://catalog.uconn.edu/undergraduate/programs/",
+      "sourceId": "uconn-directory",
+      "scope": "All undergraduate programs; confirm campus availability."
+    }
+  },
+  {
+    "id": "umass-amherst",
+    "shortName": "UMass Amherst",
+    "initials": "UM",
+    "color": "#854b54",
+    "recognition": "Moderate",
+    "majors": ["Anthropology BA", "Sociology BA", "Political Science BA"],
+    "structure": "University and major review; some majors restrict entry",
+    "selectivity": "selective",
+    "priority": 13,
+    "testing": "Test optional",
+    "fit": "Anthropology and Sociology have flexible declaration procedures after admission. This does not establish a lower freshman cutoff.",
+    "ranking": {
+      "edition": "2026",
+      "publisher": "U.S. News & World Report",
+      "category": "National Universities",
+      "rank": 64,
+      "url": "https://www.umass.edu/news/article/umass-amherst-places-top-30-among-public-universities-us-news-world-report-2026",
+      "sourceId": "umass-amherst-ranking"
+    },
+    "eligibility": {
+      "ontarioMinimum": null,
+      "ontarioRule": "Canada table: Grades 9–11 official transcript while in high school; after completion, Grades 9–12 plus provincial secondary diploma. No Ontario minimum average or top-six formula is stated in the reviewed table.",
+      "satAlternative": null,
+      "sourceIds": ["umass-amherst-credentials"]
+    },
+    "majorEvidence": [
+      {
+        "name": "Anthropology BA",
+        "admissionUnit": "College of Social and Behavioral Sciences",
+        "minimum": "After admission: no prerequisites to declare; meet an advisor. No Ontario freshman cutoff published.",
+        "advantage": "not-established",
+        "sourceIds": ["umass-amherst-majors"]
+      },
+      {
+        "name": "Sociology BA",
+        "admissionUnit": "College of Social and Behavioral Sciences",
+        "minimum": "After admission: declare by meeting a Sociology advisor. No Ontario freshman cutoff published.",
+        "advantage": "not-established",
+        "sourceIds": ["umass-amherst-majors"]
+      },
+      {
+        "name": "Political Science BA",
+        "admissionUnit": "College of Social and Behavioral Sciences",
+        "minimum": null,
+        "advantage": "not-established",
+        "sourceIds": ["umass-amherst-majors"]
+      }
+    ],
+    "ko": {
+      "name": "매사추세츠 대학교 애머스트",
+      "facts": {
+        "admission": "지원서 전체를 보는 선별적 종합 심사이며 단일 점수로 결정하지 않습니다. 공식 온타리오 백분율 합격 기준은 확인되지 않았습니다.",
+        "acceptanceRate": "이번 조사에서는 모집 연도가 명확한 합격률 수치를 사용하지 않습니다.",
+        "sat": "현재 국제학생 안내는 SAT/ACT 제출 선택입니다. 2028년 가을에도 같은 정책인지 확인하세요.",
+        "satMiddle50": "2025년 가을 입학생 중 점수 제출자 1,322명의 SAT 총점 중간 50%는 1330–1480입니다. 미국식 가중 GPA 통계를 온타리오 백분율로 환산하면 안 됩니다.",
+        "satTarget": "1330–1480은 점수 비교 자료일 뿐입니다. SAT 1500점도 성적표, 과목, 전공 요건을 면제하지 않습니다.",
+        "deadlines": "2028년 일정은 명시적으로 확인되지 않았습니다. 현재 반복 일정 참고: EA 11월 5일, RD 1월 15일, 등록 예치금 5월 1일.",
+        "application": "UMass 문항을 포함한 Common App, 9–11학년 공식 성적 기록, 추천서, 국제학생 수수료 USD 85, 해당 시 영어 증명이 필요합니다. 대학 이수 경력이 있으면 성적표도 제출합니다.",
+        "ontario": "캐나다 기준: 고교 재학 중 9–11학년 공식 성적표, 졸업 후 9–12학년 성적표와 주정부 고교 졸업장. 검토한 표에는 온타리오 최저 평균이나 상위 6과목 산식이 없습니다.",
+        "coursework": "공개된 단위는 영어 4, 마지막 학년 수학 포함 수학 4, 실험 과학 3, 사회과학 2, 동일 외국어 2, 선택 과목 2입니다. 미국사 문구를 포함한 온타리오 대응을 확인하세요. 공학·경영·CS는 심화 수학이 필요합니다.",
+        "international": "UMass는 비이민 비자·체류 자격을 기준으로 국제 지원자를 정의하며 일부 영주권 심사 중인 지원자도 포함합니다. 시민권과 체류 자격을 정확히 입력하세요.",
+        "english": "신입생 기준 IELTS 총점 6.5 및 영역별 6.0, 또는 DET 115. 학교 수업 면제는 영어로 영국·미국 교육과정을 4년 이수한 경우를 명시하며 재량 심사입니다. 온타리오 재학은 자동 면제 대상이 아닙니다.",
+        "majorStructure": "지원 시 전공 또는 탐색 과정을 선택합니다. SBS 인류학은 전공 선언 선수 요건이 없고 사회학은 상담 후 선언할 수 있습니다. 이는 전공 선언 규정이며 신입생 입학 기준이 더 낮다는 뜻은 아닙니다.",
+        "recommendedMajors": "인류학·사회학·정치학 BA는 실제 SBS 전공입니다. 온타리오 최저 합격 평균이나 전공별 신입생 입학 우위는 확인되지 않았습니다.",
+        "ap": "AP는 시험과 점수에 따라 학점·선이수 인정을 받을 수 있으며 공식 점수를 보내야 합니다. 기준은 바뀔 수 있습니다. AP 학점은 입학 요건을 대체하지 않습니다.",
+        "cost": "2026–27년 국제학생 9개월 예상 총비용은 USD 69,465이며 등록금·수수료 USD 43,819와 표에 명시된 보험료를 포함합니다. 전공별 추가 비용이 있을 수 있으며 2028년 견적이 아닙니다.",
+        "aid": "국제 학부생은 입학 심사 시 성적 장학금 자동 심사 대상이지만 대부분의 재정보조는 받을 수 없습니다. 연방 지원은 시민권·자격에 따라 다릅니다. 장학금은 보장되지 않습니다."
+      },
+      "fit": "입학 후 인류학·사회학 전공 선언 절차는 유연하지만 신입생 합격점이 더 낮다는 뜻은 아닙니다.",
+      "majorNames": ["인류학 BA", "사회학 BA", "정치학 BA"],
+      "majorsDirectoryScope": "학부·학사·교내 수업 필터를 선택하세요.",
+      "ontarioRule": "캐나다 기준: 고교 재학 중 9–11학년 공식 성적표, 졸업 후 9–12학년 성적표와 주정부 고교 졸업장. 검토한 표에는 온타리오 최저 평균이나 상위 6과목 산식이 없습니다.",
+      "majorEvidence": [
+        {
+          "name": "인류학 BA",
+          "admissionUnit": "사회행동과학대학",
+          "minimum": "지원 시 전공 또는 탐색 과정을 선택합니다. SBS 인류학은 전공 선언 선수 요건이 없고 사회학은 상담 후 선언할 수 있습니다. 이는 전공 선언 규정이며 신입생 입학 기준이 더 낮다는 뜻은 아닙니다.",
+          "advantage": "not-established",
+          "sourceIds": ["umass-amherst-majors"]
+        },
+        {
+          "name": "사회학 BA",
+          "admissionUnit": "사회행동과학대학",
+          "minimum": "지원 시 전공 또는 탐색 과정을 선택합니다. SBS 인류학은 전공 선언 선수 요건이 없고 사회학은 상담 후 선언할 수 있습니다. 이는 전공 선언 규정이며 신입생 입학 기준이 더 낮다는 뜻은 아닙니다.",
+          "advantage": "not-established",
+          "sourceIds": ["umass-amherst-majors"]
+        },
+        {
+          "name": "정치학 BA",
+          "admissionUnit": "사회행동과학대학",
+          "minimum": null,
+          "advantage": "not-established",
+          "sourceIds": ["umass-amherst-majors"]
+        }
+      ]
+    },
+    "range": {
+      "low": 1330,
+      "high": 1480,
+      "cohort": "Fall 2025 enrolled score submitters · 1,322 scored students",
+      "sourceIds": ["umass-amherst-profile"]
+    },
+    "majorsDirectory": {
+      "url": "https://www.umass.edu/gateway/academics/explore-our-programs",
+      "sourceId": "umass-amherst-directory",
+      "scope": "Filter undergraduate, bachelor degree and on-campus study."
+    }
+  },
+  {
+    "id": "buffalo",
+    "shortName": "University at Buffalo",
+    "initials": "UB",
+    "color": "#3c6290",
+    "recognition": "Moderate",
+    "majors": ["Sociology BA", "History BA", "Anthropology BA"],
+    "structure": "Intended major; business and engineering receive specific review",
+    "selectivity": "selective",
+    "priority": 14,
+    "testing": "Test optional",
+    "fit": "A nearby SUNY option with genuine broad majors. Ask admissions to assess Ontario marks; its generic 83/100 example is not an Ontario cutoff.",
+    "ranking": {
+      "edition": "2026",
+      "publisher": "U.S. News & World Report",
+      "category": "National Universities",
+      "rank": 75,
+      "url": "https://www.buffalo.edu/campaign/find-your-cause/jacobs-school-of-medicine-and-biomedical-sciences.host.html/content/shared/university/news/news-center-releases/2025/09/us-news-best-colleges.detail.html",
+      "sourceId": "buffalo-ranking"
+    },
+    "eligibility": {
+      "ontarioMinimum": null,
+      "ontarioRule": "UB evaluates national grading systems and requires secondary academic records. The Canada selector did not expose a verifiable Ontario U/M/top-six rule. Ask for the OSSD/course requirements and official grade assessment.",
+      "satAlternative": null,
+      "sourceIds": ["buffalo-international"]
+    },
+    "majorEvidence": [
+      {
+        "name": "Sociology BA",
+        "admissionUnit": "College of Arts and Sciences",
+        "minimum": null,
+        "advantage": "not-established",
+        "sourceIds": ["buffalo-sociology", "buffalo-special"]
+      },
+      {
+        "name": "History BA",
+        "admissionUnit": "College of Arts and Sciences",
+        "minimum": null,
+        "advantage": "not-established",
+        "sourceIds": ["buffalo-history", "buffalo-special"]
+      },
+      {
+        "name": "Anthropology BA",
+        "admissionUnit": "College of Arts and Sciences",
+        "minimum": null,
+        "advantage": "not-established",
+        "sourceIds": ["buffalo-anthropology", "buffalo-special"]
+      }
+    ],
+    "ko": {
+      "name": "뉴욕주립대학교 버펄로",
+      "facts": {
+        "admission": "UB는 미국 GPA 3.0/B에 상응하는 성적을 기대하며 일반 예시로 83/100을 제시합니다. 국가별 성적 체계는 입학처가 평가하므로 온타리오 83% 컷으로 확인된 것은 아닙니다.",
+        "acceptanceRate": "합격률을 표시하지 않습니다. 전체 합격 결과는 개인의 합격 예측이 아닙니다.",
+        "sat": "현재 국제학생 입학·장학금 심사에서 SAT/ACT는 제출 선택입니다. 2028년 안내를 재확인하세요.",
+        "satMiddle50": "2025년 가을 CDS는 SAT EBRW 610–690, 수학 610–700을 제시하지만 총점 백분위는 없습니다. 영역별 백분위를 합산하지 마세요. 총점 분포는 1000–1199점 12%, 1200–1399점 68%, 1400–1600점 20%입니다.",
+        "satTarget": "총점 중간 50% 목표를 임의로 만들지 않습니다. CDS 구간은 점수 제출자만 설명하며 1100–1500점을 합격 확률로 바꿀 수 없습니다.",
+        "deadlines": "2028년 일정은 미확인입니다. 현재 가을 참고: EA 11월 1일, Honors 우선 12월 15일, RD 서류 완료 2월 1일. 이후는 정원이 남을 때만 접수합니다.",
+        "application": "ApplySUNY, Common App, Coalition 중 하나만 제출합니다. 수수료 USD 50. 성적 기록, 에세이와 기타 필수 자료를 검토하며 비영어 문서는 번역이 필요합니다. 추천서 요건은 포털에서 확인하세요.",
+        "ontario": "UB는 국가별 성적 체계를 평가하며 고교 학업 기록을 요구합니다. 캐나다 선택 메뉴에서 검증 가능한 온타리오 U/M·상위 6과목 규정을 확인하지 못했습니다. OSSD·과목 요건과 공식 성적 평가를 문의하세요.",
+        "coursework": "2025–26년 CDS의 권장 17단위: 영어 4, 수학 3, 과학 3, 외국어 3, 사회 4. 권장사항이며 온타리오 성적 계산식이 아닙니다.",
+        "international": "미국 시민권자·영주권자가 해외에서 공부했으면 해외 학력 서류를 포함한 국내 지원 절차를 따릅니다. 미국 학생 체류 자격이 필요한 다른 학생은 국제 안내를 따르며 캐나다 시민권자의 서류는 별도 확인하세요.",
+        "english": "현재 최저점 예시: IELTS Academic 6.0, DET 105, SAT EBRW 500 또는 AP English Language 시험 4점. 일반적으로 2년 이내 성적이 필요합니다. 온타리오 학교 면제는 가정하지 않습니다.",
+        "majorStructure": "희망 전공을 표시하고 2순위 선택도 권장합니다. 회계·경영 직접 입학은 정원 제한이 있고 공학은 수학·과학을 추가 심사합니다. 예술 프로그램은 오디션·포트폴리오가 필요할 수 있습니다.",
+        "recommendedMajors": "사회학·역사학·인류학 BA가 있습니다. 공개된 온타리오 신입생 컷이나 가장 낮은 점수로 입학하는 전공이라는 근거는 확인되지 않았습니다. 학업 적합성을 기준으로 선택하세요.",
+        "ap": "UB는 AP·IB 등의 시험으로 선이수 학점을 인정합니다. 최신 시험별 인정표를 확인하세요. 지원 자격과 학점 인정은 별개입니다.",
+        "cost": "현재 국제학생 가을·봄 입학 첫해 추정 총액은 USD 61,030으로 등록금·수수료·보험·주거·식사·관련 비용을 포함합니다. 관련 비용 각주는 여전히 2025–26년 기준이므로 입학 연도 전체 예산을 확인하세요.",
+        "aid": "합격한 국제 신입생은 금액이 다양한 Flagship Scholarship 자동 심사 대상이며 지속 자격 충족 시 최대 4년 갱신됩니다. Presidential Scholarship은 별도 지원서가 필요합니다. 수혜는 보장되지 않습니다."
+      },
+      "fit": "온타리오와 가까운 SUNY 대학으로 폭넓은 전공을 검토할 수 있습니다. 일반 안내의 83/100 예시를 온타리오 컷으로 쓰지 말고 입학처에 성적 평가를 요청하세요.",
+      "majorNames": ["사회학 BA", "역사학 BA", "인류학 BA"],
+      "majorsDirectoryScope": "학부 전공 및 프로그램 목록입니다.",
+      "ontarioRule": "UB는 국가별 성적 체계를 평가하며 고교 학업 기록을 요구합니다. 캐나다 선택 메뉴에서 검증 가능한 온타리오 U/M·상위 6과목 규정을 확인하지 못했습니다. OSSD·과목 요건과 공식 성적 평가를 문의하세요.",
+      "majorEvidence": [
+        {
+          "name": "사회학 BA",
+          "admissionUnit": "인문과학대학",
+          "minimum": null,
+          "advantage": "not-established",
+          "sourceIds": ["buffalo-sociology", "buffalo-special"]
+        },
+        {
+          "name": "역사학 BA",
+          "admissionUnit": "인문과학대학",
+          "minimum": null,
+          "advantage": "not-established",
+          "sourceIds": ["buffalo-history", "buffalo-special"]
+        },
+        {
+          "name": "인류학 BA",
+          "admissionUnit": "인문과학대학",
+          "minimum": null,
+          "advantage": "not-established",
+          "sourceIds": ["buffalo-anthropology", "buffalo-special"]
+        }
+      ]
+    },
+    "majorsDirectory": {
+      "url": "https://www.buffalo.edu/admissions/academics/programs.html",
+      "sourceId": "buffalo-directory",
+      "scope": "Undergraduate majors and programs."
+    }
+  }
+]

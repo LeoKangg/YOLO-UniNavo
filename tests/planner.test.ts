@@ -31,7 +31,7 @@ test("60–70 bands never receive misleading prestigious direct-entry picks", ()
       assert.equal(categoryFor(u.id, p), "Very High Reach");
   }
 });
-test("all seven bands produce at most six unique non-high-reach picks", () => {
+test("all eight bands produce at most six unique non-high-reach picks", () => {
   for (const band of GRADE_BANDS) {
     const p = { ...defaultProfile, band };
     const picks = recommend(universities, p);
@@ -41,7 +41,7 @@ test("all seven bands produce at most six unique non-high-reach picks", () => {
       assert.notEqual(categoryFor(u.id, p), "Very High Reach");
   }
 });
-test("75–95 scenarios have six working picks, never a guaranteed safety", () => {
+test("75–100 scenarios have six working picks, never a guaranteed safety", () => {
   for (const band of GRADE_BANDS.slice(3))
     assert.equal(
       recommend(universities, { ...defaultProfile, band }).length,

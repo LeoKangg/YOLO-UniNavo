@@ -1,3 +1,4 @@
+import { expandedEvidence } from "../data/evidence.ts";
 // Translations preserve reference cycles, uncertainty, eligibility and numerical caveats.
 export const universityKo: Record<string, Record<string, string>> = {
   asu: {
@@ -270,3 +271,5 @@ export const universityKo: Record<string, Record<string, string>> = {
     aid: "경쟁형 국제학생 성적우수 장학금은 OneApp 신청과 성적·SAT/ACT 검토가 필요합니다. 국제학생은 연방·학교 대출을 받을 수 없습니다. 필요 기반 지원과 CSS Profile 요건은 이 조사에서 확립되지 않았으므로 재정보조 사무실에 문의하세요. 국적은 자격에 영향을 줍니다.",
   },
 };
+
+for (const e of expandedEvidence) universityKo[e.id] = e.ko.facts;

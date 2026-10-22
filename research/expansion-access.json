@@ -1,0 +1,593 @@
+[
+  {
+    "id": "minnesota-twin-cities",
+    "name": "University of Minnesota Twin Cities",
+    "city": "Minneapolis–Saint Paul",
+    "state": "Minnesota",
+    "type": "Public",
+    "recognition": "High",
+    "recognitionNote": "Editorial university-brand reference; not a measured Korean recognition rank.",
+    "facts": {
+      "admission": {
+        "text": "Individual review admits students to a freshman-admitting college, considering preparation, interests and available places. There is no verified Ontario percentage threshold.",
+        "sourceIds": ["umn-profile"],
+        "status": "verified"
+      },
+      "acceptanceRate": {
+        "text": "No acceptance-rate estimate is used. Admitted and enrolled counts must not be confused.",
+        "sourceIds": [],
+        "status": "not-verified"
+      },
+      "sat": {
+        "text": "SAT/ACT is optional through Fall 2029, including Fall 2028. Applicants without scores retain full admission, scholarship and honors consideration.",
+        "sourceIds": ["umn-testing"],
+        "status": "verified"
+      },
+      "satMiddle50": {
+        "text": "Overall university: 1350–1490 SAT, Fall 2026 admitted score submitters. CLA: 1330–1470. These are score distributions, not minimums; the planner separates the overall and college ranges.",
+        "sourceIds": ["umn-profile"],
+        "status": "verified"
+      },
+      "satTarget": {
+        "text": "If submitting, compare with the CLA range. A higher SAT does not replace transcript strength or prove admission eligibility.",
+        "sourceIds": ["umn-profile"],
+        "status": "editorial"
+      },
+      "deadlines": {
+        "text": "Fall 2028 dates are not yet confirmed. Current Fall 2027 reference: EA I November 1, EA II December 1, regular January 1; nursing November 1.",
+        "sourceIds": ["umn-deadlines"],
+        "status": "future-unpublished"
+      },
+      "application": {
+        "text": "Common App; USD 55 fee. Self-report Grades 9–12 and in-progress courses. Final official records are required before enrollment; programs may request supplements.",
+        "sourceIds": ["umn-apply"],
+        "status": "verified"
+      },
+      "ontario": {
+        "text": "Report Ontario marks exactly as issued; do not average, weight or convert them. No Ontario top-six formula or percentage minimum was verified.",
+        "sourceIds": ["umn-apply"],
+        "status": "confirm"
+      },
+      "coursework": {
+        "text": "The university evaluates core academic preparation and rigor. Use its course-requirement guide and have Admissions confirm Ontario course equivalencies.",
+        "sourceIds": ["umn-courses"],
+        "status": "confirm"
+      },
+      "international": {
+        "text": "Applicants needing temporary U.S. student status must complete financial certification when requested. Ontario school attendance does not establish U.S. domestic status.",
+        "sourceIds": ["umn-apply"],
+        "status": "verified"
+      },
+      "english": {
+        "text": "Canada except Quebec is exempt only when English is the first language. Other routes include digital SAT Reading/Writing 550; IELTS 6.5 overall and writing; DET 120 overall and writing. Confirm your waiver individually.",
+        "sourceIds": ["umn-english"],
+        "status": "verified"
+      },
+      "majorStructure": {
+        "text": "Students enter a college. CLA offers History, Sociology and Anthropology. The college-level profile is published; individual-major lower admission thresholds are not established.",
+        "sourceIds": ["umn-profile", "umn-majors"],
+        "status": "verified"
+      },
+      "recommendedMajors": {
+        "text": "History, Sociology and Anthropology are broad CLA options to explore for academic fit, not proven easier-entry majors.",
+        "sourceIds": ["umn-majors"],
+        "status": "editorial"
+      },
+      "ap": {
+        "text": "AP scores of 3 or higher may earn credit depending on the exam. The reviewed table covers Fall 2026; awards depend on entry term and must be rechecked for 2028.",
+        "sourceIds": ["umn-ap"],
+        "status": "verified"
+      },
+      "cost": {
+        "text": "2026–27 international estimate: USD 67,085 for nine months; USD 73,002 for twelve months required for I-20. Tuition/fees USD 44,743. These are not 2028 prices.",
+        "sourceIds": ["umn-cost"],
+        "status": "verified"
+      },
+      "aid": {
+        "text": "On-time international applicants are automatically considered for competitive Global Excellence Scholarships. Awards are not guaranteed. CSS Profile and 2028 need-based aid eligibility require confirmation.",
+        "sourceIds": ["umn-cost"],
+        "status": "confirm"
+      }
+    },
+    "sources": [
+      {
+        "id": "umn-apply",
+        "title": "International freshman application checklist",
+        "publisher": "University of Minnesota Twin Cities",
+        "url": "https://admissions.tc.umn.edu/apply/application-checklist/application-checklist-international-freshman",
+        "verified": "2026-10-22",
+        "cycle": "Fall 2027 application; Fall 2028 materials subject to confirmation"
+      },
+      {
+        "id": "umn-testing",
+        "title": "ACT/SAT information",
+        "publisher": "University of Minnesota Twin Cities",
+        "url": "https://admissions.tc.umn.edu/admissions/freshman-admission/act-sat-information",
+        "verified": "2026-10-22",
+        "cycle": "Test optional through Fall 2029; includes Fall 2028"
+      },
+      {
+        "id": "umn-profile",
+        "title": "College admission and Fall 2026 admitted student profiles",
+        "publisher": "University of Minnesota Twin Cities",
+        "url": "https://admissions.tc.umn.edu/admissions/freshman-admission/frequently-asked-questions-about-how-we-determine-college-admissions",
+        "verified": "2026-10-22",
+        "cycle": "Fall 2026 admitted students; older testing footnote superseded by testing policy"
+      },
+      {
+        "id": "umn-courses",
+        "title": "Course and test requirements",
+        "publisher": "University of Minnesota Twin Cities",
+        "url": "https://admissions.tc.umn.edu/hs-counselor-guidebook/course-and-test-requirements",
+        "verified": "2026-10-22",
+        "cycle": "Current course guidance"
+      },
+      {
+        "id": "umn-deadlines",
+        "title": "Freshman application deadlines",
+        "publisher": "University of Minnesota Twin Cities",
+        "url": "https://admissions.tc.umn.edu/apply/freshman-application-deadlines",
+        "verified": "2026-10-22",
+        "cycle": "Fall 2027 banner; Fall 2028 deadlines not yet confirmed"
+      },
+      {
+        "id": "umn-english",
+        "title": "English proficiency information",
+        "publisher": "University of Minnesota Twin Cities",
+        "url": "https://admissions.tc.umn.edu/admissions/international-admission/english-proficiency-information",
+        "verified": "2026-10-22",
+        "cycle": "English scores effective starting Spring 2027"
+      },
+      {
+        "id": "umn-majors",
+        "title": "College of Liberal Arts majors, minors and programs",
+        "publisher": "University of Minnesota Twin Cities",
+        "url": "https://cla.umn.edu/academics/majors-minors-programs",
+        "verified": "2026-10-22",
+        "cycle": "Current program directory"
+      },
+      {
+        "id": "umn-ap",
+        "title": "Transferring credit and AP awards",
+        "publisher": "University of Minnesota Twin Cities",
+        "url": "https://admissions.tc.umn.edu/hs-counselor-guidebook/transferring-credit",
+        "verified": "2026-10-22",
+        "cycle": "Fall 2026 credit awards; not Fall 2028"
+      },
+      {
+        "id": "umn-cost",
+        "title": "International costs, scholarships and visas",
+        "publisher": "University of Minnesota Twin Cities",
+        "url": "https://admissions.tc.umn.edu/cost-aid/cost-aid-scholarships/costs-scholarships-and-visas-international-students",
+        "verified": "2026-10-22",
+        "cycle": "2026–27 cost estimates"
+      },
+      {
+        "id": "umn-all-majors",
+        "title": "All University of Minnesota Twin Cities majors and minors",
+        "publisher": "University of Minnesota Twin Cities",
+        "url": "https://majors.umn.edu/",
+        "verified": "2026-10-22",
+        "cycle": "Current full program directory; programs and entry-year requirements may change"
+      },
+      {
+        "id": "umn-rank-2026-secondary",
+        "title": "Same 15 Minnesota colleges make 2026 US News 'best' rankings",
+        "publisher": "Bring Me The News",
+        "url": "https://bringmethenews.com/minnesota-news/same-15-minnesota-colleges-make-2026-us-news-rankings",
+        "verified": "2026-10-22",
+        "cycle": "2026 U.S. News Best Colleges — National Universities",
+        "verification": "reported-by-secondary",
+        "note": "Dated news report explicitly identifies 2026 National Universities and Minnesota Twin Cities No. 59.",
+        "published": "2025-09-24"
+      }
+    ],
+    "majors": ["History", "Sociology", "Anthropology"],
+    "admissionStructure": "Freshman-admitting college; College of Liberal Arts options",
+    "testingPolicy": "Test optional",
+    "satRange": [1350, 1490],
+    "satCohort": "Fall 2026 admitted freshman applicants who submitted scores; university overall"
+  },
+  {
+    "id": "kansas",
+    "name": "University of Kansas",
+    "city": "Lawrence",
+    "state": "Kansas",
+    "type": "Public",
+    "recognition": "Moderate",
+    "recognitionNote": "Editorial university-brand reference; not a measured Korean recognition rank.",
+    "facts": {
+      "admission": {
+        "text": "International admission publishes a minimum 2.5/4.0 GPA for previous coursework. KU performs credential evaluation; programs may set additional conditions. This is not an Ontario percentage cutoff.",
+        "sourceIds": ["ku-apply", "ku-credentials"],
+        "status": "verified"
+      },
+      "acceptanceRate": {
+        "text": "No acceptance percentage is used to estimate an individual Ontario applicant’s chances.",
+        "sourceIds": [],
+        "status": "not-verified"
+      },
+      "sat": {
+        "text": "SAT/ACT is generally optional for international admission; programs may require it. Do not apply domestic assured-admission rules automatically. Confirm Fall 2028 policy.",
+        "sourceIds": ["ku-apply", "ku-majors"],
+        "status": "confirm"
+      },
+      "satMiddle50": {
+        "text": "1080–1280 SAT: Fall 2025 enrolled first-year score submitters, 2025–26 CDS C9. Only 7.1% (358 students) submitted SAT. Not an Ontario cutoff.",
+        "sourceIds": ["ku-cds"],
+        "status": "verified"
+      },
+      "satTarget": {
+        "text": "SAT 1100–1500 comparisons describe position against enrolled submitters, not a waiver of the international academic evaluation.",
+        "sourceIds": ["ku-cds"],
+        "status": "editorial"
+      },
+      "deadlines": {
+        "text": "Fall 2028 dates are not yet confirmed. Current international schedule: outside-U.S. fall application and scholarship deadline May 1; inside-U.S. fall application July 25.",
+        "sourceIds": ["ku-apply"],
+        "status": "future-unpublished"
+      },
+      "application": {
+        "text": "KU international online application; USD 90 processing fee, not waivable. Academic records, graduation evidence and English proof are needed; official records are due before enrollment.",
+        "sourceIds": ["ku-apply"],
+        "status": "verified"
+      },
+      "ontario": {
+        "text": "Canada: official transcripts and diploma; averages are evaluated using provincial grading and college-preparatory curriculum. KU—not this planner—converts grades. No Ontario numeric minimum is published here.",
+        "sourceIds": ["ku-credentials"],
+        "status": "confirm"
+      },
+      "coursework": {
+        "text": "A college-preparatory curriculum is expected. Generally submit the most recent three years of secondary study; confirm Ontario U/M course expectations with International Admissions.",
+        "sourceIds": ["ku-credentials"],
+        "status": "confirm"
+      },
+      "international": {
+        "text": "Confirm citizenship-based applicant classification with KU before choosing the application route.",
+        "sourceIds": [],
+        "status": "editorial"
+      },
+      "english": {
+        "text": "Full-time degree study: IELTS 6.5 with each subscore 6.0, or SAT EBRW 590, among alternatives. English-speaking Canadian high-school exemption requires four years of preparatory English and graduation GPA 2.5+. Otherwise English coursework may precede or accompany the degree.",
+        "sourceIds": ["ku-english"],
+        "status": "verified"
+      },
+      "majorStructure": {
+        "text": "History and Anthropology belong to the College of Liberal Arts & Sciences. Anthropology declaration is arranged with an advisor. Some other schools/programs have additional entry criteria; neither major has a verified lower Ontario cutoff.",
+        "sourceIds": ["ku-history", "ku-anthro", "ku-majors"],
+        "status": "verified"
+      },
+      "recommendedMajors": {
+        "text": "History (BA/BGS) and Anthropology are broad options. Select for interest and curriculum, not an unverified admission advantage.",
+        "sourceIds": ["ku-history", "ku-anthro"],
+        "status": "editorial"
+      },
+      "ap": {
+        "text": "KU publishes exam-specific AP credit/placement tables. Awards carry credit rather than a letter grade. Recheck the table applicable to 2028 entry.",
+        "sourceIds": ["ku-ap"],
+        "status": "verified"
+      },
+      "cost": {
+        "text": "Current international annual estimate: USD 52,278 (tuition/fees 33,854; living expenses 18,424). The source does not label an academic year; this is not a 2028 quote.",
+        "sourceIds": ["ku-cost"],
+        "status": "verified"
+      },
+      "aid": {
+        "text": "Current international freshman awards: USD 8,000–16,000 yearly, based on KU-evaluated GPA; listed minimum tiers begin at 3.25. Renewal requires full-time enrollment and KU GPA 3.0. Future amounts, CSS Profile and need-based eligibility require confirmation.",
+        "sourceIds": ["ku-aid"],
+        "status": "confirm"
+      }
+    },
+    "sources": [
+      {
+        "id": "ku-apply",
+        "title": "International application standards, materials and deadlines",
+        "publisher": "University of Kansas",
+        "url": "https://world.ku.edu/apply",
+        "verified": "2026-10-22",
+        "cycle": "Standing schedule; Fall 2028 not separately confirmed"
+      },
+      {
+        "id": "ku-credentials",
+        "title": "International country-specific credentials: Canada",
+        "publisher": "University of Kansas",
+        "url": "https://world.ku.edu/credentials",
+        "verified": "2026-10-22",
+        "cycle": "Current country guidance"
+      },
+      {
+        "id": "ku-cds",
+        "title": "2025–26 Common Data Set, section C9",
+        "publisher": "University of Kansas",
+        "url": "https://aire.ku.edu/sites/air/files/files/CDS/KUCDS_2025_2026.pdf",
+        "verified": "2026-10-22",
+        "cycle": "Fall 2025 enrolled students"
+      },
+      {
+        "id": "ku-english",
+        "title": "International English proficiency",
+        "publisher": "University of Kansas",
+        "url": "https://world.ku.edu/english-proficiency",
+        "verified": "2026-10-22",
+        "cycle": "Current page includes January 2026 TOEFL scale"
+      },
+      {
+        "id": "ku-history",
+        "title": "Department of History and undergraduate programs",
+        "publisher": "University of Kansas",
+        "url": "https://catalog.ku.edu/liberal-arts-sciences/history/",
+        "verified": "2026-10-22",
+        "cycle": "2026–27 catalog"
+      },
+      {
+        "id": "ku-anthro",
+        "title": "Department of Anthropology and declaring a major",
+        "publisher": "University of Kansas",
+        "url": "https://catalog.ku.edu/liberal-arts-sciences/anthropology/",
+        "verified": "2026-10-22",
+        "cycle": "2026–27 catalog"
+      },
+      {
+        "id": "ku-majors",
+        "title": "Major-specific admission requirements",
+        "publisher": "University of Kansas",
+        "url": "https://admissions.ku.edu/major-specific-admission-requirements-university-kansas",
+        "verified": "2026-10-22",
+        "cycle": "General/domestic assurance; international applicability must be confirmed"
+      },
+      {
+        "id": "ku-ap",
+        "title": "Credit for prior learning and AP",
+        "publisher": "University of Kansas",
+        "url": "https://registrar.ku.edu/credit-prior-learning",
+        "verified": "2026-10-22",
+        "cycle": "Current credit table"
+      },
+      {
+        "id": "ku-cost",
+        "title": "International yearly cost estimates",
+        "publisher": "University of Kansas",
+        "url": "https://world.ku.edu/costs",
+        "verified": "2026-10-22",
+        "cycle": "Current estimate; academic year not labeled"
+      },
+      {
+        "id": "ku-aid",
+        "title": "International first-year scholarships",
+        "publisher": "University of Kansas",
+        "url": "https://world.ku.edu/scholarships",
+        "verified": "2026-10-22",
+        "cycle": "Current award table; future semesters may change"
+      },
+      {
+        "id": "ku-all-majors",
+        "title": "All schools and programs, 2026–27 catalog",
+        "publisher": "University of Kansas",
+        "url": "https://catalog.ku.edu/",
+        "verified": "2026-10-22",
+        "cycle": "Current full program directory; programs and entry-year requirements may change"
+      },
+      {
+        "id": "ku-rank-2026-secondary",
+        "title": "University of Kansas has plummeted in national rankings as academic focus shifts from core subjects",
+        "publisher": "Kansas Reflector",
+        "url": "https://kansasreflector.com/2026/04/22/university-of-kansas-has-plummeted-in-national-rankings-as-academic-focus-shifts-from-core-subjects/",
+        "verified": "2026-10-22",
+        "cycle": "2026 U.S. News Best Colleges — National Universities",
+        "verification": "reported-by-secondary",
+        "note": "Opinion article used solely for its explicit factual report of 2026 U.S. News National Universities No. 143; editorial judgments are not adopted.",
+        "published": "2026-04-22"
+      }
+    ],
+    "majors": ["History", "Anthropology"],
+    "admissionStructure": "College of Liberal Arts & Sciences; international academic evaluation",
+    "testingPolicy": "Test optional",
+    "satRange": [1080, 1280],
+    "satCohort": "Fall 2025 enrolled first-year SAT submitters; 7.1% submitted"
+  },
+  {
+    "id": "alabama",
+    "name": "The University of Alabama",
+    "city": "Tuscaloosa",
+    "state": "Alabama",
+    "type": "Public",
+    "recognition": "Moderate",
+    "recognitionNote": "Editorial university-brand reference; not a measured Korean recognition rank.",
+    "facts": {
+      "admission": {
+        "text": "Competitive individual review. For applicants graduating outside the U.S., UA considers cumulative GPA 3.0/4.0 across all coursework. This is not a guaranteed admit or Ontario percentage threshold.",
+        "sourceIds": ["ua-international"],
+        "status": "verified"
+      },
+      "acceptanceRate": {
+        "text": "No individual admission probability is inferred from institutional statistics.",
+        "sourceIds": [],
+        "status": "not-verified"
+      },
+      "sat": {
+        "text": "SAT or ACT is required for all first-year students entering in 2028. UA states there is no minimum admission test score; scores supplement holistic review.",
+        "sourceIds": ["ua-testing"],
+        "status": "verified"
+      },
+      "satMiddle50": {
+        "text": "1100–1360 SAT: Fall 2025 enrolled first-year SAT submitters, 2025–26 CDS C9. SAT submission: 19% (1,511 students). This test-optional-era range is not a 2028 requirement.",
+        "sourceIds": ["ua-cds"],
+        "status": "verified"
+      },
+      "satTarget": {
+        "text": "Prepare for required 2028 testing. Compare 1100–1500 scenarios with the historical range, while keeping transcript evaluation separate.",
+        "sourceIds": ["ua-testing", "ua-cds"],
+        "status": "editorial"
+      },
+      "deadlines": {
+        "text": "Fall 2028 deadlines are not yet confirmed. Current international priority dates: fall/summer December 4, spring November 2. Recheck the entry-year application.",
+        "sourceIds": ["ua-international"],
+        "status": "future-unpublished"
+      },
+      "application": {
+        "text": "UA Undergraduate App or Common App for main-campus freshmen. International fee is USD 50 for 2027 entry; 2028 fee requires confirmation. Submit the required records and test evidence.",
+        "sourceIds": ["ua-apply"],
+        "status": "verified"
+      },
+      "ontario": {
+        "text": "Graduates of schools outside the U.S. need a NACES-member course-by-course transcript evaluation with GPA calculation. No Ontario percentage conversion or U/M top-six formula was verified.",
+        "sourceIds": ["ua-international"],
+        "status": "confirm"
+      },
+      "coursework": {
+        "text": "Minimum units: English 4, mathematics 3, natural sciences 3 (two with labs), other academic subjects 10. Confirm Ontario course equivalencies.",
+        "sourceIds": ["ua-courses"],
+        "status": "verified"
+      },
+      "international": {
+        "text": "International graduates of non-U.S. schools use the overseas-school requirements. F-1/J-1 applicants also provide immigration and financial documentation.",
+        "sourceIds": ["ua-international"],
+        "status": "verified"
+      },
+      "english": {
+        "text": "Examples: IELTS 6.0, DET 110, or SAT EBRW 550. The waiver list includes citizens/residents of Canada except Quebec; confirm that your status qualifies. Some students need additional English support courses.",
+        "sourceIds": ["ua-english"],
+        "status": "verified"
+      },
+      "majorStructure": {
+        "text": "History BA is declared with an advisor; Anthropology BA states no prerequisites for entry into the major. These describe major declaration after university admission, not a lower freshman admission cutoff.",
+        "sourceIds": ["ua-history", "ua-anthro"],
+        "status": "verified"
+      },
+      "recommendedMajors": {
+        "text": "History and Anthropology are broad Arts and Sciences choices. Neither has a verified Ontario admission advantage.",
+        "sourceIds": ["ua-history", "ua-anthro"],
+        "status": "editorial"
+      },
+      "ap": {
+        "text": "Credit varies by AP exam and score; for example, current Calculus AB score 3 earns MATH 125 credit. Entry-year rules and major applicability must be rechecked.",
+        "sourceIds": ["ua-ap"],
+        "status": "verified"
+      },
+      "cost": {
+        "text": "2026–27 international budget lists annual tuition USD 35,924, international fee 200, course/college fees 800, and insurance 2,428, plus housing, food and other costs. Use the complete funding table; 2028 costs are unknown.",
+        "sourceIds": ["ua-cost"],
+        "status": "verified"
+      },
+      "aid": {
+        "text": "2027 automatic merit requires GPA 3.50+ plus a qualifying single-date SAT: 1200–1250 gives USD 6,000/year; 1420–1600 gives USD 28,000/year. These are scholarship criteria, not admission cutoffs. Fall 2028 awards, CSS Profile and need-based eligibility require confirmation.",
+        "sourceIds": ["ua-aid"],
+        "status": "confirm"
+      }
+    },
+    "sources": [
+      {
+        "id": "ua-international",
+        "title": "International freshman admissions",
+        "publisher": "The University of Alabama",
+        "url": "https://admissions.ua.edu/international/freshman/",
+        "verified": "2026-10-22",
+        "cycle": "Current international guidance; Fall 2028 academic criteria require confirmation"
+      },
+      {
+        "id": "ua-testing",
+        "title": "Updates to holistic admissions and testing",
+        "publisher": "The University of Alabama",
+        "url": "https://admissions.ua.edu/testing-requirements/",
+        "verified": "2026-10-22",
+        "cycle": "All 2028 first-year applicants must submit SAT/ACT"
+      },
+      {
+        "id": "ua-apply",
+        "title": "How to apply and application fee",
+        "publisher": "The University of Alabama",
+        "url": "https://admissions.ua.edu/apply/",
+        "verified": "2026-10-22",
+        "cycle": "2027 entry terms; Fall 2028 fees/deadlines not confirmed"
+      },
+      {
+        "id": "ua-courses",
+        "title": "Freshman requirements",
+        "publisher": "The University of Alabama",
+        "url": "https://admissions.ua.edu/freshman/requirements/",
+        "verified": "2026-10-22",
+        "cycle": "Current minimum units; 2028 testing requirement"
+      },
+      {
+        "id": "ua-cds",
+        "title": "2025–26 Common Data Set, section C9",
+        "publisher": "The University of Alabama",
+        "url": "https://oira.ua.edu/d/sites/all/files/reports26/CDS%202025-26%20FINAL%209Dec2025.pdf",
+        "verified": "2026-10-22",
+        "cycle": "Fall 2025 enrolled students; December 9, 2025 report"
+      },
+      {
+        "id": "ua-english",
+        "title": "English language proficiency policy",
+        "publisher": "The University of Alabama",
+        "url": "https://admissions.ua.edu/international/english-language-proficiency/",
+        "verified": "2026-10-22",
+        "cycle": "Current policy includes January 2026 TOEFL scale"
+      },
+      {
+        "id": "ua-history",
+        "title": "History BA and admission into the major",
+        "publisher": "The University of Alabama",
+        "url": "https://catalog.ua.edu/undergraduate/arts-sciences/history/ba/",
+        "verified": "2026-10-22",
+        "cycle": "Current undergraduate catalog"
+      },
+      {
+        "id": "ua-anthro",
+        "title": "Anthropology major",
+        "publisher": "The University of Alabama",
+        "url": "https://anthropology.ua.edu/undergraduate-programs/anthropology-major/",
+        "verified": "2026-10-22",
+        "cycle": "Current department guidance"
+      },
+      {
+        "id": "ua-ap",
+        "title": "Credit by examination",
+        "publisher": "The University of Alabama",
+        "url": "https://catalog.ua.edu/undergraduate/about/academic-regulations/policies/credit-by-examination/",
+        "verified": "2026-10-22",
+        "cycle": "Current credit table; future awards subject to revision"
+      },
+      {
+        "id": "ua-cost",
+        "title": "International required funding and estimated expenses",
+        "publisher": "The University of Alabama",
+        "url": "https://international.ua.edu/isss/future-new-students/expenses/",
+        "verified": "2026-10-22",
+        "cycle": "2026–27 estimates"
+      },
+      {
+        "id": "ua-aid",
+        "title": "Out-of-state and international freshman scholarships",
+        "publisher": "The University of Alabama",
+        "url": "https://afford.ua.edu/scholarships/oos-international-freshman/",
+        "verified": "2026-10-22",
+        "cycle": "2027 automatic merit table; not Fall 2028"
+      },
+      {
+        "id": "ua-all-majors",
+        "title": "All majors and programs",
+        "publisher": "The University of Alabama",
+        "url": "https://catalog.ua.edu/programs/",
+        "verified": "2026-10-22",
+        "cycle": "Current full program directory; programs and entry-year requirements may change"
+      },
+      {
+        "id": "ua-rank-2026-secondary",
+        "title": "Auburn holds top state spot, Alabama moves up in 2026 U.S. News university rankings",
+        "publisher": "The Bama Buzz",
+        "url": "https://thebamabuzz.com/auburn-holds-top-state-spot-alabama-moves-up-in-2026-u-s-news-university-rankings/",
+        "verified": "2026-10-22",
+        "cycle": "2026 U.S. News Best Colleges — National Universities",
+        "verification": "reported-by-secondary",
+        "note": "News report explicitly identifies 2026 National Universities and University of Alabama Tuscaloosa No. 169; date is last-updated date.",
+        "updated": "2026-07-24"
+      }
+    ],
+    "majors": ["History", "Anthropology"],
+    "admissionStructure": "University admission; College of Arts and Sciences majors",
+    "testingPolicy": "Required in 2028",
+    "satRange": [1100, 1360],
+    "satCohort": "Fall 2025 enrolled first-year SAT submitters; 19% submitted"
+  }
+]

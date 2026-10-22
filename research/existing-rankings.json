@@ -1,0 +1,161 @@
+[
+  {
+    "id": "asu",
+    "rank": 117,
+    "edition": "2026",
+    "publisher": "U.S. News & World Report",
+    "category": "National Universities",
+    "url": "https://www.axios.com/local/phoenix/2025/09/23/arizona-state-university-innovation-us-news-world-report",
+    "source": {
+      "id": "asu-ranking-2026",
+      "title": "Arizona State University ranks No. 1 in innovation again",
+      "publisher": "Axios Phoenix",
+      "url": "https://www.axios.com/local/phoenix/2025/09/23/arizona-state-university-innovation-us-news-world-report",
+      "verified": "2026-10-22",
+      "cycle": "2026 National Universities edition; independent news report published 2025-09-23",
+      "published": "2025-09-23"
+    },
+    "verification": "reported-by-secondary"
+  },
+  {
+    "id": "arizona",
+    "rank": 127,
+    "edition": "2026",
+    "publisher": "U.S. News & World Report",
+    "category": "National Universities",
+    "url": "https://www.phoenixnewtimes.com/news/asu-named-top-arizona-university-best-us-colleges-ranking-22743824/",
+    "source": {
+      "id": "arizona-ranking-2026",
+      "title": "Where Arizona universities ranked in new best U.S. college list",
+      "publisher": "Phoenix New Times",
+      "url": "https://www.phoenixnewtimes.com/news/asu-named-top-arizona-university-best-us-colleges-ranking-22743824/",
+      "verified": "2026-10-22",
+      "cycle": "2026 National Universities edition; independent news report published 2025-09-23",
+      "published": "2025-09-23"
+    },
+    "verification": "reported-by-secondary"
+  },
+  {
+    "id": "oregon",
+    "rank": 110,
+    "edition": "2026",
+    "publisher": "U.S. News & World Report",
+    "category": "National Universities",
+    "url": "https://www.aol.com/articles/18-big-ten-schools-ranked-110232000.html",
+    "source": {
+      "id": "oregon-ranking-2026",
+      "title": "All 18 Big Ten schools ranked academically by U.S. News for 2026-27",
+      "publisher": "Badgers Wire / USA TODAY Network, syndicated by AOL",
+      "url": "https://www.aol.com/articles/18-big-ten-schools-ranked-110232000.html",
+      "verified": "2026-10-22",
+      "cycle": "2026 ranking explicitly identified in school row; article concerns 2026–27 academic year, published before 2027 rankings",
+      "published": "2026-07-11"
+    },
+    "verification": "reported-by-secondary"
+  },
+  {
+    "id": "colorado",
+    "rank": 97,
+    "edition": "2026",
+    "publisher": "U.S. News & World Report",
+    "category": "National Universities",
+    "url": "https://www.colorado.edu/today/2025/09/23/cu-boulder-gets-high-marks-us-news-world-report-best-colleges-rankings",
+    "source": {
+      "id": "colorado-ranking-2026",
+      "title": "2026 U.S. News National Universities ranking",
+      "publisher": "University of Colorado Boulder",
+      "url": "https://www.colorado.edu/today/2025/09/23/cu-boulder-gets-high-marks-us-news-world-report-best-colleges-rankings",
+      "verified": "2026-10-22",
+      "cycle": "2026 edition; common comparison vintage"
+    },
+    "verification": "official-institutional-source"
+  },
+  {
+    "id": "michigan-state",
+    "rank": 64,
+    "edition": "2026",
+    "publisher": "U.S. News & World Report",
+    "category": "National Universities",
+    "url": "https://ir.msu.edu/rankings/domestic-rankings",
+    "source": {
+      "id": "michigan-state-ranking-2026",
+      "title": "2026 U.S. News National Universities ranking",
+      "publisher": "Michigan State University Institutional Research",
+      "url": "https://ir.msu.edu/rankings/domestic-rankings",
+      "verified": "2026-10-22",
+      "cycle": "2026 edition; common comparison vintage"
+    },
+    "verification": "official-institutional-source"
+  },
+  {
+    "id": "indiana-bloomington",
+    "rank": 73,
+    "edition": "2026",
+    "publisher": "U.S. News & World Report",
+    "category": "National Universities",
+    "url": "https://www.idsnews.com/article/2025/09/iu-2026-college-rankings",
+    "source": {
+      "id": "indiana-bloomington-ranking-2026",
+      "title": "Where does IU fall in 2026 U.S. News college rankings?",
+      "publisher": "Indiana Daily Student",
+      "url": "https://www.idsnews.com/article/2025/09/iu-2026-college-rankings",
+      "verified": "2026-10-22",
+      "cycle": "2026 National Universities edition; independent news report published 2025-09-23",
+      "published": "2025-09-23"
+    },
+    "verification": "reported-by-secondary"
+  },
+  {
+    "id": "penn-state",
+    "rank": 59,
+    "edition": "2026",
+    "publisher": "U.S. News & World Report",
+    "category": "National Universities",
+    "url": "https://www.psu.edu/news/academics/story/penn-state-rises-no-26-among-public-universities-2026-us-news-best-colleges",
+    "source": {
+      "id": "penn-state-ranking-2026",
+      "title": "2026 U.S. News National Universities ranking",
+      "publisher": "Penn State University",
+      "url": "https://www.psu.edu/news/academics/story/penn-state-rises-no-26-among-public-universities-2026-us-news-best-colleges",
+      "verified": "2026-10-22",
+      "cycle": "2026 edition; common comparison vintage"
+    },
+    "verification": "official-institutional-source"
+  },
+  {
+    "id": "nyu",
+    "rank": 32,
+    "edition": "2026",
+    "publisher": "U.S. News & World Report",
+    "category": "National Universities",
+    "url": "https://nyunews.com/news/2025/09/23/nyu-drops-2-spots-us-news/",
+    "source": {
+      "id": "nyu-ranking-2026",
+      "title": "NYU drops 2 spots in US News rankings",
+      "publisher": "Washington Square News",
+      "url": "https://nyunews.com/news/2025/09/23/nyu-drops-2-spots-us-news/",
+      "verified": "2026-10-22",
+      "cycle": "2026 National Universities edition, announced September 2025",
+      "published": "2025-09-23"
+    },
+    "verification": "reported-by-secondary"
+  },
+  {
+    "id": "iowa-state",
+    "rank": 117,
+    "edition": "2026",
+    "publisher": "U.S. News & World Report",
+    "category": "National Universities",
+    "url": "https://www.phoenixnewtimes.com/news/asu-named-top-arizona-university-best-us-colleges-ranking-22743824/",
+    "source": {
+      "id": "iowa-state-ranking-2026",
+      "title": "Where Arizona universities ranked in new best U.S. college list — tied institutions",
+      "publisher": "Phoenix New Times",
+      "url": "https://www.phoenixnewtimes.com/news/asu-named-top-arizona-university-best-us-colleges-ranking-22743824/",
+      "verified": "2026-10-22",
+      "cycle": "2026 National Universities edition; independent news report published 2025-09-23",
+      "published": "2025-09-23"
+    },
+    "verification": "reported-by-secondary"
+  }
+]

@@ -2704,3 +2704,592 @@ footer > a {
   padding: 16px 0;
   cursor: pointer;
 }
+
+/* Personal roadmap: progress at a glance, editable monthly checklists. */
+.planner-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 32px;
+  margin: 20px 0 36px;
+}
+.planner-heading h1 {
+  font-size: clamp(32px, 3.4vw, 48px);
+  letter-spacing: -0.04em;
+  margin: 12px 0;
+}
+.planner-heading p {
+  font-size: 18px;
+  color: var(--muted);
+}
+.planner-total {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-shrink: 0;
+  background: #234b4c;
+  color: #fff;
+  border-radius: 24px;
+  padding: 24px 30px;
+}
+.planner-total strong {
+  font-size: 48px;
+  line-height: 1.1;
+  font-weight: 600;
+}
+.planner-total strong span {
+  font-size: 22px;
+  margin-left: 4px;
+}
+.planner-total > span {
+  font-size: 15px;
+  margin-top: 8px;
+}
+.journey-chart {
+  display: flex;
+  gap: 8px;
+  background: #eaf0e7;
+  padding: 24px 24px 12px;
+  border-radius: 18px;
+  margin-bottom: 28px;
+  overflow-x: auto;
+}
+.journey-chart a {
+  flex: 1;
+  min-width: 24px;
+  text-align: center;
+  text-decoration: none;
+  color: #486453;
+}
+.chart-track {
+  height: 54px;
+  display: flex;
+  align-items: flex-end;
+  background: #d9e1d5;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.chart-track i {
+  display: block;
+  width: 100%;
+  background: #53745b;
+  min-height: 3px;
+}
+.journey-chart a:hover .chart-track {
+  outline: 2px solid #53745b;
+}
+.journey-chart small {
+  font-size: 14px;
+  display: block;
+  margin-top: 6px;
+}
+.chart-year {
+  display: block;
+  height: 20px;
+  font-size: 12px;
+}
+.planner-save-note {
+  font-size: 14px;
+  color: #66756d;
+  margin: -8px 0 26px;
+}
+.planner-notice {
+  padding: 14px 20px;
+  background: #e5efe4;
+  border-radius: 10px;
+  margin-bottom: 24px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.editable-timeline {
+  padding-left: 0;
+}
+.editable-timeline::before,
+.editable-timeline .month-card::before {
+  display: none;
+}
+.editable-timeline .month-card {
+  margin: 0 0 32px;
+  padding: 30px;
+  border: 1px solid #d6ded5;
+  border-radius: 18px;
+  background: #fff;
+  scroll-margin-top: 24px;
+}
+.editable-timeline .month-card.current {
+  border-top: 5px solid #54705a;
+}
+.month-header {
+  display: grid;
+  grid-template-columns: 150px 1fr;
+  gap: 30px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid #e2e7df;
+}
+.month-number {
+  display: block;
+  color: #6d8065;
+  font-size: 54px;
+  line-height: 1;
+  margin-bottom: 14px;
+  font-weight: 500;
+}
+.month-header .month-date {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.month-header .month-summary h2 {
+  font-size: 24px;
+  margin: 8px 0;
+}
+.month-header .month-summary p {
+  font-size: 17px;
+}
+.month-progress {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-top: 18px;
+  max-width: 400px;
+}
+.month-progress progress {
+  flex: 1;
+  width: 100%;
+  height: 8px;
+}
+.editable-timeline .month-tasks {
+  padding: 24px 0 0 180px;
+  display: grid;
+  gap: 16px;
+}
+.editable-timeline .task-row {
+  border: 0;
+  border-left: 3px solid #dfe7d9;
+  border-radius: 0 12px 12px 0;
+  background: #f7f9f5;
+  padding: 22px;
+}
+.task-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 16px;
+}
+.task-heading label {
+  flex: 1;
+}
+.task-actions {
+  display: flex;
+  gap: 12px;
+  flex-shrink: 0;
+}
+.task-actions button {
+  padding: 2px 0;
+  border: 0;
+  background: none;
+  font-size: 14px;
+  color: #506856;
+  cursor: pointer;
+}
+.task-actions button:hover {
+  text-decoration: underline;
+}
+.task-detail p {
+  white-space: pre-line;
+}
+.editable-timeline .task-detail {
+  padding-top: 10px;
+}
+.add-task {
+  padding: 18px;
+  border: 1px dashed #aabda3;
+  color: #3c614b;
+  border-radius: 10px;
+  background: transparent;
+  text-align: center;
+  cursor: pointer;
+  font-size: 16px;
+}
+.add-task:hover {
+  background: #eef3e9;
+}
+.month-finished {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 18px;
+}
+.month-finished > span {
+  font-size: 30px;
+  color: #527459;
+}
+.import-plan {
+  cursor: pointer;
+  font-size: 15px;
+  color: #506856;
+  padding: 10px;
+}
+.import-plan:focus-within {
+  outline: 2px solid #345d48;
+}
+#task-dialog {
+  max-width: 660px;
+  width: calc(100% - 32px);
+  border: 0;
+  border-radius: 20px;
+  padding: 24px;
+}
+#task-dialog::backdrop {
+  background: #18333466;
+}
+#task-dialog h2 {
+  font-size: 26px;
+}
+.task-form-fields {
+  display: grid;
+  gap: 22px;
+}
+.task-form-fields label {
+  display: grid;
+  gap: 8px;
+  font-size: 16px;
+  font-weight: 600;
+}
+.task-form-fields input,
+.task-form-fields select,
+.task-form-fields textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #bac8ba;
+  border-radius: 8px;
+  background: white;
+  color: #243e3d;
+  font: inherit;
+  font-weight: 400;
+}
+.task-form-fields textarea {
+  resize: vertical;
+}
+.form-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 24px;
+}
+@media (max-width: 800px) {
+  .month-header {
+    grid-template-columns: 100px 1fr;
+    gap: 20px;
+  }
+  .editable-timeline .month-tasks {
+    padding-left: 0;
+  }
+  .task-heading {
+    flex-direction: column;
+  }
+  .task-actions {
+    padding-left: 40px;
+  }
+  .editable-timeline .month-card {
+    padding: 22px;
+  }
+  .planner-total {
+    padding: 18px;
+    border-radius: 18px;
+  }
+  .planner-total strong {
+    font-size: 36px;
+  }
+  .planner-heading {
+    gap: 18px;
+  }
+}
+@media (max-width: 480px) {
+  .planner-heading {
+    align-items: flex-start;
+  }
+  .planner-heading h1 {
+    font-size: 30px;
+  }
+  .planner-heading p {
+    font-size: 16px;
+  }
+  .planner-total {
+    padding: 16px 12px;
+  }
+  .planner-total strong {
+    font-size: 30px;
+  }
+  .planner-total > span {
+    font-size: 13px;
+  }
+  .month-header {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+  .month-number {
+    display: none;
+  }
+  .month-header .month-date {
+    gap: 3px;
+  }
+  .editable-timeline .month-card {
+    padding: 18px;
+  }
+  .editable-timeline .task-row {
+    padding: 16px;
+  }
+  .task-actions {
+    padding-left: 0;
+  }
+  .editable-timeline .task-detail {
+    padding-left: 0;
+  }
+  .journey-chart {
+    padding: 16px 16px 8px;
+  }
+}
+.chart-year {
+  white-space: nowrap;
+  font-size: 12px;
+}
+.journey-chart a {
+  min-width: 32px;
+}
+.comparison-intro {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  margin: 32px 0 20px;
+}
+.comparison-intro h2 {
+  font-size: 32px;
+  margin: 6px 0;
+}
+.comparison-empty {
+  padding: 44px;
+  border-radius: 18px;
+  background: #eaf0e7;
+}
+.comparison-empty > span {
+  display: block;
+  font-size: 42px;
+  color: #718269;
+}
+.comparison-key {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 18px;
+}
+.comparison-key > span {
+  padding: 8px 14px;
+  border-radius: 8px;
+  font-size: 15px;
+}
+.sat-below {
+  background: #fbefe4;
+  color: #865527;
+}
+.sat-within {
+  background: #edf2e8;
+  color: #405f40;
+}
+.sat-above {
+  background: #e5efef;
+  color: #285b61;
+}
+.sat-unknown {
+  background: #f3f3f0;
+  color: #6c716a;
+}
+.conditional-route {
+  border-left: 4px solid #6b815a;
+  background: #edf2e8;
+  padding: 20px 24px;
+  margin: 24px 0;
+}
+.conditional-route strong {
+  font-size: 18px;
+}
+.scenario-table {
+  min-width: 1130px;
+  font-size: 15px;
+}
+.scenario-table th:first-child {
+  min-width: 215px;
+}
+.scenario-table td:nth-child(n + 3):nth-child(-n + 7) {
+  min-width: 115px;
+}
+.scenario-table td:last-child {
+  min-width: 210px;
+}
+.scenario-table td,
+.scenario-table th {
+  vertical-align: top;
+  padding: 20px 14px;
+  border: 1px solid #e0e6db;
+}
+.scenario-table .small,
+.ranking-table .small {
+  display: block;
+  margin-top: 10px;
+  font-size: 14px;
+}
+.scenario-table .references {
+  display: block;
+}
+.scenario-table .references a {
+  font-size: 13px;
+}
+.school-table-link {
+  display: block;
+  background: none;
+  border: 0;
+  padding: 0;
+  color: #254b4b;
+  font-size: 17px;
+  font-weight: 600;
+  text-align: left;
+  cursor: pointer;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+.table-majors {
+  display: block;
+  font-weight: 400;
+  font-size: 14px;
+  margin-top: 14px;
+  color: #687463;
+}
+.conditional-chip {
+  display: block;
+  padding: 6px;
+  margin-top: 10px;
+  background: #dde8d5;
+  color: #36502d;
+  border-radius: 6px;
+  font-size: 13px;
+  font-weight: 600;
+}
+.ranking-table {
+  min-width: 900px;
+}
+.ranking-table td {
+  vertical-align: top;
+}
+.ranking-intro {
+  margin: 30px 0;
+}
+.ranking-intro p {
+  max-width: 920px;
+}
+.major-evidence {
+  display: grid;
+  gap: 14px;
+  margin: 20px 0;
+}
+.major-evidence article {
+  padding: 18px;
+  background: #f3f6ef;
+  border-radius: 10px;
+}
+.major-evidence h4 {
+  margin: 0 0 8px;
+  font-size: 18px;
+}
+.program-range-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+  gap: 12px;
+}
+.program-range-list article {
+  border: 1px solid #d4decf;
+  border-radius: 10px;
+  padding: 16px;
+}
+.program-range-list strong {
+  display: block;
+  font-size: 24px;
+  color: #446247;
+}
+@media (max-width: 650px) {
+  .comparison-intro {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  .comparison-empty {
+    padding: 28px;
+  }
+}
+.ranking-summary {
+  padding: 18px 20px;
+  border-radius: 12px;
+  background: #edf1e7;
+  margin-bottom: 24px;
+}
+.ranking-summary > strong {
+  font-size: 30px;
+  margin-right: 8px;
+}
+.school-evidence {
+  padding-top: 24px;
+  border-top: 1px solid #dce4d7;
+}
+.school-evidence h3 {
+  font-size: 22px;
+  margin-top: 30px;
+}
+.planner-heading {
+  margin: 0 0 24px;
+}
+.planner-heading h1 {
+  font-size: clamp(30px, 3vw, 42px);
+}
+.planner-heading p {
+  margin-bottom: 0;
+}
+.planner-total {
+  padding: 20px 26px;
+}
+.journey-chart {
+  padding: 18px 20px 10px;
+  margin-bottom: 20px;
+}
+.chart-track {
+  height: 40px;
+}
+.timeline-toolbar {
+  padding: 16px 0;
+  flex-wrap: wrap;
+}
+.planner-save-note {
+  margin: 12px 0 24px;
+}
+.editable-timeline .month-card {
+  padding: 26px;
+}
+.month-header {
+  padding-bottom: 18px;
+}
+.month-number {
+  font-size: 44px;
+  margin-bottom: 10px;
+}
+.month-header .month-summary h2 {
+  font-size: 23px;
+}
+@media (max-width: 480px) {
+  .editable-timeline .month-card {
+    padding: 18px;
+  }
+  .planner-total {
+    padding: 16px 12px;
+  }
+}
+.scenario-table .references a {
+  font-size: 14px;
+}
