@@ -1,0 +1,446 @@
+{
+  "checked": "2026-10-22",
+  "scope": "46existingrecords: testing-policy review, including explicitly unresolved or access-limited cases; not a claim that every historical cohort is the newest published dataset.",
+  "coverage": [
+    {
+      "id": "asu",
+      "checked": "2026-10-22",
+      "scope": "Current testing policy / entry-year scope; existing program and dated score-cohort records retained unless separately updated",
+      "status": "reviewed",
+      "finding": "Rechecked official testing guidance. Existing scoped policy retained; no Ontario percentage conversion or unstated Fall2028 continuation added.",
+      "sourceIds": ["asu-intl", "asu-first"]
+    },
+    {
+      "id": "arizona",
+      "checked": "2026-10-22",
+      "scope": "Current testing policy / entry-year scope; existing program and dated score-cohort records retained unless separately updated",
+      "status": "reviewed",
+      "finding": "Rechecked official testing guidance. Existing scoped policy retained; no Ontario percentage conversion or unstated Fall2028 continuation added.",
+      "sourceIds": ["arizona-first", "arizona-brochure"]
+    },
+    {
+      "id": "oregon",
+      "checked": "2026-10-22",
+      "scope": "Current testing policy / entry-year scope; existing program and dated score-cohort records retained unless separately updated",
+      "status": "reviewed",
+      "finding": "Rechecked official testing guidance. Existing scoped policy retained; no Ontario percentage conversion or unstated Fall2028 continuation added.",
+      "sourceIds": ["oregon-intl"]
+    },
+    {
+      "id": "colorado",
+      "checked": "2026-10-22",
+      "scope": "Current testing policy / entry-year scope; existing program and dated score-cohort records retained unless separately updated",
+      "status": "reviewed",
+      "finding": "Rechecked official testing guidance. Existing scoped policy retained; no Ontario percentage conversion or unstated Fall2028 continuation added.",
+      "sourceIds": ["colorado-plan", "colorado-apply"]
+    },
+    {
+      "id": "michigan-state",
+      "checked": "2026-10-22",
+      "scope": "Current testing policy / entry-year scope; existing program and dated score-cohort records retained unless separately updated",
+      "status": "reviewed",
+      "finding": "Rechecked official testing guidance. Existing scoped policy retained; no Ontario percentage conversion or unstated Fall2028 continuation added.",
+      "sourceIds": ["msu-apply"]
+    },
+    {
+      "id": "indiana-bloomington",
+      "checked": "2026-10-22",
+      "scope": "Current testing policy / entry-year scope; existing program and dated score-cohort records retained unless separately updated",
+      "status": "reviewed",
+      "finding": "Rechecked official testing guidance. Existing scoped policy retained; no Ontario percentage conversion or unstated Fall2028 continuation added.",
+      "sourceIds": ["iu-criteria"]
+    },
+    {
+      "id": "penn-state",
+      "checked": "2026-10-22",
+      "scope": "Current testing policy / entry-year scope; existing program and dated score-cohort records retained unless separately updated",
+      "status": "reviewed",
+      "finding": "Rechecked official testing guidance. Existing scoped policy retained; no Ontario percentage conversion or unstated Fall2028 continuation added.",
+      "sourceIds": ["psu-requirements"]
+    },
+    {
+      "id": "uconn",
+      "checked": "2026-10-22",
+      "scope": "Current testing policy / entry-year scope; existing program and dated score-cohort records retained unless separately updated",
+      "status": "reviewed",
+      "finding": "Rechecked official testing guidance. Existing scoped policy retained; no Ontario percentage conversion or unstated Fall2028 continuation added.",
+      "sourceIds": ["uconn-apply"]
+    },
+    {
+      "id": "umass-amherst",
+      "checked": "2026-10-22",
+      "scope": "Current testing policy / entry-year scope; existing program and dated score-cohort records retained unless separately updated",
+      "status": "reviewed",
+      "finding": "Rechecked official testing guidance. Existing scoped policy retained; no Ontario percentage conversion or unstated Fall2028 continuation added.",
+      "sourceIds": ["umass-amherst-international"]
+    },
+    {
+      "id": "buffalo",
+      "checked": "2026-10-22",
+      "scope": "Current testing policy / entry-year scope; existing program and dated score-cohort records retained unless separately updated",
+      "status": "reviewed",
+      "finding": "Rechecked official testing guidance. Existing scoped policy retained; no Ontario percentage conversion or unstated Fall2028 continuation added.",
+      "sourceIds": ["buffalo-test"]
+    },
+    {
+      "id": "kansas",
+      "checked": "2026-10-22",
+      "scope": "Current testing policy / entry-year scope; existing program and dated score-cohort records retained unless separately updated",
+      "status": "reviewed",
+      "finding": "Rechecked official testing guidance. Existing scoped policy retained; no Ontario percentage conversion or unstated Fall2028 continuation added.",
+      "sourceIds": ["ku-apply", "ku-majors"]
+    },
+    {
+      "id": "alabama",
+      "checked": "2026-10-22",
+      "scope": "Current testing policy / entry-year scope; existing program and dated score-cohort records retained unless separately updated",
+      "status": "reviewed",
+      "finding": "Rechecked official testing guidance. Existing scoped policy retained; no Ontario percentage conversion or unstated Fall2028 continuation added.",
+      "sourceIds": ["ua-testing"]
+    },
+    {
+      "id": "north-dakota-state",
+      "checked": "2026-10-22",
+      "scope": "Current testing policy / entry-year scope; existing program and dated score-cohort records retained unless separately updated",
+      "status": "partial",
+      "finding": "International source lists SAT Reading/Writing for English, but does not establish an academic composite policy. Keep policy unknown.",
+      "sourceIds": ["scenario-ndsu-admission"]
+    },
+    {
+      "id": "north-dakota",
+      "checked": "2026-10-22",
+      "scope": "Current testing policy / entry-year scope; existing program and dated score-cohort records retained unless separately updated",
+      "status": "reviewed",
+      "finding": "Rechecked official testing guidance. Existing scoped policy retained; no Ontario percentage conversion or unstated Fall2028 continuation added.",
+      "sourceIds": ["scenario-und-firstyear"]
+    },
+    {
+      "id": "south-dakota-state",
+      "checked": "2026-10-22",
+      "scope": "Current testing policy / entry-year scope; existing program and dated score-cohort records retained unless separately updated",
+      "status": "reviewed",
+      "finding": "Rechecked official testing guidance. Existing scoped policy retained; no Ontario percentage conversion or unstated Fall2028 continuation added.",
+      "sourceIds": ["scenario-sdsu-admission"]
+    },
+    {
+      "id": "kent-state",
+      "checked": "2026-10-22",
+      "scope": "Current testing policy / entry-year scope; existing program and dated score-cohort records retained unless separately updated",
+      "status": "reviewed",
+      "finding": "Rechecked official testing guidance. Existing scoped policy retained; no Ontario percentage conversion or unstated Fall2028 continuation added.",
+      "sourceIds": ["scenario-kent-admission"]
+    },
+    {
+      "id": "akron",
+      "checked": "2026-10-22",
+      "scope": "Current testing policy / entry-year scope; existing program and dated score-cohort records retained unless separately updated",
+      "status": "reviewed",
+      "finding": "Rechecked official testing guidance. Existing scoped policy retained; no Ontario percentage conversion or unstated Fall2028 continuation added.",
+      "sourceIds": ["scenario-akron-admission"]
+    },
+    {
+      "id": "cleveland-state",
+      "checked": "2026-10-22",
+      "scope": "Current testing policy / entry-year scope; existing program and dated score-cohort records retained unless separately updated",
+      "status": "partial",
+      "finding": "Current international source lists English SAT sections, not a verified Fall2028 composite policy. Keep unknown.",
+      "sourceIds": ["scenario-csu-admission"]
+    },
+    {
+      "id": "northern-illinois",
+      "checked": "2026-10-22",
+      "scope": "Current testing policy / entry-year scope; existing program and dated score-cohort records retained unless separately updated",
+      "status": "reviewed",
+      "finding": "Rechecked official testing guidance. Existing scoped policy retained; no Ontario percentage conversion or unstated Fall2028 continuation added.",
+      "sourceIds": ["scenario-niu-policy"]
+    },
+    {
+      "id": "central-michigan",
+      "checked": "2026-10-22",
+      "scope": "Current testing policy / entry-year scope; existing program and dated score-cohort records retained unless separately updated",
+      "status": "reviewed",
+      "finding": "Rechecked official testing guidance. Existing scoped policy retained; no Ontario percentage conversion or unstated Fall2028 continuation added.",
+      "sourceIds": ["scenario-cmu-testing", "scenario-cmu-catalog"]
+    },
+    {
+      "id": "western-michigan",
+      "checked": "2026-10-22",
+      "scope": "Current testing policy / entry-year scope; existing program and dated score-cohort records retained unless separately updated",
+      "status": "partial",
+      "finding": "Official search text reconfirms international SAT/ACT not required; full page timed out during recheck. Preserve earlier scoped finding, not a new Fall2028 commitment.",
+      "sourceIds": ["scenario-wmu-testing"]
+    },
+    {
+      "id": "missouri-state",
+      "checked": "2026-10-22",
+      "scope": "Current testing policy / entry-year scope; existing program and dated score-cohort records retained unless separately updated",
+      "status": "partial",
+      "finding": "Current international policy has no SAT match; domestic selection index cannot be transplanted. Keep unresolved.",
+      "sourceIds": ["scenario-mostate-admission", "scenario-mostate-domestic"]
+    },
+    {
+      "id": "south-dakota",
+      "checked": "2026-10-22",
+      "scope": "Current testing policy / entry-year scope; existing program and dated score-cohort records retained unless separately updated",
+      "status": "reviewed",
+      "finding": "Rechecked official testing guidance. Existing scoped policy retained; no Ontario percentage conversion or unstated Fall2028 continuation added.",
+      "sourceIds": ["scenario-usd-international", "scenario-usd-general"]
+    },
+    {
+      "id": "missouri-southern",
+      "checked": "2026-10-22",
+      "scope": "Current testing policy / entry-year scope; existing program and dated score-cohort records retained unless separately updated",
+      "status": "partial",
+      "finding": "Current international webpage omits SAT; dated2025guide alone is not a confirmed2028 SAT alternative. Keep unresolved.",
+      "sourceIds": ["scenario-mssu-current", "scenario-mssu-guide"]
+    },
+    {
+      "id": "utah-state",
+      "checked": "2026-10-22",
+      "scope": "Current testing policy / entry-year scope; existing program and dated score-cohort records retained unless separately updated",
+      "status": "partial",
+      "finding": "General catalog optional does not by itself establish every international/program2028 requirement. Keep unknown.",
+      "sourceIds": [
+        "scenario-utah-state-catalog-admission",
+        "scenario-utah-state-international-catalog"
+      ]
+    },
+    {
+      "id": "oklahoma",
+      "checked": "2026-10-22",
+      "scope": "Current testing policy / entry-year scope; existing program and dated score-cohort records retained unless separately updated",
+      "status": "reviewed",
+      "finding": "Rechecked official testing guidance. Existing scoped policy retained; no Ontario percentage conversion or unstated Fall2028 continuation added.",
+      "sourceIds": [
+        "scenario-oklahoma-international",
+        "scenario-oklahoma-testing"
+      ]
+    },
+    {
+      "id": "oklahoma-state",
+      "checked": "2026-10-22",
+      "scope": "Current testing policy / entry-year scope; existing program and dated score-cohort records retained unless separately updated",
+      "status": "reviewed",
+      "finding": "Rechecked official testing guidance. Existing scoped policy retained; no Ontario percentage conversion or unstated Fall2028 continuation added.",
+      "sourceIds": [
+        "scenario-oklahoma-state-international",
+        "scenario-oklahoma-state-testing"
+      ]
+    },
+    {
+      "id": "nebraska-lincoln",
+      "checked": "2026-10-22",
+      "scope": "Current testing policy / entry-year scope; existing program and dated score-cohort records retained unless separately updated",
+      "status": "reviewed",
+      "finding": "Rechecked official testing guidance. Existing scoped policy retained; no Ontario percentage conversion or unstated Fall2028 continuation added.",
+      "sourceIds": ["scenario-nebraska-lincoln-international"]
+    },
+    {
+      "id": "missouri",
+      "checked": "2026-10-22",
+      "scope": "Current testing policy / entry-year scope; existing program and dated score-cohort records retained unless separately updated",
+      "status": "reviewed",
+      "finding": "Rechecked official testing guidance. Existing scoped policy retained; no Ontario percentage conversion or unstated Fall2028 continuation added.",
+      "sourceIds": ["scenario-missouri-testing"]
+    },
+    {
+      "id": "kansas-state",
+      "checked": "2026-10-22",
+      "scope": "Current testing policy / entry-year scope; existing program and dated score-cohort records retained unless separately updated",
+      "status": "reviewed",
+      "finding": "Rechecked official testing guidance. Existing scoped policy retained; no Ontario percentage conversion or unstated Fall2028 continuation added.",
+      "sourceIds": [
+        "scenario-kansas-state-international",
+        "scenario-kansas-state-testing"
+      ]
+    },
+    {
+      "id": "texas-tech",
+      "checked": "2026-10-22",
+      "scope": "Current testing policy / entry-year scope; existing program and dated score-cohort records retained unless separately updated",
+      "status": "reviewed",
+      "finding": "Rechecked official testing guidance. Existing scoped policy retained; no Ontario percentage conversion or unstated Fall2028 continuation added.",
+      "sourceIds": [
+        "scenario-texas-tech-policy",
+        "scenario-texas-tech-international"
+      ]
+    },
+    {
+      "id": "west-virginia",
+      "checked": "2026-10-22",
+      "scope": "Current testing policy / entry-year scope; existing program and dated score-cohort records retained unless separately updated",
+      "status": "reviewed",
+      "finding": "Rechecked official testing guidance. Existing scoped policy retained; no Ontario percentage conversion or unstated Fall2028 continuation added.",
+      "sourceIds": ["scenario-west-virginia-testing"]
+    },
+    {
+      "id": "new-mexico",
+      "checked": "2026-10-22",
+      "scope": "Current testing policy / entry-year scope; existing program and dated score-cohort records retained unless separately updated",
+      "status": "reviewed",
+      "finding": "Rechecked official testing guidance. Existing scoped policy retained; no Ontario percentage conversion or unstated Fall2028 continuation added.",
+      "sourceIds": ["scenario-new-mexico-international"]
+    },
+    {
+      "id": "uab",
+      "checked": "2026-10-22",
+      "scope": "Current testing policy / entry-year scope; existing program and dated score-cohort records retained unless separately updated",
+      "status": "reviewed",
+      "finding": "Rechecked official testing guidance. Existing scoped policy retained; no Ontario percentage conversion or unstated Fall2028 continuation added.",
+      "sourceIds": ["scenario-uab-testing"]
+    },
+    {
+      "id": "alabama-huntsville",
+      "checked": "2026-10-22",
+      "scope": "Current testing policy / entry-year scope; existing program and dated score-cohort records retained unless separately updated",
+      "status": "reviewed",
+      "finding": "Rechecked official testing guidance. Existing scoped policy retained; no Ontario percentage conversion or unstated Fall2028 continuation added.",
+      "sourceIds": ["scenario-alabama-huntsville-testing"]
+    },
+    {
+      "id": "louisville",
+      "checked": "2026-10-22",
+      "scope": "Current testing policy / entry-year scope; existing program and dated score-cohort records retained unless separately updated",
+      "status": "reviewed",
+      "finding": "Rechecked official testing guidance. Existing scoped policy retained; no Ontario percentage conversion or unstated Fall2028 continuation added.",
+      "sourceIds": ["scenario-louisville-international"]
+    },
+    {
+      "id": "temple",
+      "checked": "2026-10-22",
+      "scope": "Current testing policy / entry-year scope; existing program and dated score-cohort records retained unless separately updated",
+      "status": "reviewed",
+      "finding": "Rechecked official testing guidance. Existing scoped policy retained; no Ontario percentage conversion or unstated Fall2028 continuation added.",
+      "sourceIds": ["scenario-temple-international"]
+    },
+    {
+      "id": "delaware",
+      "checked": "2026-10-22",
+      "scope": "Current testing policy / entry-year scope; existing program and dated score-cohort records retained unless separately updated",
+      "status": "reviewed",
+      "finding": "Rechecked official testing guidance. Existing scoped policy retained; no Ontario percentage conversion or unstated Fall2028 continuation added.",
+      "sourceIds": ["scenario-delaware-international"]
+    },
+    {
+      "id": "tennessee-knoxville",
+      "checked": "2026-10-22",
+      "scope": "Current testing policy / entry-year scope; existing program and dated score-cohort records retained unless separately updated",
+      "status": "partial",
+      "finding": "International program-specific checklist and general all-first-years test rule remain inconsistent; keep unknown.",
+      "sourceIds": [
+        "scenario-tennessee-knoxville-international",
+        "scenario-tennessee-knoxville-testing"
+      ]
+    },
+    {
+      "id": "south-carolina",
+      "checked": "2026-10-22",
+      "scope": "Current testing policy / entry-year scope; existing program and dated score-cohort records retained unless separately updated",
+      "status": "reviewed",
+      "finding": "Rechecked official testing guidance. Existing scoped policy retained; no Ontario percentage conversion or unstated Fall2028 continuation added.",
+      "sourceIds": ["scenario-south-carolina-international"]
+    },
+    {
+      "id": "miami-ohio",
+      "checked": "2026-10-22",
+      "scope": "Current testing policy / entry-year scope; existing program and dated score-cohort records retained unless separately updated",
+      "status": "reviewed",
+      "finding": "Rechecked official testing guidance. Existing scoped policy retained; no Ontario percentage conversion or unstated Fall2028 continuation added.",
+      "sourceIds": ["scenario-miami-ohio-testing"]
+    },
+    {
+      "id": "syracuse",
+      "checked": "2026-10-22",
+      "scope": "Current testing policy / entry-year scope; existing program and dated score-cohort records retained unless separately updated",
+      "status": "reviewed",
+      "finding": "Rechecked official testing guidance. Existing scoped policy retained; no Ontario percentage conversion or unstated Fall2028 continuation added.",
+      "sourceIds": ["scenario-syracuse-requirements", "scenario-syracuse-entry"]
+    },
+    {
+      "id": "fordham",
+      "checked": "2026-10-22",
+      "scope": "Current testing policy / entry-year scope; existing program and dated score-cohort records retained unless separately updated",
+      "status": "reviewed",
+      "finding": "Rechecked official testing guidance. Existing scoped policy retained; no Ontario percentage conversion or unstated Fall2028 continuation added.",
+      "sourceIds": ["scenario-fordham-international"]
+    },
+    {
+      "id": "baylor",
+      "checked": "2026-10-22",
+      "scope": "Current testing policy / entry-year scope; existing program and dated score-cohort records retained unless separately updated",
+      "status": "reviewed",
+      "finding": "Rechecked official testing guidance. Existing scoped policy retained; no Ontario percentage conversion or unstated Fall2028 continuation added.",
+      "sourceIds": ["scenario-baylor-testing"]
+    },
+    {
+      "id": "virginia-tech",
+      "checked": "2026-10-22",
+      "scope": "Current testing policy / entry-year scope; existing program and dated score-cohort records retained unless separately updated",
+      "status": "partial",
+      "finding": "Current catalog bot challenge prevented full re-read; official indexed catalog text retains test-optional through Fall2028. Access limit retained.",
+      "sourceIds": ["scenario-virginia-tech-catalog"]
+    },
+    {
+      "id": "harvard",
+      "checked": "2026-10-22",
+      "scope": "Current testing policy / entry-year scope; existing program and dated score-cohort records retained unless separately updated",
+      "status": "reviewed",
+      "finding": "Rechecked official testing guidance. Existing scoped policy retained; no Ontario percentage conversion or unstated Fall2028 continuation added.",
+      "sourceIds": ["harvard-cutoff", "harvard-apply"]
+    }
+  ],
+  "updates": [
+    {
+      "id": "west-virginia",
+      "testing": {
+        "policy": "optional",
+        "text": "The 2026–27 catalog encourages, but does not require, SAT/ACT from international applicants; some colleges and majors require scores. Confirm the Fall2028 program rule. The previous FAQ could not be retrieved during this recheck.",
+        "textKo": "2026–27 학사 안내서는 국제학생에게 SAT/ACT를 권장하지만 필수로 두지 않습니다. 일부 단과대학·전공은 시험을 요구하므로 2028년 전공별 규정을 확인하세요. 이번 재검토에서 이전 FAQ는 열리지 않아 학사 안내서를 연결했습니다.",
+        "sourceIds": ["audit-root-wvu-catalog"]
+      }
+    },
+    {
+      "id": "baylor",
+      "testing": {
+        "policy": "optional",
+        "text": "Current Baylor policy permits test-optional review, but SAT/ACT is required for early high-school graduates and schools using only narrative evaluations. Some programs have additional criteria. Fall2028-specific continuation has not been established.",
+        "textKo": "현행 베일러 규정은 시험 선택 제출을 허용하지만 고교 조기 졸업자와 숫자 성적 없이 서술형 평가만 제공하는 학교 지원자에게 SAT/ACT를 요구합니다. 일부 전공별 추가 요건과 2028년 적용 여부도 확인해야 합니다.",
+        "sourceIds": ["scenario-baylor-testing"]
+      }
+    },
+    {
+      "id": "columbia",
+      "applicantScope": {
+        "text": "International applicants follow largely the same process; Columbia reviews original school records, grading system and curriculum in context. English proficiency can be established by English as the home language, English instruction throughout secondary school, SAT Reading/Writing700+, ACT English or Reading29+, or an approved language test. Ontario attendance alone does not establish English instruction for the full secondary-school career.",
+        "textKo": "국제학생은 대체로 같은 절차를 따르며 성적표·학교 평가 체계·교육과정을 맥락에 맞게 심사합니다. 영어 모국어, 중등교육 전체 기간 영어 수업, SAT 읽기·쓰기 700 이상, ACT 영어 또는 읽기 29 이상, 승인된 영어시험 등으로 영어 능력을 증명할 수 있습니다. 온타리오 재학만으로 중등교육 전체 기간의 영어 수업을 가정하지 않습니다.",
+        "sourceIds": ["audit-root-columbia-intl", "audit-root-columbia-english"]
+      }
+    }
+  ],
+  "sources": [
+    {
+      "id": "audit-root-wvu-catalog",
+      "title": "WVU2026–27 catalog: international undergraduate admission",
+      "publisher": "West Virginia University",
+      "url": "https://catalog.wvu.edu/undergraduate/admission/",
+      "verified": "2026-10-22",
+      "cycle": "2026–27catalog; actualFall2028requirements must be reconfirmed"
+    },
+    {
+      "id": "audit-root-columbia-intl",
+      "title": "International applicants: curriculum-context review",
+      "url": "https://undergrad.admissions.columbia.edu/apply/international",
+      "publisher": "Columbia Undergraduate Admissions",
+      "verified": "2026-10-22",
+      "cycle": "Current page read in browser2026-10-22; actualentryyearrules must be reconfirmed"
+    },
+    {
+      "id": "audit-root-columbia-english",
+      "title": "English proficiency options and secondary-school language",
+      "url": "https://undergrad.admissions.columbia.edu/apply/international/english-proficiency",
+      "publisher": "Columbia Undergraduate Admissions",
+      "verified": "2026-10-22",
+      "cycle": "Current page read in browser2026-10-22; actualentryyearrules must be reconfirmed"
+    }
+  ]
+}

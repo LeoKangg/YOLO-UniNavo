@@ -1,3 +1,10 @@
+import {
+  REVIEW_DATE,
+  universityReviewMap,
+  universityReviews,
+  ucProfiles,
+  confirmed2028Policies,
+} from "./university-review.ts";
 import { getLanguage, translate } from "./i18n.ts";
 import { GRADE_BANDS } from "./types.ts";
 import { SAT_SCENARIOS } from "./comparison.ts";
@@ -16,7 +23,8 @@ export type ExplorerMode =
   | "all-scenarios"
   | "catalog"
   | "sat-map"
-  | "saved";
+  | "saved"
+  | "uc";
 const w = (en: string, ko: string) => (getLanguage() === "ko" ? ko : en);
 const esc = (v: unknown) =>
   String(v ?? "").replace(
@@ -40,7 +48,10 @@ const refs = (ids: string[]) =>
     .join("")}</div>`;
 const rank = (s: ScenarioSchool) =>
   s.rank.value !== null
-    ? `#${s.rank.value} · 2026`
+    ? w(
+        `Historical #${s.rank.value} · ${s.rank.edition}`,
+        `과거 종합순위 #${s.rank.value} · ${s.rank.edition}`,
+      )
     : w("National rank not verified", "종합 순위 미확인");
 const byRank = (a: ScenarioSchool, b: ScenarioSchool) =>
   (a.rank.value ?? Infinity) - (b.rank.value ?? Infinity) ||
@@ -51,8 +62,11 @@ function schoolCard(
   saved: Set<string>,
 ) {
   const ko = getLanguage() === "ko";
+  const review = universityReviewMap.get(s.id);
+  const cycle = confirmed2028Policies[s.id];
   return `<article class="scenario-school-card"><div class="scenario-card-head"><div><span class="small">${esc(rank(s))}</span><h3><button data-detail="${s.id}">${esc(name(s))}</button></h3><span class="small muted">${esc(s.city)}, ${esc(s.state)}</span></div><button class="save-button ${saved.has(s.id) ? "saved" : ""}" data-save="${s.id}" aria-label="${esc(w("Save school", "대학 저장"))} ${esc(name(s))}" aria-pressed="${saved.has(s.id)}">${saved.has(s.id) ? "✓" : "+"}</button></div>
   <p class="candidate-route">${esc(candidateRoute(s, ko))}</p>
+  <p class="small muted">${w("Rechecked", "재검토")} ${REVIEW_DATE}${review && /partial|unresolved|blocked/.test(review.status) ? ` · ${w("Some evidence remains unresolved", "일부 근거 미확인")}` : ""}${cycle ? ` · ${w("Fall2028", "2028년 가을")} ${cycle === "required" ? w("test required", "시험 필수 확인") : w("test optional", "시험 선택 제출 확인")}` : ""}</p>
   <div class="scenario-program"><span class="eyebrow">${w("Program to examine", "검토 전공")}</span><strong>${esc(translate(w(s.entry.program, s.entry.programKo)))}</strong><span>${esc(w(s.entry.unit, s.entry.unitKo))}</span><p>${esc(w(s.entry.text, s.entry.textKo))}</p>${refs(s.entry.sourceIds.slice(0, 2))}</div>
   <dl class="candidate-facts"><div><dt>${w("Published academic requirement", "공식 학업 요건")}</dt><dd>${esc(w(s.academic.text, s.academic.textKo))}${refs(s.academic.sourceIds.slice(0, 2))}</dd></div><div><dt>${w("This SAT score", "이 SAT 점수에서는")}</dt><dd><p class="candidate-testing">${esc(w(s.testing.text, s.testing.textKo))}</p>${esc(candidateSatAdvice(s, input.sat, ko))}${s.satRange ? `<span class="candidate-cohort">${esc(w(s.satRange.cohort, s.satRange.cohortKo || translate(s.satRange.cohort)))}</span>` : ""}${refs(s.satAlternative?.sourceIds ?? s.satRange?.sourceIds ?? s.testing.sourceIds.slice(0, 1))}</dd></div></dl>
   <button class="text-button" data-detail="${s.id}">${w("Full requirements, testing year & sources →", "상세 요건 · 시험 적용 연도 · 전체 출처 →")}</button></article>`;
@@ -114,6 +128,19 @@ function scoreMap(input: ScenarioInput) {
       .join("") || "<span>—</span>";
   return `<div class="scenario-accuracy"><p>${w("Historical score position only. This table does not decide strict recommendations; Ontario and program rules must be verified independently.", "과거 시험 점수 위치만 비교합니다. 이 표로 공식 조건 추천을 판정하지 않으며 내신·전공 기준은 별도로 확인합니다.")}</p></div><div class="table-wrap"><table class="sat-band-table"><caption>${w(`${known.length} verified composite profiles in the full pool`, `전체 조사 대학 중 총점 분포 확인 ${known.length}곳`)}</caption><thead><tr><th>SAT</th><th>${w("Above range", "점수상 여유")}</th><th>${w("Overlaps range", "분포와 겹침")}</th><th>${w("Below range", "점수상 도전")}</th></tr></thead><tbody>${SAT_BANDS.map((b) => `<tr><th scope="row">${b.low === b.high ? b.low : `${b.low}–${b.high}`}${input.sat !== null && input.sat >= b.low && input.sat <= b.high ? " ●" : ""}</th>${(["above", "overlap", "below"] as const).map((p) => `<td class="band-${p}"><div class="pool-score-list">${cell(known.filter((s) => bandPosition(b, s.satRange!) === p).sort(byRank))}</div></td>`).join("")}</tr>`).join("")}</tbody></table></div>`;
 }
+function renderUcCampuses() {
+  return `<section class="uc-comparison"><div class="page-intro"><h2>${w("UC · all nine undergraduate campuses", "UC 학부 9개 캠퍼스 비교")}</h2><p>${w("Current SAT policy is the same at every score. Fall2028 policy is still undecided.", "현행 규정에서는 SAT 점수가 달라도 평가 방식이 같습니다. 2028년 가을 시험 정책은 아직 미정입니다.")}</p></div><div class="scenario-accuracy"><strong>${w("SAT not considered now · Fall2028 undecided", "현재 SAT 미반영 · 2028년 가을 미정")}</strong><p>${w("UC plans a policy recommendation by June2027. A proposal or faculty petition is not an approved change. International baseline requirements include15 year-long courses and UC GPA3.4; an Ontario average is not automatically converted to that GPA.", "UC는 2027년 6월까지 정책 권고안을 받을 예정입니다. 교수 청원·검토는 변경 확정이 아닙니다. 국제학생 기본 요건은 연간 학업 과목 15개와 UC GPA 3.4이며 온타리오 평균을 이 GPA로 자동 환산하지 않습니다.")}</p>${refs(["uc-audit-policy-review", "uc-audit-international"])}</div><p>${w("Rates below are Fall2026 campus-wide first-year admit rates for all applicant groups. They are not international, humanities-specific or personal probabilities. No campus is labeled safe from these rates.", "아래 수치는 2026년 가을 전체 지원자를 집계한 캠퍼스별 신입학 합격률입니다. 국제학생·인문학 전공별 수치나 개인 합격 확률이 아니며, 이 수치로 안정 지원을 판정하지 않습니다.")}</p><div class="table-wrap"><table class="uc-campus-table"><thead><tr><th>${w("Campus", "캠퍼스")}</th><th>${w("2026 overall admit rate", "2026년 전체 합격률")}</th><th>${w("Program and entry structure", "전공 · 선발 방식")}</th></tr></thead><tbody>${ucProfiles
+    .map((p) => {
+      const school = scenarioSchools.find((s) => s.id === p.id)!;
+      return `<tr><th scope="row"><button class="text-button" data-detail="${school.id}">${esc(name(school))} →</button></th><td><strong>${p.rate.toFixed(1)}%</strong>${refs([p.sourceId])}</td><td><strong>${esc(w(school.entry.program, school.entry.programKo))}</strong><p>${esc(w(school.entry.text, school.entry.textKo))}</p>${refs(school.entry.sourceIds)}</td></tr>`;
+    })
+    .join(
+      "",
+    )}</tbody></table></div><p class="small">${w("All nine remain accessible here regardless of the selected grade/SAT combination; a shortlist omission is not an official grade cutoff. Entry-year rules and English requirements are in each campus detail.", "선택한 내신·SAT 조합과 관계없이 이 표에서 9곳 모두 확인할 수 있습니다. 조합 목록의 누락은 공식 내신 제한을 뜻하지 않습니다. 입학 연도·영어 요건은 캠퍼스별 상세 안내에서 확인하세요.")}</p></section>`;
+}
+function renderReviewNotes() {
+  return `<details class="methodology"><summary>${w(`Source recheck · ${universityReviews.length} schools · ${REVIEW_DATE}`, `공식 자료 재검토 · ${universityReviews.length}곳 · ${REVIEW_DATE}`)}</summary><p>${w("The existing72-school catalog was rechecked for testing policies and entry-year scope;14 received additional academic/English-route checks. New UC and selective records include program and applicant requirements. Access failures and conflicting pages remain explicitly unresolved. Historical score distributions retain their cohort year; this does not claim every historical number is the newest dataset.", "기존 72곳의 시험 정책·적용 연도를 다시 점검하고, 그중 14곳의 주요 학업·영어 요건을 추가 확인했습니다. 새로 추가한 UC·상위권 대학은 전공·지원자 요건도 확인했습니다. 열리지 않거나 서로 다른 공식 안내는 미확인으로 남겼습니다. 과거 점수 분포에는 집단·연도를 유지하며 모든 수치가 최신 입학 집단이라는 뜻은 아닙니다.")}</p><p>${w("Naver Korean articles and Reddit discussions were used to discover omissions and policy changes. Admissions facts link to university sources; individual success stories and speculation do not become cutoffs. Historical2026 national ranks are dated references, not current-edition rankings.", "네이버 한글 자료와 레딧에서 누락·정책 변경 쟁점을 찾고 대학 공식 자료로 대조했습니다. 개인 합격 사례·예측을 합격선으로 사용하지 않습니다. 2026년 종합순위는 연도를 표시한 과거 참고 자료입니다.")}</p><div class="scenario-refs"><a href="https://blog.naver.com/korfirst/224441197445" target="_blank" rel="noopener noreferrer">${w("Naver Korean policy discussion · Oct14", "네이버 한글 UC 정책 해설 · 10월 14일")} ↗</a><a href="https://www.reddit.com/r/ucadmissions/comments/1wvll8f/any_idea_of_the_chance_class_of_2028_will_face/" target="_blank" rel="noopener noreferrer">${w("Reddit2028 discussion · opinions", "레딧 2028년 논의 · 개인 의견")} ↗</a></div>${refs(["uc-audit-policy-review"])}</details>`;
+}
 export function renderExplorer(
   input: ScenarioInput,
   mode: ExplorerMode,
@@ -140,6 +167,7 @@ export function renderExplorer(
           `전체 ${scenarioSchools.length}개 조사 대학`,
         ),
       ],
+      ["uc", w("UC · 9 campuses", "UC 9개 캠퍼스")],
       ["sat-map", w("SAT distribution table", "SAT 분포 표")],
       ["saved", w(`Saved (${saved.size})`, `저장한 대학 (${saved.size})`)],
     ] as const
@@ -150,7 +178,7 @@ export function renderExplorer(
     )
     .join(
       "",
-    )}</div>${mode === "catalog" || mode === "saved" ? `<div class="filter-bar"><label class="search-field"><span>${w("University or program", "대학 · 전공 검색")}</span><input id="scenario-search" type="search" value="${esc(search)}"></label><span role="status">${list.length} ${w("schools", "곳")}</span></div><p class="small">${w("Research coverage is broader than the recommendation list. These records include schools whose Ontario equivalencies remain unverified; no admission-fit label is assigned from an assumed GPA conversion.", "조사 목록과 추천 목록은 다릅니다. 온타리오 환산 기준이 확인되지 않은 학교도 조사 기록으로 남기며, 임의 GPA 환산으로 지원 가능 분류를 붙이지 않습니다.")}</p><div class="scenario-school-list">${list.map((s) => schoolCard(s, input, saved)).join("") || `<p class="empty-state">${w("No schools match.", "해당 대학이 없습니다.")}</p>`}</div>` : mode === "all-scenarios" ? matrix() : mode === "sat-map" ? scoreMap(input) : matching(input, saved)}<details class="methodology"><summary>${w("How the ten candidates were selected", "10곳 선정 방법 · 사실과 판단의 구분")}</summary><p>${w("These are manually curated research shortlists from the displayed pool. Lower-grade cases prioritize published lower GPA requirements, alternative routes and individual review; stronger-grade cases broaden to selective universities, college-specific SAT profiles and testing policies. A place in a grade band is editorial judgment, not a verified Ontario equivalency or a probability model. We do not claim these are the ten best attainable universities in the entire United States.", "표시된 조사 목록에서 검토 후보를 직접 선정했습니다. 낮은 내신 구간은 낮은 공개 GPA 요건·대체 경로·개별 심사부터 조사하고, 높은 구간은 선발적인 대학·단과대학별 SAT 분포·시험 정책까지 넓힙니다. 구간 배치는 편집 판단이며 확인된 온타리오 환산값이나 합격 예측 모델이 아닙니다. 미국 전체에서 입학 가능한 최상위 10곳이라고 단정하지 않습니다.")}</p><p>${w("Official program availability is verified. Toledo publishes different entry GPA requirements by college; Purdue publishes college-level profiles. These comparisons do not identify the absolute easiest major. At schools such as Maryland and Florida, choosing a humanities major does not lower university admission requirements.", "전공 운영 여부는 공식 안내로 확인했습니다. 톨레도는 단과대학별 GPA 요건, 퍼듀는 단과대학별 입학 집단 자료를 공개합니다. 이것만으로 가장 쉬운 학과를 확정하지 않습니다. 메릴랜드·플로리다처럼 인문계 선택이 대학 입학 조건을 낮추지 않는 곳도 표시했습니다.")}</p><p>${w("SAT ranges retain their cohort, campus and year. Current policies are not necessarily Fall 2028 policies. Ranks use historical 2026 U.S.News National Universities evidence; no measured Korean-recognition ranking was established.", "SAT 수치는 집단·캠퍼스·연도를 함께 표시합니다. 현행 정책이 2028년 가을에도 같다고 가정하지 않습니다. 순위는 비교용 U.S. News 2026 종합대학 자료이며 한국 인지도 조사 순위는 확인되지 않았습니다.")}</p></details>`;
+    )}</div>${mode === "catalog" || mode === "saved" ? `<div class="filter-bar"><label class="search-field"><span>${w("University or program", "대학 · 전공 검색")}</span><input id="scenario-search" type="search" value="${esc(search)}"></label><span role="status">${list.length} ${w("schools", "곳")}</span></div><p class="small">${w("Research coverage is broader than the recommendation list. These records include schools whose Ontario equivalencies remain unverified; no admission-fit label is assigned from an assumed GPA conversion.", "조사 목록과 추천 목록은 다릅니다. 온타리오 환산 기준이 확인되지 않은 학교도 조사 기록으로 남기며, 임의 GPA 환산으로 지원 가능 분류를 붙이지 않습니다.")}</p><div class="scenario-school-list">${list.map((s) => schoolCard(s, input, saved)).join("") || `<p class="empty-state">${w("No schools match.", "해당 대학이 없습니다.")}</p>`}</div>` : mode === "all-scenarios" ? matrix() : mode === "uc" ? renderUcCampuses() : mode === "sat-map" ? scoreMap(input) : matching(input, saved)}${renderReviewNotes()}<details class="methodology"><summary>${w("How the ten candidates were selected", "10곳 선정 방법 · 사실과 판단의 구분")}</summary><p>${w("These are manually curated research shortlists from the displayed pool. Lower-grade cases prioritize published lower GPA requirements, alternative routes and individual review; stronger-grade cases broaden to selective universities, college-specific SAT profiles and testing policies. A place in a grade band is editorial judgment, not a verified Ontario equivalency or a probability model. We do not claim these are the ten best attainable universities in the entire United States.", "표시된 조사 목록에서 검토 후보를 직접 선정했습니다. 낮은 내신 구간은 낮은 공개 GPA 요건·대체 경로·개별 심사부터 조사하고, 높은 구간은 선발적인 대학·단과대학별 SAT 분포·시험 정책까지 넓힙니다. 구간 배치는 편집 판단이며 확인된 온타리오 환산값이나 합격 예측 모델이 아닙니다. 미국 전체에서 입학 가능한 최상위 10곳이라고 단정하지 않습니다.")}</p><p>${w("Official program availability is verified. Toledo publishes different entry GPA requirements by college; Purdue publishes college-level profiles. These comparisons do not identify the absolute easiest major. At schools such as Maryland and Florida, choosing a humanities major does not lower university admission requirements.", "전공 운영 여부는 공식 안내로 확인했습니다. 톨레도는 단과대학별 GPA 요건, 퍼듀는 단과대학별 입학 집단 자료를 공개합니다. 이것만으로 가장 쉬운 학과를 확정하지 않습니다. 메릴랜드·플로리다처럼 인문계 선택이 대학 입학 조건을 낮추지 않는 곳도 표시했습니다.")}</p><p>${w("SAT ranges retain their cohort, campus and year. Current policies are not necessarily Fall 2028 policies. Ranks use historical 2026 U.S.News National Universities evidence; no measured Korean-recognition ranking was established.", "SAT 수치는 집단·캠퍼스·연도를 함께 표시합니다. 현행 정책이 2028년 가을에도 같다고 가정하지 않습니다. 순위는 비교용 U.S. News 2026 종합대학 자료이며 한국 인지도 조사 순위는 확인되지 않았습니다.")}</p></details>`;
 }
 export function renderScenarioDetail(s: ScenarioSchool, input: ScenarioInput) {
   const section = (title: string, text: string, ids: string[]) =>

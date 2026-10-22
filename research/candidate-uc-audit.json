@@ -1,0 +1,1317 @@
+{
+  "checked": "2026-10-22",
+  "coverage": "All nine UC undergraduate campuses; no UCSF undergraduate first-year record.",
+  "method": "Primary pages actually opened on 2026-10-22. Current SAT policy is not-considered; Fall 2028 policy remains undecided. No Ontario percentage-to-GPA conversion, score-based eligibility or easiest-major inference. Ranks omitted rather than guessed.",
+  "schools": [
+    {
+      "id": "uc-berkeley",
+      "name": "University of California, Berkeley",
+      "nameKo": "캘리포니아 대학교 버클리",
+      "state": "California",
+      "city": "Berkeley",
+      "type": "Public",
+      "rank": {
+        "edition": "2026",
+        "value": null,
+        "sourceIds": []
+      },
+      "ontario": {
+        "minimum": null,
+        "basis": "No Ontario percentage cutoff verified. Submit original percentage marks; no automatic UC GPA conversion is established.",
+        "basisKo": "확인된 온타리오 백분율 합격선은 없습니다. 원래 백분율 성적을 제출하며 UC GPA로 자동 환산하지 않습니다.",
+        "sourceIds": ["uc-audit-international", "uc-audit-canada"]
+      },
+      "academic": {
+        "text": "International first-year baseline: 15 year-long academic courses and UC minimum GPA 3.4, with curriculum and English requirements. Ontario grades require contextual review. Fall 2026 campus-wide admit rate: 10.5% (all applicant groups; not an international or humanities rate, and not a personal probability).",
+        "textKo": "국제 신입학의 기본 요건은 연간 학업 과목 15개와 UC 최소 GPA 3.4이며 과목 구성·영어 요건도 충족해야 합니다. 온타리오 성적은 맥락에 따른 별도 평가가 필요합니다. 2026년 가을 전체 합격률 10.5%(모든 지원자 집계, 국제학생·인문학 전공별 수치나 개인 확률 아님).",
+        "sourceIds": [
+          "uc-audit-international",
+          "uc-berkeley-admit-2026",
+          "uc-audit-data-notes"
+        ]
+      },
+      "testing": {
+        "policy": "not-considered",
+        "text": "Current policy excludes SAT/ACT from admission and scholarship selection. Fall 2027 remains test-free; Fall 2028 is undecided. UC expects a testing-policy recommendation by June 2027, not an automatic policy change. Do not give UC an SAT-based admission advantage.",
+        "textKo": "현행 규정은 입학·장학금 선발에서 SAT/ACT를 반영하지 않습니다. 2027년 가을에는 유지되지만 2028년 가을 규정은 미정입니다. 2027년 6월까지 정책 권고안을 받을 예정이며 변경이 확정된 것은 아닙니다. UC에 SAT 점수에 따른 입학 가산 효과를 적용하지 않습니다.",
+        "sourceIds": ["uc-audit-testing", "uc-audit-policy-review"]
+      },
+      "satRange": null,
+      "entry": {
+        "program": "History",
+        "programKo": "역사학",
+        "unit": "College of Letters and Science",
+        "unitKo": "문리대",
+        "easierMajorVerified": false,
+        "text": "History is offered in Letters and Science. Some L&S majors have separate high-demand rules; History is absent from the published high-demand list. That does not establish an admission advantage for History. Only the first-choice major is considered under the current guide.",
+        "textKo": "문리대 역사학을 운영합니다. 문리대 일부 전공에는 별도의 수요 과다 전공 규정이 있지만 역사학은 현재 공표 목록에 없습니다. 이것만으로 역사학의 입학 우위를 입증할 수 없습니다. 현행 안내서는 1지망 전공만 검토한다고 명시합니다.",
+        "sourceIds": [
+          "uc-berkeley-history",
+          "uc-berkeley-high-demand",
+          "uc-audit-guide-2026"
+        ]
+      },
+      "applicantScope": {
+        "text": "Korean citizen studying the Ontario curriculum: use the international first-year route and Canada educational-system guidance. Ontario completion requires the appropriate secondary diploma after 12 years. Report marks as issued; confirm English-proficiency evidence from actual schooling history. Digital SAT Reading and Writing does not satisfy the UC English-proficiency requirement.",
+        "textKo": "온타리오 교육과정에서 공부하는 한국 시민권자는 국제 신입학과 캐나다 교육제도 안내를 적용합니다. 온타리오에서는 12년 교육을 마친 뒤 해당 고교 졸업장이 필요합니다. 성적은 원본대로 기재하고 실제 영어 수업 이력에 맞는 영어 능력 증빙을 확인하세요. 디지털 SAT 읽기·쓰기는 UC 영어 능력 요건을 충족하는 시험으로 인정되지 않습니다.",
+        "sourceIds": [
+          "uc-audit-international",
+          "uc-audit-canada",
+          "uc-audit-english"
+        ]
+      },
+      "sources": [
+        {
+          "id": "uc-audit-international",
+          "title": "International first-year requirements and original marks",
+          "url": "https://admission.universityofcalifornia.edu/admission-requirements/international-applicants/applying-for-admission/",
+          "publisher": "University of California",
+          "verified": "2026-10-22",
+          "cycle": "Current page checked 2026-10-22; Fall 2028 requirements must be rechecked"
+        },
+        {
+          "id": "uc-audit-canada",
+          "title": "Country requirements: Canada",
+          "url": "https://admission.universityofcalifornia.edu/admission-requirements/international-applicants/applying-for-admission/freshman-requirements-country.html",
+          "publisher": "University of California",
+          "verified": "2026-10-22",
+          "cycle": "Current page checked 2026-10-22; Fall 2028 requirements must be rechecked"
+        },
+        {
+          "id": "uc-audit-testing",
+          "title": "Current SAT/ACT policy in the UC application",
+          "url": "https://admission.universityofcalifornia.edu/how-to-apply/applying-as-a-first-year/filling-out-the-application.html",
+          "publisher": "University of California",
+          "verified": "2026-10-22",
+          "cycle": "Current page checked 2026-10-22; Fall 2028 requirements must be rechecked"
+        },
+        {
+          "id": "uc-audit-policy-review",
+          "title": "Academic Senate review: Fall 2028 policy undecided",
+          "url": "https://www.universityofcalifornia.edu/news/press-releases-and-statements/academic-senate-review-admissions",
+          "publisher": "University of California",
+          "verified": "2026-10-22",
+          "cycle": "Current page checked 2026-10-22; Fall 2028 requirements must be rechecked"
+        },
+        {
+          "id": "uc-audit-english",
+          "title": "International English proficiency requirements",
+          "url": "https://admission.universityofcalifornia.edu/admission-requirements/international-applicants/english-language-proficiency-toefl-ielts.html",
+          "publisher": "University of California",
+          "verified": "2026-10-22",
+          "cycle": "Current page checked 2026-10-22; Fall 2028 requirements must be rechecked"
+        },
+        {
+          "id": "uc-audit-guide-2026",
+          "title": "Quick Reference Guide to UC Admissions, August 2026: first-year selection pp.30–32",
+          "url": "https://admission.universityofcalifornia.edu/counselors/_files/documents/quick-reference-guide-to-uc-admissions.pdf",
+          "publisher": "University of California",
+          "verified": "2026-10-22",
+          "cycle": "August 2026 guide; current policy, recheck Fall 2028"
+        },
+        {
+          "id": "uc-audit-data-notes",
+          "title": "Fall 2026 admit data: scope and GPA definition",
+          "url": "https://admission.universityofcalifornia.edu/campuses-majors/first-year-admit-data.html",
+          "publisher": "University of California",
+          "verified": "2026-10-22",
+          "cycle": "Fall 2026; preliminary as of June 2026"
+        },
+        {
+          "id": "uc-berkeley-admit-2026",
+          "title": "Berkeley: first-year admit data, Fall 2026",
+          "url": "https://admission.universityofcalifornia.edu/campuses-majors/berkeley/first-year-admit-data.html",
+          "publisher": "University of California",
+          "verified": "2026-10-22",
+          "cycle": "Fall 2026 admitted first-year class; preliminary June 2026"
+        },
+        {
+          "id": "uc-berkeley-history",
+          "title": "History undergraduate major",
+          "url": "https://history.berkeley.edu/undergraduate",
+          "publisher": "University of California, Berkeley",
+          "verified": "2026-10-22",
+          "cycle": "Current page checked 2026-10-22; Fall 2028 requirements must be rechecked"
+        },
+        {
+          "id": "uc-berkeley-high-demand",
+          "title": "L&S high-demand majors for first-year students",
+          "url": "https://ls.berkeley.edu/node/919",
+          "publisher": "University of California, Berkeley",
+          "verified": "2026-10-22",
+          "cycle": "Current page checked 2026-10-22; Fall 2028 requirements must be rechecked"
+        }
+      ]
+    },
+    {
+      "id": "uc-los-angeles",
+      "name": "University of California, Los Angeles",
+      "nameKo": "캘리포니아 대학교 로스앤젤레스 (UCLA)",
+      "state": "California",
+      "city": "Los Angeles",
+      "type": "Public",
+      "rank": {
+        "edition": "2026",
+        "value": null,
+        "sourceIds": []
+      },
+      "ontario": {
+        "minimum": null,
+        "basis": "No Ontario percentage cutoff verified. Submit original percentage marks; no automatic UC GPA conversion is established.",
+        "basisKo": "확인된 온타리오 백분율 합격선은 없습니다. 원래 백분율 성적을 제출하며 UC GPA로 자동 환산하지 않습니다.",
+        "sourceIds": ["uc-audit-international", "uc-audit-canada"]
+      },
+      "academic": {
+        "text": "International first-year baseline: 15 year-long academic courses and UC minimum GPA 3.4, with curriculum and English requirements. Ontario grades require contextual review. Fall 2026 campus-wide admit rate: 10.8% (all applicant groups; not an international or humanities rate, and not a personal probability).",
+        "textKo": "국제 신입학의 기본 요건은 연간 학업 과목 15개와 UC 최소 GPA 3.4이며 과목 구성·영어 요건도 충족해야 합니다. 온타리오 성적은 맥락에 따른 별도 평가가 필요합니다. 2026년 가을 전체 합격률 10.8%(모든 지원자 집계, 국제학생·인문학 전공별 수치나 개인 확률 아님).",
+        "sourceIds": [
+          "uc-audit-international",
+          "uc-los-angeles-admit-2026",
+          "uc-audit-data-notes"
+        ]
+      },
+      "testing": {
+        "policy": "not-considered",
+        "text": "Current policy excludes SAT/ACT from admission and scholarship selection. Fall 2027 remains test-free; Fall 2028 is undecided. UC expects a testing-policy recommendation by June 2027, not an automatic policy change. Do not give UC an SAT-based admission advantage.",
+        "textKo": "현행 규정은 입학·장학금 선발에서 SAT/ACT를 반영하지 않습니다. 2027년 가을에는 유지되지만 2028년 가을 규정은 미정입니다. 2027년 6월까지 정책 권고안을 받을 예정이며 변경이 확정된 것은 아닙니다. UC에 SAT 점수에 따른 입학 가산 효과를 적용하지 않습니다.",
+        "sourceIds": ["uc-audit-testing", "uc-audit-policy-review"]
+      },
+      "satRange": null,
+      "entry": {
+        "program": "History / Sociology, B.A.",
+        "programKo": "역사학 / 사회학 B.A.",
+        "unit": "College of Letters and Science",
+        "unitKo": "문리대",
+        "easierMajorVerified": false,
+        "text": "Both majors are offered in the College. For first-year applicants to the College, choice of major neither helps nor hurts admission prospects. These are study options, not easier-entry recommendations. The major list marks both History and Sociology as pre-majors until prerequisites are completed; that later declaration is separate from first-year selection.",
+        "textKo": "문리대에서 두 전공을 운영합니다. 문리대 신입학에서는 전공 선택이 입학에 유리하거나 불리하게 작용하지 않는다고 명시합니다. 두 전공은 학업 선택지이며 쉬운 입학 경로로 추천할 근거는 없습니다. 전공 목록은 역사학·사회학 모두 선수 과목을 마칠 때까지 예비 전공으로 표시합니다. 이후 전공 확정 절차는 신입학 선발과 별개입니다.",
+        "sourceIds": [
+          "uc-los-angeles-majors",
+          "uc-los-angeles-selection",
+          "uc-audit-guide-2026"
+        ]
+      },
+      "applicantScope": {
+        "text": "Korean citizen studying the Ontario curriculum: use the international first-year route and Canada educational-system guidance. Ontario completion requires the appropriate secondary diploma after 12 years. Report marks as issued; confirm English-proficiency evidence from actual schooling history. Digital SAT Reading and Writing does not satisfy the UC English-proficiency requirement.",
+        "textKo": "온타리오 교육과정에서 공부하는 한국 시민권자는 국제 신입학과 캐나다 교육제도 안내를 적용합니다. 온타리오에서는 12년 교육을 마친 뒤 해당 고교 졸업장이 필요합니다. 성적은 원본대로 기재하고 실제 영어 수업 이력에 맞는 영어 능력 증빙을 확인하세요. 디지털 SAT 읽기·쓰기는 UC 영어 능력 요건을 충족하는 시험으로 인정되지 않습니다.",
+        "sourceIds": [
+          "uc-audit-international",
+          "uc-audit-canada",
+          "uc-audit-english"
+        ]
+      },
+      "sources": [
+        {
+          "id": "uc-audit-international",
+          "title": "International first-year requirements and original marks",
+          "url": "https://admission.universityofcalifornia.edu/admission-requirements/international-applicants/applying-for-admission/",
+          "publisher": "University of California",
+          "verified": "2026-10-22",
+          "cycle": "Current page checked 2026-10-22; Fall 2028 requirements must be rechecked"
+        },
+        {
+          "id": "uc-audit-canada",
+          "title": "Country requirements: Canada",
+          "url": "https://admission.universityofcalifornia.edu/admission-requirements/international-applicants/applying-for-admission/freshman-requirements-country.html",
+          "publisher": "University of California",
+          "verified": "2026-10-22",
+          "cycle": "Current page checked 2026-10-22; Fall 2028 requirements must be rechecked"
+        },
+        {
+          "id": "uc-audit-testing",
+          "title": "Current SAT/ACT policy in the UC application",
+          "url": "https://admission.universityofcalifornia.edu/how-to-apply/applying-as-a-first-year/filling-out-the-application.html",
+          "publisher": "University of California",
+          "verified": "2026-10-22",
+          "cycle": "Current page checked 2026-10-22; Fall 2028 requirements must be rechecked"
+        },
+        {
+          "id": "uc-audit-policy-review",
+          "title": "Academic Senate review: Fall 2028 policy undecided",
+          "url": "https://www.universityofcalifornia.edu/news/press-releases-and-statements/academic-senate-review-admissions",
+          "publisher": "University of California",
+          "verified": "2026-10-22",
+          "cycle": "Current page checked 2026-10-22; Fall 2028 requirements must be rechecked"
+        },
+        {
+          "id": "uc-audit-english",
+          "title": "International English proficiency requirements",
+          "url": "https://admission.universityofcalifornia.edu/admission-requirements/international-applicants/english-language-proficiency-toefl-ielts.html",
+          "publisher": "University of California",
+          "verified": "2026-10-22",
+          "cycle": "Current page checked 2026-10-22; Fall 2028 requirements must be rechecked"
+        },
+        {
+          "id": "uc-audit-guide-2026",
+          "title": "Quick Reference Guide to UC Admissions, August 2026: first-year selection pp.30–32",
+          "url": "https://admission.universityofcalifornia.edu/counselors/_files/documents/quick-reference-guide-to-uc-admissions.pdf",
+          "publisher": "University of California",
+          "verified": "2026-10-22",
+          "cycle": "August 2026 guide; current policy, recheck Fall 2028"
+        },
+        {
+          "id": "uc-audit-data-notes",
+          "title": "Fall 2026 admit data: scope and GPA definition",
+          "url": "https://admission.universityofcalifornia.edu/campuses-majors/first-year-admit-data.html",
+          "publisher": "University of California",
+          "verified": "2026-10-22",
+          "cycle": "Fall 2026; preliminary as of June 2026"
+        },
+        {
+          "id": "uc-los-angeles-admit-2026",
+          "title": "Los Angeles: first-year admit data, Fall 2026",
+          "url": "https://admission.universityofcalifornia.edu/campuses-majors/ucla/first-year-admit-data.html",
+          "publisher": "University of California",
+          "verified": "2026-10-22",
+          "cycle": "Fall 2026 admitted first-year class; preliminary June 2026"
+        },
+        {
+          "id": "uc-los-angeles-majors",
+          "title": "Undergraduate majors",
+          "url": "https://admission.ucla.edu/apply/majors",
+          "publisher": "University of California, Los Angeles",
+          "verified": "2026-10-22",
+          "cycle": "Current page checked 2026-10-22; Fall 2028 requirements must be rechecked"
+        },
+        {
+          "id": "uc-los-angeles-selection",
+          "title": "Choosing a major as a first-year",
+          "url": "https://admission.ucla.edu/apply/first-year/choosing-major",
+          "publisher": "University of California, Los Angeles",
+          "verified": "2026-10-22",
+          "cycle": "Current page checked 2026-10-22; Fall 2028 requirements must be rechecked"
+        }
+      ]
+    },
+    {
+      "id": "uc-san-diego",
+      "name": "University of California, San Diego",
+      "nameKo": "캘리포니아 대학교 샌디에이고",
+      "state": "California",
+      "city": "La Jolla",
+      "type": "Public",
+      "rank": {
+        "edition": "2026",
+        "value": null,
+        "sourceIds": []
+      },
+      "ontario": {
+        "minimum": null,
+        "basis": "No Ontario percentage cutoff verified. Submit original percentage marks; no automatic UC GPA conversion is established.",
+        "basisKo": "확인된 온타리오 백분율 합격선은 없습니다. 원래 백분율 성적을 제출하며 UC GPA로 자동 환산하지 않습니다.",
+        "sourceIds": ["uc-audit-international", "uc-audit-canada"]
+      },
+      "academic": {
+        "text": "International first-year baseline: 15 year-long academic courses and UC minimum GPA 3.4, with curriculum and English requirements. Ontario grades require contextual review. Fall 2026 campus-wide admit rate: 27.2% (all applicant groups; not an international or humanities rate, and not a personal probability).",
+        "textKo": "국제 신입학의 기본 요건은 연간 학업 과목 15개와 UC 최소 GPA 3.4이며 과목 구성·영어 요건도 충족해야 합니다. 온타리오 성적은 맥락에 따른 별도 평가가 필요합니다. 2026년 가을 전체 합격률 27.2%(모든 지원자 집계, 국제학생·인문학 전공별 수치나 개인 확률 아님).",
+        "sourceIds": [
+          "uc-audit-international",
+          "uc-san-diego-admit-2026",
+          "uc-audit-data-notes"
+        ]
+      },
+      "testing": {
+        "policy": "not-considered",
+        "text": "Current policy excludes SAT/ACT from admission and scholarship selection. Fall 2027 remains test-free; Fall 2028 is undecided. UC expects a testing-policy recommendation by June 2027, not an automatic policy change. Do not give UC an SAT-based admission advantage.",
+        "textKo": "현행 규정은 입학·장학금 선발에서 SAT/ACT를 반영하지 않습니다. 2027년 가을에는 유지되지만 2028년 가을 규정은 미정입니다. 2027년 6월까지 정책 권고안을 받을 예정이며 변경이 확정된 것은 아닙니다. UC에 SAT 점수에 따른 입학 가산 효과를 적용하지 않습니다.",
+        "sourceIds": ["uc-audit-testing", "uc-audit-policy-review"]
+      },
+      "satRange": null,
+      "entry": {
+        "program": "History / Sociology",
+        "programKo": "역사학 / 사회학",
+        "unit": "School of Arts and Humanities / School of Social Sciences",
+        "unitKo": "인문예술대 / 사회과학대",
+        "easierMajorVerified": false,
+        "text": "History and Sociology are listed undergraduate options. The current first-year requirements identify Data Science, Engineering and Public Health as selective majors. Applicants are reviewed for their first-choice major, with alternate-major or undeclared consideration when space permits; no easiest humanities major is established.",
+        "textKo": "역사학·사회학을 학부 전공으로 운영합니다. 현재 신입학 요건은 데이터과학·공학·공중보건을 정원 제한 전공으로 안내합니다. 1지망 전공을 심사하고 여석에 따라 2지망 또는 미정 전공으로 검토할 수 있습니다. 가장 쉬운 인문 전공은 확인되지 않았습니다.",
+        "sourceIds": [
+          "uc-san-diego-majors",
+          "uc-san-diego-selection",
+          "uc-audit-guide-2026"
+        ]
+      },
+      "applicantScope": {
+        "text": "Korean citizen studying the Ontario curriculum: use the international first-year route and Canada educational-system guidance. Ontario completion requires the appropriate secondary diploma after 12 years. Report marks as issued; confirm English-proficiency evidence from actual schooling history. Digital SAT Reading and Writing does not satisfy the UC English-proficiency requirement.",
+        "textKo": "온타리오 교육과정에서 공부하는 한국 시민권자는 국제 신입학과 캐나다 교육제도 안내를 적용합니다. 온타리오에서는 12년 교육을 마친 뒤 해당 고교 졸업장이 필요합니다. 성적은 원본대로 기재하고 실제 영어 수업 이력에 맞는 영어 능력 증빙을 확인하세요. 디지털 SAT 읽기·쓰기는 UC 영어 능력 요건을 충족하는 시험으로 인정되지 않습니다.",
+        "sourceIds": [
+          "uc-audit-international",
+          "uc-audit-canada",
+          "uc-audit-english"
+        ]
+      },
+      "sources": [
+        {
+          "id": "uc-audit-international",
+          "title": "International first-year requirements and original marks",
+          "url": "https://admission.universityofcalifornia.edu/admission-requirements/international-applicants/applying-for-admission/",
+          "publisher": "University of California",
+          "verified": "2026-10-22",
+          "cycle": "Current page checked 2026-10-22; Fall 2028 requirements must be rechecked"
+        },
+        {
+          "id": "uc-audit-canada",
+          "title": "Country requirements: Canada",
+          "url": "https://admission.universityofcalifornia.edu/admission-requirements/international-applicants/applying-for-admission/freshman-requirements-country.html",
+          "publisher": "University of California",
+          "verified": "2026-10-22",
+          "cycle": "Current page checked 2026-10-22; Fall 2028 requirements must be rechecked"
+        },
+        {
+          "id": "uc-audit-testing",
+          "title": "Current SAT/ACT policy in the UC application",
+          "url": "https://admission.universityofcalifornia.edu/how-to-apply/applying-as-a-first-year/filling-out-the-application.html",
+          "publisher": "University of California",
+          "verified": "2026-10-22",
+          "cycle": "Current page checked 2026-10-22; Fall 2028 requirements must be rechecked"
+        },
+        {
+          "id": "uc-audit-policy-review",
+          "title": "Academic Senate review: Fall 2028 policy undecided",
+          "url": "https://www.universityofcalifornia.edu/news/press-releases-and-statements/academic-senate-review-admissions",
+          "publisher": "University of California",
+          "verified": "2026-10-22",
+          "cycle": "Current page checked 2026-10-22; Fall 2028 requirements must be rechecked"
+        },
+        {
+          "id": "uc-audit-english",
+          "title": "International English proficiency requirements",
+          "url": "https://admission.universityofcalifornia.edu/admission-requirements/international-applicants/english-language-proficiency-toefl-ielts.html",
+          "publisher": "University of California",
+          "verified": "2026-10-22",
+          "cycle": "Current page checked 2026-10-22; Fall 2028 requirements must be rechecked"
+        },
+        {
+          "id": "uc-audit-guide-2026",
+          "title": "Quick Reference Guide to UC Admissions, August 2026: first-year selection pp.30–32",
+          "url": "https://admission.universityofcalifornia.edu/counselors/_files/documents/quick-reference-guide-to-uc-admissions.pdf",
+          "publisher": "University of California",
+          "verified": "2026-10-22",
+          "cycle": "August 2026 guide; current policy, recheck Fall 2028"
+        },
+        {
+          "id": "uc-audit-data-notes",
+          "title": "Fall 2026 admit data: scope and GPA definition",
+          "url": "https://admission.universityofcalifornia.edu/campuses-majors/first-year-admit-data.html",
+          "publisher": "University of California",
+          "verified": "2026-10-22",
+          "cycle": "Fall 2026; preliminary as of June 2026"
+        },
+        {
+          "id": "uc-san-diego-admit-2026",
+          "title": "San Diego: first-year admit data, Fall 2026",
+          "url": "https://admission.universityofcalifornia.edu/campuses-majors/san-diego/first-year-admit-data.html",
+          "publisher": "University of California",
+          "verified": "2026-10-22",
+          "cycle": "Fall 2026 admitted first-year class; preliminary June 2026"
+        },
+        {
+          "id": "uc-san-diego-majors",
+          "title": "Departments and undergraduate majors",
+          "url": "https://admissions.ucsd.edu/why/majors/index.html",
+          "publisher": "University of California, San Diego",
+          "verified": "2026-10-22",
+          "cycle": "Current page checked 2026-10-22; Fall 2028 requirements must be rechecked"
+        },
+        {
+          "id": "uc-san-diego-selection",
+          "title": "First-year requirements and selective majors",
+          "url": "https://admissions.ucsd.edu/first-year/application-requirements.html",
+          "publisher": "University of California, San Diego",
+          "verified": "2026-10-22",
+          "cycle": "Current page checked 2026-10-22; Fall 2028 requirements must be rechecked"
+        }
+      ]
+    },
+    {
+      "id": "uc-irvine",
+      "name": "University of California, Irvine",
+      "nameKo": "캘리포니아 대학교 어바인",
+      "state": "California",
+      "city": "Irvine",
+      "type": "Public",
+      "rank": {
+        "edition": "2026",
+        "value": null,
+        "sourceIds": []
+      },
+      "ontario": {
+        "minimum": null,
+        "basis": "No Ontario percentage cutoff verified. Submit original percentage marks; no automatic UC GPA conversion is established.",
+        "basisKo": "확인된 온타리오 백분율 합격선은 없습니다. 원래 백분율 성적을 제출하며 UC GPA로 자동 환산하지 않습니다.",
+        "sourceIds": ["uc-audit-international", "uc-audit-canada"]
+      },
+      "academic": {
+        "text": "International first-year baseline: 15 year-long academic courses and UC minimum GPA 3.4, with curriculum and English requirements. Ontario grades require contextual review. Fall 2026 campus-wide admit rate: 30.3% (all applicant groups; not an international or humanities rate, and not a personal probability).",
+        "textKo": "국제 신입학의 기본 요건은 연간 학업 과목 15개와 UC 최소 GPA 3.4이며 과목 구성·영어 요건도 충족해야 합니다. 온타리오 성적은 맥락에 따른 별도 평가가 필요합니다. 2026년 가을 전체 합격률 30.3%(모든 지원자 집계, 국제학생·인문학 전공별 수치나 개인 확률 아님).",
+        "sourceIds": [
+          "uc-audit-international",
+          "uc-irvine-admit-2026",
+          "uc-audit-data-notes"
+        ]
+      },
+      "testing": {
+        "policy": "not-considered",
+        "text": "Current policy excludes SAT/ACT from admission and scholarship selection. Fall 2027 remains test-free; Fall 2028 is undecided. UC expects a testing-policy recommendation by June 2027, not an automatic policy change. Do not give UC an SAT-based admission advantage.",
+        "textKo": "현행 규정은 입학·장학금 선발에서 SAT/ACT를 반영하지 않습니다. 2027년 가을에는 유지되지만 2028년 가을 규정은 미정입니다. 2027년 6월까지 정책 권고안을 받을 예정이며 변경이 확정된 것은 아닙니다. UC에 SAT 점수에 따른 입학 가산 효과를 적용하지 않습니다.",
+        "sourceIds": ["uc-audit-testing", "uc-audit-policy-review"]
+      },
+      "satRange": null,
+      "entry": {
+        "program": "History / Sociology, B.A.",
+        "programKo": "역사학 / 사회학 B.A.",
+        "unit": "School of Humanities / School of Social Sciences",
+        "unitKo": "인문대 / 사회과학대",
+        "easierMajorVerified": false,
+        "text": "Both B.A. programs exist in separate schools. Major choice is considered for every major; alternate-major consideration is possible when space is available. No comparative first-year evidence establishes either as the easiest entry major.",
+        "textKo": "역사학 B.A.는 인문대, 사회학 B.A.는 사회과학대에서 운영합니다. 모든 전공에서 전공 선택을 입학 심사에 반영하며 여석에 따라 2지망을 검토할 수 있습니다. 두 전공 중 어느 전공이 가장 쉬운지는 신입학 비교 자료로 확인되지 않았습니다.",
+        "sourceIds": [
+          "uc-irvine-history",
+          "uc-irvine-sociology",
+          "uc-audit-guide-2026"
+        ]
+      },
+      "applicantScope": {
+        "text": "Korean citizen studying the Ontario curriculum: use the international first-year route and Canada educational-system guidance. Ontario completion requires the appropriate secondary diploma after 12 years. Report marks as issued; confirm English-proficiency evidence from actual schooling history. Digital SAT Reading and Writing does not satisfy the UC English-proficiency requirement.",
+        "textKo": "온타리오 교육과정에서 공부하는 한국 시민권자는 국제 신입학과 캐나다 교육제도 안내를 적용합니다. 온타리오에서는 12년 교육을 마친 뒤 해당 고교 졸업장이 필요합니다. 성적은 원본대로 기재하고 실제 영어 수업 이력에 맞는 영어 능력 증빙을 확인하세요. 디지털 SAT 읽기·쓰기는 UC 영어 능력 요건을 충족하는 시험으로 인정되지 않습니다.",
+        "sourceIds": [
+          "uc-audit-international",
+          "uc-audit-canada",
+          "uc-audit-english"
+        ]
+      },
+      "sources": [
+        {
+          "id": "uc-audit-international",
+          "title": "International first-year requirements and original marks",
+          "url": "https://admission.universityofcalifornia.edu/admission-requirements/international-applicants/applying-for-admission/",
+          "publisher": "University of California",
+          "verified": "2026-10-22",
+          "cycle": "Current page checked 2026-10-22; Fall 2028 requirements must be rechecked"
+        },
+        {
+          "id": "uc-audit-canada",
+          "title": "Country requirements: Canada",
+          "url": "https://admission.universityofcalifornia.edu/admission-requirements/international-applicants/applying-for-admission/freshman-requirements-country.html",
+          "publisher": "University of California",
+          "verified": "2026-10-22",
+          "cycle": "Current page checked 2026-10-22; Fall 2028 requirements must be rechecked"
+        },
+        {
+          "id": "uc-audit-testing",
+          "title": "Current SAT/ACT policy in the UC application",
+          "url": "https://admission.universityofcalifornia.edu/how-to-apply/applying-as-a-first-year/filling-out-the-application.html",
+          "publisher": "University of California",
+          "verified": "2026-10-22",
+          "cycle": "Current page checked 2026-10-22; Fall 2028 requirements must be rechecked"
+        },
+        {
+          "id": "uc-audit-policy-review",
+          "title": "Academic Senate review: Fall 2028 policy undecided",
+          "url": "https://www.universityofcalifornia.edu/news/press-releases-and-statements/academic-senate-review-admissions",
+          "publisher": "University of California",
+          "verified": "2026-10-22",
+          "cycle": "Current page checked 2026-10-22; Fall 2028 requirements must be rechecked"
+        },
+        {
+          "id": "uc-audit-english",
+          "title": "International English proficiency requirements",
+          "url": "https://admission.universityofcalifornia.edu/admission-requirements/international-applicants/english-language-proficiency-toefl-ielts.html",
+          "publisher": "University of California",
+          "verified": "2026-10-22",
+          "cycle": "Current page checked 2026-10-22; Fall 2028 requirements must be rechecked"
+        },
+        {
+          "id": "uc-audit-guide-2026",
+          "title": "Quick Reference Guide to UC Admissions, August 2026: first-year selection pp.30–32",
+          "url": "https://admission.universityofcalifornia.edu/counselors/_files/documents/quick-reference-guide-to-uc-admissions.pdf",
+          "publisher": "University of California",
+          "verified": "2026-10-22",
+          "cycle": "August 2026 guide; current policy, recheck Fall 2028"
+        },
+        {
+          "id": "uc-audit-data-notes",
+          "title": "Fall 2026 admit data: scope and GPA definition",
+          "url": "https://admission.universityofcalifornia.edu/campuses-majors/first-year-admit-data.html",
+          "publisher": "University of California",
+          "verified": "2026-10-22",
+          "cycle": "Fall 2026; preliminary as of June 2026"
+        },
+        {
+          "id": "uc-irvine-admit-2026",
+          "title": "Irvine: first-year admit data, Fall 2026",
+          "url": "https://admission.universityofcalifornia.edu/campuses-majors/irvine/first-year-admit-data.html",
+          "publisher": "University of California",
+          "verified": "2026-10-22",
+          "cycle": "Fall 2026 admitted first-year class; preliminary June 2026"
+        },
+        {
+          "id": "uc-irvine-history",
+          "title": "History B.A., 2026–27 catalogue",
+          "url": "https://catalogue.uci.edu/schoolofhumanities/departmentofhistory/history_ba/",
+          "publisher": "University of California, Irvine",
+          "verified": "2026-10-22",
+          "cycle": "Current page checked 2026-10-22; Fall 2028 requirements must be rechecked"
+        },
+        {
+          "id": "uc-irvine-sociology",
+          "title": "Sociology B.A., 2026–27 catalogue",
+          "url": "https://catalogue.uci.edu/schoolofsocialsciences/departmentofsociology/sociology_ba/",
+          "publisher": "University of California, Irvine",
+          "verified": "2026-10-22",
+          "cycle": "Current page checked 2026-10-22; Fall 2028 requirements must be rechecked"
+        }
+      ]
+    },
+    {
+      "id": "uc-davis",
+      "name": "University of California, Davis",
+      "nameKo": "캘리포니아 대학교 데이비스",
+      "state": "California",
+      "city": "Davis",
+      "type": "Public",
+      "rank": {
+        "edition": "2026",
+        "value": null,
+        "sourceIds": []
+      },
+      "ontario": {
+        "minimum": null,
+        "basis": "No Ontario percentage cutoff verified. Submit original percentage marks; no automatic UC GPA conversion is established.",
+        "basisKo": "확인된 온타리오 백분율 합격선은 없습니다. 원래 백분율 성적을 제출하며 UC GPA로 자동 환산하지 않습니다.",
+        "sourceIds": ["uc-audit-international", "uc-audit-canada"]
+      },
+      "academic": {
+        "text": "International first-year baseline: 15 year-long academic courses and UC minimum GPA 3.4, with curriculum and English requirements. Ontario grades require contextual review. Fall 2026 campus-wide admit rate: 45.8% (all applicant groups; not an international or humanities rate, and not a personal probability).",
+        "textKo": "국제 신입학의 기본 요건은 연간 학업 과목 15개와 UC 최소 GPA 3.4이며 과목 구성·영어 요건도 충족해야 합니다. 온타리오 성적은 맥락에 따른 별도 평가가 필요합니다. 2026년 가을 전체 합격률 45.8%(모든 지원자 집계, 국제학생·인문학 전공별 수치나 개인 확률 아님).",
+        "sourceIds": [
+          "uc-audit-international",
+          "uc-davis-admit-2026",
+          "uc-audit-data-notes"
+        ]
+      },
+      "testing": {
+        "policy": "not-considered",
+        "text": "Current policy excludes SAT/ACT from admission and scholarship selection. Fall 2027 remains test-free; Fall 2028 is undecided. UC expects a testing-policy recommendation by June 2027, not an automatic policy change. Do not give UC an SAT-based admission advantage.",
+        "textKo": "현행 규정은 입학·장학금 선발에서 SAT/ACT를 반영하지 않습니다. 2027년 가을에는 유지되지만 2028년 가을 규정은 미정입니다. 2027년 6월까지 정책 권고안을 받을 예정이며 변경이 확정된 것은 아닙니다. UC에 SAT 점수에 따른 입학 가산 효과를 적용하지 않습니다.",
+        "sourceIds": ["uc-audit-testing", "uc-audit-policy-review"]
+      },
+      "satRange": null,
+      "entry": {
+        "program": "History / Sociology",
+        "programKo": "역사학 / 사회학",
+        "unit": "College of Letters and Science",
+        "unitKo": "문리대",
+        "easierMajorVerified": false,
+        "text": "History and Sociology are offered. Major choice is considered in Letters and Science. UC encourages a non-selective alternate major; this does not provide a published lowest admission mark or prove an easiest major.",
+        "textKo": "역사학·사회학을 운영하며 문리대 입학 심사에 전공 선택이 반영됩니다. UC는 정원 제한이 없는 2지망 전공 기재를 권장하지만, 이것이 공개된 최저 합격선이나 가장 쉬운 전공을 뜻하지는 않습니다.",
+        "sourceIds": [
+          "uc-davis-history",
+          "uc-davis-sociology",
+          "uc-audit-guide-2026"
+        ]
+      },
+      "applicantScope": {
+        "text": "Korean citizen studying the Ontario curriculum: use the international first-year route and Canada educational-system guidance. Ontario completion requires the appropriate secondary diploma after 12 years. Report marks as issued; confirm English-proficiency evidence from actual schooling history. Digital SAT Reading and Writing does not satisfy the UC English-proficiency requirement.",
+        "textKo": "온타리오 교육과정에서 공부하는 한국 시민권자는 국제 신입학과 캐나다 교육제도 안내를 적용합니다. 온타리오에서는 12년 교육을 마친 뒤 해당 고교 졸업장이 필요합니다. 성적은 원본대로 기재하고 실제 영어 수업 이력에 맞는 영어 능력 증빙을 확인하세요. 디지털 SAT 읽기·쓰기는 UC 영어 능력 요건을 충족하는 시험으로 인정되지 않습니다.",
+        "sourceIds": [
+          "uc-audit-international",
+          "uc-audit-canada",
+          "uc-audit-english"
+        ]
+      },
+      "sources": [
+        {
+          "id": "uc-audit-international",
+          "title": "International first-year requirements and original marks",
+          "url": "https://admission.universityofcalifornia.edu/admission-requirements/international-applicants/applying-for-admission/",
+          "publisher": "University of California",
+          "verified": "2026-10-22",
+          "cycle": "Current page checked 2026-10-22; Fall 2028 requirements must be rechecked"
+        },
+        {
+          "id": "uc-audit-canada",
+          "title": "Country requirements: Canada",
+          "url": "https://admission.universityofcalifornia.edu/admission-requirements/international-applicants/applying-for-admission/freshman-requirements-country.html",
+          "publisher": "University of California",
+          "verified": "2026-10-22",
+          "cycle": "Current page checked 2026-10-22; Fall 2028 requirements must be rechecked"
+        },
+        {
+          "id": "uc-audit-testing",
+          "title": "Current SAT/ACT policy in the UC application",
+          "url": "https://admission.universityofcalifornia.edu/how-to-apply/applying-as-a-first-year/filling-out-the-application.html",
+          "publisher": "University of California",
+          "verified": "2026-10-22",
+          "cycle": "Current page checked 2026-10-22; Fall 2028 requirements must be rechecked"
+        },
+        {
+          "id": "uc-audit-policy-review",
+          "title": "Academic Senate review: Fall 2028 policy undecided",
+          "url": "https://www.universityofcalifornia.edu/news/press-releases-and-statements/academic-senate-review-admissions",
+          "publisher": "University of California",
+          "verified": "2026-10-22",
+          "cycle": "Current page checked 2026-10-22; Fall 2028 requirements must be rechecked"
+        },
+        {
+          "id": "uc-audit-english",
+          "title": "International English proficiency requirements",
+          "url": "https://admission.universityofcalifornia.edu/admission-requirements/international-applicants/english-language-proficiency-toefl-ielts.html",
+          "publisher": "University of California",
+          "verified": "2026-10-22",
+          "cycle": "Current page checked 2026-10-22; Fall 2028 requirements must be rechecked"
+        },
+        {
+          "id": "uc-audit-guide-2026",
+          "title": "Quick Reference Guide to UC Admissions, August 2026: first-year selection pp.30–32",
+          "url": "https://admission.universityofcalifornia.edu/counselors/_files/documents/quick-reference-guide-to-uc-admissions.pdf",
+          "publisher": "University of California",
+          "verified": "2026-10-22",
+          "cycle": "August 2026 guide; current policy, recheck Fall 2028"
+        },
+        {
+          "id": "uc-audit-data-notes",
+          "title": "Fall 2026 admit data: scope and GPA definition",
+          "url": "https://admission.universityofcalifornia.edu/campuses-majors/first-year-admit-data.html",
+          "publisher": "University of California",
+          "verified": "2026-10-22",
+          "cycle": "Fall 2026; preliminary as of June 2026"
+        },
+        {
+          "id": "uc-davis-admit-2026",
+          "title": "Davis: first-year admit data, Fall 2026",
+          "url": "https://admission.universityofcalifornia.edu/campuses-majors/davis/first-year-admit-data.html",
+          "publisher": "University of California",
+          "verified": "2026-10-22",
+          "cycle": "Fall 2026 admitted first-year class; preliminary June 2026"
+        },
+        {
+          "id": "uc-davis-history",
+          "title": "History Bachelor of Arts, current catalogue",
+          "url": "https://catalog.ucdavis.edu/departments-programs-degrees/history/history-ab/",
+          "publisher": "University of California, Davis",
+          "verified": "2026-10-22",
+          "cycle": "Current page checked 2026-10-22; Fall 2028 requirements must be rechecked"
+        },
+        {
+          "id": "uc-davis-sociology",
+          "title": "Sociology undergraduate major",
+          "url": "https://www.ucdavis.edu/majors/sociology",
+          "publisher": "University of California, Davis",
+          "verified": "2026-10-22",
+          "cycle": "Current page checked 2026-10-22; Fall 2028 requirements must be rechecked"
+        }
+      ]
+    },
+    {
+      "id": "uc-santa-barbara",
+      "name": "University of California, Santa Barbara",
+      "nameKo": "캘리포니아 대학교 샌타바버라",
+      "state": "California",
+      "city": "Santa Barbara",
+      "type": "Public",
+      "rank": {
+        "edition": "2026",
+        "value": null,
+        "sourceIds": []
+      },
+      "ontario": {
+        "minimum": null,
+        "basis": "No Ontario percentage cutoff verified. Submit original percentage marks; no automatic UC GPA conversion is established.",
+        "basisKo": "확인된 온타리오 백분율 합격선은 없습니다. 원래 백분율 성적을 제출하며 UC GPA로 자동 환산하지 않습니다.",
+        "sourceIds": ["uc-audit-international", "uc-audit-canada"]
+      },
+      "academic": {
+        "text": "International first-year baseline: 15 year-long academic courses and UC minimum GPA 3.4, with curriculum and English requirements. Ontario grades require contextual review. Fall 2026 campus-wide admit rate: 44.0% (all applicant groups; not an international or humanities rate, and not a personal probability).",
+        "textKo": "국제 신입학의 기본 요건은 연간 학업 과목 15개와 UC 최소 GPA 3.4이며 과목 구성·영어 요건도 충족해야 합니다. 온타리오 성적은 맥락에 따른 별도 평가가 필요합니다. 2026년 가을 전체 합격률 44.0%(모든 지원자 집계, 국제학생·인문학 전공별 수치나 개인 확률 아님).",
+        "sourceIds": [
+          "uc-audit-international",
+          "uc-santa-barbara-admit-2026",
+          "uc-audit-data-notes"
+        ]
+      },
+      "testing": {
+        "policy": "not-considered",
+        "text": "Current policy excludes SAT/ACT from admission and scholarship selection. Fall 2027 remains test-free; Fall 2028 is undecided. UC expects a testing-policy recommendation by June 2027, not an automatic policy change. Do not give UC an SAT-based admission advantage.",
+        "textKo": "현행 규정은 입학·장학금 선발에서 SAT/ACT를 반영하지 않습니다. 2027년 가을에는 유지되지만 2028년 가을 규정은 미정입니다. 2027년 6월까지 정책 권고안을 받을 예정이며 변경이 확정된 것은 아닙니다. UC에 SAT 점수에 따른 입학 가산 효과를 적용하지 않습니다.",
+        "sourceIds": ["uc-audit-testing", "uc-audit-policy-review"]
+      },
+      "satRange": null,
+      "entry": {
+        "program": "History, B.A.",
+        "programKo": "역사학 B.A.",
+        "unit": "College of Letters and Science",
+        "unitKo": "문리대",
+        "easierMajorVerified": false,
+        "text": "History B.A. is offered. For Letters and Science, major choice is not considered in first-year selection, with audition exceptions for dance and music performance. Admitted students may enter a major or pre-major; History is not a verified easier admission route.",
+        "textKo": "역사학 B.A.를 운영합니다. 문리대 신입학 심사에는 전공 선택을 반영하지 않으며 무용·음악 연주에는 오디션 예외가 있습니다. 합격자는 전공 또는 예비 전공으로 입학할 수 있으므로 역사학을 더 쉬운 입학 경로로 볼 근거는 없습니다.",
+        "sourceIds": [
+          "uc-santa-barbara-history",
+          "uc-santa-barbara-selection",
+          "uc-audit-guide-2026"
+        ]
+      },
+      "applicantScope": {
+        "text": "Korean citizen studying the Ontario curriculum: use the international first-year route and Canada educational-system guidance. Ontario completion requires the appropriate secondary diploma after 12 years. Report marks as issued; confirm English-proficiency evidence from actual schooling history. Digital SAT Reading and Writing does not satisfy the UC English-proficiency requirement.",
+        "textKo": "온타리오 교육과정에서 공부하는 한국 시민권자는 국제 신입학과 캐나다 교육제도 안내를 적용합니다. 온타리오에서는 12년 교육을 마친 뒤 해당 고교 졸업장이 필요합니다. 성적은 원본대로 기재하고 실제 영어 수업 이력에 맞는 영어 능력 증빙을 확인하세요. 디지털 SAT 읽기·쓰기는 UC 영어 능력 요건을 충족하는 시험으로 인정되지 않습니다.",
+        "sourceIds": [
+          "uc-audit-international",
+          "uc-audit-canada",
+          "uc-audit-english"
+        ]
+      },
+      "sources": [
+        {
+          "id": "uc-audit-international",
+          "title": "International first-year requirements and original marks",
+          "url": "https://admission.universityofcalifornia.edu/admission-requirements/international-applicants/applying-for-admission/",
+          "publisher": "University of California",
+          "verified": "2026-10-22",
+          "cycle": "Current page checked 2026-10-22; Fall 2028 requirements must be rechecked"
+        },
+        {
+          "id": "uc-audit-canada",
+          "title": "Country requirements: Canada",
+          "url": "https://admission.universityofcalifornia.edu/admission-requirements/international-applicants/applying-for-admission/freshman-requirements-country.html",
+          "publisher": "University of California",
+          "verified": "2026-10-22",
+          "cycle": "Current page checked 2026-10-22; Fall 2028 requirements must be rechecked"
+        },
+        {
+          "id": "uc-audit-testing",
+          "title": "Current SAT/ACT policy in the UC application",
+          "url": "https://admission.universityofcalifornia.edu/how-to-apply/applying-as-a-first-year/filling-out-the-application.html",
+          "publisher": "University of California",
+          "verified": "2026-10-22",
+          "cycle": "Current page checked 2026-10-22; Fall 2028 requirements must be rechecked"
+        },
+        {
+          "id": "uc-audit-policy-review",
+          "title": "Academic Senate review: Fall 2028 policy undecided",
+          "url": "https://www.universityofcalifornia.edu/news/press-releases-and-statements/academic-senate-review-admissions",
+          "publisher": "University of California",
+          "verified": "2026-10-22",
+          "cycle": "Current page checked 2026-10-22; Fall 2028 requirements must be rechecked"
+        },
+        {
+          "id": "uc-audit-english",
+          "title": "International English proficiency requirements",
+          "url": "https://admission.universityofcalifornia.edu/admission-requirements/international-applicants/english-language-proficiency-toefl-ielts.html",
+          "publisher": "University of California",
+          "verified": "2026-10-22",
+          "cycle": "Current page checked 2026-10-22; Fall 2028 requirements must be rechecked"
+        },
+        {
+          "id": "uc-audit-guide-2026",
+          "title": "Quick Reference Guide to UC Admissions, August 2026: first-year selection pp.30–32",
+          "url": "https://admission.universityofcalifornia.edu/counselors/_files/documents/quick-reference-guide-to-uc-admissions.pdf",
+          "publisher": "University of California",
+          "verified": "2026-10-22",
+          "cycle": "August 2026 guide; current policy, recheck Fall 2028"
+        },
+        {
+          "id": "uc-audit-data-notes",
+          "title": "Fall 2026 admit data: scope and GPA definition",
+          "url": "https://admission.universityofcalifornia.edu/campuses-majors/first-year-admit-data.html",
+          "publisher": "University of California",
+          "verified": "2026-10-22",
+          "cycle": "Fall 2026; preliminary as of June 2026"
+        },
+        {
+          "id": "uc-santa-barbara-admit-2026",
+          "title": "Santa Barbara: first-year admit data, Fall 2026",
+          "url": "https://admission.universityofcalifornia.edu/campuses-majors/santa-barbara/first-year-admit-data.html",
+          "publisher": "University of California",
+          "verified": "2026-10-22",
+          "cycle": "Fall 2026 admitted first-year class; preliminary June 2026"
+        },
+        {
+          "id": "uc-santa-barbara-history",
+          "title": "History B.A.",
+          "url": "https://www.history.ucsb.edu/undergraduate/history-major/",
+          "publisher": "University of California, Santa Barbara",
+          "verified": "2026-10-22",
+          "cycle": "Current page checked 2026-10-22; Fall 2028 requirements must be rechecked"
+        },
+        {
+          "id": "uc-santa-barbara-selection",
+          "title": "First-year eligibility and selection by college",
+          "url": "https://admissions.sa.ucsb.edu/freshman-eligibility-selection",
+          "publisher": "University of California, Santa Barbara",
+          "verified": "2026-10-22",
+          "cycle": "Current page checked 2026-10-22; Fall 2028 requirements must be rechecked"
+        }
+      ]
+    },
+    {
+      "id": "uc-santa-cruz",
+      "name": "University of California, Santa Cruz",
+      "nameKo": "캘리포니아 대학교 샌타크루즈",
+      "state": "California",
+      "city": "Santa Cruz",
+      "type": "Public",
+      "rank": {
+        "edition": "2026",
+        "value": null,
+        "sourceIds": []
+      },
+      "ontario": {
+        "minimum": null,
+        "basis": "No Ontario percentage cutoff verified. Submit original percentage marks; no automatic UC GPA conversion is established.",
+        "basisKo": "확인된 온타리오 백분율 합격선은 없습니다. 원래 백분율 성적을 제출하며 UC GPA로 자동 환산하지 않습니다.",
+        "sourceIds": ["uc-audit-international", "uc-audit-canada"]
+      },
+      "academic": {
+        "text": "International first-year baseline: 15 year-long academic courses and UC minimum GPA 3.4, with curriculum and English requirements. Ontario grades require contextual review. Fall 2026 campus-wide admit rate: 82.1% (all applicant groups; not an international or humanities rate, and not a personal probability).",
+        "textKo": "국제 신입학의 기본 요건은 연간 학업 과목 15개와 UC 최소 GPA 3.4이며 과목 구성·영어 요건도 충족해야 합니다. 온타리오 성적은 맥락에 따른 별도 평가가 필요합니다. 2026년 가을 전체 합격률 82.1%(모든 지원자 집계, 국제학생·인문학 전공별 수치나 개인 확률 아님).",
+        "sourceIds": [
+          "uc-audit-international",
+          "uc-santa-cruz-admit-2026",
+          "uc-audit-data-notes"
+        ]
+      },
+      "testing": {
+        "policy": "not-considered",
+        "text": "Current policy excludes SAT/ACT from admission and scholarship selection. Fall 2027 remains test-free; Fall 2028 is undecided. UC expects a testing-policy recommendation by June 2027, not an automatic policy change. Do not give UC an SAT-based admission advantage.",
+        "textKo": "현행 규정은 입학·장학금 선발에서 SAT/ACT를 반영하지 않습니다. 2027년 가을에는 유지되지만 2028년 가을 규정은 미정입니다. 2027년 6월까지 정책 권고안을 받을 예정이며 변경이 확정된 것은 아닙니다. UC에 SAT 점수에 따른 입학 가산 효과를 적용하지 않습니다.",
+        "sourceIds": ["uc-audit-testing", "uc-audit-policy-review"]
+      },
+      "satRange": null,
+      "entry": {
+        "program": "History / Sociology",
+        "programKo": "역사학 / 사회학",
+        "unit": "Humanities / Social Sciences divisions",
+        "unitKo": "인문학부 / 사회과학부",
+        "easierMajorVerified": false,
+        "text": "History and Sociology are offered. First-year applications receive the same review regardless of major, although some high-demand programs have capacity limits. Students should name their actual intended primary and alternate interests; no easiest-major claim is verified.",
+        "textKo": "역사학·사회학을 운영합니다. 신입학 지원서는 전공과 관계없이 동일한 심사를 받지만 수요가 많은 일부 전공에는 정원 제한이 있습니다. 실제로 공부할 1·2지망 전공을 기재해야 하며 가장 쉬운 전공이라는 근거는 확인되지 않았습니다.",
+        "sourceIds": [
+          "uc-santa-cruz-history",
+          "uc-santa-cruz-sociology",
+          "uc-audit-guide-2026"
+        ]
+      },
+      "applicantScope": {
+        "text": "Korean citizen studying the Ontario curriculum: use the international first-year route and Canada educational-system guidance. Ontario completion requires the appropriate secondary diploma after 12 years. Report marks as issued; confirm English-proficiency evidence from actual schooling history. Digital SAT Reading and Writing does not satisfy the UC English-proficiency requirement.",
+        "textKo": "온타리오 교육과정에서 공부하는 한국 시민권자는 국제 신입학과 캐나다 교육제도 안내를 적용합니다. 온타리오에서는 12년 교육을 마친 뒤 해당 고교 졸업장이 필요합니다. 성적은 원본대로 기재하고 실제 영어 수업 이력에 맞는 영어 능력 증빙을 확인하세요. 디지털 SAT 읽기·쓰기는 UC 영어 능력 요건을 충족하는 시험으로 인정되지 않습니다.",
+        "sourceIds": [
+          "uc-audit-international",
+          "uc-audit-canada",
+          "uc-audit-english"
+        ]
+      },
+      "sources": [
+        {
+          "id": "uc-audit-international",
+          "title": "International first-year requirements and original marks",
+          "url": "https://admission.universityofcalifornia.edu/admission-requirements/international-applicants/applying-for-admission/",
+          "publisher": "University of California",
+          "verified": "2026-10-22",
+          "cycle": "Current page checked 2026-10-22; Fall 2028 requirements must be rechecked"
+        },
+        {
+          "id": "uc-audit-canada",
+          "title": "Country requirements: Canada",
+          "url": "https://admission.universityofcalifornia.edu/admission-requirements/international-applicants/applying-for-admission/freshman-requirements-country.html",
+          "publisher": "University of California",
+          "verified": "2026-10-22",
+          "cycle": "Current page checked 2026-10-22; Fall 2028 requirements must be rechecked"
+        },
+        {
+          "id": "uc-audit-testing",
+          "title": "Current SAT/ACT policy in the UC application",
+          "url": "https://admission.universityofcalifornia.edu/how-to-apply/applying-as-a-first-year/filling-out-the-application.html",
+          "publisher": "University of California",
+          "verified": "2026-10-22",
+          "cycle": "Current page checked 2026-10-22; Fall 2028 requirements must be rechecked"
+        },
+        {
+          "id": "uc-audit-policy-review",
+          "title": "Academic Senate review: Fall 2028 policy undecided",
+          "url": "https://www.universityofcalifornia.edu/news/press-releases-and-statements/academic-senate-review-admissions",
+          "publisher": "University of California",
+          "verified": "2026-10-22",
+          "cycle": "Current page checked 2026-10-22; Fall 2028 requirements must be rechecked"
+        },
+        {
+          "id": "uc-audit-english",
+          "title": "International English proficiency requirements",
+          "url": "https://admission.universityofcalifornia.edu/admission-requirements/international-applicants/english-language-proficiency-toefl-ielts.html",
+          "publisher": "University of California",
+          "verified": "2026-10-22",
+          "cycle": "Current page checked 2026-10-22; Fall 2028 requirements must be rechecked"
+        },
+        {
+          "id": "uc-audit-guide-2026",
+          "title": "Quick Reference Guide to UC Admissions, August 2026: first-year selection pp.30–32",
+          "url": "https://admission.universityofcalifornia.edu/counselors/_files/documents/quick-reference-guide-to-uc-admissions.pdf",
+          "publisher": "University of California",
+          "verified": "2026-10-22",
+          "cycle": "August 2026 guide; current policy, recheck Fall 2028"
+        },
+        {
+          "id": "uc-audit-data-notes",
+          "title": "Fall 2026 admit data: scope and GPA definition",
+          "url": "https://admission.universityofcalifornia.edu/campuses-majors/first-year-admit-data.html",
+          "publisher": "University of California",
+          "verified": "2026-10-22",
+          "cycle": "Fall 2026; preliminary as of June 2026"
+        },
+        {
+          "id": "uc-santa-cruz-admit-2026",
+          "title": "Santa Cruz: first-year admit data, Fall 2026",
+          "url": "https://admission.universityofcalifornia.edu/campuses-majors/santa-cruz/first-year-admit-data.html",
+          "publisher": "University of California",
+          "verified": "2026-10-22",
+          "cycle": "Fall 2026 admitted first-year class; preliminary June 2026"
+        },
+        {
+          "id": "uc-santa-cruz-history",
+          "title": "History undergraduate program",
+          "url": "https://admissions.ucsc.edu/programs/history",
+          "publisher": "University of California, Santa Cruz",
+          "verified": "2026-10-22",
+          "cycle": "Current page checked 2026-10-22; Fall 2028 requirements must be rechecked"
+        },
+        {
+          "id": "uc-santa-cruz-sociology",
+          "title": "Sociology undergraduate program",
+          "url": "https://admissions.ucsc.edu/programs/sociology",
+          "publisher": "University of California, Santa Cruz",
+          "verified": "2026-10-22",
+          "cycle": "Current page checked 2026-10-22; Fall 2028 requirements must be rechecked"
+        }
+      ]
+    },
+    {
+      "id": "uc-riverside",
+      "name": "University of California, Riverside",
+      "nameKo": "캘리포니아 대학교 리버사이드",
+      "state": "California",
+      "city": "Riverside",
+      "type": "Public",
+      "rank": {
+        "edition": "2026",
+        "value": null,
+        "sourceIds": []
+      },
+      "ontario": {
+        "minimum": null,
+        "basis": "No Ontario percentage cutoff verified. Submit original percentage marks; no automatic UC GPA conversion is established.",
+        "basisKo": "확인된 온타리오 백분율 합격선은 없습니다. 원래 백분율 성적을 제출하며 UC GPA로 자동 환산하지 않습니다.",
+        "sourceIds": ["uc-audit-international", "uc-audit-canada"]
+      },
+      "academic": {
+        "text": "International first-year baseline: 15 year-long academic courses and UC minimum GPA 3.4, with curriculum and English requirements. Ontario grades require contextual review. Fall 2026 campus-wide admit rate: 88.2% (all applicant groups; not an international or humanities rate, and not a personal probability).",
+        "textKo": "국제 신입학의 기본 요건은 연간 학업 과목 15개와 UC 최소 GPA 3.4이며 과목 구성·영어 요건도 충족해야 합니다. 온타리오 성적은 맥락에 따른 별도 평가가 필요합니다. 2026년 가을 전체 합격률 88.2%(모든 지원자 집계, 국제학생·인문학 전공별 수치나 개인 확률 아님).",
+        "sourceIds": [
+          "uc-audit-international",
+          "uc-riverside-admit-2026",
+          "uc-audit-data-notes"
+        ]
+      },
+      "testing": {
+        "policy": "not-considered",
+        "text": "Current policy excludes SAT/ACT from admission and scholarship selection. Fall 2027 remains test-free; Fall 2028 is undecided. UC expects a testing-policy recommendation by June 2027, not an automatic policy change. Do not give UC an SAT-based admission advantage.",
+        "textKo": "현행 규정은 입학·장학금 선발에서 SAT/ACT를 반영하지 않습니다. 2027년 가을에는 유지되지만 2028년 가을 규정은 미정입니다. 2027년 6월까지 정책 권고안을 받을 예정이며 변경이 확정된 것은 아닙니다. UC에 SAT 점수에 따른 입학 가산 효과를 적용하지 않습니다.",
+        "sourceIds": ["uc-audit-testing", "uc-audit-policy-review"]
+      },
+      "satRange": null,
+      "entry": {
+        "program": "History / Sociology",
+        "programKo": "역사학 / 사회학",
+        "unit": "College of Humanities, Arts, and Social Sciences",
+        "unitKo": "인문예술사회과학대",
+        "easierMajorVerified": false,
+        "text": "History and Sociology are listed in CHASS. Students are admitted based on the selected major; applicants not qualifying for their preferred major are automatically considered for their alternate. The published information does not identify an easiest major or Ontario percentage cutoff.",
+        "textKo": "인문예술사회과학대에서 역사학·사회학을 운영합니다. 지원 전공에 따라 선발하며 1지망 조건에 맞지 않으면 자동으로 2지망을 검토합니다. 공개 자료에는 가장 쉬운 전공이나 온타리오 백분율 합격선이 없습니다.",
+        "sourceIds": ["uc-riverside-majors", "uc-audit-guide-2026"]
+      },
+      "applicantScope": {
+        "text": "Korean citizen studying the Ontario curriculum: use the international first-year route and Canada educational-system guidance. Ontario completion requires the appropriate secondary diploma after 12 years. Report marks as issued; confirm English-proficiency evidence from actual schooling history. Digital SAT Reading and Writing does not satisfy the UC English-proficiency requirement.",
+        "textKo": "온타리오 교육과정에서 공부하는 한국 시민권자는 국제 신입학과 캐나다 교육제도 안내를 적용합니다. 온타리오에서는 12년 교육을 마친 뒤 해당 고교 졸업장이 필요합니다. 성적은 원본대로 기재하고 실제 영어 수업 이력에 맞는 영어 능력 증빙을 확인하세요. 디지털 SAT 읽기·쓰기는 UC 영어 능력 요건을 충족하는 시험으로 인정되지 않습니다.",
+        "sourceIds": [
+          "uc-audit-international",
+          "uc-audit-canada",
+          "uc-audit-english"
+        ]
+      },
+      "sources": [
+        {
+          "id": "uc-audit-international",
+          "title": "International first-year requirements and original marks",
+          "url": "https://admission.universityofcalifornia.edu/admission-requirements/international-applicants/applying-for-admission/",
+          "publisher": "University of California",
+          "verified": "2026-10-22",
+          "cycle": "Current page checked 2026-10-22; Fall 2028 requirements must be rechecked"
+        },
+        {
+          "id": "uc-audit-canada",
+          "title": "Country requirements: Canada",
+          "url": "https://admission.universityofcalifornia.edu/admission-requirements/international-applicants/applying-for-admission/freshman-requirements-country.html",
+          "publisher": "University of California",
+          "verified": "2026-10-22",
+          "cycle": "Current page checked 2026-10-22; Fall 2028 requirements must be rechecked"
+        },
+        {
+          "id": "uc-audit-testing",
+          "title": "Current SAT/ACT policy in the UC application",
+          "url": "https://admission.universityofcalifornia.edu/how-to-apply/applying-as-a-first-year/filling-out-the-application.html",
+          "publisher": "University of California",
+          "verified": "2026-10-22",
+          "cycle": "Current page checked 2026-10-22; Fall 2028 requirements must be rechecked"
+        },
+        {
+          "id": "uc-audit-policy-review",
+          "title": "Academic Senate review: Fall 2028 policy undecided",
+          "url": "https://www.universityofcalifornia.edu/news/press-releases-and-statements/academic-senate-review-admissions",
+          "publisher": "University of California",
+          "verified": "2026-10-22",
+          "cycle": "Current page checked 2026-10-22; Fall 2028 requirements must be rechecked"
+        },
+        {
+          "id": "uc-audit-english",
+          "title": "International English proficiency requirements",
+          "url": "https://admission.universityofcalifornia.edu/admission-requirements/international-applicants/english-language-proficiency-toefl-ielts.html",
+          "publisher": "University of California",
+          "verified": "2026-10-22",
+          "cycle": "Current page checked 2026-10-22; Fall 2028 requirements must be rechecked"
+        },
+        {
+          "id": "uc-audit-guide-2026",
+          "title": "Quick Reference Guide to UC Admissions, August 2026: first-year selection pp.30–32",
+          "url": "https://admission.universityofcalifornia.edu/counselors/_files/documents/quick-reference-guide-to-uc-admissions.pdf",
+          "publisher": "University of California",
+          "verified": "2026-10-22",
+          "cycle": "August 2026 guide; current policy, recheck Fall 2028"
+        },
+        {
+          "id": "uc-audit-data-notes",
+          "title": "Fall 2026 admit data: scope and GPA definition",
+          "url": "https://admission.universityofcalifornia.edu/campuses-majors/first-year-admit-data.html",
+          "publisher": "University of California",
+          "verified": "2026-10-22",
+          "cycle": "Fall 2026; preliminary as of June 2026"
+        },
+        {
+          "id": "uc-riverside-admit-2026",
+          "title": "Riverside: first-year admit data, Fall 2026",
+          "url": "https://admission.universityofcalifornia.edu/campuses-majors/riverside/first-year-admit-data.html",
+          "publisher": "University of California",
+          "verified": "2026-10-22",
+          "cycle": "Fall 2026 admitted first-year class; preliminary June 2026"
+        },
+        {
+          "id": "uc-riverside-majors",
+          "title": "Undergraduate majors by college",
+          "url": "https://admissions.ucr.edu/majors",
+          "publisher": "University of California, Riverside",
+          "verified": "2026-10-22",
+          "cycle": "Current page checked 2026-10-22; Fall 2028 requirements must be rechecked"
+        }
+      ]
+    },
+    {
+      "id": "uc-merced",
+      "name": "University of California, Merced",
+      "nameKo": "캘리포니아 대학교 머세드",
+      "state": "California",
+      "city": "Merced",
+      "type": "Public",
+      "rank": {
+        "edition": "2026",
+        "value": null,
+        "sourceIds": []
+      },
+      "ontario": {
+        "minimum": null,
+        "basis": "No Ontario percentage cutoff verified. Submit original percentage marks; no automatic UC GPA conversion is established.",
+        "basisKo": "확인된 온타리오 백분율 합격선은 없습니다. 원래 백분율 성적을 제출하며 UC GPA로 자동 환산하지 않습니다.",
+        "sourceIds": ["uc-audit-international", "uc-audit-canada"]
+      },
+      "academic": {
+        "text": "International first-year baseline: 15 year-long academic courses and UC minimum GPA 3.4, with curriculum and English requirements. Ontario grades require contextual review. Fall 2026 campus-wide admit rate: 94.7% (all applicant groups; not an international or humanities rate, and not a personal probability).",
+        "textKo": "국제 신입학의 기본 요건은 연간 학업 과목 15개와 UC 최소 GPA 3.4이며 과목 구성·영어 요건도 충족해야 합니다. 온타리오 성적은 맥락에 따른 별도 평가가 필요합니다. 2026년 가을 전체 합격률 94.7%(모든 지원자 집계, 국제학생·인문학 전공별 수치나 개인 확률 아님).",
+        "sourceIds": [
+          "uc-audit-international",
+          "uc-merced-admit-2026",
+          "uc-audit-data-notes"
+        ]
+      },
+      "testing": {
+        "policy": "not-considered",
+        "text": "Current policy excludes SAT/ACT from admission and scholarship selection. Fall 2027 remains test-free; Fall 2028 is undecided. UC expects a testing-policy recommendation by June 2027, not an automatic policy change. Do not give UC an SAT-based admission advantage.",
+        "textKo": "현행 규정은 입학·장학금 선발에서 SAT/ACT를 반영하지 않습니다. 2027년 가을에는 유지되지만 2028년 가을 규정은 미정입니다. 2027년 6월까지 정책 권고안을 받을 예정이며 변경이 확정된 것은 아닙니다. UC에 SAT 점수에 따른 입학 가산 효과를 적용하지 않습니다.",
+        "sourceIds": ["uc-audit-testing", "uc-audit-policy-review"]
+      },
+      "satRange": null,
+      "entry": {
+        "program": "History / Sociology, B.A.",
+        "programKo": "역사학 / 사회학 B.A.",
+        "unit": "School of Social Sciences, Humanities and Arts",
+        "unitKo": "사회과학인문예술대",
+        "easierMajorVerified": false,
+        "text": "Both programs are offered. The current UC guide says intended major is not a first-year admission factor at Merced and alternate majors are considered. A higher campus-wide admit rate does not establish guaranteed admission for an Ontario applicant.",
+        "textKo": "역사학·사회학 B.A.를 운영합니다. 현행 UC 안내서는 머세드에서 희망 전공이 신입학 심사 요소가 아니며 2지망도 검토한다고 안내합니다. 전체 합격률이 높아도 온타리오 학생의 합격을 보장하는 것은 아닙니다.",
+        "sourceIds": [
+          "uc-merced-history",
+          "uc-merced-sociology",
+          "uc-audit-guide-2026"
+        ]
+      },
+      "applicantScope": {
+        "text": "Korean citizen studying the Ontario curriculum: use the international first-year route and Canada educational-system guidance. Ontario completion requires the appropriate secondary diploma after 12 years. Report marks as issued; confirm English-proficiency evidence from actual schooling history. Digital SAT Reading and Writing does not satisfy the UC English-proficiency requirement.",
+        "textKo": "온타리오 교육과정에서 공부하는 한국 시민권자는 국제 신입학과 캐나다 교육제도 안내를 적용합니다. 온타리오에서는 12년 교육을 마친 뒤 해당 고교 졸업장이 필요합니다. 성적은 원본대로 기재하고 실제 영어 수업 이력에 맞는 영어 능력 증빙을 확인하세요. 디지털 SAT 읽기·쓰기는 UC 영어 능력 요건을 충족하는 시험으로 인정되지 않습니다.",
+        "sourceIds": [
+          "uc-audit-international",
+          "uc-audit-canada",
+          "uc-audit-english"
+        ]
+      },
+      "sources": [
+        {
+          "id": "uc-audit-international",
+          "title": "International first-year requirements and original marks",
+          "url": "https://admission.universityofcalifornia.edu/admission-requirements/international-applicants/applying-for-admission/",
+          "publisher": "University of California",
+          "verified": "2026-10-22",
+          "cycle": "Current page checked 2026-10-22; Fall 2028 requirements must be rechecked"
+        },
+        {
+          "id": "uc-audit-canada",
+          "title": "Country requirements: Canada",
+          "url": "https://admission.universityofcalifornia.edu/admission-requirements/international-applicants/applying-for-admission/freshman-requirements-country.html",
+          "publisher": "University of California",
+          "verified": "2026-10-22",
+          "cycle": "Current page checked 2026-10-22; Fall 2028 requirements must be rechecked"
+        },
+        {
+          "id": "uc-audit-testing",
+          "title": "Current SAT/ACT policy in the UC application",
+          "url": "https://admission.universityofcalifornia.edu/how-to-apply/applying-as-a-first-year/filling-out-the-application.html",
+          "publisher": "University of California",
+          "verified": "2026-10-22",
+          "cycle": "Current page checked 2026-10-22; Fall 2028 requirements must be rechecked"
+        },
+        {
+          "id": "uc-audit-policy-review",
+          "title": "Academic Senate review: Fall 2028 policy undecided",
+          "url": "https://www.universityofcalifornia.edu/news/press-releases-and-statements/academic-senate-review-admissions",
+          "publisher": "University of California",
+          "verified": "2026-10-22",
+          "cycle": "Current page checked 2026-10-22; Fall 2028 requirements must be rechecked"
+        },
+        {
+          "id": "uc-audit-english",
+          "title": "International English proficiency requirements",
+          "url": "https://admission.universityofcalifornia.edu/admission-requirements/international-applicants/english-language-proficiency-toefl-ielts.html",
+          "publisher": "University of California",
+          "verified": "2026-10-22",
+          "cycle": "Current page checked 2026-10-22; Fall 2028 requirements must be rechecked"
+        },
+        {
+          "id": "uc-audit-guide-2026",
+          "title": "Quick Reference Guide to UC Admissions, August 2026: first-year selection pp.30–32",
+          "url": "https://admission.universityofcalifornia.edu/counselors/_files/documents/quick-reference-guide-to-uc-admissions.pdf",
+          "publisher": "University of California",
+          "verified": "2026-10-22",
+          "cycle": "August 2026 guide; current policy, recheck Fall 2028"
+        },
+        {
+          "id": "uc-audit-data-notes",
+          "title": "Fall 2026 admit data: scope and GPA definition",
+          "url": "https://admission.universityofcalifornia.edu/campuses-majors/first-year-admit-data.html",
+          "publisher": "University of California",
+          "verified": "2026-10-22",
+          "cycle": "Fall 2026; preliminary as of June 2026"
+        },
+        {
+          "id": "uc-merced-admit-2026",
+          "title": "Merced: first-year admit data, Fall 2026",
+          "url": "https://admission.universityofcalifornia.edu/campuses-majors/merced/first-year-admit-data.html",
+          "publisher": "University of California",
+          "verified": "2026-10-22",
+          "cycle": "Fall 2026 admitted first-year class; preliminary June 2026"
+        },
+        {
+          "id": "uc-merced-history",
+          "title": "History B.A. undergraduate program",
+          "url": "https://www.ucmerced.edu/majors-and-minors/history-ba",
+          "publisher": "University of California, Merced",
+          "verified": "2026-10-22",
+          "cycle": "Current page checked 2026-10-22; Fall 2028 requirements must be rechecked"
+        },
+        {
+          "id": "uc-merced-sociology",
+          "title": "Sociology B.A. undergraduate program",
+          "url": "https://www.ucmerced.edu/majors-and-minors/sociology-ba",
+          "publisher": "University of California, Merced",
+          "verified": "2026-10-22",
+          "cycle": "Current page checked 2026-10-22; Fall 2028 requirements must be rechecked"
+        }
+      ]
+    }
+  ],
+  "editorialSelectionNotes": {
+    "method": "Use the same UC campuses across every SAT column within a grade row. Grade-band placement is editorial research scope, never a published UC threshold. Prefer a dedicated nine-campus comparison so the ten-school cap does not hide options.",
+    "highBands": "For 90–95 and 95–100, expose all nine; label Berkeley and UCLA highly selective based on current aggregate data, not personal probability. No SAT boost.",
+    "middleBands": "For 80–85 and 85–90, research Merced, Riverside and Santa Cruz plus ambitious Irvine/Davis/Santa Barbara possibilities only after checking actual A-G coursework; no eligibility assertion.",
+    "lowerBands": "For 60–80, do not automatically insert UC as eligible based on guessed GPA conversion. Show the official basic requirements and offer the same nine-campus research comparison, with eligibility undetermined."
+  },
+  "admitProfiles": [
+    {
+      "id": "uc-berkeley",
+      "rate": 10.5,
+      "year": 2026,
+      "sourceId": "uc-berkeley-admit-2026"
+    },
+    {
+      "id": "uc-los-angeles",
+      "rate": 10.8,
+      "year": 2026,
+      "sourceId": "uc-los-angeles-admit-2026"
+    },
+    {
+      "id": "uc-san-diego",
+      "rate": 27.2,
+      "year": 2026,
+      "sourceId": "uc-san-diego-admit-2026"
+    },
+    {
+      "id": "uc-irvine",
+      "rate": 30.3,
+      "year": 2026,
+      "sourceId": "uc-irvine-admit-2026"
+    },
+    {
+      "id": "uc-davis",
+      "rate": 45.8,
+      "year": 2026,
+      "sourceId": "uc-davis-admit-2026"
+    },
+    {
+      "id": "uc-santa-barbara",
+      "rate": 44.0,
+      "year": 2026,
+      "sourceId": "uc-santa-barbara-admit-2026"
+    },
+    {
+      "id": "uc-santa-cruz",
+      "rate": 82.1,
+      "year": 2026,
+      "sourceId": "uc-santa-cruz-admit-2026"
+    },
+    {
+      "id": "uc-riverside",
+      "rate": 88.2,
+      "year": 2026,
+      "sourceId": "uc-riverside-admit-2026"
+    },
+    {
+      "id": "uc-merced",
+      "rate": 94.7,
+      "year": 2026,
+      "sourceId": "uc-merced-admit-2026"
+    }
+  ]
+}

@@ -23,7 +23,7 @@ No account, API key, database or backend is required. Plans, language, saved sch
 ## Experience
 
 - **Monthly roadmap:**23months, October2026–August2028;72original tasks. All months and instructions are expanded. Add, edit, move, delete, complete, hide completed, undo and back up/restore. Edited official reminders retain their original guidance and sources. The stage dropdown defaults to Select.
-- **University explorer:** 72 researched universities; eight Ontario bands × five SAT scenarios, with ten research candidates per combination. SAT is the only profile input. The applicant context is Korean citizenship / U.S. international first-year / humanities, sociology and history.
+- **University explorer:** 94 researched universities; eight Ontario bands × five SAT scenarios, with ten research candidates per combination. SAT is the only profile input. The applicant context is Korean citizenship / U.S. international first-year / humanities, sociology and history.
 - **All scenarios:** each of 40 cells previews three names and opens ten candidates with programs, academic conditions, testing policies and evidence. CSV exports all 400 candidate entries, including uncertainty and selection method.
 - **Research catalog:** all reviewed schools remain searchable, including schools excluded from strict recommendations. Cards link program/entry structure and primary evidence. School details distinguish current rules, score-cohort scope, unknown Ontario equivalencies and future-cycle uncertainty.
 - **SAT distribution table:** the full research pool is reorganized by SAT bands1100–1600. These are score positions, never an independent admission recommendation.

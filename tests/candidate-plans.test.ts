@@ -185,3 +185,72 @@ test("Harvard is not excluded at1500 or presented as safe at1600; list order is 
   assert.doesNotMatch(html, /scenario-order/);
   assert.doesNotMatch(candidateCsv(), /Research order/);
 });
+
+test("all nine UC campuses retain current test-free and undecided2028 policy without SAT-based list movement", async () => {
+  const { ucSchoolIds } = await import("../src/university-review.ts");
+  assert.equal(ucSchoolIds.length, 9);
+  for (const id of ucSchoolIds) {
+    const s = scenarioSchoolMap.get(id)!;
+    assert.equal(s.testing.policy, "not-considered");
+    assert.equal(s.ontario.minimum, null);
+    assert.equal(s.satRange, null);
+    assert.match(s.testing.text, /2028.*undecided/);
+    assert.equal(
+      candidateSatAdvice(s, 1100, true),
+      candidateSatAdvice(s, 1600, true),
+    );
+  }
+  const cells = candidateMatrix();
+  for (const band of new Set(cells.map((c) => c.band))) {
+    const subsets = cells
+      .filter((c) => c.band === band)
+      .map((c) =>
+        c.selected.filter((s) => s.id.startsWith("uc-")).map((s) => s.id),
+      );
+    for (const subset of subsets) assert.deepEqual(subset, subsets[0]);
+  }
+  const uc = renderExplorer(input("95–100%", 1500), "uc", "", new Set());
+  assert.equal((uc.match(/<tr>/g) ?? []).length, 10);
+  assert.match(uc, /Fall2028 undecided/);
+  assert.match(uc, /not international/);
+});
+
+test("audit coverage is explicit for every school and final updates cannot be overwritten by old program/range adapters", async () => {
+  const { universityReviews, universityReviewMap, confirmed2028Policies } =
+    await import("../src/university-review.ts");
+  const { scenarioSchools } = await import("../src/data/scenario-catalog.ts");
+  assert.equal(
+    new Set(universityReviews.map((s) => s.id)).size,
+    scenarioSchools.length,
+  );
+  for (const school of scenarioSchools) {
+    const review = universityReviewMap.get(school.id);
+    assert.ok(review, school.id);
+    assert.ok(review.sourceIds.length, school.id);
+    for (const id of review.sourceIds) assert.ok(scenarioSourceMap.has(id), id);
+  }
+  assert.equal(confirmed2028Policies.princeton, "required");
+  assert.equal(confirmed2028Policies.columbia, "required");
+  assert.equal(confirmed2028Policies.vanderbilt, "optional");
+  assert.equal(confirmed2028Policies["uc-berkeley"], undefined);
+  assert.match(scenarioSchoolMap.get("iowa")!.entry.text, /History B.A./);
+  assert.match(
+    scenarioSchoolMap.get("texas-state")!.applicantScope.text,
+    /Ontario educational credentials/,
+  );
+  assert.match(
+    scenarioSchoolMap.get("james-madison")!.applicantScope.text,
+    /four years/,
+  );
+  assert.deepEqual(
+    [
+      scenarioSchoolMap.get("james-madison")!.satRange!.low,
+      scenarioSchoolMap.get("james-madison")!.satRange!.high,
+    ],
+    [1210, 1370],
+  );
+  assert.match(
+    scenarioSchoolMap.get("florida-state")!.applicantScope.text,
+    /Regular Decision/,
+  );
+});

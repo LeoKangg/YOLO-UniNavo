@@ -1,0 +1,11 @@
+# Korean and community cross-check,22October2026
+
+Naver search and the full Naver blog article below were read in the in-app browser, because the web text tool could not access Naver. Read actual body via mainFrame, not just a snippet. No login or private Cafe content used.
+
+- Naver search: https://search.naver.com/search.naver?query=2026%20UC%20입학%20SAT%20버클리%20UCLA
+- SSLI,14October2026: https://blog.naver.com/korfirst/224441197445 . Full Korean/English body distinguishes test-free from optional and proposals from decisions. It says UC2028undecided, BOARS report12February2027 and recommendationJune2027. These claims match the opened UC official FAQ: https://www.universityofcalifornia.edu/news/press-releases-and-statements/academic-senate-review-admissions . We adopt the official rule and link the Korean explanation only as secondary reading.
+- Naver search also showed a25November2025 Cafe UCLA guide snippet claiming counselor and academic recommendations required. The Cafe body was not opened; do not treat that snippet as a verified account of the author's whole article. UCLA's official page says it does not require or accept recommendations in its standard application process: https://admission.ucla.edu/apply/first-year/first-year-requirements . No blanket recommendation-letter task is inferred forUC.
+- Reddit October2026 full thread: https://www.reddit.com/r/ucadmissions/comments/1wvll8f/any_idea_of_the_chance_class_of_2028_will_face/ . Comments predict no changes for five years or possible2028optional admission. These are conflicting speculation; neither becomes the2028rule. UC's official FAQ explicitly says undecided.
+- Search results include transfer marketing and global-ranking articles. Transfer rates, TAG/TAP rules and global research rankings do not establish international first-year eligibility or U.S.National Universities ranks.
+
+Published page uses primary sources for requirements; community sources help discover issues. Dates on posts are not evidence of accuracy. No anecdotal admit, Ontario percent/GPA conversion, or humanities admission guarantee is promoted to a rule. Other bounded review logs: existing-secondary-review.md,selective-secondary-review.md,uc-secondary-review.md.

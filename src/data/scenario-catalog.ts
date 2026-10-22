@@ -11,6 +11,7 @@ import {
   reviewedPrograms,
   reviewedRanges,
   additionalScenarioSources,
+  finalSchoolUpdates,
 } from "./scenario-raw.ts";
 import type { ScenarioSchool, AverageBasis } from "../scenario-types.ts";
 
@@ -230,6 +231,17 @@ for (const school of scenarioSchools) {
     };
   const range = reviewedRanges.find((u) => u.id === school.id);
   if (range) school.satRange = range.satRange;
+  for (const update of finalSchoolUpdates.filter((u) => u.id === school.id)) {
+    for (const key of [
+      "academic",
+      "testing",
+      "entry",
+      "satRange",
+      "applicantScope",
+    ] as const) {
+      if (key in update) Object.assign(school, { [key]: update[key] });
+    }
+  }
   const ids = Object.values(school).flatMap((v) =>
     v && typeof v === "object" && "sourceIds" in v
       ? (v.sourceIds as string[])

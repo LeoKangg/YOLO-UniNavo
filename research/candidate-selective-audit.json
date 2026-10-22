@@ -1,0 +1,1279 @@
+{
+  "checked": "2026-10-22",
+  "newSchools": [
+    {
+      "id": "princeton",
+      "name": "Princeton University",
+      "nameKo": "프린스턴 대학교",
+      "state": "New Jersey",
+      "city": "Princeton",
+      "type": "Private",
+      "rank": {
+        "edition": "2026",
+        "value": null,
+        "sourceIds": []
+      },
+      "ontario": {
+        "minimum": null,
+        "basis": "No Ontario percentage admission cutoff verified. School records are reviewed in context; this is not a numerical eligibility rule.",
+        "basisKo": "확인된 온타리오 백분율 합격선은 없습니다. 성적표와 학교 환경을 검토해야 하며 내신 구간 배치는 공식 지원 요건이 아닙니다.",
+        "sourceIds": ["audit-princeton-academic"]
+      },
+      "academic": {
+        "text": "Transcripts are evaluated within the school and educational system. Princeton does not expect a converted U.S. GPA when the school does not normally provide one. An English graded written paper is required.",
+        "textKo": "학교·교육과정 맥락에서 성적표를 심사합니다. 학교에서 통상 제공하지 않는 미국 GPA 환산을 요구하지 않습니다. 영어로 작성하고 채점된 글도 필요합니다.",
+        "sourceIds": ["audit-princeton-academic"]
+      },
+      "testing": {
+        "policy": "required",
+        "text": "SAT or ACT required for Fall 2028 entry (2027–28 application cycle); Fall 2027 remains optional. No minimum test score is required.",
+        "textKo": "2028년 가을 입학부터 SAT 또는 ACT 필수(2027–28 지원 주기). 2027년 입학은 선택 제출이며 공식 시험 최저점은 없습니다.",
+        "sourceIds": ["audit-princeton-testing"]
+      },
+      "satRange": null,
+      "entry": {
+        "program": "History / Sociology, A.B.",
+        "programKo": "역사학 / 사회학 A.B.",
+        "unit": "Undergraduate A.B.",
+        "unitKo": "학부 A.B.",
+        "easierMajorVerified": false,
+        "text": "Applicants apply to Princeton, not individual departments. History and Sociology are A.B. options; choosing them is not a verified easier admission route.",
+        "textKo": "프린스턴은 개별 학과가 아닌 대학에 지원합니다. 역사학·사회학 A.B.를 운영하며 이 전공을 선택하면 입학이 더 쉬워진다는 근거는 없습니다.",
+        "sourceIds": ["audit-princeton-program", "audit-princeton-program"]
+      },
+      "applicantScope": {
+        "text": "International applicants submit their original school record in context and applicable school reports. The English-test exception depends on language of instruction and schooling history, not Korean citizenship alone.",
+        "textKo": "국제학생은 원래 학교 성적표와 해당 학교 보고서를 제출합니다. 영어시험 면제는 한국 국적만으로 결정되지 않고 수업 언어와 재학 이력을 확인해야 합니다.",
+        "sourceIds": ["audit-princeton-academic"]
+      },
+      "sources": [
+        {
+          "id": "audit-princeton-testing",
+          "title": "Standardized testing: Fall 2028 requirement",
+          "url": "https://admission.princeton.edu/apply/standardized-testing",
+          "publisher": "Princeton University",
+          "verified": "2026-10-22",
+          "cycle": "Current page checked 2026-10-22; actual Fall 2028 cycle must be rechecked"
+        },
+        {
+          "id": "audit-princeton-academic",
+          "title": "International students: academic record and graded written paper",
+          "url": "https://admission.princeton.edu/apply/international-students",
+          "publisher": "Princeton University",
+          "verified": "2026-10-22",
+          "cycle": "Current page checked 2026-10-22; actual Fall 2028 cycle must be rechecked"
+        },
+        {
+          "id": "audit-princeton-program",
+          "title": "Degrees and departments; university-level admission",
+          "url": "https://admission.princeton.edu/academics/degrees-departments",
+          "publisher": "Princeton University",
+          "verified": "2026-10-22",
+          "cycle": "Current page checked 2026-10-22; actual Fall 2028 cycle must be rechecked"
+        }
+      ]
+    },
+    {
+      "id": "yale",
+      "name": "Yale University",
+      "nameKo": "예일 대학교",
+      "state": "Connecticut",
+      "city": "New Haven",
+      "type": "Private",
+      "rank": {
+        "edition": "2026",
+        "value": null,
+        "sourceIds": []
+      },
+      "ontario": {
+        "minimum": null,
+        "basis": "No Ontario percentage admission cutoff verified. School records are reviewed in context; this is not a numerical eligibility rule.",
+        "basisKo": "확인된 온타리오 백분율 합격선은 없습니다. 성적표와 학교 환경을 검토해야 하며 내신 구간 배치는 공식 지원 요건이 아닙니다.",
+        "sourceIds": ["audit-yale-academic"]
+      },
+      "academic": {
+        "text": "Applicants of all nationalities are considered through the same whole-person process and applicants outside the U.S. complete the same requirements. Non-English documents require certified translations; applicants may not translate their own documents.",
+        "textKo": "국적과 관계없이 같은 종합 심사와 지원 요건을 적용합니다. 영어가 아닌 서류에는 공인 번역이 필요하며 지원자가 직접 번역한 서류는 받지 않습니다.",
+        "sourceIds": ["audit-yale-academic"]
+      },
+      "testing": {
+        "policy": "required",
+        "text": "Current policy requires ACT or SAT. The May 27, 2026 announcement replaced the former AP/IB/ACT/SAT flexible policy for the next admission cycle. AP or IB alone no longer satisfies the current requirement.",
+        "textKo": "현행 규정은 ACT 또는 SAT 필수입니다. 2026년 5월 27일 발표로 다음 지원 주기부터 기존 AP/IB 대체 허용 규정이 변경되었습니다. AP나 IB만으로는 현행 시험 요건을 충족하지 않습니다.",
+        "sourceIds": ["audit-yale-testing", "audit-yale-2026-change"]
+      },
+      "satRange": null,
+      "entry": {
+        "program": "History / Sociology, B.A.",
+        "programKo": "역사학 / 사회학 B.A.",
+        "unit": "Yale College",
+        "unitKo": "예일 칼리지",
+        "easierMajorVerified": false,
+        "text": "Every Yale College student begins undeclared; History and Sociology are available majors. The admission office says students do not apply to a specific major. Humanities is not a verified easier route.",
+        "textKo": "모든 신입생은 전공 미정으로 입학하며 역사학·사회학을 선택할 수 있습니다. 입학처는 특정 학과에 지원하는 방식이 아니라고 설명합니다. 인문학을 더 쉬운 입학 경로로 볼 근거는 없습니다.",
+        "sourceIds": ["audit-yale-program", "audit-yale-entry"]
+      },
+      "applicantScope": {
+        "text": "A Korean citizen attending school in Ontario is reviewed in the international context. A non-native English speaker without at least two years in an English-medium school must also submit an English proficiency exam.",
+        "textKo": "온타리오에서 공부하는 한국 시민권자는 국제학생 맥락에서 심사합니다. 영어가 모국어가 아니고 영어 수업 학교 재학이 2년 미만이면 별도 영어 공인시험도 필요합니다.",
+        "sourceIds": ["audit-yale-academic"]
+      },
+      "sources": [
+        {
+          "id": "audit-yale-testing",
+          "title": "Current standardized testing policy",
+          "url": "https://admissions.yale.edu/standardized-testing",
+          "publisher": "Yale University",
+          "verified": "2026-10-22",
+          "cycle": "Current page checked 2026-10-22; actual Fall 2028 cycle must be rechecked"
+        },
+        {
+          "id": "audit-yale-academic",
+          "title": "International students and language requirements",
+          "url": "https://admissions.yale.edu/international",
+          "publisher": "Yale University",
+          "verified": "2026-10-22",
+          "cycle": "Current page checked 2026-10-22; actual Fall 2028 cycle must be rechecked"
+        },
+        {
+          "id": "audit-yale-program",
+          "title": "Majors and academic programs",
+          "url": "https://admissions.yale.edu/majors",
+          "publisher": "Yale University",
+          "verified": "2026-10-22",
+          "cycle": "Current page checked 2026-10-22; actual Fall 2028 cycle must be rechecked"
+        },
+        {
+          "id": "audit-yale-entry",
+          "title": "September 2026 admissions guidance: academic strength and major choice",
+          "url": "https://admissions.yale.edu/posts/2026-09-01-what-yale-looks-for-part-1-academic-strength",
+          "publisher": "Yale University",
+          "verified": "2026-10-22",
+          "cycle": "Current page checked 2026-10-22; actual Fall 2028 cycle must be rechecked"
+        }
+      ]
+    },
+    {
+      "id": "stanford",
+      "name": "Stanford University",
+      "nameKo": "스탠퍼드 대학교",
+      "state": "California",
+      "city": "Stanford",
+      "type": "Private",
+      "rank": {
+        "edition": "2026",
+        "value": null,
+        "sourceIds": []
+      },
+      "ontario": {
+        "minimum": null,
+        "basis": "No Ontario percentage admission cutoff verified. School records are reviewed in context; this is not a numerical eligibility rule.",
+        "basisKo": "확인된 온타리오 백분율 합격선은 없습니다. 성적표와 학교 환경을 검토해야 하며 내신 구간 배치는 공식 지원 요건이 아닙니다.",
+        "sourceIds": ["audit-stanford-academic"]
+      },
+      "academic": {
+        "text": "International marks are reviewed in educational context without conversion to a U.S. GPA. Applicants must possess a secondary school diploma or equivalent before fall enrollment.",
+        "textKo": "국제 성적은 교육과정 맥락에서 심사하며 미국 GPA로 환산할 필요가 없습니다. 가을 등록 전 고교 졸업 또는 동등 자격이 필요합니다.",
+        "sourceIds": ["audit-stanford-academic"]
+      },
+      "testing": {
+        "policy": "required",
+        "text": "The current first-year policy requires ACT or SAT. Stanford states there is no minimum score and no score guarantees admission; recheck the actual Fall 2028 cycle.",
+        "textKo": "현행 신입학은 ACT 또는 SAT 필수입니다. 공식 최저점과 합격 보장 점수는 없습니다. 실제 2028년 입학 규정을 다시 확인해야 합니다.",
+        "sourceIds": ["audit-stanford-testing"]
+      },
+      "satRange": null,
+      "entry": {
+        "program": "History, B.A.",
+        "programKo": "역사학 B.A.",
+        "unit": "Undergraduate university-wide admission",
+        "unitKo": "학부 대학 전체 선발",
+        "easierMajorVerified": false,
+        "text": "Applicants apply to Stanford as a whole, not a particular major, department or school. History B.A. exists; it is not a verified admission shortcut.",
+        "textKo": "개별 학과·학부가 아닌 스탠퍼드 대학 전체에 지원합니다. 역사학 B.A.를 운영하지만 입학을 쉽게 만드는 경로라는 근거는 없습니다.",
+        "sourceIds": ["audit-stanford-program", "audit-stanford-entry"]
+      },
+      "applicantScope": {
+        "text": "International citizenship and country of schooling are evaluated separately in context. Official internal/external marks and predictions must come from the school.",
+        "textKo": "국적과 재학 국가를 구분해 맥락을 심사합니다. 학교가 내신·외부시험 성적과 예상 성적을 공식 제출해야 합니다.",
+        "sourceIds": ["audit-stanford-academic"]
+      },
+      "sources": [
+        {
+          "id": "audit-stanford-testing",
+          "title": "First-year standardized testing",
+          "url": "https://admission.stanford.edu/apply/first-year/testing.html",
+          "publisher": "Stanford University",
+          "verified": "2026-10-22",
+          "cycle": "Current page checked 2026-10-22; actual Fall 2028 cycle must be rechecked"
+        },
+        {
+          "id": "audit-stanford-academic",
+          "title": "International applicants: credentials and grading",
+          "url": "https://admission.stanford.edu/apply/international/",
+          "publisher": "Stanford University",
+          "verified": "2026-10-22",
+          "cycle": "Current page checked 2026-10-22; actual Fall 2028 cycle must be rechecked"
+        },
+        {
+          "id": "audit-stanford-program",
+          "title": "History B.A. major",
+          "url": "https://history.stanford.edu/why-study-history/major",
+          "publisher": "Stanford University",
+          "verified": "2026-10-22",
+          "cycle": "Current page checked 2026-10-22; actual Fall 2028 cycle must be rechecked"
+        },
+        {
+          "id": "audit-stanford-entry",
+          "title": "Application and essays: apply to the university",
+          "url": "https://admission.stanford.edu/apply/first-year/apply.html",
+          "publisher": "Stanford University",
+          "verified": "2026-10-22",
+          "cycle": "Current page checked 2026-10-22; actual Fall 2028 cycle must be rechecked"
+        }
+      ]
+    },
+    {
+      "id": "columbia",
+      "name": "Columbia University",
+      "nameKo": "컬럼비아 대학교",
+      "state": "New York",
+      "city": "New York",
+      "type": "Private",
+      "rank": {
+        "edition": "2026",
+        "value": null,
+        "sourceIds": []
+      },
+      "ontario": {
+        "minimum": null,
+        "basis": "No Ontario percentage admission cutoff verified. School records are reviewed in context; this is not a numerical eligibility rule.",
+        "basisKo": "확인된 온타리오 백분율 합격선은 없습니다. 성적표와 학교 환경을 검토해야 하며 내신 구간 배치는 공식 지원 요건이 아닙니다.",
+        "sourceIds": ["audit-columbia-academic"]
+      },
+      "academic": {
+        "text": "The June 12, 2026 university announcement confirms the upcoming first-year testing requirement and its role within whole-person admission. Ontario-specific transcript conversion and percentage cutoffs were not verified.",
+        "textKo": "2026년 6월 12일 대학 공식 발표에서 신입학 시험 요건과 종합 심사 원칙을 확인했습니다. 온타리오 성적표 환산 방식과 백분율 합격선은 확인되지 않았습니다.",
+        "sourceIds": ["audit-columbia-academic"]
+      },
+      "testing": {
+        "policy": "required",
+        "text": "SAT or ACT required for Fall 2028 entry, effective August 2027 (2027–28 application cycle). Fall 2027 remains optional. Applicants facing access challenges may request a waiver.",
+        "textKo": "2027년 8월부터 시작하는 지원 주기, 즉 2028년 가을 입학부터 SAT 또는 ACT 필수입니다. 2027년 입학은 선택 제출입니다. 응시 곤란 시 면제를 요청할 수 있습니다.",
+        "sourceIds": ["audit-columbia-testing"]
+      },
+      "satRange": null,
+      "entry": {
+        "program": "History, B.A.",
+        "programKo": "역사학 B.A.",
+        "unit": "Columbia College",
+        "unitKo": "컬럼비아 칼리지",
+        "easierMajorVerified": false,
+        "text": "History is an undergraduate major offered to Columbia College students. The verified department page describes declaration after enrollment; no comparative evidence establishes History as the easiest first-year route.",
+        "textKo": "컬럼비아 칼리지 학생을 위한 역사학 학부 전공을 확인했습니다. 학과 안내는 입학 후 전공 선언을 설명하며 가장 쉬운 신입학 전공이라는 비교 근거는 없습니다.",
+        "sourceIds": ["audit-columbia-program", "audit-columbia-program"]
+      },
+      "applicantScope": {
+        "text": "The verified Fall 2028 announcement covers all first-year applicants. International academic-document and English-proficiency details must be confirmed on the undergraduate admission site for the applicant’s entry year.",
+        "textKo": "확인한 2028년 시험 규정은 모든 신입학 지원자에 적용됩니다. 국제학생 성적 서류·영어 능력 세부 요건은 입학 연도 학부 입학처 안내에서 추가 확인해야 합니다.",
+        "sourceIds": ["audit-columbia-academic"]
+      },
+      "sources": [
+        {
+          "id": "audit-columbia-testing",
+          "title": "June 2026 announcement: testing required for Fall 2028",
+          "url": "https://communications.news.columbia.edu/news/update-columbia-college-and-columbia-engineering-testing-policy",
+          "publisher": "Columbia University",
+          "verified": "2026-10-22",
+          "cycle": "Current page checked 2026-10-22; actual Fall 2028 cycle must be rechecked"
+        },
+        {
+          "id": "audit-columbia-academic",
+          "title": "University testing announcement and whole-person review",
+          "url": "https://communications.news.columbia.edu/news/update-columbia-college-and-columbia-engineering-testing-policy",
+          "publisher": "Columbia University",
+          "verified": "2026-10-22",
+          "cycle": "Current page checked 2026-10-22; actual Fall 2028 cycle must be rechecked"
+        },
+        {
+          "id": "audit-columbia-program",
+          "title": "Columbia College History major and declaration",
+          "url": "https://history.columbia.edu/undergraduate/undergraduate-requirements/",
+          "publisher": "Columbia University",
+          "verified": "2026-10-22",
+          "cycle": "Current page checked 2026-10-22; actual Fall 2028 cycle must be rechecked"
+        }
+      ]
+    },
+    {
+      "id": "brown",
+      "name": "Brown University",
+      "nameKo": "브라운 대학교",
+      "state": "Rhode Island",
+      "city": "Providence",
+      "type": "Private",
+      "rank": {
+        "edition": "2026",
+        "value": null,
+        "sourceIds": []
+      },
+      "ontario": {
+        "minimum": null,
+        "basis": "No Ontario percentage admission cutoff verified. School records are reviewed in context; this is not a numerical eligibility rule.",
+        "basisKo": "확인된 온타리오 백분율 합격선은 없습니다. 성적표와 학교 환경을 검토해야 하며 내신 구간 배치는 공식 지원 요건이 아닙니다.",
+        "sourceIds": ["audit-brown-academic"]
+      },
+      "academic": {
+        "text": "International applicants follow the same requirements, standards and deadlines. School officials submit secondary transcripts, exam results and the Secondary School Report; review is contextual.",
+        "textKo": "국제학생도 같은 지원 요건·기준·마감일을 적용합니다. 학교 담당자가 고교 성적표·시험 결과·학교 보고서를 제출하며 맥락을 종합 심사합니다.",
+        "sourceIds": ["audit-brown-academic"]
+      },
+      "testing": {
+        "policy": "required",
+        "text": "SAT or ACT required since the 2024–25 application cycle. Brown has no minimum score for consideration; scores are one contextual factor. Recheck Fall 2028.",
+        "textKo": "2024–25 지원 주기부터 SAT 또는 ACT 필수입니다. 지원 심사를 위한 최저점은 없으며 점수는 맥락에 따라 평가하는 여러 요소 중 하나입니다. 2028년 규정은 재확인해야 합니다.",
+        "sourceIds": ["audit-brown-testing"]
+      },
+      "satRange": null,
+      "entry": {
+        "program": "History, A.B.",
+        "programKo": "역사학 A.B.",
+        "unit": "The College",
+        "unitKo": "학부 칼리지",
+        "easierMajorVerified": false,
+        "text": "Brown offers History as a concentration and explicitly does not admit by academic interest or use concentration quotas. It cannot be described as an easier admission route.",
+        "textKo": "역사학 전공을 운영합니다. 브라운은 희망 전공별 선발이나 전공별 정원을 두지 않는다고 명시하므로 더 쉬운 입학 경로로 안내할 수 없습니다.",
+        "sourceIds": ["audit-brown-program", "audit-brown-entry"]
+      },
+      "applicantScope": {
+        "text": "International applicants use the Common Application. English or officially translated documents are needed; language-test advice depends on home and instructional language across secondary school.",
+        "textKo": "국제학생은 Common Application으로 지원하고 영어 또는 공식 번역 서류를 제출합니다. 영어시험 권고 여부는 가정 언어와 고교 재학 중 수업 언어를 확인해야 합니다.",
+        "sourceIds": ["audit-brown-academic"]
+      },
+      "sources": [
+        {
+          "id": "audit-brown-testing",
+          "title": "Standardized tests",
+          "url": "https://admission.brown.edu/first-year/standardized-tests",
+          "publisher": "Brown University",
+          "verified": "2026-10-22",
+          "cycle": "Current page checked 2026-10-22; actual Fall 2028 cycle must be rechecked"
+        },
+        {
+          "id": "audit-brown-academic",
+          "title": "International applicants FAQ",
+          "url": "https://admission.brown.edu/ask/international-applicants",
+          "publisher": "Brown University",
+          "verified": "2026-10-22",
+          "cycle": "Current page checked 2026-10-22; actual Fall 2028 cycle must be rechecked"
+        },
+        {
+          "id": "audit-brown-program",
+          "title": "History undergraduate concentration",
+          "url": "https://history.brown.edu/undergraduate/concentration",
+          "publisher": "Brown University",
+          "verified": "2026-10-22",
+          "cycle": "Current page checked 2026-10-22; actual Fall 2028 cycle must be rechecked"
+        },
+        {
+          "id": "audit-brown-entry",
+          "title": "Selecting academic interests: no concentration quotas",
+          "url": "https://admission.brown.edu/first-year/selecting-degree-programs-academic-fields",
+          "publisher": "Brown University",
+          "verified": "2026-10-22",
+          "cycle": "Current page checked 2026-10-22; actual Fall 2028 cycle must be rechecked"
+        }
+      ]
+    },
+    {
+      "id": "penn",
+      "name": "University of Pennsylvania",
+      "nameKo": "펜실베이니아 대학교",
+      "state": "Pennsylvania",
+      "city": "Philadelphia",
+      "type": "Private",
+      "rank": {
+        "edition": "2026",
+        "value": null,
+        "sourceIds": []
+      },
+      "ontario": {
+        "minimum": null,
+        "basis": "No Ontario percentage admission cutoff verified. School records are reviewed in context; this is not a numerical eligibility rule.",
+        "basisKo": "확인된 온타리오 백분율 합격선은 없습니다. 성적표와 학교 환경을 검토해야 하며 내신 구간 배치는 공식 지원 요건이 아닙니다.",
+        "sourceIds": ["audit-penn-academic"]
+      },
+      "academic": {
+        "text": "Penn reviews the complete application in context. School officials must submit official transcripts from every high school attended and the School Report; mid-year grades are also requested.",
+        "textKo": "전체 지원서를 맥락에 따라 종합 심사합니다. 재학한 모든 고교의 공식 성적표와 학교 보고서를 학교 담당자가 제출해야 하며 중간 성적도 요청합니다.",
+        "sourceIds": ["audit-penn-academic"]
+      },
+      "testing": {
+        "policy": "required",
+        "text": "Current policy requires SAT or ACT for all first-year applicants, including international students; a hardship waiver is available. Current testing deadlines cover the 2026–27 cycle. Recheck Fall 2028.",
+        "textKo": "현행 국제학생 포함 모든 신입학 지원자는 SAT 또는 ACT 필수이며 응시 곤란 면제를 신청할 수 있습니다. 현재 세부 일정은 2026–27 지원 주기 기준이므로 2028년 규정을 다시 확인해야 합니다.",
+        "sourceIds": ["audit-penn-testing"]
+      },
+      "satRange": null,
+      "entry": {
+        "program": "History, B.A.",
+        "programKo": "역사학 B.A.",
+        "unit": "College of Arts and Sciences",
+        "unitKo": "문리대 (College of Arts and Sciences)",
+        "easierMajorVerified": false,
+        "text": "Applicants choose an undergraduate school. College of Arts and Sciences students declare their major by the end of sophomore year; History B.A. is offered. No easier-major claim is verified.",
+        "textKo": "지원 시 단과대학을 선택합니다. 문리대는 2학년 말까지 전공을 선택하며 역사학 B.A.를 운영합니다. 입학이 더 쉬운 전공이라는 근거는 없습니다.",
+        "sourceIds": ["audit-penn-program", "audit-penn-entry"]
+      },
+      "applicantScope": {
+        "text": "International students use the same first-year application framework; check the current English-proficiency questionnaire and requirements. Citizenship does not establish an Ontario GPA equivalence.",
+        "textKo": "국제학생도 신입학 지원 절차를 따릅니다. 현행 영어 능력 질문지와 증빙 요건을 확인해야 합니다. 국적만으로 온타리오 성적의 미국 GPA 환산값이 정해지지 않습니다.",
+        "sourceIds": [
+          "audit-penn-academic",
+          "audit-penn-international",
+          "audit-penn-counselors-2026"
+        ]
+      },
+      "sources": [
+        {
+          "id": "audit-penn-testing",
+          "title": "Testing requirements and hardship waiver",
+          "url": "https://admissions.upenn.edu/how-to-apply/preparing-your-application/testing",
+          "publisher": "University of Pennsylvania",
+          "verified": "2026-10-22",
+          "cycle": "Current page checked 2026-10-22; actual Fall 2028 cycle must be rechecked"
+        },
+        {
+          "id": "audit-penn-academic",
+          "title": "First-year application requirements: school records",
+          "url": "https://admissions.upenn.edu/how-to-apply/first-year-applicants/application-requirements",
+          "publisher": "University of Pennsylvania",
+          "verified": "2026-10-22",
+          "cycle": "Current page checked 2026-10-22; actual Fall 2028 cycle must be rechecked"
+        },
+        {
+          "id": "audit-penn-program",
+          "title": "History B.A. 2026–27 catalog",
+          "url": "https://catalog.upenn.edu/undergraduate/programs/history-general-history-ba/",
+          "publisher": "University of Pennsylvania",
+          "verified": "2026-10-22",
+          "cycle": "Current page checked 2026-10-22; actual Fall 2028 cycle must be rechecked"
+        },
+        {
+          "id": "audit-penn-entry",
+          "title": "Majors and minors: school choice and declaration",
+          "url": "https://admissions.upenn.edu/academics/exploring-academics/majors-minors",
+          "publisher": "University of Pennsylvania",
+          "verified": "2026-10-22",
+          "cycle": "Current page checked 2026-10-22; actual Fall 2028 cycle must be rechecked"
+        }
+      ]
+    },
+    {
+      "id": "dartmouth",
+      "name": "Dartmouth College",
+      "nameKo": "다트머스 칼리지",
+      "state": "New Hampshire",
+      "city": "Hanover",
+      "type": "Private",
+      "rank": {
+        "edition": "2026",
+        "value": null,
+        "sourceIds": []
+      },
+      "ontario": {
+        "minimum": null,
+        "basis": "No Ontario percentage admission cutoff verified. School records are reviewed in context; this is not a numerical eligibility rule.",
+        "basisKo": "확인된 온타리오 백분율 합격선은 없습니다. 성적표와 학교 환경을 검토해야 하며 내신 구간 배치는 공식 지원 요건이 아닙니다.",
+        "sourceIds": ["audit-dartmouth-academic"]
+      },
+      "academic": {
+        "text": "International applications undergo holistic individual review of transcripts, tests, recommendations, essays and activities within the applicant’s school and home context.",
+        "textKo": "국제학생도 성적표·시험·추천서·에세이·활동과 학교·가정 환경을 함께 종합 심사합니다.",
+        "sourceIds": ["audit-dartmouth-academic"]
+      },
+      "testing": {
+        "policy": "required",
+        "text": "Testing is required. Students attending high school outside the U.S. may use SAT/ACT, three AP exams, predicted/final full IB Diploma results, A-levels or equivalent national exams under the specified rules. An Ontario percentage average alone is not one of the listed testing alternatives.",
+        "textKo": "시험 증빙 필수입니다. 미국 밖 고교 재학생은 SAT/ACT 외에도 AP 3과목, IB 디플로마·A-level 예상/최종 성적, 동등 국가시험 등 공식 규정의 대체 수단을 쓸 수 있습니다. 온타리오 내신 평균만으로 이 시험 요건이 충족되지는 않습니다.",
+        "sourceIds": ["audit-dartmouth-testing"]
+      },
+      "satRange": null,
+      "entry": {
+        "program": "History, A.B.",
+        "programKo": "역사학 A.B.",
+        "unit": "Undergraduate Arts and Sciences",
+        "unitKo": "학부 인문·과학 과정",
+        "easierMajorVerified": false,
+        "text": "History is offered as an undergraduate major, declared after enrollment with an advisor-approved plan. No evidence verifies History as an easier first-year admission route.",
+        "textKo": "역사학 학부 전공을 운영하며 입학 후 지도교수의 승인을 받아 전공 계획을 제출합니다. 역사학이 더 쉬운 신입학 경로라는 근거는 없습니다.",
+        "sourceIds": ["audit-dartmouth-program", "audit-dartmouth-entry"]
+      },
+      "applicantScope": {
+        "text": "Current international guidance applies the same individualized process. If English is not the first language and instruction has not been in English for at least two years, a language proficiency exam is required.",
+        "textKo": "국제학생도 개별 종합 심사를 적용합니다. 영어가 모국어가 아니고 영어 수업 이력이 2년 미만이면 별도 영어 공인시험이 필요합니다.",
+        "sourceIds": ["audit-dartmouth-academic", "audit-dartmouth-entry"]
+      },
+      "sources": [
+        {
+          "id": "audit-dartmouth-testing",
+          "title": "Testing options for schools outside the United States",
+          "url": "https://admissions.dartmouth.edu/apply/testing-policy",
+          "publisher": "Dartmouth College",
+          "verified": "2026-10-22",
+          "cycle": "Current page checked 2026-10-22; actual Fall 2028 cycle must be rechecked"
+        },
+        {
+          "id": "audit-dartmouth-academic",
+          "title": "International students: holistic review",
+          "url": "https://admissions.dartmouth.edu/glossary-term/international-students",
+          "publisher": "Dartmouth College",
+          "verified": "2026-10-22",
+          "cycle": "Current page checked 2026-10-22; actual Fall 2028 cycle must be rechecked"
+        },
+        {
+          "id": "audit-dartmouth-program",
+          "title": "History major declaration",
+          "url": "https://history.dartmouth.edu/undergraduate/how-declare-major-or-minor-history",
+          "publisher": "Dartmouth College",
+          "verified": "2026-10-22",
+          "cycle": "Current page checked 2026-10-22; actual Fall 2028 cycle must be rechecked"
+        },
+        {
+          "id": "audit-dartmouth-entry",
+          "title": "Apply to Dartmouth: international application components",
+          "url": "https://admissions.dartmouth.edu/apply-dartmouth",
+          "publisher": "Dartmouth College",
+          "verified": "2026-10-22",
+          "cycle": "Current page checked 2026-10-22; actual Fall 2028 cycle must be rechecked"
+        }
+      ]
+    },
+    {
+      "id": "cornell",
+      "name": "Cornell University",
+      "nameKo": "코넬 대학교",
+      "state": "New York",
+      "city": "Ithaca",
+      "type": "Private",
+      "rank": {
+        "edition": "2026",
+        "value": null,
+        "sourceIds": []
+      },
+      "ontario": {
+        "minimum": null,
+        "basis": "No Ontario percentage admission cutoff verified. School records are reviewed in context; this is not a numerical eligibility rule.",
+        "basisKo": "확인된 온타리오 백분율 합격선은 없습니다. 성적표와 학교 환경을 검토해야 하며 내신 구간 배치는 공식 지원 요건이 아닙니다.",
+        "sourceIds": ["audit-cornell-academic"]
+      },
+      "academic": {
+        "text": "Arts and Sciences requires four English, three mathematics (including precalculus), three science and three units of one foreign language; heritage-language exceptions are described. Transcripts, midyear report, recommendations and the writing supplement are reviewed.",
+        "textKo": "문리대는 영어 4단위·수학 3단위(미적분 전 단계 포함)·과학 3단위·한 외국어 3단위 등을 요구하며 계승어 예외 규정을 안내합니다. 성적표·중간 성적·추천서·추가 에세이를 심사합니다.",
+        "sourceIds": ["audit-cornell-academic"]
+      },
+      "testing": {
+        "policy": "required",
+        "text": "SAT or ACT is required for applicants to all undergraduate colleges seeking Fall 2026 entry or later. The former college-specific test-free and optional policies must not be applied to Fall 2028.",
+        "textKo": "2026년 가을 이후 입학하는 모든 학부 단과대학 지원자는 SAT 또는 ACT 필수입니다. 과거 단과대학별 시험 미반영·선택 제출 규정을 2028년에 적용해서는 안 됩니다.",
+        "sourceIds": ["audit-cornell-testing"]
+      },
+      "satRange": null,
+      "entry": {
+        "program": "Sociology, B.A.",
+        "programKo": "사회학 B.A.",
+        "unit": "College of Arts and Sciences",
+        "unitKo": "문리대 (College of Arts and Sciences)",
+        "easierMajorVerified": false,
+        "text": "Sociology is an Arts and Sciences major. Applicants choose a Cornell college and must meet its subject prerequisites. Sociology is not verified to be the easiest major or a guaranteed path to changing colleges.",
+        "textKo": "사회학은 문리대 전공입니다. 지원 시 단과대학을 선택하고 해당 고교 필수 과목을 충족해야 합니다. 가장 쉬운 학과나 타 단과대학 전과를 보장하는 경로라는 근거는 없습니다.",
+        "sourceIds": ["audit-cornell-program", "audit-cornell-entry"]
+      },
+      "applicantScope": {
+        "text": "International educational records should cover at least three years, with subjects and marks, relevant external exams and any required predicted leaving-exam marks. School-specific requirements need checking against the Ontario transcript.",
+        "textKo": "국제학생은 최소 3년간 과목과 점수를 포함한 학교 성적표, 해당 외부시험·졸업시험 예상 성적 등을 제출합니다. 온타리오 성적표로 단과대학별 필수 과목 충족 여부를 별도 확인해야 합니다.",
+        "sourceIds": ["audit-cornell-records"]
+      },
+      "sources": [
+        {
+          "id": "audit-cornell-testing",
+          "title": "SAT/ACT required for Fall 2026 and beyond",
+          "url": "https://faq.enrollment.cornell.edu/kb/article/1-does-cornell-university-require-the-sat-or-act/",
+          "publisher": "Cornell University",
+          "verified": "2026-10-22",
+          "cycle": "Current page checked 2026-10-22; actual Fall 2028 cycle must be rechecked"
+        },
+        {
+          "id": "audit-cornell-academic",
+          "title": "Arts and Sciences first-year requirements",
+          "url": "https://faq.enrollment.cornell.edu/kb/article/121-what-are-the-college-of-arts-and-sciences-admissions-requirements/",
+          "publisher": "Cornell University",
+          "verified": "2026-10-22",
+          "cycle": "Current page checked 2026-10-22; actual Fall 2028 cycle must be rechecked"
+        },
+        {
+          "id": "audit-cornell-program",
+          "title": "Undergraduate Sociology major",
+          "url": "https://sociology.cornell.edu/major",
+          "publisher": "Cornell University",
+          "verified": "2026-10-22",
+          "cycle": "Current page checked 2026-10-22; actual Fall 2028 cycle must be rechecked"
+        },
+        {
+          "id": "audit-cornell-entry",
+          "title": "First-year applicants: select a college",
+          "url": "https://admissions.cornell.edu/how-to-apply/first-year-applicants",
+          "publisher": "Cornell University",
+          "verified": "2026-10-22",
+          "cycle": "Current page checked 2026-10-22; actual Fall 2028 cycle must be rechecked"
+        }
+      ]
+    },
+    {
+      "id": "mit",
+      "name": "Massachusetts Institute of Technology",
+      "nameKo": "매사추세츠 공과대학교 (MIT)",
+      "state": "Massachusetts",
+      "city": "Cambridge",
+      "type": "Private",
+      "rank": {
+        "edition": "2026",
+        "value": null,
+        "sourceIds": []
+      },
+      "ontario": {
+        "minimum": null,
+        "basis": "No Ontario percentage cutoff verified. MIT reviews international transcripts within educational context.",
+        "basisKo": "확인된 온타리오 백분율 합격선은 없습니다. 국제 성적표를 교육과정 맥락에서 심사합니다.",
+        "sourceIds": ["audit-mit-international"]
+      },
+      "academic": {
+        "text": "The international transcript should include three years of grades and applicable external examinations. Strong mathematics and science preparation remains important even for students interested in History.",
+        "textKo": "국제학생은 3년간 성적과 해당 외부시험 결과를 제출합니다. 역사학 희망자도 수학·과학 준비가 중요합니다.",
+        "sourceIds": ["audit-mit-international", "audit-mit-preparation"]
+      },
+      "testing": {
+        "policy": "required",
+        "text": "The current policy requires SAT or ACT for first-year applicants. MIT states it has no cutoff or recommended SAT/ACT score; English-proficiency rules are separate. Recheck Fall 2028.",
+        "textKo": "현행 신입학은 SAT 또는 ACT 필수입니다. 공식 SAT/ACT 최저점·권장 점수는 없으며 영어 능력 증빙은 별도입니다. 2028년 규정은 다시 확인해야 합니다.",
+        "sourceIds": ["audit-mit-testing"]
+      },
+      "satRange": null,
+      "entry": {
+        "program": "History, S.B. (Course 21H)",
+        "programKo": "역사학 S.B. (Course 21H)",
+        "unit": "School of Humanities, Arts, and Social Sciences; general MIT admission",
+        "unitKo": "인문·예술·사회과학대학 · MIT 전체 신입학 선발",
+        "easierMajorVerified": false,
+        "text": "MIT offers a Bachelor of Science in History. All students apply for general admission and choose a major after the first year; the stated course of interest has no admission impact. History therefore provides no verified easier admission route.",
+        "textKo": "역사학 학사(S.B.)를 운영합니다. 모든 학생은 대학 전체 선발로 입학해 1학년 말에 전공을 선택하며 지원서의 관심 전공은 입학 결정에 영향을 주지 않는다고 명시합니다. 역사학을 통한 더 쉬운 입학 경로는 아닙니다.",
+        "sourceIds": ["audit-mit-major", "audit-mit-history"]
+      },
+      "applicantScope": {
+        "text": "MIT considers students without U.S. citizenship or permanent residency international, regardless of where they attend school. A Korean citizen at an Ontario school follows this international route.",
+        "textKo": "미국 시민권·영주권이 없으면 재학 국가와 무관하게 국제학생으로 분류합니다. 온타리오 고교의 한국 시민권자는 이 국제학생 절차를 따릅니다.",
+        "sourceIds": ["audit-mit-international"]
+      },
+      "sources": [
+        {
+          "id": "audit-mit-international",
+          "title": "International first-year applicants",
+          "url": "https://mitadmissions.org/apply/firstyear/international/",
+          "publisher": "Massachusetts Institute of Technology",
+          "verified": "2026-10-22",
+          "cycle": "Current policy checked 2026-10-22; Fall 2028 cycle must be rechecked"
+        },
+        {
+          "id": "audit-mit-testing",
+          "title": "Tests and scores",
+          "url": "https://mitadmissions.org/apply/firstyear/tests-scores/",
+          "publisher": "Massachusetts Institute of Technology",
+          "verified": "2026-10-22",
+          "cycle": "Current policy checked 2026-10-22; Fall 2028 cycle must be rechecked"
+        },
+        {
+          "id": "audit-mit-major",
+          "title": "Major choice has no admission impact",
+          "url": "https://mitadmissions.org/help/faq/majors/",
+          "publisher": "Massachusetts Institute of Technology",
+          "verified": "2026-10-22",
+          "cycle": "Current policy checked 2026-10-22; Fall 2028 cycle must be rechecked"
+        },
+        {
+          "id": "audit-mit-history",
+          "title": "Bachelor of Science in History (Course 21H)",
+          "url": "https://catalog.mit.edu/degree-charts/history-course-21h/",
+          "publisher": "Massachusetts Institute of Technology",
+          "verified": "2026-10-22",
+          "cycle": "Current policy checked 2026-10-22; Fall 2028 cycle must be rechecked"
+        },
+        {
+          "id": "audit-mit-preparation",
+          "title": "Academic preparation and math/science foundation",
+          "url": "https://mitadmissions.org/apply/prepare/foundations/",
+          "publisher": "Massachusetts Institute of Technology",
+          "verified": "2026-10-22",
+          "cycle": "Current policy checked 2026-10-22; Fall 2028 cycle must be rechecked"
+        }
+      ]
+    }
+  ],
+  "updates": [
+    {
+      "id": "southern-california",
+      "testing": {
+        "policy": "optional",
+        "text": "Test optional for Fall 2027 entry; Fall 2028 is not confirmed by this announcement. International English-proficiency requirements remain separate.",
+        "textKo": "2027년 가을 입학 선택 제출. 이 발표에서 2028년 가을 규정은 확인되지 않았습니다. 국제학생 영어 능력 증빙은 별도로 확인해야 합니다.",
+        "sourceIds": ["audit-usc-2027"]
+      }
+    },
+    {
+      "id": "rutgers-new-brunswick",
+      "testing": {
+        "policy": "optional",
+        "text": "Rutgers–New Brunswick is test optional through 2027. Fall 2028 has not been confirmed. Do not apply Newark’s test-blind policy to New Brunswick.",
+        "textKo": "뉴브런즈윅은 2027년까지 선택 제출입니다. 2028년 입학 규정은 미확정입니다. 뉴어크 캠퍼스의 시험 미반영 규정을 뉴브런즈윅에 적용하면 안 됩니다.",
+        "sourceIds": ["audit-rutgers-testing"]
+      }
+    },
+    {
+      "id": "florida-state",
+      "applicantScope": {
+        "text": "The current first-year application page directs international applicants to Regular Decision. Early Decision is for domestic students and Early Action is for Florida residents. The ordinary international applicant still needs the required test, academic and English documentation.",
+        "textKo": "현행 신입학 안내는 국제학생에게 Regular Decision을 안내합니다. Early Decision은 미국 국내학생, Early Action은 플로리다 거주자 대상입니다. 일반 국제학생은 시험·학업·영어 증빙 요건도 충족해야 합니다.",
+        "sourceIds": ["audit-review-florida-state"]
+      }
+    }
+  ],
+  "sources": [
+    {
+      "id": "audit-princeton-testing",
+      "title": "Standardized testing: Fall 2028 requirement",
+      "url": "https://admission.princeton.edu/apply/standardized-testing",
+      "publisher": "Princeton University",
+      "verified": "2026-10-22",
+      "cycle": "Current page checked 2026-10-22; actual Fall 2028 cycle must be rechecked"
+    },
+    {
+      "id": "audit-princeton-academic",
+      "title": "International students: academic record and graded written paper",
+      "url": "https://admission.princeton.edu/apply/international-students",
+      "publisher": "Princeton University",
+      "verified": "2026-10-22",
+      "cycle": "Current page checked 2026-10-22; actual Fall 2028 cycle must be rechecked"
+    },
+    {
+      "id": "audit-princeton-program",
+      "title": "Degrees and departments; university-level admission",
+      "url": "https://admission.princeton.edu/academics/degrees-departments",
+      "publisher": "Princeton University",
+      "verified": "2026-10-22",
+      "cycle": "Current page checked 2026-10-22; actual Fall 2028 cycle must be rechecked"
+    },
+    {
+      "id": "audit-yale-testing",
+      "title": "Current standardized testing policy",
+      "url": "https://admissions.yale.edu/standardized-testing",
+      "publisher": "Yale University",
+      "verified": "2026-10-22",
+      "cycle": "Current page checked 2026-10-22; actual Fall 2028 cycle must be rechecked"
+    },
+    {
+      "id": "audit-yale-academic",
+      "title": "International students and language requirements",
+      "url": "https://admissions.yale.edu/international",
+      "publisher": "Yale University",
+      "verified": "2026-10-22",
+      "cycle": "Current page checked 2026-10-22; actual Fall 2028 cycle must be rechecked"
+    },
+    {
+      "id": "audit-yale-program",
+      "title": "Majors and academic programs",
+      "url": "https://admissions.yale.edu/majors",
+      "publisher": "Yale University",
+      "verified": "2026-10-22",
+      "cycle": "Current page checked 2026-10-22; actual Fall 2028 cycle must be rechecked"
+    },
+    {
+      "id": "audit-yale-entry",
+      "title": "September 2026 admissions guidance: academic strength and major choice",
+      "url": "https://admissions.yale.edu/posts/2026-09-01-what-yale-looks-for-part-1-academic-strength",
+      "publisher": "Yale University",
+      "verified": "2026-10-22",
+      "cycle": "Current page checked 2026-10-22; actual Fall 2028 cycle must be rechecked"
+    },
+    {
+      "id": "audit-stanford-testing",
+      "title": "First-year standardized testing",
+      "url": "https://admission.stanford.edu/apply/first-year/testing.html",
+      "publisher": "Stanford University",
+      "verified": "2026-10-22",
+      "cycle": "Current page checked 2026-10-22; actual Fall 2028 cycle must be rechecked"
+    },
+    {
+      "id": "audit-stanford-academic",
+      "title": "International applicants: credentials and grading",
+      "url": "https://admission.stanford.edu/apply/international/",
+      "publisher": "Stanford University",
+      "verified": "2026-10-22",
+      "cycle": "Current page checked 2026-10-22; actual Fall 2028 cycle must be rechecked"
+    },
+    {
+      "id": "audit-stanford-program",
+      "title": "History B.A. major",
+      "url": "https://history.stanford.edu/why-study-history/major",
+      "publisher": "Stanford University",
+      "verified": "2026-10-22",
+      "cycle": "Current page checked 2026-10-22; actual Fall 2028 cycle must be rechecked"
+    },
+    {
+      "id": "audit-stanford-entry",
+      "title": "Application and essays: apply to the university",
+      "url": "https://admission.stanford.edu/apply/first-year/apply.html",
+      "publisher": "Stanford University",
+      "verified": "2026-10-22",
+      "cycle": "Current page checked 2026-10-22; actual Fall 2028 cycle must be rechecked"
+    },
+    {
+      "id": "audit-columbia-testing",
+      "title": "June 2026 announcement: testing required for Fall 2028",
+      "url": "https://communications.news.columbia.edu/news/update-columbia-college-and-columbia-engineering-testing-policy",
+      "publisher": "Columbia University",
+      "verified": "2026-10-22",
+      "cycle": "Current page checked 2026-10-22; actual Fall 2028 cycle must be rechecked"
+    },
+    {
+      "id": "audit-columbia-academic",
+      "title": "University testing announcement and whole-person review",
+      "url": "https://communications.news.columbia.edu/news/update-columbia-college-and-columbia-engineering-testing-policy",
+      "publisher": "Columbia University",
+      "verified": "2026-10-22",
+      "cycle": "Current page checked 2026-10-22; actual Fall 2028 cycle must be rechecked"
+    },
+    {
+      "id": "audit-columbia-program",
+      "title": "Columbia College History major and declaration",
+      "url": "https://history.columbia.edu/undergraduate/undergraduate-requirements/",
+      "publisher": "Columbia University",
+      "verified": "2026-10-22",
+      "cycle": "Current page checked 2026-10-22; actual Fall 2028 cycle must be rechecked"
+    },
+    {
+      "id": "audit-brown-testing",
+      "title": "Standardized tests",
+      "url": "https://admission.brown.edu/first-year/standardized-tests",
+      "publisher": "Brown University",
+      "verified": "2026-10-22",
+      "cycle": "Current page checked 2026-10-22; actual Fall 2028 cycle must be rechecked"
+    },
+    {
+      "id": "audit-brown-academic",
+      "title": "International applicants FAQ",
+      "url": "https://admission.brown.edu/ask/international-applicants",
+      "publisher": "Brown University",
+      "verified": "2026-10-22",
+      "cycle": "Current page checked 2026-10-22; actual Fall 2028 cycle must be rechecked"
+    },
+    {
+      "id": "audit-brown-program",
+      "title": "History undergraduate concentration",
+      "url": "https://history.brown.edu/undergraduate/concentration",
+      "publisher": "Brown University",
+      "verified": "2026-10-22",
+      "cycle": "Current page checked 2026-10-22; actual Fall 2028 cycle must be rechecked"
+    },
+    {
+      "id": "audit-brown-entry",
+      "title": "Selecting academic interests: no concentration quotas",
+      "url": "https://admission.brown.edu/first-year/selecting-degree-programs-academic-fields",
+      "publisher": "Brown University",
+      "verified": "2026-10-22",
+      "cycle": "Current page checked 2026-10-22; actual Fall 2028 cycle must be rechecked"
+    },
+    {
+      "id": "audit-penn-testing",
+      "title": "Testing requirements and hardship waiver",
+      "url": "https://admissions.upenn.edu/how-to-apply/preparing-your-application/testing",
+      "publisher": "University of Pennsylvania",
+      "verified": "2026-10-22",
+      "cycle": "Current page checked 2026-10-22; actual Fall 2028 cycle must be rechecked"
+    },
+    {
+      "id": "audit-penn-academic",
+      "title": "First-year application requirements: school records",
+      "url": "https://admissions.upenn.edu/how-to-apply/first-year-applicants/application-requirements",
+      "publisher": "University of Pennsylvania",
+      "verified": "2026-10-22",
+      "cycle": "Current page checked 2026-10-22; actual Fall 2028 cycle must be rechecked"
+    },
+    {
+      "id": "audit-penn-program",
+      "title": "History B.A. 2026–27 catalog",
+      "url": "https://catalog.upenn.edu/undergraduate/programs/history-general-history-ba/",
+      "publisher": "University of Pennsylvania",
+      "verified": "2026-10-22",
+      "cycle": "Current page checked 2026-10-22; actual Fall 2028 cycle must be rechecked"
+    },
+    {
+      "id": "audit-penn-entry",
+      "title": "Majors and minors: school choice and declaration",
+      "url": "https://admissions.upenn.edu/academics/exploring-academics/majors-minors",
+      "publisher": "University of Pennsylvania",
+      "verified": "2026-10-22",
+      "cycle": "Current page checked 2026-10-22; actual Fall 2028 cycle must be rechecked"
+    },
+    {
+      "id": "audit-dartmouth-testing",
+      "title": "Testing options for schools outside the United States",
+      "url": "https://admissions.dartmouth.edu/apply/testing-policy",
+      "publisher": "Dartmouth College",
+      "verified": "2026-10-22",
+      "cycle": "Current page checked 2026-10-22; actual Fall 2028 cycle must be rechecked"
+    },
+    {
+      "id": "audit-dartmouth-academic",
+      "title": "International students: holistic review",
+      "url": "https://admissions.dartmouth.edu/glossary-term/international-students",
+      "publisher": "Dartmouth College",
+      "verified": "2026-10-22",
+      "cycle": "Current page checked 2026-10-22; actual Fall 2028 cycle must be rechecked"
+    },
+    {
+      "id": "audit-dartmouth-program",
+      "title": "History major declaration",
+      "url": "https://history.dartmouth.edu/undergraduate/how-declare-major-or-minor-history",
+      "publisher": "Dartmouth College",
+      "verified": "2026-10-22",
+      "cycle": "Current page checked 2026-10-22; actual Fall 2028 cycle must be rechecked"
+    },
+    {
+      "id": "audit-dartmouth-entry",
+      "title": "Apply to Dartmouth: international application components",
+      "url": "https://admissions.dartmouth.edu/apply-dartmouth",
+      "publisher": "Dartmouth College",
+      "verified": "2026-10-22",
+      "cycle": "Current page checked 2026-10-22; actual Fall 2028 cycle must be rechecked"
+    },
+    {
+      "id": "audit-cornell-testing",
+      "title": "SAT/ACT required for Fall 2026 and beyond",
+      "url": "https://faq.enrollment.cornell.edu/kb/article/1-does-cornell-university-require-the-sat-or-act/",
+      "publisher": "Cornell University",
+      "verified": "2026-10-22",
+      "cycle": "Current page checked 2026-10-22; actual Fall 2028 cycle must be rechecked"
+    },
+    {
+      "id": "audit-cornell-academic",
+      "title": "Arts and Sciences first-year requirements",
+      "url": "https://faq.enrollment.cornell.edu/kb/article/121-what-are-the-college-of-arts-and-sciences-admissions-requirements/",
+      "publisher": "Cornell University",
+      "verified": "2026-10-22",
+      "cycle": "Current page checked 2026-10-22; actual Fall 2028 cycle must be rechecked"
+    },
+    {
+      "id": "audit-cornell-program",
+      "title": "Undergraduate Sociology major",
+      "url": "https://sociology.cornell.edu/major",
+      "publisher": "Cornell University",
+      "verified": "2026-10-22",
+      "cycle": "Current page checked 2026-10-22; actual Fall 2028 cycle must be rechecked"
+    },
+    {
+      "id": "audit-cornell-entry",
+      "title": "First-year applicants: select a college",
+      "url": "https://admissions.cornell.edu/how-to-apply/first-year-applicants",
+      "publisher": "Cornell University",
+      "verified": "2026-10-22",
+      "cycle": "Current page checked 2026-10-22; actual Fall 2028 cycle must be rechecked"
+    },
+    {
+      "id": "audit-yale-2026-change",
+      "title": "May 2026: Yale returns to ACT/SAT requirement",
+      "url": "https://news.yale.edu/2026/05/27/undergraduate-admissions-updates-testing-policy",
+      "publisher": "Yale University",
+      "verified": "2026-10-22",
+      "cycle": "Beginning with next cycle after May 27, 2026"
+    },
+    {
+      "id": "audit-cornell-records",
+      "title": "International academic records",
+      "url": "https://faq.enrollment.cornell.edu/kb/article/305-what-educational-records-are-required-for-international-students/",
+      "publisher": "Cornell University",
+      "verified": "2026-10-22",
+      "cycle": "Current page checked 2026-10-22; actual Fall 2028 cycle must be rechecked"
+    },
+    {
+      "id": "audit-penn-international",
+      "title": "International applicants",
+      "url": "https://admissions.upenn.edu/how-to-apply/international-applicants",
+      "publisher": "University of Pennsylvania",
+      "verified": "2026-10-22",
+      "cycle": "Current page checked 2026-10-22; actual Fall 2028 cycle must be rechecked"
+    },
+    {
+      "id": "audit-usc-2027",
+      "title": "Dornsife first-year application and Fall 2027 test-optional policy",
+      "url": "https://dornsife.usc.edu/admission/apply/",
+      "publisher": "University of Southern California",
+      "verified": "2026-10-22",
+      "cycle": "Fall 2027"
+    },
+    {
+      "id": "audit-rutgers-testing",
+      "title": "First-year standardized testing by campus",
+      "url": "https://admissions.rutgers.edu/apply/first-year-applicants",
+      "publisher": "Rutgers University",
+      "verified": "2026-10-22",
+      "cycle": "Through 2027; Fall 2028 recheck"
+    },
+    {
+      "id": "audit-review-michigan-ann-arbor",
+      "title": "Recheck: michigan-ann-arbor",
+      "url": "https://admissions.umich.edu/apply/first-year-applicants/requirements-deadlines/application-changes",
+      "publisher": "michigan-ann-arbor",
+      "verified": "2026-10-22",
+      "cycle": "Current page checked 2026-10-22; actual Fall 2028 cycle must be rechecked"
+    },
+    {
+      "id": "audit-review-nyu",
+      "title": "Recheck: nyu",
+      "url": "https://nyuad.nyu.edu/en/apply/undergraduate/apply/entry-requirements.html",
+      "publisher": "nyu",
+      "verified": "2026-10-22",
+      "cycle": "Current page checked 2026-10-22; actual Fall 2028 cycle must be rechecked"
+    },
+    {
+      "id": "audit-review-wisconsin-madison",
+      "title": "Recheck: wisconsin-madison",
+      "url": "https://admissions.wisc.edu/act_sat_faq/",
+      "publisher": "wisconsin-madison",
+      "verified": "2026-10-22",
+      "cycle": "Current page checked 2026-10-22; actual Fall 2028 cycle must be rechecked"
+    },
+    {
+      "id": "audit-review-ohio-state-columbus",
+      "title": "Recheck: ohio-state-columbus",
+      "url": "https://undergrad.osu.edu/apply/freshmen-columbus/apply-step-by-step",
+      "publisher": "ohio-state-columbus",
+      "verified": "2026-10-22",
+      "cycle": "Current page checked 2026-10-22; actual Fall 2028 cycle must be rechecked"
+    },
+    {
+      "id": "audit-review-purdue-west-lafayette",
+      "title": "Recheck: purdue-west-lafayette",
+      "url": "https://www.admissions.purdue.edu/apply/criteriafreshmen.php",
+      "publisher": "purdue-west-lafayette",
+      "verified": "2026-10-22",
+      "cycle": "Current page checked 2026-10-22; actual Fall 2028 cycle must be rechecked"
+    },
+    {
+      "id": "audit-review-minnesota-twin-cities",
+      "title": "Recheck: minnesota-twin-cities",
+      "url": "https://admissions.tc.umn.edu/admissions/freshman-admission/act-sat-information",
+      "publisher": "minnesota-twin-cities",
+      "verified": "2026-10-22",
+      "cycle": "Current page checked 2026-10-22; actual Fall 2028 cycle must be rechecked"
+    },
+    {
+      "id": "audit-review-maryland-college-park",
+      "title": "Recheck: maryland-college-park",
+      "url": "https://admissions.umd.edu/apply/freshman-application-faqs",
+      "publisher": "maryland-college-park",
+      "verified": "2026-10-22",
+      "cycle": "Current page checked 2026-10-22; actual Fall 2028 cycle must be rechecked"
+    },
+    {
+      "id": "audit-review-florida",
+      "title": "Recheck: florida",
+      "url": "https://admissions.ufl.edu/apply/freshman/requirements",
+      "publisher": "florida",
+      "verified": "2026-10-22",
+      "cycle": "Current page checked 2026-10-22; actual Fall 2028 cycle must be rechecked"
+    },
+    {
+      "id": "audit-review-florida-state",
+      "title": "Recheck: florida-state",
+      "url": "https://admissions.fsu.edu/first-year/apply",
+      "publisher": "florida-state",
+      "verified": "2026-10-22",
+      "cycle": "Current page checked 2026-10-22; actual Fall 2028 cycle must be rechecked"
+    },
+    {
+      "id": "audit-review-texas-austin",
+      "title": "Recheck: texas-austin",
+      "url": "https://admissions.utexas.edu/apply/freshman/",
+      "publisher": "texas-austin",
+      "verified": "2026-10-22",
+      "cycle": "Current page checked 2026-10-22; actual Fall 2028 cycle must be rechecked"
+    },
+    {
+      "id": "audit-review-southern-california",
+      "title": "Recheck: southern-california",
+      "url": "https://dornsife.usc.edu/admission/apply/",
+      "publisher": "southern-california",
+      "verified": "2026-10-22",
+      "cycle": "Current page checked 2026-10-22; actual Fall 2028 cycle must be rechecked"
+    },
+    {
+      "id": "audit-review-rutgers-new-brunswick",
+      "title": "Recheck: rutgers-new-brunswick",
+      "url": "https://admissions.rutgers.edu/apply/first-year-applicants",
+      "publisher": "rutgers-new-brunswick",
+      "verified": "2026-10-22",
+      "cycle": "Current page checked 2026-10-22; actual Fall 2028 cycle must be rechecked"
+    },
+    {
+      "id": "audit-mit-international",
+      "title": "International first-year applicants",
+      "url": "https://mitadmissions.org/apply/firstyear/international/",
+      "publisher": "Massachusetts Institute of Technology",
+      "verified": "2026-10-22",
+      "cycle": "Current policy checked 2026-10-22; Fall 2028 cycle must be rechecked"
+    },
+    {
+      "id": "audit-mit-testing",
+      "title": "Tests and scores",
+      "url": "https://mitadmissions.org/apply/firstyear/tests-scores/",
+      "publisher": "Massachusetts Institute of Technology",
+      "verified": "2026-10-22",
+      "cycle": "Current policy checked 2026-10-22; Fall 2028 cycle must be rechecked"
+    },
+    {
+      "id": "audit-mit-major",
+      "title": "Major choice has no admission impact",
+      "url": "https://mitadmissions.org/help/faq/majors/",
+      "publisher": "Massachusetts Institute of Technology",
+      "verified": "2026-10-22",
+      "cycle": "Current policy checked 2026-10-22; Fall 2028 cycle must be rechecked"
+    },
+    {
+      "id": "audit-mit-history",
+      "title": "Bachelor of Science in History (Course 21H)",
+      "url": "https://catalog.mit.edu/degree-charts/history-course-21h/",
+      "publisher": "Massachusetts Institute of Technology",
+      "verified": "2026-10-22",
+      "cycle": "Current policy checked 2026-10-22; Fall 2028 cycle must be rechecked"
+    },
+    {
+      "id": "audit-mit-preparation",
+      "title": "Academic preparation and math/science foundation",
+      "url": "https://mitadmissions.org/apply/prepare/foundations/",
+      "publisher": "Massachusetts Institute of Technology",
+      "verified": "2026-10-22",
+      "cycle": "Current policy checked 2026-10-22; Fall 2028 cycle must be rechecked"
+    },
+    {
+      "id": "audit-penn-counselors-2026",
+      "title": "2026–27 application changes: English questionnaire",
+      "publisher": "University of Pennsylvania",
+      "url": "https://admissions.upenn.edu/supporting-your-student/counselors/about-the-application",
+      "verified": "2026-10-22",
+      "cycle": "2026–27 application cycle"
+    }
+  ],
+  "coverage": [
+    {
+      "id": "michigan-ann-arbor",
+      "checked": "2026-10-22",
+      "scope": "Current official first-year testing policy recheck; previously audited program/score cohort facts retained unless explicitly changed",
+      "status": "reviewed",
+      "finding": "Reconfirmed current optional policy for 2027 cycle; Fall 2028 not announced. Existing LSA transcript/major sources retained.",
+      "sourceIds": ["audit-review-michigan-ann-arbor"]
+    },
+    {
+      "id": "nyu",
+      "checked": "2026-10-22",
+      "scope": "Current official first-year testing policy recheck; previously audited program/score cohort facts retained unless explicitly changed",
+      "status": "reviewed",
+      "finding": "Abu Dhabi official page says NYU optional through 2027–28; New York page inaccessible and cross-campus scope not independently confirmed. Preserve New York unknown rather than transplant Abu Dhabi rule.",
+      "sourceIds": ["audit-review-nyu"]
+    },
+    {
+      "id": "wisconsin-madison",
+      "checked": "2026-10-22",
+      "scope": "Current official first-year testing policy recheck; previously audited program/score cohort facts retained unless explicitly changed",
+      "status": "reviewed",
+      "finding": "Dedicated FAQ explicitly optional through Spring 2028 and Fall 2028 undecided. System board policy says 2027–28 academic year but does not override explicit Fall 2028 uncertainty.",
+      "sourceIds": ["audit-review-wisconsin-madison"]
+    },
+    {
+      "id": "ohio-state-columbus",
+      "checked": "2026-10-22",
+      "scope": "Current official first-year testing policy recheck; previously audited program/score cohort facts retained unless explicitly changed",
+      "status": "reviewed",
+      "finding": "Current Columbus freshman SAT/ACT required, except applicants out of high school at least two years. Existing required classification retained.",
+      "sourceIds": ["audit-review-ohio-state-columbus"]
+    },
+    {
+      "id": "purdue-west-lafayette",
+      "checked": "2026-10-22",
+      "scope": "Current official first-year testing policy recheck; previously audited program/score cohort facts retained unless explicitly changed",
+      "status": "reviewed",
+      "finding": "Reconfirmed test-expected status and exceptional inability-to-test allowance; prior audited guide and Liberal Arts statistics retained. Legacy URL search content supports SAT/ACT; no removal of current guide CLT evidence.",
+      "sourceIds": ["audit-review-purdue-west-lafayette"]
+    },
+    {
+      "id": "minnesota-twin-cities",
+      "checked": "2026-10-22",
+      "scope": "Current official first-year testing policy recheck; previously audited program/score cohort facts retained unless explicitly changed",
+      "status": "reviewed",
+      "finding": "Dedicated ACT/SAT page says optional through Fall 2029, while overview pages still say 2027. Preserve latest dedicated page plus scope inconsistency already documented.",
+      "sourceIds": ["audit-review-minnesota-twin-cities"]
+    },
+    {
+      "id": "maryland-college-park",
+      "checked": "2026-10-22",
+      "scope": "Current official first-year testing policy recheck; previously audited program/score cohort facts retained unless explicitly changed",
+      "status": "reviewed",
+      "finding": "Official FAQ optional through Spring/Fall 2027; later cycles being assessed. Existing major-neutral university review preserved.",
+      "sourceIds": ["audit-review-maryland-college-park"]
+    },
+    {
+      "id": "florida",
+      "checked": "2026-10-22",
+      "scope": "Current official first-year testing policy recheck; previously audited program/score cohort facts retained unless explicitly changed",
+      "status": "reviewed",
+      "finding": "Current official freshman requirements require SAT, ACT or CLT. Minimum core GPA is an institutional calculation, not an Ontario conversion.",
+      "sourceIds": ["audit-review-florida"]
+    },
+    {
+      "id": "florida-state",
+      "checked": "2026-10-22",
+      "scope": "Current official first-year testing policy recheck; previously audited program/score cohort facts retained unless explicitly changed",
+      "status": "reviewed",
+      "finding": "Current application states international applicants should apply Regular Decision; Early Decision domestic only and Early Action Florida residents only. Add international route correction.",
+      "sourceIds": ["audit-review-florida-state"]
+    },
+    {
+      "id": "texas-austin",
+      "checked": "2026-10-22",
+      "scope": "Current official first-year testing policy recheck; previously audited program/score cohort facts retained unless explicitly changed",
+      "status": "reviewed",
+      "finding": "Official current freshman page accepts official SAT/ACT/CLT; primary major choice still matters. Retain sourced international rule.",
+      "sourceIds": ["audit-review-texas-austin"]
+    },
+    {
+      "id": "southern-california",
+      "checked": "2026-10-22",
+      "scope": "Current official first-year testing policy recheck; previously audited program/score cohort facts retained unless explicitly changed",
+      "status": "reviewed",
+      "finding": "Reconfirmed Fall 2027 optional, Fall 2028 unconfirmed. Existing Dornsife scope and aggregate LA/DC SAT cohort retained.",
+      "sourceIds": ["audit-review-southern-california"]
+    },
+    {
+      "id": "rutgers-new-brunswick",
+      "checked": "2026-10-22",
+      "scope": "Current official first-year testing policy recheck; previously audited program/score cohort facts retained unless explicitly changed",
+      "status": "reviewed",
+      "finding": "Explicit through-2027 optional policy for New Brunswick; Newark distinct test-blind status. Added scope clarification.",
+      "sourceIds": ["audit-review-rutgers-new-brunswick"]
+    }
+  ],
+  "limits": [
+    "Nine elite additions (Princeton, Yale, Stanford, Columbia, Brown, Penn, Dartmouth, Cornell, MIT); not an exhaustive review of every U.S. institution.",
+    "Testing policies directly rechecked for all 12 prior high-review records. Existing statistical distributions and program offerings retained from their prior same-date audits, not newly re-extracted in this bounded pass.",
+    "No numerical Ontario eligibility threshold, admission probability, easiest-major ranking or U.S./Korean recognition rank asserted.",
+    "Columbia undergraduate international page blocked (403); official announcement and History page verified, but Ontario-specific application-document details remain unverified."
+  ]
+}

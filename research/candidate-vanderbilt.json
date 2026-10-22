@@ -1,0 +1,102 @@
+{
+  "checked": "2026-10-22",
+  "schools": [
+    {
+      "id": "vanderbilt",
+      "name": "Vanderbilt University",
+      "nameKo": "밴더빌트 대학교",
+      "state": "Tennessee",
+      "city": "Nashville",
+      "type": "Private",
+      "rank": {
+        "edition": "2026",
+        "value": null,
+        "sourceIds": []
+      },
+      "ontario": {
+        "minimum": null,
+        "basis": "No official Ontario percentage admission cutoff verified; the complete high-school record is assessed holistically.",
+        "basisKo": "공식 온타리오 백분율 합격선은 확인되지 않았으며 전체 고교 성적표를 종합 심사합니다.",
+        "sourceIds": ["audit-vanderbilt-apply"]
+      },
+      "academic": {
+        "text": "Holistic review considers school achievement, course rigor, essays, recommendations and activities. The application requires an official transcript of all high-school classes and marks, a counselor recommendation and two academic teacher recommendations. Ontario average alone cannot establish admission.",
+        "textKo": "고교 성적·과목 난도·에세이·추천서·활동을 종합 심사합니다. 전체 고교 과목·점수의 공식 성적표, 상담 교사 추천서, 교과 교사 추천서 2부가 필요합니다. 온타리오 평균 하나로 합격 여부를 판정할 수 없습니다.",
+        "sourceIds": ["audit-vanderbilt-apply", "audit-vanderbilt-testing"]
+      },
+      "testing": {
+        "policy": "optional",
+        "text": "SAT/ACT is explicitly optional for Fall 2027 and Fall 2028, including international applicants; required for Fall 2029 onward. Applicants choose whether scores are considered. Vanderbilt says that submission choice does not advantage or disadvantage review. English-proficiency rules remain separate.",
+        "textKo": "국제학생을 포함하여 2027·2028년 가을 입학은 SAT/ACT 선택 제출, 2029년 가을부터는 필수입니다. 지원자가 시험 점수 심사 여부를 선택하며 학교는 그 선택 자체로 유불리가 없다고 명시합니다. 영어 능력 증빙은 별도입니다.",
+        "sourceIds": ["audit-vanderbilt-testing"]
+      },
+      "satRange": null,
+      "entry": {
+        "program": "History major",
+        "programKo": "역사학 전공",
+        "unit": "College of Arts and Science",
+        "unitKo": "문리대학",
+        "easierMajorVerified": false,
+        "text": "History is a verified undergraduate major. Arts and Science provides pre-major advising; major declaration is permitted after the second semester and required by the fourth. This academic structure does not establish a lower admission threshold for History or an easier route into Vanderbilt.",
+        "textKo": "공식 학과에서 역사학 학부 전공을 확인했습니다. 문리대학은 전공 선택 전 상담을 제공하며 2학기 이수 후 전공 신고가 가능하고 4학기까지 신고해야 합니다. 이 구조는 역사학의 낮은 입학 기준이나 대학에 더 쉽게 입학하는 경로를 입증하지 않습니다.",
+        "sourceIds": [
+          "audit-vanderbilt-history",
+          "audit-vanderbilt-declare",
+          "audit-vanderbilt-advising"
+        ]
+      },
+      "applicantScope": {
+        "text": "The Korean citizen uses international applicant requirements. English-test exemption can be based on English as first language or language of instruction, or SAT Reading/Writing above630; verify documented applicability. International first-year need-based aid review is need-aware. Full transcripts and English translations where applicable remain required.",
+        "textKo": "한국 국적자는 국제 지원자 요건을 적용합니다. 영어가 모국어·수업 언어인 경우 또는 SAT Reading/Writing 630 초과 등 영어 시험 면제 조건의 증빙 적용 여부를 확인해야 합니다. 국제 신입생 재정보조 심사는 재정 필요를 고려합니다. 전체 성적표와 해당 시 영어 번역도 필요합니다.",
+        "sourceIds": ["audit-vanderbilt-apply"]
+      },
+      "sources": [
+        {
+          "id": "audit-vanderbilt-testing",
+          "title": "Testing Policies",
+          "url": "https://admissions.vanderbilt.edu/apply/testing-policies/",
+          "publisher": "Vanderbilt University",
+          "verified": "2026-10-22",
+          "cycle": "Fall 2027 and Fall 2028 optional; Fall 2029 onward required"
+        },
+        {
+          "id": "audit-vanderbilt-apply",
+          "title": "Application Process: First-year — International Applicants",
+          "url": "https://admissions.vanderbilt.edu/apply/first-year-process/",
+          "publisher": "Vanderbilt University",
+          "verified": "2026-10-22",
+          "cycle": "Current official requirements; test policy explicitly covers Fall 2028"
+        },
+        {
+          "id": "audit-vanderbilt-history",
+          "title": "Majors and Minor — Department of History",
+          "url": "https://as.vanderbilt.edu/history/majors-minor/",
+          "publisher": "Vanderbilt University",
+          "verified": "2026-10-22",
+          "cycle": "Current official undergraduate program page"
+        },
+        {
+          "id": "audit-vanderbilt-declare",
+          "title": "Declaring Majors and Minors",
+          "url": "https://as.vanderbilt.edu/resources/undergraduate/declaring-majors-minors/",
+          "publisher": "Vanderbilt University",
+          "verified": "2026-10-22",
+          "cycle": "Current official College of Arts and Science policy"
+        },
+        {
+          "id": "audit-vanderbilt-advising",
+          "title": "Undergraduate Student Resources",
+          "url": "https://as.vanderbilt.edu/resources/undergraduate/",
+          "publisher": "Vanderbilt University",
+          "verified": "2026-10-22",
+          "cycle": "Current official undergraduate advising page"
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "History undergraduate major verified. B.A. suffix intentionally omitted because directly opened current department page does not identify degree abbreviation; old 2025–26 PDF returns404.",
+    "No ranking or SAT range added without current verified primary evidence.",
+    "Testing page has a stale through2027 paragraph in international section, but opening policy and current international FAQ explicitly include Fall2028."
+  ]
+}

@@ -1,0 +1,361 @@
+{
+  "checked": "2026-10-22",
+  "scope": "Bounded audit of 14 existing low/middle candidates, relevant entry rules/test policy/applicant scope; not a full audit of all catalog schools or every cost/deadline/program field.",
+  "updates": [
+    {
+      "id": "iowa",
+      "entry": {
+        "program": "History, B.A.",
+        "programKo": "역사학 B.A.",
+        "unit": "College of Liberal Arts and Sciences",
+        "unitKo": "인문·자연과학대학",
+        "easierMajorVerified": false,
+        "text": "History B.A. is a verified degree. Applicants must meet College of Liberal Arts and Sciences admission requirements; the program page provides no lower academic cutoff or easiest-major advantage.",
+        "textKo": "역사학 B.A. 학위가 확인됩니다. 인문·자연과학대학 입학 요건을 따라야 하며, 학과 페이지는 더 낮은 성적 기준이나 가장 쉬운 전공이라는 근거를 제시하지 않습니다.",
+        "sourceIds": ["audit-existing-iowa-history"]
+      },
+      "applicantScope": {
+        "text": "Korean citizens studying in Ontario use the international first-year route. Iowa’s country-based English exemption requires citizenship in an English-speaking country and English as first language; Ontario schooling alone does not satisfy that exemption. SAT Reading/Writing 540 is one separate English-proficiency option. Graduation, required courses and official records remain.",
+        "textKo": "온타리오 재학 한국 국적자는 국제 신입생 전형입니다. 국가별 영어 면제는 영어권 시민권과 영어 모국어 조건을 요구하므로 온타리오 재학만으로 충족되지 않습니다. SAT Reading/Writing 540은 별도의 영어 증빙 방법 중 하나입니다. 졸업·필수 과목·공식 성적표 요건도 남습니다.",
+        "sourceIds": ["audit-existing-iowa-intl", "audit-existing-iowa-english"]
+      }
+    },
+    {
+      "id": "texas-state",
+      "applicantScope": {
+        "text": "A Korean citizen seeking on-campus study is an international applicant. The university’s Canada credentials table lists Ontario educational credentials as English-test exempt; this is a credential-based published exception. The applicant must still complete secondary school, supply records and meet TXST’s academic assessment.",
+        "textKo": "대면 수업으로 지원하는 한국 국적자는 국제학생 전형입니다. 대학의 캐나다 학력 표는 온타리오 학력을 영어 시험 면제 대상으로 명시합니다. 고교 졸업·성적표·대학의 학업 평가 요건은 별도로 충족해야 합니다.",
+        "sourceIds": ["audit-existing-txst", "audit-existing-txst-intl"]
+      }
+    },
+    {
+      "id": "james-madison",
+      "satRange": {
+        "low": 1210,
+        "high": 1370,
+        "cohort": "2025–26 admitted first-year profile, published middle 50%; 19% of applicants submitted scores. Not an international or humanities-specific cutoff.",
+        "cohortKo": "2025–26 합격 신입생 프로필의 공개 중간 50%; 전체 지원자의 19%가 시험 점수를 제출했습니다. 국제학생·인문학 전용 합격선이 아닙니다.",
+        "sourceIds": ["audit-existing-jmu-profile"]
+      },
+      "applicantScope": {
+        "text": "Ontario secondary credentials are assessed through international admission for this Korean citizen. The Ontario page’s English-school waiver requires graduation from an accredited high school in a native English-speaking country plus at least four years residing in that country. Do not assume a shorter Ontario stay is exempt; other English evidence and full application requirements remain.",
+        "textKo": "한국 국적자의 온타리오 중등 학력은 국제 전형으로 심사합니다. 온타리오 안내의 영어권 고교 면제는 해당 국가의 인가 고교 졸업과 그 국가에서 최소 4년 거주를 함께 요구합니다. 온타리오 단기 재학으로 면제를 가정하지 말고 영어 증빙과 전체 지원 요건을 확인해야 합니다.",
+        "sourceIds": ["audit-existing-jmu"]
+      }
+    }
+  ],
+  "sources": [
+    {
+      "id": "audit-existing-isu",
+      "title": "International First-Year Requirements",
+      "url": "https://www.iastate.edu/admission-and-aid/admissions/international-admissions/international-first-year-requirements",
+      "publisher": "Iowa State University",
+      "verified": "2026-10-22",
+      "cycle": "Current official page checked 2026-10-22; Fall 2028 applicability not expressly guaranteed"
+    },
+    {
+      "id": "audit-existing-wichita",
+      "title": "International Freshman Admission",
+      "url": "https://www.wichita.edu/admissions/international/undergraduate/FreshmanAdmission.php",
+      "publisher": "Wichita State University",
+      "verified": "2026-10-22",
+      "cycle": "Current official page checked 2026-10-22; Fall 2028 applicability not expressly guaranteed"
+    },
+    {
+      "id": "audit-existing-wichita-faq",
+      "title": "International Students FAQ",
+      "url": "https://www.wichita.edu/admissions/international/aboutwsu/faqstudents.php",
+      "publisher": "Wichita State University",
+      "verified": "2026-10-22",
+      "cycle": "Current official page checked 2026-10-22; Fall 2028 applicability not expressly guaranteed"
+    },
+    {
+      "id": "audit-existing-toledo",
+      "title": "International Freshman Admission Requirements",
+      "url": "https://www.utoledo.edu/admission/international/admissionrequirements/freshman.html",
+      "publisher": "The University of Toledo",
+      "verified": "2026-10-22",
+      "cycle": "Current official page checked 2026-10-22; Fall 2028 applicability not expressly guaranteed"
+    },
+    {
+      "id": "audit-existing-ysu",
+      "title": "Apply as an International Freshman",
+      "url": "https://ysu.edu/international-programs-office/apply-now/quick-menu/apply-as-international-freshman",
+      "publisher": "Youngstown State University",
+      "verified": "2026-10-22",
+      "cycle": "Current official page checked 2026-10-22; Fall 2028 applicability not expressly guaranteed"
+    },
+    {
+      "id": "audit-existing-ysu-cat",
+      "title": "International Undergraduate Admission, 2026–27 Catalog",
+      "url": "https://catalog.ysu.edu/undergraduate/general-information/admission/international-undergraduate-admission/",
+      "publisher": "Youngstown State University",
+      "verified": "2026-10-22",
+      "cycle": "Current official page checked 2026-10-22; Fall 2028 applicability not expressly guaranteed"
+    },
+    {
+      "id": "audit-existing-ysu-tests",
+      "title": "New Freshmen",
+      "url": "https://ysu.edu/admissions/apply-to-ysu/new-freshmen",
+      "publisher": "Youngstown State University",
+      "verified": "2026-10-22",
+      "cycle": "Current official page checked 2026-10-22; Fall 2028 applicability not expressly guaranteed"
+    },
+    {
+      "id": "audit-existing-txst",
+      "title": "Secondary Credentials – Canada",
+      "url": "https://www.admissions.txst.edu/future-students/international/secondary-credentials/list-by-country/canada.html",
+      "publisher": "Texas State University",
+      "verified": "2026-10-22",
+      "cycle": "Current official page checked 2026-10-22; Fall 2028 applicability not expressly guaranteed"
+    },
+    {
+      "id": "audit-existing-txst-intl",
+      "title": "International Admissions Requirements",
+      "url": "https://www.admissions.txst.edu/future-students/international/admissions-requirements.html",
+      "publisher": "Texas State University",
+      "verified": "2026-10-22",
+      "cycle": "Current official page checked 2026-10-22; Fall 2028 applicability not expressly guaranteed"
+    },
+    {
+      "id": "audit-existing-marshall",
+      "title": "International Admissions Deadlines & Requirements",
+      "url": "https://www.marshall.edu/international-admissions/international-admissions-requirements/",
+      "publisher": "Marshall University",
+      "verified": "2026-10-22",
+      "cycle": "Current official page checked 2026-10-22; Fall 2028 applicability not expressly guaranteed"
+    },
+    {
+      "id": "audit-existing-ucm",
+      "title": "Prospective International Undergraduate Student Information",
+      "url": "https://www.ucmo.edu/future-students/admissions/international-admissions/international-prospective-students/prospective-undergraduate-international/",
+      "publisher": "University of Central Missouri",
+      "verified": "2026-10-22",
+      "cycle": "Current official page checked 2026-10-22; Fall 2028 applicability not expressly guaranteed"
+    },
+    {
+      "id": "audit-existing-murray",
+      "title": "International Student Application",
+      "url": "https://www.murraystate.edu/admissions/international/Admissions/index.aspx",
+      "publisher": "Murray State University",
+      "verified": "2026-10-22",
+      "cycle": "Current official page checked 2026-10-22; Fall 2028 applicability not expressly guaranteed"
+    },
+    {
+      "id": "audit-existing-murray-review",
+      "title": "First-Time Freshmen Admission requirements",
+      "url": "https://www.murraystate.edu/admissions/ftf/requirements.aspx",
+      "publisher": "Murray State University",
+      "verified": "2026-10-22",
+      "cycle": "Current official page checked 2026-10-22; Fall 2028 applicability not expressly guaranteed"
+    },
+    {
+      "id": "audit-existing-fhsu",
+      "title": "Apply as an International Undergraduate Student",
+      "url": "https://www.fhsu.edu/admissions/admissions-application/international-undergrad",
+      "publisher": "Fort Hays State University",
+      "verified": "2026-10-22",
+      "cycle": "Current official page checked 2026-10-22; Fall 2028 applicability not expressly guaranteed"
+    },
+    {
+      "id": "audit-existing-fhsu-tests",
+      "title": "International Admissions FAQ",
+      "url": "https://www.fhsu.edu/international/admissions/FAQ/",
+      "publisher": "Fort Hays State University",
+      "verified": "2026-10-22",
+      "cycle": "Current official page checked 2026-10-22; Fall 2028 applicability not expressly guaranteed"
+    },
+    {
+      "id": "audit-existing-uni",
+      "title": "Canada: country-specific requirements",
+      "url": "https://admissions.uni.edu/international/undergraduate-students/country-specific-requirements/canada",
+      "publisher": "University of Northern Iowa",
+      "verified": "2026-10-22",
+      "cycle": "Current official page checked 2026-10-22; Fall 2028 applicability not expressly guaranteed"
+    },
+    {
+      "id": "audit-existing-uni-tests",
+      "title": "Admission Policies",
+      "url": "https://admissions.uni.edu/international/undergraduate-students/admission-policies",
+      "publisher": "University of Northern Iowa",
+      "verified": "2026-10-22",
+      "cycle": "Current official page checked 2026-10-22; Fall 2028 applicability not expressly guaranteed"
+    },
+    {
+      "id": "audit-existing-portland",
+      "title": "Minimum Academic Requirements by Country",
+      "url": "https://www.pdx.edu/admissions/international/academic-requirements-country",
+      "publisher": "Portland State University",
+      "verified": "2026-10-22",
+      "cycle": "Current official page checked 2026-10-22; Fall 2028 applicability not expressly guaranteed"
+    },
+    {
+      "id": "audit-existing-portland-firstyear",
+      "title": "International First Years",
+      "url": "https://www.pdx.edu/admissions/international/first-year",
+      "publisher": "Portland State University",
+      "verified": "2026-10-22",
+      "cycle": "Current official page checked 2026-10-22; Fall 2028 applicability not expressly guaranteed"
+    },
+    {
+      "id": "audit-existing-iowa-country",
+      "title": "Academic Requirements by Country",
+      "url": "https://admissions.uiowa.edu/apply/academic-requirements-country",
+      "publisher": "University of Iowa",
+      "verified": "2026-10-22",
+      "cycle": "Current official page checked 2026-10-22; Fall 2028 applicability not expressly guaranteed"
+    },
+    {
+      "id": "audit-existing-iowa-intl",
+      "title": "International First-Year Admission Requirements",
+      "url": "https://admissions.uiowa.edu/international-first-year-admission-requirements",
+      "publisher": "University of Iowa",
+      "verified": "2026-10-22",
+      "cycle": "Current official page checked 2026-10-22; Fall 2028 applicability not expressly guaranteed"
+    },
+    {
+      "id": "audit-existing-iowa-history",
+      "title": "History: bachelor program and admission requirements",
+      "url": "https://admissions.uiowa.edu/academics/history",
+      "publisher": "University of Iowa",
+      "verified": "2026-10-22",
+      "cycle": "Current official page checked 2026-10-22; Fall 2028 applicability not expressly guaranteed"
+    },
+    {
+      "id": "audit-existing-iowa-english",
+      "title": "English Proficiency Requirements",
+      "url": "https://admissions.uiowa.edu/english-proficiency-requirements",
+      "publisher": "University of Iowa",
+      "verified": "2026-10-22",
+      "cycle": "Current official page checked 2026-10-22; Fall 2028 applicability not expressly guaranteed"
+    },
+    {
+      "id": "audit-existing-jmu",
+      "title": "Admission Requirements: Canada - Ontaria",
+      "url": "https://www.jmu.edu/admissions/apply/country-reqs/americas/canada-ontaria.shtml",
+      "publisher": "James Madison University",
+      "verified": "2026-10-22",
+      "cycle": "Current official page checked 2026-10-22; Fall 2028 applicability not expressly guaranteed"
+    },
+    {
+      "id": "audit-existing-jmu-profile",
+      "title": "Facts and Figures",
+      "url": "https://www.jmu.edu/about/fact-and-figures.shtml",
+      "publisher": "James Madison University",
+      "verified": "2026-10-22",
+      "cycle": "Current official page checked 2026-10-22; Fall 2028 applicability not expressly guaranteed"
+    },
+    {
+      "id": "audit-existing-wsu-cds",
+      "title": "Common Data Set 2024–2025, C8 (Fall 2026 policy)",
+      "url": "https://wpcdn.web.wsu.edu/wsuwp/uploads/sites/3447/2025/04/CDS_2024-2025.pdf",
+      "publisher": "Washington State University",
+      "verified": "2026-10-22",
+      "cycle": "Current official page checked 2026-10-22; Fall 2028 applicability not expressly guaranteed"
+    }
+  ],
+  "coverage": [
+    {
+      "id": "iowa-state",
+      "status": "verified-relevant-rules",
+      "sourceIds": ["audit-existing-isu"],
+      "notes": "SAT1200 replaces only GPA3.0 component; core courses, English, documents remain. Country Box grade table not reverified; no Ontario percentage invented."
+    },
+    {
+      "id": "wichita-state",
+      "status": "verified-relevant-rules",
+      "sourceIds": ["audit-existing-wichita", "audit-existing-wichita-faq"],
+      "notes": "GPA2.5 grade route or SAT1060 AND RW490 AND Math490 consideration route. No guaranteed admission. Sections cannot be inferred from total."
+    },
+    {
+      "id": "toledo",
+      "status": "verified-relevant-rules",
+      "sourceIds": ["audit-existing-toledo"],
+      "notes": "History/general arts-social sciences international GPA2.0; cumulative school GPA. Other professional-major thresholds distinct. No Ontario conversion."
+    },
+    {
+      "id": "youngstown-state",
+      "status": "verified-relevant-rules",
+      "sourceIds": [
+        "audit-existing-ysu",
+        "audit-existing-ysu-cat",
+        "audit-existing-ysu-tests"
+      ],
+      "notes": "International GPA2.0 and discretionary Special Admission2.0orbelow confirmed. NACES evaluation applies countries outside listed exceptions; both Korea/Canada outside list. General SAT optional with restricted-major caveats."
+    },
+    {
+      "id": "texas-state",
+      "status": "updated-english-scope",
+      "sourceIds": ["audit-existing-txst", "audit-existing-txst-intl"],
+      "notes": "B average and recalculated2.74 last3years; official Ontario course scale confirmed, never single-average GPA. Ontario credential English exemption confirmed. SAT520 is RW English option, not total/GPA route."
+    },
+    {
+      "id": "washington-state",
+      "status": "partial-access-limited",
+      "sourceIds": ["audit-existing-wsu-cds"],
+      "notes": "Current international first-year/Foundation URLs returned403 on direct opens. Fresh search indexed2.70 direct and2.30–2.69Foundation, but record not called fully reverified. Official2024–25CDS C8 visually/extraction shows no SAT use for Fall2026; no SAT-based admissions boost. Existing program/English details not re-opened."
+    },
+    {
+      "id": "marshall",
+      "status": "verified-relevant-rules",
+      "sourceIds": ["audit-existing-marshall"],
+      "notes": "International GPA2.00 converted by university; SAT may be required by major. Keep History test policy unknown rather than infer optional."
+    },
+    {
+      "id": "central-missouri",
+      "status": "verified-relevant-rules",
+      "sourceIds": ["audit-existing-ucm"],
+      "notes": "International high-school2.0 confirmed. Current checklist omission of composite SAT is not a verified waiver; keep testing unknown."
+    },
+    {
+      "id": "murray-state",
+      "status": "verified-relevant-rules",
+      "sourceIds": ["audit-existing-murray", "audit-existing-murray-review"],
+      "notes": "International GPA2.0 checklist. General2.0–2.74 holistic review,2.75admitted not treated as institution-converted Ontario guarantee. SAT960 is English proficiency alternative. International page states2027dates, not2028."
+    },
+    {
+      "id": "fort-hays-state",
+      "status": "verified-relevant-rules",
+      "sourceIds": ["audit-existing-fhsu", "audit-existing-fhsu-tests"],
+      "notes": "International high-school cumulative2.5;2.0requires24UScollegecredits and not freshman shortcut. SAT not required. FAQ/application deadlines differ; none promoted into2028date."
+    },
+    {
+      "id": "northern-iowa",
+      "status": "verified-relevant-rules",
+      "sourceIds": ["audit-existing-uni", "audit-existing-uni-tests"],
+      "notes": "Canada page75(B)cumulative academic subjects, OSSD, English and documents remain; SATnotrequired foradmission mayconsiderforscholarship."
+    },
+    {
+      "id": "portland-state",
+      "status": "verified-relevant-rules",
+      "sourceIds": [
+        "audit-existing-portland",
+        "audit-existing-portland-firstyear"
+      ],
+      "notes": "OSSD overall average higher than70%, strict greater-than preserved; not top6. High-school completion, records, English remain. Testing page not independently reopened in this pass."
+    },
+    {
+      "id": "iowa",
+      "status": "updated-program-and-english-scope",
+      "sourceIds": [
+        "audit-existing-iowa-country",
+        "audit-existing-iowa-intl",
+        "audit-existing-iowa-history",
+        "audit-existing-iowa-english"
+      ],
+      "notes": "Ontario core-academic70 confirmed; not top6. SAToptional general international outsideUS, exceptions scholarship/Tippie/Honors. History text corrected from English; citizenship exemption clarified."
+    },
+    {
+      "id": "james-madison",
+      "status": "updated-profile-and-english-scope",
+      "sourceIds": ["audit-existing-jmu", "audit-existing-jmu-profile"],
+      "notes": "Ontario70/B minimum and SAToptional verified; page offers below-minimum contact review but no automatic lower threshold. Added official2025–26SAT1210–1370withcohort. School English exemption includes4yearsresidence."
+    }
+  ],
+  "limitations": [
+    "No generic Ontario percentage to US GPA conversion.",
+    "No official admissions-probability or easiest-major ranking established.",
+    "Fall2028 unknown unless source expressly says otherwise.",
+    "Washington State live pages blocked403; source-access limitation preserved."
+  ]
+}

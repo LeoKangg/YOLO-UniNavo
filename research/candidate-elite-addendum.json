@@ -1,0 +1,274 @@
+{
+  "checked": "2026-10-22",
+  "schools": [
+    {
+      "id": "duke",
+      "name": "Duke University",
+      "nameKo": "듀크 대학교",
+      "state": "North Carolina",
+      "city": "Durham",
+      "type": "Private",
+      "rank": {
+        "edition": "2027",
+        "value": null,
+        "sourceIds": []
+      },
+      "ontario": {
+        "minimum": null,
+        "basis": "No official Ontario percentage cutoff verified. A grade-band placement is not a numerical admission rule.",
+        "basisKo": "확인된 온타리오 백분율 합격선은 없습니다. 표의 내신 구간 배치는 공식 지원 요건이 아닙니다.",
+        "sourceIds": ["elite-duke-academic"]
+      },
+      "academic": {
+        "text": "Duke evaluates academic and personal qualities using the complete application, including academic record, recommendations, essays and activities.",
+        "textKo": "학업 기록·추천서·에세이·활동 등 전체 지원서로 학업·개인적 특성을 종합 심사합니다.",
+        "sourceIds": ["elite-duke-academic"]
+      },
+      "testing": {
+        "policy": "optional",
+        "text": "SAT/ACT optional for the 2026–27 application cycle (Fall 2027 entry), including international applicants. Fall 2028 policy is not confirmed by this announcement.",
+        "textKo": "국제학생 포함 2026–27 지원 주기(2027년 가을 입학)는 SAT/ACT 선택 제출입니다. 이 발표에서 2028년 가을 규정은 확인되지 않았습니다.",
+        "sourceIds": ["elite-duke-testing"]
+      },
+      "satRange": null,
+      "entry": {
+        "program": "History undergraduate major",
+        "programKo": "역사학 학부 전공",
+        "unit": "Trinity College of Arts and Sciences",
+        "unitKo": "트리니티 문리대",
+        "easierMajorVerified": false,
+        "text": "Applicants choose Trinity or Pratt. History is a Trinity undergraduate major; comparative evidence that it is an easier first-year entry route is not verified.",
+        "textKo": "지원 시 트리니티 또는 프랫 공대를 선택합니다. 트리니티 역사학 학부 전공을 확인했으며 더 쉬운 신입학 경로라는 비교 근거는 없습니다.",
+        "sourceIds": ["elite-duke-program", "elite-duke-entry"]
+      },
+      "applicantScope": {
+        "text": "School reports and transcripts must come directly from the school. Non-English records require translations together with originals. International English-proficiency and financial-aid conditions need separate review.",
+        "textKo": "학교 보고서·성적표는 학교가 직접 제출해야 합니다. 영어가 아닌 서류는 원본과 번역본을 함께 제출합니다. 국제학생 영어 증빙·재정보조 조건은 별도 확인해야 합니다.",
+        "sourceIds": ["elite-duke-international"]
+      },
+      "sources": [
+        {
+          "id": "elite-duke-testing",
+          "title": "First-year application: test optional 2026–27",
+          "url": "https://admissions.duke.edu/apply/",
+          "publisher": "Duke University",
+          "verified": "2026-10-22",
+          "cycle": "2026–27 application cycle; Fall 2028 unconfirmed"
+        },
+        {
+          "id": "elite-duke-academic",
+          "title": "What Duke looks for",
+          "url": "https://admissions.duke.edu/what-we-look-for/",
+          "publisher": "Duke University",
+          "verified": "2026-10-22",
+          "cycle": "Current page checked 2026-10-22"
+        },
+        {
+          "id": "elite-duke-program",
+          "title": "History major and requirements",
+          "url": "https://history.duke.edu/undergraduate/major",
+          "publisher": "Duke University",
+          "verified": "2026-10-22",
+          "cycle": "Current undergraduate program"
+        },
+        {
+          "id": "elite-duke-entry",
+          "title": "Application: Trinity or Pratt choice",
+          "url": "https://admissions.duke.edu/apply/",
+          "publisher": "Duke University",
+          "verified": "2026-10-22",
+          "cycle": "Current first-year application"
+        },
+        {
+          "id": "elite-duke-international",
+          "title": "International transcripts and application documents",
+          "url": "https://admissions.duke.edu/apply/",
+          "publisher": "Duke University",
+          "verified": "2026-10-22",
+          "cycle": "Current page checked 2026-10-22"
+        }
+      ]
+    },
+    {
+      "id": "northwestern",
+      "name": "Northwestern University",
+      "nameKo": "노스웨스턴 대학교",
+      "state": "Illinois",
+      "city": "Evanston",
+      "type": "Private",
+      "rank": {
+        "edition": "2027",
+        "value": null,
+        "sourceIds": []
+      },
+      "ontario": {
+        "minimum": null,
+        "basis": "No official Ontario percentage cutoff verified. A grade-band placement is not a numerical admission rule.",
+        "basisKo": "확인된 온타리오 백분율 합격선은 없습니다. 표의 내신 구간 배치는 공식 지원 요건이 아닙니다.",
+        "sourceIds": ["elite-northwestern-academic"]
+      },
+      "academic": {
+        "text": "Northwestern reviews the secondary-school record, recommendations, writing and other readiness information. Weinberg recommends a broad curriculum across English, languages, math, science and social studies.",
+        "textKo": "고교 성적표·추천서·글쓰기·기타 학업 준비 자료를 심사합니다. 와인버그는 영어·외국어·수학·과학·사회과목을 포함한 폭넓은 교육과정을 권장합니다.",
+        "sourceIds": ["elite-northwestern-academic"]
+      },
+      "testing": {
+        "policy": "optional",
+        "text": "Optional SAT/ACT for the 2026–27 admission cycle (Fall 2027 entry). The current catalog does not establish a Fall 2028 policy.",
+        "textKo": "2026–27 지원 주기(2027년 가을 입학)는 SAT/ACT 선택 제출입니다. 현행 카탈로그에서 2028년 가을 규정은 확정되지 않았습니다.",
+        "sourceIds": ["elite-northwestern-testing"]
+      },
+      "satRange": null,
+      "entry": {
+        "program": "History undergraduate major",
+        "programKo": "역사학 학부 전공",
+        "unit": "Weinberg College of Arts and Sciences",
+        "unitKo": "와인버그 문리대",
+        "easierMajorVerified": false,
+        "text": "History is offered in Weinberg College of Arts and Sciences. Applicants should verify their undergraduate school and its requirements; no evidence establishes History as the easiest admission route.",
+        "textKo": "와인버그 문리대의 역사학 전공을 확인했습니다. 지원 단과대학과 그 요건을 확인해야 하며 역사학이 가장 쉬운 입학 경로라는 근거는 없습니다.",
+        "sourceIds": ["elite-northwestern-program", "elite-northwestern-entry"]
+      },
+      "applicantScope": {
+        "text": "Complete high-school records and certified English translations of non-English documents are needed. English-proficiency scores are a separate requirement; the international FAQ uses first/primary language and schooling language, so Ontario schooling alone must not be assumed to waive testing.",
+        "textKo": "고교 전체 기록과 영어가 아닌 서류의 공인 영어 번역이 필요합니다. 영어 능력 점수는 별도 요건입니다. 국제학생 FAQ는 모국어·주사용 언어와 수업 언어를 기준으로 안내하므로 온타리오 재학만으로 시험 면제를 가정하면 안 됩니다.",
+        "sourceIds": ["elite-northwestern-international"]
+      },
+      "sources": [
+        {
+          "id": "elite-northwestern-testing",
+          "title": "2026–27 admission catalog: optional testing",
+          "url": "https://catalogs.northwestern.edu/undergraduate/admission/",
+          "publisher": "Northwestern University",
+          "verified": "2026-10-22",
+          "cycle": "2026–27 admission cycle; Fall 2028 unconfirmed"
+        },
+        {
+          "id": "elite-northwestern-academic",
+          "title": "Undergraduate admission review and recommended coursework",
+          "url": "https://catalogs.northwestern.edu/undergraduate/admission/",
+          "publisher": "Northwestern University",
+          "verified": "2026-10-22",
+          "cycle": "2026–27 academic catalog"
+        },
+        {
+          "id": "elite-northwestern-program",
+          "title": "Weinberg History major",
+          "url": "https://catalogs.northwestern.edu/undergraduate/arts-sciences/history/history-major/",
+          "publisher": "Northwestern University",
+          "verified": "2026-10-22",
+          "cycle": "2026–27 academic catalog"
+        },
+        {
+          "id": "elite-northwestern-entry",
+          "title": "Undergraduate majors by school",
+          "url": "https://admissions.northwestern.edu/academics/majors-minors/",
+          "publisher": "Northwestern University",
+          "verified": "2026-10-22",
+          "cycle": "Current undergraduate program list"
+        },
+        {
+          "id": "elite-northwestern-international",
+          "title": "International applicants FAQ",
+          "url": "https://admissions.northwestern.edu/faqs/international-applicants/",
+          "publisher": "Northwestern University",
+          "verified": "2026-10-22",
+          "cycle": "Current page checked 2026-10-22"
+        }
+      ]
+    },
+    {
+      "id": "uchicago",
+      "name": "University of Chicago",
+      "nameKo": "시카고 대학교",
+      "state": "Illinois",
+      "city": "Chicago",
+      "type": "Private",
+      "rank": {
+        "edition": "2027",
+        "value": null,
+        "sourceIds": []
+      },
+      "ontario": {
+        "minimum": null,
+        "basis": "No official Ontario percentage cutoff verified. A grade-band placement is not a numerical admission rule.",
+        "basisKo": "확인된 온타리오 백분율 합격선은 없습니다. 표의 내신 구간 배치는 공식 지원 요건이 아닙니다.",
+        "sourceIds": ["elite-uchicago-academic"]
+      },
+      "academic": {
+        "text": "Transcripts are considered in high-school context. Self-submitted transcripts may be used for review; admitted students who enroll must later provide official records.",
+        "textKo": "고교 환경과 교육과정 맥락에서 성적표를 심사합니다. 심사에는 본인이 제출한 성적표도 허용하며 합격 후 등록하는 학생은 공식 서류를 제출해야 합니다.",
+        "sourceIds": ["elite-uchicago-academic"]
+      },
+      "testing": {
+        "policy": "optional",
+        "text": "The current required-materials policy is SAT/ACT optional for domestic and international applicants, with a No Harm policy: submitted scores are considered only if they help. Recheck the actual Fall 2028 cycle.",
+        "textKo": "현행 규정은 미국 국내·국제학생 모두 SAT/ACT 선택 제출입니다. 제출 점수가 유리할 때만 심사에 사용하는 No Harm 정책을 안내합니다. 실제 2028년 입학 규정은 재확인해야 합니다.",
+        "sourceIds": ["elite-uchicago-testing"]
+      },
+      "satRange": null,
+      "entry": {
+        "program": "History undergraduate major",
+        "programKo": "역사학 학부 전공",
+        "unit": "The College",
+        "unitKo": "학부 칼리지",
+        "easierMajorVerified": false,
+        "text": "History is offered as an undergraduate major in the College. Program availability does not establish an easier admission route or a major-specific Ontario grade cutoff.",
+        "textKo": "학부 칼리지에서 역사학 전공을 운영합니다. 전공 운영 사실만으로 더 쉬운 입학 경로나 전공별 온타리오 합격선을 확인할 수는 없습니다.",
+        "sourceIds": ["elite-uchicago-program", "elite-uchicago-entry"]
+      },
+      "applicantScope": {
+        "text": "The same published No Harm testing policy includes international applicants. Non-English transcripts require certified translation and grading scale. English-proficiency requirements must be checked separately for the entry year.",
+        "textKo": "공개된 No Harm 시험 정책은 국제학생에게도 적용됩니다. 영어가 아닌 성적표에는 공인 번역과 성적 척도가 필요합니다. 영어 능력 요건은 입학 연도 규정을 별도로 확인해야 합니다.",
+        "sourceIds": ["elite-uchicago-international"]
+      },
+      "sources": [
+        {
+          "id": "elite-uchicago-testing",
+          "title": "Required materials: No Harm optional testing",
+          "url": "https://collegeadmissions.uchicago.edu/apply/application/required-materials/",
+          "publisher": "University of Chicago",
+          "verified": "2026-10-22",
+          "cycle": "Current policy checked 2026-10-22; Fall 2028 recheck"
+        },
+        {
+          "id": "elite-uchicago-academic",
+          "title": "Required materials: contextual transcript review",
+          "url": "https://collegeadmissions.uchicago.edu/apply/application/required-materials/",
+          "publisher": "University of Chicago",
+          "verified": "2026-10-22",
+          "cycle": "Current first-year requirements"
+        },
+        {
+          "id": "elite-uchicago-program",
+          "title": "Undergraduate History major",
+          "url": "https://history.uchicago.edu/undergraduate-study/academics/major",
+          "publisher": "University of Chicago",
+          "verified": "2026-10-22",
+          "cycle": "Current undergraduate major"
+        },
+        {
+          "id": "elite-uchicago-entry",
+          "title": "History major academic guidance",
+          "url": "https://history.uchicago.edu/undergraduate-study/academics/major",
+          "publisher": "University of Chicago",
+          "verified": "2026-10-22",
+          "cycle": "Current undergraduate major"
+        },
+        {
+          "id": "elite-uchicago-international",
+          "title": "Required materials: international applicants and translations",
+          "url": "https://collegeadmissions.uchicago.edu/apply/application/required-materials/",
+          "publisher": "University of Chicago",
+          "verified": "2026-10-22",
+          "cycle": "Current first-year requirements"
+        }
+      ]
+    }
+  ],
+  "limits": [
+    "No SAT ranges, Ontario thresholds, comparative easiest-major claims or ranking numbers asserted.",
+    "Duke and Northwestern official policy confirms Fall 2027; Fall 2028 remains unconfirmed.",
+    "UChicago admissions HTML parser returned no body on open; substantive current policy and transcript text was retrieved from the official page via web search. History department page opened with content."
+  ]
+}

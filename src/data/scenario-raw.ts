@@ -1,3 +1,9 @@
+import eliteAddendum from "../../research/candidate-elite-addendum.json" with { type: "json" };
+import ucAudit from "../../research/candidate-uc-audit.json" with { type: "json" };
+import selectiveAudit from "../../research/candidate-selective-audit.json" with { type: "json" };
+import existingAudit from "../../research/candidate-existing-audit.json" with { type: "json" };
+import rootAudit from "../../research/candidate-root-audit.json" with { type: "json" };
+import vanderbilt from "../../research/candidate-vanderbilt.json" with { type: "json" };
 import harvard from "../../research/candidate-harvard.json" with { type: "json" };
 import access from "../../research/scenario-access.json" with { type: "json" };
 import mid from "../../research/scenario-mid.json" with { type: "json" };
@@ -23,6 +29,10 @@ export const additionalScenarioSchools = [
   ...ontario.schools,
   ...lowReview.newSchools,
   ...harvard.schools,
+  ...ucAudit.schools,
+  ...selectiveAudit.newSchools,
+  ...vanderbilt.schools,
+  ...eliteAddendum.schools,
 ] as unknown as ScenarioSchool[];
 export const scenarioRuleUpdates = updates.updates as unknown as {
   id: string;
@@ -35,6 +45,9 @@ export const additionalScenarioSources: Source[] = [
   ...lowReview.sources,
   ...middleReview.sources,
   ...highReview.sources,
+  ...selectiveAudit.sources,
+  ...existingAudit.sources,
+  ...rootAudit.sources,
 ];
 export const reviewedSchoolUpdates = [
   ...middleReview.schools,
@@ -42,3 +55,9 @@ export const reviewedSchoolUpdates = [
 ] as unknown as (Partial<ScenarioSchool> & { id: string })[];
 export const reviewedPrograms = middleReview.programUpdates;
 export const reviewedRanges = middleReview.rangeUpdates;
+
+export const finalSchoolUpdates = [
+  ...selectiveAudit.updates,
+  ...existingAudit.updates,
+  ...rootAudit.updates,
+] as unknown as (Partial<ScenarioSchool> & { id: string })[];
