@@ -1,0 +1,2070 @@
+{
+  "asu": {
+    "logo": {
+      "src": "university-media/asu-logo.svg",
+      "title": "Arizona State University logo.svg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Arizona_State_University_logo.svg",
+      "credit": "Arizona State University",
+      "license": "Public domain",
+      "licenseUrl": "",
+      "retrieved": "2026-10-22",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/b/b3/Arizona_State_University_logo.svg"
+    },
+    "campus": {
+      "src": "university-media/asu-campus.jpg",
+      "title": "ASU's Gammage Auditorium, designed by Frank Lloyd Wright",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:FLW_Gammage_Auditorium_ASU_PHX_AZ_20186.JPG",
+      "credit": "Wars",
+      "license": "CC BY 2.5",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.5",
+      "retrieved": "2026-10-22",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/FLW_Gammage_Auditorium_ASU_PHX_AZ_20186.JPG/960px-FLW_Gammage_Auditorium_ASU_PHX_AZ_20186.JPG"
+    }
+  },
+  "arizona": {
+    "logo": {
+      "src": "university-media/arizona-logo.svg",
+      "title": "University of Arizona logo.svg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:University_of_Arizona_logo.svg",
+      "credit": "Unknown authorUnknown author",
+      "license": "Public domain",
+      "licenseUrl": "",
+      "retrieved": "2026-10-22",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/b/b6/University_of_Arizona_logo.svg"
+    },
+    "campus": {
+      "src": "university-media/arizona-campus.jpg",
+      "title": "\"Old Main\" was added to the National Register of Historic Places in 1972.",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:University_of_Arizona_May_2019_09_(Old_Main).jpg",
+      "credit": "Michael Barera",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "retrieved": "2026-10-22",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/University_of_Arizona_May_2019_09_%28Old_Main%29.jpg/960px-University_of_Arizona_May_2019_09_%28Old_Main%29.jpg"
+    }
+  },
+  "oregon": {
+    "logo": {
+      "src": "university-media/oregon-logo.svg",
+      "title": "University of Oregon logo.svg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:University_of_Oregon_logo.svg",
+      "credit": "University of Oregon",
+      "license": "Public domain",
+      "licenseUrl": "",
+      "retrieved": "2026-10-22",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/3/3c/University_of_Oregon_logo.svg"
+    },
+    "campus": {
+      "src": "university-media/oregon-campus.jpg",
+      "title": "Knight Library",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Knight_Library.jpg",
+      "credit": "Visitor7",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "retrieved": "2026-10-22",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Knight_Library.jpg/960px-Knight_Library.jpg"
+    }
+  },
+  "colorado": {
+    "logo": {
+      "src": "university-media/colorado-logo.svg",
+      "title": "UC Boulder logo.svg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:UC_Boulder_logo.svg",
+      "credit": "University of Colorado",
+      "license": "Public domain",
+      "licenseUrl": "",
+      "retrieved": "2026-10-22",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e4/UC_Boulder_logo.svg"
+    },
+    "campus": {
+      "src": "university-media/colorado-campus.jpg",
+      "title": "Norlin Library",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Norlin_Library.jpg",
+      "credit": "Gribeco",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "retrieved": "2026-10-22",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Norlin_Library.jpg/960px-Norlin_Library.jpg"
+    }
+  },
+  "michigan-state": {
+    "logo": {
+      "src": "university-media/michigan-state-logo.svg",
+      "title": "Michigan State University wordmark.svg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Michigan_State_University_wordmark.svg",
+      "credit": "Michigan State University",
+      "license": "Public domain",
+      "licenseUrl": "",
+      "retrieved": "2026-10-22",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/7/7a/Michigan_State_University_wordmark.svg"
+    },
+    "campus": {
+      "src": "university-media/michigan-state-campus.jpg",
+      "title": "Linton Hall",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Linton_Hall_Michigan_State_University_2016-1443.jpg",
+      "credit": "Paul R. Burley",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "retrieved": "2026-10-22",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Linton_Hall_Michigan_State_University_2016-1443.jpg/960px-Linton_Hall_Michigan_State_University_2016-1443.jpg"
+    }
+  },
+  "indiana-bloomington": {
+    "logo": {
+      "src": "university-media/indiana-bloomington-logo.svg",
+      "title": "Indiana University logotype.svg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Indiana_University_logotype.svg",
+      "credit": "Indiana University",
+      "license": "Public domain",
+      "licenseUrl": "",
+      "retrieved": "2026-10-22",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/7/7e/Indiana_University_logotype.svg"
+    },
+    "campus": {
+      "src": "university-media/indiana-bloomington-campus.jpg",
+      "title": "Morrison Hall",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:IUBMorrison.JPG",
+      "credit": "McAnt",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "retrieved": "2026-10-22",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/IUBMorrison.JPG/960px-IUBMorrison.JPG"
+    }
+  },
+  "penn-state": {
+    "logo": {
+      "src": "university-media/penn-state-logo.svg",
+      "title": "Pennsylvania State University logo.svg",
+      "sourceUrl": "https://en.wikipedia.org/wiki/File:Pennsylvania_State_University_logo.svg",
+      "credit": "Penn State — University Park",
+      "license": "Copyrighted university logo",
+      "licenseUrl": "",
+      "retrieved": "2026-10-22",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/en/6/6b/Pennsylvania_State_University_logo.svg"
+    },
+    "campus": {
+      "src": "university-media/penn-state-campus.png",
+      "title": "Old Main, the university's main administrative building on its main campus, in May 2014",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Old_Main_-_Penn_State.png",
+      "credit": "Penn State iGEM 2008",
+      "license": "Public domain",
+      "licenseUrl": "",
+      "retrieved": "2026-10-22",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/7/70/Old_Main_-_Penn_State.png"
+    }
+  },
+  "nyu": {
+    "logo": {
+      "src": "university-media/nyu-logo.svg",
+      "title": "NYU logo.svg",
+      "sourceUrl": "https://en.wikipedia.org/wiki/File:NYU_logo.svg",
+      "credit": "New York University",
+      "license": "Copyrighted university logo",
+      "licenseUrl": "",
+      "retrieved": "2026-10-22",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/en/5/58/NYU_logo.svg"
+    },
+    "campus": {
+      "src": "university-media/nyu-campus.jpg",
+      "title": "Bobst Library",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bobst_Library_(48072704803).jpg",
+      "credit": "Ajay Suresh from New York, NY, USA",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "retrieved": "2026-10-22",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Bobst_Library_%2848072704803%29.jpg/960px-Bobst_Library_%2848072704803%29.jpg"
+    }
+  },
+  "iowa-state": {
+    "logo": {
+      "src": "university-media/iowa-state-logo.svg",
+      "title": "Iowa State University wordmark.svg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Iowa_State_University_wordmark.svg",
+      "credit": "Iowa State University",
+      "license": "Public domain",
+      "licenseUrl": "",
+      "retrieved": "2026-10-22",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/1/15/Iowa_State_University_wordmark.svg"
+    },
+    "campus": {
+      "src": "university-media/iowa-state-campus.jpg",
+      "title": "Beardshear Hall",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Campus_of_Iowa_State_University_54.jpg",
+      "credit": "Dirk DBQ",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "retrieved": "2026-10-22",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/Campus_of_Iowa_State_University_54.jpg/960px-Campus_of_Iowa_State_University_54.jpg"
+    }
+  },
+  "rutgers-new-brunswick": {
+    "logo": {
+      "src": "university-media/rutgers-new-brunswick-logo.svg",
+      "title": "Rutgers University seal.svg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Rutgers_University_seal.svg",
+      "credit": "Rutgers, The State University of New Jersey",
+      "license": "Public domain",
+      "licenseUrl": "",
+      "retrieved": "2026-10-22",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/f/f0/Rutgers_University_seal.svg"
+    },
+    "campus": {
+      "src": "university-media/rutgers-new-brunswick-campus.jpg",
+      "title": "New Jersey Hall houses the economics department at Rutgers.",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:New_Jersey_Hall,_Rutgers_University,_south_view.jpg",
+      "credit": "Zeete",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "retrieved": "2026-10-22",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/New_Jersey_Hall%2C_Rutgers_University%2C_south_view.jpg/960px-New_Jersey_Hall%2C_Rutgers_University%2C_south_view.jpg"
+    }
+  },
+  "uconn": {
+    "logo": {
+      "src": "university-media/uconn-logo.svg",
+      "title": "University of Connecticut logo.svg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:University_of_Connecticut_logo.svg",
+      "credit": "University of Connecticut",
+      "license": "Public domain",
+      "licenseUrl": "",
+      "retrieved": "2026-10-22",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/8/8f/University_of_Connecticut_logo.svg"
+    },
+    "campus": {
+      "src": "university-media/uconn-campus.jpg",
+      "title": "Laurel Hall, University of Connecticut, Storrs",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Laurel_Hall_-_University_of_Connecticut_-_DSC09917.JPG",
+      "credit": "Daderot",
+      "license": "CC0",
+      "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "retrieved": "2026-10-22",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Laurel_Hall_-_University_of_Connecticut_-_DSC09917.JPG/960px-Laurel_Hall_-_University_of_Connecticut_-_DSC09917.JPG"
+    }
+  },
+  "umass-amherst": {
+    "logo": {
+      "src": "university-media/umass-amherst-logo.png",
+      "title": "Umass Amherst Logo.png",
+      "sourceUrl": "https://en.wikipedia.org/wiki/File:Umass_Amherst_Logo.png",
+      "credit": "University of Massachusetts Amherst",
+      "license": "PD",
+      "licenseUrl": "",
+      "retrieved": "2026-10-22",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/en/6/68/Umass_Amherst_Logo.png"
+    },
+    "campus": {
+      "src": "university-media/umass-amherst-campus.jpg",
+      "title": "Old Chapel constructed in 1884 at the campus",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Old_Chapel_6.JPG",
+      "credit": "Jon Platek",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "retrieved": "2026-10-22",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Old_Chapel_6.JPG/960px-Old_Chapel_6.JPG"
+    }
+  },
+  "buffalo": {
+    "logo": {
+      "src": "university-media/buffalo-logo.svg",
+      "title": "University at Buffalo logo.svg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:University_at_Buffalo_logo.svg",
+      "credit": "University at Buffalo",
+      "license": "Public domain",
+      "licenseUrl": "",
+      "retrieved": "2026-10-22",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/3/33/University_at_Buffalo_logo.svg"
+    },
+    "campus": {
+      "src": "university-media/buffalo-campus.jpg",
+      "title": "Clark Hall on UB's South Campus",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Clark_Hall_on_UB%27s_South_Campus.jpg",
+      "credit": "Davidhar",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "retrieved": "2026-10-22",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/1/14/Clark_Hall_on_UB%27s_South_Campus.jpg"
+    }
+  },
+  "michigan-ann-arbor": {
+    "logo": {
+      "src": "university-media/michigan-ann-arbor-logo.svg",
+      "title": "University of Michigan logo.svg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:University_of_Michigan_logo.svg",
+      "credit": "University of Michigan",
+      "license": "Public domain",
+      "licenseUrl": "",
+      "retrieved": "2026-10-22",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/c/c1/University_of_Michigan_logo.svg"
+    },
+    "campus": {
+      "src": "university-media/michigan-ann-arbor-campus.jpg",
+      "title": "James Burrill Angell Hall (1924) on Central Campus serves as a major academic building for the College of Literature, Science, and the Arts.",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Front_of_Angell_Hall.jpg",
+      "credit": "Chris Rycroft",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "retrieved": "2026-10-22",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/Front_of_Angell_Hall.jpg/960px-Front_of_Angell_Hall.jpg"
+    }
+  },
+  "wisconsin-madison": {
+    "logo": {
+      "src": "university-media/wisconsin-madison-logo.svg",
+      "title": "University of Wisconsin-Madison logo.svg",
+      "sourceUrl": "https://en.wikipedia.org/wiki/File:University_of_Wisconsin-Madison_logo.svg",
+      "credit": "University of Wisconsin–Madison",
+      "license": "Copyrighted university logo",
+      "licenseUrl": "",
+      "retrieved": "2026-10-22",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/en/e/e0/University_of_Wisconsin-Madison_logo.svg"
+    },
+    "campus": {
+      "src": "university-media/wisconsin-madison-campus.jpg",
+      "title": "Bascom Hall sits atop Bascom Hill at the heart of campus.",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bascom_Hall_at_Dusk.jpg",
+      "credit": "ALindgren74",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+      "retrieved": "2026-10-22",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Bascom_Hall_at_Dusk.jpg/960px-Bascom_Hall_at_Dusk.jpg"
+    }
+  },
+  "ohio-state-columbus": {
+    "logo": {
+      "src": "university-media/ohio-state-columbus-logo.svg",
+      "title": "Ohio State University horizontal logo.svg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ohio_State_University_horizontal_logo.svg",
+      "credit": "Ohio State University",
+      "license": "Public domain",
+      "licenseUrl": "",
+      "retrieved": "2026-10-22",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/f/fa/Ohio_State_University_horizontal_logo.svg"
+    },
+    "campus": {
+      "src": "university-media/ohio-state-columbus-campus.jpg",
+      "title": "Hale Hall was the original home of the Ohio Union.",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Front_view_of_the_Old_Ohio_Union,_now_known_as_Hale_Hall_at_Ohio_State.jpg",
+      "credit": "East of the Mississippi",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "retrieved": "2026-10-22",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Front_view_of_the_Old_Ohio_Union%2C_now_known_as_Hale_Hall_at_Ohio_State.jpg/960px-Front_view_of_the_Old_Ohio_Union%2C_now_known_as_Hale_Hall_at_Ohio_State.jpg"
+    }
+  },
+  "purdue-west-lafayette": {
+    "logo": {
+      "src": "university-media/purdue-west-lafayette-logo.svg",
+      "title": "Purdue University system logo.svg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Purdue_University_system_logo.svg",
+      "credit": "Purdue University",
+      "license": "Public domain",
+      "licenseUrl": "",
+      "retrieved": "2026-10-22",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/f/f7/Purdue_University_system_logo.svg"
+    },
+    "campus": {
+      "src": "university-media/purdue-west-lafayette-campus.jpg",
+      "title": "University Hall",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Purdue_University,_West_Lafayette,_Indiana,_Estados_Unidos,_2012-10-15,_DD_08.jpg",
+      "credit": "Diego Delso",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "retrieved": "2026-10-22",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Purdue_University%2C_West_Lafayette%2C_Indiana%2C_Estados_Unidos%2C_2012-10-15%2C_DD_08.jpg/960px-Purdue_University%2C_West_Lafayette%2C_Indiana%2C_Estados_Unidos%2C_2012-10-15%2C_DD_08.jpg"
+    }
+  },
+  "minnesota-twin-cities": {
+    "logo": {
+      "src": "university-media/minnesota-twin-cities-logo.svg",
+      "title": "University of Minnesota Logo.svg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:University_of_Minnesota_Logo.svg",
+      "credit": "University of Minnesota",
+      "license": "Public domain",
+      "licenseUrl": "",
+      "retrieved": "2026-10-22",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/6/6a/University_of_Minnesota_Logo.svg"
+    },
+    "campus": {
+      "src": "university-media/minnesota-twin-cities-campus.jpg",
+      "title": "Pillsbury Hall, one of the oldest buildings on campus (1889)",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Pillsbury_Hall.jpg",
+      "credit": "University of Minnesota Twin Cities",
+      "license": "Public domain",
+      "licenseUrl": "",
+      "retrieved": "2026-10-22",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Pillsbury_Hall.jpg/960px-Pillsbury_Hall.jpg"
+    }
+  },
+  "kansas": {
+    "logo": {
+      "src": "university-media/kansas-logo.svg",
+      "title": "University of Kansas wordmark.svg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:University_of_Kansas_wordmark.svg",
+      "credit": "University of Kansas",
+      "license": "Public domain",
+      "licenseUrl": "",
+      "retrieved": "2026-10-22",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/4/4c/University_of_Kansas_wordmark.svg"
+    },
+    "campus": {
+      "src": "university-media/kansas-campus.jpg",
+      "title": "Kansas Fraser Hall in the Fall of 2025",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Fraser_Hall_at_Kansas_by_Ian_Ballinger.jpg",
+      "credit": "Ian Ballinger",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "retrieved": "2026-10-22",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/Fraser_Hall_at_Kansas_by_Ian_Ballinger.jpg/960px-Fraser_Hall_at_Kansas_by_Ian_Ballinger.jpg"
+    }
+  },
+  "alabama": {
+    "logo": {
+      "src": "university-media/alabama-logo.svg",
+      "title": "University of Alabama logo.svg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:University_of_Alabama_logo.svg",
+      "credit": "University of Alabama",
+      "license": "Public domain",
+      "licenseUrl": "",
+      "retrieved": "2026-10-22",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/0/0d/University_of_Alabama_logo.svg"
+    },
+    "campus": {
+      "src": "university-media/alabama-campus.jpg",
+      "title": "Clark Hall is home of the College of Arts and Sciences",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ua_clark_hall.jpg",
+      "credit": "Jorge1767 at English Wikipedia",
+      "license": "Public domain",
+      "licenseUrl": "",
+      "retrieved": "2026-10-22",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Ua_clark_hall.jpg/960px-Ua_clark_hall.jpg"
+    }
+  },
+  "wichita-state": {
+    "logo": {
+      "src": "university-media/wichita-state-logo.svg",
+      "title": "Wichita State University logo.svg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Wichita_State_University_logo.svg",
+      "credit": "Wichita State University",
+      "license": "Public domain",
+      "licenseUrl": "",
+      "retrieved": "2026-10-22",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/1/1b/Wichita_State_University_logo.svg"
+    },
+    "campus": {
+      "src": "university-media/wichita-state-campus.jpg",
+      "title": "Hubbard Hall (2011)",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Looking_at_Hubbard_Hall_at_Wichita_State_University_in_the_Afternoon_2011.jpg",
+      "credit": "Kazenogakusei",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "retrieved": "2026-10-22",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Looking_at_Hubbard_Hall_at_Wichita_State_University_in_the_Afternoon_2011.jpg/960px-Looking_at_Hubbard_Hall_at_Wichita_State_University_in_the_Afternoon_2011.jpg"
+    }
+  },
+  "northern-iowa": {
+    "logo": {
+      "src": "university-media/northern-iowa-logo.png",
+      "title": "University of Northern Iowa wordmark.svg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:University_of_Northern_Iowa_wordmark.svg",
+      "credit": "University of Northern Iowa",
+      "license": "Public domain",
+      "licenseUrl": "",
+      "retrieved": "2026-10-22",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/University_of_Northern_Iowa_wordmark.svg/250px-University_of_Northern_Iowa_wordmark.svg.png"
+    },
+    "campus": {
+      "src": "university-media/northern-iowa-campus.jpg",
+      "title": "Campanile 2018",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:MKX_9579.jpg",
+      "credit": "Maddie.allen",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "retrieved": "2026-10-22",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/MKX_9579.jpg/960px-MKX_9579.jpg"
+    }
+  },
+  "north-dakota-state": {
+    "logo": {
+      "src": "university-media/north-dakota-state-logo.png",
+      "title": "North Dakota State University wordmark.svg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:North_Dakota_State_University_wordmark.svg",
+      "credit": "North Dakota State University",
+      "license": "Public domain",
+      "licenseUrl": "",
+      "retrieved": "2026-10-22",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/North_Dakota_State_University_wordmark.svg/330px-North_Dakota_State_University_wordmark.svg.png"
+    },
+    "campus": {
+      "src": "university-media/north-dakota-state-campus.png",
+      "title": "Old Main at NDSU.",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:North_Dakota_State_University_Old_Main;_May_16,_2024.png",
+      "credit": "Billybob2002",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+      "retrieved": "2026-10-22",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/North_Dakota_State_University_Old_Main%3B_May_16%2C_2024.png/960px-North_Dakota_State_University_Old_Main%3B_May_16%2C_2024.png"
+    }
+  },
+  "north-dakota": {
+    "logo": {
+      "src": "university-media/north-dakota-logo.png",
+      "title": "University of North Dakota Logo.svg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:University_of_North_Dakota_Logo.svg",
+      "credit": "Unknown authorUnknown author",
+      "license": "Public domain",
+      "licenseUrl": "",
+      "retrieved": "2026-10-22",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/University_of_North_Dakota_Logo.svg/330px-University_of_North_Dakota_Logo.svg.png"
+    },
+    "campus": {
+      "src": "university-media/north-dakota-campus.jpg",
+      "title": "Merrifield Hall, University of North Dakota Historic District",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:UND_Merrifield_Hall.JPG",
+      "credit": "MatthewUND",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "retrieved": "2026-10-22",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/UND_Merrifield_Hall.JPG/960px-UND_Merrifield_Hall.JPG"
+    }
+  },
+  "south-dakota-state": {
+    "logo": {
+      "src": "university-media/south-dakota-state-logo.png",
+      "title": "SDSU South Dakota State University Logo.png",
+      "sourceUrl": "https://en.wikipedia.org/wiki/File:SDSU_South_Dakota_State_University_Logo.png",
+      "credit": "South Dakota State University",
+      "license": "Copyrighted university logo",
+      "licenseUrl": "",
+      "retrieved": "2026-10-22",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/en/thumb/e/e7/SDSU_South_Dakota_State_University_Logo.png/250px-SDSU_South_Dakota_State_University_Logo.png"
+    },
+    "campus": {
+      "src": "university-media/south-dakota-state-campus.jpg",
+      "title": "The Coughlin Campanile completed in 1929 on west campus. It was listed on the National Register of Historic Places in 1987.",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Coughlin_Campanile_1.jpg",
+      "credit": "Andrew Boerema - 2005",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+      "retrieved": "2026-10-22",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Coughlin_Campanile_1.jpg/960px-Coughlin_Campanile_1.jpg"
+    }
+  },
+  "kent-state": {
+    "logo": {
+      "src": "university-media/kent-state-logo.png",
+      "title": "Kent State University logo.svg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Kent_State_University_logo.svg",
+      "credit": "Kent State University",
+      "license": "Public domain",
+      "licenseUrl": "",
+      "retrieved": "2026-10-22",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Kent_State_University_logo.svg/250px-Kent_State_University_logo.svg.png"
+    },
+    "campus": {
+      "src": "university-media/kent-state-campus.jpg",
+      "title": "Front of Merrill Hall, completed in 1913 as the first building on campus",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Merrill_Hall_2.jpg",
+      "credit": "JonRidinger",
+      "license": "CC BY 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+      "retrieved": "2026-10-22",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Merrill_Hall_2.jpg/960px-Merrill_Hall_2.jpg"
+    }
+  },
+  "akron": {
+    "logo": {
+      "src": "university-media/akron-logo.png",
+      "title": "University of Akron logo.svg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:University_of_Akron_logo.svg",
+      "credit": "The University of Akron",
+      "license": "Public domain",
+      "licenseUrl": "",
+      "retrieved": "2026-10-22",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/University_of_Akron_logo.svg/250px-University_of_Akron_logo.svg.png"
+    },
+    "campus": {
+      "src": "university-media/akron-campus.jpg",
+      "title": "Buchtel College of Arts and Sciences",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:University_of_Akron_Arts_and_Sciences.JPG",
+      "credit": "JEN9841",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "retrieved": "2026-10-22",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/University_of_Akron_Arts_and_Sciences.JPG/960px-University_of_Akron_Arts_and_Sciences.JPG"
+    }
+  },
+  "cleveland-state": {
+    "logo": {
+      "src": "university-media/cleveland-state-logo.png",
+      "title": "Logo of CSU (2023).png",
+      "sourceUrl": "https://en.wikipedia.org/wiki/File:Logo_of_CSU_(2023).png",
+      "credit": "Cleveland State University",
+      "license": "Copyrighted university logo",
+      "licenseUrl": "",
+      "retrieved": "2026-10-22",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/en/7/7e/Logo_of_CSU_%282023%29.png"
+    },
+    "campus": {
+      "src": "university-media/cleveland-state-campus.jpg",
+      "title": "Rhodes Tower",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Cleveland_State_University,_Cleveland,_OH_(27420355137).jpg",
+      "credit": "Warren LeMay from Cincinnati, OH, United States",
+      "license": "CC0",
+      "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "retrieved": "2026-10-22",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Cleveland_State_University%2C_Cleveland%2C_OH_%2827420355137%29.jpg/960px-Cleveland_State_University%2C_Cleveland%2C_OH_%2827420355137%29.jpg"
+    }
+  },
+  "northern-illinois": {
+    "logo": {
+      "src": "university-media/northern-illinois-logo.png",
+      "title": "Northern Illinois University logo.svg",
+      "sourceUrl": "https://en.wikipedia.org/wiki/File:Northern_Illinois_University_logo.svg",
+      "credit": "Northern Illinois University",
+      "license": "Copyrighted university logo",
+      "licenseUrl": "",
+      "retrieved": "2026-10-22",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/en/thumb/6/6d/Northern_Illinois_University_logo.svg/250px-Northern_Illinois_University_logo.svg.png"
+    },
+    "campus": {
+      "src": "university-media/northern-illinois-campus.jpg",
+      "title": "Altgeld Hall",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Altgeld_Hall-1st_bldg_on_campus_ever.JPG",
+      "credit": "Andy McMurray",
+      "license": "CC BY 2.5",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.5",
+      "retrieved": "2026-10-22",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Altgeld_Hall-1st_bldg_on_campus_ever.JPG/960px-Altgeld_Hall-1st_bldg_on_campus_ever.JPG"
+    }
+  },
+  "central-michigan": {
+    "logo": {
+      "src": "university-media/central-michigan-logo.png",
+      "title": "Central Michigan University wordmark.svg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Central_Michigan_University_wordmark.svg",
+      "credit": "The University\n\nUploaded by Two Hearted River at en.wikipedia",
+      "license": "Public domain",
+      "licenseUrl": "",
+      "retrieved": "2026-10-22",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Central_Michigan_University_wordmark.svg/250px-Central_Michigan_University_wordmark.svg.png"
+    },
+    "campus": {
+      "src": "university-media/central-michigan-campus.jpg",
+      "title": "Charles V. Park Library at Central Michigan University",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:CMU_Park_Library.JPG",
+      "credit": "Cjh1452000",
+      "license": "Public domain",
+      "licenseUrl": "",
+      "retrieved": "2026-10-22",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/CMU_Park_Library.JPG/960px-CMU_Park_Library.JPG"
+    }
+  },
+  "western-michigan": {
+    "logo": {
+      "src": "university-media/western-michigan-logo.png",
+      "title": "Western Michigan University Primary Logo.svg",
+      "sourceUrl": "https://en.wikipedia.org/wiki/File:Western_Michigan_University_Primary_Logo.svg",
+      "credit": "Western Michigan University",
+      "license": "Copyrighted university logo",
+      "licenseUrl": "",
+      "retrieved": "2026-10-22",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/en/thumb/3/31/Western_Michigan_University_Primary_Logo.svg/250px-Western_Michigan_University_Primary_Logo.svg.png"
+    },
+    "campus": {
+      "src": "university-media/western-michigan-campus.jpg",
+      "title": "East Hall",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Western_Michigan_University_East_Hall.JPG",
+      "credit": "Fbthpg",
+      "license": "CC0",
+      "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "retrieved": "2026-10-22",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Western_Michigan_University_East_Hall.JPG/960px-Western_Michigan_University_East_Hall.JPG"
+    }
+  },
+  "missouri-state": {
+    "logo": {
+      "src": "university-media/missouri-state-logo.png",
+      "title": "Missouri State University.svg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Missouri_State_University.svg",
+      "credit": "Missouri State University",
+      "license": "Public domain",
+      "licenseUrl": "",
+      "retrieved": "2026-10-22",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/Missouri_State_University.svg/250px-Missouri_State_University.svg.png"
+    },
+    "campus": {
+      "src": "university-media/missouri-state-campus.jpg",
+      "title": "Carrington Hall",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:CarringtonHall.jpg",
+      "credit": "Keith8404 (talk)",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "retrieved": "2026-10-22",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/d/da/CarringtonHall.jpg"
+    }
+  },
+  "south-dakota": {
+    "logo": {
+      "src": "university-media/south-dakota-logo.png",
+      "title": "University of South Dakota logo.svg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:University_of_South_Dakota_logo.svg",
+      "credit": "University of South Dakota",
+      "license": "Public domain",
+      "licenseUrl": "",
+      "retrieved": "2026-10-22",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/University_of_South_Dakota_logo.svg/330px-University_of_South_Dakota_logo.svg.png"
+    },
+    "campus": {
+      "src": "university-media/south-dakota-campus.png",
+      "title": "Al Neuharth Media Center, dedicated to Al Neuharth",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:AlNeuharthMediaCenter.png",
+      "credit": "Jrobb525",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "retrieved": "2026-10-22",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/4/4d/AlNeuharthMediaCenter.png"
+    }
+  },
+  "missouri-southern": {
+    "logo": {
+      "src": "university-media/missouri-southern-logo.png",
+      "title": "Missouri Southern State University logo.svg",
+      "sourceUrl": "https://en.wikipedia.org/wiki/File:Missouri_Southern_State_University_logo.svg",
+      "credit": "Missouri Southern State University",
+      "license": "Copyrighted university logo",
+      "licenseUrl": "",
+      "retrieved": "2026-10-22",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/en/thumb/5/57/Missouri_Southern_State_University_logo.svg/250px-Missouri_Southern_State_University_logo.svg.png"
+    },
+    "campus": {
+      "src": "university-media/missouri-southern-campus.jpg",
+      "title": "Hearnes Hall — official campus buildings guide",
+      "sourceUrl": "https://www.mssu.edu/student-affairs/campus.php",
+      "credit": "Missouri Southern State University",
+      "license": "Copyrighted university photograph",
+      "licenseUrl": "",
+      "retrieved": "2026-10-22",
+      "originalUrl": "https://www.mssu.edu/student-affairs/_files/hearnes-hall.jpg"
+    }
+  },
+  "utah-state": {
+    "logo": {
+      "src": "university-media/utah-state-logo.png",
+      "title": "Utah State University logo.svg",
+      "sourceUrl": "https://en.wikipedia.org/wiki/File:Utah_State_University_logo.svg",
+      "credit": "Utah State University",
+      "license": "Copyrighted university logo",
+      "licenseUrl": "",
+      "retrieved": "2026-10-22",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/en/thumb/2/27/Utah_State_University_logo.svg/330px-Utah_State_University_logo.svg.png"
+    },
+    "campus": {
+      "src": "university-media/utah-state-campus.jpg",
+      "title": "Old Main, completed in 1890, is the university's oldest building and houses administrative offices and parts of the College of Humanities and Social Sciences.",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Old_Main_Utah_St_Univ.jpg",
+      "credit": "Cory Maylett",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+      "retrieved": "2026-10-22",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/b/b1/Old_Main_Utah_St_Univ.jpg"
+    }
+  },
+  "oklahoma": {
+    "logo": {
+      "src": "university-media/oklahoma-logo.png",
+      "title": "University of Oklahoma logo.svg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:University_of_Oklahoma_logo.svg",
+      "credit": "University of Oklahoma",
+      "license": "Public domain",
+      "licenseUrl": "",
+      "retrieved": "2026-10-22",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/University_of_Oklahoma_logo.svg/250px-University_of_Oklahoma_logo.svg.png"
+    },
+    "campus": {
+      "src": "university-media/oklahoma-campus.jpg",
+      "title": "Bizzell Library sits at the heart of the university's Norman campus.",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:University_of_Oklahoma_July_2019_69_(Bizzell_Memorial_Library).jpg",
+      "credit": "Michael Barera",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "retrieved": "2026-10-22",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/University_of_Oklahoma_July_2019_69_%28Bizzell_Memorial_Library%29.jpg/960px-University_of_Oklahoma_July_2019_69_%28Bizzell_Memorial_Library%29.jpg"
+    }
+  },
+  "oklahoma-state": {
+    "logo": {
+      "src": "university-media/oklahoma-state-logo.png",
+      "title": "Oklahoma State University system logo.svg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Oklahoma_State_University_system_logo.svg",
+      "credit": "Oklahoma State University",
+      "license": "Public domain",
+      "licenseUrl": "",
+      "retrieved": "2026-10-22",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Oklahoma_State_University_system_logo.svg/250px-Oklahoma_State_University_system_logo.svg.png"
+    },
+    "campus": {
+      "src": "university-media/oklahoma-state-campus.jpg",
+      "title": "Edmon Low Library",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Edmon_Low_Library_-_Oklahoma_State_University.jpg",
+      "credit": "DBinfo at English Wikipedia",
+      "license": "Public domain",
+      "licenseUrl": "",
+      "retrieved": "2026-10-22",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/9/96/Edmon_Low_Library_-_Oklahoma_State_University.jpg"
+    }
+  },
+  "nebraska-lincoln": {
+    "logo": {
+      "src": "university-media/nebraska-lincoln-logo.png",
+      "title": "University of Nebraska–Lincoln logo.svg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:University_of_Nebraska%E2%80%93Lincoln_logo.svg",
+      "credit": "University of Nebraska system",
+      "license": "Public domain",
+      "licenseUrl": "",
+      "retrieved": "2026-10-22",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/University_of_Nebraska%E2%80%93Lincoln_logo.svg/250px-University_of_Nebraska%E2%80%93Lincoln_logo.svg.png"
+    },
+    "campus": {
+      "src": "university-media/nebraska-lincoln-campus.jpg",
+      "title": "Architecture Hall, built in 1895 as University Library, is the oldest building on campus.",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:UNL_Architecture_Hall_from_E_1.JPG",
+      "credit": "Ammodramus",
+      "license": "CC0",
+      "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "retrieved": "2026-10-22",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/UNL_Architecture_Hall_from_E_1.JPG/960px-UNL_Architecture_Hall_from_E_1.JPG"
+    }
+  },
+  "missouri": {
+    "logo": {
+      "src": "university-media/missouri-logo.png",
+      "title": "University of Missouri logo.svg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:University_of_Missouri_logo.svg",
+      "credit": "University of Missouri",
+      "license": "Public domain",
+      "licenseUrl": "",
+      "retrieved": "2026-10-22",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/University_of_Missouri_logo.svg/120px-University_of_Missouri_logo.svg.png"
+    },
+    "campus": {
+      "src": "university-media/missouri-campus.jpg",
+      "title": "Tower of Memorial Union",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:University_of_Missouri_-_Memorial_Union.jpg",
+      "credit": "Adam Procter",
+      "license": "CC BY 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+      "retrieved": "2026-10-22",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/University_of_Missouri_-_Memorial_Union.jpg/960px-University_of_Missouri_-_Memorial_Union.jpg"
+    }
+  },
+  "kansas-state": {
+    "logo": {
+      "src": "university-media/kansas-state-logo.png",
+      "title": "Kansas State University wordmark.svg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Kansas_State_University_wordmark.svg",
+      "credit": "Kansas State University.",
+      "license": "Public domain",
+      "licenseUrl": "",
+      "retrieved": "2026-10-22",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Kansas_State_University_wordmark.svg/250px-Kansas_State_University_wordmark.svg.png"
+    },
+    "campus": {
+      "src": "university-media/kansas-state-campus.jpg",
+      "title": "Anderson Hall",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:KSU_Anderson_Hall.jpg",
+      "credit": "Kansas State University",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+      "retrieved": "2026-10-22",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/KSU_Anderson_Hall.jpg/960px-KSU_Anderson_Hall.jpg"
+    }
+  },
+  "texas-tech": {
+    "logo": {
+      "src": "university-media/texas-tech-logo.png",
+      "title": "Texas Tech New Logo.svg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Texas_Tech_New_Logo.svg",
+      "credit": "Texas Tech University",
+      "license": "Public domain",
+      "licenseUrl": "",
+      "retrieved": "2026-10-22",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Texas_Tech_New_Logo.svg/330px-Texas_Tech_New_Logo.svg.png"
+    },
+    "campus": {
+      "src": "university-media/texas-tech-campus.jpg",
+      "title": "Administration Building",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:TTUadmin.jpg",
+      "credit": "Johan Hendrikse",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+      "retrieved": "2026-10-22",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/TTUadmin.jpg/960px-TTUadmin.jpg"
+    }
+  },
+  "west-virginia": {
+    "logo": {
+      "src": "university-media/west-virginia-logo.png",
+      "title": "West Virginia University logo.svg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:West_Virginia_University_logo.svg",
+      "credit": "Unknown authorUnknown author",
+      "license": "Public domain",
+      "licenseUrl": "",
+      "retrieved": "2026-10-22",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/West_Virginia_University_logo.svg/250px-West_Virginia_University_logo.svg.png"
+    },
+    "campus": {
+      "src": "university-media/west-virginia-campus.jpg",
+      "title": "Woodburn Hall is one of the oldest buildings at West Virginia University, and has long been a symbol of the university.",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Woodburn_Hall_WVU_(9300119056).jpg",
+      "credit": "Tom Long from Oak Island, USA",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "retrieved": "2026-10-22",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Woodburn_Hall_WVU_%289300119056%29.jpg/960px-Woodburn_Hall_WVU_%289300119056%29.jpg"
+    }
+  },
+  "new-mexico": {
+    "logo": {
+      "src": "university-media/new-mexico-logo.png",
+      "title": "University of New Mexico logo.svg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:University_of_New_Mexico_logo.svg",
+      "credit": "University of New Mexico",
+      "license": "Public domain",
+      "licenseUrl": "",
+      "retrieved": "2026-10-22",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/University_of_New_Mexico_logo.svg/330px-University_of_New_Mexico_logo.svg.png"
+    },
+    "campus": {
+      "src": "university-media/new-mexico-campus.jpg",
+      "title": "Humanities Building, added in 1970",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Unm_humanities.jpg",
+      "credit": "PerryPlanet",
+      "license": "Public domain",
+      "licenseUrl": "",
+      "retrieved": "2026-10-22",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Unm_humanities.jpg/960px-Unm_humanities.jpg"
+    }
+  },
+  "uab": {
+    "logo": {
+      "src": "university-media/uab-logo.png",
+      "title": "UAB Core Logo Centered Full Color.svg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:UAB_Core_Logo_Centered_Full_Color.svg",
+      "credit": "Unknown authorUnknown author",
+      "license": "Public domain",
+      "licenseUrl": "",
+      "retrieved": "2026-10-22",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/UAB_Core_Logo_Centered_Full_Color.svg/330px-UAB_Core_Logo_Centered_Full_Color.svg.png"
+    },
+    "campus": {
+      "src": "university-media/uab-campus.jpg",
+      "title": "UAB Hill Student Center",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:UAB_Hill_Student_Center.jpg",
+      "credit": "Unknown authorUnknown author",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+      "retrieved": "2026-10-22",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/UAB_Hill_Student_Center.jpg/960px-UAB_Hill_Student_Center.jpg"
+    }
+  },
+  "alabama-huntsville": {
+    "logo": {
+      "src": "university-media/alabama-huntsville-logo.png",
+      "title": "Alabama-Huntsville UAH logo.svg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Alabama-Huntsville_UAH_logo.svg",
+      "credit": "University of Alabama in Huntsville",
+      "license": "Public domain",
+      "licenseUrl": "",
+      "retrieved": "2026-10-22",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/Alabama-Huntsville_UAH_logo.svg/250px-Alabama-Huntsville_UAH_logo.svg.png"
+    },
+    "campus": {
+      "src": "university-media/alabama-huntsville-campus.jpg",
+      "title": "UAH Engineering Building",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Engineering_Building_UAH.JPG",
+      "credit": "AlabamaUSA",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "retrieved": "2026-10-22",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Engineering_Building_UAH.JPG/960px-Engineering_Building_UAH.JPG"
+    }
+  },
+  "louisville": {
+    "logo": {
+      "src": "university-media/louisville-logo.png",
+      "title": "University of Louisville logo.svg",
+      "sourceUrl": "https://en.wikipedia.org/wiki/File:University_of_Louisville_logo.svg",
+      "credit": "University of Louisville",
+      "license": "Copyrighted university logo",
+      "licenseUrl": "",
+      "retrieved": "2026-10-22",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/en/thumb/7/7c/University_of_Louisville_logo.svg/330px-University_of_Louisville_logo.svg.png"
+    },
+    "campus": {
+      "src": "university-media/louisville-campus.jpg",
+      "title": "Grawemeyer Hall was built in 1926",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Grawhallul.jpg",
+      "credit": "Censusdata at en.wikipedia",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+      "retrieved": "2026-10-22",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/8/8a/Grawhallul.jpg"
+    }
+  },
+  "temple": {
+    "logo": {
+      "src": "university-media/temple-logo.png",
+      "title": "Temple University logo.svg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Temple_University_logo.svg",
+      "credit": "Temple University",
+      "license": "Public domain",
+      "licenseUrl": "",
+      "retrieved": "2026-10-22",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Temple_University_logo.svg/250px-Temple_University_logo.svg.png"
+    },
+    "campus": {
+      "src": "university-media/temple-campus.jpg",
+      "title": "Charles Library",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Charles_Library_winter_jeh.jpg",
+      "credit": "Jim.henderson",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+      "retrieved": "2026-10-22",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Charles_Library_winter_jeh.jpg/960px-Charles_Library_winter_jeh.jpg"
+    }
+  },
+  "delaware": {
+    "logo": {
+      "src": "university-media/delaware-logo.png",
+      "title": "University of Delaware wordmark.svg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:University_of_Delaware_wordmark.svg",
+      "credit": "University of Delaware",
+      "license": "Public domain",
+      "licenseUrl": "",
+      "retrieved": "2026-10-22",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/University_of_Delaware_wordmark.svg/250px-University_of_Delaware_wordmark.svg.png"
+    },
+    "campus": {
+      "src": "university-media/delaware-campus.jpg",
+      "title": "Memorial Hall, home of UD's English Department",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:UD_Memorial_Hall.JPG",
+      "credit": "Ottawa80",
+      "license": "Public domain",
+      "licenseUrl": "",
+      "retrieved": "2026-10-22",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/b/bf/UD_Memorial_Hall.JPG"
+    }
+  },
+  "tennessee-knoxville": {
+    "logo": {
+      "src": "university-media/tennessee-knoxville-logo.png",
+      "title": "UT Knoxville logo left.svg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:UT_Knoxville_logo_left.svg",
+      "credit": "University of Tennessee at Knoxville",
+      "license": "Public domain",
+      "licenseUrl": "",
+      "retrieved": "2026-10-22",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/UT_Knoxville_logo_left.svg/250px-UT_Knoxville_logo_left.svg.png"
+    },
+    "campus": {
+      "src": "university-media/tennessee-knoxville-campus.jpg",
+      "title": "Ayres Hall",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:UT_Ayres_Hall_front.jpg",
+      "credit": "Gragghia at en.wikipedia",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+      "retrieved": "2026-10-22",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/UT_Ayres_Hall_front.jpg/250px-UT_Ayres_Hall_front.jpg"
+    }
+  },
+  "south-carolina": {
+    "logo": {
+      "src": "university-media/south-carolina-logo.svg",
+      "title": "University of South Carolina horizontal logo.svg",
+      "sourceUrl": "https://en.wikipedia.org/wiki/File:University_of_South_Carolina_horizontal_logo.svg",
+      "credit": "University of South Carolina, Columbia",
+      "license": "Copyrighted university logo",
+      "licenseUrl": "",
+      "retrieved": "2026-10-22",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/en/5/56/University_of_South_Carolina_horizontal_logo.svg"
+    },
+    "campus": {
+      "src": "university-media/south-carolina-campus.jpg",
+      "title": "The McKissick Museum sits prominently at the head of the USC Horseshoe.",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:McKissickMarch2024Nikon.jpg",
+      "credit": "BigCheddah",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "retrieved": "2026-10-22",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/McKissickMarch2024Nikon.jpg/250px-McKissickMarch2024Nikon.jpg"
+    }
+  },
+  "miami-ohio": {
+    "logo": {
+      "src": "university-media/miami-ohio-logo.png",
+      "title": "Miami University logo 2021.svg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Miami_University_logo_2021.svg",
+      "credit": "Miami University",
+      "license": "Public domain",
+      "licenseUrl": "",
+      "retrieved": "2026-10-22",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/Miami_University_logo_2021.svg/250px-Miami_University_logo_2021.svg.png"
+    },
+    "campus": {
+      "src": "university-media/miami-ohio-campus.jpg",
+      "title": "King Library",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:King_Library,_Miami_University.jpg",
+      "credit": "EEJCC",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "retrieved": "2026-10-22",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/King_Library%2C_Miami_University.jpg/250px-King_Library%2C_Miami_University.jpg"
+    }
+  },
+  "syracuse": {
+    "logo": {
+      "src": "university-media/syracuse-logo.png",
+      "title": "Syracuse University wordmark.svg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Syracuse_University_wordmark.svg",
+      "credit": "Syracuse University",
+      "license": "Public domain",
+      "licenseUrl": "",
+      "retrieved": "2026-10-22",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Syracuse_University_wordmark.svg/330px-Syracuse_University_wordmark.svg.png"
+    },
+    "campus": {
+      "src": "university-media/syracuse-campus.jpg",
+      "title": "The Hall of Languages was the first building on the Syracuse University campus, opening in 1873.",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Hall_of_Languages_at_Syracuse_University,_as_seen_from_Newhouse_Steps.jpg",
+      "credit": "Kiran891",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "retrieved": "2026-10-22",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Hall_of_Languages_at_Syracuse_University%2C_as_seen_from_Newhouse_Steps.jpg/250px-Hall_of_Languages_at_Syracuse_University%2C_as_seen_from_Newhouse_Steps.jpg"
+    }
+  },
+  "fordham": {
+    "logo": {
+      "src": "university-media/fordham-logo.png",
+      "title": "Fordham University logo 2025.png",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Fordham_University_logo_2025.png",
+      "credit": "Fordham University",
+      "license": "Public domain",
+      "licenseUrl": "",
+      "retrieved": "2026-10-22",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Fordham_University_logo_2025.png/250px-Fordham_University_logo_2025.png"
+    },
+    "campus": {
+      "src": "university-media/fordham-campus.jpg",
+      "title": "Keating Hall, administrative headquarters of the Graduate School of Arts & Sciences, Rose Hill",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Fordham_University_02.JPG",
+      "credit": "Howchou",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "retrieved": "2026-10-22",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/Fordham_University_02.JPG/250px-Fordham_University_02.JPG"
+    }
+  },
+  "baylor": {
+    "logo": {
+      "src": "university-media/baylor-logo.png",
+      "title": "Baylor University logo.svg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Baylor_University_logo.svg",
+      "credit": "Baylor University",
+      "license": "Public domain",
+      "licenseUrl": "",
+      "retrieved": "2026-10-22",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Baylor_University_logo.svg/330px-Baylor_University_logo.svg.png"
+    },
+    "campus": {
+      "src": "university-media/baylor-campus.jpg",
+      "title": "Pat Neff Hall houses the office of the university's president and others",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Baylor_Pat_Neff_2.JPG",
+      "credit": "Brentsalter",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "retrieved": "2026-10-22",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Baylor_Pat_Neff_2.JPG/500px-Baylor_Pat_Neff_2.JPG"
+    }
+  },
+  "virginia-tech": {
+    "logo": {
+      "src": "university-media/virginia-tech-logo.png",
+      "title": "Virginia Tech logo.svg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Virginia_Tech_logo.svg",
+      "credit": "Virginia Tech",
+      "license": "Public domain",
+      "licenseUrl": "",
+      "retrieved": "2026-10-22",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Virginia_Tech_logo.svg/250px-Virginia_Tech_logo.svg.png"
+    },
+    "campus": {
+      "src": "university-media/virginia-tech-campus.jpg",
+      "title": "Burruss Hall, Virginia Tech",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Burruss_Hall,_Virginia_Tech.JPG",
+      "credit": "CBGator87",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "retrieved": "2026-10-22",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Burruss_Hall%2C_Virginia_Tech.JPG/500px-Burruss_Hall%2C_Virginia_Tech.JPG"
+    }
+  },
+  "maryland-college-park": {
+    "logo": {
+      "src": "university-media/maryland-college-park-logo.png",
+      "title": "University of Maryland wordmark.svg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:University_of_Maryland_wordmark.svg",
+      "credit": "University of Maryland, College Park",
+      "license": "Public domain",
+      "licenseUrl": "",
+      "retrieved": "2026-10-22",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/University_of_Maryland_wordmark.svg/250px-University_of_Maryland_wordmark.svg.png"
+    },
+    "campus": {
+      "src": "university-media/maryland-college-park-campus.jpg",
+      "title": "Morrill Hall, built in 1898, the oldest academic building on campus.",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:UMD_Morrill_Hall.JPG",
+      "credit": "Bgervais",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "retrieved": "2026-10-22",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/UMD_Morrill_Hall.JPG/500px-UMD_Morrill_Hall.JPG"
+    }
+  },
+  "florida-state": {
+    "logo": {
+      "src": "university-media/florida-state-logo.png",
+      "title": "Florida State University logo.svg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Florida_State_University_logo.svg",
+      "credit": "Florida State University",
+      "license": "Public domain",
+      "licenseUrl": "",
+      "retrieved": "2026-10-22",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Florida_State_University_logo.svg/250px-Florida_State_University_logo.svg.png"
+    },
+    "campus": {
+      "src": "university-media/florida-state-campus.jpg",
+      "title": "Westcott Plaza",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:FSUWestcottBuilding-2.jpg",
+      "credit": "original=User:TrbleClef, this version=Tim Ross",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+      "retrieved": "2026-10-22",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/FSUWestcottBuilding-2.jpg/500px-FSUWestcottBuilding-2.jpg"
+    }
+  },
+  "florida": {
+    "logo": {
+      "src": "university-media/florida-logo.png",
+      "title": "University of Florida logo.svg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:University_of_Florida_logo.svg",
+      "credit": "University of Florida",
+      "license": "Public domain",
+      "licenseUrl": "",
+      "retrieved": "2026-10-22",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/University_of_Florida_logo.svg/250px-University_of_Florida_logo.svg.png"
+    },
+    "campus": {
+      "src": "university-media/florida-campus.jpg",
+      "title": "Century Tower, begun in 1953, commemorates the 100th anniversary of origins of UF and memorializes students and alumni who died in the World Wars",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:UF_SignatureShot.jpg",
+      "credit": "William M",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+      "retrieved": "2026-10-22",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/UF_SignatureShot.jpg/500px-UF_SignatureShot.jpg"
+    }
+  },
+  "portland-state": {
+    "logo": {
+      "src": "university-media/portland-state-logo.png",
+      "title": "Portland State University Logo.svg",
+      "sourceUrl": "https://en.wikipedia.org/wiki/File:Portland_State_University_Logo.svg",
+      "credit": "Portland State University",
+      "license": "Copyrighted university logo",
+      "licenseUrl": "",
+      "retrieved": "2026-10-22",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/en/thumb/b/b3/Portland_State_University_Logo.svg/250px-Portland_State_University_Logo.svg.png"
+    },
+    "campus": {
+      "src": "university-media/portland-state-campus.jpg",
+      "title": "Shattuck Hall, home to the university's school of architecture",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Shattuck_Hall-2.jpg",
+      "credit": "Visitor7",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "retrieved": "2026-10-22",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Shattuck_Hall-2.jpg/500px-Shattuck_Hall-2.jpg"
+    }
+  },
+  "texas-austin": {
+    "logo": {
+      "src": "university-media/texas-austin-logo.png",
+      "title": "University of Texas at Austin logo.svg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:University_of_Texas_at_Austin_logo.svg",
+      "credit": "University of Texas at Austin",
+      "license": "Public domain",
+      "licenseUrl": "",
+      "retrieved": "2026-10-22",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/University_of_Texas_at_Austin_logo.svg/250px-University_of_Texas_at_Austin_logo.svg.png"
+    },
+    "campus": {
+      "src": "university-media/texas-austin-campus.jpg",
+      "title": "The Tower, completed in 1937, stands 307 ft (94 m) tall and displays different colors of lighting on special occasions.",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:UT-Tower-in-Orange.jpg",
+      "credit": "The University of Texas at Austin",
+      "license": "CC BY 2.5",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.5",
+      "retrieved": "2026-10-22",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/UT-Tower-in-Orange.jpg/250px-UT-Tower-in-Orange.jpg"
+    }
+  },
+  "southern-california": {
+    "logo": {
+      "src": "university-media/southern-california-logo.png",
+      "title": "University of Southern California Logo.svg",
+      "sourceUrl": "https://en.wikipedia.org/wiki/File:University_of_Southern_California_Logo.svg",
+      "credit": "University of Southern California",
+      "license": "Copyrighted university logo",
+      "licenseUrl": "",
+      "retrieved": "2026-10-22",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/en/thumb/7/70/University_of_Southern_California_Logo.svg/250px-University_of_Southern_California_Logo.svg.png"
+    },
+    "campus": {
+      "src": "university-media/southern-california-campus.jpg",
+      "title": "The Doheny Library",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Doheny_Memorial_Library_of_USC.jpg",
+      "credit": "EEJCC",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "retrieved": "2026-10-22",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Doheny_Memorial_Library_of_USC.jpg/500px-Doheny_Memorial_Library_of_USC.jpg"
+    }
+  },
+  "iowa": {
+    "logo": {
+      "src": "university-media/iowa-logo.png",
+      "title": "University of Iowa wordmark (2).svg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:University_of_Iowa_wordmark_(2).svg",
+      "credit": "University of Iowa",
+      "license": "Public domain",
+      "licenseUrl": "",
+      "retrieved": "2026-10-22",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/University_of_Iowa_wordmark_%282%29.svg/250px-University_of_Iowa_wordmark_%282%29.svg.png"
+    },
+    "campus": {
+      "src": "university-media/iowa-campus.jpg",
+      "title": "Old Capitol Museum",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Old_Capitol_Iowa_City_2013.jpg",
+      "credit": "Vkulikov",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "retrieved": "2026-10-22",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Old_Capitol_Iowa_City_2013.jpg/500px-Old_Capitol_Iowa_City_2013.jpg"
+    }
+  },
+  "james-madison": {
+    "logo": {
+      "src": "university-media/james-madison-logo.png",
+      "title": "James Madison University logo.svg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:James_Madison_University_logo.svg",
+      "credit": "James Madison University",
+      "license": "Public domain",
+      "licenseUrl": "",
+      "retrieved": "2026-10-22",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/James_Madison_University_logo.svg/250px-James_Madison_University_logo.svg.png"
+    },
+    "campus": {
+      "src": "university-media/james-madison-campus.jpg",
+      "title": "Woodrow Wilson Hall, the centerpiece of the JMU quadrangle",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Wilson_Hall.jpg",
+      "credit": "Ben Schumin",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+      "retrieved": "2026-10-22",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Wilson_Hall.jpg/500px-Wilson_Hall.jpg"
+    }
+  },
+  "toledo": {
+    "campus": {
+      "src": "university-media/toledo-campus.jpg",
+      "title": "University Hall was completed in 1931.",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:University_Hall,_University_of_Toledo.jpg",
+      "credit": "The original uploader was Mactropy at English Wikipedia.",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+      "retrieved": "2026-10-22",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/University_Hall%2C_University_of_Toledo.jpg/500px-University_Hall%2C_University_of_Toledo.jpg"
+    },
+    "logo": {
+      "src": "university-media/toledo-logo.png",
+      "title": "University of Toledo logo",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:UT_Hortz.svg",
+      "credit": "Utoledo",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "retrieved": "2026-10-22",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/UT_Hortz.svg/250px-UT_Hortz.svg.png"
+    }
+  },
+  "youngstown-state": {
+    "logo": {
+      "src": "university-media/youngstown-state-logo.png",
+      "title": "YSUWordmarkNew.svg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:YSUWordmarkNew.svg",
+      "credit": "Youngstown State University",
+      "license": "Public domain",
+      "licenseUrl": "",
+      "retrieved": "2026-10-22",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/YSUWordmarkNew.svg/250px-YSUWordmarkNew.svg.png"
+    },
+    "campus": {
+      "src": "university-media/youngstown-state-campus.jpg",
+      "title": "Jones Hall",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:JonesHall.jpg",
+      "credit": "Blue80",
+      "license": "Public domain",
+      "licenseUrl": "",
+      "retrieved": "2026-10-22",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/JonesHall.jpg/500px-JonesHall.jpg"
+    }
+  },
+  "texas-state": {
+    "logo": {
+      "src": "university-media/texas-state-logo.png",
+      "title": "Texas State University logo.svg",
+      "sourceUrl": "https://en.wikipedia.org/wiki/File:Texas_State_University_logo.svg",
+      "credit": "Texas State University",
+      "license": "Copyrighted university logo",
+      "licenseUrl": "",
+      "retrieved": "2026-10-22",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/en/thumb/b/b9/Texas_State_University_logo.svg/250px-Texas_State_University_logo.svg.png"
+    },
+    "campus": {
+      "src": "university-media/texas-state-campus.jpg",
+      "title": "Old Main",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Old_Main_Txstate.JPG",
+      "credit": "Liveon001 ©Travis Witt",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "retrieved": "2026-10-22",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/Old_Main_Txstate.JPG/960px-Old_Main_Txstate.JPG"
+    }
+  },
+  "washington-state": {
+    "logo": {
+      "src": "university-media/washington-state-logo.png",
+      "title": "Washington State University signature.svg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Washington_State_University_signature.svg",
+      "credit": "Randall Johnson (see https://trademarks.wsu.edu/logo-history/)",
+      "license": "Public domain",
+      "licenseUrl": "",
+      "retrieved": "2026-10-22",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Washington_State_University_signature.svg/250px-Washington_State_University_signature.svg.png"
+    },
+    "campus": {
+      "src": "university-media/washington-state-campus.jpg",
+      "title": "Bryan Hall (1909),[25]with landmark clock tower",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bryan_Hall.jpg",
+      "credit": "Iidxplus",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "retrieved": "2026-10-22",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Bryan_Hall.jpg/500px-Bryan_Hall.jpg"
+    }
+  },
+  "marshall": {
+    "logo": {
+      "src": "university-media/marshall-logo.png",
+      "title": "Marshall University logo.svg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Marshall_University_logo.svg",
+      "credit": "Marshall University",
+      "license": "Public domain",
+      "licenseUrl": "",
+      "retrieved": "2026-10-22",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Marshall_University_logo.svg/250px-Marshall_University_logo.svg.png"
+    },
+    "campus": {
+      "src": "university-media/marshall-campus.jpg",
+      "title": "Old Main is the oldest building on campus and home to many of the university's administrative offices.",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Marshall_University_Old_Main_Building.jpg",
+      "credit": "Wvfunnyman",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "retrieved": "2026-10-22",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/e/ea/Marshall_University_Old_Main_Building.jpg"
+    }
+  },
+  "central-missouri": {
+    "logo": {
+      "src": "university-media/central-missouri-logo.png",
+      "title": "University of Central Missouri logo.svg",
+      "sourceUrl": "https://en.wikipedia.org/wiki/File:University_of_Central_Missouri_logo.svg",
+      "credit": "University of Central Missouri",
+      "license": "Copyrighted university logo",
+      "licenseUrl": "",
+      "retrieved": "2026-10-22",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/en/thumb/7/7a/University_of_Central_Missouri_logo.svg/250px-University_of_Central_Missouri_logo.svg.png"
+    },
+    "campus": {
+      "src": "university-media/central-missouri-campus.jpg",
+      "title": "Administration building at dawn — UCM Alumni Foundation",
+      "sourceUrl": "https://www.ucmfoundation.org/spirit/",
+      "credit": "University of Central Missouri",
+      "license": "Copyrighted university photograph",
+      "licenseUrl": "",
+      "retrieved": "2026-10-22",
+      "originalUrl": "https://www.ucmfoundation.org/spirit/downloads/early-morning-walk-digital-download.jpg"
+    }
+  },
+  "murray-state": {
+    "logo": {
+      "src": "university-media/murray-state-logo.png",
+      "title": "Murray State University logo.svg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Murray_State_University_logo.svg",
+      "credit": "Murray State University",
+      "license": "Public domain",
+      "licenseUrl": "",
+      "retrieved": "2026-10-22",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Murray_State_University_logo.svg/250px-Murray_State_University_logo.svg.png"
+    },
+    "campus": {
+      "src": "university-media/murray-state-campus.jpg",
+      "title": "Two students walk out of Pogue Library near the statue of founder Rainey T. Wells.",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Pogue_Library_-_Spring_2019.jpg",
+      "credit": "CB0628",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "retrieved": "2026-10-22",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Pogue_Library_-_Spring_2019.jpg/500px-Pogue_Library_-_Spring_2019.jpg"
+    }
+  },
+  "fort-hays-state": {
+    "logo": {
+      "src": "university-media/fort-hays-state-logo.png",
+      "title": "Fort Hays State University logo.svg",
+      "sourceUrl": "https://en.wikipedia.org/wiki/File:Fort_Hays_State_University_logo.svg",
+      "credit": "Fort Hays State University",
+      "license": "Copyrighted university logo",
+      "licenseUrl": "",
+      "retrieved": "2026-10-22",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/en/thumb/9/9a/Fort_Hays_State_University_logo.svg/250px-Fort_Hays_State_University_logo.svg.png"
+    },
+    "campus": {
+      "src": "university-media/fort-hays-state-campus.jpg",
+      "title": "Sheridan Hall",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Fort_Hays_State_University_Sheridan_Hall.JPG",
+      "credit": "Sesamehoneytart",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "retrieved": "2026-10-22",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Fort_Hays_State_University_Sheridan_Hall.JPG/500px-Fort_Hays_State_University_Sheridan_Hall.JPG"
+    }
+  },
+  "harvard": {
+    "logo": {
+      "src": "university-media/harvard-logo.png",
+      "title": "Harvard University logo.svg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Harvard_University_logo.svg",
+      "credit": "Pierre la Rose",
+      "license": "Public domain",
+      "licenseUrl": "",
+      "retrieved": "2026-10-22",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/Harvard_University_logo.svg/250px-Harvard_University_logo.svg.png"
+    },
+    "campus": {
+      "src": "university-media/harvard-campus.jpg",
+      "title": "Massachusetts Hall, Harvard's oldest building, constructed in 1720[80]",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Massachusetts_Hall,_Harvard_University.JPG",
+      "credit": "Daderot.",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+      "retrieved": "2026-10-22",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Massachusetts_Hall%2C_Harvard_University.JPG/500px-Massachusetts_Hall%2C_Harvard_University.JPG"
+    }
+  },
+  "uc-berkeley": {
+    "logo": {
+      "src": "university-media/uc-berkeley-logo.png",
+      "title": "University of California, Berkeley Logo 2024.svg",
+      "sourceUrl": "https://en.wikipedia.org/wiki/File:University_of_California,_Berkeley_Logo_2024.svg",
+      "credit": "University of California, Berkeley",
+      "license": "PD",
+      "licenseUrl": "",
+      "retrieved": "2026-10-22",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/en/thumb/8/85/University_of_California%2C_Berkeley_Logo_2024.svg/250px-University_of_California%2C_Berkeley_Logo_2024.svg.png"
+    },
+    "campus": {
+      "src": "university-media/uc-berkeley-campus.jpg",
+      "title": "Doe Memorial Library",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:UCB_Doe_Memorial_Library_oblique_view_dllu.jpg",
+      "credit": "Daniel L. Lu (user:dllu)",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "retrieved": "2026-10-22",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/UCB_Doe_Memorial_Library_oblique_view_dllu.jpg/500px-UCB_Doe_Memorial_Library_oblique_view_dllu.jpg"
+    }
+  },
+  "uc-los-angeles": {
+    "logo": {
+      "src": "university-media/uc-los-angeles-logo.png",
+      "title": "University of California, Los Angeles logo.svg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:University_of_California,_Los_Angeles_logo.svg",
+      "credit": "UCLA",
+      "license": "Public domain",
+      "licenseUrl": "",
+      "retrieved": "2026-10-22",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/University_of_California%2C_Los_Angeles_logo.svg/250px-University_of_California%2C_Los_Angeles_logo.svg.png"
+    },
+    "campus": {
+      "src": "university-media/uc-los-angeles-campus.jpg",
+      "title": "Royce Hall, one of the original four buildings, inspired by Basilica of Sant'Ambrogio in Milan, Italy",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Royce_Hall_post_rain.jpg",
+      "credit": "Alton",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "retrieved": "2026-10-22",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/Royce_Hall_post_rain.jpg/500px-Royce_Hall_post_rain.jpg"
+    }
+  },
+  "uc-san-diego": {
+    "logo": {
+      "src": "university-media/uc-san-diego-logo.png",
+      "title": "University of California, San Diego logo.svg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:University_of_California,_San_Diego_logo.svg",
+      "credit": "University of California, San Diego",
+      "license": "Public domain",
+      "licenseUrl": "",
+      "retrieved": "2026-10-22",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/University_of_California%2C_San_Diego_logo.svg/250px-University_of_California%2C_San_Diego_logo.svg.png"
+    },
+    "campus": {
+      "src": "university-media/uc-san-diego-campus.jpg",
+      "title": "Geisel Library, named for Theodor Geisel, better known as Dr. Seuss",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Geisel_Library,_UCSD.jpg",
+      "credit": "https://www.flickr.com/photos/belisario/",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "retrieved": "2026-10-22",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Geisel_Library%2C_UCSD.jpg/500px-Geisel_Library%2C_UCSD.jpg"
+    }
+  },
+  "uc-irvine": {
+    "logo": {
+      "src": "university-media/uc-irvine-logo.png",
+      "title": "University of California, Irvine logo.svg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:University_of_California,_Irvine_logo.svg",
+      "credit": "University of California, Irvine",
+      "license": "Public domain",
+      "licenseUrl": "",
+      "retrieved": "2026-10-22",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/University_of_California%2C_Irvine_logo.svg/250px-University_of_California%2C_Irvine_logo.svg.png"
+    },
+    "campus": {
+      "src": "university-media/uc-irvine-campus.jpg",
+      "title": "Langson Library, one of the five central libraries maintained by UCI, is the main repository for most of the university's research materials and hosts many study areas.[53]",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:UCILibrary.jpg",
+      "credit": "TFNorman at English Wikipedia",
+      "license": "Public domain",
+      "licenseUrl": "",
+      "retrieved": "2026-10-22",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/UCILibrary.jpg/500px-UCILibrary.jpg"
+    }
+  },
+  "uc-davis": {
+    "logo": {
+      "src": "university-media/uc-davis-logo.png",
+      "title": "UC Davis wordmark.svg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:UC_Davis_wordmark.svg",
+      "credit": "University of California, Davis",
+      "license": "Public domain",
+      "licenseUrl": "",
+      "retrieved": "2026-10-22",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/UC_Davis_wordmark.svg/250px-UC_Davis_wordmark.svg.png"
+    },
+    "campus": {
+      "src": "university-media/uc-davis-campus.jpg",
+      "title": "Mondavi Center",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:UC_Davis_Mondavi_Center.jpg",
+      "credit": "Bev Sykes from Davis, CA, USA",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "retrieved": "2026-10-22",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/UC_Davis_Mondavi_Center.jpg/500px-UC_Davis_Mondavi_Center.jpg"
+    }
+  },
+  "uc-santa-barbara": {
+    "logo": {
+      "src": "university-media/uc-santa-barbara-logo.png",
+      "title": "University of California, Santa Barbara logo.svg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:University_of_California,_Santa_Barbara_logo.svg",
+      "credit": "University of California, Santa Barbara",
+      "license": "Public domain",
+      "licenseUrl": "",
+      "retrieved": "2026-10-22",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/University_of_California%2C_Santa_Barbara_logo.svg/330px-University_of_California%2C_Santa_Barbara_logo.svg.png"
+    },
+    "campus": {
+      "src": "university-media/uc-santa-barbara-campus.jpg",
+      "title": "The Storke Tower and the University Center in front of the UCSB Lagoon.",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:UCSB_University_Center_and_Storke_Tower.jpg",
+      "credit": "Coolcaesar",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "retrieved": "2026-10-22",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/UCSB_University_Center_and_Storke_Tower.jpg/500px-UCSB_University_Center_and_Storke_Tower.jpg"
+    }
+  },
+  "uc-santa-cruz": {
+    "logo": {
+      "src": "university-media/uc-santa-cruz-logo.png",
+      "title": "UC Santa Cruz logo.svg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:UC_Santa_Cruz_logo.svg",
+      "credit": "University of California, Santa Cruz",
+      "license": "Public domain",
+      "licenseUrl": "",
+      "retrieved": "2026-10-22",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/UC_Santa_Cruz_logo.svg/250px-UC_Santa_Cruz_logo.svg.png"
+    },
+    "campus": {
+      "src": "university-media/uc-santa-cruz-campus.jpg",
+      "title": "McHenry Library",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:UCSC_McHenry_Library.jpg",
+      "credit": "The original uploader was Dynaflow at English Wikipedia.",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "retrieved": "2026-10-22",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/UCSC_McHenry_Library.jpg/500px-UCSC_McHenry_Library.jpg"
+    }
+  },
+  "uc-riverside": {
+    "logo": {
+      "src": "university-media/uc-riverside-logo.png",
+      "title": "UC Riverside logo.svg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:UC_Riverside_logo.svg",
+      "credit": "University of California, Riverside",
+      "license": "Public domain",
+      "licenseUrl": "",
+      "retrieved": "2026-10-22",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/UC_Riverside_logo.svg/250px-UC_Riverside_logo.svg.png"
+    },
+    "campus": {
+      "src": "university-media/uc-riverside-campus.jpg",
+      "title": "The original UC Citrus Experiment Station, which now houses the A. Gary Anderson Graduate School of Management at the UCR School of Business",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:A_Gary_Anderson_Graduate_School_of_Managment.JPG",
+      "credit": "Amerique, Americanist",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+      "retrieved": "2026-10-22",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/A_Gary_Anderson_Graduate_School_of_Managment.JPG/500px-A_Gary_Anderson_Graduate_School_of_Managment.JPG"
+    }
+  },
+  "uc-merced": {
+    "logo": {
+      "src": "university-media/uc-merced-logo.png",
+      "title": "University of California, Merced seal",
+      "sourceUrl": "https://en.wikipedia.org/wiki/File:UC_Merced_Seal.png",
+      "credit": "University of California, Merced",
+      "license": "Copyrighted university logo",
+      "licenseUrl": "",
+      "retrieved": "2026-10-22",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/en/thumb/5/51/UC_Merced_Seal.png/250px-UC_Merced_Seal.png"
+    },
+    "campus": {
+      "src": "university-media/uc-merced-campus.jpg",
+      "title": "Kolligian Library, one of the first buildings built on campus",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:UCM_library.jpg",
+      "credit": "Tim Griffith",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "retrieved": "2026-10-22",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/UCM_library.jpg/500px-UCM_library.jpg"
+    }
+  },
+  "princeton": {
+    "logo": {
+      "src": "university-media/princeton-logo.svg",
+      "title": "Princeton logo.svg",
+      "sourceUrl": "https://en.wikipedia.org/wiki/File:Princeton_logo.svg",
+      "credit": "Princeton University",
+      "license": "Copyrighted university logo",
+      "licenseUrl": "",
+      "retrieved": "2026-10-22",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/en/0/0e/Princeton_logo.svg"
+    },
+    "campus": {
+      "src": "university-media/princeton-campus.jpg",
+      "title": "Nassau Hall, the university's oldest building and former capitol of the United States. Pictured in front is Cannon Green.",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Cannon_Green_and_Nassau_Hall,_Princeton_University.jpg",
+      "credit": "Ken Lund",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "retrieved": "2026-10-22",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Cannon_Green_and_Nassau_Hall%2C_Princeton_University.jpg/500px-Cannon_Green_and_Nassau_Hall%2C_Princeton_University.jpg"
+    }
+  },
+  "yale": {
+    "logo": {
+      "src": "university-media/yale-logo.png",
+      "title": "Yale University logo.svg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Yale_University_logo.svg",
+      "credit": "Yale University",
+      "license": "Public domain",
+      "licenseUrl": "",
+      "retrieved": "2026-10-22",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Yale_University_logo.svg/250px-Yale_University_logo.svg.png"
+    },
+    "campus": {
+      "src": "university-media/yale-campus.jpg",
+      "title": "Sterling Memorial Library",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Sterling_Memorial_Library_2,_September_1,_2008.jpg",
+      "credit": "Ragesoss",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+      "retrieved": "2026-10-22",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/Sterling_Memorial_Library_2%2C_September_1%2C_2008.jpg/500px-Sterling_Memorial_Library_2%2C_September_1%2C_2008.jpg"
+    }
+  },
+  "stanford": {
+    "logo": {
+      "src": "university-media/stanford-logo.png",
+      "title": "Stanford wordmark (2012).svg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Stanford_wordmark_(2012).svg",
+      "credit": "Unknown authorUnknown author",
+      "license": "Public domain",
+      "licenseUrl": "",
+      "retrieved": "2026-10-22",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Stanford_wordmark_%282012%29.svg/250px-Stanford_wordmark_%282012%29.svg.png"
+    },
+    "campus": {
+      "src": "university-media/stanford-campus.jpg",
+      "title": "Green Library",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Stanford_University_Green_Library_Bing_Wing.jpg",
+      "credit": "LPS.1",
+      "license": "CC0",
+      "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "retrieved": "2026-10-22",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Stanford_University_Green_Library_Bing_Wing.jpg/500px-Stanford_University_Green_Library_Bing_Wing.jpg"
+    }
+  },
+  "columbia": {
+    "campus": {
+      "src": "university-media/columbia-campus.jpg",
+      "title": "Butler Library",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Butler_Library_-_1000px_-_AC.jpg",
+      "credit": "Andrew Chen (Achen33)",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "retrieved": "2026-10-22",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Butler_Library_-_1000px_-_AC.jpg/500px-Butler_Library_-_1000px_-_AC.jpg"
+    },
+    "logo": {
+      "src": "university-media/columbia-logo.png",
+      "title": "Columbia University wordmark",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Columbia_University_1754.svg",
+      "credit": "Columbia University",
+      "license": "Public domain",
+      "licenseUrl": "",
+      "retrieved": "2026-10-22",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Columbia_University_1754.svg/250px-Columbia_University_1754.svg.png"
+    }
+  },
+  "brown": {
+    "logo": {
+      "src": "university-media/brown-logo.png",
+      "title": "Brown University logo.svg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Brown_University_logo.svg",
+      "credit": "Brown University",
+      "license": "Public domain",
+      "licenseUrl": "",
+      "retrieved": "2026-10-22",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Brown_University_logo.svg/250px-Brown_University_logo.svg.png"
+    },
+    "campus": {
+      "src": "university-media/brown-campus.jpg",
+      "title": "The John Hay Library is home to rare books, special collections, and the university archives.",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:John_Hay_Library_(Brown).jpg",
+      "credit": "Filetime",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "retrieved": "2026-10-22",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/John_Hay_Library_%28Brown%29.jpg/500px-John_Hay_Library_%28Brown%29.jpg"
+    }
+  },
+  "penn": {
+    "logo": {
+      "src": "university-media/penn-logo.png",
+      "title": "University of Pennsylvania wordmark.svg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:University_of_Pennsylvania_wordmark.svg",
+      "credit": "University of Pennsylvania",
+      "license": "Public domain",
+      "licenseUrl": "",
+      "retrieved": "2026-10-22",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/University_of_Pennsylvania_wordmark.svg/250px-University_of_Pennsylvania_wordmark.svg.png"
+    },
+    "campus": {
+      "src": "university-media/penn-campus.jpg",
+      "title": "College Hall",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:College_Hall,_Penn_Campus.jpg",
+      "credit": "Bestbudbrian",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "retrieved": "2026-10-22",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/College_Hall%2C_Penn_Campus.jpg/500px-College_Hall%2C_Penn_Campus.jpg"
+    }
+  },
+  "dartmouth": {
+    "logo": {
+      "src": "university-media/dartmouth-logo.png",
+      "title": "Dartmouth College logo.svg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Dartmouth_College_logo.svg",
+      "credit": "Dartmouth College",
+      "license": "Public domain",
+      "licenseUrl": "",
+      "retrieved": "2026-10-22",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Dartmouth_College_logo.svg/330px-Dartmouth_College_logo.svg.png"
+    },
+    "campus": {
+      "src": "university-media/dartmouth-campus.jpg",
+      "title": "Baker Memorial Library",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Baker_Memorial_Library,_Dartmouth_College_-_DSC09058.JPG",
+      "credit": "Daderot",
+      "license": "CC0",
+      "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "retrieved": "2026-10-22",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Baker_Memorial_Library%2C_Dartmouth_College_-_DSC09058.JPG/500px-Baker_Memorial_Library%2C_Dartmouth_College_-_DSC09058.JPG"
+    }
+  },
+  "cornell": {
+    "logo": {
+      "src": "university-media/cornell-logo.png",
+      "title": "Cornell University logo.svg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Cornell_University_logo.svg",
+      "credit": "Cornell University",
+      "license": "Public domain",
+      "licenseUrl": "",
+      "retrieved": "2026-10-22",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Cornell_University_logo.svg/330px-Cornell_University_logo.svg.png"
+    },
+    "campus": {
+      "src": "university-media/cornell-campus.jpg",
+      "title": "The Arts Quad on Cornell's main campus with McGraw Tower and Olin and Uris libraries in the background",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Cornell_University_arts_quad.JPG",
+      "credit": "Eustress",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "retrieved": "2026-10-22",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/Cornell_University_arts_quad.JPG/500px-Cornell_University_arts_quad.JPG"
+    }
+  },
+  "mit": {
+    "logo": {
+      "src": "university-media/mit-logo.png",
+      "title": "MIT 2023 red logo.svg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:MIT_2023_red_logo.svg",
+      "credit": "Matthew Carter and others, owned by Massachusetts Institute of Technology",
+      "license": "Public domain",
+      "licenseUrl": "",
+      "retrieved": "2026-10-22",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/MIT_2023_red_logo.svg/250px-MIT_2023_red_logo.svg.png"
+    },
+    "campus": {
+      "src": "university-media/mit-campus.jpg",
+      "title": "Bosworth's Building 10 and Great Dome overlooking Killian Court",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Massachusetts_Institute_of_Technology_(MIT)_(54960815718).jpg",
+      "credit": "ajay_suresh",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+      "retrieved": "2026-10-22",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Massachusetts_Institute_of_Technology_%28MIT%29_%2854960815718%29.jpg/500px-Massachusetts_Institute_of_Technology_%28MIT%29_%2854960815718%29.jpg"
+    }
+  },
+  "vanderbilt": {
+    "logo": {
+      "src": "university-media/vanderbilt-logo.png",
+      "title": "Vanderbilt University logo.svg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Vanderbilt_University_logo.svg",
+      "credit": "Vanderbilt University",
+      "license": "Public domain",
+      "licenseUrl": "",
+      "retrieved": "2026-10-22",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Vanderbilt_University_logo.svg/250px-Vanderbilt_University_logo.svg.png"
+    },
+    "campus": {
+      "src": "university-media/vanderbilt-campus.jpg",
+      "title": "E. Bronson Ingram College",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:E._Bronson_Ingram_College.jpg",
+      "credit": "BugsMeanee",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "retrieved": "2026-10-22",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/E._Bronson_Ingram_College.jpg/500px-E._Bronson_Ingram_College.jpg"
+    }
+  },
+  "duke": {
+    "logo": {
+      "src": "university-media/duke-logo.png",
+      "title": "Duke University logo.svg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Duke_University_logo.svg",
+      "credit": "Duke University, Shep",
+      "license": "Public domain",
+      "licenseUrl": "",
+      "retrieved": "2026-10-22",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Duke_University_logo.svg/250px-Duke_University_logo.svg.png"
+    },
+    "campus": {
+      "src": "university-media/duke-campus.jpg",
+      "title": "Duke Chapel, an icon for the university, can seat nearly 1,600 people and contains a 5,200-pipe organ.",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Duke_Chapel,_West_Campus,_Duke_University,_Durham,_NC_(48960356548).jpg",
+      "credit": "Warren LeMay from Cullowhee, NC, United States",
+      "license": "CC0",
+      "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "retrieved": "2026-10-22",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/Duke_Chapel%2C_West_Campus%2C_Duke_University%2C_Durham%2C_NC_%2848960356548%29.jpg/500px-Duke_Chapel%2C_West_Campus%2C_Duke_University%2C_Durham%2C_NC_%2848960356548%29.jpg"
+    }
+  },
+  "northwestern": {
+    "logo": {
+      "src": "university-media/northwestern-logo.png",
+      "title": "Northwestern University wordmark.svg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Northwestern_University_wordmark.svg",
+      "credit": "Northwestern University",
+      "license": "Public domain",
+      "licenseUrl": "",
+      "retrieved": "2026-10-22",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Northwestern_University_wordmark.svg/250px-Northwestern_University_wordmark.svg.png"
+    },
+    "campus": {
+      "src": "university-media/northwestern-campus.jpg",
+      "title": "University Hall (1869), the oldest building still standing on campus",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:University_Hall_Northwestern.jpg",
+      "credit": "Madcoverboy (talk)",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "retrieved": "2026-10-22",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/University_Hall_Northwestern.jpg/500px-University_Hall_Northwestern.jpg"
+    }
+  },
+  "uchicago": {
+    "logo": {
+      "src": "university-media/uchicago-logo.png",
+      "title": "University of Chicago wordmark.svg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:University_of_Chicago_wordmark.svg",
+      "credit": "University of Chicago",
+      "license": "Public domain",
+      "licenseUrl": "",
+      "retrieved": "2026-10-22",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/University_of_Chicago_wordmark.svg/250px-University_of_Chicago_wordmark.svg.png"
+    },
+    "campus": {
+      "src": "university-media/uchicago-campus.jpg",
+      "title": "Harper Memorial Library was dedicated in 1912, and its architecture takes inspiration from various colleges in England.",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Harper_Library_from_the_Midway_Plaisance.JPG",
+      "credit": "IceUnshattered",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "retrieved": "2026-10-22",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/Harper_Library_from_the_Midway_Plaisance.JPG/500px-Harper_Library_from_the_Midway_Plaisance.JPG"
+    }
+  }
+}

@@ -89,3 +89,8 @@ Open the exact primary source, identify year/campus/program/applicant category, 
 Only repository: https://github.com/ivyparc/UniNavo . Source branch is codex/us-college-planner; main history is preserved. CI validates data, types, lint, tests and build.
 
 GitHub Pages publishes built static files from codex/site in the same repository. Build with pnpm build:pages for the /UniNavo/ asset base. Publish dist plus .nojekyll as a new commit retaining the artifact branch's previous parent, then fast-forward its ref. A separate worktree or Git data API may publish artifacts without overwriting the source checkout. Never force-push or change repository identity. Check Pages deployment and the live bundle before reporting publication.
+## University imagery
+
+University cards and detail dialogs share a locally hosted logo and campus-building photo for each researched school. `src/data/university-media.json` records the original file, identifying caption, author, source page and license; the UI exposes attribution and license links. Files live in `public/university-media/` and load lazily. University logos remain the property of their owners.
+
+Use `python3 scripts/download-university-media.py` only to restore missing files from the reviewed manifest. It preserves existing files, spaces requests and stops on rate limiting; honor the server's Retry-After before resuming. Verify school/campus identity and image rights before replacing an image. `tests/university-media.test.ts` checks full catalog coverage, local file presence and attribution.
