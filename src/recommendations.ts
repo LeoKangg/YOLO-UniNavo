@@ -1,3 +1,5 @@
+// Legacy editorial recommendation model; the live explorer uses scenarios.ts.
+// Profile normalization and scoreContext remain in use for stored inputs / SAT guidance.
 import { GRADE_BANDS } from "./types.ts";
 import type { Profile, Category, University, Strategy } from "./types.ts";
 import { strategies } from "./data/strategies.ts";

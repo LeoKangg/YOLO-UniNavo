@@ -272,6 +272,30 @@
       "url": "https://www.collegeessayguy.com/guides/the-free-guide",
       "verified": "2026-10-21",
       "cycle": "Current web guide"
+    },
+    {
+      "id": "ap-human-geography",
+      "title": "AP Human Geography",
+      "publisher": "College Board",
+      "url": "https://apcentral.collegeboard.org/courses/ap-human-geography",
+      "verified": "2026-10-22",
+      "cycle": "Current course framework"
+    },
+    {
+      "id": "ap-course-catalog",
+      "title": "AP Courses and Exams",
+      "publisher": "College Board",
+      "url": "https://apcentral.collegeboard.org/courses",
+      "verified": "2026-10-22",
+      "cycle": "2026–27: 42 generally available courses; Networking pilot listed separately"
+    },
+    {
+      "id": "ap-networking",
+      "title": "Adopt AP Networking",
+      "publisher": "College Board",
+      "url": "https://apcentral.collegeboard.org/courses/ap-networking/adopt",
+      "verified": "2026-10-22",
+      "cycle": "2026–27 pilot; general launch 2027–28"
     }
   ],
   "facts": [
@@ -596,18 +620,18 @@
       "status": "Planning priority; verified content and credit example"
     },
     {
-      "id": "microeconomics",
-      "name": "AP Microeconomics",
+      "id": "human-geography",
+      "name": "AP Human Geography",
       "priority": 4,
-      "reason": "An optional addition for a genuine economics or business interest; teaches economic models and graph-based reasoning.",
-      "difficulty": "Conceptual and graph-intensive; no formal College Board prerequisite. Qualitative workload assessment.",
-      "timing": "Grade 11 only with time and support; otherwise Grade 12 after confirming university credit relevance.",
-      "examDate": "2027-05-04",
-      "session": "Session 2; coordinator confirms reporting time",
-      "target": "4–5 for the current ASU example; not an admission requirement",
-      "credit": "ASU currently awards 3 credits for ECN 212 at scores 4 or 5.",
-      "sourceIds": ["ap-micro", "ap-dates", "asu-ap"],
-      "status": "Optional planning priority; verified content and credit example"
+      "reason": "Population, migration, culture and cities connect directly with sociology and broader social-science interests; map and data interpretation complement Psychology and Statistics.",
+      "difficulty": "Reading, geographic vocabulary, map/data analysis and written explanations require steady practice. This workload advice is editorial, not an official difficulty ranking.",
+      "timing": "Consider Grade 11 or Grade 12 when social-science reading is comfortable and a course or exam host is available.",
+      "examDate": "2027-05-03",
+      "session": "Session 1; coordinator confirms reporting time",
+      "target": "Consider 4–5 as a study goal; not an admission requirement or a universal credit threshold",
+      "credit": "Check each university’s Human Geography credit and degree requirements before registering; no specific credit award is assumed here.",
+      "sourceIds": ["ap-human-geography", "ap-dates"],
+      "status": "Optional planning priority; verified course content and exam date"
     }
   ],
   "resources": [

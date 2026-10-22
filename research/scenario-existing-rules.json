@@ -1,0 +1,69 @@
+{
+  "updates": [
+    {
+      "id": "iowa-state",
+      "satAlternative": {
+        "minimum": 1200,
+        "replacesGpa": true,
+        "remainingRequirements": "For international first-year applicants, SAT 1200+ satisfies the 3.0 GPA component. Core courses remain: English/native language 4 years; science 3 years including 2 laboratory years; mathematics 3 years including algebra and geometry; social studies 2 years. English proficiency, school records, final official documents, passport and financial evidence remain required. International status generally excludes U.S. citizens and permanent residents. This is not a full admission guarantee; confirm Fall 2028 applicability.",
+        "remainingRequirementsKo": "국제 신입 지원자는 SAT 1200점 이상이면 GPA 3.0 항목을 충족한 것으로 인정됩니다. 영어·모국어 4년, 과학 3년(실험 과학 2년 포함), 수학 3년(대수·기하 포함), 사회 2년은 계속 필요합니다. 영어 능력, 성적표·최종 공식 서류, 여권·재정 증빙도 필요합니다. 국제 지원자는 일반적으로 미국 시민권자·영주권자를 제외합니다. 전체 합격 보장이 아니며 2028년 적용 여부는 확인해야 합니다.",
+        "sourceIds": [
+          "scenario-rule-iowa-state-current",
+          "scenario-rule-iowa-state-scope"
+        ],
+        "verificationStatus": "verified"
+      }
+    }
+  ],
+  "sources": [
+    {
+      "id": "scenario-rule-iowa-state-current",
+      "title": "International First-Year Requirements",
+      "url": "https://www.iastate.edu/admission-and-aid/admissions/international-admissions/international-first-year-requirements",
+      "publisher": "Iowa State University",
+      "verified": "2026-10-22",
+      "cycle": "Current published international first-year rules; Fall 2028 cycle not expressly stated"
+    },
+    {
+      "id": "scenario-rule-iowa-state-scope",
+      "title": "International FAQ: definition of an international student",
+      "url": "https://www.iastate.edu/admission-and-aid/admissions/international-admissions/frequently-asked-questions",
+      "publisher": "Iowa State University",
+      "verified": "2026-10-22",
+      "cycle": "Current international admissions FAQ"
+    },
+    {
+      "id": "scenario-rule-kansas-canada",
+      "title": "General Admission Requirements: Canada",
+      "url": "https://world.ku.edu/credentials",
+      "publisher": "University of Kansas International Admissions",
+      "verified": "2026-10-22",
+      "cycle": "Current country-specific credentials and approximate admission criteria"
+    },
+    {
+      "id": "scenario-rule-kansas-general",
+      "title": "Apply: standards and requirements",
+      "url": "https://world.ku.edu/apply",
+      "publisher": "University of Kansas International Admissions",
+      "verified": "2026-10-22",
+      "cycle": "Current international freshman and transfer application standards"
+    },
+    {
+      "id": "scenario-rule-arizona-country",
+      "title": "How to Apply: First-Year International Student Application",
+      "url": "https://international-admissions.arizona.edu/apply/main-campus-first-year",
+      "publisher": "University of Arizona International Admissions",
+      "verified": "2026-10-22",
+      "cycle": "Fall 2027 application guide; country selection required"
+    }
+  ],
+  "notes": [
+    "Only one positive update was verified. Kansas and Arizona are intentionally not given invented Ontario percentage requirements.",
+    "Kansas publishes a 2.5/4.0 international GPA standard, but its Canada country row provides no percentage minimum. KU says Canadian grades are assessed according to regional variations and college-preparatory curriculum and that its evaluators convert grades to 4.0. Do not map Ontario marks to 2.5 using a generic table.",
+    "Kansas College of Liberal Arts & Sciences approximate country criteria do not establish every program’s eligibility. Some programs require higher GPA, tests or auditions. No verified SAT alternative replacing international GPA was found.",
+    "Arizona’s official international first-year guide requires country selection. The extracted page did not expose Canada/Ontario requirements, and no numeric Ontario rule was verified. SAT reading/writing English-proficiency thresholds are not substitutes for academic admission requirements.",
+    "Iowa State country-specific requirements are currently linked through Box and could not be read in this pass. An indexed 2020 Canada PDF URL redirected to the university homepage when opened, so no historical Canada percentage was promoted into a current rule.",
+    "Iowa State SAT1200 rule replaces only the GPA component. The schema deliberately contains no Ontario percentage update and no claim that SAT alone assures admission.",
+    "If the app requires all school-specific requirements to be verified before displaying a full admission-eligible result, the Iowa State record should be labeled GPA component met, remaining requirements pending rather than fully eligible."
+  ]
+}

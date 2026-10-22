@@ -1,0 +1,1040 @@
+{
+  "schools": [
+    {
+      "id": "utah-state",
+      "name": "Utah State University",
+      "nameKo": "유타 주립대학교",
+      "state": "Utah",
+      "city": "Logan",
+      "type": "public",
+      "rank": {
+        "edition": "2026",
+        "value": null,
+        "sourceIds": []
+      },
+      "ontario": {
+        "minimum": null,
+        "basis": "No Ontario-specific percentage admission floor was verified. The university must evaluate the full transcript and required courses.",
+        "basisKo": "온타리오 전용 백분율 최저 지원 성적은 확인되지 않았습니다. 대학이 전체 성적표와 필수 과목을 심사해야 합니다.",
+        "sourceIds": ["scenario-utah-state-international"]
+      },
+      "academic": {
+        "text": "The international application page publishes a minimum GPA of 2.7 and requires the last three years of secondary coursework. This is an institution-evaluated GPA, not an Ontario percentage.",
+        "textKo": "국제 지원 페이지는 최근 고교 3년 성적과 최저 GPA 2.7을 요구합니다. 대학이 평가하는 GPA이며 온타리오 백분율로 환산하지 않습니다.",
+        "sourceIds": ["scenario-utah-state-international"]
+      },
+      "testing": {
+        "policy": "unknown",
+        "text": "The general catalog lists SAT/ACT as optional. The international catalog permits SAT EBRW 500 as one English-proficiency route. Confirm the applicable 2028 testing policy and any engineering requirements.",
+        "textKo": "일반 요람은 SAT/ACT를 선택 제출로 기재합니다. 국제 요람은 SAT 읽기·쓰기 500점을 영어 능력 증빙 방법 중 하나로 인정합니다. 2028년 시험 정책과 공학계열 추가 요건은 확인이 필요합니다.",
+        "sourceIds": [
+          "scenario-utah-state-catalog-admission",
+          "scenario-utah-state-international-catalog"
+        ]
+      },
+      "satRange": null,
+      "entry": {
+        "program": "English, BA/BS",
+        "programKo": "영문학 BA/BS",
+        "unit": "College of Arts & Sciences",
+        "unitKo": "문리과대학",
+        "text": "The program explicitly requires new freshmen to be admitted to USU in good standing. This verifies a general-admission entry example; it does not establish the lowest-admission major.",
+        "textKo": "이 전공은 신입생에게 USU 일반 입학 및 정상 학적을 요구한다고 명시합니다. 일반 입학 기준을 따르는 예시이며, 가장 합격하기 쉬운 학과라는 근거는 아닙니다.",
+        "sourceIds": ["scenario-utah-state-english"],
+        "easierMajorVerified": false
+      },
+      "applicantScope": {
+        "text": "International undergraduate applicants; bachelor degree students on an F-1 visa must study primarily face-to-face at Logan. U.S. citizens overseas apply domestically.",
+        "textKo": "국제 학부 지원자 기준이며 F-1 학사과정은 로건 캠퍼스 대면 수업을 중심으로 수강해야 합니다. 해외 거주 미국 시민권자는 국내 지원 구분을 사용합니다.",
+        "sourceIds": ["scenario-utah-state-international"]
+      },
+      "sources": [
+        {
+          "id": "scenario-utah-state-international",
+          "title": "International Undergraduate Admissions: Steps to Apply",
+          "url": "https://www.usu.edu/admissions/international/",
+          "publisher": "Utah State University",
+          "verified": "2026-10-22",
+          "cycle": "Current policy viewed 2026-10-22; Fall 2028 not separately confirmed"
+        },
+        {
+          "id": "scenario-utah-state-english",
+          "title": "English - BA, BS: Program Admission Requirements",
+          "url": "https://catalog.usu.edu/programs/ENGL-ENGL_BA-MAJOR",
+          "publisher": "Utah State University",
+          "verified": "2026-10-22",
+          "cycle": "Current university catalog viewed 2026-10-22"
+        },
+        {
+          "id": "scenario-utah-state-catalog-admission",
+          "title": "Undergraduate Admission",
+          "url": "https://catalog.usu.edu/pages/thx8gXrTyobxsEvrHBSy",
+          "publisher": "Utah State University",
+          "verified": "2026-10-22",
+          "cycle": "Current university catalog viewed 2026-10-22"
+        },
+        {
+          "id": "scenario-utah-state-international-catalog",
+          "title": "International Undergraduate Student Admission and Programs",
+          "url": "https://catalog.usu.edu/pages/dmWfIcQSsJWCUCmiK3uE",
+          "publisher": "Utah State University",
+          "verified": "2026-10-22",
+          "cycle": "Current university catalog viewed 2026-10-22"
+        }
+      ]
+    },
+    {
+      "id": "oklahoma",
+      "name": "University of Oklahoma",
+      "nameKo": "오클라호마 대학교",
+      "state": "Oklahoma",
+      "city": "Norman",
+      "type": "public",
+      "rank": {
+        "edition": "2026",
+        "value": 110,
+        "sourceIds": ["scenario-oklahoma-rank"]
+      },
+      "ontario": {
+        "minimum": null,
+        "basis": "No Ontario-specific percentage admission floor was verified. The university must evaluate the full transcript and required courses.",
+        "basisKo": "온타리오 전용 백분율 최저 지원 성적은 확인되지 않았습니다. 대학이 전체 성적표와 필수 과목을 심사해야 합니다.",
+        "sourceIds": ["scenario-oklahoma-international"]
+      },
+      "academic": {
+        "text": "OU publishes a minimum 3.0 GPA for international freshmen. Grades and course rigor remain central; this is not an Ontario percentage conversion.",
+        "textKo": "국제 신입생에게 GPA 3.0 이상을 공지합니다. 성적과 과목 난도를 심사하며, 이를 온타리오 백분율로 환산하지 않습니다.",
+        "sourceIds": ["scenario-oklahoma-international"]
+      },
+      "testing": {
+        "policy": "optional",
+        "text": "SAT/ACT is optional for admission under the current policy; scores are encouraged for scholarship consideration. Fall 2028 is not separately confirmed.",
+        "textKo": "현행 정책은 SAT/ACT 선택 제출이며 장학금 심사를 위해 제출을 권장합니다. 2028년 가을 정책을 별도로 확정한 자료는 확인되지 않았습니다.",
+        "sourceIds": [
+          "scenario-oklahoma-international",
+          "scenario-oklahoma-testing"
+        ]
+      },
+      "satRange": null,
+      "entry": {
+        "program": "English, BA",
+        "programKo": "영문학 BA",
+        "unit": "Dodge Family College of Arts & Sciences",
+        "unitKo": "도지 문리과대학",
+        "text": "The university verifies a BA in English with Writing or Literary & Cultural Studies concentrations. No comparative freshman admission cutoff establishing it as the easiest major was found.",
+        "textKo": "영문학 BA와 작문·문학문화연구 세부 전공을 공식 운영합니다. 신입생 전공별 최저 합격선을 비교해 가장 쉬운 학과임을 입증한 자료는 확인되지 않았습니다.",
+        "sourceIds": ["scenario-oklahoma-english"],
+        "easierMajorVerified": false
+      },
+      "applicantScope": {
+        "text": "International first-year applicants educated outside the United States. Citizenship and prior college attendance can change the application route.",
+        "textKo": "미국 밖에서 고등학교를 다닌 국제 신입 지원자 기준입니다. 시민권과 고교 졸업 후 대학 재학 이력에 따라 지원 구분이 달라집니다.",
+        "sourceIds": ["scenario-oklahoma-international"]
+      },
+      "sources": [
+        {
+          "id": "scenario-oklahoma-international",
+          "title": "International Admission",
+          "url": "https://ou.edu/admissions/apply/international",
+          "publisher": "University of Oklahoma",
+          "verified": "2026-10-22",
+          "cycle": "Current policy viewed 2026-10-22; Fall 2028 not separately confirmed"
+        },
+        {
+          "id": "scenario-oklahoma-testing",
+          "title": "OU Is Test Optional",
+          "url": "https://ou.edu/admissions/apply/freshman/requirements-factors/ou-is-test-optional",
+          "publisher": "University of Oklahoma",
+          "verified": "2026-10-22",
+          "cycle": "Current policy viewed 2026-10-22; Fall 2028 not separately confirmed"
+        },
+        {
+          "id": "scenario-oklahoma-english",
+          "title": "English Undergraduate Programs",
+          "url": "https://ou.edu/cas/english/academics/undergraduate",
+          "publisher": "University of Oklahoma",
+          "verified": "2026-10-22",
+          "cycle": "Current policy viewed 2026-10-22; Fall 2028 not separately confirmed"
+        },
+        {
+          "id": "scenario-oklahoma-rank",
+          "title": "OU Named No. 1 in Oklahoma, Achieves Largest SEC Rankings Jump by U.S. News & World Report",
+          "url": "https://www.ou.edu/news/articles/2025/september/ou-named-number-one-in-oklahoma-by-us-news-and-world-report",
+          "publisher": "University of Oklahoma",
+          "verified": "2026-10-22",
+          "cycle": "2026 U.S. News Best Colleges; release 2025-09-23"
+        }
+      ]
+    },
+    {
+      "id": "oklahoma-state",
+      "name": "Oklahoma State University",
+      "nameKo": "오클라호마 주립대학교",
+      "state": "Oklahoma",
+      "city": "Stillwater",
+      "type": "public",
+      "rank": {
+        "edition": "2026",
+        "value": null,
+        "sourceIds": []
+      },
+      "ontario": {
+        "minimum": null,
+        "basis": "No Ontario-specific percentage admission floor was verified. The university must evaluate the full transcript and required courses.",
+        "basisKo": "온타리오 전용 백분율 최저 지원 성적은 확인되지 않았습니다. 대학이 전체 성적표와 필수 과목을 심사해야 합니다.",
+        "sourceIds": ["scenario-oklahoma-state-international"]
+      },
+      "academic": {
+        "text": "The international freshman page publishes assured-admission criteria of school-assessed GPA 3.0/4.0 plus English proficiency. OSU recalculates foreign transcripts; some colleges have additional criteria.",
+        "textKo": "국제 신입생 페이지의 보장 입학 기준은 대학 평가 GPA 3.0/4.0과 영어 능력 요건입니다. 해외 성적표를 재산정하며 일부 단과대학은 추가 조건이 있습니다.",
+        "sourceIds": ["scenario-oklahoma-state-international"]
+      },
+      "testing": {
+        "policy": "optional",
+        "text": "Current general freshman admission permits application without SAT/ACT. Do not automatically apply the domestic SAT-only assured-admission alternative to an international Ontario applicant.",
+        "textKo": "현행 일반 신입생 정책은 SAT/ACT 없이 지원할 수 있습니다. 국내 지원자 페이지의 SAT 단독 보장 입학 경로를 온타리오 국제 지원자에게 자동 적용하지 않습니다.",
+        "sourceIds": [
+          "scenario-oklahoma-state-international",
+          "scenario-oklahoma-state-testing"
+        ]
+      },
+      "satRange": {
+        "low": 1060,
+        "high": 1250,
+        "cohort": "Fall 2025 enrolled first-year SAT submitters; middle 50%; not a cutoff",
+        "cohortKo": "2025년 가을 등록 신입생 중 SAT 제출자의 중앙 50%; 합격선 아님",
+        "sourceIds": ["scenario-oklahoma-state-cds"]
+      },
+      "entry": {
+        "program": "English, BA",
+        "programKo": "영문학 BA",
+        "unit": "College of Arts and Sciences",
+        "unitKo": "문리과대학",
+        "text": "English BA is offered at Stillwater. The verified program page does not publish a lower freshman admission cutoff than other majors; full international entry criteria still apply.",
+        "textKo": "스틸워터 캠퍼스에서 영문학 BA를 운영합니다. 공식 전공 페이지는 다른 학과보다 낮은 신입학 합격선을 발표하지 않으며 국제 신입학 요건을 충족해야 합니다.",
+        "sourceIds": [
+          "scenario-oklahoma-state-english",
+          "scenario-oklahoma-state-international"
+        ],
+        "easierMajorVerified": false
+      },
+      "applicantScope": {
+        "text": "International first-year applicants educated outside the United States. Citizenship and prior college attendance can change the application route.",
+        "textKo": "미국 밖에서 고등학교를 다닌 국제 신입 지원자 기준입니다. 시민권과 고교 졸업 후 대학 재학 이력에 따라 지원 구분이 달라집니다.",
+        "sourceIds": ["scenario-oklahoma-state-international"]
+      },
+      "sources": [
+        {
+          "id": "scenario-oklahoma-state-international",
+          "title": "International Freshman Admission Process",
+          "url": "https://go.okstate.edu/admissions/international/freshman",
+          "publisher": "Oklahoma State University",
+          "verified": "2026-10-22",
+          "cycle": "Current policy viewed 2026-10-22; Fall 2028 not separately confirmed"
+        },
+        {
+          "id": "scenario-oklahoma-state-testing",
+          "title": "Freshmen Admission Requirements",
+          "url": "https://go.okstate.edu/admissions/freshman/admission-requirements",
+          "publisher": "Oklahoma State University",
+          "verified": "2026-10-22",
+          "cycle": "Current policy viewed 2026-10-22; Fall 2028 not separately confirmed"
+        },
+        {
+          "id": "scenario-oklahoma-state-english",
+          "title": "English: Undergraduate Major",
+          "url": "https://go.okstate.edu/undergraduate-academics/majors/english",
+          "publisher": "Oklahoma State University",
+          "verified": "2026-10-22",
+          "cycle": "Current policy viewed 2026-10-22; Fall 2028 not separately confirmed"
+        },
+        {
+          "id": "scenario-oklahoma-state-cds",
+          "title": "Common Data Set 2025-2026, C9",
+          "url": "https://ira.okstate.edu/site-files/documents/cds/CDS-2025-2026-PDF.pdf",
+          "publisher": "Oklahoma State University",
+          "verified": "2026-10-22",
+          "cycle": "Fall 2025 enrolled first-year SAT submitters; CDS 2025-2026"
+        }
+      ]
+    },
+    {
+      "id": "nebraska-lincoln",
+      "name": "University of Nebraska–Lincoln",
+      "nameKo": "네브래스카 대학교 링컨",
+      "state": "Nebraska",
+      "city": "Lincoln",
+      "type": "public",
+      "rank": {
+        "edition": "2026",
+        "value": 158,
+        "sourceIds": ["scenario-nebraska-lincoln-rank"]
+      },
+      "ontario": {
+        "minimum": null,
+        "basis": "No Ontario-specific percentage admission floor was verified. The university must evaluate the full transcript and required courses.",
+        "basisKo": "온타리오 전용 백분율 최저 지원 성적은 확인되지 않았습니다. 대학이 전체 성적표와 필수 과목을 심사해야 합니다.",
+        "sourceIds": ["scenario-nebraska-lincoln-international"]
+      },
+      "academic": {
+        "text": "The current international page requires upper-level math (4 units), natural sciences (3), social sciences (3), and English/native-language coursework (4), plus English proficiency. It does not publish an Ontario percentage floor.",
+        "textKo": "현행 국제 신입학 페이지는 상급 수학 4단위, 자연과학 3단위, 사회과학 3단위, 영어·모국어 과목 4단위와 영어 능력을 요구합니다. 온타리오 백분율 최저점은 공지하지 않습니다.",
+        "sourceIds": ["scenario-nebraska-lincoln-international"]
+      },
+      "testing": {
+        "policy": "optional",
+        "text": "SAT/ACT is not required for general international admission; Architecture and Engineering may require additional tests. SAT Reading and Writing 520 is an English-proficiency route, not an academic composite cutoff.",
+        "textKo": "일반 국제 입학은 SAT/ACT를 요구하지 않지만 건축·공학은 추가 시험이 필요할 수 있습니다. SAT 읽기·쓰기 520점은 영어 능력 증빙 경로이며 총점 합격선이 아닙니다.",
+        "sourceIds": ["scenario-nebraska-lincoln-international"]
+      },
+      "satRange": {
+        "low": 1070,
+        "high": 1310,
+        "cohort": "Fall 2025 enrolled first-year SAT submitters (7% of class); middle 50%; not a cutoff",
+        "cohortKo": "2025년 가을 등록 신입생 중 SAT 제출자(학년의 7%) 중앙 50%; 합격선 아님",
+        "sourceIds": ["scenario-nebraska-lincoln-cds"]
+      },
+      "entry": {
+        "program": "History, BA/BS",
+        "programKo": "역사학 BA/BS",
+        "unit": "College of Arts & Sciences",
+        "unitKo": "문리과대학",
+        "text": "History is an Arts & Sciences major with BA and BS degree rules. No verified lowest-entry-major comparison was found; selecting History does not bypass university admission.",
+        "textKo": "역사학은 문리과대학 전공으로 BA·BS 학위 규정을 따릅니다. 전공 간 최저 입학 난도 비교 근거는 확인되지 않았으며, 역사학 선택으로 대학 입학 기준을 우회할 수 없습니다.",
+        "sourceIds": ["scenario-nebraska-lincoln-history"],
+        "easierMajorVerified": false
+      },
+      "applicantScope": {
+        "text": "Applicants who are not U.S. citizens and require a visa for a U.S. degree; the reviewed page lists Spring and Fall 2027 terms.",
+        "textKo": "미국 시민권자가 아니며 미국 학위 취득을 위해 비자가 필요한 지원자 기준입니다. 검토한 페이지의 적용 학기는 2027년 봄·가을입니다.",
+        "sourceIds": ["scenario-nebraska-lincoln-international"]
+      },
+      "sources": [
+        {
+          "id": "scenario-nebraska-lincoln-international",
+          "title": "International Student Admission Requirements",
+          "url": "https://admissions.unl.edu/apply/admission-requirements/international/",
+          "publisher": "University of Nebraska–Lincoln",
+          "verified": "2026-10-22",
+          "cycle": "Spring/Fall 2027 application requirements; Fall 2028 not separately confirmed"
+        },
+        {
+          "id": "scenario-nebraska-lincoln-history",
+          "title": "History: Undergraduate Catalog",
+          "url": "https://catalog.unl.edu/undergraduate/arts-sciences/history/",
+          "publisher": "University of Nebraska–Lincoln",
+          "verified": "2026-10-22",
+          "cycle": "2026-2027 undergraduate catalog"
+        },
+        {
+          "id": "scenario-nebraska-lincoln-cds",
+          "title": "First-Time, First-Year Profile: Common Data Set 2025-2026",
+          "url": "https://iea.unl.edu/common-data-set-2025-2026/c-first-time-first-year-admission/first-time-first-year-profile/",
+          "publisher": "University of Nebraska–Lincoln",
+          "verified": "2026-10-22",
+          "cycle": "Fall 2025 enrolled first-year SAT submitters; 7% submitted SAT"
+        },
+        {
+          "id": "scenario-nebraska-lincoln-rank",
+          "title": "Dean Search Details: University of Nebraska–Lincoln Academic Excellence",
+          "url": "https://executivevc.unl.edu/faculty/searches-appointments/cojmc/details/",
+          "publisher": "University of Nebraska–Lincoln",
+          "verified": "2026-10-22",
+          "cycle": "Explicit 2026 U.S. News edition:158 overall,84 public; page references Fall2026"
+        }
+      ]
+    },
+    {
+      "id": "missouri",
+      "name": "University of Missouri",
+      "nameKo": "미주리 대학교 컬럼비아",
+      "state": "Missouri",
+      "city": "Columbia",
+      "type": "public",
+      "rank": {
+        "edition": "2026",
+        "value": null,
+        "sourceIds": []
+      },
+      "ontario": {
+        "minimum": null,
+        "basis": "No Ontario-specific percentage admission floor was verified. The university must evaluate the full transcript and required courses.",
+        "basisKo": "온타리오 전용 백분율 최저 지원 성적은 확인되지 않았습니다. 대학이 전체 성적표와 필수 과목을 심사해야 합니다.",
+        "sourceIds": ["scenario-missouri-international"]
+      },
+      "academic": {
+        "text": "International applicants must satisfy 13 core units and one published grading-scale standard, including an average of 80+ on a 100-point scale. The institution determines core-course grades and course difficulty.",
+        "textKo": "국제 지원자는 핵심 교과 13단위와 공지된 성적 척도별 기준 중 하나를 충족해야 합니다. 100점 척도의 평균 80점 이상 기준을 직접 공지하며, 핵심 과목과 난도는 대학이 심사합니다.",
+        "sourceIds": ["scenario-missouri-international"]
+      },
+      "testing": {
+        "policy": "optional",
+        "text": "SAT/ACT is not required for international admission. Scores are preferred for international freshman scholarship review; no Fall 2028 guarantee is published.",
+        "textKo": "국제 입학에 SAT/ACT는 필수가 아닙니다. 국제 신입생 장학금 심사에는 제출을 선호하며, 2028년 정책을 보장한 공지는 확인되지 않았습니다.",
+        "sourceIds": ["scenario-missouri-testing"]
+      },
+      "satRange": null,
+      "entry": {
+        "program": "History, BA",
+        "programKo": "역사학 BA",
+        "unit": "College of Arts and Science",
+        "unitKo": "문리과대학",
+        "text": "History BA is a verified degree option. No official comparative freshman cutoff establishes it as the easiest program; international academic and language criteria apply.",
+        "textKo": "역사학 BA를 공식 운영합니다. 전공별 신입학 최저 합격선을 비교해 가장 쉬운 학과임을 증명한 자료는 없으며 국제 학력·영어 요건이 적용됩니다.",
+        "sourceIds": [
+          "scenario-missouri-history",
+          "scenario-missouri-international"
+        ],
+        "easierMajorVerified": false
+      },
+      "applicantScope": {
+        "text": "International applicants who are not U.S. citizens or permanent residents; institution-assessed core coursework and English proficiency are required.",
+        "textKo": "미국 시민권자·영주권자가 아닌 국제 지원자 기준이며, 대학 평가 핵심 교과와 영어 요건을 충족해야 합니다.",
+        "sourceIds": [
+          "scenario-missouri-international",
+          "scenario-missouri-testing"
+        ]
+      },
+      "sources": [
+        {
+          "id": "scenario-missouri-international",
+          "title": "International Admission Requirements",
+          "url": "https://admissions.missouri.edu/apply/international/admission-requirements/",
+          "publisher": "University of Missouri",
+          "verified": "2026-10-22",
+          "cycle": "Current policy viewed 2026-10-22; Fall 2028 not separately confirmed"
+        },
+        {
+          "id": "scenario-missouri-testing",
+          "title": "How to Apply: International Students",
+          "url": "https://admissions.missouri.edu/apply/international/how-to-apply/",
+          "publisher": "University of Missouri",
+          "verified": "2026-10-22",
+          "cycle": "Current policy viewed 2026-10-22; Fall 2028 not separately confirmed"
+        },
+        {
+          "id": "scenario-missouri-history",
+          "title": "History BA: Majors at Mizzou",
+          "url": "https://majors.missouri.edu/history-ba/",
+          "publisher": "University of Missouri",
+          "verified": "2026-10-22",
+          "cycle": "Current policy viewed 2026-10-22; Fall 2028 not separately confirmed"
+        }
+      ],
+      "percentageRule": {
+        "minimum": 80,
+        "scope": "international-100-point",
+        "basis": "Published international minimum for average grades in required core coursework on a 100-point scale. The school determines which grades count; this is not an Ontario top-six equivalency or admission guarantee.",
+        "basisKo": "국제 지원자의 필수 핵심 교과 성적을 100점 척도로 평가할 때 평균 80점 이상을 요구합니다. 대학이 반영 과목을 결정하며, 온타리오 상위 6과목 평균과 동일하다는 의미나 합격 보장은 아닙니다.",
+        "sourceIds": ["scenario-missouri-international"]
+      }
+    },
+    {
+      "id": "kansas-state",
+      "name": "Kansas State University",
+      "nameKo": "캔자스 주립대학교",
+      "state": "Kansas",
+      "city": "Manhattan",
+      "type": "public",
+      "rank": {
+        "edition": "2026",
+        "value": 158,
+        "sourceIds": ["scenario-kansas-state-rank"]
+      },
+      "ontario": {
+        "minimum": null,
+        "basis": "No Ontario-specific percentage admission floor was verified. The university must evaluate the full transcript and required courses.",
+        "basisKo": "온타리오 전용 백분율 최저 지원 성적은 확인되지 않았습니다. 대학이 전체 성적표와 필수 과목을 심사해야 합니다.",
+        "sourceIds": ["scenario-kansas-state-international"]
+      },
+      "academic": {
+        "text": "International freshmen require an accredited secondary curriculum and minimum high-school GPA 2.5/4.0. No Ontario percentage equivalency was verified.",
+        "textKo": "국제 신입생은 인정된 중등 교육과정과 고교 GPA 2.5/4.0 이상이 필요합니다. 온타리오 백분율 대응 기준은 확인되지 않았습니다.",
+        "sourceIds": ["scenario-kansas-state-international"]
+      },
+      "testing": {
+        "policy": "optional",
+        "text": "Current university admission is test optional. Architecture, Planning and Design strongly encourages SAT/ACT and has additional English requirements. Confirm the 2028 policy.",
+        "textKo": "현행 대학 입학은 시험 선택 제출입니다. 건축·계획·디자인 단과대학은 SAT/ACT를 강하게 권장하고 추가 영어 요건을 적용합니다. 2028년 정책은 재확인이 필요합니다.",
+        "sourceIds": [
+          "scenario-kansas-state-international",
+          "scenario-kansas-state-testing"
+        ]
+      },
+      "satRange": {
+        "low": 1060,
+        "high": 1255,
+        "cohort": "Fall 2024 enrolled first-year SAT submitters (6% of class); middle 50%; not a cutoff",
+        "cohortKo": "2024년 가을 등록 신입생 중 SAT 제출자(학년의 6%) 중앙 50%; 합격선 아님",
+        "sourceIds": ["scenario-kansas-state-cds"]
+      },
+      "entry": {
+        "program": "History, BA/BS",
+        "programKo": "역사학 BA/BS",
+        "unit": "College of Arts and Sciences",
+        "unitKo": "문리과대학",
+        "text": "History BA/BS is a verified major example. The international admission page lists Architecture, Planning and Design as a selective freshman exception. This does not prove History is the lowest-admission major.",
+        "textKo": "역사학 BA/BS가 공식 전공입니다. 국제 입학 페이지는 건축·계획·디자인을 신입학 추가 선발 요건이 있는 단과대학으로 명시합니다. 역사학이 가장 쉬운 학과라는 뜻은 아닙니다.",
+        "sourceIds": [
+          "scenario-kansas-state-international",
+          "scenario-kansas-state-history"
+        ],
+        "easierMajorVerified": false
+      },
+      "applicantScope": {
+        "text": "International first-year applicants educated outside the United States. Citizenship and prior college attendance can change the application route.",
+        "textKo": "미국 밖에서 고등학교를 다닌 국제 신입 지원자 기준입니다. 시민권과 고교 졸업 후 대학 재학 이력에 따라 지원 구분이 달라집니다.",
+        "sourceIds": ["scenario-kansas-state-international"]
+      },
+      "sources": [
+        {
+          "id": "scenario-kansas-state-international",
+          "title": "Detailed Requirements for International Students",
+          "url": "https://www.k-state.edu/admissions/undergrad/manhattan/apply/international/requirements.html",
+          "publisher": "Kansas State University",
+          "verified": "2026-10-22",
+          "cycle": "Current policy viewed 2026-10-22; Fall 2028 not separately confirmed"
+        },
+        {
+          "id": "scenario-kansas-state-history",
+          "title": "Undergraduate Program: Degrees in History",
+          "url": "https://www.k-state.edu/history/academics/undergrad/",
+          "publisher": "Kansas State University",
+          "verified": "2026-10-22",
+          "cycle": "Current policy viewed 2026-10-22; Fall 2028 not separately confirmed"
+        },
+        {
+          "id": "scenario-kansas-state-rank",
+          "title": "U.S. News & World Report Rankings",
+          "url": "https://www.k-state.edu/about/our-stats-and-strengths/rankings/us-news.html",
+          "publisher": "Kansas State University",
+          "verified": "2026-10-22",
+          "cycle": "Explicit 2026 U.S. News Best Colleges edition"
+        },
+        {
+          "id": "scenario-kansas-state-cds",
+          "title": "Common Data Set 2024-2025, C9",
+          "url": "https://www.k-state.edu/data/institutional-research/resources/common-data-set/CDS_2024_2025.pdf",
+          "publisher": "Kansas State University",
+          "verified": "2026-10-22",
+          "cycle": "Fall 2024 enrolled first-year SAT submitters; 6% submitted SAT"
+        },
+        {
+          "id": "scenario-kansas-state-testing",
+          "title": "Detailed Requirements for Incoming Freshmen",
+          "url": "https://www.k-state.edu/admissions/undergrad/manhattan/apply/incoming-freshmen/requirements.html",
+          "publisher": "Kansas State University",
+          "verified": "2026-10-22",
+          "cycle": "Current policy viewed 2026-10-22; Fall 2028 not separately confirmed"
+        }
+      ]
+    },
+    {
+      "id": "texas-tech",
+      "name": "Texas Tech University",
+      "nameKo": "텍사스 테크 대학교",
+      "state": "Texas",
+      "city": "Lubbock",
+      "type": "public",
+      "rank": {
+        "edition": "2026",
+        "value": null,
+        "sourceIds": []
+      },
+      "ontario": {
+        "minimum": null,
+        "basis": "No Ontario-specific percentage admission floor was verified. The university must evaluate the full transcript and required courses.",
+        "basisKo": "온타리오 전용 백분율 최저 지원 성적은 확인되지 않았습니다. 대학이 전체 성적표와 필수 과목을 심사해야 합니다.",
+        "sourceIds": [
+          "scenario-texas-tech-policy",
+          "scenario-texas-tech-international"
+        ]
+      },
+      "academic": {
+        "text": "TTU evaluates foreign secondary credentials internally. Its operating policy says international admission mirrors university standards; missing class rank is assigned by admissions. No Ontario percentage floor is published.",
+        "textKo": "해외 고교 성적을 대학 내부에서 평가합니다. 운영 규정은 국제 지원자에게 대학 기준을 적용하며 석차가 없으면 입학처가 산정한다고 명시합니다. 온타리오 백분율 최저점은 확인되지 않았습니다.",
+        "sourceIds": [
+          "scenario-texas-tech-policy",
+          "scenario-texas-tech-international"
+        ]
+      },
+      "testing": {
+        "policy": "optional",
+        "text": "Current operating policy explicitly does not require SAT/ACT from international applicants who attended secondary school outside the U.S.; some programs may differ. The old application page references an expired 2025 end date.",
+        "textKo": "현행 운영 규정은 미국 밖 고교를 다닌 국제 지원자의 SAT/ACT를 필수로 요구하지 않는다고 명시합니다. 일부 전공은 다를 수 있습니다. 구 지원 페이지의 2025년 종료 문구와 구분해야 합니다.",
+        "sourceIds": [
+          "scenario-texas-tech-policy",
+          "scenario-texas-tech-international"
+        ]
+      },
+      "satRange": null,
+      "entry": {
+        "program": "History, BA (campus)",
+        "programKo": "역사학 BA · 캠퍼스",
+        "unit": "College of Arts & Sciences",
+        "unitKo": "문리과대학",
+        "text": "History BA is listed as a campus degree. The international page identifies biology-related sciences, physics, interior design, all business and engineering majors as having additional assured-admission restrictions. History is not listed there, but no absolute easiest-major ranking is proven.",
+        "textKo": "캠퍼스 역사학 BA가 공식 목록에 있습니다. 국제 페이지는 생물계열·물리·인테리어디자인·전체 경영·전체 공학 전공에 추가 보장 입학 제한을 명시합니다. 역사학은 그 목록에 없지만 절대적으로 가장 쉬운 학과라는 근거는 아닙니다.",
+        "sourceIds": [
+          "scenario-texas-tech-international",
+          "scenario-texas-tech-history"
+        ],
+        "easierMajorVerified": false
+      },
+      "applicantScope": {
+        "text": "International applicants with secondary education outside the U.S.; citizenship/permanent-resident status determines application type. Assured admission requires university-assessed class rank and other conditions; SAT alone is insufficient.",
+        "textKo": "미국 밖 중등교육을 받은 국제 지원자 기준입니다. 시민권·영주권에 따라 지원 구분이 달라집니다. 보장 입학은 대학 산정 석차 등 조건을 충족해야 하며 SAT만으로 결정되지 않습니다.",
+        "sourceIds": ["scenario-texas-tech-policy"]
+      },
+      "sources": [
+        {
+          "id": "scenario-texas-tech-policy",
+          "title": "OP 34.01: Undergraduate Admissions",
+          "url": "https://www.depts.ttu.edu/opmanual/OP34.01.php",
+          "publisher": "Texas Tech University",
+          "verified": "2026-10-22",
+          "cycle": "Operating policy revised 2025-11-04; test-optional end date removed 2025-12-19"
+        },
+        {
+          "id": "scenario-texas-tech-international",
+          "title": "International First Time in College Admission",
+          "url": "https://www.depts.ttu.edu/admissions/international/apply/newfirsttime.php",
+          "publisher": "Texas Tech University",
+          "verified": "2026-10-22",
+          "cycle": "Legacy international page references 2025/2026 entry; future cycle needs confirmation"
+        },
+        {
+          "id": "scenario-texas-tech-history",
+          "title": "Undergraduate Majors: College of Arts & Sciences",
+          "url": "https://www.depts.ttu.edu/artsandsciences/academics_and_admission/programs_degrees/undergraduate_programs/",
+          "publisher": "Texas Tech University",
+          "verified": "2026-10-22",
+          "cycle": "Current policy viewed 2026-10-22; Fall 2028 not separately confirmed"
+        }
+      ]
+    },
+    {
+      "id": "west-virginia",
+      "name": "West Virginia University",
+      "nameKo": "웨스트버지니아 대학교",
+      "state": "West Virginia",
+      "city": "Morgantown",
+      "type": "public",
+      "rank": {
+        "edition": "2026",
+        "value": null,
+        "sourceIds": []
+      },
+      "ontario": {
+        "minimum": null,
+        "basis": "No Ontario-specific percentage admission floor was verified. The university must evaluate the full transcript and required courses.",
+        "basisKo": "온타리오 전용 백분율 최저 지원 성적은 확인되지 않았습니다. 대학이 전체 성적표와 필수 과목을 심사해야 합니다.",
+        "sourceIds": ["scenario-west-virginia-international"]
+      },
+      "academic": {
+        "text": "WVU converts international results to a U.S. 4.0 GPA and states applicants with converted GPA 2.5+ can be admitted. Some majors require higher direct-entry GPAs. This is not an Ontario percentage.",
+        "textKo": "WVU가 해외 성적을 미국 4.0 GPA로 환산하며, 환산 GPA 2.5 이상이면 입학 심사가 가능하다고 공지합니다. 일부 전공은 더 높은 직접 입학 기준을 적용합니다. 온타리오 백분율 기준은 아닙니다.",
+        "sourceIds": ["scenario-west-virginia-international"]
+      },
+      "testing": {
+        "policy": "optional",
+        "text": "SAT/ACT is optional for general admission, but select majors, Honors and some scholarships can require scores. WVU superscores SAT/ACT. Confirm major and 2028 requirements.",
+        "textKo": "일반 입학은 SAT/ACT 선택 제출이며 일부 전공·우등과정·장학금은 점수를 요구할 수 있습니다. SAT/ACT 수퍼스코어를 적용합니다. 전공별 2028년 요건을 확인해야 합니다.",
+        "sourceIds": ["scenario-west-virginia-testing"]
+      },
+      "satRange": null,
+      "entry": {
+        "program": "English, BA",
+        "programKo": "영문학 BA",
+        "unit": "Eberly College of Arts and Sciences",
+        "unitKo": "에벌리 문리과대학",
+        "text": "English explicitly follows university freshman admission requirements. Nursing has additional GPA and test/math criteria. The general-entry English route is verified, but it is not proven to be the university’s single easiest major.",
+        "textKo": "영문학은 대학 일반 신입학 기준을 따른다고 명시합니다. 간호학은 추가 GPA·시험·수학 기준을 적용합니다. 영문학의 일반 입학 경로는 확인되지만 대학 내 가장 쉬운 단일 학과임을 입증하지는 않습니다.",
+        "sourceIds": [
+          "scenario-west-virginia-english",
+          "scenario-west-virginia-nursing",
+          "scenario-west-virginia-international"
+        ],
+        "easierMajorVerified": false
+      },
+      "applicantScope": {
+        "text": "International first-year applicants educated outside the United States. Citizenship and prior college attendance can change the application route.",
+        "textKo": "미국 밖에서 고등학교를 다닌 국제 신입 지원자 기준입니다. 시민권과 고교 졸업 후 대학 재학 이력에 따라 지원 구분이 달라집니다.",
+        "sourceIds": ["scenario-west-virginia-international"]
+      },
+      "sources": [
+        {
+          "id": "scenario-west-virginia-international",
+          "title": "Admissions Requirements for International Students",
+          "url": "https://www.wvu.edu/admissions/undergraduate/how-to-apply/international-students/admission-requirements-for-international-students/",
+          "publisher": "West Virginia University",
+          "verified": "2026-10-22",
+          "cycle": "Current policy viewed 2026-10-22; Fall 2028 not separately confirmed"
+        },
+        {
+          "id": "scenario-west-virginia-english",
+          "title": "English, BA: Admission Requirements",
+          "url": "https://www.wvu.edu/academics/programs/english-ba/",
+          "publisher": "West Virginia University",
+          "verified": "2026-10-22",
+          "cycle": "Current policy viewed 2026-10-22; Fall 2028 not separately confirmed"
+        },
+        {
+          "id": "scenario-west-virginia-testing",
+          "title": "Does WVU Superscore Test Results, and Are Tests Required?",
+          "url": "https://www.wvu.edu/faqs/does-wvu-superscore-test-results-and-are-tests-required/",
+          "publisher": "West Virginia University",
+          "verified": "2026-10-22",
+          "cycle": "Current policy viewed 2026-10-22; Fall 2028 not separately confirmed"
+        },
+        {
+          "id": "scenario-west-virginia-nursing",
+          "title": "High School Students Application Information: Nursing",
+          "url": "https://nursing.wvu.edu/admission-and-aid/undergraduate-programs/bsn/high-school-students/",
+          "publisher": "West Virginia University",
+          "verified": "2026-10-22",
+          "cycle": "Current policy viewed 2026-10-22; Fall 2028 not separately confirmed"
+        }
+      ]
+    },
+    {
+      "id": "new-mexico",
+      "name": "University of New Mexico",
+      "nameKo": "뉴멕시코 대학교",
+      "state": "New Mexico",
+      "city": "Albuquerque",
+      "type": "public",
+      "rank": {
+        "edition": "2026",
+        "value": null,
+        "sourceIds": []
+      },
+      "ontario": {
+        "minimum": null,
+        "basis": "No Ontario-specific percentage admission floor was verified. The university must evaluate the full transcript and required courses.",
+        "basisKo": "온타리오 전용 백분율 최저 지원 성적은 확인되지 않았습니다. 대학이 전체 성적표와 필수 과목을 심사해야 합니다.",
+        "sourceIds": ["scenario-new-mexico-international"]
+      },
+      "academic": {
+        "text": "International freshman admission requires secondary-school completion and strong preparation or a U.S.-equivalent GPA of 2.5/4.0. The university evaluates credentials; no Ontario percentage threshold is verified.",
+        "textKo": "국제 신입학은 고교 졸업과 충분한 학업 준비 또는 미국 기준 GPA 2.5/4.0 상당을 요구합니다. 대학이 성적을 평가하며 온타리오 백분율 최저점은 확인되지 않았습니다.",
+        "sourceIds": ["scenario-new-mexico-international"]
+      },
+      "testing": {
+        "policy": "optional",
+        "text": "The international academic requirements explicitly state SAT/ACT is not required. English proficiency remains separate; confirm the entry-year policy.",
+        "textKo": "국제 학력 요건은 SAT/ACT를 요구하지 않는다고 명시합니다. 영어 능력 요건은 별도이며 지원 연도 정책을 재확인해야 합니다.",
+        "sourceIds": ["scenario-new-mexico-international"]
+      },
+      "satRange": null,
+      "entry": {
+        "program": "English Studies, BA",
+        "programKo": "영어학 BA",
+        "unit": "College of Arts & Sciences",
+        "unitKo": "문리과대학",
+        "text": "English Studies BA is offered. Department guidance says students may apply to Arts & Sciences after 26 academic credits and declare the major with advising. This is a later major-declaration process, not a verified easier freshman-admission cutoff.",
+        "textKo": "영어학 BA를 운영합니다. 학과 안내는 대학 학점 26학점 이수 후 문리과대학에 신청하고 상담을 통해 전공을 선언할 수 있다고 설명합니다. 이는 입학 후 전공 선언 절차이며 더 쉬운 신입학 합격선이 아닙니다.",
+        "sourceIds": [
+          "scenario-new-mexico-english",
+          "scenario-new-mexico-degree"
+        ],
+        "easierMajorVerified": false
+      },
+      "applicantScope": {
+        "text": "International first-year applicants educated outside the United States. Citizenship and prior college attendance can change the application route.",
+        "textKo": "미국 밖에서 고등학교를 다닌 국제 신입 지원자 기준입니다. 시민권과 고교 졸업 후 대학 재학 이력에 따라 지원 구분이 달라집니다.",
+        "sourceIds": ["scenario-new-mexico-international"]
+      },
+      "sources": [
+        {
+          "id": "scenario-new-mexico-international",
+          "title": "International Undergraduate Academic Requirements",
+          "url": "https://international.unm.edu/admission/undergraduate/requirements/academic.html",
+          "publisher": "University of New Mexico",
+          "verified": "2026-10-22",
+          "cycle": "Current policy viewed 2026-10-22; Fall 2028 not separately confirmed"
+        },
+        {
+          "id": "scenario-new-mexico-english",
+          "title": "The English Major: Admissions",
+          "url": "https://english.unm.edu/undergrad/study/index.html",
+          "publisher": "University of New Mexico",
+          "verified": "2026-10-22",
+          "cycle": "Current policy viewed 2026-10-22; Fall 2028 not separately confirmed"
+        },
+        {
+          "id": "scenario-new-mexico-degree",
+          "title": "English: Literature, Rhetoric, and Writing",
+          "url": "https://ascas.unm.edu/about-us/academics/department/english.html",
+          "publisher": "University of New Mexico",
+          "verified": "2026-10-22",
+          "cycle": "Current policy viewed 2026-10-22; Fall 2028 not separately confirmed"
+        }
+      ]
+    },
+    {
+      "id": "uab",
+      "name": "University of Alabama at Birmingham",
+      "nameKo": "앨라배마 대학교 버밍엄",
+      "state": "Alabama",
+      "city": "Birmingham",
+      "type": "public",
+      "rank": {
+        "edition": "2026",
+        "value": 132,
+        "sourceIds": ["scenario-uab-rank"]
+      },
+      "ontario": {
+        "minimum": null,
+        "basis": "No Ontario-specific percentage admission floor was verified. The university must evaluate the full transcript and required courses.",
+        "basisKo": "온타리오 전용 백분율 최저 지원 성적은 확인되지 않았습니다. 대학이 전체 성적표와 필수 과목을 심사해야 합니다.",
+        "sourceIds": ["scenario-uab-international-catalog"]
+      },
+      "academic": {
+        "text": "For secondary education abroad under a non-U.S. grading system, the catalog publishes overall GPA 2.75/4.0 as evaluated by UAB, plus English proficiency. This is not an Ontario percentage floor.",
+        "textKo": "미국 외 교육·성적 체계 이수자는 UAB가 평가한 전체 GPA 2.75/4.0과 영어 능력이 필요하다고 요람에 명시합니다. 온타리오 백분율 최저점이 아닙니다.",
+        "sourceIds": ["scenario-uab-international-catalog"]
+      },
+      "testing": {
+        "policy": "required",
+        "text": "UAB explicitly ends test-optional admission after Summer/Fall 2027 and expects standardized scores for freshman admission and scholarships from Fall 2028. International applicants are included in the policy FAQ.",
+        "textKo": "UAB는 2027년 여름·가을 이후 시험 선택 제출을 종료하며 2028년 가을 신입학·장학금 심사부터 표준화 시험 점수를 요구한다고 공지합니다. FAQ는 국제 지원자도 정책 대상임을 명시합니다.",
+        "sourceIds": ["scenario-uab-testing"]
+      },
+      "satRange": null,
+      "entry": {
+        "program": "English, BA",
+        "programKo": "영문학 BA",
+        "unit": "College of Arts and Sciences",
+        "unitKo": "문리과대학",
+        "text": "English BA has Creative Writing, Linguistics, Literature and Professional Writing concentrations. No official comparative admission floor proves it is the easiest major; the international and 2028 testing criteria still apply.",
+        "textKo": "영문학 BA는 창작·언어학·문학·전문작문 세부 전공을 운영합니다. 가장 쉬운 학과임을 입증하는 공식 비교 합격선은 없으며 국제 입학·2028년 시험 요건을 충족해야 합니다.",
+        "sourceIds": [
+          "scenario-uab-english",
+          "scenario-uab-international-catalog",
+          "scenario-uab-testing"
+        ],
+        "easierMajorVerified": false
+      },
+      "applicantScope": {
+        "text": "International freshmen educated outside the U.S. are directed by UAB to its INTO UAB application route. Distinguish International Direct from International Year One pathway programs.",
+        "textKo": "미국 밖 고교를 다닌 국제 신입생은 UAB 공식 안내에 따라 INTO UAB 지원 경로를 이용합니다. International Direct 직접 입학과 International Year One 준비 경로를 구분해야 합니다.",
+        "sourceIds": [
+          "scenario-uab-international",
+          "scenario-uab-international-catalog"
+        ]
+      },
+      "sources": [
+        {
+          "id": "scenario-uab-international-catalog",
+          "title": "Admission to Undergraduate Programs: International Freshman Admission",
+          "url": "https://catalog.uab.edu/undergraduate/admission/",
+          "publisher": "University of Alabama at Birmingham",
+          "verified": "2026-10-22",
+          "cycle": "Current undergraduate catalog viewed 2026-10-22"
+        },
+        {
+          "id": "scenario-uab-testing",
+          "title": "Test-Optional Policy for Fall 2028 and Beyond",
+          "url": "https://www.uab.edu/admissions/?id=8&view=category",
+          "publisher": "University of Alabama at Birmingham",
+          "verified": "2026-10-22",
+          "cycle": "Fall 2028 and later: standardized tests expected"
+        },
+        {
+          "id": "scenario-uab-english",
+          "title": "BA in English",
+          "url": "https://www.uab.edu/cas/english/undergraduate/ba-in-english",
+          "publisher": "University of Alabama at Birmingham",
+          "verified": "2026-10-22",
+          "cycle": "Current policy viewed 2026-10-22; Fall 2028 not separately confirmed"
+        },
+        {
+          "id": "scenario-uab-international",
+          "title": "International Freshman Application",
+          "url": "https://www.uab.edu/admissions/apply/international/freshman",
+          "publisher": "University of Alabama at Birmingham",
+          "verified": "2026-10-22",
+          "cycle": "Current policy viewed 2026-10-22; Fall 2028 not separately confirmed"
+        },
+        {
+          "id": "scenario-uab-rank",
+          "title": "UAB Secures Top-Tier Ranking in Alabama from U.S. News & World Report",
+          "url": "https://www.uab.edu/news/campus-community/uab-secures-top-tier-ranking-in-alabama-from-u-s-news-world-report",
+          "publisher": "University of Alabama at Birmingham",
+          "verified": "2026-10-22",
+          "cycle": "2026 U.S. News Best Colleges; release 2025-09-25"
+        }
+      ]
+    },
+    {
+      "id": "alabama-huntsville",
+      "name": "University of Alabama in Huntsville",
+      "nameKo": "앨라배마 대학교 헌츠빌",
+      "state": "Alabama",
+      "city": "Huntsville",
+      "type": "public",
+      "rank": {
+        "edition": "2026",
+        "value": null,
+        "sourceIds": []
+      },
+      "ontario": {
+        "minimum": null,
+        "basis": "No Ontario-specific percentage admission floor was verified. The university must evaluate the full transcript and required courses.",
+        "basisKo": "온타리오 전용 백분율 최저 지원 성적은 확인되지 않았습니다. 대학이 전체 성적표와 필수 과목을 심사해야 합니다.",
+        "sourceIds": ["scenario-alabama-huntsville-international"]
+      },
+      "academic": {
+        "text": "A freshman with cumulative high-school GPA 3.0 is described as a strong candidate, not a guaranteed minimum admit. UAH can request a credential evaluation for foreign transcripts without a 4.0 GPA.",
+        "textKo": "고교 누적 GPA 3.0은 강한 지원자로 설명되며 보장 합격 최저점이 아닙니다. 4.0 GPA가 없는 해외 성적표는 외부 학력 평가를 요구할 수 있습니다.",
+        "sourceIds": ["scenario-alabama-huntsville-international"]
+      },
+      "testing": {
+        "policy": "required",
+        "text": "UAH expressly requires SAT/ACT for Spring 2028 and all later freshman entry terms. Its optional policy only covers the listed 2026–2027 terms.",
+        "textKo": "UAH는 2028년 봄 및 이후 모든 신입학에 SAT/ACT를 요구한다고 명시합니다. 선택 제출은 공지된 2026–2027학기에 한정됩니다.",
+        "sourceIds": ["scenario-alabama-huntsville-testing"]
+      },
+      "satRange": {
+        "low": 1200,
+        "high": 1370,
+        "cohort": "Fall 2025 enrolled first-year SAT submitters (8% of class); middle 50%; not a cutoff",
+        "cohortKo": "2025년 가을 등록 신입생 중 SAT 제출자(학년의 8%) 중앙 50%; 합격선 아님",
+        "sourceIds": ["scenario-alabama-huntsville-cds"]
+      },
+      "entry": {
+        "program": "English, BA",
+        "programKo": "영문학 BA",
+        "unit": "College of Arts, Humanities & Social Sciences",
+        "unitKo": "예술·인문·사회과학대학",
+        "text": "English BA offers Creative Writing, Literary Studies and Technical & Professional Communication. The verified page does not establish a comparative lower admission cutoff.",
+        "textKo": "영문학 BA는 창작·문학연구·기술전문커뮤니케이션 세부 전공을 운영합니다. 확인된 공식 페이지에는 전공별 더 낮은 입학 합격선 비교가 없습니다.",
+        "sourceIds": ["scenario-alabama-huntsville-english"],
+        "easierMajorVerified": false
+      },
+      "applicantScope": {
+        "text": "International first-year applicants educated outside the United States. Citizenship and prior college attendance can change the application route.",
+        "textKo": "미국 밖에서 고등학교를 다닌 국제 신입 지원자 기준입니다. 시민권과 고교 졸업 후 대학 재학 이력에 따라 지원 구분이 달라집니다.",
+        "sourceIds": ["scenario-alabama-huntsville-international"]
+      },
+      "sources": [
+        {
+          "id": "scenario-alabama-huntsville-international",
+          "title": "International Undergraduate Admission",
+          "url": "https://www.uah.edu/admissions/undergraduate/apply-for-admission/international",
+          "publisher": "University of Alabama in Huntsville",
+          "verified": "2026-10-22",
+          "cycle": "Current policy viewed 2026-10-22; Fall 2028 not separately confirmed"
+        },
+        {
+          "id": "scenario-alabama-huntsville-testing",
+          "title": "Test Optional Policy for Admission to UAH",
+          "url": "https://www.uah.edu/admissions/undergraduate/apply-for-admission/test-optional",
+          "publisher": "University of Alabama in Huntsville",
+          "verified": "2026-10-22",
+          "cycle": "Spring 2028 and later: SAT/ACT required"
+        },
+        {
+          "id": "scenario-alabama-huntsville-english",
+          "title": "Bachelor of Arts in English",
+          "url": "https://www.uah.edu/ahs/departments/english/programs/undergraduate",
+          "publisher": "University of Alabama in Huntsville",
+          "verified": "2026-10-22",
+          "cycle": "Current policy viewed 2026-10-22; Fall 2028 not separately confirmed"
+        },
+        {
+          "id": "scenario-alabama-huntsville-cds",
+          "title": "Common Data Set 2025-2026, C9",
+          "url": "https://www.uah.edu/images/administrative/provost/oir/university_of_alabama_in_huntsville_cds_2025-2026.pdf",
+          "publisher": "University of Alabama in Huntsville",
+          "verified": "2026-10-22",
+          "cycle": "Fall 2025 enrolled first-year SAT submitters; 8% submitted SAT"
+        }
+      ]
+    },
+    {
+      "id": "louisville",
+      "name": "University of Louisville",
+      "nameKo": "루이빌 대학교",
+      "state": "Kentucky",
+      "city": "Louisville",
+      "type": "public",
+      "rank": {
+        "edition": "2026",
+        "value": 158,
+        "sourceIds": ["scenario-louisville-rank"]
+      },
+      "ontario": {
+        "minimum": null,
+        "basis": "No Ontario-specific percentage admission floor was verified. The university must evaluate the full transcript and required courses.",
+        "basisKo": "온타리오 전용 백분율 최저 지원 성적은 확인되지 않았습니다. 대학이 전체 성적표와 필수 과목을 심사해야 합니다.",
+        "sourceIds": ["scenario-louisville-international"]
+      },
+      "academic": {
+        "text": "The general university minimum-eligibility policy lists a 2.5 GPA plus curriculum/test-or-enhanced-coursework conditions. International applicants also need strong academic preparation, English proficiency and finances. No Ontario percentage equivalency was verified.",
+        "textKo": "일반 최저 지원 자격은 GPA 2.5와 필수 교과·시험 또는 강화 교과 조건을 공지합니다. 국제 지원자는 학업 준비·영어 능력·재정 요건도 충족해야 합니다. 온타리오 백분율 대응값은 확인되지 않았습니다.",
+        "sourceIds": ["scenario-louisville-international"]
+      },
+      "testing": {
+        "policy": "optional",
+        "text": "The international section says first-year applicants need not submit SAT/ACT except when applying to Music or Speed Engineering. Confirm the 2028 policy and degree-specific exceptions.",
+        "textKo": "국제 지원자 항목은 음악대학·스피드 공과대학 지원자를 제외한 신입생의 SAT/ACT를 필수로 요구하지 않는다고 명시합니다. 2028년 정책과 전공별 예외는 재확인이 필요합니다.",
+        "sourceIds": ["scenario-louisville-international"]
+      },
+      "satRange": null,
+      "entry": {
+        "program": "English, BA",
+        "programKo": "영문학 BA",
+        "unit": "College of Arts and Sciences",
+        "unitKo": "문리과대학",
+        "text": "The BA requires English composition courses and a minimum 2.0 cumulative and major GPA for departmental admission after university study. These are college-progress requirements, not an Ontario high-school entry cutoff.",
+        "textKo": "영문학 BA 학과 진입은 대학 영작문 과목 이수와 전체·전공 GPA 2.0을 요구합니다. 이는 대학 입학 후 전공 진입 기준이며 온타리오 고교 입학 합격선이 아닙니다.",
+        "sourceIds": ["scenario-louisville-english"],
+        "easierMajorVerified": false
+      },
+      "applicantScope": {
+        "text": "Applicants who are not U.S. citizens or immigrants; the catalog provides separate international requirements. University admission is capacity-limited and does not guarantee a selective program.",
+        "textKo": "미국 시민권자·이민자가 아닌 지원자에게 국제 요건을 별도 적용합니다. 정원 제한이 있으며 대학 합격이 별도 선발 전공 합격을 보장하지 않습니다.",
+        "sourceIds": ["scenario-louisville-international"]
+      },
+      "sources": [
+        {
+          "id": "scenario-louisville-international",
+          "title": "Admission to the University: International Student Applicants",
+          "url": "https://catalog.louisville.edu/undergraduate/admission/",
+          "publisher": "University of Louisville",
+          "verified": "2026-10-22",
+          "cycle": "Current 2026-2027 undergraduate catalog; Fall 2028 not separately confirmed"
+        },
+        {
+          "id": "scenario-louisville-english",
+          "title": "English BA: Departmental Admission Requirements",
+          "url": "https://catalog.louisville.edu/undergraduate/majors/english-ba/",
+          "publisher": "University of Louisville",
+          "verified": "2026-10-22",
+          "cycle": "2026-2027 undergraduate catalog"
+        },
+        {
+          "id": "scenario-louisville-rank",
+          "title": "UofL Earns Highest-Ever U.S. News & World Report Ranking",
+          "url": "https://news.louisville.edu/news/uofl-earns-highest-ever-us-news-world-report-ranking",
+          "publisher": "University of Louisville",
+          "verified": "2026-10-22",
+          "cycle": "2026 U.S. News Best Colleges; release 2025-09-23"
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "All records use official university primary sources viewed on 2026-10-22. Current undated pages are not represented as Fall 2028 guarantees.",
+    "No Ontario-to-U.S.-GPA conversion is supplied. Every Ontario minimum is null because no explicit Ontario/Canada percentage minimum was verified among these twelve universities.",
+    "Missouri alone has a separate international-100-point percentageRule:80 in required core coursework. The institution must confirm how the Ontario transcript satisfies that rule; Ontario top-six average is not assumed equivalent.",
+    "No school is labeled as having a verified single easiest major. General-entry humanities examples, selective-program exceptions and later college major-declaration requirements are described separately.",
+    "No SAT-only assured-admission alternative is assigned to an international applicant when the international source only publishes GPA-based criteria. Texas Tech class-rank-dependent assured admission is not treated as a SAT-only alternative.",
+    "SAT ranges are historical enrolled first-year submitter middle 50% distributions, not minimum admission requirements. Unverified composite ranges remain null.",
+    "UAH and UAB explicitly publish standardized-test expectations for 2028; these policies are distinguished from 2026–2027 optional periods.",
+    "Rank values are 2026 U.S. News National Universities only and included only where an official institutional release explicitly verifies the edition/value. No rank is inferred from public-only or program-specific tables.",
+    "Excluded LSU because the international page strongly-encouraged testing language and current general freshman GPA-conditional requirement need clarification; excluded University of Utah to prioritize twelve records with sufficiently specific program/entry sources."
+  ]
+}

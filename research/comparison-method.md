@@ -1,25 +1,54 @@
-# Ontario × SAT comparison method — 22 October 2026
+# Evidence-only Ontario × SAT scenarios
 
-The explorer covers 20 specified U.S. universities, eight Ontario percentage bands (60–65 through 95–100), and five SAT reference scores (1100, 1200, 1300, 1400, 1500): 40 scenarios and 800 school-scenario rows in the downloadable CSV. Bands include the lower bound and exclude the upper bound, except 100 is included.
+Reviewed 22 October 2026. The user requested a larger pool with ten universities for each grade/SAT combination, then explicitly chose **only officially confirmed criteria; show a shortage when fewer than ten can be supported**. The live university explorer follows that preference.
 
-## What changes and what does not
+## Research scope
 
-- Ontario bands drive conservative editorial planning categories. They are not observed Canadian cutoffs, eligibility decisions or calibrated probabilities.
-- SAT cells independently compare each score with a sourced composite middle 50% for the named cohort. Missing composite data remain unknown. Never sum component percentiles (notably Buffalo).
-- SAT alone never upgrades the academic planning category. A score inside a distribution does not establish eligibility.
-- Iowa State's current international first-year rule explicitly treats SAT 1200+ as meeting its 3.0 GPA requirement. The interface marks this component conditionally even at low Ontario bands. It does not waive core coursework, English, credentials or financial documentation; Fall 2028 must be reconfirmed. Known U.S. applicant profiles do not receive this international-rule label. Unknown citizenship requires confirmation.
-- Ontario percentages are not converted to U.S. GPAs. Country-equivalency rules and full transcripts require university assessment.
+The pool contains 63 unique universities: the original 20 extended records plus 43 new admissions/program records. New records cover accessible, broad-entry and selective institutions; they are not all assigned personal-fit labels. New policy, program and score facts use university primary sources. Original dated ranking reports retain their secondary-source labels. Individual source records preserve exact URLs, actual review dates, applicable years and limitations. Missing values remain unknown. The catalog is extensible and has no 20-school cap.
 
-## Majors
+The new files are scenario-access.json, scenario-mid.json, scenario-selective.json, scenario-root.json and scenario-ontario.json. scenario-existing-rules.json audits possible new quantitative rules for the original schools. Campus, applicant category and program scope are part of each record.
 
-Focused broad-major candidates have school/college/major entry structure and primary links. Full official program directories are linked separately; the focus list does not reproduce every catalog. No school is labeled as having a proven lowest-Ontario-cutoff major without evidence. ASU BA versus BS requirements are a documented distinction. Purdue and Minnesota publish college-specific SAT distributions; these are not minimums or evidence that changing majors causes an admissions advantage. Post-enrollment major-declaration rules are not freshman-admission cutoffs.
+## Input meaning
 
-## Rankings and recognition
+Eight Ontario bands cover60–100%, with the lower endpoint included and upper endpoint excluded except100. Five SAT scenarios1100/1200/1300/1400/1500 produce40 combinations. A single selected scenario may additionally use1600 or a saved valid SAT total. Valid total and section scores move in steps of10. Contradictory supplied SAT totals/sections block all matching, including alternatives without section minima.
 
-Compare the 2026 U.S. News National Universities category, including public/private institutions and retaining ties; do not mix public-only, global, program or 2027 ranks. 2026 is a common historical edition, not the latest edition. Prefer institutional releases; where primary confirmation is unavailable, identify the dated secondary report explicitly. Keep source links and edition for every rank.
+The averaging basis is an independent input: cumulative academic subjects, core subjects, overall secondary-school average, Grade12top-six U/M, or a calculation directly confirmed with the university. These are not interchangeable. Default is unknown. Each percentage rule also requires its own university-specific calculation confirmation, unchecked by default. A generic core average cannot confirm both Iowa and Missouri. Confirming a school means the scenario average is conditionally calculated using that school’s own published method; it does not reuse an actual top-six mark. Each matrix cell retains those explicit hypothetical calculation assumptions. James Madison’s unspecified formula requires direct university confirmation. A precise average must lie inside the selected band. The route defaults to an explicitly labeled hypothetical international first-year scenario; selecting U.S.citizen/permanent-resident prevents international rules from being reused as domestic eligibility.
 
-No representative Korean recognition ranking was verified. The three brand reference tiers are explicitly editorial, not a Korean survey. QS global employer reputation cannot substitute for Korean public/employer recognition. Rankings and brand tiers never establish admission eligibility. See recognition-method.md for the search and limitations.
+## What qualifies for the strict list
 
-## Persistence
+A record needs a resolvable, applicable current testing rule and at least one of:
 
-Monthly overrides, custom tasks, deleted IDs and completion IDs are saved locally. Existing completion IDs stay stable. Editing an official reminder produces a personal task retaining original guidance/source links. No server sync or account storage is implied. JSON backup/restore supports moving plans between browsers; single-step Undo is available for task mutations.
+1. An explicit Ontario percentage rule, compared using its published calculation basis.
+2. A university-published international100-point-scale rule, compared using that same core-course basis; no Ontario-to-U.S.GPA conversion is performed.
+3. An explicit, applicable international SAT alternative that replaces the GPA component, including any section minima.
+
+Every other record is excluded from the strict list with a reason. Conflicting sources cannot create a confirmed alternative. A historical SAT middle50% distribution, university rank, major-declaration condition or manually authored grade band cannot establish eligibility. A top-six average cannot silently satisfy a cumulative or core-subject rule.
+
+Each result is labeled as a **published academic/test component comparison**, not complete admission eligibility, acceptance, a personal probability or a Fall2028 commitment. Courses, English, final credentials, program rules, documents and finances remain separate. The user has not supplied a complete transcript or evidence of every remaining condition.
+
+Relevant verified distinctions include:
+
+- Northern Iowa:75 cumulative academic-subject average for its Canada/OSSD route.
+- Iowa:70 across core academic subjects for Ontario, distinct from Iowa State.
+- Portland State: strictly **greater than70**, not at least70. The70–75band straddles that rule; an exact average is required unless the entire band is above it.
+- James Madison: Ontario minimum70, but the reviewed page does not specify its averaging window or course selection. Automatic comparison uses the separate school-confirmed-basis input, not an invented top-six calculation.
+- Missouri: official international100-point average80 across required core coursework. The university decides which coursework counts; this is not a self-generated GPA conversion.
+- Iowa State: SAT1200+ can replace only its international GPA component; other requirements remain.
+- Wichita State: SAT1060+ and both sections490+ for its international alternative. Unknown section scores are not assumed. The mathematical SAT section maximum800 means a total1290+ necessarily gives each section at least490; this is a derived lower bound, not a new university cutoff. At lower totals, actual sections or a total plus one section are needed.
+- South Dakota: incompatible wording across reviewed international/general pages remains flagged, and the apparent SAT1070 alternative is excluded from automatic matching. Missouri Southern's older SAT1060 alternative is not imported when its current page omits it.
+
+## Ranking and shortages
+
+At most ten matching records are displayed. Matching records with a verified2026U.S.NewsNationalUniversities rank are sorted by that rank; unverified ranks follow alphabetically. Different ranking categories and editions are not mixed. This ranks only matching records within the researched pool; it does not prove these are the best ten attainable universities in the U.S. A representative Korean recognition ranking was not verified.
+
+The count short of ten is explicit. Unmatched institutions are not used to fill places. An audit lists why each other researched school was not included. An empty list is not a rejection decision. All researched institutions remain searchable in the catalog, including selective schools whose Ontario equivalencies are unknown.
+
+## Programs and future policy
+
+Program names and entry structure are source-linked. General entry, later major declaration, and special auditions/portfolios are distinguished. No record in this audit establishes a unique easiest-admission major, so none is marketed as one. For example, UMD and UF explain that choosing a different intended major does not improve university admission in the ways reviewed; ASU publishes a genuine BA/BS requirement distinction, which is retained with scope.
+
+Current/recent-cycle policy is not relabeled as a Fall2028 promise. Examples of explicit2028 testing statements remain school-specific. The original editorial six-pick model is no longer used in the live university explorer; legacy modules/tests remain for earlier data and storage compatibility.
+
+## Verification
+
+Behavior tests cover all40cases, evidence references, unknown exclusions, source conflicts, citizenship scope, strict inequalities, calculation-basis mismatches, section-score inference, count shortages, CSV content (including exact matched calculation basis and remaining GPA-alternative conditions) and local-input normalization. Browser QA checks filtering,40-case navigation, sources, saved schools, both languages and mobile overflow. A network-success code alone does not prove claim accuracy; the recorded source-reading audit is separate from link reachability.

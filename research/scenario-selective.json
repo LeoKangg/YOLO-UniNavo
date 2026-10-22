@@ -1,0 +1,992 @@
+{
+  "schools": [
+    {
+      "id": "temple",
+      "name": "Temple University",
+      "nameKo": "템플 대학교",
+      "state": "PA",
+      "city": "Philadelphia",
+      "type": "public",
+      "rank": {
+        "edition": "2026",
+        "value": 102,
+        "sourceIds": ["scenario-temple-ranking"]
+      },
+      "ontario": {
+        "minimum": null,
+        "basis": "Ontario minimum percentage not verified; the complete school record requires university assessment.",
+        "basisKo": "온타리오 최저 백분율은 확인되지 않았으며 대학의 전체 성적표 심사가 필요합니다.",
+        "sourceIds": ["scenario-temple-international"]
+      },
+      "academic": {
+        "text": "Temple reviews all secondary-school records, including grades 9–11 and current or final grade 12 results for four-year curricula. Admission is holistic.",
+        "textKo": "4년제 고교 교육과정은 9–11학년 및 12학년 진행·최종 성적을 포함한 전체 고교 기록을 종합 심사합니다.",
+        "sourceIds": ["scenario-temple-international"]
+      },
+      "testing": {
+        "policy": "optional",
+        "text": "SAT/ACT is optional for international first-year applicants; English-proficiency requirements are separate. Fall 2028-specific confirmation is still needed.",
+        "textKo": "국제 신입생 SAT/ACT 제출은 선택입니다. 영어 능력 요건은 별도이며, 2028년 입학 정책은 다시 확인해야 합니다.",
+        "sourceIds": ["scenario-temple-international"]
+      },
+      "satRange": {
+        "low": 1030,
+        "high": 1310,
+        "cohort": "Fall 2025 enrolled first-year SAT submitters, middle 50%; 19% submitted SAT; domestic campuses only.",
+        "cohortKo": "2025년 가을 등록 신입생 중 SAT 제출자 중간 50%; 제출 비율 19%, 미국 내 캠퍼스 기준.",
+        "sourceIds": ["scenario-temple-cds"]
+      },
+      "entry": {
+        "program": "General first-year admission",
+        "programKo": "일반 신입학",
+        "unit": "University-wide; program-specific supplements",
+        "unitKo": "대학 공통 심사 및 일부 전공 추가 서류",
+        "text": "Some arts, music, dance and theatre programs require an audition, interview or portfolio. No lowest-entry major was verified.",
+        "textKo": "일부 미술·음악·무용·연극 전공은 오디션·면접·포트폴리오가 필요합니다. 최저 입학 전공은 확인되지 않았습니다.",
+        "easierMajorVerified": false,
+        "sourceIds": ["scenario-temple-international"]
+      },
+      "applicantScope": {
+        "text": "International first-year admission; citizenship and secondary-school curriculum may lead to different document and English-proficiency requirements. Confirm Fall 2028 rules before applying.",
+        "textKo": "국제 신입학 자료입니다. 시민권과 고교 교육과정에 따라 서류·영어 요건이 달라질 수 있습니다. 지원 전 2028년 가을 입학 요건을 다시 확인하세요.",
+        "sourceIds": ["scenario-temple-international"]
+      },
+      "sources": [
+        {
+          "id": "scenario-temple-international",
+          "title": "First-year International Students",
+          "url": "https://admissions.temple.edu/apply/international-students/first-year-international-students",
+          "publisher": "Temple University",
+          "verified": "2026-10-22",
+          "cycle": "Current page, reviewed October 22, 2026"
+        },
+        {
+          "id": "scenario-temple-cds",
+          "title": "Common Data Set 2025–2026, C9",
+          "url": "https://ira.temple.edu/sites/ira/files/media/document/CDS%202025-26_Temple%20University_26-27_Class-Rank-Update.pdf",
+          "publisher": "Temple University",
+          "verified": "2026-10-22",
+          "cycle": "Fall 2025 enrolled first-year students at domestic campuses"
+        },
+        {
+          "id": "scenario-temple-ranking",
+          "title": "Temple University Maintains Strong Rankings in U.S. and International Surveys, October 30, 2025",
+          "url": "https://en-news.tuj.ac.jp/2025/10/30/temple-university-maintains-strong-rankings/",
+          "publisher": "Temple University",
+          "verified": "2026-10-22",
+          "cycle": "2026 U.S. News Best Colleges, National Universities; September 2025 release"
+        }
+      ]
+    },
+    {
+      "id": "delaware",
+      "name": "University of Delaware",
+      "nameKo": "델라웨어 대학교",
+      "state": "DE",
+      "city": "Newark",
+      "type": "public",
+      "rank": {
+        "edition": "2026",
+        "value": 88,
+        "sourceIds": ["scenario-delaware-ranking"]
+      },
+      "ontario": {
+        "minimum": null,
+        "basis": "Ontario minimum percentage not verified; the complete school record requires university assessment.",
+        "basisKo": "온타리오 최저 백분율은 확인되지 않았으며 대학의 전체 성적표 심사가 필요합니다.",
+        "sourceIds": ["scenario-delaware-international"]
+      },
+      "academic": {
+        "text": "Submit all secondary transcripts and examination results. Applicants are assessed in their curriculum context. Business and engineering generally expect pre-calculus preparation, including provincial Canadian Grade 12 equivalents.",
+        "textKo": "전체 고교 성적표·시험 결과를 제출하며 교육과정 맥락에서 심사합니다. 경영·공학은 일반적으로 캐나다 주별 12학년 상당의 고급 함수·미적분 준비를 요구합니다.",
+        "sourceIds": ["scenario-delaware-international"]
+      },
+      "testing": {
+        "policy": "optional",
+        "text": "SAT/ACT is not required for international applicants. English-proficiency requirements are separate; confirm Fall 2028 policy.",
+        "textKo": "국제 지원자에게 SAT/ACT 제출을 요구하지 않습니다. 영어 능력 요건은 별도이며 2028년 정책을 확인해야 합니다.",
+        "sourceIds": ["scenario-delaware-international"]
+      },
+      "satRange": null,
+      "entry": {
+        "program": "University Studies (undeclared)",
+        "programKo": "University Studies(전공 미정)",
+        "unit": "University Studies",
+        "unitKo": "전공 탐색 과정",
+        "text": "UD may offer University Studies when a selected major is full or its requirements are not met. Students normally choose a major by the end of sophomore year. This is not a published easier-major cutoff.",
+        "textKo": "희망 전공의 정원이 찼거나 전공 요건에 미달하면 University Studies로 합격할 수 있습니다. 통상 2학년 말까지 전공을 정합니다. 더 낮은 합격선이 공개된 전공이라는 뜻은 아닙니다.",
+        "easierMajorVerified": false,
+        "sourceIds": ["scenario-delaware-international"]
+      },
+      "applicantScope": {
+        "text": "International first-year admission; citizenship and secondary-school curriculum may lead to different document and English-proficiency requirements. Confirm Fall 2028 rules before applying.",
+        "textKo": "국제 신입학 자료입니다. 시민권과 고교 교육과정에 따라 서류·영어 요건이 달라질 수 있습니다. 지원 전 2028년 가을 입학 요건을 다시 확인하세요.",
+        "sourceIds": ["scenario-delaware-international"]
+      },
+      "sources": [
+        {
+          "id": "scenario-delaware-international",
+          "title": "International Admissions",
+          "url": "https://www.udel.edu/apply/undergraduate-admissions/apply-to-ud/international-admissions/",
+          "publisher": "University of Delaware",
+          "verified": "2026-10-22",
+          "cycle": "Current page, reviewed October 22, 2026"
+        },
+        {
+          "id": "scenario-delaware-ranking",
+          "title": "UD ranks among nation’s best universities, September 23, 2025",
+          "url": "https://www.udel.edu/udaily/2025/september/top-ranked-best-colleges-us-news-world-report/",
+          "publisher": "University of Delaware",
+          "verified": "2026-10-22",
+          "cycle": "2026 U.S. News Best Colleges, National Universities; released September 2025"
+        }
+      ]
+    },
+    {
+      "id": "tennessee-knoxville",
+      "name": "University of Tennessee, Knoxville",
+      "nameKo": "테네시 대학교 녹스빌",
+      "state": "TN",
+      "city": "Knoxville",
+      "type": "public",
+      "rank": {
+        "edition": "2026",
+        "value": null,
+        "sourceIds": []
+      },
+      "ontario": {
+        "minimum": null,
+        "basis": "Ontario minimum percentage not verified; the complete school record requires university assessment.",
+        "basisKo": "온타리오 최저 백분율은 확인되지 않았으며 대학의 전체 성적표 심사가 필요합니다.",
+        "sourceIds": ["scenario-tennessee-knoxville-international"]
+      },
+      "academic": {
+        "text": "UT calculates its own international core GPA from school records and reviews curriculum rigor. No Ontario percentage eligibility threshold was verified.",
+        "textKo": "대학이 고교 기록으로 국제 지원자 핵심 과목 GPA를 계산하고 교육과정 난이도를 심사합니다. 온타리오 최저 백분율은 확인하지 못했습니다.",
+        "sourceIds": ["scenario-tennessee-knoxville-international"]
+      },
+      "testing": {
+        "policy": "unknown",
+        "text": "The Fall 2027 general policy requires ACT/SAT for all first-years, while the international checklist specifically lists test requirements for architecture/design, nursing, music and engineering. Confirm the applicable international and Fall 2028 rule with admissions.",
+        "textKo": "2027년 일반 정책은 모든 신입생 ACT/SAT를 요구하지만 국제학생 체크리스트는 건축·디자인, 간호, 음악, 공학의 시험 요건을 따로 명시합니다. 국제 지원자에게 적용되는 요건과 2028년 정책은 입학처 확인이 필요합니다.",
+        "sourceIds": [
+          "scenario-tennessee-knoxville-international",
+          "scenario-tennessee-knoxville-testing"
+        ]
+      },
+      "satRange": null,
+      "entry": {
+        "program": "General first-year admission",
+        "programKo": "일반 신입학",
+        "unit": "University-wide and selective programs",
+        "unitKo": "대학 공통 심사 및 전공별 심사",
+        "text": "Architecture/design, nursing, music and engineering have additional requirements. No easier-entry major or major-specific Ontario cutoff was verified.",
+        "textKo": "건축·디자인, 간호, 음악, 공학은 추가 요건이 있습니다. 더 쉬운 입학 전공이나 전공별 온타리오 합격선은 확인하지 못했습니다.",
+        "easierMajorVerified": false,
+        "sourceIds": ["scenario-tennessee-knoxville-international"]
+      },
+      "applicantScope": {
+        "text": "International first-year admission; citizenship and secondary-school curriculum may lead to different document and English-proficiency requirements. Confirm Fall 2028 rules before applying.",
+        "textKo": "국제 신입학 자료입니다. 시민권과 고교 교육과정에 따라 서류·영어 요건이 달라질 수 있습니다. 지원 전 2028년 가을 입학 요건을 다시 확인하세요.",
+        "sourceIds": ["scenario-tennessee-knoxville-international"]
+      },
+      "sources": [
+        {
+          "id": "scenario-tennessee-knoxville-international",
+          "title": "International Students Application",
+          "url": "https://admissions.utk.edu/undergraduate-application/international-students/",
+          "publisher": "University of Tennessee, Knoxville",
+          "verified": "2026-10-22",
+          "cycle": "Current page, reviewed October 22, 2026"
+        },
+        {
+          "id": "scenario-tennessee-knoxville-testing",
+          "title": "First Year Test Score Policy",
+          "url": "https://admissions.utk.edu/undergraduate-application/test-score-policy/",
+          "publisher": "University of Tennessee, Knoxville",
+          "verified": "2026-10-22",
+          "cycle": "Fall 2027 first-year applicants"
+        },
+        {
+          "id": "scenario-tennessee-knoxville-profile",
+          "title": "Fall 2026 Release Summary",
+          "url": "https://admissions.utk.edu/fall-2026-release-summary/",
+          "publisher": "University of Tennessee, Knoxville",
+          "verified": "2026-10-22",
+          "cycle": "Fall 2026 admitted students; published ACT and SAT-equivalent figures"
+        }
+      ]
+    },
+    {
+      "id": "south-carolina",
+      "name": "University of South Carolina, Columbia",
+      "nameKo": "사우스캐롤라이나 대학교 컬럼비아",
+      "state": "SC",
+      "city": "Columbia",
+      "type": "public",
+      "rank": {
+        "edition": "2026",
+        "value": null,
+        "sourceIds": []
+      },
+      "ontario": {
+        "minimum": null,
+        "basis": "Ontario minimum percentage not verified; the complete school record requires university assessment.",
+        "basisKo": "온타리오 최저 백분율은 확인되지 않았으며 대학의 전체 성적표 심사가 필요합니다.",
+        "sourceIds": ["scenario-south-carolina-international"]
+      },
+      "academic": {
+        "text": "International admission emphasizes school performance and comprehensive review. Choice of major and available program capacity are part of the review.",
+        "textKo": "국제 입학은 고교 성적을 중심으로 종합 심사하며 희망 전공과 전공별 수용 인원도 고려합니다.",
+        "sourceIds": ["scenario-south-carolina-international"]
+      },
+      "testing": {
+        "policy": "optional",
+        "text": "SAT/ACT is optional for Spring, Summer and Fall 2027 international freshmen. Fall 2028 has not been confirmed by this source.",
+        "textKo": "2027년 봄·여름·가을 국제 신입생은 SAT/ACT 선택 제출입니다. 이 자료로 2028년 정책은 확정할 수 없습니다.",
+        "sourceIds": ["scenario-south-carolina-international"]
+      },
+      "satRange": {
+        "low": 1260,
+        "high": 1410,
+        "cohort": "Fall 2024 admitted nonresident students, middle 50% SAT; not a separate international-only cohort.",
+        "cohortKo": "2024년 가을 합격한 비거주자 SAT 중간 50%; 국제학생만의 분포는 아닙니다.",
+        "sourceIds": ["scenario-south-carolina-profile"]
+      },
+      "entry": {
+        "program": "Undeclared",
+        "programKo": "전공 미정(Undeclared)",
+        "unit": "McCausland College of Arts and Sciences",
+        "unitKo": "맥코슬랜드 문리대학",
+        "text": "The official international page offers Undeclared in Arts and Sciences and permits a second major choice. It does not establish this as the easiest admission route.",
+        "textKo": "국제 입학 안내는 문리대학 Undeclared와 두 번째 희망 전공 선택을 안내합니다. 이를 가장 쉬운 입학 경로라고 입증하는 자료는 아닙니다.",
+        "easierMajorVerified": false,
+        "sourceIds": ["scenario-south-carolina-international"]
+      },
+      "applicantScope": {
+        "text": "International first-year admission; citizenship and secondary-school curriculum may lead to different document and English-proficiency requirements. Confirm Fall 2028 rules before applying.",
+        "textKo": "국제 신입학 자료입니다. 시민권과 고교 교육과정에 따라 서류·영어 요건이 달라질 수 있습니다. 지원 전 2028년 가을 입학 요건을 다시 확인하세요.",
+        "sourceIds": ["scenario-south-carolina-international"]
+      },
+      "sources": [
+        {
+          "id": "scenario-south-carolina-international",
+          "title": "International Applicants",
+          "url": "https://www.sc.edu/about/offices_and_divisions/undergraduate_admissions/apply/for_international_students/index.php",
+          "publisher": "University of South Carolina, Columbia",
+          "verified": "2026-10-22",
+          "cycle": "Spring, Summer and Fall 2027 testing policy"
+        },
+        {
+          "id": "scenario-south-carolina-profile",
+          "title": "2024 Application Guide, academic profile",
+          "url": "https://cms.sc.edu/about/offices_and_divisions/undergraduate_admissions/documents/2024_application_guide.pdf",
+          "publisher": "University of South Carolina, Columbia",
+          "verified": "2026-10-22",
+          "cycle": "Fall 2024 admitted students, nonresident profile"
+        }
+      ]
+    },
+    {
+      "id": "miami-ohio",
+      "name": "Miami University, Oxford",
+      "nameKo": "마이애미 대학교 옥스퍼드(오하이오)",
+      "state": "OH",
+      "city": "Oxford",
+      "type": "public",
+      "rank": {
+        "edition": "2026",
+        "value": 143,
+        "sourceIds": ["scenario-miami-ohio-ranking"]
+      },
+      "ontario": {
+        "minimum": null,
+        "basis": "Ontario minimum percentage not verified; the complete school record requires university assessment.",
+        "basisKo": "온타리오 최저 백분율은 확인되지 않았으며 대학의 전체 성적표 심사가 필요합니다.",
+        "sourceIds": ["scenario-miami-ohio-international"]
+      },
+      "academic": {
+        "text": "A recognized pre-university secondary qualification and adequate English are required. Academic credentials are read within the education system in which they were earned.",
+        "textKo": "인정되는 대학 진학용 고교 졸업 자격과 영어 능력이 필요하며, 성적은 이수한 교육제도 맥락에서 평가합니다.",
+        "sourceIds": ["scenario-miami-ohio-international"]
+      },
+      "testing": {
+        "policy": "optional",
+        "text": "International students need not submit SAT/ACT for general admission. The Presidential Fellows scholarship requires scores beginning 2026–2027; confirm Fall 2028 details.",
+        "textKo": "국제학생 일반 입학은 SAT/ACT 선택 제출입니다. Presidential Fellows 장학금은 2026–2027년부터 시험 점수가 필요하며 2028년 세부 정책은 확인해야 합니다.",
+        "sourceIds": ["scenario-miami-ohio-testing"]
+      },
+      "satRange": {
+        "low": 1220,
+        "high": 1380,
+        "cohort": "Fall 2026 all admitted SAT submitters, middle 50%; 49.7% of admits opted into ACT/SAT review.",
+        "cohortKo": "2026년 가을 전체 합격자 중 SAT 제출자의 중간 50%; 전체 합격자 49.7%가 ACT/SAT 심사를 선택했습니다.",
+        "sourceIds": ["scenario-miami-ohio-profile"]
+      },
+      "entry": {
+        "program": "General first-year admission",
+        "programKo": "일반 신입학",
+        "unit": "Oxford campus; some Creative Arts supplements",
+        "unitKo": "옥스퍼드 캠퍼스 및 일부 예술 전공 추가 심사",
+        "text": "Certain Creative Arts majors require a portfolio, audition or video. Published Fall 2026 admitted SAT distributions differ for all admits, Farmer Business and Nursing; they are not minimum cutoffs.",
+        "textKo": "일부 예술 전공은 포트폴리오·오디션·영상이 필요합니다. 2026년 전체·경영·간호 합격자 SAT 분포가 따로 공개되지만 최저 합격점은 아닙니다.",
+        "easierMajorVerified": false,
+        "sourceIds": [
+          "scenario-miami-ohio-profile",
+          "scenario-miami-ohio-requirements"
+        ]
+      },
+      "applicantScope": {
+        "text": "International first-year admission; citizenship and secondary-school curriculum may lead to different document and English-proficiency requirements. Confirm Fall 2028 rules before applying.",
+        "textKo": "국제 신입학 자료입니다. 시민권과 고교 교육과정에 따라 서류·영어 요건이 달라질 수 있습니다. 지원 전 2028년 가을 입학 요건을 다시 확인하세요.",
+        "sourceIds": ["scenario-miami-ohio-international"]
+      },
+      "sources": [
+        {
+          "id": "scenario-miami-ohio-international",
+          "title": "International Student Eligibility Requirements",
+          "url": "https://miamioh.edu/admission-aid/apply/international-students/eligibility.html",
+          "publisher": "Miami University, Oxford",
+          "verified": "2026-10-22",
+          "cycle": "Current page, reviewed October 22, 2026"
+        },
+        {
+          "id": "scenario-miami-ohio-testing",
+          "title": "College Entrance Testing",
+          "url": "https://miamioh.edu/admission-aid/apply/first-year-students/college-entrance-testing.html",
+          "publisher": "Miami University, Oxford",
+          "verified": "2026-10-22",
+          "cycle": "Current policy; scholarship exception begins 2026–2027"
+        },
+        {
+          "id": "scenario-miami-ohio-profile",
+          "title": "Admitted Students Statistics, Fall 2026",
+          "url": "https://miamioh.edu/admission-aid/apply/first-year-students/admitted-student-statistics.html",
+          "publisher": "Miami University, Oxford",
+          "verified": "2026-10-22",
+          "cycle": "Fall 2026 admitted students"
+        },
+        {
+          "id": "scenario-miami-ohio-requirements",
+          "title": "First-Year Student Application Requirements",
+          "url": "https://miamioh.edu/admission-aid/apply/first-year-students/",
+          "publisher": "Miami University, Oxford",
+          "verified": "2026-10-22",
+          "cycle": "Current page, reviewed October 22, 2026"
+        },
+        {
+          "id": "scenario-miami-ohio-ranking",
+          "title": "Miami recognized in 2026 U.S. News rankings, September 23, 2025",
+          "url": "https://miamioh.edu/news/2025/09/miami-named-as-a-top-2-public-school-for-undergraduate-teaching-programs-in-2026-u.s-news-world-report-rankings.html",
+          "publisher": "Miami University, Oxford",
+          "verified": "2026-10-22",
+          "cycle": "2026 U.S. News Best Colleges, National Universities; released September 2025"
+        }
+      ]
+    },
+    {
+      "id": "syracuse",
+      "name": "Syracuse University",
+      "nameKo": "시러큐스 대학교",
+      "state": "NY",
+      "city": "Syracuse",
+      "type": "private",
+      "rank": {
+        "edition": "2026",
+        "value": null,
+        "sourceIds": []
+      },
+      "ontario": {
+        "minimum": null,
+        "basis": "Ontario minimum percentage not verified; the complete school record requires university assessment.",
+        "basisKo": "온타리오 최저 백분율은 확인되지 않았으며 대학의 전체 성적표 심사가 필요합니다.",
+        "sourceIds": ["scenario-syracuse-international"]
+      },
+      "academic": {
+        "text": "Submit official credentials from outside the U.S., grading-scale information, and translations when necessary. The first-year review includes secondary transcripts and the senior-year grade report.",
+        "textKo": "미국 외 고교의 공식 학력·성적 자료와 성적 체계, 필요한 번역을 제출합니다. 고교 성적표와 최종 학년 진행 성적을 심사합니다.",
+        "sourceIds": [
+          "scenario-syracuse-international",
+          "scenario-syracuse-requirements"
+        ]
+      },
+      "testing": {
+        "policy": "optional",
+        "text": "Published cycle-specific test-optional policy runs through Spring 2028. The college-specific page also exempts applicants studying a non-American curriculum outside the U.S.; confirm how this applies to Fall 2028.",
+        "textKo": "학기별 SAT/ACT 선택 정책은 2028년 봄까지 명시되어 있습니다. 단과대 안내는 미국 밖 비미국 교육과정 재학생의 면제도 설명하므로 2028년 가을 적용 여부를 확인해야 합니다.",
+        "sourceIds": [
+          "scenario-syracuse-requirements",
+          "scenario-syracuse-entry"
+        ]
+      },
+      "satRange": null,
+      "entry": {
+        "program": "Arts and Sciences / Maxwell general admission",
+        "programKo": "문리대학·맥스웰 일반 입학",
+        "unit": "College of Arts and Sciences / Maxwell",
+        "unitKo": "문리대학·맥스웰",
+        "text": "The college-specific page lists no additional requirements for Arts and Sciences/Maxwell, unlike architecture portfolios and several performance/design programs. This establishes fewer supplemental materials, not a lower academic cutoff.",
+        "textKo": "단과대 안내는 문리대학·맥스웰의 추가 요건이 없다고 명시합니다. 건축·일부 공연·디자인의 포트폴리오 등과 다른 서류 요건이며, 더 낮은 성적 합격선이 입증된 것은 아닙니다.",
+        "easierMajorVerified": false,
+        "sourceIds": ["scenario-syracuse-entry"]
+      },
+      "applicantScope": {
+        "text": "International first-year admission; citizenship and secondary-school curriculum may lead to different document and English-proficiency requirements. Confirm Fall 2028 rules before applying.",
+        "textKo": "국제 신입학 자료입니다. 시민권과 고교 교육과정에 따라 서류·영어 요건이 달라질 수 있습니다. 지원 전 2028년 가을 입학 요건을 다시 확인하세요.",
+        "sourceIds": ["scenario-syracuse-international"]
+      },
+      "sources": [
+        {
+          "id": "scenario-syracuse-international",
+          "title": "International Undergraduate Requirements",
+          "url": "https://www.syracuse.edu/admissions-aid/application-process/international/undergraduate/requirements/",
+          "publisher": "Syracuse University",
+          "verified": "2026-10-22",
+          "cycle": "Current page, reviewed October 22, 2026"
+        },
+        {
+          "id": "scenario-syracuse-requirements",
+          "title": "First-Year Admission Requirements",
+          "url": "https://www.syracuse.edu/admissions-aid/application-process/undergraduate/first-year/requirements/",
+          "publisher": "Syracuse University",
+          "verified": "2026-10-22",
+          "cycle": "Fall 2026 through Spring 2028 specified testing cycles"
+        },
+        {
+          "id": "scenario-syracuse-entry",
+          "title": "College-Specific Requirements and Standardized Test Policy",
+          "url": "https://www.syracuse.edu/admissions-aid/application-process/undergraduate/college-specific-requirements/",
+          "publisher": "Syracuse University",
+          "verified": "2026-10-22",
+          "cycle": "Current page, reviewed October 22, 2026"
+        }
+      ]
+    },
+    {
+      "id": "fordham",
+      "name": "Fordham University",
+      "nameKo": "포덤 대학교",
+      "state": "NY",
+      "city": "New York",
+      "type": "private",
+      "rank": {
+        "edition": "2026",
+        "value": null,
+        "sourceIds": []
+      },
+      "ontario": {
+        "minimum": null,
+        "basis": "Ontario minimum percentage not verified; the complete school record requires university assessment.",
+        "basisKo": "온타리오 최저 백분율은 확인되지 않았으며 대학의 전체 성적표 심사가 필요합니다.",
+        "sourceIds": ["scenario-fordham-international"]
+      },
+      "academic": {
+        "text": "Submit three complete years of school results plus the current year; the university reviews the complete application holistically.",
+        "textKo": "고교 3개 학년 전체 성적과 현재 학년 기록을 제출하며 지원서 전반을 종합 심사합니다.",
+        "sourceIds": [
+          "scenario-fordham-international",
+          "scenario-fordham-profile"
+        ]
+      },
+      "testing": {
+        "policy": "optional",
+        "text": "SAT/ACT is optional for all applicants. Confirm the policy for Fall 2028 before applying.",
+        "textKo": "모든 지원자는 SAT/ACT 선택 제출이며, 2028년 입학 정책은 지원 전에 다시 확인해야 합니다.",
+        "sourceIds": ["scenario-fordham-international"]
+      },
+      "satRange": {
+        "low": 1355,
+        "high": 1470,
+        "cohort": "Fall 2026 enrolled Class of 2030 SAT submitters, middle 50%; 70.1% of enrolled students did not submit testing.",
+        "cohortKo": "2026년 가을 등록한 2030년 졸업 예정 신입생의 SAT 제출자 중간 50%; 등록자 70.1%는 시험 점수를 제출하지 않았습니다.",
+        "sourceIds": ["scenario-fordham-profile"]
+      },
+      "entry": {
+        "program": "Undecided",
+        "programKo": "전공 미정(Undecided)",
+        "unit": "Undergraduate colleges",
+        "unitKo": "학부 단과대학",
+        "text": "Fordham allows students to enter undecided and explore before declaring a major. No lower academic cutoff or easiest major is published in this source.",
+        "textKo": "전공 미정으로 입학하여 전공을 탐색할 수 있습니다. 이 자료에는 더 낮은 성적 합격선이나 가장 쉬운 전공이 공개되어 있지 않습니다.",
+        "easierMajorVerified": false,
+        "sourceIds": ["scenario-fordham-entry"]
+      },
+      "applicantScope": {
+        "text": "International first-year admission; citizenship and secondary-school curriculum may lead to different document and English-proficiency requirements. Confirm Fall 2028 rules before applying.",
+        "textKo": "국제 신입학 자료입니다. 시민권과 고교 교육과정에 따라 서류·영어 요건이 달라질 수 있습니다. 지원 전 2028년 가을 입학 요건을 다시 확인하세요.",
+        "sourceIds": ["scenario-fordham-international"]
+      },
+      "sources": [
+        {
+          "id": "scenario-fordham-international",
+          "title": "International Students",
+          "url": "https://www.fordham.edu/undergraduate-admission/international-students/",
+          "publisher": "Fordham University",
+          "verified": "2026-10-22",
+          "cycle": "Current page, reviewed October 22, 2026"
+        },
+        {
+          "id": "scenario-fordham-profile",
+          "title": "Undergraduate Admission Facts, Class of 2030",
+          "url": "https://www.fordham.edu/undergraduate-admission/why-fordham/admission-facts/",
+          "publisher": "Fordham University",
+          "verified": "2026-10-22",
+          "cycle": "Fall 2026 entering class; updated September 23, 2026"
+        },
+        {
+          "id": "scenario-fordham-entry",
+          "title": "Entering Fordham Undecided",
+          "url": "https://www.fordham.edu/undergraduate-admission/majors-and-minors/undecided/",
+          "publisher": "Fordham University",
+          "verified": "2026-10-22",
+          "cycle": "Current page, reviewed October 22, 2026"
+        }
+      ]
+    },
+    {
+      "id": "baylor",
+      "name": "Baylor University",
+      "nameKo": "베일러 대학교",
+      "state": "TX",
+      "city": "Waco",
+      "type": "private",
+      "rank": {
+        "edition": "2026",
+        "value": 88,
+        "sourceIds": ["scenario-baylor-ranking"]
+      },
+      "ontario": {
+        "minimum": null,
+        "basis": "Ontario minimum percentage not verified; the complete school record requires university assessment.",
+        "basisKo": "온타리오 최저 백분율은 확인되지 않았으며 대학의 전체 성적표 심사가 필요합니다.",
+        "sourceIds": ["scenario-baylor-international"]
+      },
+      "academic": {
+        "text": "Baylor reviews applications holistically and publishes no minimum GPA or SAT/ACT for university admission. Some majors have extra requirements. This does not make every Ontario grade eligible.",
+        "textKo": "대학 공통 입학에는 최저 GPA·SAT/ACT를 두지 않고 종합 심사합니다. 일부 전공은 추가 요건이 있으며, 모든 온타리오 내신이 지원 자격을 충족한다는 의미는 아닙니다.",
+        "sourceIds": ["scenario-baylor-testing", "scenario-baylor-entry"]
+      },
+      "testing": {
+        "policy": "optional",
+        "text": "SAT/ACT is optional, although Baylor encourages submission. Some intended programs have additional criteria; confirm Fall 2028.",
+        "textKo": "SAT/ACT는 선택 제출이지만 학교는 제출을 권장합니다. 일부 전공은 별도 기준이 있으므로 2028년 정책을 확인해야 합니다.",
+        "sourceIds": ["scenario-baylor-testing"]
+      },
+      "satRange": {
+        "low": 1190,
+        "high": 1368,
+        "cohort": "2026 freshman class, published middle 50% SAT; source does not give a separate international cohort.",
+        "cohortKo": "2026년 신입생의 공개 SAT 중간 50%; 국제학생 별도 분포는 아닙니다.",
+        "sourceIds": ["scenario-baylor-profile"]
+      },
+      "entry": {
+        "program": "University general admission; unrestricted majors",
+        "programKo": "대학 공통 입학·추가 제한 없는 전공",
+        "unit": "General admission and major-specific selection",
+        "unitKo": "대학 공통 심사 및 전공별 추가 선발",
+        "text": "Most majors are open to students admitted to Baylor. Freshman engineering and pre-health have extra academic criteria; music/theatre and several special programs need additional applications or auditions. No easiest major is verified.",
+        "textKo": "대부분 전공은 대학 합격자에게 열려 있습니다. 신입 공학·프리헬스는 추가 성적 기준, 음악·연극·일부 특별 과정은 별도 지원·오디션이 있습니다. 가장 쉬운 전공은 확인되지 않았습니다.",
+        "easierMajorVerified": false,
+        "sourceIds": ["scenario-baylor-entry"]
+      },
+      "applicantScope": {
+        "text": "International first-year admission; citizenship and secondary-school curriculum may lead to different document and English-proficiency requirements. Confirm Fall 2028 rules before applying.",
+        "textKo": "국제 신입학 자료입니다. 시민권과 고교 교육과정에 따라 서류·영어 요건이 달라질 수 있습니다. 지원 전 2028년 가을 입학 요건을 다시 확인하세요.",
+        "sourceIds": ["scenario-baylor-international"]
+      },
+      "sources": [
+        {
+          "id": "scenario-baylor-international",
+          "title": "Application Process for International Students",
+          "url": "https://admissions.web.baylor.edu/admission/international/application-process-international-students",
+          "publisher": "Baylor University",
+          "verified": "2026-10-22",
+          "cycle": "Current page, reviewed October 22, 2026"
+        },
+        {
+          "id": "scenario-baylor-testing",
+          "title": "Test Optional Process",
+          "url": "https://admissions.web.baylor.edu/admission/incoming-freshman/test-optional-process",
+          "publisher": "Baylor University",
+          "verified": "2026-10-22",
+          "cycle": "Current application instructions with 2026 test dates"
+        },
+        {
+          "id": "scenario-baylor-profile",
+          "title": "Incoming Freshman profile",
+          "url": "https://admissions.web.baylor.edu/incoming-freshman",
+          "publisher": "Baylor University",
+          "verified": "2026-10-22",
+          "cycle": "2026 freshman class"
+        },
+        {
+          "id": "scenario-baylor-entry",
+          "title": "Major-Specific Admission Requirements",
+          "url": "https://admissions.web.baylor.edu/admission/incoming-freshman/major-specific-admission-requirements",
+          "publisher": "Baylor University",
+          "verified": "2026-10-22",
+          "cycle": "Current page, reviewed October 22, 2026"
+        },
+        {
+          "id": "scenario-baylor-ranking",
+          "title": "Baylor 2026 U.S. News ranking announcement, September 23, 2025",
+          "url": "https://news.web.baylor.edu/news/story/2025/baylor-leaps-no-4-us-news-rankings-first-year-experiences-stays-top-10-learning",
+          "publisher": "Baylor University",
+          "verified": "2026-10-22",
+          "cycle": "2026 U.S. News Best Colleges, National Universities; released September 2025"
+        }
+      ]
+    },
+    {
+      "id": "virginia-tech",
+      "name": "Virginia Tech",
+      "nameKo": "버지니아 공과대학교",
+      "state": "VA",
+      "city": "Blacksburg",
+      "type": "public",
+      "rank": {
+        "edition": "2026",
+        "value": 51,
+        "sourceIds": ["scenario-virginia-tech-ranking"]
+      },
+      "ontario": {
+        "minimum": null,
+        "basis": "Ontario minimum percentage not verified; the complete school record requires university assessment.",
+        "basisKo": "온타리오 최저 백분율은 확인되지 않았으며 대학의 전체 성적표 심사가 필요합니다.",
+        "sourceIds": ["scenario-virginia-tech-catalog"]
+      },
+      "academic": {
+        "text": "Admission considers secondary preparation and program requirements. No Ontario percentage minimum was verified from the cited catalog.",
+        "textKo": "고교 학업 준비와 전공 요건을 고려합니다. 인용한 학사 안내에서 온타리오 최저 백분율은 확인하지 못했습니다.",
+        "sourceIds": ["scenario-virginia-tech-catalog"]
+      },
+      "testing": {
+        "policy": "optional",
+        "text": "The catalog explicitly makes SAT/ACT optional for all first-year applicants entering through Fall 2028.",
+        "textKo": "학사 안내는 2028년 가을 입학까지 모든 신입생의 SAT/ACT 선택 제출을 명시합니다.",
+        "sourceIds": ["scenario-virginia-tech-catalog"]
+      },
+      "satRange": null,
+      "entry": {
+        "program": "Program-specific first-year admission",
+        "programKo": "전공별 신입학",
+        "unit": "Undergraduate colleges",
+        "unitKo": "학부 단과대학",
+        "text": "Restricted majors can limit later internal transfer and second-major entry. A supposedly easier starting major must not be represented as guaranteed later access to a restricted program; no easiest major was verified.",
+        "textKo": "일부 제한 전공은 입학 후 전과·복수전공도 선발합니다. 다른 전공으로 입학해 제한 전공에 반드시 들어갈 수 있는 것은 아니며, 가장 쉬운 입학 전공은 확인하지 못했습니다.",
+        "easierMajorVerified": false,
+        "sourceIds": ["scenario-virginia-tech-change-major"]
+      },
+      "applicantScope": {
+        "text": "International first-year admission; citizenship and secondary-school curriculum may lead to different document and English-proficiency requirements. Confirm Fall 2028 rules before applying.",
+        "textKo": "국제 신입학 자료입니다. 시민권과 고교 교육과정에 따라 서류·영어 요건이 달라질 수 있습니다. 지원 전 2028년 가을 입학 요건을 다시 확인하세요.",
+        "sourceIds": ["scenario-virginia-tech-catalog"]
+      },
+      "sources": [
+        {
+          "id": "scenario-virginia-tech-catalog",
+          "title": "Admissions Information, Undergraduate Catalog",
+          "url": "https://catalog.vt.edu/undergraduate/admissions-information/admissions-information.pdf",
+          "publisher": "Virginia Tech",
+          "verified": "2026-10-22",
+          "cycle": "Current catalog; test optional through Fall 2028"
+        },
+        {
+          "id": "scenario-virginia-tech-change-major",
+          "title": "Change of Major Dates and Restricted Majors",
+          "url": "https://www.registrar.vt.edu/dates-deadlines/Change_of_Major_Dates.html",
+          "publisher": "Virginia Tech",
+          "verified": "2026-10-22",
+          "cycle": "Current page, reviewed October 22, 2026"
+        },
+        {
+          "id": "scenario-virginia-tech-ranking",
+          "title": "Virginia Tech News: rankings archive, September 23, 2025 entry",
+          "url": "https://www.research.vt.edu/content/news_vt_edu/en/tags.html?tag=news_vt_edu%3Arankings",
+          "publisher": "Virginia Tech",
+          "verified": "2026-10-22",
+          "cycle": "2026 U.S. News Best Colleges, National Universities; September 2025 release"
+        }
+      ]
+    },
+    {
+      "id": "maryland-college-park",
+      "name": "University of Maryland, College Park",
+      "nameKo": "메릴랜드 대학교 칼리지파크",
+      "state": "MD",
+      "city": "College Park",
+      "type": "public",
+      "rank": {
+        "edition": "2026",
+        "value": 42,
+        "sourceIds": ["scenario-maryland-college-park-ranking"]
+      },
+      "ontario": {
+        "minimum": null,
+        "basis": "Ontario minimum percentage not verified; the complete school record requires university assessment.",
+        "basisKo": "온타리오 최저 백분율은 확인되지 않았으며 대학의 전체 성적표 심사가 필요합니다.",
+        "sourceIds": ["scenario-maryland-college-park-international"]
+      },
+      "academic": {
+        "text": "The university evaluates international secondary credentials and requires evidence of English proficiency when applicable. No Ontario-specific percentage minimum was verified.",
+        "textKo": "국제 고교 학력을 평가하며 해당자는 영어 능력을 증명해야 합니다. 온타리오 전용 최저 백분율은 확인하지 못했습니다.",
+        "sourceIds": ["scenario-maryland-college-park-international"]
+      },
+      "testing": {
+        "policy": "optional",
+        "text": "UMD is test optional through Fall 2027 and is assessing later cycles. Fall 2028 policy is not confirmed.",
+        "textKo": "SAT/ACT 선택 정책은 2027년 가을까지이며 이후 정책은 검토 중입니다. 2028년 가을 정책은 확정되지 않았습니다.",
+        "sourceIds": ["scenario-maryland-college-park-testing"]
+      },
+      "satRange": {
+        "low": 1410,
+        "high": 1520,
+        "cohort": "Fall 2025 entering first-time students with SAT used as their reported admission test; university report gives 25th/75th percentiles.",
+        "cohortKo": "2025년 가을 입학 신입생 중 대학 보고서에서 SAT를 입학 시험으로 사용한 학생의 25·75백분위.",
+        "sourceIds": ["scenario-maryland-college-park-profile"]
+      },
+      "entry": {
+        "program": "Non-LEP major or Letters & Sciences",
+        "programKo": "비제한 전공 또는 Letters & Sciences",
+        "unit": "University admission plus separate LEP review",
+        "unitKo": "대학 공통 입학 및 제한 전공(LEP) 별도 심사",
+        "text": "UMD explicitly says the preferred major does not affect university admissibility. LEP admission is reviewed separately; non-LEP choice is not an easier way into the university. Letters & Sciences does not guarantee later LEP admission.",
+        "textKo": "대학은 희망 전공이 대학 자체 합격 여부에 영향을 주지 않는다고 명시합니다. 제한 전공은 별도 심사하므로 비제한 전공이 대학 입학을 쉽게 만들지는 않습니다. Letters & Sciences 입학도 향후 제한 전공 진입을 보장하지 않습니다.",
+        "easierMajorVerified": false,
+        "sourceIds": ["scenario-maryland-college-park-entry"]
+      },
+      "applicantScope": {
+        "text": "International first-year admission; citizenship and secondary-school curriculum may lead to different document and English-proficiency requirements. Confirm Fall 2028 rules before applying.",
+        "textKo": "국제 신입학 자료입니다. 시민권과 고교 교육과정에 따라 서류·영어 요건이 달라질 수 있습니다. 지원 전 2028년 가을 입학 요건을 다시 확인하세요.",
+        "sourceIds": ["scenario-maryland-college-park-international"]
+      },
+      "sources": [
+        {
+          "id": "scenario-maryland-college-park-international",
+          "title": "International Student Admission, 2026–2027 Catalog",
+          "url": "https://academiccatalog.umd.edu/undergraduate/requirements-application-procedures/international-student-admission/",
+          "publisher": "University of Maryland, College Park",
+          "verified": "2026-10-22",
+          "cycle": "2026–2027 undergraduate catalog"
+        },
+        {
+          "id": "scenario-maryland-college-park-testing",
+          "title": "Freshman Application FAQs",
+          "url": "https://admissions.umd.edu/apply/freshman-application-faqs",
+          "publisher": "University of Maryland, College Park",
+          "verified": "2026-10-22",
+          "cycle": "Test-optional policy through Fall 2027"
+        },
+        {
+          "id": "scenario-maryland-college-park-entry",
+          "title": "Limited Enrollment Programs",
+          "url": "https://admissions.umd.edu/academics/limited-enrollment-programs",
+          "publisher": "University of Maryland, College Park",
+          "verified": "2026-10-22",
+          "cycle": "Current page, reviewed October 22, 2026"
+        },
+        {
+          "id": "scenario-maryland-college-park-profile",
+          "title": "Undergraduate Application Summary – Fall 2025",
+          "url": "https://irpa.umd.edu/CampusCounts/Admissions/apps_ug.pdf",
+          "publisher": "University of Maryland, College Park",
+          "verified": "2026-10-22",
+          "cycle": "Fall 2025 entering students; prepared November 2025"
+        },
+        {
+          "id": "scenario-maryland-college-park-ranking",
+          "title": "UMD Hits All-time High in U.S. News Rankings, September 23, 2025",
+          "url": "https://cmns.umd.edu/news-events/news/umd-hits-all-time-high-us-news-rankings",
+          "publisher": "University of Maryland, College Park",
+          "verified": "2026-10-22",
+          "cycle": "2026 U.S. News Best Colleges, National Universities; released September 2025"
+        }
+      ]
+    },
+    {
+      "id": "florida-state",
+      "name": "Florida State University",
+      "nameKo": "플로리다 주립대학교",
+      "state": "FL",
+      "city": "Tallahassee",
+      "type": "public",
+      "rank": {
+        "edition": "2026",
+        "value": 51,
+        "sourceIds": ["scenario-florida-state-ranking"]
+      },
+      "ontario": {
+        "minimum": null,
+        "basis": "Ontario minimum percentage not verified; the complete school record requires university assessment.",
+        "basisKo": "온타리오 최저 백분율은 확인되지 않았으며 대학의 전체 성적표 심사가 필요합니다.",
+        "sourceIds": ["scenario-florida-state-international"]
+      },
+      "academic": {
+        "text": "Non-U.S. secondary curricula normally require official records and a foreign-credential evaluation including degree equivalency and a U.S. GPA, subject to listed exceptions. No Ontario percentage conversion is published here.",
+        "textKo": "미국 외 고교 교육과정은 명시된 예외가 아니라면 공식 학력 서류와 학력 동등성·미국 GPA를 포함한 외부 학력 평가가 필요합니다. 이 자료에는 온타리오 백분율 환산표가 없습니다.",
+        "sourceIds": ["scenario-florida-state-international"]
+      },
+      "testing": {
+        "policy": "required",
+        "text": "ACT, CLT or SAT is required by the current international first-year rules and Florida Board of Governors regulation. Confirm Fall 2028 instructions.",
+        "textKo": "현행 국제 신입학 요건 및 플로리다 주 규정에 따라 ACT·CLT·SAT 중 하나가 필수입니다. 2028년 세부 지침을 확인해야 합니다.",
+        "sourceIds": ["scenario-florida-state-international"]
+      },
+      "satRange": {
+        "low": 1340,
+        "high": 1450,
+        "cohort": "Summer/Fall 2025 all admitted students, middle 50% SAT, from the 2026 admissions guide.",
+        "cohortKo": "2026 입학 안내에 공개된 2025년 여름·가을 전체 합격자 SAT 중간 50%.",
+        "sourceIds": ["scenario-florida-state-profile"]
+      },
+      "entry": {
+        "program": "Exploratory",
+        "programKo": "Exploratory(전공 탐색)",
+        "unit": "Advising First / undergraduate studies",
+        "unitKo": "학부 전공 탐색 지도",
+        "text": "Exploratory is available for students undecided about a major, with a goal to declare by the third term. Dance, film, music and theatre require pre-entry program acceptance. No lower university cutoff for Exploratory was verified.",
+        "textKo": "전공 미정 학생은 Exploratory를 선택해 세 번째 학기까지 전공을 정하도록 지도받을 수 있습니다. 무용·영화·음악·연극은 1학년 입학 전 전공 선발이 필요합니다. Exploratory의 더 낮은 대학 합격선은 확인하지 못했습니다.",
+        "easierMajorVerified": false,
+        "sourceIds": ["scenario-florida-state-entry"]
+      },
+      "applicantScope": {
+        "text": "International first-year admission; citizenship and secondary-school curriculum may lead to different document and English-proficiency requirements. Confirm Fall 2028 rules before applying.",
+        "textKo": "국제 신입학 자료입니다. 시민권과 고교 교육과정에 따라 서류·영어 요건이 달라질 수 있습니다. 지원 전 2028년 가을 입학 요건을 다시 확인하세요.",
+        "sourceIds": ["scenario-florida-state-international"]
+      },
+      "sources": [
+        {
+          "id": "scenario-florida-state-international",
+          "title": "International First-Year Applicants",
+          "url": "https://admissions.fsu.edu/international/first-year",
+          "publisher": "Florida State University",
+          "verified": "2026-10-22",
+          "cycle": "Current page, reviewed October 22, 2026"
+        },
+        {
+          "id": "scenario-florida-state-profile",
+          "title": "2026 Admissions Guide",
+          "url": "https://admissions.fsu.edu/sites/g/files/upcbnu3881/files/PDF/2026/2026AdmissionsGuide.pdf",
+          "publisher": "Florida State University",
+          "verified": "2026-10-22",
+          "cycle": "Summer/Fall 2025 admitted students"
+        },
+        {
+          "id": "scenario-florida-state-entry",
+          "title": "Questions about Majors",
+          "url": "https://admissions.fsu.edu/first-year/academics/majors-faq",
+          "publisher": "Florida State University",
+          "verified": "2026-10-22",
+          "cycle": "Current page, reviewed October 22, 2026"
+        },
+        {
+          "id": "scenario-florida-state-ranking",
+          "title": "FSU 2026 U.S. News Best Colleges announcement, September 23, 2025",
+          "url": "https://news.fsu.edu/news/university-news/2025/09/23/florida-state-university-lauded-for-student-success-in-2026-u-s-news-best-colleges-rankings/",
+          "publisher": "Florida State University",
+          "verified": "2026-10-22",
+          "cycle": "2026 U.S. News Best Colleges, National Universities; released September 2025"
+        }
+      ]
+    },
+    {
+      "id": "florida",
+      "name": "University of Florida",
+      "nameKo": "플로리다 대학교",
+      "state": "FL",
+      "city": "Gainesville",
+      "type": "public",
+      "rank": {
+        "edition": "2026",
+        "value": 30,
+        "sourceIds": ["scenario-florida-ranking"]
+      },
+      "ontario": {
+        "minimum": null,
+        "basis": "Ontario minimum percentage not verified; the complete school record requires university assessment.",
+        "basisKo": "온타리오 최저 백분율은 확인되지 않았으며 대학의 전체 성적표 심사가 필요합니다.",
+        "sourceIds": ["scenario-florida-international"]
+      },
+      "academic": {
+        "text": "Foreign coursework requires transcripts and a course-by-course credential evaluation with GPA calculation, subject to the official exceptions. The full application is reviewed comprehensively.",
+        "textKo": "미국 외 고교 과목은 공식 예외를 제외하면 성적표와 GPA 계산이 포함된 과목별 외부 학력 평가가 필요합니다. 지원서 전반을 종합 심사합니다.",
+        "sourceIds": [
+          "scenario-florida-international",
+          "scenario-florida-profile"
+        ]
+      },
+      "testing": {
+        "policy": "required",
+        "text": "All first-year applicants must submit ACT, CLT or SAT under Florida Board of Governors rules. Confirm Fall 2028 details.",
+        "textKo": "플로리다 주 규정에 따라 모든 신입 지원자는 ACT·CLT·SAT 중 하나를 제출해야 합니다. 2028년 세부 지침은 확인해야 합니다.",
+        "sourceIds": ["scenario-florida-international"]
+      },
+      "satRange": {
+        "low": 1420,
+        "high": 1520,
+        "cohort": "2026 admitted Class of 2030, middle 50% SAT; official profile accurate as of July 2026.",
+        "cohortKo": "2026년 합격한 2030년 졸업 예정 신입생 SAT 중간 50%; 2026년 7월 기준 공식 자료.",
+        "sourceIds": ["scenario-florida-profile"]
+      },
+      "entry": {
+        "program": "University-wide freshman admission",
+        "programKo": "대학 공통 신입학",
+        "unit": "University admission; separate talent-program requirements",
+        "unitKo": "대학 공통 합격 및 일부 실기 전공 별도 요건",
+        "text": "UF explicitly states that it does not admit by major. Choosing a supposedly easy major does not provide a verified admission advantage. Some College of the Arts programs still require an audition.",
+        "textKo": "대학은 신입생을 전공별로 합격시키지 않는다고 명시합니다. 쉬워 보이는 전공을 선택해 입학이 유리해진다는 근거는 없습니다. 일부 예술 전공은 별도 오디션이 필요합니다.",
+        "easierMajorVerified": false,
+        "sourceIds": ["scenario-florida-entry"]
+      },
+      "applicantScope": {
+        "text": "International first-year admission; citizenship and secondary-school curriculum may lead to different document and English-proficiency requirements. Confirm Fall 2028 rules before applying.",
+        "textKo": "국제 신입학 자료입니다. 시민권과 고교 교육과정에 따라 서류·영어 요건이 달라질 수 있습니다. 지원 전 2028년 가을 입학 요건을 다시 확인하세요.",
+        "sourceIds": ["scenario-florida-international"]
+      },
+      "sources": [
+        {
+          "id": "scenario-florida-international",
+          "title": "Freshman International Applicants",
+          "url": "https://www.admissions.ufl.edu/apply/freshman/international",
+          "publisher": "University of Florida",
+          "verified": "2026-10-22",
+          "cycle": "Current page, reviewed October 22, 2026"
+        },
+        {
+          "id": "scenario-florida-profile",
+          "title": "Freshman Decision Process, Class of 2030",
+          "url": "https://admissions.ufl.edu/apply/freshman/our-decision-process",
+          "publisher": "University of Florida",
+          "verified": "2026-10-22",
+          "cycle": "Fall 2026 admitted students; accurate as of July 2026"
+        },
+        {
+          "id": "scenario-florida-entry",
+          "title": "Freshman Early Decision – major admission FAQ",
+          "url": "https://admissions.ufl.edu/apply/freshman/early-decision",
+          "publisher": "University of Florida",
+          "verified": "2026-10-22",
+          "cycle": "Fall 2027 application instructions"
+        },
+        {
+          "id": "scenario-florida-ranking",
+          "title": "UF 2026 U.S. News rankings announcement, September 2025",
+          "url": "https://news.ufl.edu/2025/09/2026-usnwr-rankings/",
+          "publisher": "University of Florida",
+          "verified": "2026-10-22",
+          "cycle": "2026 U.S. News Best Colleges, National Universities; released September 2025"
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "All twelve added schools lack a verified Ontario percentage admission threshold in the cited sources. Null is intentional; U.S. GPA requirements and profiles must not be converted into Ontario grades.",
+    "easierMajorVerified is false for every school. Documented absence of supplemental materials or presence of an undeclared route is not proof of a higher acceptance rate or lower academic floor.",
+    "University of Maryland and University of Florida explicitly do not give university admission advantages based on the preferred major; their entry notes must remain visible.",
+    "Tennessee general and international testing instructions differ in scope; seek written admission-office clarification before labelling general international admission test optional. Its release summary reports SAT-equivalent ACT ranges, which were intentionally not stored as measured SAT percentiles.",
+    "Virginia Tech 2025–2026 CDS was discoverable only with SAT section percentiles, not a verified composite range. They were not added together. Delaware facts report means, not a usable middle-50 range. Syracuse fillable CDS text did not expose field values in this research pass, so composite SAT remains null.",
+    "UMD 2026 rank uses the dated September 23, 2025 official CMNS announcement (#42). A dynamic facts page showed #49 under an inconsistent 2026 label and was not used.",
+    "Rank nulls mean no reliable 2026 National Universities primary announcement was verified in this research pass, not unranked status. SAT ranges describe historical applicants or enrolled score submitters, not admission minima or probabilities.",
+    "Fewer supplemental materials, lower eligibility requirements, and easier admission are distinct claims. No Ontario band × SAT combination can be called assured admission from these holistic sources."
+  ]
+}

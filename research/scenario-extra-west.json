@@ -1,0 +1,106 @@
+{
+  "schools": [
+    {
+      "id": "montana-state",
+      "name": "Montana State University",
+      "nameKo": "몬태나 주립대학교",
+      "state": "Montana",
+      "city": "Bozeman",
+      "type": "public",
+      "rank": {
+        "edition": "2026",
+        "value": null,
+        "sourceIds": []
+      },
+      "ontario": {
+        "minimum": null,
+        "basis": "No Ontario percentage floor verified; university confirmation of applicant category required.",
+        "basisKo": "온타리오 백분율 최저점 미확인. 대학에 지원자 구분을 확인해야 합니다.",
+        "sourceIds": [
+          "scenario-montana-state-canadian-admission"
+        ]
+      },
+      "academic": {
+        "text": "Canadian section: GPA2.5/4.0 OR ACT22 OR SAT1120. General international section: university-assessed GPA2.5 plus English proficiency.",
+        "textKo": "캐나다 항목: GPA 2.5/4.0 또는 ACT 22 또는 SAT 1120. 일반 국제 항목: 대학 평가 GPA 2.5와 영어 능력.",
+        "sourceIds": [
+          "scenario-montana-state-canadian-admission"
+        ]
+      },
+      "testing": {
+        "policy": "required",
+        "text": "SAT/ACT required for Canadian freshmen and international students attending U.S./Canadian high schools; reconfirm2028.",
+        "textKo": "캐나다 신입 지원자와 미국·캐나다 고교 재학 국제 지원자는 SAT/ACT 필수. 2028년 재확인 필요.",
+        "sourceIds": [
+          "scenario-montana-state-canadian-admission"
+        ]
+      },
+      "satRange": null,
+      "satAlternative": {
+        "minimum": 1120,
+        "replacesGpa": true,
+        "remainingRequirements": "Canadian category applicability must be confirmed for non-Canadian Ontario students. Secondary records, graduation, official scores, English assessment and program/financial requirements remain.",
+        "remainingRequirementsKo": "비캐나다 시민권자의 캐나다 지원자 기준 적용 여부를 확인해야 합니다. 고교 성적·졸업·공식 점수·영어·전공·재정 요건은 별도입니다.",
+        "sourceIds": [
+          "scenario-montana-state-canadian-admission"
+        ]
+      },
+      "entry": {
+        "program": "English, BA — Literature option",
+        "programKo": "영문학 BA · 문학 세부 전공",
+        "unit": "College of Letters and Science",
+        "unitKo": "문리과대학",
+        "text": "English BA with Literature is a verified degree option. Its page does not publish comparative freshman cutoffs establishing it as the easiest major.",
+        "textKo": "영문학 BA의 문학 세부 전공이 공식 운영됩니다. 전공별 신입학 합격선을 비교해 가장 쉬운 학과라고 입증하는 자료는 없습니다.",
+        "easierMajorVerified": false,
+        "sourceIds": [
+          "scenario-montana-state-english"
+        ]
+      },
+      "applicantScope": {
+        "text": "Canadian Undergraduates category only; applicability requires university confirmation.",
+        "textKo": "캐나다 지원자 항목 기준. 대학에 적용 여부 확인 필요.",
+        "sourceIds": [
+          "scenario-montana-state-canadian-admission"
+        ]
+      },
+      "sources": [
+        {
+          "id": "scenario-montana-state-canadian-admission",
+          "title": "Undergraduate Admissions: Canadian Undergraduates and International Undergraduate Students",
+          "url": "https://catalog.montana.edu/undergraduate-admissions/",
+          "publisher": "Montana State University",
+          "verified": "2026-10-22",
+          "cycle": "Current catalog viewed2026-10-22; Fall2028 not separately confirmed"
+        },
+        {
+          "id": "scenario-montana-state-english",
+          "title": "Department of English: Undergraduate Programs",
+          "url": "https://catalog.montana.edu/undergraduate/letters-science/english/",
+          "publisher": "Montana State University",
+          "verified": "2026-10-22",
+          "cycle": "Current undergraduate catalog viewed2026-10-22"
+        },
+        {
+          "id": "scenario-montana-state-english-proficiency",
+          "title": "English Proficiency for Undergraduate Applicants",
+          "url": "https://www.montana.edu/international/admissions/englishproficiency.html",
+          "publisher": "Montana State University",
+          "verified": "2026-10-22",
+          "cycle": "Current policy viewed2026-10-22"
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Quantitative-only audit: no additional Ontario/Canada percentage minimum or university-published Ontario grade equivalency verified among Colorado Denver, Colorado State, Montana, Montana State, South Alabama, Southern Mississippi, Louisiana Lafayette, Florida Atlantic and North Texas.",
+    "One exception retained for root consideration: Montana State Canadian Undergraduates explicitly publishes SAT1120 as an alternative to GPA2.5. Applicant-category applicability requires confirmation before treating a non-Canadian Ontario student as satisfying it.",
+    "No extra school was added only because it publishes a U.S.GPA. No grade conversion inferred.",
+    "CU Denver official first-year page gives Ontario transcript requirements and test-optional review but no verified Ontario numerical threshold: https://www.ucdenver.edu/international-admissions/apply-for-admission/undergraduate/first-year .",
+    "Colorado State official international page and undergraduate decision-factor policy use holistic GPA review; Canada references reviewed relate to English-proficiency exemptions. No Ontario percentage minimum found: https://admissions.colostate.edu/apply/international-freshmen/ .",
+    "Montana current undergraduate catalog uses U.S.GPA/class rank/curriculum conditions and separate international evaluation. No Ontario percentage threshold found: https://catalog.umt.edu/academics/undergraduate-admission/ .",
+    "South Alabama international requirements use school-calculated GPA2.5, not a Canada percentage: https://iddsg.southalabama.edu/departments/international/requirements-deadline.html .",
+    "Southern Mississippi international requirements use core GPA2.5 and country-system review; Canadian-school references are English waivers, not percentage admission minima: https://www.usm.edu/undergraduate-admissions/international-admissions/ .",
+    "Louisiana Lafayette reviewed international rules require GPA2.5 and English/math readiness; no verified Ontario grade equivalency found. Florida Atlantic and North Texas targeted official-domain Canada/Ontario admission/percentage searches yielded no applicable numerical rule. Search absence is not a claim that no such internal policy exists."
+  ]
+}

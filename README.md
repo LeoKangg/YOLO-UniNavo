@@ -1,130 +1,96 @@
 # UniNavo
 
-**Live site:** https://ivyparc.github.io/UniNavo/ · **Implementation PR:** https://github.com/ivyparc/UniNavo/pull/1
+[Live site](https://ivyparc.github.io/UniNavo/) · [Implementation PR](https://github.com/ivyparc/UniNavo/pull/1)
 
-A source-linked U.S. university admission planner for an Ontario student in Grade 11, Semester 1 (October 2026), targeting Fall 2028 entry. The planner assumes normal progression to Grade 12 in 2027–28 and high-school graduation in June 2028. This is planning guidance, not an admission guarantee.
+A bilingual U.S. university admission planner for an Ontario Grade11 student in October2026, targeting Fall2028. The university explorer compares published academic/test components. It cannot establish complete admission eligibility or an acceptance outcome.
 
-## Run locally
+## Run and verify
 
-Requires Node.js 22.18+ (Node 24 recommended) and pnpm 11.25.0. The package manager version is recorded in `package.json`.
+Requires Node22.18+ (Node24 recommended) and the package manager recorded in package.json.
 
 ```sh
 pnpm install --frozen-lockfile
 pnpm dev
-```
-
-Open the URL printed by Vite, normally `http://127.0.0.1:5173/`.
-
-```sh
-pnpm validate     # data completeness, references, dates and IDs
+pnpm validate
 pnpm typecheck
 pnpm lint
-pnpm test         # behavioral, evidence, comparison and personal-plan tests
-pnpm build       # production output in dist/
-pnpm preview     # preview the production build
-pnpm check:links  # network check; writes research/link-check.json
+pnpm test
+pnpm build:pages
 ```
 
-No account, API key, database or backend is required. Language preference, profile, personal monthly plans, task completion and saved schools use browser localStorage. Plans can be backed up and restored as JSON. A blocked/corrupt store falls back to the current session. Browser data is not synchronized across devices. Google Fonts is the only runtime third-party asset request; system fonts are fallbacks. There is no analytics or form submission.
+No account, API key, database or backend is required. Plans, language, saved schools and scenario inputs use browser localStorage. A blocked/corrupt store falls back safely. Plans support JSON backup/restore; there is no automatic cross-device synchronization. There is no analytics or form submission.
 
 ## Experience
 
-- Language: the header’s **한국어 / English** button switches all five views, university facts and the complete timeline. The choice persists in this browser; filters, saved schools and task IDs stay unchanged. Korean university/major search is supported. Official source document titles, publishers, reference cycles and book titles retain their original wording. No translation API is used.
+- **Monthly roadmap:**23months, October2026–August2028;72original tasks. All months and instructions are expanded. Add, edit, move, delete, complete, hide completed, undo and back up/restore. Edited official reminders retain their original guidance and sources. The stage dropdown defaults to Select.
+- **University explorer:** an expanding research pool of63schools, including20with extended detail records. Eight Ontario bands and five SAT scenarios produce40combinations. At most10records appear when applicable published components can be compared. A shortage is explicit; unverified institutions do not fill missing places.
+- **All scenarios:**40cells show match counts and shortages under the selected averaging basis and applicant route. Click a cell to inspect its evidence; download all40results as CSV.
+- **Research catalog:** all reviewed schools remain searchable, including schools excluded from strict recommendations. Cards link program/entry structure and primary evidence. School details distinguish current rules, score-cohort scope, unknown Ontario equivalencies and future-cycle uncertainty.
+- **SAT distribution table:** the full research pool is reorganized by SAT bands1100–1600. These are score positions, never an independent admission recommendation.
+- **SAT/AP and resources:** official practice, sourced exam calendars, AP priorities and credit examples, study materials and book editions.
+- **Sources:** searchable exact URLs, publisher, actual review date and cycle. Korean/English toggle persists without changing IDs or saved inputs. Official source titles and publishers retain original wording.
 
-- Timeline (home): 23 months, October 2026–August 2028, and 72 original tasks. All months and task details are expanded. The month chart shows progress and links to each month. Add, edit, move, delete and complete tasks; completed tasks hide by default and can be revealed. Single-step undo and JSON backup/restore are available. Edited official reminders retain their original guidance and sources. The stage dropdown defaults to “Select”.
-- Universities: the first tab presents nine SAT score bands (1100–1600) as a school distribution table. Sixteen schools have verified official composite ranges; four remain explicitly unclassified. Whole-band position is shown as score advantage / overlap / score stretch, with actual ranges, campus/college scope, source cohorts and clickable school details. Each cell initially shows four schools and can reveal the rest. The detailed comparison retains 20 schools, eight Ontario grade bands from 60–65% through 95–100%, and five SAT scenarios from 1100 to 1500. Compare 40 combinations, export all 800 school-scenario rows, inspect rankings/major evidence, browse school cards and keep up to six working recommendations. Saved schools remain separate from generated picks.
-- SAT & AP: confirmed 2026–27 SAT dates, separately labeled anticipated 2027–28 dates, four AP priorities and university-specific credit examples.
-- Study resources: purpose and link first; publisher editions, explanations and sources expand on demand. Preorder information is preserved.
-- Sources: searchable source register with exact URLs, publisher, reviewed date and applicable cycle.
+Body and control text stays readable; mobile tables scroll within their containers. The selected averaging basis is required because cumulative academic, core-subject, overall and Grade12top-six averages are not interchangeable. Each university percentage rule also needs its own calculation confirmation, unchecked by default. Each scenario then conditionally represents an average calculated by that university’s method; it does not convert an actual top-six mark. Contradictory SAT totals/sections block all matches.
 
-Body text is 16–18px and secondary text is at least 14px. Desktop university/AP cards use two columns and mobile uses one. The university SAT matrix is visible after a grade band is selected; detailed exam preparation and AP credit sections expand on demand. Task instructions and their sources are shown directly, without a separate expand button, in both languages. Important entry-year uncertainty remains visible.
+## Strict recommendation policy
 
-## Structure
+The user explicitly requested **only officially confirmed criteria and a visible shortage when fewer than ten are supported**. The live explorer no longer uses the earlier editorial six-pick or manually assigned grade-category model.
+
+A record needs a resolvable current testing rule and one of:
+
+1. An explicit Ontario percentage requirement, compared on the correct basis.
+2. A university-published international100-point rule, compared on its stated core-course basis.
+3. An applicable international SAT alternative that replaces the GPA component, with any section minima checked.
+
+Missing Ontario equivalencies, mismatched averaging methods, unresolved source conflicts and an unreviewed U.S.domestic route cannot produce a strict match. Historical SAT percentiles, university rank and choosing humanities do not create eligibility. No Ontario percentage is converted to a U.S.GPA.
+
+The output says **published component comparison**, not complete qualification. Coursework, English, graduation, program requirements, documents and finances remain separate. A current rule is not automatically a Fall2028 commitment. An empty list is not a rejection decision.
+
+Verified2026U.S.NewsNationalUniversities ranks order matching records where available; unverified ranks follow by name. This ranks the matching researched pool, not every U.S.university. Categories/editions are not mixed. No representative Korean recognition ranking or unique easiest-admission major was established. Program names and actual admission structures are given with sources; unknown lowest cutoffs remain unknown.
+
+Read [research/scenario-method.md](research/scenario-method.md) for exact scope, strict inequalities, test-alternative logic and limitations.
+
+## Data and source structure
 
 ```text
-src/main.ts                 Views, accessible native controls and interaction
-src/style.css               Responsive layout and focus/reduced-motion styles
-src/types.ts                Shared types and supported grade bands
-src/recommendations.ts      Transparent conservative planning scenarios
-src/storage.ts              Resilient browser-local persistence
-src/planner.ts              Editable personal timeline and backup normalization
-src/comparison.ts           SAT comparisons and complete scenario CSV
-src/i18n.ts                 Saved language, text localization, stable option values
-src/locales/ko-*.ts          Korean UI, university, planning and timeline translations
-src/data/index.ts           Research loading and source register
-src/data/strategies.ts      Editorial choices, majors and sourced score ranges
-src/data/timeline.ts        Monthly tasks with stable completion IDs
-research/west.json          ASU, Arizona, Oregon, Colorado Boulder
-research/east.json          MSU, IU Bloomington, Penn State University Park, NYU
-research/iowa.json          Iowa State
-research/expansion-*.json    Eleven additional schools and supporting metadata
-research/existing-rankings.json  Dated ranks for the original nine schools
-research/comparison-context.json  Additional program evidence and full catalogs
-research/sat-band-*.json     New official score distributions and policy context
-research/*-method.md         Comparison, score-band and recognition research boundaries
-research/planning.json      Official exam calendars, Ontario/entry guidance, books
-research/pathways.json      Transfer strategy, separate from freshman admission
-research/link-check.json    HTTP verification results, not a claim-accuracy audit
-scripts/validate.ts         Data and source validation
-scripts/check-links.mjs     Conservative link reachability checker
-tests/*.test.ts             Behavioral, localization, evidence and scenario tests
+src/main.ts                    Navigation, editable timeline, local persistence
+src/university-explorer.ts     Evidence-only university views and detail dialogs
+src/scenarios.ts               Strict component checks, shortages,40-case CSV
+src/scenario-types.ts          Evidence and input types
+src/data/scenario-catalog.ts   Original records plus expanded research
+src/data/scenario-raw.ts       Raw research files and source collection
+src/planner.ts                 Personal monthly plan transformations
+src/locales/                  Korean UI and research translations
+research/scenario-*.json        New program, entry, testing and percentage evidence
+research/*-method.md            Source methods and explicit research limits
+research/west.json             Original western school details
+research/east.json             Original eastern school details
+research/iowa.json             Original Iowa State details
+research/expansion-*.json      Original additional11extended school records
+research/planning.json          Exam, Ontario, entry and materials guidance
+scripts/validate-scenarios.ts  Expanded evidence validation
+scripts/validate.ts             Source/calendar/extended-data validation
 ```
 
-## Source policy
+Research was reviewed October21–22,2026. University admissions pages, official catalogs, institutional profiles and Common Data Sets establish consequential facts. Original ranking reports identify secondary sourcing when applicable. Every source keeps its exact URL, publisher, review date and reference cycle. Not verified means this review did not establish a value; it does not claim the school never publishes it. An HTTP success code alone does not audit the claim.
 
-Research reviewed: **October 21–22, 2026**. Individual records keep their actual review date. University admissions pages and official catalogs are primary; institutional profiles/Common Data Sets support cohort statistics. College Board, Common App, Ontario education and U.S. government pages support general guidance. Publisher pages establish book titles/editions. The ranking table uses the historical **2026 U.S. News National Universities** edition, not the latest 2027 edition. Institutional releases are preferred; dated secondary reports are identified where used. Rankings and admission aggregators are not used to establish requirements.
+Original strategy/recommendation modules retain historical metadata and tests for earlier behavior and storage compatibility; their editorial categories are not used by the live university explorer.
 
-Each consequential university fact has text, a status, and source IDs. Sources retain exact URL, title, publisher, date reviewed and cycle. An unknown has an explicit status, rather than a fabricated number. “Not verified” means this research did not establish the value; it is not a claim that the university does not publish it. A current page that lacks an entry year is not relabeled as a Fall 2028 commitment.
+## Known limits
 
-Where a page was accessible to the research browser but blocks a later HTTP check, keep the distinction. The link report records status/redirects and cannot prove that a claim is correct. It does not bypass authentication or bot protection.
+- Most Fall2028 deadlines and several entry-year testing commitments still require confirmation.
+- 2027–28 SAT dates are anticipated;2028APdates remain unconfirmed in the reviewed schedule.
+- Specific English waivers, program prerequisites, Ontario equivalencies, costs, aid and citizenship/visa rules require school-specific review.
+- A major offered by a university is not necessarily easier to enter. Admission to a university, a selective college and later admission/declaration of a major are different processes.
+- School/college score distributions identify admitted versus enrolled cohorts and score-submitter scope. Test-optional submitters do not represent every applicant.
+- Browser CSV generation is tested directly; automation did not verify the download save dialogue. No browser download-completion claim is made.
 
-## Recommendations and limitations
+## Maintaining evidence
 
-The categories are manually authored, conservative **exploration scenarios**, not a calibrated admissions model. No Ontario percentage is converted to a U.S. GPA. Grade bands are inputs, not university cutoffs. Full academic history, rigor, course prerequisites, essays/activities, school context, language evidence, citizenship, program and campus may change the outcome.
-
-“More Realistic” is only displayed after the user reports course eligibility checks and strong preparation; it is still not a safety. Specialized interests and an unreviewed U.S.-citizen/permanent-resident route cannot inherit broad international-program Target labels. SAT comparisons help preparation/submission decisions and never automatically improve a category. Verified acceptance rates are descriptive cohort data, not personal odds.
-
-The six-pick selection first preserves available planning categories, then uses editorial brand/strategy ordering. There may be fewer than six: 60–70% receives no supported direct-entry shortlist in this dataset; 70–75% receives limited Reach exploration leads. Low-band users can inspect a separate transfer strategy. The comparison matrix still displays all 20 schools and conditionally identifies Iowa State’s current international SAT 1200 GPA-component alternative; other requirements and Fall 2028 applicability need confirmation. NYU always remains a reach. “Brand Recognition” is an editorial comparison, not a measured Korean recognition survey or an admissions statistic. No representative Korean recognition ranking was established. Focused majors are researched individually and each school links to its full official program directory; this is not an exhaustive research record for every major. No lowest Ontario admission cutoff is invented. ASU BA/BS rules and Purdue/Minnesota college-specific distributions are identified separately.
-
-Important open items:
-
-- Fall 2028 deadlines and most entry-year testing commitments are not yet confirmed. Minnesota’s published optional-testing period includes Fall 2028; Alabama explicitly requires SAT/ACT for Fall 2028.
-- 2027–28 SAT dates are **anticipated**, including the updated October 9, 2027 date. Registration/release dates remain unpublished. 2028 AP dates remain unpublished in the reviewed schedule.
-- Several Ontario course-equivalency rules, English waivers, CSS Profile/need-aid details and program-specific rules need direct confirmation.
-- ASU current international and general deadline pages show different cycles; Oregon insurance amounts conflict across official pages.
-- NYU New York testing scope needs confirmation; the current NYU Abu Dhabi page is not silently generalized to NYC.
-- Costs retain their year, campus, scope and exclusions. IU's retrieved international estimate has no labeled year; Penn State's projection is tuition, not a full international budget.
-- ASU’s verified acceptance statistic covers Campus Immersion, not Tempe alone. SAT distributions identify admitted versus enrolled cohorts and score-submitter scope.
-- Citizenship is unknown by default. Ontario attendance does not establish Canadian citizenship, U.S. aid eligibility or visa requirements.
-
-## Updating research
-
-1. Open the exact official source. Identify entry year, applicant category, campus and program before editing any value.
-2. Update the corresponding JSON fact, source IDs, status and source cycle. Record the actual review date; do not bulk-renew dates without reviewing the underlying sources. For incremental updates, preserve prior review dates and extend the allowed review window in `scripts/validate.ts` and the UI snapshot label appropriately.
-3. Preserve unknowns/conflicts until resolved. Record statistics with cohort, counts/denominator where applicable, and score-submitter/admitted/enrolled scope. Never infer Ontario equivalencies.
-4. Review affected strategies in `src/data/strategies.ts`, score ranges and timeline entries. Keep task IDs stable for browser checklist continuity, or deliberately version the storage key if semantics change.
-5. Update the corresponding Korean text in `src/locales/` when changing English content. The English research remains canonical; preserve the same uncertainties, dates and exclusions in Korean. Run validate, typecheck, lint, tests and build. Check changed source links, and inspect desktop/tablet/mobile, keyboard navigation and the detail dialog.
-6. Update this README and the research coverage notes. Review the actual 2027–28 application cycle before using this snapshot to submit applications.
+Open the exact primary source, identify year/campus/program/applicant category, and update text and source IDs together. Preserve real review dates and unknown/conflicting values. Add a structured numeric rule only when it is explicitly published and its scope is clear. A new easiest-major assertion requires comparative evidence and a new audit. Update Korean wording with the same limits. Run validation, typecheck, lint, behavioral tests and production build, then inspect desktop/mobile and keyboard interaction.
 
 ## Repository and deployment
 
-The only project repository is **https://github.com/ivyparc/UniNavo**. Work is prepared on `codex/us-college-planner`; main history is preserved. CI runs validation, typecheck, lint, tests and build.
+Only repository: https://github.com/ivyparc/UniNavo . Source branch is codex/us-college-planner; main history is preserved. CI validates data, types, lint, tests and build.
 
-The production `dist/` output is static. `pnpm build:pages` builds with the `/UniNavo/` asset base for GitHub Pages. Hash-based routes need no server-side fallback beyond `index.html`.
-
-GitHub Pages publication uses a separate `codex/site` branch in this same repository containing only the built static output and `.nojekyll`. Source development remains on `codex/us-college-planner`. Updating the deployed build requires rebuilding and publishing that artifact branch; source changes do not silently redeploy the site.
-
-### Republishing the existing Pages branch
-
-After reviewing and committing source/data updates, run `pnpm build:pages`. Publish the resulting `dist/` files to the root of the existing `codex/site` branch, retaining `.nojekyll`, with a normal new commit and fast-forward push to **ivyparc/UniNavo**. Use a separate working tree for that branch so generated files cannot replace the source checkout. Never force-push or change repository identity. Check the repository's Pages deployment result and open the live URL before claiming the update is published. No Pages settings change is needed for subsequent artifact updates.
-
-### Verification record
-
-- Local validation, typecheck, lint, 27 behavioral tests and Pages production build passed for 20 schools, 309 source records, 23 months and 72 original tasks.
-- New tests cover all 40 grade/SAT scenarios, CSV generation (800 rows), score boundaries, conditional international rules, source references, score-band boundary crossings, all-school classification, and personal-plan editing/moving/deleting/serialization.
-- Browser checks cover adding/editing/moving/deleting tasks, completed-item hiding, undo and reload persistence; grade changes and the 20-school comparison; and university details with program distributions and catalog links.
-- Mobile 390px inspection shows no document-level horizontal overflow; the comparison table scrolls inside its container. Download content is tested directly; browser download completion was not verified because the automation download wait timed out.
-
-![Desktop preview](docs/preview.jpg)
-
-The SAT band table uses official composite percentiles, not Safety/Match/Reach admission guarantees. Newly inspected 2025–26 CDS data add Penn State University Park (1280–1410), Ohio State Columbus (1300–1440), Wisconsin Madison (1400–1490) and Iowa State (1153–1360), all Fall 2025 enrolled SAT submitters. ASU composite fields are blank; Oregon/NYU primary report access could not be verified, and Buffalo composite percentiles remain unverified. See `research/sat-band-method.md` for grouping and source limitations.
+GitHub Pages publishes built static files from codex/site in the same repository. Build with pnpm build:pages for the /UniNavo/ asset base. Publish dist plus .nojekyll as a new commit retaining the artifact branch's previous parent, then fast-forward its ref. A separate worktree or Git data API may publish artifacts without overwriting the source checkout. Never force-push or change repository identity. Check Pages deployment and the live bundle before reporting publication.

@@ -1,0 +1,203 @@
+{
+  "schools": [
+    {
+      "id": "iowa",
+      "name": "University of Iowa",
+      "nameKo": "아이오와 대학교",
+      "state": "Iowa",
+      "city": "Iowa City",
+      "type": "Public",
+      "rank": {
+        "edition": "2026",
+        "value": 102,
+        "sourceIds": ["scenario-iowa-ranking"]
+      },
+      "ontario": {
+        "minimum": 70,
+        "comparator": "gte",
+        "basis": "Published Ontario minimum: 70/100 overall average in core academic subjects, such as mathematics, science, language and social science. The page lists OSSD; it does not define this as a Grade 12 top-six average.",
+        "basisKo": "온타리오의 공식 최소 기준은 수학·과학·언어·사회과학 등 주요 학업 과목 전체 평균 70/100입니다. OSSD가 명시되어 있으나 12학년 상위 6과목 평균으로 정의된 기준은 아닙니다.",
+        "sourceIds": ["scenario-iowa-country"]
+      },
+      "academic": {
+        "text": "International applicants educated outside the U.S. need secondary completion, three years of completed high-school work, required academic preparation and English proficiency. The official Ontario equivalency is 70/100 in core academic subjects.",
+        "textKo": "미국 외 고교 출신 국제 신입생은 고교 졸업, 이수한 고교 과정 3년, 필수 학업 준비 및 영어 능력이 필요합니다. 공식 온타리오 성적 대응 기준은 주요 학업 과목 평균 70/100입니다.",
+        "sourceIds": [
+          "scenario-iowa-country",
+          "scenario-iowa-international",
+          "scenario-iowa-courses"
+        ]
+      },
+      "testing": {
+        "policy": "optional",
+        "text": "For international applicants completing secondary school outside the U.S., SAT/ACT are optional for general admission. Direct Tippie business admission, academic scholarships and Honors may separately require them. Current guidance does not explicitly guarantee the Fall 2028 policy.",
+        "textKo": "미국 외 고교 졸업 국제학생의 일반 입학은 SAT/ACT 선택 제출입니다. 티피 경영대 직접 입학·성적 장학금·아너스에는 별도 시험 요건이 있습니다. 현재 안내에서 2028년 가을 정책까지 명시적으로 보장하지는 않습니다.",
+        "sourceIds": ["scenario-iowa-international", "scenario-iowa-clas"]
+      },
+      "satRange": null,
+      "entry": {
+        "program": "English, B.A.; CLAS open-major route also available",
+        "programKo": "영문학 B.A.; 인문·자연과학대학 전공 미정 지원도 가능",
+        "unit": "College of Liberal Arts and Sciences",
+        "unitKo": "인문·자연과학대학",
+        "text": "English B.A. is an official degree. The open-major option requires CLAS admission. International CLAS admission reviews courses, GPA and English proficiency with optional SAT/ACT; no lowest-admitted Ontario mark or least-selective-major ranking is published.",
+        "textKo": "영문학 B.A.는 공식 학위이며 전공 미정 지원도 인문·자연과학대학 입학 요건을 따릅니다. 국제학생은 과목·성적·영어 능력을 심사받고 SAT/ACT는 선택입니다. 온타리오 최저 합격점이나 가장 쉬운 전공 순위는 제시하지 않습니다.",
+        "easierMajorVerified": false,
+        "sourceIds": [
+          "scenario-iowa-english",
+          "scenario-iowa-open-major",
+          "scenario-iowa-clas"
+        ]
+      },
+      "applicantScope": {
+        "text": "International first-year applicant who attended high school outside the U.S.; Ontario-credential rules apply to the academic record. Course, diploma, English and any program-specific requirements remain, and the minimum is not an admission guarantee.",
+        "textKo": "미국 외 고교에서 공부한 국제 신입생의 온타리오 학력을 기준으로 합니다. 과목·졸업·영어 능력·전공별 요건을 별도로 충족해야 하며 최소 기준은 합격 보장이 아닙니다.",
+        "sourceIds": [
+          "scenario-iowa-country",
+          "scenario-iowa-international",
+          "scenario-iowa-clas"
+        ]
+      },
+      "sources": [
+        {
+          "id": "scenario-iowa-country",
+          "title": "Academic Requirements by Country: Canada / Ontario",
+          "url": "https://admissions.uiowa.edu/apply/academic-requirements-country",
+          "publisher": "University of Iowa",
+          "verified": "2026-10-22",
+          "cycle": "Current international country requirements; Fall 2028 reconfirmation required"
+        },
+        {
+          "id": "scenario-iowa-international",
+          "title": "International First-Year Admission Requirements",
+          "url": "https://admissions.uiowa.edu/international-first-year-admission-requirements",
+          "publisher": "University of Iowa",
+          "verified": "2026-10-22",
+          "cycle": "Current international first-year requirements; Fall 2028 reconfirmation required"
+        },
+        {
+          "id": "scenario-iowa-courses",
+          "title": "High School Course Requirements for International Applicants",
+          "url": "https://admissions.uiowa.edu/high-school-course-requirements-international-applicants",
+          "publisher": "University of Iowa",
+          "verified": "2026-10-22",
+          "cycle": "Current undergraduate curriculum requirements"
+        },
+        {
+          "id": "scenario-iowa-clas",
+          "title": "College of Liberal Arts and Sciences First-Year Admissions",
+          "url": "https://admissions.uiowa.edu/college-liberal-arts-and-sciences-first-year-admissions",
+          "publisher": "University of Iowa",
+          "verified": "2026-10-22",
+          "cycle": "Current college admissions requirements"
+        },
+        {
+          "id": "scenario-iowa-english",
+          "title": "Bachelor of Arts in English",
+          "url": "https://english.uiowa.edu/undergraduate/ba-english",
+          "publisher": "University of Iowa",
+          "verified": "2026-10-22",
+          "cycle": "Current undergraduate English program"
+        },
+        {
+          "id": "scenario-iowa-open-major",
+          "title": "Open Major",
+          "url": "https://admissions.uiowa.edu/academics/open-major",
+          "publisher": "University of Iowa",
+          "verified": "2026-10-22",
+          "cycle": "Current CLAS open-major admission route"
+        },
+        {
+          "id": "scenario-iowa-ranking",
+          "title": "US News Recognizes UI as Top Public Writing School",
+          "url": "https://now.uiowa.edu/news/2025/09/us-news-recognizes-ui-top-public-writing-school",
+          "publisher": "University of Iowa",
+          "verified": "2026-10-22",
+          "cycle": "2026 U.S. News National Universities; published 2025-09-23"
+        }
+      ]
+    },
+    {
+      "id": "james-madison",
+      "name": "James Madison University",
+      "nameKo": "제임스 매디슨 대학교",
+      "state": "Virginia",
+      "city": "Harrisonburg",
+      "type": "Public",
+      "rank": {
+        "edition": "2026",
+        "value": null,
+        "sourceIds": []
+      },
+      "ontario": {
+        "minimum": 70,
+        "comparator": "gte",
+        "basis": "The university’s Ontario-specific first-year page states a minimum B average or 70/100. The cited page does not specify Grade 12, top-six courses, weighting or a cumulative calculation; confirm that the applicant’s reported average uses JMU’s basis.",
+        "basisKo": "대학의 온타리오 신입생 전용 페이지는 최소 B 평균 또는 70/100을 제시합니다. 12학년·상위 6과목·가중치·누적 산식을 명시하지 않으므로 입력한 평균이 JMU 기준과 같은지 확인해야 합니다.",
+        "sourceIds": ["scenario-jmu-ontario"]
+      },
+      "academic": {
+        "text": "The Ontario-specific minimum is B / 70 out of 100. Complete official academic records, a recommendation and applicable English evidence remain required. JMU evaluates the wider application; the minimum does not predict an offer.",
+        "textKo": "온타리오 공식 최소 기준은 B 또는 70/100입니다. 전체 공식 성적표·추천서·해당 영어 입증 요건 등이 남으며 대학이 지원서 전체를 심사하므로 최소 기준만으로 합격을 예측할 수 없습니다.",
+        "sourceIds": ["scenario-jmu-ontario", "scenario-jmu-faq"]
+      },
+      "testing": {
+        "policy": "optional",
+        "text": "JMU’s Ontario application checklist explicitly makes SAT/ACT optional. The general admissions FAQ says omission does not penalize admission, scholarships or Honors review. Fall 2028 policy is not explicitly dated in these pages.",
+        "textKo": "온타리오 지원 체크리스트가 SAT/ACT 선택 제출을 명시합니다. 일반 입학 FAQ는 미제출로 입학·장학금·아너스 심사에 불이익이 없다고 설명합니다. 두 페이지에 2028년 가을 적용이 명시되어 있지는 않습니다.",
+        "sourceIds": ["scenario-jmu-ontario", "scenario-jmu-faq"]
+      },
+      "satRange": null,
+      "entry": {
+        "program": "English, B.A.",
+        "programKo": "영문학 B.A.",
+        "unit": "Department of English",
+        "unitKo": "영문학과",
+        "text": "The official department offers an English B.A. and links its degree checklist. No separate Ontario minimum for English and no proof that English is the least-selective major were verified.",
+        "textKo": "공식 학과에서 영문학 B.A. 및 학위 요건표를 제공합니다. 영문학만의 별도 온타리오 최저 기준이나 교내에서 가장 쉬운 학과라는 근거는 확인되지 않았습니다.",
+        "easierMajorVerified": false,
+        "sourceIds": ["scenario-jmu-english"]
+      },
+      "applicantScope": {
+        "text": "International first-year applicant using Ontario secondary credentials. English proficiency or a documented waiver, official full records, graduation and application review remain; the published minimum is not a guarantee.",
+        "textKo": "온타리오 중등 학력으로 지원하는 국제 신입생 기준입니다. 영어 능력 또는 증빙된 면제, 전체 공식 성적표·졸업·지원서 심사를 거쳐야 하며 발표된 최소 기준은 합격 보장이 아닙니다.",
+        "sourceIds": ["scenario-jmu-ontario", "scenario-jmu-faq"]
+      },
+      "sources": [
+        {
+          "id": "scenario-jmu-ontario",
+          "title": "Admission Requirements: Canada - Ontario",
+          "url": "https://www.jmu.edu/admissions/apply/country-reqs/americas/canada-ontaria.shtml",
+          "publisher": "James Madison University",
+          "verified": "2026-10-22",
+          "cycle": "Current Ontario-specific first-year page; actual URL spells ontaria; Fall 2028 reconfirmation required"
+        },
+        {
+          "id": "scenario-jmu-faq",
+          "title": "Admissions Application FAQs",
+          "url": "https://www.jmu.edu/admissions/apply/faq.shtml",
+          "publisher": "James Madison University",
+          "verified": "2026-10-22",
+          "cycle": "Admissions FAQ dated 2025-05-02; still current when verified"
+        },
+        {
+          "id": "scenario-jmu-english",
+          "title": "B.A. English Major",
+          "url": "https://www.jmu.edu/english/undergraduate/index.shtml",
+          "publisher": "James Madison University",
+          "verified": "2026-10-22",
+          "cycle": "Department page dated 2026-07-21"
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Two additional universities have institution-published Ontario numeric admission minima. Both are 70/100 or higher (comparator ge), not >70.",
+    "Iowa basis is the overall average in core academic subjects, not a Grade 12 top-six average. JMU states an Ontario average without specifying the averaging window or course selection. UI must preserve these distinctions and require confirmation of the entered grade basis.",
+    "These are current minimum consideration criteria, not admitted-student lower bounds or guarantees for Fall 2028. Program and English requirements remain.",
+    "No least-selective-major claim is verified. The listed English programs are documented broad degree options.",
+    "Washington State publishes GPA 2.70 and in-house foreign-grade evaluation. The current page references a Country Scales Guide; linked/older prospectus retrieval returned 403 and no official Canada/Ontario percentage was verified. No Ontario rule was inferred.",
+    "Michigan Tech, Michigan-Flint, UM-Dearborn, UMass Lowell, Maine, Albany, Oswego, Bowling Green, Toledo and St. Cloud searches did not establish a new exact Ontario minimum within this bounded review. Generic GPA figures, mean grades and test-optional policies were not converted into Ontario admission thresholds.",
+    "UCSB current guide states OSSD minimum70, but the separate nonresident GPA/A-G and competitive selection requirements cannot be established from a single Ontario average; it was intentionally excluded from automatic criteria matching."
+  ]
+}

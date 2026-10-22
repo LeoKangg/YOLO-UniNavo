@@ -1,3 +1,4 @@
+import { additionalScenarioSources } from "./scenario-raw.ts";
 import { researchedSatRanges, satResearchSources } from "./sat-research.ts";
 import expansionEast from "../../research/expansion-east.json" with { type: "json" };
 import expansionMidwest from "../../research/expansion-midwest.json" with { type: "json" };
@@ -48,6 +49,7 @@ export const sources: Source[] = [
       ...universities.flatMap((u) => u.sources),
       ...planning.sources,
       ...satResearchSources,
+      ...additionalScenarioSources,
       ...comparisonContext.sources,
       ...existingRankings.flatMap((r) => (r.source ? [r.source] : [])),
       ...pathways.sources,

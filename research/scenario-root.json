@@ -1,0 +1,245 @@
+{
+  "schools": [
+    {
+      "id": "portland-state",
+      "name": "Portland State University",
+      "nameKo": "포틀랜드 주립대학교",
+      "state": "Oregon",
+      "city": "Portland",
+      "type": "Public",
+      "rank": {
+        "edition": "2026",
+        "value": null,
+        "sourceIds": []
+      },
+      "ontario": {
+        "minimum": 70,
+        "comparator": "gt",
+        "basisKey": "overall-secondary",
+        "basis": "Ontario OSSD: overall average higher than 70%. This is strictly greater than70, not70orhigher; complete academic records and remaining application requirements apply.",
+        "basisKo": "온타리오 OSSD의 전체 평균이 70%를 초과해야 합니다. 70% 이상이 아니라 70% 초과이며, 전체 성적표와 나머지 지원 요건이 필요합니다.",
+        "sourceIds": ["scenario-portland-canada"]
+      },
+      "sources": [
+        {
+          "id": "scenario-portland-canada",
+          "title": "Minimum Academic Requirements by Country",
+          "url": "https://www.pdx.edu/admissions/international/academic-requirements-country",
+          "publisher": "Portland State University",
+          "verified": "2026-10-22",
+          "cycle": "Current official page reviewed 2026-10-22; Fall 2028 applicability needs confirmation"
+        },
+        {
+          "id": "scenario-portland-firstyear",
+          "title": "International First Years",
+          "url": "https://www.pdx.edu/admissions/international/first-year",
+          "publisher": "Portland State University",
+          "verified": "2026-10-22",
+          "cycle": "Current official page reviewed 2026-10-22; Fall 2028 applicability needs confirmation"
+        },
+        {
+          "id": "scenario-portland-testing",
+          "title": "English Language Proficiency Requirement",
+          "url": "https://www.pdx.edu/admissions/international/english-language-proficiency",
+          "publisher": "Portland State University",
+          "verified": "2026-10-22",
+          "cycle": "Current official page reviewed 2026-10-22; Fall 2028 applicability needs confirmation"
+        },
+        {
+          "id": "scenario-portland-english",
+          "title": "English Bachelor’s Degree",
+          "url": "https://www.pdx.edu/academics/programs/undergraduate/english",
+          "publisher": "Portland State University",
+          "verified": "2026-10-22",
+          "cycle": "Current official page reviewed 2026-10-22; Fall 2028 applicability needs confirmation"
+        }
+      ],
+      "satRange": null,
+      "academic": {
+        "text": "The international first-year page requires completed secondary education and a university-assessed GPA; its country table supplies the actual Ontario percentage equivalent.",
+        "textKo": "국제 신입생은 중등교육 이수와 대학의 성적 평가가 필요합니다. 국가별 공식 표가 온타리오 백분율 기준을 직접 제시합니다.",
+        "sourceIds": ["scenario-portland-canada", "scenario-portland-firstyear"]
+      },
+      "testing": {
+        "policy": "optional",
+        "text": "SAT is not required for admission; it can be used as English-language evidence under separate section rules.",
+        "textKo": "SAT는 입학 필수가 아니며, 별도 영역 기준에 따라 영어 능력 증빙으로 활용할 수 있습니다.",
+        "sourceIds": ["scenario-portland-testing"]
+      },
+      "entry": {
+        "program": "English BA",
+        "programKo": "영어영문학 BA",
+        "unit": "College of Liberal Arts & Sciences",
+        "unitKo": "인문사회·자연과학대학",
+        "easierMajorVerified": false,
+        "text": "The official program directory confirms English BA. It does not establish that this major has the lowest freshman admission threshold.",
+        "textKo": "영어영문학 BA 운영을 공식 확인했습니다. 이 학과가 신입학 최저 합격선이 가장 낮다는 근거는 확인되지 않았습니다.",
+        "sourceIds": ["scenario-portland-english"]
+      },
+      "applicantScope": {
+        "text": "International first-year OSSD applicant. English proficiency, final credentials and any applicable program requirements remain separate; current criteria are not a Fall2028 commitment.",
+        "textKo": "OSSD 국제 신입생 기준입니다. 영어 능력·최종 졸업 증빙·해당 전공 요건은 별도이며 현행 기준이 2028년 규정을 확정하지 않습니다.",
+        "sourceIds": [
+          "scenario-portland-firstyear",
+          "scenario-portland-testing"
+        ]
+      }
+    },
+    {
+      "id": "texas-austin",
+      "name": "The University of Texas at Austin",
+      "nameKo": "텍사스 대학교 오스틴",
+      "state": "Texas",
+      "city": "Austin",
+      "type": "Public",
+      "rank": {
+        "edition": "2026",
+        "value": 30,
+        "sourceIds": ["scenario-ut-austin-rank"]
+      },
+      "ontario": {
+        "minimum": null,
+        "basis": "No Ontario percentage threshold verified in these official sources.",
+        "basisKo": "인용한 공식 자료에서 온타리오 백분율 최저 기준을 확인하지 못했습니다.",
+        "sourceIds": ["scenario-ut-austin-international"]
+      },
+      "sources": [
+        {
+          "id": "scenario-ut-austin-international",
+          "title": "International Students — Freshman",
+          "url": "https://admissions.utexas.edu/apply/international-students/",
+          "publisher": "The University of Texas at Austin",
+          "verified": "2026-10-22",
+          "cycle": "Current page gives Fall2027 decision dates; not Fall2028"
+        },
+        {
+          "id": "scenario-ut-austin-history",
+          "title": "History B.A. Undergraduate Program",
+          "url": "https://liberalarts.utexas.edu/history/undergraduate-program/",
+          "publisher": "The University of Texas at Austin",
+          "verified": "2026-10-22",
+          "cycle": "Current official page reviewed 2026-10-22; Fall 2028 applicability needs confirmation"
+        },
+        {
+          "id": "scenario-ut-austin-rank",
+          "title": "UT Ranks No.30 Nationally in 2026 U.S.News Rankings",
+          "url": "https://news.utexas.edu/2025/09/23/ut-ranks-as-no-1-public-university-in-texas-no-7-nationally-in-u-s-news-world-report-rankings/",
+          "publisher": "The University of Texas at Austin",
+          "verified": "2026-10-22",
+          "cycle": "2026 National Universities edition; published2025-09-23"
+        }
+      ],
+      "satRange": null,
+      "academic": {
+        "text": "Submit records equivalent to U.S. grades9–12 and meet required high-school subjects; UT evaluates the transcript. No Ontario percentage admission floor was verified.",
+        "textKo": "미국 9~12학년에 해당하는 성적표와 필수 고교 과목이 필요하며 대학이 심사합니다. 온타리오 백분율 최저 합격선은 확인하지 못했습니다.",
+        "sourceIds": ["scenario-ut-austin-international"]
+      },
+      "testing": {
+        "policy": "required",
+        "text": "The current international freshman page requires an official SAT/ACT score and also accepts official CLT. Fall2028 must be reconfirmed.",
+        "textKo": "현재 국제 신입생 안내는 공식 SAT/ACT 성적을 요구하며 CLT도 인정합니다. 2028년 적용은 다시 확인해야 합니다.",
+        "sourceIds": ["scenario-ut-austin-international"]
+      },
+      "entry": {
+        "program": "History BA",
+        "programKo": "역사학 BA",
+        "unit": "College of Liberal Arts",
+        "unitKo": "문과대학",
+        "easierMajorVerified": false,
+        "text": "History BA is an official degree. Some majors require additional application items; no verified evidence makes History the easiest admission route.",
+        "textKo": "역사학 BA는 공식 학위입니다. 일부 전공은 별도 서류를 요구하며, 역사학이 가장 쉬운 입학 경로라는 근거는 확인되지 않았습니다.",
+        "sourceIds": [
+          "scenario-ut-austin-history",
+          "scenario-ut-austin-international"
+        ]
+      },
+      "applicantScope": {
+        "text": "International freshman: neither U.S.citizen nor permanent resident and not a Texas high-school graduate. English evidence and full application review apply.",
+        "textKo": "미국 시민권·영주권이 없고 텍사스 고교 졸업자가 아닌 국제 신입생 기준입니다. 영어 증빙과 전체 지원서 심사가 필요합니다.",
+        "sourceIds": ["scenario-ut-austin-international"]
+      }
+    },
+    {
+      "id": "southern-california",
+      "name": "University of Southern California",
+      "nameKo": "서던 캘리포니아 대학교 (USC)",
+      "state": "California",
+      "city": "Los Angeles",
+      "type": "Private",
+      "rank": {
+        "edition": "2026",
+        "value": null,
+        "sourceIds": []
+      },
+      "ontario": {
+        "minimum": null,
+        "basis": "No Ontario percentage threshold verified in these official sources.",
+        "basisKo": "인용한 공식 자료에서 온타리오 백분율 최저 기준을 확인하지 못했습니다.",
+        "sourceIds": ["scenario-usc-international"]
+      },
+      "sources": [
+        {
+          "id": "scenario-usc-international",
+          "title": "International Students",
+          "url": "https://admission.usc.edu/prospective-students/how-to-apply/international-students/",
+          "publisher": "University of Southern California",
+          "verified": "2026-10-22",
+          "cycle": "SAT optional2027–28 academic year; Fall2028 not confirmed"
+        },
+        {
+          "id": "scenario-usc-profile",
+          "title": "First-Year Student Profile and Admission Information2026–2027",
+          "url": "https://admission.usc.edu/wp-content/uploads/first-year-student-profile.pdf",
+          "publisher": "University of Southern California",
+          "verified": "2026-10-22",
+          "cycle": "Fall2026 enrolled score submitters; LosAngeles and WashingtonDC campus aggregate"
+        },
+        {
+          "id": "scenario-usc-history",
+          "title": "History BA",
+          "url": "https://dornsife.usc.edu/hist/undergraduate-studies/department-majors/history-ba/",
+          "publisher": "University of Southern California",
+          "verified": "2026-10-22",
+          "cycle": "Current official page reviewed 2026-10-22; Fall 2028 applicability needs confirmation"
+        }
+      ],
+      "satRange": {
+        "low": 1470,
+        "high": 1540,
+        "cohort": "Fall2026 enrolled SAT submitters; LosAngeles + WashingtonDC aggregate, superscored. Not an individual-campus or major cutoff.",
+        "cohortKo": "2026년 가을 등록자 중 SAT 제출자 · LA·워싱턴DC 캠퍼스 합산·슈퍼스코어 · 단일 캠퍼스·전공 합격선 아님.",
+        "sourceIds": ["scenario-usc-profile"]
+      },
+      "academic": {
+        "text": "USC reviews secondary records through grade12 in the context of the educational system. No Ontario percentage threshold is supplied by these reviewed sources.",
+        "textKo": "USC는 교육과정의 맥락에서 12학년까지의 고교 성적을 심사합니다. 검토한 자료에 온타리오 백분율 합격선은 제시되어 있지 않습니다.",
+        "sourceIds": ["scenario-usc-international"]
+      },
+      "testing": {
+        "policy": "optional",
+        "text": "SAT/ACT is optional for the2027–28 academic year. International English-proficiency rules are separate; Fall2028 is not yet established.",
+        "textKo": "2027–28학년도는 SAT/ACT 선택 제출입니다. 국제 지원자 영어 능력 요건은 별도이며 2028년 가을 규정은 확인되지 않았습니다.",
+        "sourceIds": ["scenario-usc-international"]
+      },
+      "entry": {
+        "program": "History BA",
+        "programKo": "역사학 BA",
+        "unit": "Dornsife College of Letters, Arts and Sciences",
+        "unitKo": "돈사이프 문리대",
+        "easierMajorVerified": false,
+        "text": "The official History BA curriculum is verified. No comparative freshman admission threshold establishes it as the easiest USC major.",
+        "textKo": "공식 역사학 BA 교육과정을 확인했습니다. 신입학 합격선을 비교해 USC에서 가장 쉬운 학과라고 입증한 자료는 없습니다.",
+        "sourceIds": ["scenario-usc-history"]
+      },
+      "applicantScope": {
+        "text": "International first-year applicant: submit original secondary records, English evidence when applicable and financial documentation. Ontario schooling alone is not an English waiver.",
+        "textKo": "국제 신입생은 고교 원문 성적·해당 영어 증빙·재정 서류가 필요합니다. 온타리오 재학 사실만으로 영어 요건 면제를 가정하지 않습니다.",
+        "sourceIds": ["scenario-usc-international"]
+      }
+    }
+  ],
+  "notes": [
+    "Portland70is a strictgreater-than threshold. Domestic/nonstandard-background SAT1120 route is not imported as an OSSD international GPA alternative. USC2026 score profile covers two campuses."
+  ]
+}

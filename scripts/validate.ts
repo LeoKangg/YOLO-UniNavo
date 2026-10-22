@@ -1,3 +1,5 @@
+import { validateScenarioData } from "./validate-scenarios.ts";
+import { scenarioSchools } from "../src/data/scenario-catalog.ts";
 import {
   universities,
   sources,
@@ -141,7 +143,7 @@ export function validateData(): string[] {
     a.sourceIds.forEach((id) =>
       check(sourceMap.has(id), `${a.name}: missing source ${id}`),
     );
-  return errors;
+  return [...errors, ...validateScenarioData()];
 }
 if (
   process.argv[1] &&
@@ -153,6 +155,6 @@ if (
     process.exitCode = 1;
   } else
     console.log(
-      `Validated ${universities.length} universities, ${sources.length} source records, ${timeline.length} months, ${timeline.flatMap((m) => m.tasks).length} tasks.`,
+      `Validated ${scenarioSchools.length} researched universities (${universities.length} with extended details), ${sources.length} source records, ${timeline.length} months, ${timeline.flatMap((m) => m.tasks).length} tasks.`,
     );
 }

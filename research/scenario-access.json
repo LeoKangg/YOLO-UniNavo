@@ -1,0 +1,1045 @@
+{
+  "schools": [
+    {
+      "id": "wichita-state",
+      "name": "Wichita State University",
+      "nameKo": "위치타 주립대학교",
+      "state": "Kansas",
+      "city": "Wichita",
+      "type": "Public",
+      "rank": {
+        "edition": "2026",
+        "value": null,
+        "sourceIds": []
+      },
+      "ontario": {
+        "minimum": null,
+        "basis": "No Ontario-specific percentage equivalency verified in the cited official sources.",
+        "basisKo": "인용한 공식 자료에서 온타리오 내신 백분율 환산 기준은 확인되지 않았습니다.",
+        "sourceIds": ["scenario-wichita-admission", "scenario-wichita-faq"]
+      },
+      "academic": {
+        "text": "The grade route lists a minimum U.S.-equivalent 2.5 GPA in the official FAQ. A separate international SAT route permits consideration when the grade route is not met.",
+        "textKo": "공식 FAQ의 성적 전형 기준은 미국 기준 환산 GPA 2.5입니다. 성적 전형 요건을 충족하지 못한 지원자도 별도 국제 SAT 전형으로 심사받을 수 있습니다.",
+        "sourceIds": ["scenario-wichita-admission", "scenario-wichita-faq"]
+      },
+      "testing": {
+        "policy": "optional",
+        "text": "SAT is optional for the grade route. SAT route: total 1060 or higher AND Reading/Writing 490 or higher AND Math 490 or higher.",
+        "textKo": "성적 전형은 SAT 선택 제출입니다. SAT 전형은 총점 1060 이상과 Reading/Writing·Math 각각 490 이상이 모두 필요합니다.",
+        "sourceIds": ["scenario-wichita-admission"]
+      },
+      "satRange": null,
+      "entry": {
+        "program": "English Language and Literature, B.A.",
+        "programKo": "영어영문학 B.A.",
+        "unit": "Fairmount College of Liberal Arts and Sciences",
+        "unitKo": "페어마운트 인문사회·자연과학대학",
+        "text": "The program page states that admission to Fairmount first requires admission to Wichita State. It does not establish English as the least selective major.",
+        "textKo": "학과 공식 페이지는 위치타 주립대 합격을 페어마운트 대학 입학의 선행 조건으로 제시합니다. 영어영문학이 가장 쉬운 학과라는 근거는 아닙니다.",
+        "easierMajorVerified": false,
+        "sourceIds": ["scenario-wichita-english"]
+      },
+      "applicantScope": {
+        "text": "International first-year applicant; university evaluates foreign credentials. English proficiency, final graduation and program requirements remain separate.",
+        "textKo": "국제 신입생 지원 기준입니다. 대학의 해외 성적 평가, 영어 능력, 최종 졸업 및 전공 요건을 별도로 충족해야 합니다.",
+        "sourceIds": ["scenario-wichita-admission", "scenario-wichita-faq"]
+      },
+      "sources": [
+        {
+          "id": "scenario-wichita-admission",
+          "title": "International Freshman Admission",
+          "url": "https://www.wichita.edu/admissions/international/undergraduate/FreshmanAdmission.php",
+          "publisher": "Wichita State University",
+          "verified": "2026-10-22",
+          "cycle": "Current undergraduate admissions page; Fall 2028 reconfirmation required"
+        },
+        {
+          "id": "scenario-wichita-faq",
+          "title": "International Students FAQ",
+          "url": "https://www.wichita.edu/admissions/international/aboutwsu/faqstudents.php",
+          "publisher": "Wichita State University",
+          "verified": "2026-10-22",
+          "cycle": "Current undergraduate admissions page; Fall 2028 reconfirmation required"
+        },
+        {
+          "id": "scenario-wichita-english",
+          "title": "English Language and Literature, Major",
+          "url": "https://www.wichita.edu/academics/majors/index.php?program=english_ba_220",
+          "publisher": "Wichita State University",
+          "verified": "2026-10-22",
+          "cycle": "Current undergraduate admissions page; Fall 2028 reconfirmation required"
+        }
+      ],
+      "satAlternative": {
+        "minimum": 1060,
+        "sectionMinimums": {
+          "readingWriting": 490,
+          "math": 490
+        },
+        "replacesGpa": true,
+        "remainingRequirements": "Official SAT results, high-school records and completion, English proficiency and program requirements remain. Both Reading/Writing and Math must meet490 as well as the total-score condition.",
+        "remainingRequirementsKo": "공식 SAT 성적, 고교 성적표·졸업, 영어 능력 및 전공 요건이 남습니다. 총점 기준과 Reading/Writing·Math 각각 490 이상 조건을 함께 확인해야 합니다.",
+        "sourceIds": ["scenario-wichita-admission"]
+      }
+    },
+    {
+      "id": "northern-iowa",
+      "name": "University of Northern Iowa",
+      "nameKo": "노던 아이오와 대학교",
+      "state": "Iowa",
+      "city": "Cedar Falls",
+      "type": "Public",
+      "rank": {
+        "edition": "2026",
+        "value": null,
+        "sourceIds": []
+      },
+      "ontario": {
+        "minimum": 75,
+        "basis": "Canada country page explicitly accepts OSSD; minimum 75(B) cumulative GPA in secondary academic subjects, not a Grade 12 top-six rule.",
+        "basisKo": "OSSD를 명시한 캐나다 국가별 페이지 기준: 중등학교 학업 과목 누적 평균 75(B). 12학년 상위 6과목 기준으로 제시된 수치는 아닙니다.",
+        "sourceIds": ["scenario-uni-canada"]
+      },
+      "academic": {
+        "text": "The official Canada page names the OSSD and specifies a 75(B) cumulative average in secondary-level academic subjects.",
+        "textKo": "공식 캐나다 지원 기준에 OSSD가 명시되어 있으며, 중등학교 학업 과목의 누적 평균 75(B)를 최소 기준으로 제시합니다.",
+        "sourceIds": ["scenario-uni-canada"]
+      },
+      "testing": {
+        "policy": "optional",
+        "text": "SAT/ACT are not required for international first-year admission; they may be considered for scholarships.",
+        "textKo": "국제 신입생 입학은 SAT/ACT 필수가 아니며 장학금 심사에 활용될 수 있습니다.",
+        "sourceIds": ["scenario-uni-policy"]
+      },
+      "satRange": null,
+      "entry": {
+        "program": "English, B.A.",
+        "programKo": "영문학 B.A.",
+        "unit": "College of Humanities, Arts and Sciences",
+        "unitKo": "인문·예술·자연과학대학",
+        "text": "An official cataloged English B.A. is available. No major-level lowest admitted Ontario mark was verified.",
+        "textKo": "공식 학사요람에서 영문학 B.A.가 확인됩니다. 이 학과의 온타리오 최저 합격점은 확인되지 않았습니다.",
+        "easierMajorVerified": false,
+        "sourceIds": ["scenario-uni-english"]
+      },
+      "applicantScope": {
+        "text": "International first-year applicant; university evaluates foreign credentials. English proficiency, final graduation and program requirements remain separate.",
+        "textKo": "국제 신입생 지원 기준입니다. 대학의 해외 성적 평가, 영어 능력, 최종 졸업 및 전공 요건을 별도로 충족해야 합니다.",
+        "sourceIds": ["scenario-uni-canada"]
+      },
+      "sources": [
+        {
+          "id": "scenario-uni-canada",
+          "title": "Canada: Country-Specific Undergraduate Requirements",
+          "url": "https://admissions.uni.edu/international/undergraduate-students/country-specific-requirements/canada",
+          "publisher": "University of Northern Iowa",
+          "verified": "2026-10-22",
+          "cycle": "Current undergraduate admissions page; Fall 2028 reconfirmation required"
+        },
+        {
+          "id": "scenario-uni-policy",
+          "title": "International Undergraduate Admission Policies",
+          "url": "https://admissions.uni.edu/international/undergraduate-students/admission-policies",
+          "publisher": "University of Northern Iowa",
+          "verified": "2026-10-22",
+          "cycle": "Current undergraduate admissions page; Fall 2028 reconfirmation required"
+        },
+        {
+          "id": "scenario-uni-english",
+          "title": "English B.A.",
+          "url": "https://catalog.uni.edu/chas/englishba/",
+          "publisher": "University of Northern Iowa",
+          "verified": "2026-10-22",
+          "cycle": "Current university catalog"
+        }
+      ]
+    },
+    {
+      "id": "north-dakota-state",
+      "name": "North Dakota State University",
+      "nameKo": "노스다코타 주립대학교",
+      "state": "North Dakota",
+      "city": "Fargo",
+      "type": "Public",
+      "rank": {
+        "edition": "2026",
+        "value": null,
+        "sourceIds": []
+      },
+      "ontario": {
+        "minimum": null,
+        "basis": "No Ontario-specific percentage equivalency verified in the cited official sources.",
+        "basisKo": "인용한 공식 자료에서 온타리오 내신 백분율 환산 기준은 확인되지 않았습니다.",
+        "sourceIds": ["scenario-ndsu-admission", "scenario-ndsu-catalog"]
+      },
+      "academic": {
+        "text": "International first-year applicants require a U.S.-equivalent 2.75 GPA; secondary transcripts are evaluated in-house. The catalog describes 2.75 in core subjects as recommended.",
+        "textKo": "국제 신입생 페이지는 대학 자체 평가에 따른 미국 환산 GPA 2.75를 제시합니다. 학사요람은 주요 학업 과목의 2.75를 권장 기준으로 설명합니다.",
+        "sourceIds": ["scenario-ndsu-admission", "scenario-ndsu-catalog"]
+      },
+      "testing": {
+        "policy": "unknown",
+        "text": "The cited international checklist does not list an SAT composite requirement. SAT Reading/Writing 480 is an English-proficiency option; this is not an academic admission alternative.",
+        "textKo": "인용한 국제지원 체크리스트에 SAT 총점 요건은 없습니다. Reading/Writing 480은 영어 능력 입증 방법이며 학업 성적 요건의 대체 기준이 아닙니다.",
+        "sourceIds": ["scenario-ndsu-admission"]
+      },
+      "satRange": null,
+      "entry": {
+        "program": "English, B.A. or B.S.",
+        "programKo": "영문학 B.A. 또는 B.S.",
+        "unit": "Department of English",
+        "unitKo": "영문학과",
+        "text": "The official English department offers B.A. and B.S. routes. No verified major-level freshman admission advantage is published in these sources.",
+        "textKo": "공식 영문학과에서 B.A.·B.S. 과정을 제공합니다. 확인한 자료에는 전공별 신입생 입학 우대나 최저 합격점이 제시되어 있지 않습니다.",
+        "easierMajorVerified": false,
+        "sourceIds": ["scenario-ndsu-english"]
+      },
+      "applicantScope": {
+        "text": "International first-year applicant; university evaluates foreign credentials. English proficiency, final graduation and program requirements remain separate.",
+        "textKo": "국제 신입생 지원 기준입니다. 대학의 해외 성적 평가, 영어 능력, 최종 졸업 및 전공 요건을 별도로 충족해야 합니다.",
+        "sourceIds": ["scenario-ndsu-admission", "scenario-ndsu-catalog"]
+      },
+      "sources": [
+        {
+          "id": "scenario-ndsu-admission",
+          "title": "International First-Year Student Admission Requirements",
+          "url": "https://www.ndsu.edu/international/apply/",
+          "publisher": "North Dakota State University",
+          "verified": "2026-10-22",
+          "cycle": "Page lists Fall 2026 and Spring 2027 deadlines; Fall 2028 unconfirmed"
+        },
+        {
+          "id": "scenario-ndsu-catalog",
+          "title": "International Student Admission",
+          "url": "https://catalog.ndsu.edu/admission/admission_internationaladmissiontext.pdf",
+          "publisher": "North Dakota State University",
+          "verified": "2026-10-22",
+          "cycle": "Current admission catalog"
+        },
+        {
+          "id": "scenario-ndsu-english",
+          "title": "English: Undergraduate",
+          "url": "https://www.ndsu.edu/english/for-students/undergraduate",
+          "publisher": "North Dakota State University",
+          "verified": "2026-10-22",
+          "cycle": "Current undergraduate admissions page; Fall 2028 reconfirmation required"
+        }
+      ]
+    },
+    {
+      "id": "north-dakota",
+      "name": "University of North Dakota",
+      "nameKo": "노스다코타 대학교",
+      "state": "North Dakota",
+      "city": "Grand Forks",
+      "type": "Public",
+      "rank": {
+        "edition": "2026",
+        "value": null,
+        "sourceIds": []
+      },
+      "ontario": {
+        "minimum": null,
+        "basis": "No Ontario-specific percentage equivalency verified in the cited official sources.",
+        "basisKo": "인용한 공식 자료에서 온타리오 내신 백분율 환산 기준은 확인되지 않았습니다.",
+        "sourceIds": ["scenario-und-international", "scenario-und-canada"]
+      },
+      "academic": {
+        "text": "The international page recommends cumulative secondary GPA 2.75/4.0. Canadian applicants follow the U.S. application and admission requirements; no Ontario percentage equivalency is given.",
+        "textKo": "국제지원 페이지는 중등학교 누적 GPA 2.75/4.0 이상을 권장합니다. 캐나다 지원자는 미국 지원자와 같은 지원·입학 절차를 따르며 온타리오 백분율 환산 기준은 제시하지 않습니다.",
+        "sourceIds": ["scenario-und-international", "scenario-und-canada"]
+      },
+      "testing": {
+        "policy": "optional",
+        "text": "The current first-year page states that ACT/SAT scores are not required.",
+        "textKo": "현재 신입생 안내는 ACT/SAT를 필수로 요구하지 않습니다.",
+        "sourceIds": ["scenario-und-firstyear"]
+      },
+      "satRange": null,
+      "entry": {
+        "program": "English, B.A.",
+        "programKo": "영문학 B.A.",
+        "unit": "Department of English",
+        "unitKo": "영문학과",
+        "text": "General admission recommends GPA 2.75; Aviation Management and Commercial Aviation recommend 3.25. English is a cataloged B.A.; this contrast does not prove it is the easiest major.",
+        "textKo": "일반 입학 권장 GPA는 2.75이며 항공경영·상업항공은 3.25입니다. 영문학 B.A.는 확인되지만 이 차이가 교내에서 가장 쉬운 학과임을 입증하지는 않습니다.",
+        "easierMajorVerified": false,
+        "sourceIds": ["scenario-und-firstyear", "scenario-und-english"]
+      },
+      "applicantScope": {
+        "text": "International first-year applicant; university evaluates foreign credentials. English proficiency, final graduation and program requirements remain separate.",
+        "textKo": "국제 신입생 지원 기준입니다. 대학의 해외 성적 평가, 영어 능력, 최종 졸업 및 전공 요건을 별도로 충족해야 합니다.",
+        "sourceIds": ["scenario-und-international", "scenario-und-canada"]
+      },
+      "sources": [
+        {
+          "id": "scenario-und-international",
+          "title": "International Requirements and Application",
+          "url": "https://und.edu/admissions/international/requirements-application.html",
+          "publisher": "University of North Dakota",
+          "verified": "2026-10-22",
+          "cycle": "Current undergraduate admissions page; Fall 2028 reconfirmation required"
+        },
+        {
+          "id": "scenario-und-firstyear",
+          "title": "Freshman Admissions",
+          "url": "https://und.edu/admissions/freshmen/index.html",
+          "publisher": "University of North Dakota",
+          "verified": "2026-10-22",
+          "cycle": "Current undergraduate admissions page; Fall 2028 reconfirmation required"
+        },
+        {
+          "id": "scenario-und-canada",
+          "title": "Canadian Students",
+          "url": "https://und.edu/admissions/international/canadian-students.html",
+          "publisher": "University of North Dakota",
+          "verified": "2026-10-22",
+          "cycle": "Current undergraduate admissions page; Fall 2028 reconfirmation required"
+        },
+        {
+          "id": "scenario-und-english",
+          "title": "English Degree B.A.",
+          "url": "https://und.edu/programs/english-ba/index.html",
+          "publisher": "University of North Dakota",
+          "verified": "2026-10-22",
+          "cycle": "Current undergraduate admissions page; Fall 2028 reconfirmation required"
+        }
+      ]
+    },
+    {
+      "id": "south-dakota-state",
+      "name": "South Dakota State University",
+      "nameKo": "사우스다코타 주립대학교",
+      "state": "South Dakota",
+      "city": "Brookings",
+      "type": "Public",
+      "rank": {
+        "edition": "2026",
+        "value": null,
+        "sourceIds": []
+      },
+      "ontario": {
+        "minimum": null,
+        "basis": "No Ontario-specific percentage equivalency verified in the cited official sources.",
+        "basisKo": "인용한 공식 자료에서 온타리오 내신 백분율 환산 기준은 확인되지 않았습니다.",
+        "sourceIds": ["scenario-sdsu-admission"]
+      },
+      "academic": {
+        "text": "International credentials are reviewed in the context of the applicant’s educational system and grading practices. The current international page publishes no numeric GPA minimum and disallows conditional admission.",
+        "textKo": "국제 성적은 출신 교육제도와 채점 관행을 고려해 심사합니다. 현재 국제지원 페이지에는 숫자로 된 GPA 최저 기준이 없으며 조건부 입학은 허용하지 않습니다.",
+        "sourceIds": ["scenario-sdsu-admission"]
+      },
+      "testing": {
+        "policy": "optional",
+        "text": "The international checklist marks SAT/ACT optional but highly encouraged. Reading/Writing 490 is an English-proficiency option.",
+        "textKo": "국제지원 체크리스트에서 SAT/ACT는 선택 제출이나 적극 권장합니다. Reading/Writing 490은 영어 능력 입증 방법입니다.",
+        "sourceIds": ["scenario-sdsu-admission"]
+      },
+      "satRange": null,
+      "entry": {
+        "program": "English, B.A. or B.S.",
+        "programKo": "영문학 B.A. 또는 B.S.",
+        "unit": "English program, Brookings Main Campus",
+        "unitKo": "브루킹스 본교 영문학 과정",
+        "text": "A four-year,120-credit on-campus English B.A./B.S. is documented. A lowest-entry major is not established.",
+        "textKo": "브루킹스 본교의 4년제 120학점 영문학 B.A./B.S.가 확인됩니다. 가장 낮은 점수로 입학하는 전공이라는 근거는 없습니다.",
+        "easierMajorVerified": false,
+        "sourceIds": ["scenario-sdsu-english"]
+      },
+      "applicantScope": {
+        "text": "International first-year applicant; university evaluates foreign credentials. English proficiency, final graduation and program requirements remain separate.",
+        "textKo": "국제 신입생 지원 기준입니다. 대학의 해외 성적 평가, 영어 능력, 최종 졸업 및 전공 요건을 별도로 충족해야 합니다.",
+        "sourceIds": ["scenario-sdsu-admission"]
+      },
+      "sources": [
+        {
+          "id": "scenario-sdsu-admission",
+          "title": "International Undergraduate Admissions",
+          "url": "https://www.sdstate.edu/admissions/international-undergraduate-admissions",
+          "publisher": "South Dakota State University",
+          "verified": "2026-10-22",
+          "cycle": "Current undergraduate admissions page; Fall 2028 reconfirmation required"
+        },
+        {
+          "id": "scenario-sdsu-english",
+          "title": "English B.A./B.S.",
+          "url": "https://www.sdstate.edu/programs/undergraduate/english-babs",
+          "publisher": "South Dakota State University",
+          "verified": "2026-10-22",
+          "cycle": "Current undergraduate admissions page; Fall 2028 reconfirmation required"
+        }
+      ]
+    },
+    {
+      "id": "kent-state",
+      "name": "Kent State University, Kent Campus",
+      "nameKo": "켄트 주립대학교 켄트 본교",
+      "state": "Ohio",
+      "city": "Kent",
+      "type": "Public",
+      "rank": {
+        "edition": "2026",
+        "value": 232,
+        "sourceIds": ["scenario-kent-ranking"]
+      },
+      "ontario": {
+        "minimum": null,
+        "basis": "No Ontario-specific percentage equivalency verified in the cited official sources.",
+        "basisKo": "인용한 공식 자료에서 온타리오 내신 백분율 환산 기준은 확인되지 않았습니다.",
+        "sourceIds": ["scenario-kent-admission"]
+      },
+      "academic": {
+        "text": "International first-year applicants should meet a minimum U.S.4.0-scale GPA 2.5. Kent Campus decisions also consider preparation and grade trends.",
+        "textKo": "국제 신입생의 최소 기준으로 미국 4.0 기준 GPA 2.5를 제시합니다. 켄트 본교는 준비 과목과 성적 추이도 심사합니다.",
+        "sourceIds": ["scenario-kent-admission"]
+      },
+      "testing": {
+        "policy": "optional",
+        "text": "SAT/ACT are not required under Kent’s international test-optional policy.",
+        "textKo": "켄트의 국제 신입생 선택 제출 정책에 따라 SAT/ACT는 필수가 아닙니다.",
+        "sourceIds": ["scenario-kent-admission"]
+      },
+      "satRange": null,
+      "entry": {
+        "program": "English, B.A.",
+        "programKo": "영문학 B.A.",
+        "unit": "College of Sciences and Humanities",
+        "unitKo": "자연·인문과학대학",
+        "text": "The 2026–27 English B.A. catalog applies the university’s selective Kent Campus first-year policy. Regional-campus open admission must not be confused with Kent Campus eligibility.",
+        "textKo": "2026–27 영문학 B.A. 요람은 켄트 본교의 선발 심사 정책을 적용합니다. 지역 캠퍼스의 개방형 입학을 본교 지원 자격과 혼동하면 안 됩니다.",
+        "easierMajorVerified": false,
+        "sourceIds": ["scenario-kent-english"]
+      },
+      "applicantScope": {
+        "text": "International first-year applicant; university evaluates foreign credentials. English proficiency, final graduation and program requirements remain separate.",
+        "textKo": "국제 신입생 지원 기준입니다. 대학의 해외 성적 평가, 영어 능력, 최종 졸업 및 전공 요건을 별도로 충족해야 합니다.",
+        "sourceIds": ["scenario-kent-admission"]
+      },
+      "sources": [
+        {
+          "id": "scenario-kent-admission",
+          "title": "International First-Year Student Requirements",
+          "url": "https://www.kent.edu/admissions/international-first-year-student-requirements",
+          "publisher": "Kent State University",
+          "verified": "2026-10-22",
+          "cycle": "Current undergraduate admissions page; Fall 2028 reconfirmation required"
+        },
+        {
+          "id": "scenario-kent-english",
+          "title": "English B.A.",
+          "url": "https://catalog.kent.edu/colleges/sh/eng/english-ba/",
+          "publisher": "Kent State University",
+          "verified": "2026-10-22",
+          "cycle": "2026–2027 University Catalog"
+        },
+        {
+          "id": "scenario-kent-ranking",
+          "title": "Kent State in2026 U.S.News Best Colleges Rankings",
+          "url": "https://www.kent.edu/today/news/kent-state-reaffirms-its-leadership-top-northern-ohio-public-university-2026-us-news-best",
+          "publisher": "Kent State University",
+          "verified": "2026-10-22",
+          "cycle": "2026 U.S.News National Universities; published 2025-09-23"
+        }
+      ]
+    },
+    {
+      "id": "akron",
+      "name": "The University of Akron",
+      "nameKo": "애크런 대학교",
+      "state": "Ohio",
+      "city": "Akron",
+      "type": "Public",
+      "rank": {
+        "edition": "2026",
+        "value": null,
+        "sourceIds": []
+      },
+      "ontario": {
+        "minimum": null,
+        "basis": "No Ontario-specific percentage equivalency verified in the cited official sources.",
+        "basisKo": "인용한 공식 자료에서 온타리오 내신 백분율 환산 기준은 확인되지 않았습니다.",
+        "sourceIds": ["scenario-akron-admission"]
+      },
+      "academic": {
+        "text": "International undergraduate admission uses holistic review. The cited current international page publishes no numeric GPA minimum or Ontario conversion.",
+        "textKo": "국제 학부 입학은 종합 심사입니다. 현재 국제지원 페이지에서 수치형 GPA 최저 기준이나 온타리오 환산 기준은 확인되지 않았습니다.",
+        "sourceIds": ["scenario-akron-admission"]
+      },
+      "testing": {
+        "policy": "optional",
+        "text": "International applicants starting Fall 2024 or beyond are test-optional; submitted official scores may be considered. SAT Reading/Writing 500 can prove English proficiency.",
+        "textKo": "2024년 가을 이후 입학 국제지원자는 SAT/ACT 선택 제출이며 공식 점수 제출 시 고려할 수 있습니다. Reading/Writing 500은 영어 능력 입증 방법입니다.",
+        "sourceIds": ["scenario-akron-admission"]
+      },
+      "satRange": null,
+      "entry": {
+        "program": "English, B.A.",
+        "programKo": "영문학 B.A.",
+        "unit": "Buchtel College of Arts and Sciences",
+        "unitKo": "부크텔 인문·자연과학대학",
+        "text": "The English department requires admissibility to Buchtel and a 2.20 GPA in university coursework for enrolled/transfer students. This is not an Ontario high-school cutoff.",
+        "textKo": "영문학과의 재학생·편입생 진입에는 부크텔 대학 지원 자격과 대학 과목 GPA 2.20이 필요합니다. 온타리오 고교 내신 기준이 아닙니다.",
+        "easierMajorVerified": false,
+        "sourceIds": ["scenario-akron-english"]
+      },
+      "applicantScope": {
+        "text": "International first-year applicant; university evaluates foreign credentials. English proficiency, final graduation and program requirements remain separate.",
+        "textKo": "국제 신입생 지원 기준입니다. 대학의 해외 성적 평가, 영어 능력, 최종 졸업 및 전공 요건을 별도로 충족해야 합니다.",
+        "sourceIds": ["scenario-akron-admission"]
+      },
+      "sources": [
+        {
+          "id": "scenario-akron-admission",
+          "title": "International Undergraduate Admissions",
+          "url": "https://www.uakron.edu/international/apply/",
+          "publisher": "The University of Akron",
+          "verified": "2026-10-22",
+          "cycle": "Fall 2024 or beyond; targetFall 2028 reconfirmation required"
+        },
+        {
+          "id": "scenario-akron-english",
+          "title": "English: Admission and Graduation Policies",
+          "url": "https://bulletin.uakron.edu/undergraduate/colleges-programs/arts-sciences/english/",
+          "publisher": "The University of Akron",
+          "verified": "2026-10-22",
+          "cycle": "2026–2027 Bulletin"
+        }
+      ]
+    },
+    {
+      "id": "cleveland-state",
+      "name": "Cleveland State University",
+      "nameKo": "클리블랜드 주립대학교",
+      "state": "Ohio",
+      "city": "Cleveland",
+      "type": "Public",
+      "rank": {
+        "edition": "2026",
+        "value": null,
+        "sourceIds": []
+      },
+      "ontario": {
+        "minimum": null,
+        "basis": "No Ontario-specific percentage equivalency verified in the cited official sources.",
+        "basisKo": "인용한 공식 자료에서 온타리오 내신 백분율 환산 기준은 확인되지 않았습니다.",
+        "sourceIds": ["scenario-csu-admission"]
+      },
+      "academic": {
+        "text": "The international undergraduate page specifies minimum cumulative high-school GPA 2.3 on a 4.0 scale. A minimum math placement score is also required; remedial study may extend the plan.",
+        "textKo": "국제 학부 안내는 고교 누적 GPA 2.3/4.0 이상을 제시합니다. 수학 배치시험 기준도 있으며 미달 시 보충 수업 등으로 학업 기간이 늘어날 수 있습니다.",
+        "sourceIds": ["scenario-csu-admission"]
+      },
+      "testing": {
+        "policy": "unknown",
+        "text": "Current international requirements list English-proficiency options including SAT Reading/Writing 530. They do not establish a Fall 2028 academic SAT composite policy.",
+        "textKo": "현재 국제지원 요건에 SAT Reading/Writing 530을 포함한 영어 입증 방법이 있습니다. 2028년 학업 심사용 SAT 총점 정책은 확인되지 않았습니다.",
+        "sourceIds": ["scenario-csu-admission"]
+      },
+      "satRange": null,
+      "entry": {
+        "program": "English, B.A., Literature concentration",
+        "programKo": "영문학 B.A. 문학 트랙",
+        "unit": "College of Arts and Sciences",
+        "unitKo": "인문·자연과학대학",
+        "text": "The English department documents B.A. concentrations including Literature. No lowest-entry Ontario major or guaranteed admission is established.",
+        "textKo": "공식 영문학과에서 문학 트랙을 포함한 B.A. 과정을 확인했습니다. 온타리오 최저점 학과나 입학 보장은 제시되어 있지 않습니다.",
+        "easierMajorVerified": false,
+        "sourceIds": ["scenario-csu-english"]
+      },
+      "applicantScope": {
+        "text": "International first-year applicant; university evaluates foreign credentials. English proficiency, final graduation and program requirements remain separate.",
+        "textKo": "국제 신입생 지원 기준입니다. 대학의 해외 성적 평가, 영어 능력, 최종 졸업 및 전공 요건을 별도로 충족해야 합니다.",
+        "sourceIds": ["scenario-csu-admission"]
+      },
+      "sources": [
+        {
+          "id": "scenario-csu-admission",
+          "title": "International Undergraduate Admission Requirements",
+          "url": "https://csuohio.edu/international-admissions/undergraduate-admission-requirements",
+          "publisher": "Cleveland State University",
+          "verified": "2026-10-22",
+          "cycle": "Current undergraduate admissions page; Fall 2028 reconfirmation required"
+        },
+        {
+          "id": "scenario-csu-english",
+          "title": "English Department",
+          "url": "https://artsandsciences.csuohio.edu/english",
+          "publisher": "Cleveland State University",
+          "verified": "2026-10-22",
+          "cycle": "Current undergraduate admissions page; Fall 2028 reconfirmation required"
+        }
+      ]
+    },
+    {
+      "id": "northern-illinois",
+      "name": "Northern Illinois University",
+      "nameKo": "노던 일리노이 대학교",
+      "state": "Illinois",
+      "city": "DeKalb",
+      "type": "Public",
+      "rank": {
+        "edition": "2026",
+        "value": null,
+        "sourceIds": []
+      },
+      "ontario": {
+        "minimum": null,
+        "basis": "No Ontario-specific percentage equivalency verified in the cited official sources.",
+        "basisKo": "인용한 공식 자료에서 온타리오 내신 백분율 환산 기준은 확인되지 않았습니다.",
+        "sourceIds": ["scenario-niu-international"]
+      },
+      "academic": {
+        "text": "For international freshmen attending non-U.S. secondary schools, NIU requires graduation and passing grades equivalent to a U.S.C+ average; records require official evaluation.",
+        "textKo": "미국 외 고교 출신 국제 신입생은 졸업과 미국 C+ 평균에 상당하는 합격 성적이 필요하며 성적표의 공식 평가를 받아야 합니다.",
+        "sourceIds": ["scenario-niu-international"]
+      },
+      "testing": {
+        "policy": "not-considered",
+        "text": "NIU does not consider SAT/ACT for general admission or merit scholarships. A higher SAT does not improve general admission eligibility under this rule.",
+        "textKo": "일반 입학 및 성적 장학금에서 SAT/ACT를 고려하지 않습니다. 이 정책에 따라 SAT가 높아져도 일반 입학 자격이 달라지지 않습니다.",
+        "sourceIds": ["scenario-niu-policy"]
+      },
+      "satRange": null,
+      "entry": {
+        "program": "English, B.A. or B.S.",
+        "programKo": "영문학 B.A. 또는 B.S.",
+        "unit": "College of Liberal Arts and Sciences",
+        "unitKo": "인문·자연과학대학",
+        "text": "English offers literature and writing tracks. The general 3.0 GPA guarantee displayed on the program page must not be converted to an Ontario percentage.",
+        "textKo": "영문학에 문학·글쓰기 트랙이 있습니다. 학과 안내에 표시된 일반 GPA 3.0 입학 보장을 임의로 온타리오 백분율로 환산할 수 없습니다.",
+        "easierMajorVerified": false,
+        "sourceIds": ["scenario-niu-english"]
+      },
+      "applicantScope": {
+        "text": "International first-year applicant; university evaluates foreign credentials. English proficiency, final graduation and program requirements remain separate.",
+        "textKo": "국제 신입생 지원 기준입니다. 대학의 해외 성적 평가, 영어 능력, 최종 졸업 및 전공 요건을 별도로 충족해야 합니다.",
+        "sourceIds": ["scenario-niu-international"]
+      },
+      "sources": [
+        {
+          "id": "scenario-niu-international",
+          "title": "International Freshmen: Non-U.S.Secondary School",
+          "url": "https://www.niu.edu/international-admissions/admissions/freshman/non-us.shtml",
+          "publisher": "Northern Illinois University",
+          "verified": "2026-10-22",
+          "cycle": "Current page references 2026 evaluation process; Fall 2028 reconfirmation required"
+        },
+        {
+          "id": "scenario-niu-policy",
+          "title": "Application Requirements",
+          "url": "https://www.niu.edu/admissions/apply/requirements/index.shtml",
+          "publisher": "Northern Illinois University",
+          "verified": "2026-10-22",
+          "cycle": "Current undergraduate admissions page; Fall 2028 reconfirmation required"
+        },
+        {
+          "id": "scenario-niu-english",
+          "title": "English Major",
+          "url": "https://www.niu.edu/clas/english/academics/undergraduate/major.shtml",
+          "publisher": "Northern Illinois University",
+          "verified": "2026-10-22",
+          "cycle": "Current undergraduate admissions page; Fall 2028 reconfirmation required"
+        }
+      ]
+    },
+    {
+      "id": "central-michigan",
+      "name": "Central Michigan University",
+      "nameKo": "센트럴 미시간 대학교",
+      "state": "Michigan",
+      "city": "Mount Pleasant",
+      "type": "Public",
+      "rank": {
+        "edition": "2026",
+        "value": null,
+        "sourceIds": []
+      },
+      "ontario": {
+        "minimum": null,
+        "basis": "No Ontario-specific percentage equivalency verified in the cited official sources.",
+        "basisKo": "인용한 공식 자료에서 온타리오 내신 백분율 환산 기준은 확인되지 않았습니다.",
+        "sourceIds": ["scenario-cmu-admission"]
+      },
+      "academic": {
+        "text": "The current international page requires graduation from an approved high school, English proficiency and official secondary records; it publishes no numeric academic minimum.",
+        "textKo": "현재 국제지원 안내는 인정 고교 졸업, 영어 능력 및 공식 고교 성적표를 요구하며 수치형 학업 최저 기준은 제시하지 않습니다.",
+        "sourceIds": ["scenario-cmu-admission"]
+      },
+      "testing": {
+        "policy": "optional",
+        "text": "The current admissions counselor page states CMU is test-optional. The international 2026–27 bulletin separately lists SAT Reading/Writing 520 as an English-proficiency option.",
+        "textKo": "현재 입학상담교사 안내는 SAT/ACT 선택 제출을 명시합니다. 국제지원 2026–27 요람의 Reading/Writing 520은 별도의 영어 능력 입증 방법입니다.",
+        "sourceIds": ["scenario-cmu-testing", "scenario-cmu-catalog"]
+      },
+      "satRange": null,
+      "entry": {
+        "program": "English, B.A. or B.S.",
+        "programKo": "영문학 B.A. 또는 B.S.",
+        "unit": "College of Liberal Arts and Social Sciences",
+        "unitKo": "인문·사회과학대학",
+        "text": "The department offers teaching and non-teaching English programs. Major declaration is advised before the end of sophomore year; no minimum admitted Ontario mark is published.",
+        "textKo": "공식 학과는 교직·비교직 영문학 과정을 제공합니다. 2학년 말 이전 전공 선언을 권장하며 온타리오 최저 합격점은 제시하지 않습니다.",
+        "easierMajorVerified": false,
+        "sourceIds": ["scenario-cmu-english"]
+      },
+      "applicantScope": {
+        "text": "International first-year applicant; university evaluates foreign credentials. English proficiency, final graduation and program requirements remain separate.",
+        "textKo": "국제 신입생 지원 기준입니다. 대학의 해외 성적 평가, 영어 능력, 최종 졸업 및 전공 요건을 별도로 충족해야 합니다.",
+        "sourceIds": ["scenario-cmu-admission"]
+      },
+      "sources": [
+        {
+          "id": "scenario-cmu-admission",
+          "title": "Apply as an International Undergraduate Student",
+          "url": "https://www.cmich.edu/international-admissions/undergraduate/apply-international-freshman",
+          "publisher": "Central Michigan University",
+          "verified": "2026-10-22",
+          "cycle": "Current undergraduate admissions page; Fall 2028 reconfirmation required"
+        },
+        {
+          "id": "scenario-cmu-testing",
+          "title": "Counselors: ACT/SAT Scores Optional",
+          "url": "https://www.cmich.edu/undergraduate/counselors",
+          "publisher": "Central Michigan University",
+          "verified": "2026-10-22",
+          "cycle": "Current undergraduate admissions page; Fall 2028 reconfirmation required"
+        },
+        {
+          "id": "scenario-cmu-catalog",
+          "title": "International Student Admission",
+          "url": "https://cmich.smartcatalogiq.com/en/2026-2027/undergraduate-bulletin/admission/international-student-admission",
+          "publisher": "Central Michigan University",
+          "verified": "2026-10-22",
+          "cycle": "2026–2027 Undergraduate Bulletin"
+        },
+        {
+          "id": "scenario-cmu-english",
+          "title": "Undergraduate Programs in English",
+          "url": "https://www.cmich.edu/academics/colleges/liberal-arts-social-sciences/departments/english-language-literature/undergraduate-programs",
+          "publisher": "Central Michigan University",
+          "verified": "2026-10-22",
+          "cycle": "Current undergraduate admissions page; Fall 2028 reconfirmation required"
+        }
+      ]
+    },
+    {
+      "id": "western-michigan",
+      "name": "Western Michigan University",
+      "nameKo": "웨스턴 미시간 대학교",
+      "state": "Michigan",
+      "city": "Kalamazoo",
+      "type": "Public",
+      "rank": {
+        "edition": "2026",
+        "value": null,
+        "sourceIds": []
+      },
+      "ontario": {
+        "minimum": null,
+        "basis": "No Ontario-specific percentage equivalency verified in the cited official sources.",
+        "basisKo": "인용한 공식 자료에서 온타리오 내신 백분율 환산 기준은 확인되지 않았습니다.",
+        "sourceIds": ["scenario-wmu-admission"]
+      },
+      "academic": {
+        "text": "The international application page requires all secondary/postsecondary records and their grading scales. It does not publish a numeric freshman academic minimum.",
+        "textKo": "국제지원 페이지는 모든 중등·고등교육 성적표와 해당 채점 기준을 요구합니다. 수치형 신입생 학업 최저 기준은 확인되지 않았습니다.",
+        "sourceIds": ["scenario-wmu-admission"]
+      },
+      "testing": {
+        "policy": "optional",
+        "text": "WMU’s current international FAQ says SAT/ACT are not required for international admission; scores can support mathematics placement and honors invitations.",
+        "textKo": "현재 국제지원 FAQ는 SAT/ACT가 국제학생 입학의 필수 요건이 아니며 수학 배치 및 아너스 초청에 활용될 수 있다고 명시합니다.",
+        "sourceIds": ["scenario-wmu-testing"]
+      },
+      "satRange": null,
+      "entry": {
+        "program": "English: Literature and Language",
+        "programKo": "영문학: 문학·언어",
+        "unit": "Department of English",
+        "unitKo": "영문학과",
+        "text": "The official department lists Literature and Language, Creative Writing, and Rhetoric and Writing Studies majors. These are documented options, not proven least-selective majors.",
+        "textKo": "공식 학과는 문학·언어, 문예창작, 수사학·글쓰기 전공을 제시합니다. 확인된 전공 목록이며 가장 입학하기 쉬운 전공으로 입증된 것은 아닙니다.",
+        "easierMajorVerified": false,
+        "sourceIds": ["scenario-wmu-english"]
+      },
+      "applicantScope": {
+        "text": "International first-year applicant; university evaluates foreign credentials. English proficiency, final graduation and program requirements remain separate.",
+        "textKo": "국제 신입생 지원 기준입니다. 대학의 해외 성적 평가, 영어 능력, 최종 졸업 및 전공 요건을 별도로 충족해야 합니다.",
+        "sourceIds": ["scenario-wmu-admission"]
+      },
+      "sources": [
+        {
+          "id": "scenario-wmu-admission",
+          "title": "Apply to WMU as an International Student",
+          "url": "https://wmich.edu/international/apply",
+          "publisher": "Western Michigan University",
+          "verified": "2026-10-22",
+          "cycle": "Current undergraduate admissions page; Fall 2028 reconfirmation required"
+        },
+        {
+          "id": "scenario-wmu-testing",
+          "title": "International Student and Scholar Services: Admissions FAQ",
+          "url": "https://wmich.edu/international",
+          "publisher": "Western Michigan University",
+          "verified": "2026-10-22",
+          "cycle": "Current undergraduate admissions page; Fall 2028 reconfirmation required"
+        },
+        {
+          "id": "scenario-wmu-english",
+          "title": "English Undergraduate Programs",
+          "url": "https://wmich.edu/english/academics/undergraduate-0",
+          "publisher": "Western Michigan University",
+          "verified": "2026-10-22",
+          "cycle": "Current undergraduate admissions page; Fall 2028 reconfirmation required"
+        }
+      ]
+    },
+    {
+      "id": "missouri-state",
+      "name": "Missouri State University, Springfield",
+      "nameKo": "미주리 주립대학교 스프링필드",
+      "state": "Missouri",
+      "city": "Springfield",
+      "type": "Public",
+      "rank": {
+        "edition": "2026",
+        "value": null,
+        "sourceIds": []
+      },
+      "ontario": {
+        "minimum": null,
+        "basis": "No Ontario-specific percentage equivalency verified in the cited official sources.",
+        "basisKo": "인용한 공식 자료에서 온타리오 내신 백분율 환산 기준은 확인되지 않았습니다.",
+        "sourceIds": ["scenario-mostate-admission"]
+      },
+      "academic": {
+        "text": "International policy requires a recognized 12-year secondary program, achievement comparable to domestic freshman requirements, and confirmed minimum U.S.-equivalent GPA 2.5.",
+        "textKo": "국제지원 정책은 인정된 12년제 고교 과정, 국내 신입생 요건에 상당하는 학업 성취 및 미국 기준 최소 GPA 2.5의 공식 확인을 요구합니다.",
+        "sourceIds": ["scenario-mostate-admission"]
+      },
+      "testing": {
+        "policy": "unknown",
+        "text": "Domestic policy has a GPA/SAT selection index; the international page requires comparable achievement. No Ontario percentage or unconditional SAT-only international route was verified.",
+        "textKo": "국내지원 정책에 GPA·SAT 선발표가 있고 국제지원자는 이에 상당하는 성취를 요구합니다. 온타리오 환산표나 국제학생의 무조건 SAT 단독 전형은 확인되지 않았습니다.",
+        "sourceIds": ["scenario-mostate-admission", "scenario-mostate-domestic"]
+      },
+      "satRange": null,
+      "entry": {
+        "program": "Literature",
+        "programKo": "문학",
+        "unit": "Department of English",
+        "unitKo": "영문학과",
+        "text": "The current English department lists Literature among its undergraduate programs. A lowest-entry Ontario major has not been verified.",
+        "textKo": "현재 영문학과가 학부 문학 과정을 제공합니다. 온타리오 최저 내신으로 입학하는 학과로는 확인되지 않았습니다.",
+        "easierMajorVerified": false,
+        "sourceIds": ["scenario-mostate-english"]
+      },
+      "applicantScope": {
+        "text": "International first-year applicant; university evaluates foreign credentials. English proficiency, final graduation and program requirements remain separate.",
+        "textKo": "국제 신입생 지원 기준입니다. 대학의 해외 성적 평가, 영어 능력, 최종 졸업 및 전공 요건을 별도로 충족해야 합니다.",
+        "sourceIds": ["scenario-mostate-admission"]
+      },
+      "sources": [
+        {
+          "id": "scenario-mostate-admission",
+          "title": "International Undergraduate Students Policy",
+          "url": "https://www.missouristate.edu/Policy/Chapter5/Op5_09_1_InternationalUndergraduateStudents.htm",
+          "publisher": "Missouri State University",
+          "verified": "2026-10-22",
+          "cycle": "Current undergraduate admissions page; Fall 2028 reconfirmation required"
+        },
+        {
+          "id": "scenario-mostate-domestic",
+          "title": "First-Year Admission Requirements",
+          "url": "https://www.missouristate.edu/Policy/Chapter5/Op5_01_3_FreshmanAdmissionRequirements.htm",
+          "publisher": "Missouri State University",
+          "verified": "2026-10-22",
+          "cycle": "Policy effective 2026-02-17; domestic index, international scope separately defined"
+        },
+        {
+          "id": "scenario-mostate-english",
+          "title": "English Undergraduate Studies",
+          "url": "https://english.missouristate.edu/Undergraduate/default.htm",
+          "publisher": "Missouri State University",
+          "verified": "2026-10-22",
+          "cycle": "Current undergraduate admissions page; Fall 2028 reconfirmation required"
+        }
+      ]
+    },
+    {
+      "id": "south-dakota",
+      "name": "University of South Dakota",
+      "nameKo": "사우스다코타 대학교",
+      "state": "South Dakota",
+      "city": "Vermillion",
+      "type": "Public",
+      "rank": {
+        "edition": "2026",
+        "value": 283,
+        "sourceIds": ["scenario-usd-ranking"]
+      },
+      "ontario": {
+        "minimum": null,
+        "basis": "No Ontario-specific percentage equivalency verified in the cited official sources.",
+        "basisKo": "인용한 공식 자료에서 온타리오 내신 백분율 환산 기준은 확인되지 않았습니다.",
+        "sourceIds": ["scenario-usd-international", "scenario-usd-general"]
+      },
+      "academic": {
+        "text": "The specialized international page states equivalent GPA 2.6 OR SAT 1070 OR ACT 21 generally permits bachelor’s admission. A generic international subsection instead lists GPA 2.6; confirm the alternative with admissions.",
+        "textKo": "국제지원 전용 페이지는 환산 GPA 2.6 또는 SAT 1070 또는 ACT 21이면 일반적으로 학사 입학 대상이라고 명시합니다. 일반 안내의 국제학생 항목은 GPA 2.6을 별도로 요구하므로 대체 적용을 확인해야 합니다.",
+        "sourceIds": ["scenario-usd-international", "scenario-usd-general"]
+      },
+      "testing": {
+        "policy": "optional",
+        "text": "The specialized international page accepts grade-based or SAT/ACT-based review. Fall 2027 dates are shown; Fall 2028 terms and the conflicting generic GPA wording require confirmation.",
+        "textKo": "국제지원 전용 페이지는 성적 또는 SAT/ACT 심사를 제시합니다. 안내된 일정은 2027년이며 2028년 적용과 일반 페이지의 GPA 문구 차이는 재확인이 필요합니다.",
+        "sourceIds": ["scenario-usd-international", "scenario-usd-general"]
+      },
+      "satRange": null,
+      "entry": {
+        "program": "English",
+        "programKo": "영문학",
+        "unit": "College of Arts and Sciences",
+        "unitKo": "인문·자연과학대학",
+        "text": "The university documents an undergraduate English program. No program-specific lowest freshman mark is verified.",
+        "textKo": "공식 학부 영문학 과정이 확인됩니다. 전공별 신입생 최저 합격점은 확인되지 않았습니다.",
+        "easierMajorVerified": false,
+        "sourceIds": ["scenario-usd-english"]
+      },
+      "applicantScope": {
+        "text": "International first-year applicant; university evaluates foreign credentials. English proficiency, final graduation and program requirements remain separate.",
+        "textKo": "국제 신입생 지원 기준입니다. 대학의 해외 성적 평가, 영어 능력, 최종 졸업 및 전공 요건을 별도로 충족해야 합니다.",
+        "sourceIds": ["scenario-usd-international", "scenario-usd-general"]
+      },
+      "sources": [
+        {
+          "id": "scenario-usd-international",
+          "title": "Applying for International Undergraduate Admission",
+          "url": "https://www.usd.edu/Admissions-and-Aid/International-Admissions/Applying-for-International-Undergraduate-Admission",
+          "publisher": "University of South Dakota",
+          "verified": "2026-10-22",
+          "cycle": "Current international page listsSpring/Fall 2027; Fall 2028 unconfirmed"
+        },
+        {
+          "id": "scenario-usd-general",
+          "title": "How to Apply: International Requirements",
+          "url": "https://www.usd.edu/Admissions-and-Aid/Undergraduate-Admissions/How-to-Apply",
+          "publisher": "University of South Dakota",
+          "verified": "2026-10-22",
+          "cycle": "Current undergraduate admissions page; Fall 2028 reconfirmation required"
+        },
+        {
+          "id": "scenario-usd-english",
+          "title": "Undergraduate English",
+          "url": "https://www.usd.edu/Academics/Undergraduate-Programs/English",
+          "publisher": "University of South Dakota",
+          "verified": "2026-10-22",
+          "cycle": "Current undergraduate admissions page; Fall 2028 reconfirmation required"
+        },
+        {
+          "id": "scenario-usd-ranking",
+          "title": "USD Home: Rankings and Recognition",
+          "url": "https://usd.edu/",
+          "publisher": "University of South Dakota",
+          "verified": "2026-10-22",
+          "cycle": "2026 Best National Universities clearly labeled on home page"
+        }
+      ],
+      "satAlternative": {
+        "minimum": 1070,
+        "replacesGpa": true,
+        "remainingRequirements": "Specialized international page says generally admitted, but generic How to Apply lists GPA 2.6; resolve wording with admissions before treating as confirmed eligibility. Graduation, official documents and English proficiency remain.",
+        "remainingRequirementsKo": "국제지원 전용 페이지의 일반 입학 기준이나 일반 지원 안내는 GPA 2.6을 요구합니다. 입학처에 차이를 확인하기 전 확정 자격으로 처리하지 마세요. 졸업·공식 서류·영어 요건도 남습니다.",
+        "sourceIds": ["scenario-usd-international", "scenario-usd-general"],
+        "verificationStatus": "conflicting-sources"
+      }
+    },
+    {
+      "id": "missouri-southern",
+      "name": "Missouri Southern State University",
+      "nameKo": "미주리 서던 주립대학교",
+      "state": "Missouri",
+      "city": "Joplin",
+      "type": "Public",
+      "rank": {
+        "edition": "2026",
+        "value": null,
+        "sourceIds": []
+      },
+      "ontario": {
+        "minimum": null,
+        "basis": "No Ontario-specific percentage equivalency verified in the cited official sources.",
+        "basisKo": "인용한 공식 자료에서 온타리오 내신 백분율 환산 기준은 확인되지 않았습니다.",
+        "sourceIds": ["scenario-mssu-current", "scenario-mssu-guide"]
+      },
+      "academic": {
+        "text": "Current international freshman instructions require GPA 2.25 OR top 50% of the graduating class. The 2025 international guide also lists SAT 1060 as an alternative; the current page omits it.",
+        "textKo": "현재 국제 신입생 안내는 GPA 2.25 또는 졸업반 상위 50%를 요구합니다. 2025년 국제지원 가이드는 SAT 1060 대체 전형도 제시하지만 현재 웹페이지에는 없습니다.",
+        "sourceIds": ["scenario-mssu-current", "scenario-mssu-guide"]
+      },
+      "testing": {
+        "policy": "unknown",
+        "text": "A 2025 international PDF lists SAT 1060 as one of three alternatives. Because the current international webpage omits this route, do not automatically infer SAT-based eligibility for Fall 2028.",
+        "textKo": "2025년 국제지원 PDF는 SAT 1060을 세 대체 기준 중 하나로 제시합니다. 현재 국제지원 웹페이지에는 이 전형이 없어 2028년 SAT 자격을 자동으로 인정할 수 없습니다.",
+        "sourceIds": ["scenario-mssu-current", "scenario-mssu-guide"]
+      },
+      "satRange": null,
+      "entry": {
+        "program": "English, B.A.",
+        "programKo": "영문학 B.A.",
+        "unit": "Language and Literature",
+        "unitKo": "언어·문학 분야",
+        "text": "The official on-campus English B.A. offers Literary Studies and Professional/Technical Writing emphases. No lowest-entry Ontario cutoff is verified.",
+        "textKo": "공식 대면 영문학 B.A.에 문학연구·전문기술글쓰기 세부 과정이 있습니다. 온타리오 최저 입학점은 확인되지 않았습니다.",
+        "easierMajorVerified": false,
+        "sourceIds": ["scenario-mssu-english"]
+      },
+      "applicantScope": {
+        "text": "International first-year applicant; university evaluates foreign credentials. English proficiency, final graduation and program requirements remain separate.",
+        "textKo": "국제 신입생 지원 기준입니다. 대학의 해외 성적 평가, 영어 능력, 최종 졸업 및 전공 요건을 별도로 충족해야 합니다.",
+        "sourceIds": ["scenario-mssu-current", "scenario-mssu-guide"]
+      },
+      "sources": [
+        {
+          "id": "scenario-mssu-current",
+          "title": "International Incoming Student: Academic Requirements",
+          "url": "https://www.mssu.edu/admissions/international-incoming-students.php",
+          "publisher": "Missouri Southern State University",
+          "verified": "2026-10-22",
+          "cycle": "Current undergraduate admissions page; Fall 2028 reconfirmation required"
+        },
+        {
+          "id": "scenario-mssu-guide",
+          "title": "International Admissions Guide2025",
+          "url": "https://www.mssu.edu/admissions/files/International%20Admissions%20Guide_2025_2_WebVersion1.pdf",
+          "publisher": "Missouri Southern State University",
+          "verified": "2026-10-22",
+          "cycle": "2025 International Admissions Guide; current webpage differs"
+        },
+        {
+          "id": "scenario-mssu-english",
+          "title": "English Degree B.A.",
+          "url": "https://www.mssu.edu/academics/arts-sciences/language-literature/degree-ba-english.php",
+          "publisher": "Missouri Southern State University",
+          "verified": "2026-10-22",
+          "cycle": "Current undergraduate admissions page; Fall 2028 reconfirmation required"
+        }
+      ],
+      "notes": [
+        "Do not encode the 2025 SAT 1060 route as verified current eligibility: the current international admissions webpage lists only GPA 2.25 or top 50%."
+      ]
+    }
+  ],
+  "notes": [
+    "Fourteen additional universities researched using institution-owned official sources. No Ontario GPA conversion or admission odds were inferred.",
+    "Only Northern Iowa has a verified Ontario credential specific percentage minimum in this batch:75 cumulative in secondary academic subjects; not top-six Grade 12.",
+    "Wichita State has an explicit current international SAT alternative 1060 with each section 490. Overall SAT scores alone cannot determine section eligibility.",
+    "University of South Dakota specialized international page gives SAT 1070 OR GPA 2.6, but the generic page differs; satAlternative.verificationStatus is conflicting-sources. Exclude this from an automated confirmed-eligibility list until resolved.",
+    "Missouri Southern 2025 officialPDF gives SAT 1060 as alternative, but current webpage omits it; no structured current SAT alternative encoded.",
+    "All entry.easierMajorVerified values are false: a documented broad major is not proof of the least-selective major.",
+    "Ranks are null unless an institutional source explicitly identifies the 2026 U.S.News National Universities category and numeric position. Regional rankings must not be mixed into that ranking.",
+    "SAT ranges were left null rather than use an undated statistic or add section percentiles. These schools can be reference-pool entries, not fabricated grade × SAT fit matches.",
+    "TargetFall 2028 is unconfirmed except where a source explicitly extends policy; current and 2026–27 requirements must be labeled accordingly."
+  ]
+}
