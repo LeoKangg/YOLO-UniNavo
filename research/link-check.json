@@ -1,0 +1,834 @@
+{
+  "checkedAt": "2026-10-22T01:30:28.832Z",
+  "note": "HTTP reachability only. A 403/405 or timeout can be bot protection, not a broken URL; HTTP 200 does not prove claim accuracy.",
+  "results": [
+    {
+      "url": "https://academics.iu.edu/degrees/bloomington/bachelor-of-arts/history.html",
+      "status": 200,
+      "finalUrl": "https://academics.iu.edu/degrees/bloomington/bachelor-of-arts/history.html",
+      "ok": true
+    },
+    {
+      "url": "https://academics.iu.edu/degrees/bloomington/bachelor-of-arts/sociology.html",
+      "status": 200,
+      "finalUrl": "https://academics.iu.edu/degrees/bloomington/bachelor-of-arts/sociology.html",
+      "ok": true
+    },
+    {
+      "url": "https://admission.asu.edu/apply/first-year/admission",
+      "status": 200,
+      "finalUrl": "https://admission.asu.edu/apply/first-year/admission",
+      "ok": true
+    },
+    {
+      "url": "https://admission.asu.edu/apply/international/first-year",
+      "status": 200,
+      "finalUrl": "https://admission.asu.edu/apply/international/first-year",
+      "ok": true
+    },
+    {
+      "url": "https://admission.asu.edu/apply/international/undergrad/english-proficiency",
+      "status": 200,
+      "finalUrl": "https://admission.asu.edu/apply/international/undergrad/english-proficiency",
+      "ok": true
+    },
+    {
+      "url": "https://admission.asu.edu/contact/faqs",
+      "status": 200,
+      "finalUrl": "https://admission.asu.edu/contact/faqs",
+      "ok": true
+    },
+    {
+      "url": "https://admission.asu.edu/cost-aid/international",
+      "status": 200,
+      "finalUrl": "https://admission.asu.edu/cost-aid/international",
+      "ok": true
+    },
+    {
+      "url": "https://admission.asu.edu/international/english-speaking-countries",
+      "status": 200,
+      "finalUrl": "https://admission.asu.edu/international/english-speaking-countries",
+      "ok": true
+    },
+    {
+      "url": "https://admission.universityofcalifornia.edu/admission-requirements/transfer-requirements/",
+      "status": 200,
+      "finalUrl": "https://admission.universityofcalifornia.edu/admission-requirements/transfer-requirements/",
+      "ok": true
+    },
+    {
+      "url": "https://admission.universityofcalifornia.edu/admission-requirements/transfer-requirements/uc-transfer-programs/transfer-admission-guarantee-tag.html",
+      "status": 200,
+      "finalUrl": "https://admission.universityofcalifornia.edu/admission-requirements/transfer-requirements/uc-transfer-programs/transfer-admission-guarantee-tag.html",
+      "ok": true
+    },
+    {
+      "url": "https://admissions.msu.edu/apply/first-year/advanced-credits",
+      "status": 200,
+      "finalUrl": "https://admissions.msu.edu/apply/first-year/advanced-credits",
+      "ok": true
+    },
+    {
+      "url": "https://admissions.msu.edu/apply/international",
+      "status": 200,
+      "finalUrl": "https://admissions.msu.edu/apply/international",
+      "ok": true
+    },
+    {
+      "url": "https://admissions.msu.edu/apply/international/admission-criteria",
+      "status": 200,
+      "finalUrl": "https://admissions.msu.edu/apply/international/admission-criteria",
+      "ok": true
+    },
+    {
+      "url": "https://admissions.msu.edu/apply/international/apply-now",
+      "status": 200,
+      "finalUrl": "https://admissions.msu.edu/apply/international/apply-now",
+      "ok": true
+    },
+    {
+      "url": "https://admissions.msu.edu/apply/international/dates-and-deadlines",
+      "status": 200,
+      "finalUrl": "https://admissions.msu.edu/apply/international/dates-and-deadlines",
+      "ok": true
+    },
+    {
+      "url": "https://admissions.msu.edu/apply/international/language-requirements",
+      "status": 200,
+      "finalUrl": "https://admissions.msu.edu/apply/international/language-requirements",
+      "ok": true
+    },
+    {
+      "url": "https://admissions.msu.edu/apply/international/transcript-requirements",
+      "status": 200,
+      "finalUrl": "https://admissions.msu.edu/apply/international/transcript-requirements",
+      "ok": true
+    },
+    {
+      "url": "https://admissions.msu.edu/cost-aid",
+      "status": 200,
+      "finalUrl": "https://admissions.msu.edu/cost-aid",
+      "ok": true
+    },
+    {
+      "url": "https://admissions.msu.edu/cost-aid/scholarships/international",
+      "status": 200,
+      "finalUrl": "https://admissions.msu.edu/cost-aid/scholarships/international",
+      "ok": true
+    },
+    {
+      "url": "https://apcentral.collegeboard.org/exam-administration-ordering-scores/exam-dates",
+      "status": 200,
+      "finalUrl": "https://apcentral.collegeboard.org/exam-administration-ordering-scores/exam-dates",
+      "ok": true
+    },
+    {
+      "url": "https://apcentral.collegeboard.org/exam-administration-ordering-scores/ordering-fees/how-to-ap-registration-ordering/order-ap-exams",
+      "status": 200,
+      "finalUrl": "https://apcentral.collegeboard.org/exam-administration-ordering-scores/ordering-fees/how-to-ap-registration-ordering/order-ap-exams",
+      "ok": true
+    },
+    {
+      "url": "https://apstudents.collegeboard.org/about-ap-scores",
+      "status": 200,
+      "finalUrl": "https://apstudents.collegeboard.org/about-ap-scores",
+      "ok": true
+    },
+    {
+      "url": "https://apstudents.collegeboard.org/courses/ap-english-language-and-composition",
+      "status": 200,
+      "finalUrl": "https://apstudents.collegeboard.org/courses/ap-english-language-and-composition",
+      "ok": true
+    },
+    {
+      "url": "https://apstudents.collegeboard.org/courses/ap-microeconomics",
+      "status": 200,
+      "finalUrl": "https://apstudents.collegeboard.org/courses/ap-microeconomics",
+      "ok": true
+    },
+    {
+      "url": "https://apstudents.collegeboard.org/courses/ap-psychology",
+      "status": 200,
+      "finalUrl": "https://apstudents.collegeboard.org/courses/ap-psychology",
+      "ok": true
+    },
+    {
+      "url": "https://apstudents.collegeboard.org/courses/ap-statistics",
+      "status": 200,
+      "finalUrl": "https://apstudents.collegeboard.org/courses/ap-statistics",
+      "ok": true
+    },
+    {
+      "url": "https://apstudents.collegeboard.org/help-center/can-i-take-ap-exam-if-i-havent-taken-ap-course",
+      "status": 200,
+      "finalUrl": "https://apstudents.collegeboard.org/help-center/can-i-take-ap-exam-if-i-havent-taken-ap-course",
+      "ok": true
+    },
+    {
+      "url": "https://apstudents.collegeboard.org/help-center/im-homeschooled-how-can-i-take-ap-exam",
+      "status": 200,
+      "finalUrl": "https://apstudents.collegeboard.org/help-center/im-homeschooled-how-can-i-take-ap-exam",
+      "ok": true
+    },
+    {
+      "url": "https://blog.collegeboard.org/what-is-an-sat-superscore",
+      "status": 200,
+      "finalUrl": "https://blog.collegeboard.org/what-is-an-sat-superscore",
+      "ok": true
+    },
+    {
+      "url": "https://bloomington.iu.edu/admissions/apply/freshman/exam-credits/ap-exam-credit.html",
+      "status": 200,
+      "finalUrl": "https://bloomington.iu.edu/admissions/apply/freshman/exam-credits/ap-exam-credit.html",
+      "ok": true
+    },
+    {
+      "url": "https://bloomington.iu.edu/admissions/apply/international/deadlines.html",
+      "status": 200,
+      "finalUrl": "https://bloomington.iu.edu/admissions/apply/international/deadlines.html",
+      "ok": true
+    },
+    {
+      "url": "https://bloomington.iu.edu/admissions/apply/international/english-proficiency.html",
+      "status": 200,
+      "finalUrl": "https://bloomington.iu.edu/admissions/apply/international/english-proficiency.html",
+      "ok": true
+    },
+    {
+      "url": "https://bloomington.iu.edu/admissions/apply/international/freshman/",
+      "status": 200,
+      "finalUrl": "https://bloomington.iu.edu/admissions/apply/international/freshman/",
+      "ok": true
+    },
+    {
+      "url": "https://bloomington.iu.edu/admissions/apply/international/freshman/admission-standards.html",
+      "status": 200,
+      "finalUrl": "https://bloomington.iu.edu/admissions/apply/international/freshman/admission-standards.html",
+      "ok": true
+    },
+    {
+      "url": "https://bloomington.iu.edu/admissions/apply/international/transcripts.html",
+      "status": 200,
+      "finalUrl": "https://bloomington.iu.edu/admissions/apply/international/transcripts.html",
+      "ok": true
+    },
+    {
+      "url": "https://bloomington.iu.edu/admissions/apply/steps.html?description=freshman&location=international",
+      "status": 200,
+      "finalUrl": "https://bloomington.iu.edu/admissions/apply/steps.html?description=freshman&location=international",
+      "ok": true
+    },
+    {
+      "url": "https://bloomington.iu.edu/admissions/class-profile.html",
+      "status": 200,
+      "finalUrl": "https://bloomington.iu.edu/admissions/class-profile.html",
+      "ok": true
+    },
+    {
+      "url": "https://bloomington.iu.edu/admissions/paths/",
+      "status": 200,
+      "finalUrl": "https://bloomington.iu.edu/admissions/paths/",
+      "ok": true
+    },
+    {
+      "url": "https://bloomington.iu.edu/cost-aid/cost-attendance/international/undergraduate.html",
+      "status": 200,
+      "finalUrl": "https://bloomington.iu.edu/cost-aid/cost-attendance/international/undergraduate.html",
+      "ok": true
+    },
+    {
+      "url": "https://bloomington.iu.edu/cost-aid/financial-aid/international.html",
+      "status": 200,
+      "finalUrl": "https://bloomington.iu.edu/cost-aid/financial-aid/international.html",
+      "ok": true
+    },
+    {
+      "url": "https://bulletins.nyu.edu/nyu/cost-attendance/",
+      "status": 200,
+      "finalUrl": "https://bulletins.nyu.edu/nyu/cost-attendance/",
+      "ok": true
+    },
+    {
+      "url": "https://bulletins.nyu.edu/undergraduate/arts-science/admissions/",
+      "status": 200,
+      "finalUrl": "https://bulletins.nyu.edu/undergraduate/arts-science/admissions/",
+      "ok": true
+    },
+    {
+      "url": "https://bulletins.nyu.edu/undergraduate/arts-science/programs/",
+      "status": 200,
+      "finalUrl": "https://bulletins.nyu.edu/undergraduate/arts-science/programs/",
+      "ok": true
+    },
+    {
+      "url": "https://bulletins.nyu.edu/undergraduate/arts-science/programs/sociology-ba/",
+      "status": 200,
+      "finalUrl": "https://bulletins.nyu.edu/undergraduate/arts-science/programs/sociology-ba/",
+      "ok": true
+    },
+    {
+      "url": "https://bulletins.psu.edu/undergraduate/colleges/liberal-arts/anthropology-ba/",
+      "status": 200,
+      "finalUrl": "https://bulletins.psu.edu/undergraduate/colleges/liberal-arts/anthropology-ba/",
+      "ok": true
+    },
+    {
+      "url": "https://bulletins.psu.edu/undergraduate/colleges/liberal-arts/sociology-ba/",
+      "status": 200,
+      "finalUrl": "https://bulletins.psu.edu/undergraduate/colleges/liberal-arts/sociology-ba/",
+      "ok": true
+    },
+    {
+      "url": "https://bulletins.psu.edu/undergraduate/general-information/academic-information/undergraduate-degrees-requirements/entrance-major/entrance-major.pdf",
+      "status": 200,
+      "finalUrl": "https://bulletins.psu.edu/undergraduate/general-information/academic-information/undergraduate-degrees-requirements/entrance-major/entrance-major.pdf",
+      "ok": true
+    },
+    {
+      "url": "https://cas.uoregon.edu/advising/cas-major-minor-resources",
+      "status": 200,
+      "finalUrl": "https://cas.uoregon.edu/advising/cas-major-minor-resources",
+      "ok": true
+    },
+    {
+      "url": "https://catalog.arizona.edu/policy/courses-credit/credit/credit-exam",
+      "status": 200,
+      "finalUrl": "https://catalog.arizona.edu/policy/courses-credit/credit/credit-exam",
+      "ok": true
+    },
+    {
+      "url": "https://catalog.asu.edu/credit_exam",
+      "status": 200,
+      "finalUrl": "https://catalog.asu.edu/credit_exam",
+      "ok": true
+    },
+    {
+      "url": "https://catalog.colorado.edu/undergraduate/admissions/credit-examination/",
+      "status": 200,
+      "finalUrl": "https://catalog.colorado.edu/undergraduate/admissions/credit-examination/",
+      "ok": true
+    },
+    {
+      "url": "https://catalog.colorado.edu/undergraduate/admissions/general-admission-information/",
+      "status": 200,
+      "finalUrl": "https://catalog.colorado.edu/undergraduate/admissions/general-admission-information/",
+      "ok": true
+    },
+    {
+      "url": "https://catalog.colorado.edu/undergraduate/colleges-schools/arts-sciences/policies-requirements/",
+      "status": 200,
+      "finalUrl": "https://catalog.colorado.edu/undergraduate/colleges-schools/arts-sciences/policies-requirements/",
+      "ok": true
+    },
+    {
+      "url": "https://catalog.colorado.edu/undergraduate/colleges-schools/arts-sciences/programs-study/sociology/sociology-bachelor-arts-ba/",
+      "status": 200,
+      "finalUrl": "https://catalog.colorado.edu/undergraduate/colleges-schools/arts-sciences/programs-study/sociology/sociology-bachelor-arts-ba/",
+      "ok": true
+    },
+    {
+      "url": "https://catalog.iastate.edu/admissions/",
+      "status": 200,
+      "finalUrl": "https://catalog.iastate.edu/admissions/",
+      "ok": true
+    },
+    {
+      "url": "https://catalog.uoregon.edu/arts-sciences/social-sciences/history/ug-history/",
+      "status": 200,
+      "finalUrl": "https://catalog.uoregon.edu/arts-sciences/social-sciences/history/ug-history/",
+      "ok": true
+    },
+    {
+      "url": "https://counselors.collegeboard.org/college-application/early-decision-action",
+      "status": 200,
+      "finalUrl": "https://counselors.collegeboard.org/college-application/early-decision-action",
+      "ok": true
+    },
+    {
+      "url": "https://curricularaffairs.arizona.edu/non-academic-fees-list",
+      "status": 200,
+      "finalUrl": "https://curricularaffairs.arizona.edu/non-academic-fees-list",
+      "ok": true
+    },
+    {
+      "url": "https://data.uoregon.edu/uo-overview/common-data-set",
+      "status": 200,
+      "finalUrl": "https://data.uoregon.edu/uo-overview/common-data-set",
+      "ok": true
+    },
+    {
+      "url": "https://degrees.apps.asu.edu/bachelors/major/ASU00/LAHISBA/title/fetchpdf",
+      "status": 200,
+      "finalUrl": "https://degrees.asu.edu/bachelors/major/ASU00/LAHISBA/title/fetchpdf",
+      "ok": true
+    },
+    {
+      "url": "https://degrees.apps.asu.edu/bachelors/major/ASU00/LASOCBS/title/fetchpdf?init=false&nopassive=true",
+      "status": 200,
+      "finalUrl": "https://degrees.asu.edu/bachelors/major/ASU00/LASOCBS/title/fetchpdf?init=false&nopassive=true",
+      "ok": true
+    },
+    {
+      "url": "https://eller.arizona.edu/programs/undergraduate/admissions/first-years",
+      "status": 200,
+      "finalUrl": "https://eller.arizona.edu/programs/undergraduate/admissions/first-years",
+      "ok": true
+    },
+    {
+      "url": "https://financialaid.arizona.edu/2026-2027-terms-and-conditions",
+      "status": 200,
+      "finalUrl": "https://financialaid.arizona.edu/2026-2027-terms-and-conditions",
+      "ok": true
+    },
+    {
+      "url": "https://financialaid.iastate.edu/applying-for-aid/international-students/",
+      "status": 200,
+      "finalUrl": "https://financialaid.iastate.edu/applying-for-aid/international-students/",
+      "ok": true
+    },
+    {
+      "url": "https://financialaid.iastate.edu/getting-started/cost/cost-of-attendance/undergraduate-students/",
+      "status": 200,
+      "finalUrl": "https://financialaid.iastate.edu/getting-started/cost/cost-of-attendance/undergraduate-students/",
+      "ok": true
+    },
+    {
+      "url": "https://financialaid.uoregon.edu/international-student-cost-attendance",
+      "status": 200,
+      "finalUrl": "https://financialaid.uoregon.edu/international-student-cost-attendance",
+      "ok": true
+    },
+    {
+      "url": "https://financialaid.uoregon.edu/scholarships_faq",
+      "status": 200,
+      "finalUrl": "https://financialaid.uoregon.edu/scholarships_faq",
+      "ok": true
+    },
+    {
+      "url": "https://global.psu.edu/page/financial-guarantee-requirements",
+      "status": 200,
+      "finalUrl": "https://global.psu.edu/page/financial-guarantee-requirements",
+      "ok": true
+    },
+    {
+      "url": "https://health.uoregon.edu/international-student-plan",
+      "status": 200,
+      "finalUrl": "https://health.uoregon.edu/international-student-plan",
+      "ok": true
+    },
+    {
+      "url": "https://history.arizona.edu/declare",
+      "status": 200,
+      "finalUrl": "https://history.arizona.edu/declare",
+      "ok": true
+    },
+    {
+      "url": "https://international-admissions.arizona.edu/apply/main-campus-first-year",
+      "status": 200,
+      "finalUrl": "https://international-admissions.arizona.edu/apply/main-campus-first-year",
+      "ok": true
+    },
+    {
+      "url": "https://international-admissions.arizona.edu/english-proficiency",
+      "status": 200,
+      "finalUrl": "https://international-admissions.arizona.edu/english-proficiency",
+      "ok": true
+    },
+    {
+      "url": "https://international-admissions.arizona.edu/sites/default/files/2025-08/brochure_2025_undergrad.pdf",
+      "status": 200,
+      "finalUrl": "https://international-admissions.arizona.edu/sites/default/files/2025-08/brochure_2025_undergrad.pdf",
+      "ok": true
+    },
+    {
+      "url": "https://international.arizona.edu/international-students/new-student-financial-guarantee-calculator",
+      "status": 200,
+      "finalUrl": "https://international.arizona.edu/international-students/new-student-financial-guarantee-calculator",
+      "ok": true
+    },
+    {
+      "url": "https://iso.mit.edu/getting-started/requesting-an-i-20-or-ds-2019/paying-the-i-901-sevis-fee/",
+      "status": 200,
+      "finalUrl": "https://iso.mit.edu/getting-started/requesting-an-i-20-or-ds-2019/paying-the-i-901-sevis-fee/",
+      "ok": true
+    },
+    {
+      "url": "https://las.iastate.edu/academics/majors-minors-and-certificates/",
+      "status": 200,
+      "finalUrl": "https://las.iastate.edu/academics/majors-minors-and-certificates/",
+      "ok": true
+    },
+    {
+      "url": "https://meet.nyu.edu/academics/how-to-apply-undecided-to-nyu/",
+      "status": 200,
+      "finalUrl": "https://meet.nyu.edu/academics/how-to-apply-undecided-to-nyu/",
+      "ok": true
+    },
+    {
+      "url": "https://meet.nyu.edu/advice/application-tips/inside-the-2026-2027-common-application-for-nyu/",
+      "status": 200,
+      "finalUrl": "https://meet.nyu.edu/advice/application-tips/inside-the-2026-2027-common-application-for-nyu/",
+      "ok": true
+    },
+    {
+      "url": "https://meet.nyu.edu/advice/early-decision/how-i-knew-early-decision-was-right-for-me/",
+      "status": 200,
+      "finalUrl": "https://meet.nyu.edu/advice/early-decision/how-i-knew-early-decision-was-right-for-me/",
+      "ok": true
+    },
+    {
+      "url": "https://meet.nyu.edu/advice/financial-your-education/what-you-need-to-know-about-applying-for-financial-aid/",
+      "status": 200,
+      "finalUrl": "https://meet.nyu.edu/advice/financial-your-education/what-you-need-to-know-about-applying-for-financial-aid/",
+      "ok": true
+    },
+    {
+      "url": "https://meet.nyu.edu/advice/test-optional-at-nyu-what-it-is-and-isnt/",
+      "status": 200,
+      "finalUrl": "https://meet.nyu.edu/advice/test-optional-at-nyu-what-it-is-and-isnt/",
+      "ok": true
+    },
+    {
+      "url": "https://nyuad.nyu.edu/en/apply/undergraduate/apply/application-fee.html",
+      "status": 200,
+      "finalUrl": "https://nyuad.nyu.edu/en/apply/undergraduate/apply/application-fee.html",
+      "ok": true
+    },
+    {
+      "url": "https://nyuad.nyu.edu/en/apply/undergraduate/apply/entry-requirements.html",
+      "status": 200,
+      "finalUrl": "https://nyuad.nyu.edu/en/apply/undergraduate/apply/entry-requirements.html",
+      "ok": true
+    },
+    {
+      "url": "https://reg.msu.edu/academicprograms/text.aspx?s4090=&section=129",
+      "status": 200,
+      "finalUrl": "https://reg.msu.edu/academicprograms/text.aspx?s4090=&section=129",
+      "ok": true
+    },
+    {
+      "url": "https://registrar.uoregon.edu/transfer/standardized-tests",
+      "status": 200,
+      "finalUrl": "https://registrar.uoregon.edu/transfer/standardized-tests",
+      "ok": true
+    },
+    {
+      "url": "https://satsuite.collegeboard.org/k12-educators/about/understand-scores-benchmarks/score-structure",
+      "status": 200,
+      "finalUrl": "https://satsuite.collegeboard.org/k12-educators/about/understand-scores-benchmarks/score-structure",
+      "ok": true
+    },
+    {
+      "url": "https://satsuite.collegeboard.org/practice/practice-tests/bluebook",
+      "status": 200,
+      "finalUrl": "https://satsuite.collegeboard.org/practice/practice-tests/bluebook",
+      "ok": true
+    },
+    {
+      "url": "https://satsuite.collegeboard.org/sat/dates-deadlines",
+      "status": 200,
+      "finalUrl": "https://satsuite.collegeboard.org/sat/dates-deadlines",
+      "ok": true
+    },
+    {
+      "url": "https://satsuite.collegeboard.org/sat/registration",
+      "status": 200,
+      "finalUrl": "https://satsuite.collegeboard.org/sat/registration",
+      "ok": true
+    },
+    {
+      "url": "https://satsuite.collegeboard.org/scores/score-release-dates",
+      "status": 200,
+      "finalUrl": "https://satsuite.collegeboard.org/scores/score-release-dates",
+      "ok": true
+    },
+    {
+      "url": "https://satsuite.collegeboard.org/scores/sending-sat-scores/additional/score-choice",
+      "status": 200,
+      "finalUrl": "https://satsuite.collegeboard.org/scores/sending-sat-scores/additional/score-choice",
+      "ok": true
+    },
+    {
+      "url": "https://socialsciences.uoregon.edu/sociology/apply/declare-major-minor",
+      "status": 200,
+      "finalUrl": "https://socialsciences.uoregon.edu/sociology/apply/declare-major-minor",
+      "ok": true
+    },
+    {
+      "url": "https://sociology.arizona.edu/ba-sociology",
+      "status": 200,
+      "finalUrl": "https://sociology.arizona.edu/ba-sociology",
+      "ok": true
+    },
+    {
+      "url": "https://studentaid.gov/understand-aid/eligibility/requirements/non-us-citizens",
+      "status": 200,
+      "finalUrl": "https://studentaid.gov/understand-aid/eligibility/requirements/non-us-citizens",
+      "ok": true
+    },
+    {
+      "url": "https://studyinthestates.dhs.gov/sites/default/files/I-901_SEVIS_Fee_Payment_Tutorial_Script.pdf",
+      "status": 200,
+      "finalUrl": "https://studyinthestates.dhs.gov/sites/default/files/I-901_SEVIS_Fee_Payment_Tutorial_Script.pdf",
+      "ok": true
+    },
+    {
+      "url": "https://thecriticalreader.com/product/the-critical-reader-sixth-edition/",
+      "status": 200,
+      "finalUrl": "https://thecriticalreader.com/product/the-critical-reader-sixth-edition/",
+      "ok": true
+    },
+    {
+      "url": "https://thecriticalreader.com/product/the-ultimate-guide-to-sat-grammar-6th-edition/",
+      "status": 200,
+      "finalUrl": "https://thecriticalreader.com/product/the-ultimate-guide-to-sat-grammar-6th-edition/",
+      "ok": true
+    },
+    {
+      "url": "https://tisch.nyu.edu/dance/application-requirements.html",
+      "status": 200,
+      "finalUrl": "https://tisch.nyu.edu/dance/application-requirements.html",
+      "ok": true
+    },
+    {
+      "url": "https://travel.state.gov/content/travel/en/us-visas/study/student-visa.html",
+      "status": 403,
+      "finalUrl": "https://travel.state.gov/content/travel/en/us-visas/study/student-visa.html",
+      "ok": false
+    },
+    {
+      "url": "https://tuition.psu.edu/estimated-future-tuition-and-fee-rates",
+      "status": 403,
+      "finalUrl": "https://tuition.psu.edu/estimated-future-tuition-and-fee-rates",
+      "ok": false
+    },
+    {
+      "url": "https://uair.arizona.edu/sites/default/files/2026-06/CDS_PDF_2025-26_v02_RE-PRINT.pdf",
+      "status": 200,
+      "finalUrl": "https://uair.arizona.edu/sites/default/files/2026-06/CDS_PDF_2025-26_v02_RE-PRINT.pdf",
+      "ok": true
+    },
+    {
+      "url": "https://uoia.asu.edu/sites/g/files/litvpz1436/files/2026-06/CDS%202025-26%20-%20ASU%20Campus%20Immersion.pdf",
+      "status": 200,
+      "finalUrl": "https://uoia.asu.edu/sites/g/files/litvpz1436/files/2026-06/CDS%202025-26%20-%20ASU%20Campus%20Immersion.pdf",
+      "ok": true
+    },
+    {
+      "url": "https://www.arizona.edu/admissions/deadlines",
+      "status": 200,
+      "finalUrl": "https://www.arizona.edu/admissions/deadlines",
+      "ok": true
+    },
+    {
+      "url": "https://www.arizona.edu/admissions/undergraduate/first-year",
+      "status": 200,
+      "finalUrl": "https://www.arizona.edu/admissions/undergraduate/first-year",
+      "ok": true
+    },
+    {
+      "url": "https://www.bursar.psu.edu/fees",
+      "status": 403,
+      "finalUrl": "https://www.bursar.psu.edu/fees",
+      "ok": false
+    },
+    {
+      "url": "https://www.collegeessayguy.com/guides/the-free-guide",
+      "status": 403,
+      "finalUrl": "https://www.collegeessayguy.com/guides/the-free-guide",
+      "ok": false
+    },
+    {
+      "url": "https://www.colorado.edu/academics/programs/majors",
+      "status": 200,
+      "finalUrl": "https://www.colorado.edu/academics/programs/majors",
+      "ok": true
+    },
+    {
+      "url": "https://www.colorado.edu/admissions/cost/scholarships-financial-aid/international",
+      "status": 200,
+      "finalUrl": "https://www.colorado.edu/admissions/cost/scholarships-financial-aid/international",
+      "ok": true
+    },
+    {
+      "url": "https://www.colorado.edu/admissions/process/first-year/apply",
+      "status": 200,
+      "finalUrl": "https://www.colorado.edu/admissions/process/first-year/apply",
+      "ok": true
+    },
+    {
+      "url": "https://www.colorado.edu/admissions/process/first-year/plan",
+      "status": 200,
+      "finalUrl": "https://www.colorado.edu/admissions/process/first-year/plan",
+      "ok": true
+    },
+    {
+      "url": "https://www.colorado.edu/admissions/process/international/apply",
+      "status": 200,
+      "finalUrl": "https://www.colorado.edu/admissions/process/international/apply",
+      "ok": true
+    },
+    {
+      "url": "https://www.colorado.edu/admissions/process/international/faqs",
+      "status": 200,
+      "finalUrl": "https://www.colorado.edu/admissions/process/international/faqs",
+      "ok": true
+    },
+    {
+      "url": "https://www.colorado.edu/admissions/process/international/plan/english-proficiency",
+      "status": 200,
+      "finalUrl": "https://www.colorado.edu/admissions/process/international/plan/english-proficiency",
+      "ok": true
+    },
+    {
+      "url": "https://www.colorado.edu/bursar/costs/undergraduate",
+      "status": 200,
+      "finalUrl": "https://www.colorado.edu/bursar/costs/undergraduate",
+      "ok": true
+    },
+    {
+      "url": "https://www.commonapp.org/apply/first-year-students/",
+      "status": 200,
+      "finalUrl": "https://www.commonapp.org/apply/first-year-students/",
+      "ok": true
+    },
+    {
+      "url": "https://www.commonapp.org/files/webinar_decks/Counselor_Convo_International.pdf",
+      "status": 200,
+      "finalUrl": "https://www.commonapp.org/files/webinar_decks/Counselor_Convo_International.pdf",
+      "ok": true
+    },
+    {
+      "url": "https://www.iastate.edu/admission-and-aid/admissions/first-year-students/credit-by-exam",
+      "status": 200,
+      "finalUrl": "https://www.iastate.edu/admission-and-aid/admissions/first-year-students/credit-by-exam",
+      "ok": true
+    },
+    {
+      "url": "https://www.iastate.edu/admission-and-aid/admissions/international-admissions/english-proficiency-requirement",
+      "status": 200,
+      "finalUrl": "https://www.iastate.edu/admission-and-aid/admissions/international-admissions/english-proficiency-requirement",
+      "ok": true
+    },
+    {
+      "url": "https://www.iastate.edu/admission-and-aid/admissions/international-admissions/international-first-year-requirements",
+      "status": 200,
+      "finalUrl": "https://www.iastate.edu/admission-and-aid/admissions/international-admissions/international-first-year-requirements",
+      "ok": true
+    },
+    {
+      "url": "https://www.iastate.edu/admission-and-aid/admissions/international-admissions/international-merit-scholarships",
+      "status": 200,
+      "finalUrl": "https://www.iastate.edu/admission-and-aid/admissions/international-admissions/international-merit-scholarships",
+      "ok": true
+    },
+    {
+      "url": "https://www.iastate.edu/admission-and-aid/admissions/international-students/international-undergraduate-application-information",
+      "status": 200,
+      "finalUrl": "https://www.iastate.edu/admission-and-aid/admissions/international-students/international-undergraduate-application-information",
+      "ok": true
+    },
+    {
+      "url": "https://www.ontario.ca/document/ontario-schools-kindergarten-grade-12-policy-and-program-requirements/secondary-school-courses-and-related-procedures",
+      "status": 200,
+      "finalUrl": "https://www.ontario.ca/document/ontario-schools-kindergarten-grade-12-policy-and-program-requirements/secondary-school-courses-and-related-procedures",
+      "ok": true
+    },
+    {
+      "url": "https://www.ontario.ca/page/earning-your-high-school-diploma",
+      "status": 200,
+      "finalUrl": "https://www.ontario.ca/page/earning-your-high-school-diploma",
+      "ok": true
+    },
+    {
+      "url": "https://www.penguinrandomhouse.com/books/807032/princeton-review-ap-psychology-premium-prep-24th-edition-by-the-princeton-review/",
+      "status": 200,
+      "finalUrl": "https://www.penguinrandomhouse.com/books/807032/princeton-review-ap-psychology-premium-prep-24th-edition-by-the-princeton-review/",
+      "ok": true
+    },
+    {
+      "url": "https://www.psu.edu/admission/undergraduate/credit/ap-credit",
+      "status": 200,
+      "finalUrl": "https://www.psu.edu/admission/undergraduate/credit/ap-credit",
+      "ok": true
+    },
+    {
+      "url": "https://www.psu.edu/resources/first-year-students/application-review",
+      "status": 200,
+      "finalUrl": "https://www.psu.edu/resources/first-year-students/application-review",
+      "ok": true
+    },
+    {
+      "url": "https://www.psu.edu/resources/first-year-students/eligibility",
+      "status": 200,
+      "finalUrl": "https://www.psu.edu/resources/first-year-students/eligibility",
+      "ok": true
+    },
+    {
+      "url": "https://www.psu.edu/resources/first-year-students/requirements",
+      "status": 200,
+      "finalUrl": "https://www.psu.edu/resources/first-year-students/requirements",
+      "ok": true
+    },
+    {
+      "url": "https://www.psu.edu/resources/international-students/admission-requirements",
+      "status": 200,
+      "finalUrl": "https://www.psu.edu/resources/international-students/admission-requirements",
+      "ok": true
+    },
+    {
+      "url": "https://www.psu.edu/resources/international-students/credentials/canada-except-quebec",
+      "status": 200,
+      "finalUrl": "https://www.psu.edu/resources/international-students/credentials/canada-except-quebec",
+      "ok": true
+    },
+    {
+      "url": "https://www.psu.edu/resources/international-students/deadlines",
+      "status": 200,
+      "finalUrl": "https://www.psu.edu/resources/international-students/deadlines",
+      "ok": true
+    },
+    {
+      "url": "https://www.psu.edu/resources/international-students/steps-to-apply",
+      "status": 200,
+      "finalUrl": "https://www.psu.edu/resources/international-students/steps-to-apply",
+      "ok": true
+    },
+    {
+      "url": "https://www.simonandschuster.net/books/AP-Statistics-Premium-2027-9-Practice-Tests-%2B-Comprehensive-Review-%2B-Online-Practice/Martin-Sternstein/Barrons-AP-Prep/9798349701566",
+      "status": 200,
+      "finalUrl": "https://www.simonandschuster.net/books/AP-Statistics-Premium-2027-9-Practice-Tests-+-Comprehensive-Review-+-Online-Practice/Martin-Sternstein/Barrons-AP-Prep/9798349701566",
+      "ok": true
+    },
+    {
+      "url": "https://www.sourcebooks.com/9781464234248-college-essay-essentials-tp.html",
+      "status": 200,
+      "finalUrl": "https://www.sourcebooks.com/9781464234248-college-essay-essentials-tp.html",
+      "ok": true
+    },
+    {
+      "url": "https://www.sourcebooks.com/9781492635123-college-essay-essentials-tp.html",
+      "status": 200,
+      "finalUrl": "https://www.sourcebooks.com/9781492635123-college-essay-essentials-tp.html",
+      "ok": true
+    },
+    {
+      "url": "https://www.uoregon.edu/admissions/undergraduate/find-your-path/international-students/",
+      "status": 200,
+      "finalUrl": "https://www.uoregon.edu/admissions/undergraduate/find-your-path/international-students/",
+      "ok": true
+    },
+    {
+      "url": "https://www.uoregon.edu/admissions/undergraduate/find-your-path/international/requirements/english-proficiency/",
+      "status": 200,
+      "finalUrl": "https://www.uoregon.edu/admissions/undergraduate/find-your-path/international/requirements/english-proficiency/",
+      "ok": true
+    },
+    {
+      "url": "https://www2.yrdsb.ca/schools-programs/secondary-school/course-planning-and-graduation/choose-my-courses/course-types-and",
+      "status": 200,
+      "finalUrl": "https://www2.yrdsb.ca/schools-programs/secondary-school/course-planning-and-graduation/choose-my-courses/course-types-and",
+      "ok": true
+    }
+  ]
+}

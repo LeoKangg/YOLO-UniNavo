@@ -1,0 +1,750 @@
+[
+  {
+    "id": "asu",
+    "name": "Arizona State University",
+    "city": "Tempe",
+    "state": "Arizona",
+    "type": "Public research university",
+    "recognition": "High — editorial comparison, not an admissions metric",
+    "sources": [
+      {
+        "id": "asu-intl",
+        "title": "International first-year student admission",
+        "publisher": "Arizona State University",
+        "url": "https://admission.asu.edu/apply/international/first-year",
+        "verified": "2026-10-21",
+        "cycle": "Current policy; deadlines displayed for Fall 2026/Spring 2027"
+      },
+      {
+        "id": "asu-first",
+        "title": "First-year admission requirements",
+        "publisher": "Arizona State University",
+        "url": "https://admission.asu.edu/apply/first-year/admission",
+        "verified": "2026-10-21",
+        "cycle": "Fall 2027"
+      },
+      {
+        "id": "asu-english",
+        "title": "English proficiency",
+        "publisher": "Arizona State University",
+        "url": "https://admission.asu.edu/apply/international/undergrad/english-proficiency",
+        "verified": "2026-10-21",
+        "cycle": "Current policy; TOEFL split at January 21, 2026"
+      },
+      {
+        "id": "asu-countries",
+        "title": "English speaking country list",
+        "publisher": "Arizona State University",
+        "url": "https://admission.asu.edu/international/english-speaking-countries",
+        "verified": "2026-10-21",
+        "cycle": "Current undated policy"
+      },
+      {
+        "id": "asu-ap",
+        "title": "Credit by examination",
+        "publisher": "Arizona State University Academic Catalog",
+        "url": "https://catalog.asu.edu/credit_exam",
+        "verified": "2026-10-21",
+        "cycle": "Current catalog; recheck for 2028"
+      },
+      {
+        "id": "asu-cost",
+        "title": "International student cost of college",
+        "publisher": "Arizona State University",
+        "url": "https://admission.asu.edu/cost-aid/international",
+        "verified": "2026-10-21",
+        "cycle": "2026–27 expenses; insurance component still 2025–26"
+      },
+      {
+        "id": "asu-history",
+        "title": "History, BA",
+        "publisher": "Arizona State University",
+        "url": "https://degrees.apps.asu.edu/bachelors/major/ASU00/LAHISBA/title/fetchpdf",
+        "verified": "2026-10-21",
+        "cycle": "2026–27 curriculum"
+      },
+      {
+        "id": "asu-sociology",
+        "title": "Sociology, BS — Tempe",
+        "publisher": "Arizona State University",
+        "url": "https://degrees.apps.asu.edu/bachelors/major/ASU00/LASOCBS/title/fetchpdf?init=false&nopassive=true",
+        "verified": "2026-10-21",
+        "cycle": "2026–27 curriculum"
+      },
+      {
+        "id": "asu-faq",
+        "title": "Admission FAQs",
+        "publisher": "Arizona State University",
+        "url": "https://admission.asu.edu/contact/faqs",
+        "verified": "2026-10-21",
+        "cycle": "Current undated policy"
+      },
+      {
+        "id": "asu-cds-2025",
+        "title": "Common Data Set 2025–2026 — ASU Campus Immersion",
+        "publisher": "Arizona State University, University Office of Institutional Analysis",
+        "url": "https://uoia.asu.edu/sites/g/files/litvpz1436/files/2026-06/CDS%202025-26%20-%20ASU%20Campus%20Immersion.pdf",
+        "verified": "2026-10-21",
+        "cycle": "2025–26 CDS; Fall 2025 first-year cohort; C1 PDF page 8; C9 PDF page 11"
+      }
+    ],
+    "facts": {
+      "admission": {
+        "text": "International first-year standard: secondary-school B/3.00 on ASU's stated scale, diploma, and three years of coursework. Some programs impose higher standards. This is not an Ontario percentage conversion or an admission guarantee.",
+        "sourceIds": ["asu-intl"],
+        "status": "verified-current"
+      },
+      "coursework": {
+        "text": "For international students educated outside the U.S.: four years of math and three years of laboratory science. Request an assessment of Ontario course equivalents.",
+        "sourceIds": ["asu-intl"],
+        "status": "verified-current"
+      },
+      "ontario": {
+        "text": "Ontario-specific percentage cutoff and required 4U/4M mix were not verified. Submit original marks; do not convert them to a U.S. GPA.",
+        "sourceIds": ["asu-intl"],
+        "status": "needs-confirmation"
+      },
+      "testing": {
+        "text": "SAT/ACT optional for general international admission; may supplement an application or assist placement. Higher-requirement programs may differ. Fall 2028 policy is not confirmed.",
+        "sourceIds": ["asu-intl", "asu-first"],
+        "status": "verified-current"
+      },
+      "satRange": {
+        "text": "The official 2025–26 Campus Immersion CDS was located, but C9 yielded no SAT percentile values in the accessible text; a numerical distribution could not be verified. No SAT target assigned.",
+        "sourceIds": ["asu-cds-2025"],
+        "status": "not-verified",
+        "cohort": "Fall 2025 (CDS located; distribution unverified)"
+      },
+      "acceptanceRate": {
+        "text": "Fall 2025 first-year cohort, ASU Campus Immersion (not Tempe-only): 69,617 applicants and 61,533 admitted; 88.4% overall acceptance, calculated from CDS C1 counts. Historical institution-wide context, not an Ontario/international/major admission probability or Fall 2028 forecast.",
+        "sourceIds": ["asu-cds-2025"],
+        "status": "calculated-official-counts",
+        "cohort": "Fall 2025",
+        "applicants": 69617,
+        "admitted": 61533,
+        "acceptancePercent": 88.4,
+        "scope": "ASU Campus Immersion (not Tempe-only)"
+      },
+      "deadlines": {
+        "text": "General Fall 2027 page: November 1, 2026 priority and January 15, 2027 regular date. International page still displays Fall 2026 dates: confirm the international deadline directly. Fall 2028 deadlines are unconfirmed.",
+        "sourceIds": ["asu-first", "asu-intl"],
+        "status": "conflicting-cycle-pages"
+      },
+      "application": {
+        "text": "ASU application or Common App; submit only one. International in-person application fee USD 90. Official school transcripts and English translations where needed.",
+        "sourceIds": ["asu-intl"],
+        "status": "verified-current"
+      },
+      "materials": {
+        "text": "General application does not require an essay. Honors is separate. Recommendation-letter requirement was not explicitly verified for this applicant type.",
+        "sourceIds": ["asu-faq"],
+        "status": "partially-verified"
+      },
+      "english": {
+        "text": "General programs: IELTS 6.0; DET 95; TOEFL iBT from January 21, 2026: overall 3.5 and every section 3.5. Earlier TOEFL: 61. Engineering, nursing and journalism may require higher scores. Scores normally must be within two years of entry.",
+        "sourceIds": ["asu-english"],
+        "status": "verified-current"
+      },
+      "englishExemption": {
+        "text": "Automatic exemption covers citizens of countries on the ASU list, which specifies “Canada (all provinces except Quebec).” Ontario schooling alone does not establish that citizenship exemption. A recognized diploma taught solely in English may qualify through the exemption form after application.",
+        "sourceIds": ["asu-english", "asu-countries"],
+        "status": "verified-current"
+      },
+      "majors": {
+        "text": "Explore History BA and Sociology BS at Tempe, within Liberal Arts and Sciences. History lists general university admission requirements. Sociology's program exists; program-specific admission wording needs confirmation.",
+        "sourceIds": ["asu-history", "asu-sociology"],
+        "status": "partially-verified"
+      },
+      "admissionStructure": {
+        "text": "Program-sensitive admission: review the selected degree's requirements. No evidence that choosing these majors itself improves admission odds; later access to a higher-requirement program is not guaranteed.",
+        "sourceIds": ["asu-intl", "asu-history"],
+        "status": "verified-current"
+      },
+      "ap": {
+        "text": "Current credit table: AP Psychology 4–5 → PSY 101, 3 credits; Statistics 3–5 → STP 226, 3; Microeconomics/Macroeconomics 4–5 → ECN 212/211, 3 each. These are credit thresholds, not admission requirements; recheck the applicable catalog.",
+        "sourceIds": ["asu-ap"],
+        "status": "verified-current"
+      },
+      "cost": {
+        "text": "Published 2026–27 international undergraduate estimate: USD 69,906 including base tuition USD 39,062. Uses maximum college fee, 12 credits/semester, and a 2025–26 insurance placeholder. Not a Fall 2028 quote.",
+        "sourceIds": ["asu-cost"],
+        "status": "verified-with-caveat"
+      },
+      "aid": {
+        "text": "Limited New American University merit awards may be available to qualifying international students. Federal/state aid generally unavailable unless an eligible noncitizen. CSS Profile participation was not independently verified; do not assume a requirement.",
+        "sourceIds": ["asu-cost"],
+        "status": "partially-verified"
+      }
+    },
+    "confidence": "Strong general international, English and AP evidence. Ontario equivalency and Fall 2028 dates/policies require confirmation; current international/general deadline pages differ in cycle. Fall 2025 overall acceptance verified for Campus Immersion; SAT C9 numerical distribution not verified."
+  },
+  {
+    "id": "arizona",
+    "name": "University of Arizona",
+    "city": "Tucson",
+    "state": "Arizona",
+    "type": "Public research university",
+    "recognition": "High — editorial comparison, not an admissions metric",
+    "sources": [
+      {
+        "id": "arizona-intl",
+        "title": "First-year international apply guide",
+        "publisher": "University of Arizona",
+        "url": "https://international-admissions.arizona.edu/apply/main-campus-first-year",
+        "verified": "2026-10-21",
+        "cycle": "Fall 2027"
+      },
+      {
+        "id": "arizona-deadline",
+        "title": "Application deadlines",
+        "publisher": "University of Arizona",
+        "url": "https://www.arizona.edu/admissions/deadlines",
+        "verified": "2026-10-21",
+        "cycle": "Fall 2027"
+      },
+      {
+        "id": "arizona-first",
+        "title": "First-year applying and requirements",
+        "publisher": "University of Arizona",
+        "url": "https://www.arizona.edu/admissions/undergraduate/first-year",
+        "verified": "2026-10-21",
+        "cycle": "Current first-year policy"
+      },
+      {
+        "id": "arizona-english",
+        "title": "English proficiency",
+        "publisher": "University of Arizona International Admissions",
+        "url": "https://international-admissions.arizona.edu/english-proficiency",
+        "verified": "2026-10-21",
+        "cycle": "Current policy; pre/post January 2026 TOEFL"
+      },
+      {
+        "id": "arizona-brochure",
+        "title": "Undergraduate programs brochure",
+        "publisher": "University of Arizona International Admissions",
+        "url": "https://international-admissions.arizona.edu/sites/default/files/2025-08/brochure_2025_undergrad.pdf",
+        "verified": "2026-10-21",
+        "cycle": "2025 brochure; confirm application materials for entry cycle"
+      },
+      {
+        "id": "arizona-fee",
+        "title": "Non-academic fees list",
+        "publisher": "University of Arizona Curricular Affairs",
+        "url": "https://curricularaffairs.arizona.edu/non-academic-fees-list",
+        "verified": "2026-10-21",
+        "cycle": "Current undated listing"
+      },
+      {
+        "id": "arizona-sociology",
+        "title": "BA Sociology",
+        "publisher": "University of Arizona School of Sociology",
+        "url": "https://sociology.arizona.edu/ba-sociology",
+        "verified": "2026-10-21",
+        "cycle": "Current program"
+      },
+      {
+        "id": "arizona-history",
+        "title": "Declare history major or minor",
+        "publisher": "University of Arizona Department of History",
+        "url": "https://history.arizona.edu/declare",
+        "verified": "2026-10-21",
+        "cycle": "Current program"
+      },
+      {
+        "id": "arizona-eller",
+        "title": "Eller first-year admissions",
+        "publisher": "University of Arizona Eller College of Management",
+        "url": "https://eller.arizona.edu/programs/undergraduate/admissions/first-years",
+        "verified": "2026-10-21",
+        "cycle": "Current admission model"
+      },
+      {
+        "id": "arizona-ap",
+        "title": "Credit by exam",
+        "publisher": "University of Arizona Catalog",
+        "url": "https://catalog.arizona.edu/policy/courses-credit/credit/credit-exam",
+        "verified": "2026-10-21",
+        "cycle": "Current catalog"
+      },
+      {
+        "id": "arizona-cost",
+        "title": "New student financial guarantee calculator",
+        "publisher": "Arizona International",
+        "url": "https://international.arizona.edu/international-students/new-student-financial-guarantee-calculator",
+        "verified": "2026-10-21",
+        "cycle": "2026–27"
+      },
+      {
+        "id": "arizona-award",
+        "title": "Scholarship terms and conditions",
+        "publisher": "University of Arizona Scholarships and Financial Aid",
+        "url": "https://financialaid.arizona.edu/2026-2027-terms-and-conditions",
+        "verified": "2026-10-21",
+        "cycle": "2026–27"
+      },
+      {
+        "id": "arizona-cds-2025",
+        "title": "Common Data Set 2025–2026",
+        "publisher": "University of Arizona, University Analytics & Institutional Research",
+        "url": "https://uair.arizona.edu/sites/default/files/2026-06/CDS_PDF_2025-26_v02_RE-PRINT.pdf",
+        "verified": "2026-10-21",
+        "cycle": "2025–26 CDS; Fall 2025 first-year cohort; C1 PDF page 13; C9 PDF page 19; values visually checked"
+      }
+    ],
+    "facts": {
+      "admission": {
+        "text": "School-specific review. International application requirements are selected by country on the official page. The Canada results were not accessible in the extracted page; no Ontario minimum is asserted.",
+        "sourceIds": ["arizona-intl"],
+        "status": "needs-confirmation"
+      },
+      "ontario": {
+        "text": "Ontario credential, minimum and course-equivalency details need direct confirmation with international admissions. Do not apply domestic assured-admission criteria to this student without verification.",
+        "sourceIds": ["arizona-intl"],
+        "status": "needs-confirmation"
+      },
+      "coursework": {
+        "text": "General university list: English 4, math 4, laboratory science 3, social science 2, second language 2, fine arts/CTE 1 unit/year. Applicability and Ontario equivalents for a Canadian curriculum require confirmation.",
+        "sourceIds": ["arizona-eller"],
+        "status": "partially-verified"
+      },
+      "testing": {
+        "text": "SAT/ACT not required for general admission. Scores can assist placement or core competency. The international brochure also lists them as optional. Fall 2028 policy unconfirmed.",
+        "sourceIds": ["arizona-first", "arizona-brochure"],
+        "status": "verified-current"
+      },
+      "satRange": {
+        "text": "Fall 2025 enrolled first-year SAT submitters: middle 50% composite 1090–1320; median 1220. SAT submission reported as 12% (889 students). This is a score-submitter distribution, not a minimum or an individual target.",
+        "sourceIds": ["arizona-cds-2025"],
+        "status": "verified-cohort",
+        "cohort": "Fall 2025 enrolled first-year score submitters",
+        "range": [1090, 1320],
+        "median": 1220,
+        "submittedPercent": 12,
+        "submittedCount": 889
+      },
+      "acceptanceRate": {
+        "text": "Fall 2025 first-year cohort, University of Arizona: 56,376 applicants and 47,080 admitted; 83.5% overall acceptance, calculated from CDS C1 counts. Historical institution-wide context, not an Ontario/international/major admission probability or Fall 2028 forecast.",
+        "sourceIds": ["arizona-cds-2025"],
+        "status": "calculated-official-counts",
+        "cohort": "Fall 2025",
+        "applicants": 56376,
+        "admitted": 47080,
+        "acceptancePercent": 83.5,
+        "scope": "University of Arizona"
+      },
+      "deadlines": {
+        "text": "Fall 2027: application opens August 1, 2026; Early Action November 1, 2026. Later applications use Regular Decision, space available. EA decisions begin January 15, 2027. Fall 2028 dates not confirmed.",
+        "sourceIds": ["arizona-deadline", "arizona-intl"],
+        "status": "verified-current"
+      },
+      "application": {
+        "text": "International first-year application through Common App. Official fee list states USD 85 for international admission; confirm in the application portal. The USD 80 domestic nonresident fee is a different category.",
+        "sourceIds": ["arizona-intl", "arizona-fee", "arizona-first"],
+        "status": "verified-current"
+      },
+      "materials": {
+        "text": "2025 international brochure lists three consecutive years of courses/grades, English translations, graduation proof before enrollment, Arizona questions, statement of purpose, and optional recommendation. Verify the current portal checklist and essay wording.",
+        "sourceIds": ["arizona-brochure"],
+        "status": "historical-reference"
+      },
+      "english": {
+        "text": "IELTS 6.5; DET 110; TOEFL iBT post-January 2026: 4; pre-January 2026: 79. Exam results must be within two years of application submission.",
+        "sourceIds": ["arizona-english"],
+        "status": "verified-current"
+      },
+      "englishExemption": {
+        "text": "Three years of high school with English as the instructional medium and C in English can satisfy proficiency. This can be relevant to Ontario schooling; citizenship alone is not the rule. Admissions may request documentation.",
+        "sourceIds": ["arizona-english"],
+        "status": "verified-current"
+      },
+      "majors": {
+        "text": "Explore Sociology BA and History. Both programs are verified, and History has an advisor declaration process. Academic interest and fit should guide the choice; an easier freshman route is not established.",
+        "sourceIds": ["arizona-sociology", "arizona-history"],
+        "status": "verified-current"
+      },
+      "admissionStructure": {
+        "text": "Program/college rules differ; do not call the whole university major-blind. Current Eller main-campus BSBA begins in Business Management, with later professional progression criteria and potentially competitive alternative business majors. General humanities admission structure needs further confirmation.",
+        "sourceIds": ["arizona-eller", "arizona-history"],
+        "status": "partially-verified"
+      },
+      "ap": {
+        "text": "AP is an accepted credit-by-exam route; total exam credit is capped at 60 units. Current course-by-score AP table could not be verified in the catalog extraction, so no specific credit award is promised.",
+        "sourceIds": ["arizona-ap"],
+        "status": "partially-verified"
+      },
+      "cost": {
+        "text": "Official financial guarantee calculator uses 2026–27 rates and varies by college, insurance, dependents and scholarships. Numeric total not captured; use the calculator. Fall 2028 cost is unconfirmed.",
+        "sourceIds": ["arizona-cost"],
+        "status": "partially-verified"
+      },
+      "aid": {
+        "text": "Global Wildcat First-Year Tuition Award is a competitive international undergraduate scholarship under 2026–27 terms. Award for Fall 2028 and CSS Profile requirement are not verified; do not budget an assumed award.",
+        "sourceIds": ["arizona-award"],
+        "status": "partially-verified"
+      }
+    },
+    "confidence": "Verified current international deadlines and English policy. Country-specific criteria and current AP equivalency table are unresolved; legacy brochure is explicitly historical. Fall 2025 acceptance counts and SAT score-submitter percentiles visually verified from the official 2025–26 CDS."
+  },
+  {
+    "id": "oregon",
+    "name": "University of Oregon",
+    "city": "Eugene",
+    "state": "Oregon",
+    "type": "Public research university",
+    "recognition": "High — editorial comparison, not an admissions metric",
+    "sources": [
+      {
+        "id": "oregon-intl",
+        "title": "International student admissions",
+        "publisher": "University of Oregon",
+        "url": "https://www.uoregon.edu/admissions/undergraduate/find-your-path/international-students/",
+        "verified": "2026-10-21",
+        "cycle": "Current recurring dates; entry year not stated"
+      },
+      {
+        "id": "oregon-english",
+        "title": "English proficiency requirements",
+        "publisher": "University of Oregon Admissions",
+        "url": "https://www.uoregon.edu/admissions/undergraduate/find-your-path/international/requirements/english-proficiency/",
+        "verified": "2026-10-21",
+        "cycle": "Current; pre/post January 2026 TOEFL"
+      },
+      {
+        "id": "oregon-cost",
+        "title": "International student cost of attendance",
+        "publisher": "University of Oregon Financial Aid and Scholarships",
+        "url": "https://financialaid.uoregon.edu/international-student-cost-attendance",
+        "verified": "2026-10-21",
+        "cycle": "2026–27"
+      },
+      {
+        "id": "oregon-insurance",
+        "title": "International student plan",
+        "publisher": "University of Oregon Health Services",
+        "url": "https://health.uoregon.edu/international-student-plan",
+        "verified": "2026-10-21",
+        "cycle": "2026–27"
+      },
+      {
+        "id": "oregon-ap",
+        "title": "Standardized tests for credit",
+        "publisher": "University of Oregon Registrar",
+        "url": "https://registrar.uoregon.edu/transfer/standardized-tests",
+        "verified": "2026-10-21",
+        "cycle": "Current policy; live equivalencies"
+      },
+      {
+        "id": "oregon-sociology",
+        "title": "Declare or change sociology major or minor",
+        "publisher": "University of Oregon Sociology",
+        "url": "https://socialsciences.uoregon.edu/sociology/apply/declare-major-minor",
+        "verified": "2026-10-21",
+        "cycle": "Current program"
+      },
+      {
+        "id": "oregon-history",
+        "title": "History BA/BS",
+        "publisher": "University of Oregon Academic Catalog",
+        "url": "https://catalog.uoregon.edu/arts-sciences/social-sciences/history/ug-history/",
+        "verified": "2026-10-21",
+        "cycle": "Current catalog"
+      },
+      {
+        "id": "oregon-majors",
+        "title": "CAS major and minor resources",
+        "publisher": "University of Oregon College of Arts and Sciences",
+        "url": "https://cas.uoregon.edu/advising/cas-major-minor-resources",
+        "verified": "2026-10-21",
+        "cycle": "Current program"
+      },
+      {
+        "id": "oregon-aid",
+        "title": "Scholarship FAQs",
+        "publisher": "University of Oregon Financial Aid and Scholarships",
+        "url": "https://financialaid.uoregon.edu/scholarships_faq",
+        "verified": "2026-10-21",
+        "cycle": "Current undated information"
+      },
+      {
+        "id": "oregon-cds-index",
+        "title": "Common Data Set — official report index",
+        "publisher": "University of Oregon, Office of Data Enablement",
+        "url": "https://data.uoregon.edu/uo-overview/common-data-set",
+        "verified": "2026-10-21",
+        "cycle": "2025–26 report listed; linked SharePoint document redirected to Microsoft sign-in during verification"
+      }
+    ],
+    "facts": {
+      "admission": {
+        "text": "International first-year guidance states B/3.00 average, English proficiency and financial support. UO asks applicants to contact Admissions for country-specific minimums. No Ontario-to-GPA conversion is made.",
+        "sourceIds": ["oregon-intl"],
+        "status": "verified-current"
+      },
+      "ontario": {
+        "text": "Ontario-specific percentage minimum and 4U/4M requirements were not verified. Request country-specific assessment; preserve original transcript marks.",
+        "sourceIds": ["oregon-intl"],
+        "status": "needs-confirmation"
+      },
+      "coursework": {
+        "text": "Canadian/Ontario course equivalencies were not verified. UO directs international applicants to contact Admissions for country-specific requirements; specialized programs may add materials.",
+        "sourceIds": ["oregon-intl"],
+        "status": "needs-confirmation"
+      },
+      "testing": {
+        "text": "UO does not require SAT/ACT for international applicants; scores may establish English proficiency. Fall 2028 policy has not been confirmed.",
+        "sourceIds": ["oregon-intl"],
+        "status": "verified-current"
+      },
+      "satRange": {
+        "text": "Official 2025–26 CDS is listed, but its SharePoint link redirected to Microsoft sign-in. The SAT distribution could not be verified from the official report in this pass; no third-party number substituted.",
+        "sourceIds": ["oregon-cds-index"],
+        "status": "not-verified"
+      },
+      "acceptanceRate": {
+        "text": "Official 2025–26 CDS is listed, but its SharePoint link redirected to Microsoft sign-in. The overall acceptance rate could not be verified from the official report in this pass; no third-party number substituted.",
+        "sourceIds": ["oregon-cds-index"],
+        "status": "not-verified"
+      },
+      "deadlines": {
+        "text": "Current recurring fall schedule: EA November 1 (documents November 15); regular January 15 (documents February 15). Page permits later international rolling applications to July 15, with scholarship limitations. Entry year unspecified; not confirmed Fall 2028 dates.",
+        "sourceIds": ["oregon-intl"],
+        "status": "year-unconfirmed"
+      },
+      "application": {
+        "text": "Oregon application or Common App for international first-year applicants; USD 75 fee. Transcripts and English proficiency evidence required; official transcripts needed for enrollment.",
+        "sourceIds": ["oregon-intl"],
+        "status": "verified-current"
+      },
+      "materials": {
+        "text": "Essay and recommendation requirements for this applicant type need confirmation in the current application checklist.",
+        "sourceIds": ["oregon-intl"],
+        "status": "needs-confirmation"
+      },
+      "english": {
+        "text": "Full admission: TOEFL after January 2026 4.5+ (earlier scale 80+); IELTS 6.5; DET table lists 110–130. Lower scores can lead to academic English support or conditional admission, which are distinct outcomes. Verify higher DET score interpretation with Admissions.",
+        "sourceIds": ["oregon-english"],
+        "status": "verified-with-caveat"
+      },
+      "englishExemption": {
+        "text": "Citizens of Canada from English-speaking provinces are listed as exempt. Attendance in Ontario without Canadian citizenship does not automatically establish that exemption; ask Admissions. UO reserves the right to require proof.",
+        "sourceIds": ["oregon-english"],
+        "status": "verified-current"
+      },
+      "majors": {
+        "text": "Explore Sociology, History BA/BS or General Social Sciences BA/BS. Programs/declaration resources verified. These choices do not establish a higher freshman admission probability.",
+        "sourceIds": ["oregon-sociology", "oregon-history", "oregon-majors"],
+        "status": "verified-current"
+      },
+      "admissionStructure": {
+        "text": "General CAS exploration with department declaration procedures; Sociology uses a reviewed declaration form. UO warns that particular programs can have additional requirements. University-wide major-blind selection was not explicitly verified.",
+        "sourceIds": ["oregon-sociology", "oregon-intl"],
+        "status": "partially-verified"
+      },
+      "ap": {
+        "text": "AP exam credit may be awarded; Registrar directs students to its Transfer Equivalency System. Exact current subject/score awards not verified here. Check equivalencies and degree applicability before choosing an exam for credit.",
+        "sourceIds": ["oregon-ap"],
+        "status": "partially-verified"
+      },
+      "cost": {
+        "text": "Financial-aid page estimates USD 64,013 for 2026–27, nine months, up to 12 credits/quarter. Its insurance line is USD 3,804, while Health Services lists USD 3,888 for that year: confirm current total and cost of a graduation-paced course load. Not a 2028 quote.",
+        "sourceIds": ["oregon-cost", "oregon-insurance"],
+        "status": "conflicting-components"
+      },
+      "aid": {
+        "text": "Qualified international students may access General University Scholarship and International Affairs awards. Eligibility, amount and deadlines vary. CSS Profile participation/requirement not verified; check each award rather than assuming eligibility.",
+        "sourceIds": ["oregon-aid"],
+        "status": "partially-verified"
+      }
+    },
+    "confidence": "Verified international baseline and English requirements. Entry year of recurring deadlines is unspecified, official cost components conflict, and Ontario equivalencies need confirmation. Official CDS index found; report redirected to sign-in, leaving acceptance/SAT distribution unverified."
+  },
+  {
+    "id": "colorado",
+    "name": "University of Colorado Boulder",
+    "city": "Boulder",
+    "state": "Colorado",
+    "type": "Public research university",
+    "recognition": "High — editorial comparison, not an admissions metric",
+    "sources": [
+      {
+        "id": "colorado-intl",
+        "title": "International apply",
+        "publisher": "University of Colorado Boulder",
+        "url": "https://www.colorado.edu/admissions/process/international/apply",
+        "verified": "2026-10-21",
+        "cycle": "2027 application"
+      },
+      {
+        "id": "colorado-apply",
+        "title": "First-year application checklist",
+        "publisher": "University of Colorado Boulder",
+        "url": "https://www.colorado.edu/admissions/process/first-year/apply",
+        "verified": "2026-10-21",
+        "cycle": "Current first-year application"
+      },
+      {
+        "id": "colorado-plan",
+        "title": "First-year plan and admitted student averages",
+        "publisher": "University of Colorado Boulder",
+        "url": "https://www.colorado.edu/admissions/process/first-year/plan",
+        "verified": "2026-10-21",
+        "cycle": "2026 admitted cohort; 2027 testing policy"
+      },
+      {
+        "id": "colorado-english",
+        "title": "English proficiency requirements",
+        "publisher": "University of Colorado Boulder",
+        "url": "https://www.colorado.edu/admissions/process/international/plan/english-proficiency",
+        "verified": "2026-10-21",
+        "cycle": "Current; pre/post January 2026 TOEFL"
+      },
+      {
+        "id": "colorado-faq",
+        "title": "International FAQs",
+        "publisher": "University of Colorado Boulder",
+        "url": "https://www.colorado.edu/admissions/process/international/faqs",
+        "verified": "2026-10-21",
+        "cycle": "Current undated policy"
+      },
+      {
+        "id": "colorado-structure",
+        "title": "General admission information",
+        "publisher": "University of Colorado Boulder Catalog",
+        "url": "https://catalog.colorado.edu/undergraduate/admissions/general-admission-information/",
+        "verified": "2026-10-21",
+        "cycle": "2026–27 catalog"
+      },
+      {
+        "id": "colorado-cas",
+        "title": "Arts and Sciences policies and requirements",
+        "publisher": "University of Colorado Boulder Catalog",
+        "url": "https://catalog.colorado.edu/undergraduate/colleges-schools/arts-sciences/policies-requirements/",
+        "verified": "2026-10-21",
+        "cycle": "2026–27 catalog"
+      },
+      {
+        "id": "colorado-majors",
+        "title": "Undergraduate majors",
+        "publisher": "University of Colorado Boulder",
+        "url": "https://www.colorado.edu/academics/programs/majors",
+        "verified": "2026-10-21",
+        "cycle": "Current programs"
+      },
+      {
+        "id": "colorado-ap",
+        "title": "Credit by examination",
+        "publisher": "University of Colorado Boulder Catalog",
+        "url": "https://catalog.colorado.edu/undergraduate/admissions/credit-examination/",
+        "verified": "2026-10-21",
+        "cycle": "2026–27 entrants; subject to faculty review"
+      },
+      {
+        "id": "colorado-cost",
+        "title": "Incoming undergraduate cost",
+        "publisher": "University of Colorado Boulder Bursar",
+        "url": "https://www.colorado.edu/bursar/costs/undergraduate",
+        "verified": "2026-10-21",
+        "cycle": "Fall 2026/Spring 2027"
+      },
+      {
+        "id": "colorado-aid",
+        "title": "International financial aid",
+        "publisher": "University of Colorado Boulder",
+        "url": "https://www.colorado.edu/admissions/cost/scholarships-financial-aid/international",
+        "verified": "2026-10-21",
+        "cycle": "Current undated policy"
+      },
+      {
+        "id": "colorado-sociology",
+        "title": "Sociology BA",
+        "publisher": "University of Colorado Boulder Catalog",
+        "url": "https://catalog.colorado.edu/undergraduate/colleges-schools/arts-sciences/programs-study/sociology/sociology-bachelor-arts-ba/",
+        "verified": "2026-10-21",
+        "cycle": "2026–27 catalog"
+      }
+    ],
+    "facts": {
+      "admission": {
+        "text": "School-specific holistic review of academic performance, rigor and other evidence. CU assesses international records in-house; applicants should not convert their own grades or obtain external evaluations.",
+        "sourceIds": ["colorado-plan", "colorado-faq"],
+        "status": "verified-current"
+      },
+      "ontario": {
+        "text": "Ontario percentage cutoff and course-equivalency list not verified. Country-specific requirements link did not load in this research; ask International Admissions.",
+        "sourceIds": ["colorado-plan", "colorado-faq"],
+        "status": "needs-confirmation"
+      },
+      "coursework": {
+        "text": "HEAR is recommended for general applicants, but international applicants with four or fewer U.S. semesters are directed to country-specific requirements. Do not substitute HEAR for an unverified Ontario course assessment.",
+        "sourceIds": ["colorado-plan"],
+        "status": "partially-verified"
+      },
+      "testing": {
+        "text": "SAT/ACT optional for the 2027 first-year application; students can choose consideration and self-report. Fall 2028 policy is not confirmed.",
+        "sourceIds": ["colorado-plan", "colorado-apply"],
+        "status": "verified-current"
+      },
+      "satRange": {
+        "text": "2026 admitted first-year students who requested score consideration: SAT middle 50% 1300–1450 overall, 1270–1430 Arts and Sciences. These are admitted score submitters, not all enrolled students or an Ontario minimum.",
+        "sourceIds": ["colorado-plan"],
+        "status": "verified-cohort"
+      },
+      "satTarget": {
+        "text": "Strategic target — not an official cutoff: 1430 for Arts and Sciences corresponds to the upper end of its 2026 admitted score-submitter middle 50%. Revisit if applying in 2028 and do not sacrifice grades for this optional goal.",
+        "sourceIds": ["colorado-plan"],
+        "status": "editorial-inference"
+      },
+      "acceptanceRate": {
+        "text": "Current official overall acceptance rate not verified; no individual probability inferred.",
+        "sourceIds": [],
+        "status": "not-verified"
+      },
+      "deadlines": {
+        "text": "2027 application: fall/summer EA November 15, 2026; regular January 15, 2027. Fall 2028 dates have not been confirmed.",
+        "sourceIds": ["colorado-intl"],
+        "status": "verified-current"
+      },
+      "application": {
+        "text": "Common App; international application fee USD 70. One recommendation, 250–650 word personal essay, separate short response up to 250 words, secondary transcripts and English proficiency. Official transcripts are needed upon enrollment if unofficial copies were used initially.",
+        "sourceIds": ["colorado-apply"],
+        "status": "verified-current"
+      },
+      "english": {
+        "text": "TOEFL after January 2026: 4.0; earlier TOEFL: 80. IELTS 6.5; DET 115. Exams must be within two calendar years of entry. English evidence is required by the regular deadline for scholarship consideration.",
+        "sourceIds": ["colorado-english"],
+        "status": "verified-current"
+      },
+      "englishExemption": {
+        "text": "At least two years of full-time secondary study in Canada can satisfy proficiency; English learner classes do not count, and study must be within two calendar years of entry. CU can request additional proof. This is schooling-based, not simply Canadian citizenship.",
+        "sourceIds": ["colorado-english"],
+        "status": "verified-current"
+      },
+      "majors": {
+        "text": "Explore Sociology BA, History BA and Humanities BA within Arts and Sciences. These are verified programs, chosen for breadth rather than an asserted admissions advantage.",
+        "sourceIds": ["colorado-majors", "colorado-sociology"],
+        "status": "verified-current"
+      },
+      "admissionStructure": {
+        "text": "College/school and intended major matter. Apply to one college/school; Arts and Sciences offers a named major or Open Option. Later intra-university transfer has college-specific competitive criteria; admission to one area does not guarantee business or engineering access.",
+        "sourceIds": ["colorado-structure", "colorado-cas"],
+        "status": "verified-current"
+      },
+      "ap": {
+        "text": "2026–27 table: Psychology 4–5 → PSYC 1001 (3 credits); Statistics 4–5 → MATH 2510 (3); English Language 4–5 → WRTG 1150 (3). Score 3 may earn general credit instead. Degree applicability and 2028 equivalencies require rechecking.",
+        "sourceIds": ["colorado-ap"],
+        "status": "verified-current"
+      },
+      "cost": {
+        "text": "2026–27 nonresident base-tier annual estimate USD 66,500: tuition/fees USD 46,058, housing/meals USD 19,242, books USD 1,200. Excludes international new-student USD 500 and immigration USD 40/semester, plus personal/travel/insurance costs. Not full international COA or a 2028 price.",
+        "sourceIds": ["colorado-cost"],
+        "status": "verified-with-caveat"
+      },
+      "aid": {
+        "text": "Limited international merit scholarships; applications complete by January 15 with English evidence receive automatic consideration. SAT/ACT not considered for these automatic awards. CSS Profile requirement not verified; the page says College Board's International Student Financial Aid Application is not accepted, which is not the same as CSS Profile.",
+        "sourceIds": ["colorado-faq", "colorado-aid"],
+        "status": "partially-verified"
+      }
+    },
+    "confidence": "Strong current cycle, testing, English, major structure and AP evidence. Ontario-specific requirements, acceptance rate, CSS participation and all Fall 2028 rules remain unresolved."
+  }
+]

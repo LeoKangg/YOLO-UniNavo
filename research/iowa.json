@@ -1,0 +1,151 @@
+[
+  {
+    "id": "iowa-state",
+    "name": "Iowa State University",
+    "city": "Ames",
+    "state": "Iowa",
+    "type": "Public",
+    "recognition": "Moderate",
+    "sources": [
+      {
+        "id": "isu-admissions",
+        "title": "International first-year requirements",
+        "publisher": "Iowa State University",
+        "url": "https://www.iastate.edu/admission-and-aid/admissions/international-admissions/international-first-year-requirements",
+        "verified": "2026-10-21",
+        "cycle": "Current undated policy; recheck for Fall 2028"
+      },
+      {
+        "id": "isu-apply",
+        "title": "International undergraduate application information",
+        "publisher": "Iowa State University",
+        "url": "https://www.iastate.edu/admission-and-aid/admissions/international-students/international-undergraduate-application-information",
+        "verified": "2026-10-21",
+        "cycle": "Current undated policy"
+      },
+      {
+        "id": "isu-english",
+        "title": "English proficiency requirement",
+        "publisher": "Iowa State University",
+        "url": "https://www.iastate.edu/admission-and-aid/admissions/international-admissions/english-proficiency-requirement",
+        "verified": "2026-10-21",
+        "cycle": "Includes TOEFL changes from January 21, 2026"
+      },
+      {
+        "id": "isu-catalog",
+        "title": "Admissions — 2026–2027 catalog",
+        "publisher": "Iowa State University",
+        "url": "https://catalog.iastate.edu/admissions/",
+        "verified": "2026-10-21",
+        "cycle": "2026–2027"
+      },
+      {
+        "id": "isu-majors",
+        "title": "Liberal Arts and Sciences majors",
+        "publisher": "Iowa State University",
+        "url": "https://las.iastate.edu/academics/majors-minors-and-certificates/",
+        "verified": "2026-10-21",
+        "cycle": "Current catalog"
+      },
+      {
+        "id": "isu-ap",
+        "title": "Credit by exam",
+        "publisher": "Iowa State University",
+        "url": "https://www.iastate.edu/admission-and-aid/admissions/first-year-students/credit-by-exam",
+        "verified": "2026-10-21",
+        "cycle": "Current credit table"
+      },
+      {
+        "id": "isu-cost",
+        "title": "Undergraduate cost of attendance",
+        "publisher": "Iowa State University",
+        "url": "https://financialaid.iastate.edu/getting-started/cost/cost-of-attendance/undergraduate-students/",
+        "verified": "2026-10-21",
+        "cycle": "2026–2027"
+      },
+      {
+        "id": "isu-merit",
+        "title": "International merit scholarships",
+        "publisher": "Iowa State University",
+        "url": "https://www.iastate.edu/admission-and-aid/admissions/international-admissions/international-merit-scholarships",
+        "verified": "2026-10-21",
+        "cycle": "Current undated scholarship policy"
+      },
+      {
+        "id": "isu-aid",
+        "title": "International student financial aid",
+        "publisher": "Iowa State University",
+        "url": "https://financialaid.iastate.edu/applying-for-aid/international-students/",
+        "verified": "2026-10-21",
+        "cycle": "Current undated policy"
+      }
+    ],
+    "facts": {
+      "requirements": {
+        "text": "International first-year applicants need the university-assessed equivalent of a 3.0/4.0 GPA. SAT 1200+ or ACT 25+ can satisfy this GPA requirement under the current policy; this does not waive other admission requirements.",
+        "sourceIds": ["isu-admissions"],
+        "status": "Verified current policy"
+      },
+      "coursework": {
+        "text": "General preparation: 4 years English/native language, 3 math, 3 science (2 laboratory), 2 social studies. The 2026–27 catalog adds a third social studies year and 2 years of one foreign language for Liberal Arts and Sciences. Ask Admissions to evaluate Ontario courses.",
+        "sourceIds": ["isu-admissions", "isu-catalog"],
+        "status": "Verified current policy"
+      },
+      "canadian": {
+        "text": "Submit original Ontario school records. The current country-equivalency file linked by Admissions could not be inspected; no Ontario percentage threshold is verified here. Do not convert your marks to a U.S. GPA yourself.",
+        "sourceIds": ["isu-admissions"],
+        "status": "Confirm directly with Admissions"
+      },
+      "testing": {
+        "text": "SAT/ACT optional for applicants educated outside the U.S. Score submission may support placement and scholarship review. Fall 2028-specific testing policy: Not yet published in reviewed sources.",
+        "sourceIds": ["isu-apply", "isu-merit"],
+        "status": "Current policy; 2028 unconfirmed"
+      },
+      "satRange": {
+        "text": "An official middle-50% SAT range was not verified in this review. No numerical competitive target is inferred from an unverified distribution.",
+        "sourceIds": [],
+        "status": "Not verified"
+      },
+      "acceptance": {
+        "text": "Official overall acceptance rate not verified in this review. No Ontario-specific admit rate is available in the reviewed sources.",
+        "sourceIds": [],
+        "status": "Not verified"
+      },
+      "english": {
+        "text": "An exemption covers native English speakers residing where English is a primary official language; Ontario attendance alone is not this exemption. IELTS 6.0 (each 5.5+); DET 105; TOEFL 71 (Speaking/Writing 17+) on the old scale or 4.0 (minimum band 3.5) from Jan 21, 2026. Other qualifying exams are listed officially.",
+        "sourceIds": ["isu-english"],
+        "status": "Verified current policy"
+      },
+      "application": {
+        "text": "University online portal; $65 USD international application fee. Upload official school records, English evidence if needed, financial statement/bank documentation and passport. Essays and recommendation letters are not required for admission. Final official records remain necessary after admission.",
+        "sourceIds": ["isu-apply"],
+        "status": "Verified current policy"
+      },
+      "deadlines": {
+        "text": "Rolling review. Applications may be submitted up to a year before entry; university recommends allowing at least 6–8 weeks. Fall 2028 entry deadlines: Not yet published in reviewed sources. Current international merit scholarship reference: Feb 15 priority, May 1 final; not confirmed for 2028.",
+        "sourceIds": ["isu-apply", "isu-merit"],
+        "status": "2028 not yet published"
+      },
+      "structure": {
+        "text": "University admission with additional college/curriculum requirements. Explore Sociology, Communication Studies and Political Science in Liberal Arts and Sciences. No verified evidence that selecting one raises admission odds; switching into another college requires checking its rules.",
+        "sourceIds": ["isu-catalog", "isu-majors"],
+        "status": "Verified structure; editorial major suggestions"
+      },
+      "ap": {
+        "text": "Current credit examples: AP Statistics 3 earns STAT 1010 (4 credits); 4–5 earns STAT 2010 (4 credits). AP Psychology 4–5 earns PSYCH 1010 (3 credits). These are credit awards, not admission cutoffs; recheck the catalog for 2028.",
+        "sourceIds": ["isu-ap"],
+        "status": "Verified current credit policy"
+      },
+      "cost": {
+        "text": "2026–27 international base tuition $31,962 USD and fees $1,586. The on-campus dependent budget totals $50,960 when published housing, books, personal and travel components are added; required medical insurance is excluded. Major-specific tuition may be higher. 2028–29 costs: Not yet published.",
+        "sourceIds": ["isu-cost"],
+        "status": "2026–2027 reference; total calculated from official components"
+      },
+      "aid": {
+        "text": "Competitive international merit awards require OneApp and review grades/SAT/ACT. Federal and institutional loans are unavailable to international students. Need-based aid and CSS Profile requirement were not established by this review; confirm with the aid office. Citizenship affects eligibility.",
+        "sourceIds": ["isu-merit", "isu-aid"],
+        "status": "Partial verification; confirm unknowns"
+      }
+    }
+  }
+]

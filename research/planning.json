@@ -1,0 +1,713 @@
+{
+  "researchDate": "2026-10-21",
+  "sources": [
+    {
+      "id": "sat-dates",
+      "title": "SAT dates and deadlines",
+      "publisher": "College Board",
+      "url": "https://satsuite.collegeboard.org/sat/dates-deadlines",
+      "verified": "2026-10-21",
+      "cycle": "2026–27 confirmed; 2027–28 anticipated"
+    },
+    {
+      "id": "sat-release",
+      "title": "SAT score release dates",
+      "publisher": "College Board",
+      "url": "https://satsuite.collegeboard.org/scores/score-release-dates",
+      "verified": "2026-10-21",
+      "cycle": "2026–27"
+    },
+    {
+      "id": "sat-practice",
+      "title": "Full-length digital practice tests on Bluebook",
+      "publisher": "College Board",
+      "url": "https://satsuite.collegeboard.org/practice/practice-tests/bluebook",
+      "verified": "2026-10-21",
+      "cycle": "Current Digital SAT"
+    },
+    {
+      "id": "sat-scoring",
+      "title": "SAT score structure",
+      "publisher": "College Board",
+      "url": "https://satsuite.collegeboard.org/k12-educators/about/understand-scores-benchmarks/score-structure",
+      "verified": "2026-10-21",
+      "cycle": "Current"
+    },
+    {
+      "id": "sat-choice",
+      "title": "Score Choice",
+      "publisher": "College Board",
+      "url": "https://satsuite.collegeboard.org/scores/sending-sat-scores/additional/score-choice",
+      "verified": "2026-10-21",
+      "cycle": "Current"
+    },
+    {
+      "id": "sat-super",
+      "title": "What’s an SAT Superscore?",
+      "publisher": "College Board",
+      "url": "https://blog.collegeboard.org/what-is-an-sat-superscore",
+      "verified": "2026-10-21",
+      "cycle": "Current explanatory guidance"
+    },
+    {
+      "id": "sat-register",
+      "title": "SAT Registration",
+      "publisher": "College Board",
+      "url": "https://satsuite.collegeboard.org/sat/registration",
+      "verified": "2026-10-21",
+      "cycle": "2026–27"
+    },
+    {
+      "id": "ap-dates",
+      "title": "2027 AP Exam Dates",
+      "publisher": "College Board",
+      "url": "https://apcentral.collegeboard.org/exam-administration-ordering-scores/exam-dates",
+      "verified": "2026-10-21",
+      "cycle": "2027"
+    },
+    {
+      "id": "ap-order",
+      "title": "Ordering AP Exams",
+      "publisher": "College Board",
+      "url": "https://apcentral.collegeboard.org/exam-administration-ordering-scores/ordering-fees/how-to-ap-registration-ordering/order-ap-exams",
+      "verified": "2026-10-21",
+      "cycle": "2026–27"
+    },
+    {
+      "id": "ap-outside",
+      "title": "Taking AP exams when your school does not administer them",
+      "publisher": "College Board",
+      "url": "https://apstudents.collegeboard.org/help-center/im-homeschooled-how-can-i-take-ap-exam",
+      "verified": "2026-10-21",
+      "cycle": "Current"
+    },
+    {
+      "id": "ap-exam-only",
+      "title": "Can I take an AP exam without taking the course?",
+      "publisher": "College Board",
+      "url": "https://apstudents.collegeboard.org/help-center/can-i-take-ap-exam-if-i-havent-taken-ap-course",
+      "verified": "2026-10-21",
+      "cycle": "Current"
+    },
+    {
+      "id": "ap-scores",
+      "title": "About AP Scores",
+      "publisher": "College Board",
+      "url": "https://apstudents.collegeboard.org/about-ap-scores",
+      "verified": "2026-10-21",
+      "cycle": "Current"
+    },
+    {
+      "id": "ap-stat",
+      "title": "AP Statistics",
+      "publisher": "College Board",
+      "url": "https://apstudents.collegeboard.org/courses/ap-statistics",
+      "verified": "2026-10-21",
+      "cycle": "2026–27"
+    },
+    {
+      "id": "ap-lang",
+      "title": "AP English Language and Composition",
+      "publisher": "College Board",
+      "url": "https://apstudents.collegeboard.org/courses/ap-english-language-and-composition",
+      "verified": "2026-10-21",
+      "cycle": "2026–27"
+    },
+    {
+      "id": "ap-psych",
+      "title": "AP Psychology",
+      "publisher": "College Board",
+      "url": "https://apstudents.collegeboard.org/courses/ap-psychology",
+      "verified": "2026-10-21",
+      "cycle": "2026–27"
+    },
+    {
+      "id": "ap-micro",
+      "title": "AP Microeconomics",
+      "publisher": "College Board",
+      "url": "https://apstudents.collegeboard.org/courses/ap-microeconomics",
+      "verified": "2026-10-21",
+      "cycle": "2026–27"
+    },
+    {
+      "id": "asu-ap",
+      "title": "Credit by Examination: AP table",
+      "publisher": "Arizona State University",
+      "url": "https://catalog.asu.edu/credit_exam",
+      "verified": "2026-10-21",
+      "cycle": "Current catalog; recheck for 2028 matriculation"
+    },
+    {
+      "id": "ontario-ossd",
+      "title": "Earning your high school diploma",
+      "publisher": "Ontario Ministry of Education",
+      "url": "https://www.ontario.ca/page/earning-your-high-school-diploma",
+      "verified": "2026-10-21",
+      "cycle": "Requirements depend on Grade 9 start year"
+    },
+    {
+      "id": "ontario-courses",
+      "title": "Secondary school courses and related procedures",
+      "publisher": "Ontario Ministry of Education",
+      "url": "https://www.ontario.ca/document/ontario-schools-kindergarten-grade-12-policy-and-program-requirements/secondary-school-courses-and-related-procedures",
+      "verified": "2026-10-21",
+      "cycle": "Current"
+    },
+    {
+      "id": "ontario-codes",
+      "title": "Course Types and Prerequisites",
+      "publisher": "York Region District School Board",
+      "url": "https://www2.yrdsb.ca/schools-programs/secondary-school/course-planning-and-graduation/choose-my-courses/course-types-and",
+      "verified": "2026-10-21",
+      "cycle": "Current"
+    },
+    {
+      "id": "common-gpa",
+      "title": "Counselor Conversations: International Student Supporters",
+      "publisher": "Common App",
+      "url": "https://www.commonapp.org/files/webinar_decks/Counselor_Convo_International.pdf",
+      "verified": "2026-10-21",
+      "cycle": "2025 guidance"
+    },
+    {
+      "id": "common-guide",
+      "title": "Application guide for first-year students",
+      "publisher": "Common App",
+      "url": "https://www.commonapp.org/apply/first-year-students/",
+      "verified": "2026-10-21",
+      "cycle": "Current; not 2028 college deadlines"
+    },
+    {
+      "id": "early-plans",
+      "title": "Early Decision and Early Action",
+      "publisher": "College Board",
+      "url": "https://counselors.collegeboard.org/college-application/early-decision-action",
+      "verified": "2026-10-21",
+      "cycle": "General definitions; specific restrictions vary"
+    },
+    {
+      "id": "student-visa",
+      "title": "Student Visa: Citizens of Canada and Bermuda",
+      "publisher": "U.S. Department of State",
+      "url": "https://travel.state.gov/content/travel/en/us-visas/study/student-visa.html",
+      "verified": "2026-10-21",
+      "cycle": "Current; recheck before 2028 travel"
+    },
+    {
+      "id": "sevis-official",
+      "title": "I-901 SEVIS Fee Payment Tutorial",
+      "publisher": "U.S. Department of Homeland Security",
+      "url": "https://studyinthestates.dhs.gov/sites/default/files/I-901_SEVIS_Fee_Payment_Tutorial_Script.pdf",
+      "verified": "2026-10-21",
+      "cycle": "General official guidance"
+    },
+    {
+      "id": "sevis-canadian",
+      "title": "I-901 SEVIS Fee",
+      "publisher": "MIT International Students Office",
+      "url": "https://iso.mit.edu/getting-started/requesting-an-i-20-or-ds-2019/paying-the-i-901-sevis-fee/",
+      "verified": "2026-10-21",
+      "cycle": "Current; explicit Canadian-citizen guidance"
+    },
+    {
+      "id": "federal-aid",
+      "title": "Eligibility for Non-U.S. Citizens",
+      "publisher": "U.S. Department of Education, Federal Student Aid",
+      "url": "https://studentaid.gov/understand-aid/eligibility/requirements/non-us-citizens",
+      "verified": "2026-10-21",
+      "cycle": "Current"
+    },
+    {
+      "id": "meltzer-reading",
+      "title": "The Complete Guide to SAT Reading, 6th Edition",
+      "publisher": "The Critical Reader",
+      "url": "https://thecriticalreader.com/product/the-critical-reader-sixth-edition/",
+      "verified": "2026-10-21",
+      "cycle": "6th edition, Digital SAT"
+    },
+    {
+      "id": "meltzer-grammar",
+      "title": "The Ultimate Guide to SAT Grammar, 6th Edition",
+      "publisher": "The Critical Reader",
+      "url": "https://thecriticalreader.com/product/the-ultimate-guide-to-sat-grammar-6th-edition/",
+      "verified": "2026-10-21",
+      "cycle": "6th edition, Digital SAT"
+    },
+    {
+      "id": "barrons-stat",
+      "title": "AP Statistics Premium, 2027",
+      "publisher": "Simon & Schuster / Barron’s",
+      "url": "https://www.simonandschuster.net/books/AP-Statistics-Premium-2027-9-Practice-Tests-%2B-Comprehensive-Review-%2B-Online-Practice/Martin-Sternstein/Barrons-AP-Prep/9798349701566",
+      "verified": "2026-10-21",
+      "cycle": "2027 edition; published 2026-07-07"
+    },
+    {
+      "id": "pr-psych",
+      "title": "Princeton Review AP Psychology Premium Prep, 24th Edition",
+      "publisher": "Penguin Random House / Princeton Review",
+      "url": "https://www.penguinrandomhouse.com/books/807032/princeton-review-ap-psychology-premium-prep-24th-edition-by-the-princeton-review/",
+      "verified": "2026-10-21",
+      "cycle": "24th edition; paperback published 2026-08-04"
+    },
+    {
+      "id": "essay-book",
+      "title": "College Essay Essentials",
+      "publisher": "Sourcebooks",
+      "url": "https://www.sourcebooks.com/9781492635123-college-essay-essentials-tp.html",
+      "verified": "2026-10-21",
+      "cycle": "2016 available edition; ISBN 9781492635123"
+    },
+    {
+      "id": "essay-new",
+      "title": "College Essay Essentials: forthcoming edition",
+      "publisher": "Sourcebooks",
+      "url": "https://www.sourcebooks.com/9781464234248-college-essay-essentials-tp.html",
+      "verified": "2026-10-21",
+      "cycle": "2026-11-10 forthcoming, not yet released as of verification"
+    },
+    {
+      "id": "essay-free",
+      "title": "The Free Guide to the Personal Statement",
+      "publisher": "College Essay Guy",
+      "url": "https://www.collegeessayguy.com/guides/the-free-guide",
+      "verified": "2026-10-21",
+      "cycle": "Current web guide"
+    }
+  ],
+  "facts": [
+    {
+      "id": "sat-definition",
+      "text": "The SAT has Reading and Writing and Math sections, each scored 200–800. Total score: 400–1600.",
+      "sourceIds": ["sat-scoring"],
+      "status": "Verified"
+    },
+    {
+      "id": "sat-registration",
+      "text": "Register through a College Board account and choose an available test center. Published weekend deadlines apply to U.S. and international students and expire at 11:59 p.m. Eastern Time. Device borrowing requires earlier registration/request, at least 30 days before test day.",
+      "sourceIds": ["sat-register", "sat-dates"],
+      "status": "Verified"
+    },
+    {
+      "id": "sat-score-choice",
+      "text": "Score Choice selects entire SAT test dates; some colleges require all scores. It is not available for the free score sends selected at registration or in-school testing.",
+      "sourceIds": ["sat-choice"],
+      "status": "Verified"
+    },
+    {
+      "id": "sat-superscore",
+      "text": "Superscoring combines a student's best section scores across test dates when a college's policy allows it. It is a college policy, separate from Score Choice; verify each institution and program.",
+      "sourceIds": ["sat-super", "sat-choice"],
+      "status": "Verified"
+    },
+    {
+      "id": "sat-plan",
+      "text": "Take a timed Bluebook diagnostic now. Use Khan Academy and the official Student Question Bank for weaker skills. Consider March 6, 2027 for a first attempt, with May 1 or June 5 as an alternative. Avoid overloading the May AP period. Retakes depend on the diagnostic, chosen colleges and school workload.",
+      "sourceIds": ["sat-dates", "sat-practice"],
+      "status": "Planning guidance"
+    },
+    {
+      "id": "sat-targets",
+      "text": "Set strategic SAT targets from each shortlisted university’s published score distribution and policy. There is no verified universal Ontario-average-to-SAT target and no promised admission cutoff. A middle-50% range describes its specified cohort, not a requirement.",
+      "sourceIds": ["sat-scoring"],
+      "status": "Planning guidance — university-specific sources required"
+    },
+    {
+      "id": "sat-future",
+      "text": "2027–28 SAT dates are officially labeled Anticipated. Registration deadlines and score-release dates for that cycle are not yet published on the reviewed schedule. Do not treat anticipated dates as confirmed.",
+      "sourceIds": ["sat-dates"],
+      "status": "Anticipated / Not yet published"
+    },
+    {
+      "id": "ap-order-deadline",
+      "text": "For 2027 AP exams, the preferred school order date is October 2, 2026. Final orders for full-year, first-semester and exam-only sections are due November 13, 2026 at 11:59 p.m. ET. Spring course orders and fall order changes are due March 12, 2027 at 11:59 p.m. ET.",
+      "sourceIds": ["ap-order"],
+      "status": "Verified"
+    },
+    {
+      "id": "ap-local-deadline",
+      "text": "Those dates are AP coordinator/school ordering deadlines, not a guaranteed student registration deadline. Schools set their own earlier deadlines, fees and outside-student policies. Contact a coordinator in October, join the correct section and confirm the actual exam order.",
+      "sourceIds": ["ap-order", "ap-outside"],
+      "status": "Verified"
+    },
+    {
+      "id": "ap-course-exam",
+      "text": "An AP course provides coursework; a standalone AP exam is a separate assessment. College Board allows most AP exams without taking the course, but recommends taking it. Arrange a test host; portfolio-based subjects have additional requirements. Exam-only preparation does not create an AP course on the school transcript.",
+      "sourceIds": ["ap-exam-only"],
+      "status": "Verified facts with planning distinction"
+    },
+    {
+      "id": "ap-score-policy",
+      "text": "AP scores range from 1 to 5. Many colleges award credit or placement for qualifying scores starting at 3, but the university sets the subject-specific rule. A 4 or 5 is a study goal only where supported by the chosen credit policy, never a universal admission requirement.",
+      "sourceIds": ["ap-scores", "asu-ap"],
+      "status": "Verified"
+    },
+    {
+      "id": "ap-2027",
+      "text": "Regular 2027 AP exams run May 3–7 and May 10–14. Ask the coordinator for the reporting time and location; start-time rules changed in some locations for 2027.",
+      "sourceIds": ["ap-dates"],
+      "status": "Verified"
+    },
+    {
+      "id": "ap-2028",
+      "text": "The reviewed College Board exam schedule publishes 2027 dates, not 2028 dates. Mark 2028 subject dates as Not yet published; check again in Grade 12.",
+      "sourceIds": ["ap-dates"],
+      "status": "Not yet published"
+    },
+    {
+      "id": "ap-selection",
+      "text": "Use the four AP options below as a shortlist, not a requirement to take all four. Choose one or two aligned with strengths and available support before adding more. Protect Ontario course grades and prerequisite coverage.",
+      "sourceIds": ["ap-stat", "ap-lang", "ap-psych", "ap-micro"],
+      "status": "Planning guidance"
+    },
+    {
+      "id": "ossd-cohort",
+      "text": "If this Grade 11 student started Grade 9 in Fall 2024, the OSSD framework is 17 compulsory plus 13 optional credits, the literacy requirement, 40 community involvement hours, and two online credits unless the applicable opt-out/exemption is completed. Confirm the actual Grade 9 start year with guidance.",
+      "sourceIds": ["ontario-ossd"],
+      "status": "Verified"
+    },
+    {
+      "id": "ossd-financial-literacy",
+      "text": "The financial literacy graduation requirement applies to students who began Grade 9 in 2025–26 or later, taking effect in Grade 10 Career Studies in 2026–27. Do not automatically apply it to the assumed Fall 2024 Grade 9 cohort.",
+      "sourceIds": ["ontario-ossd"],
+      "status": "Verified"
+    },
+    {
+      "id": "ontario-um",
+      "text": "U denotes University Preparation; M denotes University/College Preparation. Ontario offers destination-related Grade 11/12 courses. Meeting OSSD requirements is distinct from satisfying each U.S. university's subject and rigor expectations.",
+      "sourceIds": ["ontario-codes", "ontario-courses"],
+      "status": "Verified with planning distinction"
+    },
+    {
+      "id": "ontario-gpa",
+      "text": "Keep Ontario marks in the school's original scale; do not invent a U.S. GPA conversion. Common App guidance says to leave cumulative GPA blank if the school does not calculate it or uses a scale unavailable in the form. Follow each university's specific transcript instructions.",
+      "sourceIds": ["common-gpa"],
+      "status": "Verified form guidance / planning rule"
+    },
+    {
+      "id": "common-preparation",
+      "text": "You can prepare My Common Application answers, activities and the personal essay before the application year. College-specific questions and supplements should wait for the appropriate cycle and must be checked after rollover.",
+      "sourceIds": ["common-guide"],
+      "status": "Verified"
+    },
+    {
+      "id": "early-options",
+      "text": "Early Decision is binding under the signed agreement; Early Action is nonbinding. Restrictive or Single-Choice Early Action limits other early applications according to the institution's rules. Read the actual agreement and financial-aid conditions before choosing ED.",
+      "sourceIds": ["early-plans"],
+      "status": "Verified"
+    },
+    {
+      "id": "citizenship",
+      "text": "Ontario residence or attendance does not establish citizenship. Application category, federal aid eligibility and entry documents depend on citizenship/immigration status and university rules. Display Citizenship-dependent until the student supplies status.",
+      "sourceIds": ["student-visa", "federal-aid"],
+      "status": "Planning guidance"
+    },
+    {
+      "id": "canadian-entry",
+      "text": "Canadian citizens generally do not need an F-1 visa stamp to enter as students, but must present a valid Form I-20 and be admitted in student status. The initial I-901 SEVIS fee still applies. Coordinate entry documents with the admitting school's international office; Canadian permanent residency alone is not Canadian citizenship.",
+      "sourceIds": ["student-visa", "sevis-official", "sevis-canadian"],
+      "status": "Verified"
+    },
+    {
+      "id": "federal-aid",
+      "text": "Federal student aid generally requires U.S. citizenship or an eligible noncitizen category. Canadian citizenship alone does not make a student eligible; F-1 status is not an eligible category. Some exceptions exist, including certain Native American students born in Canada. Institutional aid is a separate school-specific question.",
+      "sourceIds": ["federal-aid"],
+      "status": "Verified"
+    },
+    {
+      "id": "travel-timing",
+      "text": "After admission and enrollment choice, request the I-20 through the school, confirm funding evidence, pay the required SEVIS fee, and follow citizenship-specific visa and entry instructions. Recheck government rules in 2028 before booking travel.",
+      "sourceIds": ["student-visa", "sevis-official", "sevis-canadian"],
+      "status": "Planning guidance"
+    }
+  ],
+  "satDates": [
+    {
+      "date": "2026-08-22",
+      "registrationDeadline": "2026-08-07",
+      "lateDeadline": "2026-08-11",
+      "scoreRelease": "2026-09-04",
+      "status": "Confirmed",
+      "sourceIds": ["sat-dates", "sat-release"]
+    },
+    {
+      "date": "2026-09-12",
+      "registrationDeadline": "2026-08-28",
+      "lateDeadline": "2026-09-01",
+      "scoreRelease": "2026-09-25",
+      "status": "Confirmed",
+      "sourceIds": ["sat-dates", "sat-release"]
+    },
+    {
+      "date": "2026-10-03",
+      "registrationDeadline": "2026-09-18",
+      "lateDeadline": "2026-09-22",
+      "scoreRelease": "2026-10-16",
+      "status": "Confirmed",
+      "sourceIds": ["sat-dates", "sat-release"]
+    },
+    {
+      "date": "2026-11-07",
+      "registrationDeadline": "2026-10-23",
+      "lateDeadline": "2026-10-27",
+      "scoreRelease": "2026-11-20",
+      "status": "Confirmed",
+      "sourceIds": ["sat-dates", "sat-release"]
+    },
+    {
+      "date": "2026-12-05",
+      "registrationDeadline": "2026-11-20",
+      "lateDeadline": "2026-11-24",
+      "scoreRelease": "2026-12-18",
+      "status": "Confirmed",
+      "sourceIds": ["sat-dates", "sat-release"]
+    },
+    {
+      "date": "2027-03-06",
+      "registrationDeadline": "2027-02-19",
+      "lateDeadline": "2027-02-23",
+      "scoreRelease": "2027-03-19",
+      "status": "Confirmed",
+      "sourceIds": ["sat-dates", "sat-release"]
+    },
+    {
+      "date": "2027-05-01",
+      "registrationDeadline": "2027-04-16",
+      "lateDeadline": "2027-04-20",
+      "scoreRelease": "2027-05-14",
+      "status": "Confirmed",
+      "sourceIds": ["sat-dates", "sat-release"]
+    },
+    {
+      "date": "2027-06-05",
+      "registrationDeadline": "2027-05-21",
+      "lateDeadline": "2027-05-25",
+      "scoreRelease": "2027-06-21",
+      "status": "Confirmed",
+      "sourceIds": ["sat-dates", "sat-release"]
+    }
+  ],
+  "satAnticipatedDates": [
+    {
+      "date": "2027-08-28",
+      "registrationDeadline": null,
+      "lateDeadline": null,
+      "scoreRelease": null,
+      "status": "Anticipated — not confirmed",
+      "sourceIds": ["sat-dates"]
+    },
+    {
+      "date": "2027-09-18",
+      "registrationDeadline": null,
+      "lateDeadline": null,
+      "scoreRelease": null,
+      "status": "Anticipated — not confirmed",
+      "sourceIds": ["sat-dates"]
+    },
+    {
+      "date": "2027-10-09",
+      "registrationDeadline": null,
+      "lateDeadline": null,
+      "scoreRelease": null,
+      "status": "Anticipated — not confirmed",
+      "sourceIds": ["sat-dates"]
+    },
+    {
+      "date": "2027-11-06",
+      "registrationDeadline": null,
+      "lateDeadline": null,
+      "scoreRelease": null,
+      "status": "Anticipated — not confirmed",
+      "sourceIds": ["sat-dates"]
+    },
+    {
+      "date": "2027-12-04",
+      "registrationDeadline": null,
+      "lateDeadline": null,
+      "scoreRelease": null,
+      "status": "Anticipated — not confirmed",
+      "sourceIds": ["sat-dates"]
+    },
+    {
+      "date": "2028-03-04",
+      "registrationDeadline": null,
+      "lateDeadline": null,
+      "scoreRelease": null,
+      "status": "Anticipated — not confirmed",
+      "sourceIds": ["sat-dates"]
+    },
+    {
+      "date": "2028-05-06",
+      "registrationDeadline": null,
+      "lateDeadline": null,
+      "scoreRelease": null,
+      "status": "Anticipated — not confirmed",
+      "sourceIds": ["sat-dates"]
+    },
+    {
+      "date": "2028-06-03",
+      "registrationDeadline": null,
+      "lateDeadline": null,
+      "scoreRelease": null,
+      "status": "Anticipated — not confirmed",
+      "sourceIds": ["sat-dates"]
+    }
+  ],
+  "apPriorities": [
+    {
+      "id": "english-language",
+      "name": "AP English Language and Composition",
+      "priority": 1,
+      "reason": "Argument, source evaluation and revision align with humanities/social-science study and application writing.",
+      "difficulty": "Writing-intensive; qualitative workload assessment, not an official difficulty rank.",
+      "timing": "Grade 11 if writing is already strong and a host/course is available; otherwise Grade 12.",
+      "examDate": "2027-05-12",
+      "session": "Session 1; coordinator confirms reporting time",
+      "target": "4–5 for the current ASU example; not an admission requirement",
+      "credit": "ASU currently gives 3 elective credits and placement into ENG 105 for 4 or 5; this is not automatic ENG 101 credit for a new first-year student.",
+      "sourceIds": ["ap-lang", "ap-dates", "asu-ap"],
+      "status": "Planning priority; verified content and credit example"
+    },
+    {
+      "id": "statistics",
+      "name": "AP Statistics",
+      "priority": 2,
+      "reason": "Data analysis supports social sciences, psychology and business exploration.",
+      "difficulty": "Quantitative reasoning and written explanations; first-year algebra is the current recommended prerequisite.",
+      "timing": "Grade 11 or Grade 12 after appropriate algebra preparation; use the 2026–27 course framework.",
+      "examDate": "2027-05-11",
+      "session": "Session 2; coordinator confirms reporting time",
+      "target": "3+ for current ASU credit; 4–5 may preserve options elsewhere, subject to each university's table",
+      "credit": "ASU currently awards 3 credits for STP 226 at scores 3, 4 or 5.",
+      "sourceIds": ["ap-stat", "ap-dates", "asu-ap"],
+      "status": "Planning priority; verified prerequisite and credit example"
+    },
+    {
+      "id": "psychology",
+      "name": "AP Psychology",
+      "priority": 3,
+      "reason": "A coherent option for students exploring psychology, sociology or broader social sciences.",
+      "difficulty": "Substantial concepts and research interpretation; no formal College Board prerequisite. This is not a promise that the course is easy.",
+      "timing": "Grade 11 if supported and manageable; otherwise Grade 12.",
+      "examDate": "2027-05-14",
+      "session": "Session 2; coordinator confirms reporting time",
+      "target": "4–5 for the current ASU example; not an admission requirement",
+      "credit": "ASU currently awards 3 credits for PSY 101 at scores 4 or 5.",
+      "sourceIds": ["ap-psych", "ap-dates", "asu-ap"],
+      "status": "Planning priority; verified content and credit example"
+    },
+    {
+      "id": "microeconomics",
+      "name": "AP Microeconomics",
+      "priority": 4,
+      "reason": "An optional addition for a genuine economics or business interest; teaches economic models and graph-based reasoning.",
+      "difficulty": "Conceptual and graph-intensive; no formal College Board prerequisite. Qualitative workload assessment.",
+      "timing": "Grade 11 only with time and support; otherwise Grade 12 after confirming university credit relevance.",
+      "examDate": "2027-05-04",
+      "session": "Session 2; coordinator confirms reporting time",
+      "target": "4–5 for the current ASU example; not an admission requirement",
+      "credit": "ASU currently awards 3 credits for ECN 212 at scores 4 or 5.",
+      "sourceIds": ["ap-micro", "ap-dates", "asu-ap"],
+      "status": "Optional planning priority; verified content and credit example"
+    }
+  ],
+  "resources": [
+    {
+      "title": "Bluebook full-length Digital SAT practice",
+      "author": "College Board",
+      "edition": "Current online resource",
+      "purpose": "SAT diagnostic and timed practice",
+      "priority": "Start here — free",
+      "url": "https://satsuite.collegeboard.org/practice/practice-tests/bluebook",
+      "reason": "Use the official testing app to establish a baseline and review errors before buying books.",
+      "sourceIds": ["sat-practice"]
+    },
+    {
+      "title": "Official SAT Prep on Khan Academy",
+      "author": "Khan Academy / College Board",
+      "edition": "Current Digital SAT course",
+      "purpose": "Targeted SAT lessons and practice",
+      "priority": "Start here — free",
+      "url": "https://www.khanacademy.org/digital-sat",
+      "reason": "Use alongside Bluebook results for focused skill work.",
+      "sourceIds": ["sat-practice"]
+    },
+    {
+      "title": "The Complete Guide to SAT Reading",
+      "author": "Erica L. Meltzer",
+      "edition": "6th edition — Digital SAT",
+      "purpose": "SAT Reading and Writing: reading skills",
+      "priority": "Optional, after diagnostic",
+      "url": "https://thecriticalreader.com/product/the-critical-reader-sixth-edition/",
+      "reason": "Choose if reading questions remain a specific weakness; a supplement to official practice.",
+      "sourceIds": ["meltzer-reading"]
+    },
+    {
+      "title": "The Ultimate Guide to SAT Grammar",
+      "author": "Erica L. Meltzer",
+      "edition": "6th edition — Digital SAT",
+      "purpose": "SAT Reading and Writing: grammar and conventions",
+      "priority": "Optional, targeted purchase",
+      "url": "https://thecriticalreader.com/product/the-ultimate-guide-to-sat-grammar-6th-edition/",
+      "reason": "Choose if conventions and punctuation need systematic work; no need to buy both Meltzer books automatically.",
+      "sourceIds": ["meltzer-grammar"]
+    },
+    {
+      "title": "AP Statistics Premium, 2027",
+      "author": "Martin Sternstein, Ph.D.",
+      "edition": "2027 edition; published July 7, 2026; ISBN 9798349701566",
+      "purpose": "AP Statistics review",
+      "priority": "Optional, only if taking AP Statistics",
+      "url": "https://www.simonandschuster.net/books/AP-Statistics-Premium-2027-9-Practice-Tests-%2B-Comprehensive-Review-%2B-Online-Practice/Martin-Sternstein/Barrons-AP-Prep/9798349701566",
+      "reason": "Publisher confirms alignment to the redesigned Statistics framework; use official course materials first.",
+      "sourceIds": ["barrons-stat"]
+    },
+    {
+      "title": "Princeton Review AP Psychology Premium Prep",
+      "author": "The Princeton Review",
+      "edition": "24th edition; published August 4, 2026; ISBN 9798217125159",
+      "purpose": "AP Psychology review",
+      "priority": "Optional, only if taking AP Psychology",
+      "url": "https://www.penguinrandomhouse.com/books/807032/princeton-review-ap-psychology-premium-prep-24th-edition-by-the-princeton-review/",
+      "reason": "Current publisher edition includes digital exam practice and topic review.",
+      "sourceIds": ["pr-psych"]
+    },
+    {
+      "title": "Official AP course and exam resources",
+      "author": "College Board",
+      "edition": "2026–27 course pages; choose your subject",
+      "purpose": "AP course framework and free exam practice",
+      "priority": "Start here — free",
+      "url": "https://apstudents.collegeboard.org/help-center/can-i-take-ap-exam-if-i-havent-taken-ap-course",
+      "reason": "Read the course/exam description and released free-response questions before selecting a paid guide.",
+      "sourceIds": ["ap-exam-only"]
+    },
+    {
+      "title": "The Free Guide to the Personal Statement",
+      "author": "Ethan Sawyer / College Essay Guy",
+      "edition": "Current web guide",
+      "purpose": "Essay brainstorming and drafting",
+      "priority": "Start here — free",
+      "url": "https://www.collegeessayguy.com/guides/the-free-guide",
+      "reason": "Use the structured exercises in summer 2027 to develop an authentic first draft; no paid book is necessary.",
+      "sourceIds": ["essay-free"]
+    },
+    {
+      "title": "College Essay Essentials",
+      "author": "Ethan Sawyer",
+      "edition": "2016 edition; ISBN 9781492635123",
+      "purpose": "Essay brainstorming, structure and revision",
+      "priority": "Optional; library/used copy sufficient",
+      "url": "https://www.sourcebooks.com/9781492635123-college-essay-essentials-tp.html",
+      "reason": "Available publisher-listed edition. The new ISBN 9781464234248 edition is scheduled for November 10, 2026 and is still a preorder as of October 21; do not label it already released.",
+      "sourceIds": ["essay-book", "essay-new"]
+    }
+  ],
+  "limitations": [
+    "No 2028 AP exam dates verified; do not copy 2027 dates into 2028.",
+    "2027–28 SAT dates are anticipated; corresponding deadlines and score releases are unpublished.",
+    "All AP difficulty/priority/timing judgments are planning guidance, not official admissions criteria.",
+    "ASU AP examples are current credit rules, not admission rules or guaranteed Fall 2028 credit.",
+    "DHS live fee page and ICE FAQ returned 403 to this research tool; fee evidence uses the accessible official DHS tutorial plus MIT's explicit Canadian-citizen guidance.",
+    "Citizenship is unknown. Do not infer it from Ontario residence."
+  ]
+}

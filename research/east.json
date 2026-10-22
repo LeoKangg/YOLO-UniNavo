@@ -1,0 +1,791 @@
+[
+  {
+    "id": "michigan-state",
+    "name": "Michigan State University",
+    "city": "East Lansing",
+    "state": "Michigan",
+    "type": "Public",
+    "recognition": "High",
+    "recognitionNote": "Editorial university-brand reference, not a measured Korean recognition rate or admission metric.",
+    "testingPolicy": "Test optional",
+    "satRange": [1100, 1320],
+    "satCohort": "Fall 2026 enrolled first-year students; published middle 50%",
+    "majors": ["Sociology", "History", "Anthropology"],
+    "admissionStructure": "University admission with major preference; later college/major requirements",
+    "sources": [
+      {
+        "id": "msu-apply",
+        "title": "International application checklist",
+        "publisher": "Michigan State University Admissions",
+        "url": "https://admissions.msu.edu/apply/international/apply-now",
+        "verified": "2026-10-21",
+        "cycle": "Fall 2027 application banner; essay prompt block still labeled 2026"
+      },
+      {
+        "id": "msu-criteria",
+        "title": "International admission criteria and class profile",
+        "publisher": "Michigan State University Admissions",
+        "url": "https://admissions.msu.edu/apply/international/admission-criteria",
+        "verified": "2026-10-21",
+        "cycle": "Fall 2027 application; Fall 2026 profile"
+      },
+      {
+        "id": "msu-deadlines",
+        "title": "International dates and deadlines",
+        "publisher": "Michigan State University Admissions",
+        "url": "https://admissions.msu.edu/apply/international/dates-and-deadlines",
+        "verified": "2026-10-21",
+        "cycle": "Fall 2027"
+      },
+      {
+        "id": "msu-transcripts",
+        "title": "International transcript requirements",
+        "publisher": "Michigan State University Admissions",
+        "url": "https://admissions.msu.edu/apply/international/transcript-requirements",
+        "verified": "2026-10-21",
+        "cycle": "Current page; Fall 2028 not confirmed"
+      },
+      {
+        "id": "msu-english",
+        "title": "English language proficiency",
+        "publisher": "Michigan State University Admissions",
+        "url": "https://admissions.msu.edu/apply/international/language-requirements",
+        "verified": "2026-10-21",
+        "cycle": "Current page includes TOEFL scale from January 21, 2026"
+      },
+      {
+        "id": "msu-social",
+        "title": "College of Social Science academic programs",
+        "publisher": "Michigan State University Registrar",
+        "url": "https://reg.msu.edu/academicprograms/text.aspx?s4090=&section=129",
+        "verified": "2026-10-21",
+        "cycle": "Current academic catalog"
+      },
+      {
+        "id": "msu-ap",
+        "title": "Advanced credits",
+        "publisher": "Michigan State University Admissions",
+        "url": "https://admissions.msu.edu/apply/first-year/advanced-credits",
+        "verified": "2026-10-21",
+        "cycle": "Current credit policy"
+      },
+      {
+        "id": "msu-cost",
+        "title": "Cost and aid",
+        "publisher": "Michigan State University Admissions",
+        "url": "https://admissions.msu.edu/cost-aid",
+        "verified": "2026-10-21",
+        "cycle": "2026–27"
+      },
+      {
+        "id": "msu-aid",
+        "title": "International student scholarships",
+        "publisher": "Michigan State University Admissions",
+        "url": "https://admissions.msu.edu/cost-aid/scholarships/international",
+        "verified": "2026-10-21",
+        "cycle": "Current page; Fall 2028 not confirmed"
+      },
+      {
+        "id": "msu-international",
+        "title": "International applicant classification",
+        "publisher": "Michigan State University Admissions",
+        "url": "https://admissions.msu.edu/apply/international",
+        "verified": "2026-10-21",
+        "cycle": "Current page; Fall 2028 not confirmed"
+      }
+    ],
+    "facts": {
+      "admission": {
+        "text": "School-specific holistic review. MSU publishes no minimum admission requirements; review includes grades, curriculum strength, trends, English proficiency and experiences. This is not an Ontario percentage cutoff.",
+        "sourceIds": ["msu-criteria"],
+        "status": "verified"
+      },
+      "acceptanceRate": {
+        "text": "Not verified for a defined applicant cohort in this research. No acceptance percentage is used.",
+        "sourceIds": [],
+        "status": "not-verified"
+      },
+      "sat": {
+        "text": "SAT and ACT are optional for international first-year applicants on the current Fall 2027 application pages. Fall 2028 policy: confirm when that application opens.",
+        "sourceIds": ["msu-apply"],
+        "status": "verified"
+      },
+      "satMiddle50": {
+        "text": "1100–1320 SAT; 25–31 ACT. Published middle 50% of Fall 2026 enrolled first-year students, not Ontario requirements or admission cutoffs. Test-optional score distributions reflect score submitters.",
+        "sourceIds": ["msu-criteria"],
+        "status": "verified"
+      },
+      "satTarget": {
+        "text": "Strategic reference: work toward the upper part of the published 1100–1320 range if submitting scores. This is planning guidance, not an official cutoff or a way to offset weak coursework automatically.",
+        "sourceIds": ["msu-criteria"],
+        "status": "editorial"
+      },
+      "deadlines": {
+        "text": "Fall 2028 entry deadlines: Not yet published in the reviewed source. Fall 2027 reference: non-binding EA November 1; RD priority February 1; final April 1 with rolling review. Acceptance deadline May 1. All required materials must be received by the application deadline.",
+        "sourceIds": ["msu-deadlines"],
+        "status": "future-unpublished"
+      },
+      "application": {
+        "text": "MSU application, Common App or Coalition with Scoir; submit only one. International fee USD 75. School officials send official secondary records directly. One essay, 250–650 words; no recommendation letters. Recheck 2028 prompts: the current page retains a 2026 prompt label.",
+        "sourceIds": ["msu-apply"],
+        "status": "verified"
+      },
+      "ontario": {
+        "text": "Submit official Grades 9–12 records from each school. Ontario U/M equivalencies and a required Ontario average are not specified in the reviewed MSU page: confirm course planning with Admissions. Do not self-convert percentage marks to a U.S. GPA.",
+        "sourceIds": ["msu-transcripts"],
+        "status": "confirm"
+      },
+      "coursework": {
+        "text": "A college-preparatory secondary curriculum is strongly encouraged; individual curriculum rigor is reviewed. No Ontario top-six formula was verified.",
+        "sourceIds": ["msu-criteria"],
+        "status": "verified"
+      },
+      "international": {
+        "text": "Citizenship-dependent: MSU's international instructions apply to non-U.S. citizens/non-permanent residents needing temporary student status; dual U.S. citizens use the U.S. first-year route even when educated abroad.",
+        "sourceIds": ["msu-international"],
+        "status": "verified"
+      },
+      "english": {
+        "text": "Proof is required when both conditions apply: not a U.S. citizen/permanent resident, and English is not the first language. Ontario attendance alone is not a listed automatic exemption. Regular admission: IELTS 6.5 or DET 110; TOEFL taken from January 21, 2026: 4 overall, sections at least 4 except speaking 3.5. Confirm any Ontario-school waiver directly.",
+        "sourceIds": ["msu-english"],
+        "status": "verified"
+      },
+      "majorStructure": {
+        "text": "First-year applicants select a major preference, not a required formal declaration. Sociology, History and Anthropology are College of Social Science options. College admission also requires appropriate academic standing and acceptance into a major; Social Work is limited. These subject choices are not evidence of easier freshman admission.",
+        "sourceIds": ["msu-apply", "msu-social"],
+        "status": "verified"
+      },
+      "recommendedMajors": {
+        "text": "Sociology, History and Anthropology offer broad social-science study. Editorial shortlist based on academic flexibility; choose subjects you actually want to study. Special professional programs have their own requirements.",
+        "sourceIds": ["msu-social"],
+        "status": "editorial"
+      },
+      "ap": {
+        "text": "AP can earn credit or a course waiver, subject to the exam-specific equivalency table. Send official scores directly from the testing agency. A universal AP score requirement for admission is not stated; exact 2028 credit awards must be rechecked.",
+        "sourceIds": ["msu-ap"],
+        "status": "verified"
+      },
+      "cost": {
+        "text": "2026–27 estimated international undergraduate annual cost: USD 73,120 for two semesters. Tuition USD 45,040 plus fees/taxes USD 1,966; estimate also includes food/housing, supplies, personal, medical and travel costs. These are not 2028 prices.",
+        "sourceIds": ["msu-cost"],
+        "status": "verified"
+      },
+      "aid": {
+        "text": "International and Honors scholarships exist; selection and renewal rules apply. The Honors College Distinction award lists Canadian citizenship among eligible categories. No scholarship is guaranteed. CSS Profile / international need-based eligibility for 2028: Confirm directly with Financial Aid.",
+        "sourceIds": ["msu-aid"],
+        "status": "confirm"
+      }
+    }
+  },
+  {
+    "id": "indiana-bloomington",
+    "name": "Indiana University Bloomington",
+    "city": "Bloomington",
+    "state": "Indiana",
+    "type": "Public",
+    "recognition": "High",
+    "recognitionNote": "Editorial university-brand reference, not an admission metric.",
+    "testingPolicy": "Test optional",
+    "satRange": [1250, 1450],
+    "satCohort": "Fall 2025 admitted students; published middle 50%",
+    "majors": ["Sociology", "History"],
+    "admissionStructure": "College/school admission; CAS direct admission with IU admission and selected CAS major",
+    "sources": [
+      {
+        "id": "iu-apply",
+        "title": "International freshman application process",
+        "publisher": "Indiana University Bloomington",
+        "url": "https://bloomington.iu.edu/admissions/apply/international/freshman/",
+        "verified": "2026-10-21",
+        "cycle": "Current page; Fall 2028 not confirmed"
+      },
+      {
+        "id": "iu-steps",
+        "title": "Personalized application steps",
+        "publisher": "Indiana University Bloomington",
+        "url": "https://bloomington.iu.edu/admissions/apply/steps.html?description=freshman&location=international",
+        "verified": "2026-10-21",
+        "cycle": "Current page; Fall 2028 not confirmed"
+      },
+      {
+        "id": "iu-criteria",
+        "title": "International freshman admission standards",
+        "publisher": "Indiana University Bloomington",
+        "url": "https://bloomington.iu.edu/admissions/apply/international/freshman/admission-standards.html",
+        "verified": "2026-10-21",
+        "cycle": "Current page; Fall 2028 not confirmed"
+      },
+      {
+        "id": "iu-transcripts",
+        "title": "International transcripts and credentials",
+        "publisher": "Indiana University Bloomington",
+        "url": "https://bloomington.iu.edu/admissions/apply/international/transcripts.html",
+        "verified": "2026-10-21",
+        "cycle": "Current page; Fall 2028 not confirmed"
+      },
+      {
+        "id": "iu-deadlines",
+        "title": "International application deadlines",
+        "publisher": "Indiana University Bloomington",
+        "url": "https://bloomington.iu.edu/admissions/apply/international/deadlines.html",
+        "verified": "2026-10-21",
+        "cycle": "Standing published schedule; entry year not labeled"
+      },
+      {
+        "id": "iu-english",
+        "title": "Establishing English proficiency",
+        "publisher": "Indiana University Bloomington",
+        "url": "https://bloomington.iu.edu/admissions/apply/international/english-proficiency.html",
+        "verified": "2026-10-21",
+        "cycle": "Current page; legacy TOEFL scale remains"
+      },
+      {
+        "id": "iu-paths",
+        "title": "Admission paths by school",
+        "publisher": "Indiana University Bloomington",
+        "url": "https://bloomington.iu.edu/admissions/paths/",
+        "verified": "2026-10-21",
+        "cycle": "Current page; supersedes legacy OIS University Division guidance"
+      },
+      {
+        "id": "iu-profile",
+        "title": "Class profile",
+        "publisher": "Indiana University Bloomington",
+        "url": "https://bloomington.iu.edu/admissions/class-profile.html",
+        "verified": "2026-10-21",
+        "cycle": "Fall 2025 admitted cohort"
+      },
+      {
+        "id": "iu-sociology",
+        "title": "Sociology BA",
+        "publisher": "Indiana University",
+        "url": "https://academics.iu.edu/degrees/bloomington/bachelor-of-arts/sociology.html",
+        "verified": "2026-10-21",
+        "cycle": "Current page; Fall 2028 not confirmed"
+      },
+      {
+        "id": "iu-history",
+        "title": "History BA",
+        "publisher": "Indiana University",
+        "url": "https://academics.iu.edu/degrees/bloomington/bachelor-of-arts/history.html",
+        "verified": "2026-10-21",
+        "cycle": "Current page; Fall 2028 not confirmed"
+      },
+      {
+        "id": "iu-ap",
+        "title": "AP exam credit",
+        "publisher": "Indiana University Bloomington",
+        "url": "https://bloomington.iu.edu/admissions/apply/freshman/exam-credits/ap-exam-credit.html",
+        "verified": "2026-10-21",
+        "cycle": "Current credit table"
+      },
+      {
+        "id": "iu-cost",
+        "title": "International undergraduate costs",
+        "publisher": "Indiana University Bloomington",
+        "url": "https://bloomington.iu.edu/cost-aid/cost-attendance/international/undergraduate.html",
+        "verified": "2026-10-21",
+        "cycle": "Academic year not stated in retrieved international estimate"
+      },
+      {
+        "id": "iu-aid",
+        "title": "Aid for international students",
+        "publisher": "Indiana University Bloomington",
+        "url": "https://bloomington.iu.edu/cost-aid/financial-aid/international.html",
+        "verified": "2026-10-21",
+        "cycle": "Current page; Fall 2028 not confirmed"
+      }
+    ],
+    "facts": {
+      "admission": {
+        "text": "School-specific holistic review emphasizing preparation, marks, course rigor and recent trends. IU describes successful records as a B-equivalent or higher but publishes no Ontario percentage conversion here; no U.S. GPA conversion is made.",
+        "sourceIds": ["iu-criteria"],
+        "status": "verified"
+      },
+      "acceptanceRate": {
+        "text": "Not verified for a defined applicant cohort in this research. No acceptance percentage is used.",
+        "sourceIds": [],
+        "status": "not-verified"
+      },
+      "sat": {
+        "text": "SAT/ACT are optional under the current policy. No Fall 2028-specific duration was verified; recheck before applying.",
+        "sourceIds": ["iu-criteria"],
+        "status": "verified"
+      },
+      "satMiddle50": {
+        "text": "1250–1450 SAT and 29–33 ACT: middle 50% of students admitted for Fall 2025, not enrolled-student ranges. 45% of admits applied test-optional. These figures are not Ontario thresholds.",
+        "sourceIds": ["iu-profile"],
+        "status": "verified"
+      },
+      "satTarget": {
+        "text": "Strategic reference: consider the upper part of the 1250–1450 admitted-student range when deciding whether scores strengthen an application. Not an official cutoff; no guaranteed admission.",
+        "sourceIds": ["iu-profile"],
+        "status": "editorial"
+      },
+      "deadlines": {
+        "text": "Fall 2028 entry deadlines: Not yet published in the reviewed source. Current standing reference: non-binding EA November 1; RD February 1, then space-available review. Deposit deadline is May 1 on the current site. Use the current page rather than legacy OIS pages with a different deposit date.",
+        "sourceIds": ["iu-deadlines", "iu-apply"],
+        "status": "future-unpublished"
+      },
+      "application": {
+        "text": "Apply IU or Common App; international application fee USD 65. Essay and academic records required; letters of recommendation are optional. Meet English proficiency and provide financial documentation requested for immigration processing. Follow the personalized international checklist.",
+        "sourceIds": ["iu-apply", "iu-steps", "iu-criteria"],
+        "status": "verified"
+      },
+      "ontario": {
+        "text": "IU explicitly lists Ontario Student Transcript for Grades 9, 10 and 11 while in school, and Ontario Secondary School Diploma as the final credential. No Ontario minimum average or top-six formula was verified.",
+        "sourceIds": ["iu-transcripts"],
+        "status": "verified"
+      },
+      "coursework": {
+        "text": "Published preparation: 4 years English/native language, 3.5 mathematics including algebra/geometry and further college-prep math, 3 social science, 3 science including 2 lab science, 2 another world language, plus additional college-prep study. These are U.S. semesters/years, not Ontario credit counts; ask Admissions to map your U/M courses.",
+        "sourceIds": ["iu-criteria"],
+        "status": "verified"
+      },
+      "international": {
+        "text": "Canadian residence does not determine citizenship or aid eligibility. Use IU's international route when applicable and have Admissions confirm classification if a U.S. citizen/permanent resident studying in Ontario.",
+        "sourceIds": ["iu-apply"],
+        "status": "confirm"
+      },
+      "english": {
+        "text": "English proficiency can be demonstrated by citizenship of, or at least three full secondary-school years in, a listed English-speaking country; Canada is listed. Otherwise IELTS 6.5 or DET 115 are among options. The page still shows TOEFL 79 on the old scale: confirm the requirement for tests taken under the 2026 scoring system rather than converting it.",
+        "sourceIds": ["iu-english"],
+        "status": "confirm"
+      },
+      "majorStructure": {
+        "text": "Current IU guidance: admitted applicants selecting a CAS major are directly admitted to CAS. Sociology and History are CAS BA programs. Kelley Business and Nursing have separate pathways and requirements; do not treat CAS as guaranteed entry into those schools.",
+        "sourceIds": ["iu-paths", "iu-sociology", "iu-history"],
+        "status": "verified"
+      },
+      "recommendedMajors": {
+        "text": "Sociology and History: editorial options for broad academic study within the university. No evidence that choosing these majors raises the freshman admission rate.",
+        "sourceIds": ["iu-sociology", "iu-history"],
+        "status": "editorial"
+      },
+      "ap": {
+        "text": "Current AP table: Psychology 3 earns 3 undistributed credits; 4/5 earns PSY-P 155 (3 credits). Calculus AB 3 earns undistributed credit; 4/5 earns MATH-M 211 (4 credits). AP exam credit is separate from admission and departmental degree applicability; send official scores.",
+        "sourceIds": ["iu-ap"],
+        "status": "verified"
+      },
+      "cost": {
+        "text": "International page lists USD 61,156 for nine months, including tuition/mandatory fees USD 44,339, but does not label the academic year in the retrieved estimate. Treat it as an undated reference only; confirm a year-specific budget and do not label it 2026–27 or 2028.",
+        "sourceIds": ["iu-cost"],
+        "status": "confirm"
+      },
+      "aid": {
+        "text": "IU offers international scholarships and outside-funding guidance. U.S. federal eligibility depends on qualifying citizenship/immigration status. International need-based aid and CSS Profile requirements for Fall 2028: Confirm directly with Financial Aid.",
+        "sourceIds": ["iu-aid"],
+        "status": "confirm"
+      }
+    }
+  },
+  {
+    "id": "penn-state",
+    "name": "Penn State — University Park",
+    "city": "University Park",
+    "state": "Pennsylvania",
+    "type": "Public",
+    "recognition": "High",
+    "recognitionNote": "Editorial reference for the University Park campus; branch-campus admission is a distinct route.",
+    "testingPolicy": "Test optional",
+    "satRange": null,
+    "satCohort": null,
+    "majors": ["Sociology", "Anthropology"],
+    "admissionStructure": "Campus admission, usually into college or Division of Undergraduate Studies; later entrance to major",
+    "sources": [
+      {
+        "id": "psu-apply",
+        "title": "International steps to apply",
+        "publisher": "Penn State Undergraduate Admissions",
+        "url": "https://www.psu.edu/resources/international-students/steps-to-apply",
+        "verified": "2026-10-21",
+        "cycle": "Current page; Fall 2028 not confirmed"
+      },
+      {
+        "id": "psu-requirements",
+        "title": "International admission requirements",
+        "publisher": "Penn State Undergraduate Admissions",
+        "url": "https://www.psu.edu/resources/international-students/admission-requirements",
+        "verified": "2026-10-21",
+        "cycle": "Current page includes 2026 TOEFL scale"
+      },
+      {
+        "id": "psu-canada",
+        "title": "Canada (except Quebec) credentials",
+        "publisher": "Penn State Undergraduate Admissions",
+        "url": "https://www.psu.edu/resources/international-students/credentials/canada-except-quebec",
+        "verified": "2026-10-21",
+        "cycle": "Current page; Fall 2028 not confirmed"
+      },
+      {
+        "id": "psu-deadlines",
+        "title": "International dates and deadlines",
+        "publisher": "Penn State Undergraduate Admissions",
+        "url": "https://www.psu.edu/resources/international-students/deadlines",
+        "verified": "2026-10-21",
+        "cycle": "Standing published schedule; entry year not labeled"
+      },
+      {
+        "id": "psu-review",
+        "title": "First-year application review",
+        "publisher": "Penn State Undergraduate Admissions",
+        "url": "https://www.psu.edu/resources/first-year-students/application-review",
+        "verified": "2026-10-21",
+        "cycle": "Current page; Fall 2028 not confirmed"
+      },
+      {
+        "id": "psu-courses",
+        "title": "First-year admission requirements",
+        "publisher": "Penn State Undergraduate Admissions",
+        "url": "https://www.psu.edu/resources/first-year-students/requirements",
+        "verified": "2026-10-21",
+        "cycle": "Current page; Fall 2028 not confirmed"
+      },
+      {
+        "id": "psu-profile",
+        "title": "Eligibility and class profile",
+        "publisher": "Penn State Undergraduate Admissions",
+        "url": "https://www.psu.edu/resources/first-year-students/eligibility",
+        "verified": "2026-10-21",
+        "cycle": "Summer/Fall 2026 admitted students; dynamic score table not retrieved"
+      },
+      {
+        "id": "psu-major",
+        "title": "Entrance to major",
+        "publisher": "Penn State University Bulletin",
+        "url": "https://bulletins.psu.edu/undergraduate/general-information/academic-information/undergraduate-degrees-requirements/entrance-major/entrance-major.pdf",
+        "verified": "2026-10-21",
+        "cycle": "Current bulletin"
+      },
+      {
+        "id": "psu-sociology",
+        "title": "Sociology BA",
+        "publisher": "Penn State University Bulletin",
+        "url": "https://bulletins.psu.edu/undergraduate/colleges/liberal-arts/sociology-ba/",
+        "verified": "2026-10-21",
+        "cycle": "2026–27 bulletin"
+      },
+      {
+        "id": "psu-anthropology",
+        "title": "Anthropology BA",
+        "publisher": "Penn State University Bulletin",
+        "url": "https://bulletins.psu.edu/undergraduate/colleges/liberal-arts/anthropology-ba/",
+        "verified": "2026-10-21",
+        "cycle": "2026–27 bulletin"
+      },
+      {
+        "id": "psu-ap",
+        "title": "AP credit",
+        "publisher": "Penn State Undergraduate Admissions",
+        "url": "https://www.psu.edu/admission/undergraduate/credit/ap-credit",
+        "verified": "2026-10-21",
+        "cycle": "Current page; Fall 2028 not confirmed"
+      },
+      {
+        "id": "psu-cost",
+        "title": "Estimated future tuition and fees",
+        "publisher": "Penn State Tuition",
+        "url": "https://tuition.psu.edu/estimated-future-tuition-and-fee-rates",
+        "verified": "2026-10-21",
+        "cycle": "2026–27 through 2029–30 estimates"
+      },
+      {
+        "id": "psu-fees",
+        "title": "International undergraduate fee",
+        "publisher": "Penn State Bursar",
+        "url": "https://www.bursar.psu.edu/fees",
+        "verified": "2026-10-21",
+        "cycle": "Current page; Fall 2028 not confirmed"
+      },
+      {
+        "id": "psu-aid",
+        "title": "Financial guarantee requirements",
+        "publisher": "Penn State Global",
+        "url": "https://global.psu.edu/page/financial-guarantee-requirements",
+        "verified": "2026-10-21",
+        "cycle": "2026–27 financial-guarantee reference"
+      }
+    ],
+    "facts": {
+      "admission": {
+        "text": "School-specific holistic review, with academic record central. Penn State states no minimum GPA or test score for admission. University Park review is distinct from an offer at another campus. A major change usually does not change the campus admission decision.",
+        "sourceIds": ["psu-review"],
+        "status": "verified"
+      },
+      "acceptanceRate": {
+        "text": "Not verified for a defined University Park applicant cohort in this research. No all-campus or aggregator percentage is substituted.",
+        "sourceIds": [],
+        "status": "not-verified"
+      },
+      "sat": {
+        "text": "Current central international page says SAT/ACT optional. Penn State uses the best combined score from one test date, not superscoring. Fall 2028-specific continuation was not verified.",
+        "sourceIds": ["psu-requirements"],
+        "status": "verified"
+      },
+      "satMiddle50": {
+        "text": "Not verified. Official profile identifies Summer/Fall 2026 first-choice-campus admits, but numeric ranges were in a dynamic table unavailable in the retrieved text. No SAT range is invented.",
+        "sourceIds": ["psu-profile"],
+        "status": "not-verified"
+      },
+      "satTarget": {
+        "text": "No numeric strategic SAT target is assigned until the official University Park distribution is verified. Confirm current policy and compare scores with the campus-specific published profile.",
+        "sourceIds": ["psu-profile"],
+        "status": "not-verified"
+      },
+      "deadlines": {
+        "text": "Fall 2028 entry deadlines: Not yet published in reviewed sources. Current international reference: EA November 1; rolling review afterward, with increasing competition at University Park. International final deadlines and program deadlines must be checked separately; no future final date is assumed.",
+        "sourceIds": ["psu-deadlines"],
+        "status": "future-unpublished"
+      },
+      "application": {
+        "text": "MyPennState or Common App; USD 75 international fee. Complete STARS academic record even when using Common App. Personal statement and activities are optional. Recommendation letters are not required or used for general admission, though specific programs can require them.",
+        "sourceIds": ["psu-apply"],
+        "status": "verified"
+      },
+      "ontario": {
+        "text": "Ontario applicants use STARS; after accepting an offer, supply official Grades 9–12 transcripts plus OSSD or Secondary School (Honours) Graduation Diploma. If documents are not English, a line-by-line translation is required. No Ontario percentage cutoff is published in the reviewed country instructions.",
+        "sourceIds": ["psu-canada"],
+        "status": "verified"
+      },
+      "coursework": {
+        "text": "Verify the college-specific high-school course table with Admissions against your Ontario U/M schedule. Some programs have extra math or other academic requirements. Meeting graduation requirements alone does not establish admission eligibility.",
+        "sourceIds": ["psu-courses", "psu-apply"],
+        "status": "confirm"
+      },
+      "international": {
+        "text": "Citizenship/status-dependent: Penn State directs students who need student immigration status to its international process. Ontario school attendance alone does not determine applicant or federal-aid category.",
+        "sourceIds": ["psu-apply"],
+        "status": "verified"
+      },
+      "english": {
+        "text": "International applicants whose native language is not English need proof; U.S. citizens/permanent residents are exempt. IELTS Academic 6.5, DET 120, TOEFL after January 21, 2026 at least 4.5; earlier TOEFL at least 80. A general Ontario-English-school waiver is not stated in the reviewed page—confirm directly. Four years in a U.S. high school is a listed alternative.",
+        "sourceIds": ["psu-requirements"],
+        "status": "confirm"
+      },
+      "majorStructure": {
+        "text": "Usually campus-based admission into a college or Division of Undergraduate Studies; students generally enter majors in semesters 3–5 after requirements. Sociology BA and Anthropology BA are Liberal Arts options. Nursing and many Arts/Architecture programs are exceptions; do not describe a humanities choice as an admission shortcut.",
+        "sourceIds": [
+          "psu-review",
+          "psu-major",
+          "psu-sociology",
+          "psu-anthropology"
+        ],
+        "status": "verified"
+      },
+      "recommendedMajors": {
+        "text": "Sociology and Anthropology: editorial options for broad social-science interests. Check entrance-to-major rules in the bulletin for your entering class; later major access is not unconditional.",
+        "sourceIds": ["psu-sociology", "psu-anthropology"],
+        "status": "editorial"
+      },
+      "ap": {
+        "text": "AP credit is exam- and score-specific; use Penn State's current table and send official College Board results. Credit must fit the degree. AP/transfer credit can trigger higher tuition once total credits exceed 59.1, so credit is not automatically a net cost saving.",
+        "sourceIds": ["psu-ap"],
+        "status": "verified"
+      },
+      "cost": {
+        "text": "University Park non-Pennsylvania tuition and fees are estimated at USD 45,214 in the 2026–27 four-year projection. This is not total cost of attendance or a 2028 freshman quote. International undergraduate fee is separately listed as USD 750 per semester. Confirm the full international budget including housing, insurance and travel.",
+        "sourceIds": ["psu-cost", "psu-fees"],
+        "status": "confirm"
+      },
+      "aid": {
+        "text": "Penn State Global describes international financial aid as extremely limited and requires documented funding for immigration documents. Do not assume a scholarship or need-based award. CSS Profile status and program-specific merit opportunities: Confirm directly with Financial Aid.",
+        "sourceIds": ["psu-aid"],
+        "status": "confirm"
+      }
+    }
+  },
+  {
+    "id": "nyu",
+    "name": "New York University",
+    "city": "New York",
+    "state": "New York",
+    "type": "Private",
+    "recognition": "Very High",
+    "recognitionNote": "Editorial university-brand reference, not an admission metric. Consider only as a reach exploration option.",
+    "testingPolicy": "Confirm 2028 policy",
+    "satRange": null,
+    "satCohort": null,
+    "majors": ["Sociology", "History", "Anthropology"],
+    "admissionStructure": "College/school application; CAS majors declared after enrollment",
+    "sources": [
+      {
+        "id": "nyu-test",
+        "title": "Test optional at NYU",
+        "publisher": "NYU Undergraduate Admissions — Meet NYU",
+        "url": "https://meet.nyu.edu/advice/test-optional-at-nyu-what-it-is-and-isnt/",
+        "verified": "2026-10-21",
+        "cycle": "Explicitly 2025–26 application process; historical reference"
+      },
+      {
+        "id": "nyu-future-test",
+        "title": "Entry requirements",
+        "publisher": "NYU Abu Dhabi Admissions",
+        "url": "https://nyuad.nyu.edu/en/apply/undergraduate/apply/entry-requirements.html",
+        "verified": "2026-10-21",
+        "cycle": "States NYU test-optional through 2027–28; campus scope requires NYC confirmation"
+      },
+      {
+        "id": "nyu-app",
+        "title": "Inside the 2026–2027 NYU Common Application",
+        "publisher": "NYU Undergraduate Admissions — Meet NYU",
+        "url": "https://meet.nyu.edu/advice/application-tips/inside-the-2026-2027-common-application-for-nyu/",
+        "verified": "2026-10-21",
+        "cycle": "2026–27 application cycle, published July 31, 2026"
+      },
+      {
+        "id": "nyu-ed",
+        "title": "Early Decision explanation",
+        "publisher": "NYU Undergraduate Admissions — Meet NYU",
+        "url": "https://meet.nyu.edu/advice/early-decision/how-i-knew-early-decision-was-right-for-me/",
+        "verified": "2026-10-21",
+        "cycle": "Published October 15, 2026"
+      },
+      {
+        "id": "nyu-dates",
+        "title": "Undergraduate application requirements",
+        "publisher": "NYU Tisch Dance",
+        "url": "https://tisch.nyu.edu/dance/application-requirements.html",
+        "verified": "2026-10-21",
+        "cycle": "2026–27 Common App deadlines; artistic deadlines are program-specific"
+      },
+      {
+        "id": "nyu-fee",
+        "title": "Application fee",
+        "publisher": "NYU Abu Dhabi Admissions",
+        "url": "https://nyuad.nyu.edu/en/apply/undergraduate/apply/application-fee.html",
+        "verified": "2026-10-21",
+        "cycle": "NYU Common Application fee; confirm 2028 amount"
+      },
+      {
+        "id": "nyu-majors",
+        "title": "Applying undecided at NYU",
+        "publisher": "NYU Undergraduate Admissions — Meet NYU",
+        "url": "https://meet.nyu.edu/academics/how-to-apply-undecided-to-nyu/",
+        "verified": "2026-10-21",
+        "cycle": "Published November 21, 2025"
+      },
+      {
+        "id": "nyu-programs",
+        "title": "CAS academic programs",
+        "publisher": "NYU University Bulletin",
+        "url": "https://bulletins.nyu.edu/undergraduate/arts-science/programs/",
+        "verified": "2026-10-21",
+        "cycle": "Current bulletin"
+      },
+      {
+        "id": "nyu-ap",
+        "title": "CAS admission and advanced-standing credit",
+        "publisher": "NYU University Bulletin",
+        "url": "https://bulletins.nyu.edu/undergraduate/arts-science/admissions/",
+        "verified": "2026-10-21",
+        "cycle": "Current credit table"
+      },
+      {
+        "id": "nyu-sociology",
+        "title": "Sociology BA policies",
+        "publisher": "NYU University Bulletin",
+        "url": "https://bulletins.nyu.edu/undergraduate/arts-science/programs/sociology-ba/",
+        "verified": "2026-10-21",
+        "cycle": "Current page; Fall 2028 not confirmed"
+      },
+      {
+        "id": "nyu-cost",
+        "title": "Undergraduate cost of attendance",
+        "publisher": "NYU University Bulletin",
+        "url": "https://bulletins.nyu.edu/nyu/cost-attendance/",
+        "verified": "2026-10-21",
+        "cycle": "2026–27 estimates; page retains July approval caveat"
+      },
+      {
+        "id": "nyu-aid",
+        "title": "Applying for financial aid",
+        "publisher": "NYU Financial Aid — Meet NYU",
+        "url": "https://meet.nyu.edu/advice/financial-your-education/what-you-need-to-know-about-applying-for-financial-aid/",
+        "verified": "2026-10-21",
+        "cycle": "2026–27 aid year, published October 1, 2025"
+      }
+    ],
+    "facts": {
+      "admission": {
+        "text": "School-specific holistic review. Treat NYU as a reach; an Ontario average cannot establish admissibility. No official Ontario minimum average or probability model was verified.",
+        "sourceIds": [],
+        "status": "editorial"
+      },
+      "acceptanceRate": {
+        "text": "Not verified for a defined New York undergraduate applicant cohort in this research. No overall acceptance percentage is displayed.",
+        "sourceIds": [],
+        "status": "not-verified"
+      },
+      "sat": {
+        "text": "NYC/all-school Meet NYU guidance explicitly verifies test-optional admission for the 2025–26 cycle. A current NYU Abu Dhabi page states NYU remains test-optional through 2027–28, but the central testing page could not be retrieved (HTTP 405). Confirm NYC Fall 2028 scope directly before relying on it.",
+        "sourceIds": ["nyu-test", "nyu-future-test"],
+        "status": "confirm"
+      },
+      "satMiddle50": {
+        "text": "Not verified for a defined official cohort in this research. No SAT distribution or numerical target is fabricated.",
+        "sourceIds": [],
+        "status": "not-verified"
+      },
+      "satTarget": {
+        "text": "Confirm a current official New York campus score distribution before choosing a numerical submission target. Strong scores do not make NYU a safety.",
+        "sourceIds": [],
+        "status": "editorial"
+      },
+      "deadlines": {
+        "text": "Fall 2028 entry deadlines: Not yet published in reviewed sources. Verified Fall 2027 Common App reference: ED I November 1, 2026; ED II January 1, 2027; RD January 5, 2027. ED is binding, and NYU does not offer Early Action. Artistic/program supplement dates differ.",
+        "sourceIds": ["nyu-dates", "nyu-ed"],
+        "status": "future-unpublished"
+      },
+      "application": {
+        "text": "Common App; current NYU fee reference USD 85. The 2026–27 supplemental response is optional. Historical 2025–26 all-school guidance lists STARS, school profile and one recommendation. Confirm the complete NYC 2028 checklist and future prompts when released.",
+        "sourceIds": ["nyu-app", "nyu-fee", "nyu-test"],
+        "status": "confirm"
+      },
+      "ontario": {
+        "text": "Exact NYC Ontario OSSD/U/M expectations were not verified from a retrievable central undergraduate page. Confirm directly with Admissions; submit original school records and do not invent a top-six conversion.",
+        "sourceIds": ["nyu-ap"],
+        "status": "not-verified"
+      },
+      "coursework": {
+        "text": "Current NYC course expectations for an Ontario applicant: Confirm directly with Admissions. Use a rigorous U/M schedule matched to the chosen school and intended subject; no Ontario minimum is asserted.",
+        "sourceIds": [],
+        "status": "not-verified"
+      },
+      "international": {
+        "text": "Citizenship-dependent. Canadian residency alone does not determine federal-aid eligibility or immigration process; verify the applicable NYC undergraduate applicant checklist.",
+        "sourceIds": [],
+        "status": "confirm"
+      },
+      "english": {
+        "text": "Historical 2025–26 all-school guidance exempts a native English speaker or a student with at least three full years in an English-using curriculum at application. Accepted tests include TOEFL iBT, IELTS Academic and DET. Current Abu Dhabi wording is more cautious; NYC 2028 exemption and score expectations require direct confirmation. Ontario attendance is not assumed to be sufficient.",
+        "sourceIds": ["nyu-test", "nyu-future-test"],
+        "status": "confirm"
+      },
+      "majorStructure": {
+        "text": "For New York, choose an undergraduate school/college and academic interest. CAS permits undecided study and declaration by the end of sophomore year. The university says undecided and declared-major applicants are viewed on the same footing. Sociology, History and Anthropology are CAS options, not easier-entry guarantees or automatic routes into Stern.",
+        "sourceIds": ["nyu-majors", "nyu-programs"],
+        "status": "verified"
+      },
+      "recommendedMajors": {
+        "text": "Sociology, History and Anthropology are editorial options for exploring broad social sciences in CAS. Choose genuine interests; no major-specific admission advantage is claimed.",
+        "sourceIds": ["nyu-programs"],
+        "status": "editorial"
+      },
+      "ap": {
+        "text": "CAS current table: AP Psychology and Statistics scores 4/5 each yield 4 credits; English Literature 4/5 yields 4 elective credits, while English Language earns no CAS credit. Sociology does not accept AP Statistics as its required Statistics for Social Research course. Credit policy is not an admission requirement.",
+        "sourceIds": ["nyu-ap", "nyu-sociology"],
+        "status": "verified"
+      },
+      "cost": {
+        "text": "2026–27 CAS estimated cost of attendance: USD 100,998 for two full-time semesters while living away from family; tuition/fees USD 68,576. Health insurance is excluded from this standard total. The bulletin retains a July 2026 approval caveat; confirm finalized charges. These are not 2028 prices.",
+        "sourceIds": ["nyu-cost"],
+        "status": "confirm"
+      },
+      "aid": {
+        "text": "NYU requires CSS Profile for new first-year aid applicants; federal FAFSA eligibility is citizenship/status-dependent. Aid deadlines vary by application plan. The verified aid article concerns 2026–27; confirm Fall 2028 international need-based and merit terms and deadlines directly.",
+        "sourceIds": ["nyu-aid"],
+        "status": "confirm"
+      }
+    }
+  }
+]

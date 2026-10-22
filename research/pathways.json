@@ -1,0 +1,27 @@
+{
+  "sources": [
+    {
+      "id": "uc-tag",
+      "title": "Transfer Admission Guarantee (TAG)",
+      "publisher": "University of California Admissions",
+      "url": "https://admission.universityofcalifornia.edu/admission-requirements/transfer-requirements/uc-transfer-programs/transfer-admission-guarantee-tag.html",
+      "verified": "2026-10-21",
+      "cycle": "Current transfer guidance; future transfer year must be checked"
+    },
+    {
+      "id": "uc-transfer",
+      "title": "Transfer requirements",
+      "publisher": "University of California Admissions",
+      "url": "https://admission.universityofcalifornia.edu/admission-requirements/transfer-requirements/",
+      "verified": "2026-10-21",
+      "cycle": "Current transfer guidance"
+    }
+  ],
+  "facts": [
+    {
+      "text": "A California community college followed by UC transfer is a separate strategy. TAG involves six participating campuses and campus-specific conditions; it is not direct freshman entry and does not guarantee admission to every UC or major. If community college begins in Fall 2028, university transfer would be later than Fall 2028. Confirm international eligibility, costs, transferable courses and the transfer-year agreement with a counselor.",
+      "sourceIds": ["uc-tag", "uc-transfer"],
+      "status": "Alternative pathway — separate from direct admission"
+    }
+  ]
+}
