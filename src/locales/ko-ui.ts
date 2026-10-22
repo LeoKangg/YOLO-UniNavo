@@ -25,9 +25,6 @@ This is planning guidance, not an admission guarantee. Your checklist and profil
 This is planning guidance, not an admission guarantee. Browser storage is unavailable. Changes are kept for this session only.	이 자료는 준비를 위한 안내이며 합격을 보장하지 않습니다. 브라우저 저장소를 사용할 수 없어 변경 사항은 현재 세션에만 유지됩니다.
 View sources ↗	출처 확인하기 ↗
 ONTARIO → UNITED STATES	온타리오 → 미국
-Your next chapter.	너의 새로운 시작,
-A clearer path.	더 선명한 방향으로.
-A practical roadmap from Grade 11 to a U.S. university. Know what to do now, explore your options, and make each step count.	11학년부터 미국 대학 입학까지, 실용적인 준비 로드맵. 지금 할 일을 확인하고 나에게 맞는 대학을 찾으며 한 걸음씩 준비하세요.
 Do this now	지금 할 일
 Review your courses · Take a SAT diagnostic · Confirm an AP host	수강 과목 점검 · SAT 진단 테스트 · AP 응시 학교 확인
 Open my timeline	나의 준비 일정 보기
