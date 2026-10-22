@@ -1,0 +1,542 @@
+{
+  "reviewed": "2026-10-22",
+  "updates": [
+    {
+      "id": "michigan-ann-arbor",
+      "academic": {
+        "text": "Reviews curriculum, cumulative academic record, essays, recommendations and activities; no single score decides admission.",
+        "textKo": "과목 구성·누적 성적·에세이·추천서·활동을 종합 심사합니다. 한 점수로 합격을 결정하지 않습니다.",
+        "sourceIds": [
+          "high-umich-changes",
+          "high-umich-selection",
+          "umich-cds",
+          "umich-history",
+          "umich-majors"
+        ]
+      },
+      "testing": {
+        "policy": "optional",
+        "text": "Fall 2027; Fall 2028 unconfirmed",
+        "textKo": "2027년 가을 선택 제출 · 2028년 가을 미확정",
+        "sourceIds": [
+          "high-umich-changes",
+          "high-umich-selection",
+          "umich-cds",
+          "umich-history",
+          "umich-majors"
+        ]
+      },
+      "satRange": {
+        "low": 1370,
+        "high": 1530,
+        "cohort": "Fall 2025 enrolled first-year SAT submitters; CDS 2025–26 C9, Ann Arbor. University-wide, not LSA-specific.",
+        "cohortKo": "2025년 가을 등록 신입생 중 SAT 제출자, CDS 2025–26 C9. 앤아버 전체 분포이며 LSA 전용 수치가 아닙니다.",
+        "sourceIds": ["umich-cds"]
+      },
+      "entry": {
+        "program": "History; Sociology",
+        "programKo": "역사학 · 사회학",
+        "unit": "College of Literature, Science, and the Arts",
+        "unitKo": "문학·과학·예술대학 (LSA)",
+        "text": "Apply to LSA; program declaration after enrollment has its own requirements. No evidence that History is the lowest-entry major.",
+        "textKo": "LSA에 지원하며 입학 후 전공 선언에는 별도 요건이 있습니다. 역사학이 최저 난도 전공이라는 근거는 없습니다.",
+        "sourceIds": [
+          "high-umich-changes",
+          "high-umich-selection",
+          "umich-cds",
+          "umich-history",
+          "umich-majors"
+        ],
+        "easierMajorVerified": false
+      }
+    },
+    {
+      "id": "nyu",
+      "academic": {
+        "text": "Whole application and secondary-school completion evaluated; Ontario cutoff unknown.",
+        "textKo": "전체 지원서와 고교 졸업 요건을 심사합니다. 온타리오 백분율 최저점은 미공개입니다.",
+        "sourceIds": ["nyu-test", "nyu-sociology", "nyu-majors"]
+      },
+      "testing": {
+        "policy": "unknown",
+        "text": "New York campus Fall 2028 not verified; current MEET NYU article explicitly covers 2025–26 application process",
+        "textKo": "뉴욕 캠퍼스 2028년 가을 규정 미확인 · 확인된 MEET NYU 글은 2025–26 지원 주기 자료",
+        "sourceIds": ["nyu-test", "nyu-sociology", "nyu-majors"]
+      },
+      "satRange": null,
+      "entry": {
+        "program": "Sociology BA",
+        "programKo": "사회학 BA",
+        "unit": "College of Arts and Science",
+        "unitKo": "문리대 (CAS)",
+        "text": "Sociology exists in CAS. A university-wide test-optional statement on the Abu Dhabi admissions site is not sufficient proof for the future New York campus cycle.",
+        "textKo": "뉴욕 CAS 사회학 전공을 확인했습니다. 아부다비 캠퍼스 시험 규정을 뉴욕에 대신 적용하지 않습니다.",
+        "sourceIds": ["nyu-test", "nyu-sociology", "nyu-majors"],
+        "easierMajorVerified": false
+      }
+    },
+    {
+      "id": "wisconsin-madison",
+      "academic": {
+        "text": "Academic achievement, rigorous coursework and broader application are assessed holistically.",
+        "textKo": "학업 성취·과목 난도·전체 지원서를 종합 심사합니다.",
+        "sourceIds": [
+          "high-wisc-testing",
+          "wisc-review",
+          "wisc-history",
+          "wisc-soc",
+          "sat-band-wisc-cds-2025-26"
+        ]
+      },
+      "testing": {
+        "policy": "optional",
+        "text": "Through Spring 2028; Fall 2028 explicitly not decided",
+        "textKo": "2028년 봄까지 선택 제출 · 2028년 가을 미결정",
+        "sourceIds": [
+          "high-wisc-testing",
+          "wisc-review",
+          "wisc-history",
+          "wisc-soc",
+          "sat-band-wisc-cds-2025-26"
+        ]
+      },
+      "satRange": {
+        "low": 1400,
+        "high": 1490,
+        "cohort": "Fall 2025 enrolled first-year SAT submitters; CDS 2025–26 C9. University-wide, not Letters & Science-specific.",
+        "cohortKo": "2025년 가을 등록 신입생 중 SAT 제출자, CDS 2025–26 C9. 대학 전체 분포이며 문리대 전용 수치가 아닙니다.",
+        "sourceIds": ["sat-band-wisc-cds-2025-26"]
+      },
+      "entry": {
+        "program": "History BA; Sociology BA",
+        "programKo": "역사학 BA · 사회학 BA",
+        "unit": "College of Letters & Science",
+        "unitKo": "문리대 (Letters & Science)",
+        "text": "History and Sociology BA are available; no verified major-specific lower admission cutoff.",
+        "textKo": "역사학·사회학 BA가 있습니다. 이 학과에 더 낮은 신입학 합격선이 있다는 근거는 없습니다.",
+        "sourceIds": [
+          "high-wisc-testing",
+          "wisc-review",
+          "wisc-history",
+          "wisc-soc",
+          "sat-band-wisc-cds-2025-26"
+        ],
+        "easierMajorVerified": false
+      }
+    },
+    {
+      "id": "ohio-state-columbus",
+      "academic": {
+        "text": "Reviews secondary curriculum, academic performance and applicant context.",
+        "textKo": "고교 과목 구성·학업 성적·지원자 환경을 검토합니다.",
+        "sourceIds": [
+          "osu-review",
+          "osu-app",
+          "osu-units",
+          "osu-history",
+          "osu-soc",
+          "sat-band-osu-cds-2025-26"
+        ]
+      },
+      "testing": {
+        "policy": "required",
+        "text": "Current Columbus first-year policy; recheck Fall 2028",
+        "textKo": "콜럼버스 현행 신입학 시험 필수 · 2028년 재확인 필요",
+        "sourceIds": [
+          "osu-review",
+          "osu-app",
+          "osu-units",
+          "osu-history",
+          "osu-soc",
+          "sat-band-osu-cds-2025-26"
+        ]
+      },
+      "satRange": {
+        "low": 1300,
+        "high": 1440,
+        "cohort": "Fall 2025 enrolled first-year SAT submitters; Columbus CDS 2025–26 C9. Different cohort from admitted-student publicity figures.",
+        "cohortKo": "2025년 가을 콜럼버스 등록 신입생 중 SAT 제출자, CDS 2025–26 C9. 합격자 홍보 자료와 다른 집단입니다.",
+        "sourceIds": ["sat-band-osu-cds-2025-26"]
+      },
+      "entry": {
+        "program": "History; Sociology",
+        "programKo": "역사학 · 사회학",
+        "unit": "College of Arts and Sciences",
+        "unitKo": "문리대",
+        "text": "General university admission and any major-specific enrollment criteria must both be checked. No lowest-entry major established.",
+        "textKo": "대학 입학과 전공별 등록 요건을 함께 확인해야 합니다. 최저 난도 전공은 확인되지 않았습니다.",
+        "sourceIds": [
+          "osu-review",
+          "osu-app",
+          "osu-units",
+          "osu-history",
+          "osu-soc",
+          "sat-band-osu-cds-2025-26"
+        ],
+        "easierMajorVerified": false
+      }
+    },
+    {
+      "id": "purdue-west-lafayette",
+      "academic": {
+        "text": "Review considers intended-major readiness, subject grades, rigor, trends, tests and space in the desired program.",
+        "textKo": "지원 전공 준비도·과목별 성적·난도·성적 추이·시험·정원을 심사합니다. GPA는 통계 보고용이며 입학 심사의 직접 평가 항목은 아닙니다.",
+        "sourceIds": [
+          "purdue-criteria",
+          "purdue-guide",
+          "purdue-profile",
+          "purdue-history",
+          "purdue-soc"
+        ]
+      },
+      "testing": {
+        "policy": "expected",
+        "text": "Current guide expects SAT/ACT/CLT; exceptional inability to test allowed; recheck Fall 2028",
+        "textKo": "현행 SAT/ACT/CLT 제출 기대 · 시험 응시가 불가능한 예외 허용 · 2028년 재확인",
+        "sourceIds": [
+          "purdue-criteria",
+          "purdue-guide",
+          "purdue-profile",
+          "purdue-history",
+          "purdue-soc"
+        ]
+      },
+      "satRange": {
+        "low": 1110,
+        "high": 1348,
+        "cohort": "2026 College of Liberal Arts middle 50%, official current Class Profile under Our Applicants for2026 and University Enrollment forFall2026. Profile covers West Lafayette and Indianapolis. College aggregate, not individual-major cutoff.",
+        "cohortKo": "2026년 공식 Class Profile 문과대학 중앙 50%. 웨스트라피엣·인디애나폴리스 통합 페이지의 단과대학 통계이며 개별 전공 합격선이 아닙니다.",
+        "sourceIds": ["purdue-profile"]
+      },
+      "entry": {
+        "program": "History BA; Sociology BA",
+        "programKo": "역사학 BA · 사회학 BA",
+        "unit": "College of Liberal Arts",
+        "unitKo": "문과대학 (College of Liberal Arts)",
+        "text": "Official degree pages place both History BA and Sociology BA in Liberal Arts at West Lafayette. Applicants choose location and major. College-level published outcomes permit comparing Liberal Arts with Engineering but do not prove either individual major is easiest. Later changes of major are not guaranteed.",
+        "textKo": "두 전공 모두 웨스트라피엣 문과대학에 속합니다. 2026년 문과대학 SAT 중앙 50%는 1110–1348, 공대는 1390–1520입니다. 단과대학 집단 차이이며 개인 합격률이나 가장 쉬운 학과를 입증하지 않습니다. 입학 후 전과도 보장되지 않습니다.",
+        "sourceIds": [
+          "purdue-criteria",
+          "purdue-guide",
+          "purdue-profile",
+          "purdue-history",
+          "purdue-soc"
+        ],
+        "easierMajorVerified": false
+      }
+    },
+    {
+      "id": "minnesota-twin-cities",
+      "academic": {
+        "text": "Admissions calculates core academic GPA itself; applicants should not convert their Ontario average. Colleges selected are reviewed in order, with other fitting colleges also considered.",
+        "textKo": "대학이 핵심 교과 GPA를 직접 계산합니다. 온타리오 평균을 자체 환산하지 않습니다. 지원 단과대학 순서와 다른 적합 단과대학도 검토합니다.",
+        "sourceIds": [
+          "umn-testing",
+          "high-umn-profile",
+          "umn-profile",
+          "umn-majors"
+        ]
+      },
+      "testing": {
+        "policy": "optional",
+        "text": "Dedicated ACT/SAT page extends optional policy through Fall 2029",
+        "textKo": "전용 시험 규정 페이지: 2029년 가을까지 선택 제출",
+        "sourceIds": [
+          "umn-testing",
+          "high-umn-profile",
+          "umn-profile",
+          "umn-majors"
+        ]
+      },
+      "satRange": {
+        "low": 1330,
+        "high": 1470,
+        "cohort": "Profile heading and CLA table say Fall 2026 admitted applicants; explanatory SAT footnote still refers to Fall 2025. Date inconsistency must remain visible.",
+        "cohortKo": "문과대학 SAT 1330–1470. 페이지 제목·표는 2026년 가을 합격자, SAT 설명 각주는 2025년으로 표기되어 연도가 불일치합니다.",
+        "sourceIds": ["high-umn-profile"]
+      },
+      "entry": {
+        "program": "History; Sociology",
+        "programKo": "역사학 · 사회학",
+        "unit": "College of Liberal Arts",
+        "unitKo": "문과대학 (College of Liberal Arts)",
+        "text": "CLA has its own published profile; no individual humanities-major easiest-entry claim.",
+        "textKo": "문과대학의 별도 SAT 분포가 있습니다. 인문계 개별 학과가 가장 쉽다는 근거는 없습니다.",
+        "sourceIds": [
+          "umn-testing",
+          "high-umn-profile",
+          "umn-profile",
+          "umn-majors"
+        ],
+        "easierMajorVerified": false
+      }
+    },
+    {
+      "id": "maryland-college-park",
+      "academic": {
+        "text": "Individual holistic review uses 23 factors.",
+        "textKo": "23개 요소로 개별 종합 심사합니다.",
+        "sourceIds": [
+          "scenario-maryland-college-park-testing",
+          "scenario-maryland-college-park-profile",
+          "scenario-maryland-college-park-entry",
+          "scenario-maryland-college-park-international",
+          "high-umd-history"
+        ]
+      },
+      "testing": {
+        "policy": "optional",
+        "text": "Through Spring/Fall 2027; later cycles being assessed",
+        "textKo": "2027년 봄·가을까지 선택 제출 · 이후 주기 검토 중",
+        "sourceIds": [
+          "scenario-maryland-college-park-testing",
+          "scenario-maryland-college-park-profile",
+          "scenario-maryland-college-park-entry",
+          "scenario-maryland-college-park-international",
+          "high-umd-history"
+        ]
+      },
+      "satRange": {
+        "low": 1410,
+        "high": 1520,
+        "cohort": "Fall 2025 entering first-time students in institutional admissions report; university-wide.",
+        "cohortKo": "2025년 가을 입학 신입생, 대학 기관 입학 보고서. 대학 전체 분포입니다.",
+        "sourceIds": ["scenario-maryland-college-park-profile"]
+      },
+      "entry": {
+        "program": "History",
+        "programKo": "역사학",
+        "unit": "College of Arts and Humanities",
+        "unitKo": "예술·인문대학",
+        "text": "UMD explicitly says preferred major does not affect admissibility to the university. Choosing a non-LEP does not make university admission easier.",
+        "textKo": "대학은 희망 전공이 대학 입학 여부에 영향을 주지 않는다고 명시합니다. 비제한 전공을 고른다고 대학 합격이 쉬워지지는 않습니다.",
+        "sourceIds": [
+          "scenario-maryland-college-park-testing",
+          "scenario-maryland-college-park-profile",
+          "scenario-maryland-college-park-entry",
+          "scenario-maryland-college-park-international",
+          "high-umd-history"
+        ],
+        "easierMajorVerified": false
+      }
+    },
+    {
+      "id": "florida",
+      "academic": {
+        "text": "Evaluates academic and nonacademic factors, curriculum, essay and activities; university recalculates weighted core GPA.",
+        "textKo": "학업·비학업 요소, 과목 난도, 에세이·활동을 심사하고 가중 핵심 교과 GPA를 대학이 재계산합니다.",
+        "sourceIds": [
+          "scenario-florida-international",
+          "scenario-florida-profile",
+          "scenario-florida-entry",
+          "high-uf-history"
+        ]
+      },
+      "testing": {
+        "policy": "required",
+        "text": "ACT/CLT/SAT required under current first-year rules; recheck Fall 2028",
+        "textKo": "현행 ACT/CLT/SAT 필수 · 2028년 재확인",
+        "sourceIds": [
+          "scenario-florida-international",
+          "scenario-florida-profile",
+          "scenario-florida-entry",
+          "high-uf-history"
+        ]
+      },
+      "satRange": {
+        "low": 1420,
+        "high": 1520,
+        "cohort": "Fall 2026 admitted Class of 2030; official profile as of July 2026. Not minimum criteria.",
+        "cohortKo": "2026년 가을 합격자 (Class of 2030), 2026년 7월 공식 프로필. 최저 지원 기준이 아닙니다.",
+        "sourceIds": ["scenario-florida-profile"]
+      },
+      "entry": {
+        "program": "History BA",
+        "programKo": "역사학 BA",
+        "unit": "College of Liberal Arts and Sciences",
+        "unitKo": "인문·자연과학대학",
+        "text": "UF says it does not admit freshmen by major. Selecting humanities does not provide a verified admission advantage.",
+        "textKo": "신입생은 전공별로 선발하지 않는다고 명시합니다. 인문학 선택이 대학 합격에 유리하다는 근거는 없습니다.",
+        "sourceIds": [
+          "scenario-florida-international",
+          "scenario-florida-profile",
+          "scenario-florida-entry",
+          "high-uf-history"
+        ],
+        "easierMajorVerified": false
+      }
+    },
+    {
+      "id": "florida-state",
+      "academic": {
+        "text": "Holistic and selective review considers academic rigor, grades, school context, activities and character.",
+        "textKo": "과목 난도·성적·학교 환경·활동·인성을 종합 심사합니다.",
+        "sourceIds": [
+          "scenario-florida-state-international",
+          "high-fsu-profile",
+          "scenario-florida-state-entry",
+          "high-fsu-history"
+        ]
+      },
+      "testing": {
+        "policy": "required",
+        "text": "ACT/CLT/SAT required under current international first-year rules; recheck Fall 2028",
+        "textKo": "현행 국제 신입학 ACT/CLT/SAT 필수 · 2028년 재확인",
+        "sourceIds": [
+          "scenario-florida-state-international",
+          "high-fsu-profile",
+          "scenario-florida-state-entry",
+          "high-fsu-history"
+        ]
+      },
+      "satRange": {
+        "low": 1380,
+        "high": 1480,
+        "cohort": "Fall 2026 admitted students, current What We Are Looking For page. Supersedes older 2025 guide range1340–1450.",
+        "cohortKo": "2026년 가을 합격자, 현행 What We Are Looking For 자료. 이전 2025년 안내의 1340–1450을 대체합니다.",
+        "sourceIds": ["high-fsu-profile"]
+      },
+      "entry": {
+        "program": "History BA",
+        "programKo": "역사학 BA",
+        "unit": "College of Arts and Sciences",
+        "unitKo": "문리대",
+        "text": "History BA is a published undergraduate degree. Its program guide describes upper-division academic progression; those college-course conditions are not high-school freshman admission cutoffs. No lower university freshman admission threshold for History was verified.",
+        "textKo": "역사학 BA 운영을 확인했습니다. 학과 안내의 상급 학년 진입 요건은 고교생 신입학 합격선이 아닙니다. 역사학의 더 낮은 신입학 기준은 확인되지 않았습니다.",
+        "sourceIds": [
+          "scenario-florida-state-international",
+          "high-fsu-profile",
+          "scenario-florida-state-entry",
+          "high-fsu-history"
+        ],
+        "easierMajorVerified": false
+      }
+    },
+    {
+      "id": "texas-austin",
+      "academic": {
+        "text": "Requires secondary transcript, prerequisite coursework, essay/short answers and tests; major-specific materials may apply.",
+        "textKo": "고교 성적표·필수 과목·에세이·단답형 문항·시험을 요구합니다. 전공별 추가 자료가 있을 수 있습니다.",
+        "sourceIds": [
+          "scenario-ut-austin-international",
+          "scenario-ut-austin-history"
+        ]
+      },
+      "testing": {
+        "policy": "required",
+        "text": "Current international freshman page accepts official SAT/ACT/CLT; recheck Fall 2028",
+        "textKo": "현행 국제 신입학 SAT/ACT/CLT 필수 · 2028년 재확인",
+        "sourceIds": [
+          "scenario-ut-austin-international",
+          "scenario-ut-austin-history"
+        ]
+      },
+      "satRange": null,
+      "entry": {
+        "program": "History BA",
+        "programKo": "역사학 BA",
+        "unit": "College of Liberal Arts",
+        "unitKo": "문과대학",
+        "text": "History BA is available. No Ontario cutoff or verified lowest-entry major was found.",
+        "textKo": "역사학 BA를 운영합니다. 온타리오 최저점·최저 난도 학과는 확인되지 않았습니다. 텍사스 고교생 자동 입학 규정을 온타리오 한국 국적 학생에게 적용하지 않습니다.",
+        "sourceIds": [
+          "scenario-ut-austin-international",
+          "scenario-ut-austin-history"
+        ],
+        "easierMajorVerified": false
+      }
+    },
+    {
+      "id": "southern-california",
+      "academic": {
+        "text": "International records and English proficiency assessed; optional SAT considered with other academic information.",
+        "textKo": "국제 성적표·영어 능력·선택 제출한 SAT와 학업 기록을 함께 심사합니다.",
+        "sourceIds": [
+          "scenario-usc-international",
+          "scenario-usc-profile",
+          "scenario-usc-history"
+        ]
+      },
+      "testing": {
+        "policy": "optional",
+        "text": "2027–28 academic year; Fall 2028 unconfirmed",
+        "textKo": "2027–28 학년도 선택 제출 · 2028년 가을 미확정",
+        "sourceIds": [
+          "scenario-usc-international",
+          "scenario-usc-profile",
+          "scenario-usc-history"
+        ]
+      },
+      "satRange": {
+        "low": 1470,
+        "high": 1540,
+        "cohort": "Fall 2026 enrolled Class of2030, superscored; combined Los Angeles and Washington DC campuses. University-wide, not Dornsife-specific.",
+        "cohortKo": "2026년 가을 등록 Class of 2030, superscore 기준. 로스앤젤레스·워싱턴 DC 합산이며 돈사이프 전용 분포가 아닙니다.",
+        "sourceIds": ["scenario-usc-profile"]
+      },
+      "entry": {
+        "program": "History BA",
+        "programKo": "역사학 BA",
+        "unit": "Dornsife College of Letters, Arts and Sciences",
+        "unitKo": "돈사이프 문리대",
+        "text": "Dornsife History BA exists, but lower-entry or easiest-major status not verified.",
+        "textKo": "돈사이프 역사학 BA 운영을 확인했습니다. 더 쉬운 전공이라는 근거는 없으며 영어 증빙용으로 제출한 SAT도 일반 입학 심사에서 평가합니다.",
+        "sourceIds": [
+          "scenario-usc-international",
+          "scenario-usc-profile",
+          "scenario-usc-history"
+        ],
+        "easierMajorVerified": false
+      }
+    },
+    {
+      "id": "rutgers-new-brunswick",
+      "academic": {
+        "text": "Holistic review emphasizes courses, grades/trends, rigor and available places in each school; activities and essay also considered.",
+        "textKo": "과목·성적 추이·난도·단과대학 정원·활동·에세이를 종합 심사합니다.",
+        "sourceIds": [
+          "rutgers-new-brunswick-profile",
+          "rutgers-new-brunswick-apply",
+          "rutgers-new-brunswick-majors",
+          "rutgers-new-brunswick-sociology",
+          "rutgers-new-brunswick-history"
+        ]
+      },
+      "testing": {
+        "policy": "optional",
+        "text": "Current first-year test-optional policy; Fall 2028 recheck",
+        "textKo": "현행 신입학 선택 제출 · 2028년 재확인",
+        "sourceIds": [
+          "rutgers-new-brunswick-profile",
+          "rutgers-new-brunswick-apply",
+          "rutgers-new-brunswick-majors",
+          "rutgers-new-brunswick-sociology",
+          "rutgers-new-brunswick-history"
+        ]
+      },
+      "satRange": {
+        "low": 1380,
+        "high": 1520,
+        "cohort": "Fall 2026 admitted School of Arts and Sciences SAT submitters; not minimum criteria.",
+        "cohortKo": "2026년 가을 SAS 합격자 중 SAT 제출자. 최저 지원 기준이 아닙니다.",
+        "sourceIds": ["rutgers-new-brunswick-profile"]
+      },
+      "entry": {
+        "program": "History BA; Sociology BA",
+        "programKo": "역사학 BA · 사회학 BA",
+        "unit": "School of Arts and Sciences, New Brunswick",
+        "unitKo": "뉴브런즈윅 인문·자연과학대학 (SAS)",
+        "text": "School admission precedes major declaration; no verified benefit from selecting History rather than Sociology.",
+        "textKo": "단과대학 입학 후 전공을 선언합니다. 역사학과 사회학 중 어느 쪽 선택이 더 유리한지는 확인되지 않았습니다.",
+        "sourceIds": [
+          "rutgers-new-brunswick-profile",
+          "rutgers-new-brunswick-apply",
+          "rutgers-new-brunswick-majors",
+          "rutgers-new-brunswick-sociology",
+          "rutgers-new-brunswick-history"
+        ],
+        "easierMajorVerified": false
+      }
+    }
+  ]
+}

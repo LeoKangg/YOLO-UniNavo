@@ -4,6 +4,10 @@ import selective from "../../research/scenario-selective.json" with { type: "jso
 import ontario from "../../research/scenario-ontario.json" with { type: "json" };
 import root from "../../research/scenario-root.json" with { type: "json" };
 import updates from "../../research/scenario-existing-rules.json" with { type: "json" };
+import lowReview from "../../research/candidate-low-review.json" with { type: "json" };
+import middleReview from "../../research/candidate-middle-review.json" with { type: "json" };
+import highReview from "../../research/candidate-high-review.json" with { type: "json" };
+import candidateUpdates from "../../research/candidate-updates.json" with { type: "json" };
 import type {
   ScenarioSchool,
   PercentageRule,
@@ -16,6 +20,7 @@ export const additionalScenarioSchools = [
   ...selective.schools,
   ...root.schools,
   ...ontario.schools,
+  ...lowReview.newSchools,
 ] as unknown as ScenarioSchool[];
 export const scenarioRuleUpdates = updates.updates as unknown as {
   id: string;
@@ -25,4 +30,13 @@ export const scenarioRuleUpdates = updates.updates as unknown as {
 export const additionalScenarioSources: Source[] = [
   ...additionalScenarioSchools.flatMap((s) => s.sources),
   ...updates.sources,
+  ...lowReview.sources,
+  ...middleReview.sources,
+  ...highReview.sources,
 ];
+export const reviewedSchoolUpdates = [
+  ...middleReview.schools,
+  ...candidateUpdates.updates,
+] as unknown as (Partial<ScenarioSchool> & { id: string })[];
+export const reviewedPrograms = middleReview.programUpdates;
+export const reviewedRanges = middleReview.rangeUpdates;

@@ -1,6 +1,6 @@
-# Evidence-only Ontario × SAT scenarios
+# Retained strict component engine (not the live candidate view)
 
-Reviewed 22 October 2026. The user requested a larger pool with ten universities for each grade/SAT combination, then explicitly chose **only officially confirmed criteria; show a shortage when fewer than ten can be supported**. The live university explorer follows that preference.
+Reviewed 22 October 2026. The user requested a larger pool with ten universities for each grade/SAT combination, then explicitly chose **only officially confirmed criteria; show a shortage when fewer than ten can be supported**. The current candidate explorer is documented in candidate-method.md; this file records the retained strict engine and its original evidence rules.
 
 ## Research scope
 

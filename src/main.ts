@@ -11,16 +11,13 @@ import {
 import { evidenceMap } from "./data/evidence.ts";
 import { renderExplorer, renderScenarioDetail } from "./university-explorer.ts";
 import type { ExplorerMode } from "./university-explorer.ts";
-import { normalizeScenario, scenarioCsv } from "./scenarios.ts";
 import {
-  scenarioSchools,
-  scenarioSchoolMap,
-  scenarioSourceMap,
-} from "./data/scenario-catalog.ts";
+  normalizeCandidateInput,
+  candidateCsv,
+  candidateSatAdvice,
+} from "./candidate-plans.ts";
+import { scenarioSchools, scenarioSchoolMap } from "./data/scenario-catalog.ts";
 import comparisonContext from "../research/comparison-context.json" with { type: "json" };
-import existingRankings from "../research/existing-rankings.json" with { type: "json" };
-import { scoreContext } from "./recommendations.ts";
-import { strategies } from "./data/strategies.ts";
 import { timeline } from "./data/timeline.ts";
 import { normalizePlanner, personalTimeline, saveTaskEdit } from "./planner.ts";
 import type { PersonalTask } from "./planner.ts";
@@ -42,9 +39,9 @@ let planner = normalizePlanner(readLocal("planner"), timeline);
 let undoPlanner: { planner: typeof planner; checked: string[] } | null = null;
 let plannerNotice = "";
 const words = (en: string, ko: string) => (getLanguage() === "ko" ? ko : en);
-let explorerMode: ExplorerMode = "scenario",
+let explorerMode: ExplorerMode = "all-scenarios",
   explorerSearch = "";
-let scenarioInput = normalizeScenario(
+let scenarioInput = normalizeCandidateInput(
   readLocal("scenario") ?? {
     band: profile.band || "60–65%",
     sat: profile.sat ?? 1100,
@@ -191,12 +188,6 @@ function openTaskEditor(id?: string, monthId?: string) {
   });
   dialog.showModal();
 }
-const rankFor = (id: string) =>
-  evidenceMap.get(id)?.ranking ?? existingRankings.find((r) => r.id === id);
-function rankLabel(id: string) {
-  const r = rankFor(id);
-  return r?.rank ? `#${r.rank}` : words("Unverified", "미확인");
-}
 function universitiesPage() {
   return renderExplorer(scenarioInput, explorerMode, explorerSearch, saved);
 }
@@ -204,14 +195,15 @@ function apCatalogSection() {
   return `<section class="section ap-catalog" aria-labelledby="ap-catalog-title"><h2 id="ap-catalog-title">${words("All 42 AP courses · 2026–27", "AP 전체 42과목 · 2026–27년")}</h2><p>${words("Browse College Board’s official courses by subject. Each course links to its official page.", "College Board 공식 과목을 분야별로 살펴보세요. 각 과목에서 공식 안내로 이동할 수 있습니다.")}</p><p class="small muted">${words("Reviewed October 22, 2026. AP Central lists 43 subjects including AP Networking, which is pilot-only in 2026–27 and launches generally in 2027–28. The 42 courses below exclude that pilot. School availability and exam-only eligibility vary.", "2026년 10월 22일 확인. AP Central은 AP Networking을 포함해 43과목을 표시합니다. Networking은 2026–27년 시범 운영, 2027–28년 정식 도입 예정이므로 아래 일반 제공 42과목에서 제외했습니다. 학교별 개설 여부와 시험만 응시할 수 있는지는 따로 확인하세요.")}</p>${refs(["ap-course-catalog", "ap-networking"])}<div class="ap-catalog-grid">${apCourseGroups.map((group) => `<article class="ap-course-group"><h3>${esc(words(group.en, group.ko))} <span class="muted">${group.courses.length}</span></h3><ul>${group.courses.map(([en, ko, slug]) => `<li>${link(`https://apcentral.collegeboard.org/courses/${slug}`, words(`AP ${en}`, `AP ${ko} (${en})`))}</li>`).join("")}</ul></article>`).join("")}</div></section>`;
 }
 function examsPage(examTab: "sat" | "ap") {
-  const ranged = universities.filter((u) => strategies[u.id].range);
+  const ranged = scenarioSchools.filter(
+    (u) => u.satRange && u.testing.policy !== "not-considered",
+  );
   const content = `${
     examTab === "sat"
       ? `<details class="section section-fold"><summary>Your SAT goals, grounded in real cohorts.</summary><p>These are strategic references, not official cutoffs. The lower end is a baseline comparison, not an admission minimum; the upper end is a strong study goal. Above that is a stretch goal without a promise of admission. Only verified distributions are used.</p><div class="cards">${ranged
           .map((u) => {
-            const s = strategies[u.id],
-              r = s.range!;
-            return `<article class="score-card"><span class="eyebrow">${esc(s.shortName)}</span><h3>${r.low}–${r.high}</h3><p class="small">Official middle 50%<br>${esc(r.cohort)}</p><dl><div><dt>Baseline reference</dt><dd>${r.low}</dd></div><div><dt>Strong strategic target</dt><dd>${r.high}</dd></div><div><dt>Excellent / stretch goal</dt><dd>Above ${r.high}</dd></div></dl><p class="small">${esc(scoreContext(s, profile))}</p>${refs(r.sourceIds)}</article>`;
+            const r = u.satRange!;
+            return `<article class="score-card"><span class="eyebrow">${esc(words(u.name, u.nameKo))}</span><h3>${r.low}–${r.high}</h3><p class="small">Official middle 50%<br>${esc(words(r.cohort, r.cohortKo || translate(r.cohort)))}</p><dl><div><dt>Baseline reference</dt><dd>${r.low}</dd></div><div><dt>Strong strategic target</dt><dd>${r.high}</dd></div><div><dt>Excellent / stretch goal</dt><dd>Above ${r.high}</dd></div></dl><p class="small">${esc(candidateSatAdvice(u, scenarioInput.sat, getLanguage() === "ko"))}</p>${refs(r.sourceIds)}</article>`;
           })
           .join(
             "",
@@ -224,7 +216,7 @@ function examsPage(examTab: "sat" | "ap") {
           .join(
             "",
           )}</tbody></table></div>${refs(["sat-dates", "sat-release"])}<details class="methodology"><summary>2027–28 anticipated dates — not confirmed</summary>${planFact("sat-future")}<p>${planning.satAnticipatedDates.map((d) => date(d.date)).join(" · ")}</p></details></section><details class="section section-fold"><summary>Sending scores & test policies</summary><div><h2>Sending scores</h2>${planFact("sat-score-choice")}${planFact("sat-superscore")}</div><div><h2>What “test optional” means</h2><p>You may choose whether SAT/ACT scores are considered where the applicable policy allows. Program admission, scholarships, placement and English evidence may have separate rules. Check the entry year and campus.</p>${refs(["msu-apply", "isu-merit", "psu-requirements"])}<p>Penn State currently uses the best combined score from a single sitting rather than superscoring.</p>${refs(["psu-requirements"])}<a href="#universities" class="text-link">Read school-specific policies →</a></div></details><section class="exam-hero"><h2>Start with one practice test.</h2><p>Take a timed Bluebook test. Then practice your weak areas.</p><details class="methodology"><summary>Your SAT routine</summary>${planFact("sat-plan")}</details><details class="methodology"><summary>About the SAT</summary>${planFact("sat-definition")}</details><a class="button" href="https://satsuite.collegeboard.org/practice/practice-tests/bluebook" target="_blank" rel="noopener noreferrer">Start with official practice ↗</a></section>`
-      : `<section class="exam-hero"><h2>Choose one or two AP subjects.</h2>${planFact("ap-selection")}<details class="methodology"><summary>AP course or exam only?</summary>${planFact("ap-course-exam")}</details></section><section class="section"><h2>Four priorities to consider</h2><p>Priorities and workload descriptions are editorial planning advice. AP courses can demonstrate advanced work, but each college evaluates rigor in school context. An exam-only score does not add a completed AP course to your transcript.</p><div class="ap-grid">${planning.apPriorities.map((a) => `<article class="ap-card"><span class="eyebrow">PRIORITY 0${a.priority} ${a.priority === 4 ? "· OPTIONAL" : ""}</span><h3>${esc(a.name)}</h3><p>${esc(a.reason)}</p><details class="ap-details"><summary>Preparation & credit details</summary><dl class="stacked"><dt>Workload & preparation</dt><dd>${esc(a.difficulty)}</dd><dt>When to consider it</dt><dd>${esc(a.timing)}</dd><dt>2027 exam</dt><dd>${date(a.examDate)} · ${esc(a.session)}</dd><dt>Score goal & credit relevance</dt><dd>${esc(a.target)}. ${esc(a.credit)}</dd></dl>${refs(a.sourceIds)}</details></article>`).join("")}</div><p class="small">These ASU credit examples do not transfer automatically to other universities. NYU CAS, for example, awards no credit for AP English Language; its Statistics credit does not replace Sociology’s required statistics course.</p>${refs(["nyu-ap", "nyu-sociology"])}</section><section class="section"><h2>Arrange your exam before preparing for it.</h2>${planFact("ap-order-deadline")}${planFact("ap-local-deadline")}${planFact("ap-2028")}${planFact("ap-score-policy")}</section>${apCatalogSection()}`
+      : `<section class="section"><h2>Four priorities to consider</h2><p>Priorities and workload descriptions are editorial planning advice. AP courses can demonstrate advanced work, but each college evaluates rigor in school context. An exam-only score does not add a completed AP course to your transcript.</p><div class="ap-grid">${planning.apPriorities.map((a) => `<article class="ap-card"><span class="eyebrow">PRIORITY 0${a.priority} ${a.priority === 4 ? "· OPTIONAL" : ""}</span><h3>${esc(a.name)}</h3><p>${esc(a.reason)}</p><details class="ap-details"><summary>Preparation & credit details</summary><dl class="stacked"><dt>Workload & preparation</dt><dd>${esc(a.difficulty)}</dd><dt>When to consider it</dt><dd>${esc(a.timing)}</dd><dt>2027 exam</dt><dd>${date(a.examDate)} · ${esc(a.session)}</dd><dt>Score goal & credit relevance</dt><dd>${esc(a.target)}. ${esc(a.credit)}</dd></dl>${refs(a.sourceIds)}</details></article>`).join("")}</div><p class="small">These ASU credit examples do not transfer automatically to other universities. NYU CAS, for example, awards no credit for AP English Language; its Statistics credit does not replace Sociology’s required statistics course.</p>${refs(["nyu-ap", "nyu-sociology"])}</section><section class="section"><h2>Arrange your exam before preparing for it.</h2>${planFact("ap-order-deadline")}${planFact("ap-local-deadline")}${planFact("ap-2028")}${planFact("ap-score-policy")}</section>${apCatalogSection()}<section class="exam-hero"><h2>Choose one or two AP subjects.</h2>${planFact("ap-selection")}<details class="methodology"><summary>AP course or exam only?</summary>${planFact("ap-course-exam")}</details></section>`
   }`;
   const visibleContent =
     examTab === "sat"
@@ -292,68 +284,38 @@ function bind() {
         render();
       }),
     );
-  document
-    .querySelectorAll<HTMLInputElement>("[data-calculation]")
-    .forEach((box) => {
-      box.addEventListener("change", () => {
-        const selected = new Set(scenarioInput.confirmedCalculations);
-        if (box.checked) selected.add(box.dataset.calculation!);
-        else selected.delete(box.dataset.calculation!);
-        scenarioInput = normalizeScenario({
-          ...scenarioInput,
-          confirmedCalculations: [...selected],
-        });
-        persistenceAvailable =
-          writeLocal("scenario", scenarioInput) && persistenceAvailable;
-        render(true);
-      });
-    });
-  const fields: Record<string, string> = {
-    "scenario-band": "band",
-    "scenario-sat": "sat",
-    "scenario-basis": "averageBasis",
-    "scenario-route": "applicantRoute",
-    "scenario-exact": "exactAverage",
-    "scenario-reading": "readingWriting",
-    "scenario-math": "math",
-  };
-  for (const [id, key] of Object.entries(fields))
-    document.getElementById(id)?.addEventListener("change", (event) => {
-      const node = event.target as HTMLInputElement | HTMLSelectElement;
-      if (!node.checkValidity()) {
-        node.reportValidity();
-        return;
-      }
-      const numeric = [
-        "sat",
-        "exactAverage",
-        "readingWriting",
-        "math",
-      ].includes(key);
-      const next = {
+  const satField = document.querySelector<HTMLInputElement>("#scenario-sat");
+  if (satField) {
+    const saveSat = () => {
+      if (!satField.checkValidity()) return false;
+      scenarioInput = normalizeCandidateInput({
         ...scenarioInput,
-        [key]: numeric
-          ? node.value === ""
-            ? null
-            : Number(node.value)
-          : node.value,
-      };
-      if (key === "sat") {
-        next.readingWriting = null;
-        next.math = null;
-      }
-      if (key === "band") next.exactAverage = null;
-      scenarioInput = normalizeScenario(next);
+        sat: satField.value === "" ? null : Number(satField.value),
+      });
       persistenceAvailable =
         writeLocal("scenario", scenarioInput) && persistenceAvailable;
-      render(true);
+      return true;
+    };
+    satField.addEventListener("input", saveSat);
+    satField.addEventListener("change", saveSat);
+    satField.addEventListener("blur", () => {
+      if (saveSat()) {
+        // Let a tab/cell click finish before replacing its DOM target.
+        setTimeout(() => {
+          if (satField.isConnected) render();
+        }, 0);
+      } else satField.reportValidity();
     });
+    satField.addEventListener("keydown", (event) => {
+      if (event.key === "Enter") satField.blur();
+    });
+  }
   document
     .querySelectorAll<HTMLButtonElement>("[data-scenario-choice]")
     .forEach((button) =>
       button.addEventListener("click", () => {
         const [band, sat] = button.dataset.scenarioChoice!.split("|");
-        scenarioInput = normalizeScenario({
+        scenarioInput = normalizeCandidateInput({
           ...scenarioInput,
           band,
           sat: Number(sat),
@@ -377,17 +339,13 @@ function bind() {
       render(true);
     });
   document.querySelector("#export-scenarios")?.addEventListener("click", () => {
-    const csv = scenarioCsv(
-      scenarioSchools,
-      scenarioInput,
-      (id) => scenarioSourceMap.get(id)?.url ?? "",
-    );
+    const csv = candidateCsv();
     const url = URL.createObjectURL(
       new Blob([csv], { type: "text/csv;charset=utf-8" }),
     );
     const a = document.createElement("a");
     a.href = url;
-    a.download = "uninavo-40-scenarios-verified-only.csv";
+    a.download = "uninavo-40-scenarios-400-research-candidates.csv";
     a.click();
     setTimeout(() => URL.revokeObjectURL(url), 1000);
   });
@@ -576,42 +534,12 @@ const factLabels: Record<string, string> = {
   aid: "Financial aid & CSS Profile",
 };
 function researchDetails(u: University) {
-  const e = evidenceMap.get(u.id),
-    s = strategies[u.id];
-  const rule =
-    u.facts.ontario ??
-    u.facts.canadian ??
-    u.facts.requirements ??
-    u.facts.admission;
-  const structure =
-    u.facts.majorStructure ??
-    u.facts.admissionStructure ??
-    u.facts.structure ??
-    u.facts.majors;
+  const e = evidenceMap.get(u.id);
   const catalogs = comparisonContext.catalogs as Record<string, string>;
-  const rank = rankFor(u.id);
-  const catalog =
-    catalogs[u.id] ??
-    e?.catalog?.url ??
-    e?.majorsDirectory?.url ??
-    u.sources.find((source) =>
-      /full.*(major|program|catalog)|undergraduate.*(program|major).*directory|all.*(major|program)/i.test(
-        source.title,
-      ),
-    )?.url;
-  return `<section class="school-evidence"><div class="ranking-summary"><strong>${rank?.url ? link(rank.url, rankLabel(u.id)) : rankLabel(u.id)}</strong> <span>U.S. News · 2026 · National Universities</span><p>${words("Brand reference", "브랜드 참고")}: ${translate(s.recognition)} · ${words("Editorial; no verified Korean survey rank", "편집상 참고 · 한국 조사 순위 미확인")}</p></div><h3>${words("Ontario credentials & entry rules", "온타리오 학력 · 지원 요건")}</h3>${rule ? fact(rule) : ""}<h3>${words("Which majors have lower entry requirements?", "입학 요건이 낮은 전공은?")}</h3><p>${words("No verified lowest Ontario admission mark is available for these majors. Where colleges publish distinct requirements or score profiles, they are shown below. A declaration rule after enrollment is not a freshman admission cutoff.", "아래 전공의 온타리오 최저 합격점은 확인되지 않았습니다. 단과대별 요건이나 점수 분포 차이가 공개된 경우 아래에 표시했습니다. 입학 후 전공 선언 조건은 신입학 합격선이 아닙니다.")}</p>${u.id === "asu" ? `<div class="conditional-route"><p>${esc(words(comparisonContext.asuComparison.text, comparisonContext.asuComparison.ko))}</p>${refs(comparisonContext.asuComparison.sourceIds)}</div>` : ""}${structure ? fact(structure) : ""}
-  ${
-    e
-      ? `<div class="major-evidence">${e.majorEvidence
-          .map((m, i) => {
-            const ko = e.ko.majorEvidence?.[i];
-            return `<article><h4>${esc(words(m.name, ko?.name ?? e.ko.majorNames[i] ?? translate(m.name)))}</h4><p>${esc(words(m.admissionUnit, ko?.admissionUnit ?? translate(m.admissionUnit)))}</p><p>${m.minimum ? esc(words(m.minimum, ko?.minimum ?? m.minimum)) : words("No published major-specific admission minimum verified.", "공개된 전공별 신입학 최저점 미확인.")}</p>${refs(m.sourceIds)}</article>`;
-          })
-          .join("")}</div>`
-      : ""
-  }
-  ${e?.programRanges?.length ? `<h3>${words("College-specific SAT references", "단과대별 SAT 참고 범위")}</h3><p>${words("Middle50% of the named cohort; not minimums. Differences do not prove that changing majors causes admission.", "명시한 집단의 중간 50% 분포이며 최저점이 아닙니다. 점수 분포 차이가 전공 변경으로 합격할 수 있음을 뜻하지 않습니다.")}</p><div class="program-range-list">${e.programRanges.map((r) => `<article><span>${esc(translate(r.unit))}</span><strong>${r.low}–${r.high}</strong><p class="small">${esc(translate(r.cohort))}</p>${refs(r.sourceIds)}</article>`).join("")}</div>` : ""}
-  ${catalog ? `<p>${link(catalog, words("Browse the full official major directory", "공식 전체 학과 목록 보기"), "text-link")}</p><p class="small">${words("Filter the directory to bachelor’s programs at this campus. The focused subjects above are not the full catalog; other programs may add auditions, portfolios or separate admission.", "학사 과정과 해당 캠퍼스로 필터하세요. 위 전공은 집중 검토한 후보이며 전체 학과 목록이 아닙니다. 다른 학과는 실기·포트폴리오·별도 선발을 요구할 수 있습니다.")}</p>` : ""}</section>`;
+  const catalog = catalogs[u.id] ?? e?.catalog?.url ?? e?.majorsDirectory?.url;
+  return catalog
+    ? `<p>${link(catalog, words("Browse the full official major directory", "공식 전체 학과 목록 보기"), "text-link")}</p>`
+    : "";
 }
 function openUniversity(id: string) {
   const school = scenarioSchoolMap.get(id);
@@ -623,9 +551,22 @@ function openUniversity(id: string) {
   if (legacy)
     dialog.querySelector(".dialog-body")!.insertAdjacentHTML(
       "beforeend",
-      `<details class="methodology"><summary>${words("Additional researched details", "추가 조사 자료")}</summary>${researchDetails(legacy)}<div class="detail-facts">${Object.entries(
+      `<details class="methodology"><summary>${words("Additional application, cost & credit references", "추가 지원 자료 · 비용 · 학점 인정")}</summary>${researchDetails(legacy)}<div class="detail-facts">${Object.entries(
         legacy.facts,
       )
+        .filter(([key]) =>
+          [
+            "deadlines",
+            "application",
+            "materials",
+            "coursework",
+            "english",
+            "englishExemption",
+            "ap",
+            "cost",
+            "aid",
+          ].includes(key),
+        )
         .map(([key, f]) => fact(f, factLabels[key] ?? key))
         .join("")}</div></details>`,
     );

@@ -1,0 +1,1432 @@
+{
+  "reviewed": "2026-10-22",
+  "purpose": "Primary-source review for Korean citizen studying Ontario secondary curriculum; international first-year humanities/social-science comparison candidates. No admission-probability model or Ontario-to-GPA conversion.",
+  "schools": [
+    {
+      "id": "oklahoma-state",
+      "name": "Oklahoma State University",
+      "nameKo": "오클라호마 주립대학교",
+      "academic": {
+        "text": "The international freshman page publishes assured-admission criteria of school-assessed GPA 3.0/4.0 plus English proficiency. OSU recalculates foreign transcripts; some colleges have additional criteria.",
+        "textKo": "국제 신입생 페이지의 보장 입학 기준은 대학 평가 GPA 3.0/4.0과 영어 능력 요건입니다. 해외 성적표를 재산정하며 일부 단과대학은 추가 조건이 있습니다.",
+        "sourceIds": [
+          "scenario-oklahoma-state-international"
+        ]
+      },
+      "ontario": {
+        "minimum": null,
+        "basis": "No Ontario-specific percentage admission floor was verified. The university must evaluate the full transcript and required courses.",
+        "basisKo": "온타리오 전용 백분율 최저 지원 성적은 확인되지 않았습니다. 대학이 전체 성적표와 필수 과목을 심사해야 합니다.",
+        "sourceIds": [
+          "scenario-oklahoma-state-international"
+        ]
+      },
+      "testing": {
+        "policy": "optional",
+        "text": "Current general freshman admission permits application without SAT/ACT. Do not automatically apply the domestic SAT-only assured-admission alternative to an international Ontario applicant.",
+        "textKo": "현행 일반 신입생 정책은 SAT/ACT 없이 지원할 수 있습니다. 국내 지원자 페이지의 SAT 단독 보장 입학 경로를 온타리오 국제 지원자에게 자동 적용하지 않습니다.",
+        "sourceIds": [
+          "scenario-oklahoma-state-international",
+          "scenario-oklahoma-state-testing"
+        ]
+      },
+      "satRange": {
+        "low": 1060,
+        "high": 1250,
+        "cohort": "Fall 2025 enrolled first-year SAT submitters; middle 50%; not a cutoff",
+        "cohortKo": "2025년 가을 등록 신입생 중 SAT 제출자의 중앙 50%; 합격선 아님",
+        "sourceIds": [
+          "scenario-oklahoma-state-cds"
+        ]
+      },
+      "entry": {
+        "program": "English, BA",
+        "programKo": "영문학 BA",
+        "unit": "College of Arts and Sciences",
+        "unitKo": "문리과대학",
+        "text": "English BA is offered at Stillwater. The verified program page does not publish a lower freshman admission cutoff than other majors; full international entry criteria still apply.",
+        "textKo": "스틸워터 캠퍼스에서 영문학 BA를 운영합니다. 공식 전공 페이지는 다른 학과보다 낮은 신입학 합격선을 발표하지 않으며 국제 신입학 요건을 충족해야 합니다.",
+        "sourceIds": [
+          "scenario-oklahoma-state-english",
+          "scenario-oklahoma-state-international"
+        ],
+        "easierMajorVerified": false
+      },
+      "applicantScope": {
+        "text": "International first-year applicants educated outside the United States. Citizenship and prior college attendance can change the application route.",
+        "textKo": "미국 밖에서 고등학교를 다닌 국제 신입 지원자 기준입니다. 시민권과 고교 졸업 후 대학 재학 이력에 따라 지원 구분이 달라집니다.",
+        "sourceIds": [
+          "scenario-oklahoma-state-international"
+        ]
+      },
+      "reviewNote": "The published GPA 3.0 assured-admission route is assessed by OSU using the foreign transcript. SAT within 1060–1250 is a descriptive cohort comparison only. Do not substitute Ontario 75 or 80 for GPA 3.0.",
+      "inferenceLimit": "A comparison candidate is not a verified admit, Safety/Match prediction, or a school-specific Ontario cutoff. No academically easiest major is established.",
+      "reviewed": "2026-10-22"
+    },
+    {
+      "id": "nebraska-lincoln",
+      "name": "University of Nebraska–Lincoln",
+      "nameKo": "네브래스카 대학교 링컨",
+      "academic": {
+        "text": "The current international page requires upper-level math (4 units), natural sciences (3), social sciences (3), and English/native-language coursework (4), plus English proficiency. It does not publish an Ontario percentage floor.",
+        "textKo": "현행 국제 신입학 페이지는 상급 수학 4단위, 자연과학 3단위, 사회과학 3단위, 영어·모국어 과목 4단위와 영어 능력을 요구합니다. 온타리오 백분율 최저점은 공지하지 않습니다.",
+        "sourceIds": [
+          "scenario-nebraska-lincoln-international"
+        ]
+      },
+      "ontario": {
+        "minimum": null,
+        "basis": "No Ontario-specific percentage admission floor was verified. The university must evaluate the full transcript and required courses.",
+        "basisKo": "온타리오 전용 백분율 최저 지원 성적은 확인되지 않았습니다. 대학이 전체 성적표와 필수 과목을 심사해야 합니다.",
+        "sourceIds": [
+          "scenario-nebraska-lincoln-international"
+        ]
+      },
+      "testing": {
+        "policy": "optional",
+        "text": "SAT/ACT is not required for general international admission; Architecture and Engineering may require additional tests. SAT Reading and Writing 520 is an English-proficiency route, not an academic composite cutoff.",
+        "textKo": "일반 국제 입학은 SAT/ACT를 요구하지 않지만 건축·공학은 추가 시험이 필요할 수 있습니다. SAT 읽기·쓰기 520점은 영어 능력 증빙 경로이며 총점 합격선이 아닙니다.",
+        "sourceIds": [
+          "scenario-nebraska-lincoln-international"
+        ]
+      },
+      "satRange": {
+        "low": 1070,
+        "high": 1310,
+        "cohort": "Fall 2025 enrolled first-year SAT submitters (7% of class); middle 50%; not a cutoff",
+        "cohortKo": "2025년 가을 등록 신입생 중 SAT 제출자(학년의 7%) 중앙 50%; 합격선 아님",
+        "sourceIds": [
+          "scenario-nebraska-lincoln-cds"
+        ]
+      },
+      "entry": {
+        "program": "History, BA/BS",
+        "programKo": "역사학 BA/BS",
+        "unit": "College of Arts & Sciences",
+        "unitKo": "문리과대학",
+        "text": "History is an Arts & Sciences major with BA and BS degree rules. No verified lowest-entry-major comparison was found; selecting History does not bypass university admission.",
+        "textKo": "역사학은 문리과대학 전공으로 BA·BS 학위 규정을 따릅니다. 전공 간 최저 입학 난도 비교 근거는 확인되지 않았으며, 역사학 선택으로 대학 입학 기준을 우회할 수 없습니다.",
+        "sourceIds": [
+          "scenario-nebraska-lincoln-history"
+        ],
+        "easierMajorVerified": false
+      },
+      "applicantScope": {
+        "text": "Applicants who are not U.S. citizens and require a visa for a U.S. degree; the reviewed page lists Spring and Fall 2027 terms.",
+        "textKo": "미국 시민권자가 아니며 미국 학위 취득을 위해 비자가 필요한 지원자 기준입니다. 검토한 페이지의 적용 학기는 2027년 봄·가을입니다.",
+        "sourceIds": [
+          "scenario-nebraska-lincoln-international"
+        ]
+      },
+      "reviewNote": "The international page currently emphasizes completion of four math, three science, three social science and four English/native-language units plus English proficiency. No Ontario percentage minimum is stated. Suitable as a curriculum-check comparison candidate; not automatic eligibility.",
+      "inferenceLimit": "A comparison candidate is not a verified admit, Safety/Match prediction, or a school-specific Ontario cutoff. No academically easiest major is established.",
+      "reviewed": "2026-10-22"
+    },
+    {
+      "id": "kansas-state",
+      "name": "Kansas State University",
+      "nameKo": "캔자스 주립대학교",
+      "academic": {
+        "text": "International freshmen require an accredited secondary curriculum and minimum high-school GPA 2.5/4.0. No Ontario percentage equivalency was verified.",
+        "textKo": "국제 신입생은 인정된 중등 교육과정과 고교 GPA 2.5/4.0 이상이 필요합니다. 온타리오 백분율 대응 기준은 확인되지 않았습니다.",
+        "sourceIds": [
+          "scenario-kansas-state-international"
+        ]
+      },
+      "ontario": {
+        "minimum": null,
+        "basis": "No Ontario-specific percentage admission floor was verified. The university must evaluate the full transcript and required courses.",
+        "basisKo": "온타리오 전용 백분율 최저 지원 성적은 확인되지 않았습니다. 대학이 전체 성적표와 필수 과목을 심사해야 합니다.",
+        "sourceIds": [
+          "scenario-kansas-state-international"
+        ]
+      },
+      "testing": {
+        "policy": "optional",
+        "text": "Current university admission is test optional. Architecture, Planning and Design strongly encourages SAT/ACT and has additional English requirements. Confirm the 2028 policy.",
+        "textKo": "현행 대학 입학은 시험 선택 제출입니다. 건축·계획·디자인 단과대학은 SAT/ACT를 강하게 권장하고 추가 영어 요건을 적용합니다. 2028년 정책은 재확인이 필요합니다.",
+        "sourceIds": [
+          "scenario-kansas-state-international",
+          "scenario-kansas-state-testing"
+        ]
+      },
+      "satRange": {
+        "low": 1060,
+        "high": 1255,
+        "cohort": "Fall 2024 enrolled first-year SAT submitters (6% of class); middle 50%; not a cutoff",
+        "cohortKo": "2024년 가을 등록 신입생 중 SAT 제출자(학년의 6%) 중앙 50%; 합격선 아님",
+        "sourceIds": [
+          "scenario-kansas-state-cds"
+        ]
+      },
+      "entry": {
+        "program": "History, BA/BS",
+        "programKo": "역사학 BA/BS",
+        "unit": "College of Arts and Sciences",
+        "unitKo": "문리과대학",
+        "text": "History BA/BS is a verified major example. The international admission page lists Architecture, Planning and Design as a selective freshman exception. This does not prove History is the lowest-admission major.",
+        "textKo": "역사학 BA/BS가 공식 전공입니다. 국제 입학 페이지는 건축·계획·디자인을 신입학 추가 선발 요건이 있는 단과대학으로 명시합니다. 역사학이 가장 쉬운 학과라는 뜻은 아닙니다.",
+        "sourceIds": [
+          "scenario-kansas-state-international",
+          "scenario-kansas-state-history"
+        ],
+        "easierMajorVerified": false
+      },
+      "applicantScope": {
+        "text": "International first-year applicants educated outside the United States. Citizenship and prior college attendance can change the application route.",
+        "textKo": "미국 밖에서 고등학교를 다닌 국제 신입 지원자 기준입니다. 시민권과 고교 졸업 후 대학 재학 이력에 따라 지원 구분이 달라집니다.",
+        "sourceIds": [
+          "scenario-kansas-state-international"
+        ]
+      },
+      "reviewNote": "International GPA minimum is 2.5/4.0, evaluated by university. History is outside the specifically highlighted architecture selective-entry exception. This proves a general entry route, not easiest admission or an Ontario threshold.",
+      "inferenceLimit": "A comparison candidate is not a verified admit, Safety/Match prediction, or a school-specific Ontario cutoff. No academically easiest major is established.",
+      "reviewed": "2026-10-22"
+    },
+    {
+      "id": "alabama-huntsville",
+      "name": "University of Alabama in Huntsville",
+      "nameKo": "앨라배마 대학교 헌츠빌",
+      "academic": {
+        "text": "A freshman with cumulative high-school GPA 3.0 is described as a strong candidate, not a guaranteed minimum admit. UAH can request a credential evaluation for foreign transcripts without a 4.0 GPA.",
+        "textKo": "고교 누적 GPA 3.0은 강한 지원자로 설명되며 보장 합격 최저점이 아닙니다. 4.0 GPA가 없는 해외 성적표는 외부 학력 평가를 요구할 수 있습니다.",
+        "sourceIds": [
+          "scenario-alabama-huntsville-international"
+        ]
+      },
+      "ontario": {
+        "minimum": null,
+        "basis": "No Ontario-specific percentage admission floor was verified. The university must evaluate the full transcript and required courses.",
+        "basisKo": "온타리오 전용 백분율 최저 지원 성적은 확인되지 않았습니다. 대학이 전체 성적표와 필수 과목을 심사해야 합니다.",
+        "sourceIds": [
+          "scenario-alabama-huntsville-international"
+        ]
+      },
+      "testing": {
+        "policy": "required",
+        "text": "UAH expressly requires SAT/ACT for Spring 2028 and all later freshman entry terms. Its optional policy only covers the listed 2026–2027 terms.",
+        "textKo": "UAH는 2028년 봄 및 이후 모든 신입학에 SAT/ACT를 요구한다고 명시합니다. 선택 제출은 공지된 2026–2027학기에 한정됩니다.",
+        "sourceIds": [
+          "scenario-alabama-huntsville-testing"
+        ]
+      },
+      "satRange": {
+        "low": 1200,
+        "high": 1370,
+        "cohort": "Fall 2025 enrolled first-year SAT submitters (8% of class); middle 50%; not a cutoff",
+        "cohortKo": "2025년 가을 등록 신입생 중 SAT 제출자(학년의 8%) 중앙 50%; 합격선 아님",
+        "sourceIds": [
+          "scenario-alabama-huntsville-cds"
+        ]
+      },
+      "entry": {
+        "program": "English, BA",
+        "programKo": "영문학 BA",
+        "unit": "College of Arts, Humanities & Social Sciences",
+        "unitKo": "예술·인문·사회과학대학",
+        "text": "English BA offers Creative Writing, Literary Studies and Technical & Professional Communication. The verified page does not establish a comparative lower admission cutoff.",
+        "textKo": "영문학 BA는 창작·문학연구·기술전문커뮤니케이션 세부 전공을 운영합니다. 확인된 공식 페이지에는 전공별 더 낮은 입학 합격선 비교가 없습니다.",
+        "sourceIds": [
+          "scenario-alabama-huntsville-english"
+        ],
+        "easierMajorVerified": false
+      },
+      "applicantScope": {
+        "text": "International first-year applicants educated outside the United States. Citizenship and prior college attendance can change the application route.",
+        "textKo": "미국 밖에서 고등학교를 다닌 국제 신입 지원자 기준입니다. 시민권과 고교 졸업 후 대학 재학 이력에 따라 지원 구분이 달라집니다.",
+        "sourceIds": [
+          "scenario-alabama-huntsville-international"
+        ]
+      },
+      "reviewNote": "GPA 3.0 is described as a strong candidate, not an assured minimum. C9 SAT range 1200–1370 and 8% submitters are usable; C9 score-bin percentages elsewhere in the source contain apparent inconsistencies and must not be re-used.",
+      "inferenceLimit": "A comparison candidate is not a verified admit, Safety/Match prediction, or a school-specific Ontario cutoff. No academically easiest major is established.",
+      "reviewed": "2026-10-22"
+    },
+    {
+      "id": "temple",
+      "name": "Temple University",
+      "nameKo": "템플 대학교",
+      "academic": {
+        "text": "Temple reviews all secondary-school records, including grades 9–11 and current or final grade 12 results for four-year curricula. Admission is holistic.",
+        "textKo": "4년제 고교 교육과정은 9–11학년 및 12학년 진행·최종 성적을 포함한 전체 고교 기록을 종합 심사합니다.",
+        "sourceIds": [
+          "scenario-temple-international"
+        ]
+      },
+      "ontario": {
+        "minimum": null,
+        "basis": "Ontario minimum percentage not verified; the complete school record requires university assessment.",
+        "basisKo": "온타리오 최저 백분율은 확인되지 않았으며 대학의 전체 성적표 심사가 필요합니다.",
+        "sourceIds": [
+          "scenario-temple-international"
+        ]
+      },
+      "testing": {
+        "policy": "optional",
+        "text": "SAT/ACT is optional for international first-year applicants; English-proficiency requirements are separate. Fall 2028-specific confirmation is still needed.",
+        "textKo": "국제 신입생 SAT/ACT 제출은 선택입니다. 영어 능력 요건은 별도이며, 2028년 입학 정책은 다시 확인해야 합니다.",
+        "sourceIds": [
+          "scenario-temple-international"
+        ]
+      },
+      "satRange": {
+        "low": 1030,
+        "high": 1310,
+        "cohort": "Fall 2025 enrolled first-year SAT submitters, middle 50%; 19% submitted SAT; domestic campuses only.",
+        "cohortKo": "2025년 가을 등록 신입생 중 SAT 제출자 중간 50%; 제출 비율 19%, 미국 내 캠퍼스 기준.",
+        "sourceIds": [
+          "scenario-temple-cds"
+        ]
+      },
+      "entry": {
+        "program": "Sociology, B.A.",
+        "programKo": "사회학 B.A.",
+        "unit": "College of Liberal Arts",
+        "unitKo": "대학 공통 심사 및 일부 전공 추가 서류",
+        "text": "Some arts, music, dance and theatre programs require an audition, interview or portfolio. No lowest-entry major was verified.",
+        "textKo": "일부 미술·음악·무용·연극 전공은 오디션·면접·포트폴리오가 필요합니다. 최저 입학 전공은 확인되지 않았습니다.",
+        "easierMajorVerified": false,
+        "sourceIds": [
+          "scenario-temple-international",
+          "candidate-temple-humanities"
+        ]
+      },
+      "applicantScope": {
+        "text": "International first-year admission; citizenship and secondary-school curriculum may lead to different document and English-proficiency requirements. Confirm Fall 2028 rules before applying.",
+        "textKo": "국제 신입학 자료입니다. 시민권과 고교 교육과정에 따라 서류·영어 요건이 달라질 수 있습니다. 지원 전 2028년 가을 입학 요건을 다시 확인하세요.",
+        "sourceIds": [
+          "scenario-temple-international"
+        ]
+      },
+      "reviewNote": "Sociology B.A. at Main campus is a verified specific program. The 1030–1310 cohort range covers domestic campuses and is not an international-only or Sociology cohort. Holistic review remains.",
+      "inferenceLimit": "A comparison candidate is not a verified admit, Safety/Match prediction, or a school-specific Ontario cutoff. No academically easiest major is established.",
+      "reviewed": "2026-10-22"
+    },
+    {
+      "id": "delaware",
+      "name": "University of Delaware",
+      "nameKo": "델라웨어 대학교",
+      "academic": {
+        "text": "Submit all secondary transcripts and examination results. Applicants are assessed in their curriculum context. Business and engineering generally expect pre-calculus preparation, including provincial Canadian Grade 12 equivalents.",
+        "textKo": "전체 고교 성적표·시험 결과를 제출하며 교육과정 맥락에서 심사합니다. 경영·공학은 일반적으로 캐나다 주별 12학년 상당의 고급 함수·미적분 준비를 요구합니다.",
+        "sourceIds": [
+          "scenario-delaware-international"
+        ]
+      },
+      "ontario": {
+        "minimum": null,
+        "basis": "Ontario minimum percentage not verified; the complete school record requires university assessment.",
+        "basisKo": "온타리오 최저 백분율은 확인되지 않았으며 대학의 전체 성적표 심사가 필요합니다.",
+        "sourceIds": [
+          "scenario-delaware-international"
+        ]
+      },
+      "testing": {
+        "policy": "optional",
+        "text": "SAT/ACT is not required for international applicants. English-proficiency requirements are separate; confirm Fall 2028 policy.",
+        "textKo": "국제 지원자에게 SAT/ACT 제출을 요구하지 않습니다. 영어 능력 요건은 별도이며 2028년 정책을 확인해야 합니다.",
+        "sourceIds": [
+          "scenario-delaware-international"
+        ]
+      },
+      "satRange": {
+        "low": 1220,
+        "high": 1370,
+        "cohort": "Fall 2024 enrolled first-year SAT submitters; 19.1% submitted; middle 50%, not cutoff",
+        "cohortKo": "2024년 가을 등록 신입생 SAT 제출자 중간 50%; 제출 비율 19.1%; 합격선 아님",
+        "sourceIds": [
+          "candidate-delaware-cds-2024"
+        ]
+      },
+      "entry": {
+        "program": "History, B.A.; University Studies available",
+        "programKo": "역사학 B.A.; 전공 미정 경로도 제공",
+        "unit": "College of Arts and Sciences",
+        "unitKo": "전공 탐색 과정",
+        "text": "UD may offer University Studies when a selected major is full or its requirements are not met. Students normally choose a major by the end of sophomore year. This is not a published easier-major cutoff.",
+        "textKo": "희망 전공의 정원이 찼거나 전공 요건에 미달하면 University Studies로 합격할 수 있습니다. 통상 2학년 말까지 전공을 정합니다. 더 낮은 합격선이 공개된 전공이라는 뜻은 아닙니다.",
+        "easierMajorVerified": false,
+        "sourceIds": [
+          "scenario-delaware-international",
+          "candidate-delaware-humanities"
+        ]
+      },
+      "applicantScope": {
+        "text": "International first-year admission; citizenship and secondary-school curriculum may lead to different document and English-proficiency requirements. Confirm Fall 2028 rules before applying.",
+        "textKo": "국제 신입학 자료입니다. 시민권과 고교 교육과정에 따라 서류·영어 요건이 달라질 수 있습니다. 지원 전 2028년 가을 입학 요건을 다시 확인하세요.",
+        "sourceIds": [
+          "scenario-delaware-international"
+        ]
+      },
+      "reviewNote": "History B.A. verified. University Studies can be offered when selected-major requirements or capacity prevent direct major placement; this does not promise admission with a weak record. SAT 1220–1370 is newly verified historical comparison.",
+      "inferenceLimit": "A comparison candidate is not a verified admit, Safety/Match prediction, or a school-specific Ontario cutoff. No academically easiest major is established.",
+      "reviewed": "2026-10-22"
+    },
+    {
+      "id": "south-carolina",
+      "name": "University of South Carolina, Columbia",
+      "nameKo": "사우스캐롤라이나 대학교 컬럼비아",
+      "academic": {
+        "text": "International admission emphasizes school performance and comprehensive review. Choice of major and available program capacity are part of the review.",
+        "textKo": "국제 입학은 고교 성적을 중심으로 종합 심사하며 희망 전공과 전공별 수용 인원도 고려합니다.",
+        "sourceIds": [
+          "scenario-south-carolina-international"
+        ]
+      },
+      "ontario": {
+        "minimum": null,
+        "basis": "Ontario minimum percentage not verified; the complete school record requires university assessment.",
+        "basisKo": "온타리오 최저 백분율은 확인되지 않았으며 대학의 전체 성적표 심사가 필요합니다.",
+        "sourceIds": [
+          "scenario-south-carolina-international"
+        ]
+      },
+      "testing": {
+        "policy": "optional",
+        "text": "SAT/ACT is optional for Spring, Summer and Fall 2027 international freshmen. Fall 2028 has not been confirmed by this source.",
+        "textKo": "2027년 봄·여름·가을 국제 신입생은 SAT/ACT 선택 제출입니다. 이 자료로 2028년 정책은 확정할 수 없습니다.",
+        "sourceIds": [
+          "scenario-south-carolina-international"
+        ]
+      },
+      "satRange": {
+        "low": 1260,
+        "high": 1410,
+        "cohort": "Fall 2024 admitted nonresident students, middle 50% SAT; not a separate international-only cohort.",
+        "cohortKo": "2024년 가을 합격한 비거주자 SAT 중간 50%; 국제학생만의 분포는 아닙니다.",
+        "sourceIds": [
+          "scenario-south-carolina-profile"
+        ]
+      },
+      "entry": {
+        "program": "Sociology, B.A.",
+        "programKo": "사회학 B.A.",
+        "unit": "McCausland College of Arts and Sciences",
+        "unitKo": "맥코슬랜드 문리대학",
+        "text": "The official international page offers Undeclared in Arts and Sciences and permits a second major choice. It does not establish this as the easiest admission route.",
+        "textKo": "국제 입학 안내는 문리대학 Undeclared와 두 번째 희망 전공 선택을 안내합니다. 이를 가장 쉬운 입학 경로라고 입증하는 자료는 아닙니다.",
+        "easierMajorVerified": false,
+        "sourceIds": [
+          "scenario-south-carolina-international",
+          "candidate-south-carolina-humanities"
+        ]
+      },
+      "applicantScope": {
+        "text": "International first-year admission; citizenship and secondary-school curriculum may lead to different document and English-proficiency requirements. Confirm Fall 2028 rules before applying.",
+        "textKo": "국제 신입학 자료입니다. 시민권과 고교 교육과정에 따라 서류·영어 요건이 달라질 수 있습니다. 지원 전 2028년 가을 입학 요건을 다시 확인하세요.",
+        "sourceIds": [
+          "scenario-south-carolina-international"
+        ]
+      },
+      "reviewNote": "Sociology bulletin states new freshmen meeting university admissions standards are eligible for college degree programs. International admission still considers major and capacity. Current webpage gives nonresident SAT 1250–1380 with no adjacent cohort year; retain dated 2024 1260–1410 unless clearly labeling current undated snapshot.",
+      "inferenceLimit": "A comparison candidate is not a verified admit, Safety/Match prediction, or a school-specific Ontario cutoff. No academically easiest major is established.",
+      "reviewed": "2026-10-22"
+    },
+    {
+      "id": "miami-ohio",
+      "name": "Miami University, Oxford",
+      "nameKo": "마이애미 대학교 옥스퍼드(오하이오)",
+      "academic": {
+        "text": "A recognized pre-university secondary qualification and adequate English are required. Academic credentials are read within the education system in which they were earned.",
+        "textKo": "인정되는 대학 진학용 고교 졸업 자격과 영어 능력이 필요하며, 성적은 이수한 교육제도 맥락에서 평가합니다.",
+        "sourceIds": [
+          "scenario-miami-ohio-international"
+        ]
+      },
+      "ontario": {
+        "minimum": null,
+        "basis": "Ontario minimum percentage not verified; the complete school record requires university assessment.",
+        "basisKo": "온타리오 최저 백분율은 확인되지 않았으며 대학의 전체 성적표 심사가 필요합니다.",
+        "sourceIds": [
+          "scenario-miami-ohio-international"
+        ]
+      },
+      "testing": {
+        "policy": "optional",
+        "text": "International students need not submit SAT/ACT for general admission. The Presidential Fellows scholarship requires scores beginning 2026–2027; confirm Fall 2028 details.",
+        "textKo": "국제학생 일반 입학은 SAT/ACT 선택 제출입니다. Presidential Fellows 장학금은 2026–2027년부터 시험 점수가 필요하며 2028년 세부 정책은 확인해야 합니다.",
+        "sourceIds": [
+          "scenario-miami-ohio-testing"
+        ]
+      },
+      "satRange": {
+        "low": 1220,
+        "high": 1380,
+        "cohort": "Fall 2026 all admitted SAT submitters, middle 50%; 49.7% of admits opted into ACT/SAT review.",
+        "cohortKo": "2026년 가을 전체 합격자 중 SAT 제출자의 중간 50%; 전체 합격자 49.7%가 ACT/SAT 심사를 선택했습니다.",
+        "sourceIds": [
+          "scenario-miami-ohio-profile"
+        ]
+      },
+      "entry": {
+        "program": "History, B.A.",
+        "programKo": "역사학 B.A.",
+        "unit": "College of Arts and Science",
+        "unitKo": "옥스퍼드 캠퍼스 및 일부 예술 전공 추가 심사",
+        "text": "Certain Creative Arts majors require a portfolio, audition or video. Published Fall 2026 admitted SAT distributions differ for all admits, Farmer Business and Nursing; they are not minimum cutoffs.",
+        "textKo": "일부 예술 전공은 포트폴리오·오디션·영상이 필요합니다. 2026년 전체·경영·간호 합격자 SAT 분포가 따로 공개되지만 최저 합격점은 아닙니다.",
+        "easierMajorVerified": false,
+        "sourceIds": [
+          "scenario-miami-ohio-profile",
+          "scenario-miami-ohio-requirements",
+          "candidate-miami-ohio-humanities"
+        ]
+      },
+      "applicantScope": {
+        "text": "International first-year admission; citizenship and secondary-school curriculum may lead to different document and English-proficiency requirements. Confirm Fall 2028 rules before applying.",
+        "textKo": "국제 신입학 자료입니다. 시민권과 고교 교육과정에 따라 서류·영어 요건이 달라질 수 있습니다. 지원 전 2028년 가을 입학 요건을 다시 확인하세요.",
+        "sourceIds": [
+          "scenario-miami-ohio-international"
+        ]
+      },
+      "reviewNote": "General History B.A. is verified. Fall 2026 all-admitted SAT range is 1220–1380; Farmer Business and Nursing have separate distributions. Different distributions do not prove a lower History admission threshold. International students may apply without SAT.",
+      "inferenceLimit": "A comparison candidate is not a verified admit, Safety/Match prediction, or a school-specific Ontario cutoff. No academically easiest major is established.",
+      "reviewed": "2026-10-22"
+    },
+    {
+      "id": "syracuse",
+      "name": "Syracuse University",
+      "nameKo": "시러큐스 대학교",
+      "academic": {
+        "text": "Submit official credentials from outside the U.S., grading-scale information, and translations when necessary. The first-year review includes secondary transcripts and the senior-year grade report.",
+        "textKo": "미국 외 고교의 공식 학력·성적 자료와 성적 체계, 필요한 번역을 제출합니다. 고교 성적표와 최종 학년 진행 성적을 심사합니다.",
+        "sourceIds": [
+          "scenario-syracuse-international",
+          "scenario-syracuse-requirements"
+        ]
+      },
+      "ontario": {
+        "minimum": null,
+        "basis": "Ontario minimum percentage not verified; the complete school record requires university assessment.",
+        "basisKo": "온타리오 최저 백분율은 확인되지 않았으며 대학의 전체 성적표 심사가 필요합니다.",
+        "sourceIds": [
+          "scenario-syracuse-international"
+        ]
+      },
+      "testing": {
+        "policy": "optional",
+        "text": "Published cycle-specific test-optional policy runs through Spring 2028. The college-specific page also exempts applicants studying a non-American curriculum outside the U.S.; confirm how this applies to Fall 2028.",
+        "textKo": "학기별 SAT/ACT 선택 정책은 2028년 봄까지 명시되어 있습니다. 단과대 안내는 미국 밖 비미국 교육과정 재학생의 면제도 설명하므로 2028년 가을 적용 여부를 확인해야 합니다.",
+        "sourceIds": [
+          "scenario-syracuse-requirements",
+          "scenario-syracuse-entry"
+        ]
+      },
+      "satRange": null,
+      "entry": {
+        "program": "Sociology, B.A.",
+        "programKo": "사회학 B.A.",
+        "unit": "College of Arts and Sciences / Maxwell School",
+        "unitKo": "문리대학·맥스웰",
+        "text": "The college-specific page lists no additional requirements for Arts and Sciences/Maxwell, unlike architecture portfolios and several performance/design programs. This establishes fewer supplemental materials, not a lower academic cutoff.",
+        "textKo": "단과대 안내는 문리대학·맥스웰의 추가 요건이 없다고 명시합니다. 건축·일부 공연·디자인의 포트폴리오 등과 다른 서류 요건이며, 더 낮은 성적 합격선이 입증된 것은 아닙니다.",
+        "easierMajorVerified": false,
+        "sourceIds": [
+          "scenario-syracuse-entry",
+          "candidate-syracuse-humanities"
+        ]
+      },
+      "applicantScope": {
+        "text": "International first-year admission; citizenship and secondary-school curriculum may lead to different document and English-proficiency requirements. Confirm Fall 2028 rules before applying.",
+        "textKo": "국제 신입학 자료입니다. 시민권과 고교 교육과정에 따라 서류·영어 요건이 달라질 수 있습니다. 지원 전 2028년 가을 입학 요건을 다시 확인하세요.",
+        "sourceIds": [
+          "scenario-syracuse-international"
+        ]
+      },
+      "reviewNote": "Sociology B.A. has A&S/Maxwell application route with no additional college-specific materials. The current page covers test-optional Fall 2026 through Spring 2028; Fall 2028 is not included. Current official CDS PDF found, but parsed C9 values were blank; keep range null until form values are independently read.",
+      "inferenceLimit": "A comparison candidate is not a verified admit, Safety/Match prediction, or a school-specific Ontario cutoff. No academically easiest major is established.",
+      "reviewed": "2026-10-22"
+    },
+    {
+      "id": "fordham",
+      "name": "Fordham University",
+      "nameKo": "포덤 대학교",
+      "academic": {
+        "text": "Submit three complete years of school results plus the current year; the university reviews the complete application holistically.",
+        "textKo": "고교 3개 학년 전체 성적과 현재 학년 기록을 제출하며 지원서 전반을 종합 심사합니다.",
+        "sourceIds": [
+          "scenario-fordham-international",
+          "scenario-fordham-profile"
+        ]
+      },
+      "ontario": {
+        "minimum": null,
+        "basis": "Ontario minimum percentage not verified; the complete school record requires university assessment.",
+        "basisKo": "온타리오 최저 백분율은 확인되지 않았으며 대학의 전체 성적표 심사가 필요합니다.",
+        "sourceIds": [
+          "scenario-fordham-international"
+        ]
+      },
+      "testing": {
+        "policy": "optional",
+        "text": "SAT/ACT is optional for all applicants. Confirm the policy for Fall 2028 before applying.",
+        "textKo": "모든 지원자는 SAT/ACT 선택 제출이며, 2028년 입학 정책은 지원 전에 다시 확인해야 합니다.",
+        "sourceIds": [
+          "scenario-fordham-international"
+        ]
+      },
+      "satRange": {
+        "low": 1355,
+        "high": 1470,
+        "cohort": "Fall 2026 enrolled Class of 2030 SAT submitters, middle 50%; 70.1% of enrolled students did not submit testing.",
+        "cohortKo": "2026년 가을 등록한 2030년 졸업 예정 신입생의 SAT 제출자 중간 50%; 등록자 70.1%는 시험 점수를 제출하지 않았습니다.",
+        "sourceIds": [
+          "scenario-fordham-profile"
+        ]
+      },
+      "entry": {
+        "program": "History",
+        "programKo": "역사학",
+        "unit": "Fordham liberal arts colleges",
+        "unitKo": "학부 단과대학",
+        "text": "Fordham allows students to enter undecided and explore before declaring a major. No lower academic cutoff or easiest major is published in this source.",
+        "textKo": "전공 미정으로 입학하여 전공을 탐색할 수 있습니다. 이 자료에는 더 낮은 성적 합격선이나 가장 쉬운 전공이 공개되어 있지 않습니다.",
+        "easierMajorVerified": false,
+        "sourceIds": [
+          "scenario-fordham-entry",
+          "candidate-fordham-humanities"
+        ]
+      },
+      "applicantScope": {
+        "text": "International first-year admission; citizenship and secondary-school curriculum may lead to different document and English-proficiency requirements. Confirm Fall 2028 rules before applying.",
+        "textKo": "국제 신입학 자료입니다. 시민권과 고교 교육과정에 따라 서류·영어 요건이 달라질 수 있습니다. 지원 전 2028년 가을 입학 요건을 다시 확인하세요.",
+        "sourceIds": [
+          "scenario-fordham-international"
+        ]
+      },
+      "reviewNote": "History program and undecided route verified. Use enrolled1355–1470 or admitted1380–1490 with matching label; do not mix. 70.1% of enrolled Class2030 did not submit tests. No easiest-major inference.",
+      "inferenceLimit": "A comparison candidate is not a verified admit, Safety/Match prediction, or a school-specific Ontario cutoff. No academically easiest major is established.",
+      "reviewed": "2026-10-22"
+    },
+    {
+      "id": "baylor",
+      "name": "Baylor University",
+      "nameKo": "베일러 대학교",
+      "academic": {
+        "text": "Baylor reviews applications holistically and publishes no minimum GPA or SAT/ACT for university admission. Some majors have extra requirements. This does not make every Ontario grade eligible.",
+        "textKo": "대학 공통 입학에는 최저 GPA·SAT/ACT를 두지 않고 종합 심사합니다. 일부 전공은 추가 요건이 있으며, 모든 온타리오 내신이 지원 자격을 충족한다는 의미는 아닙니다.",
+        "sourceIds": [
+          "scenario-baylor-testing",
+          "scenario-baylor-entry"
+        ]
+      },
+      "ontario": {
+        "minimum": null,
+        "basis": "Ontario minimum percentage not verified; the complete school record requires university assessment.",
+        "basisKo": "온타리오 최저 백분율은 확인되지 않았으며 대학의 전체 성적표 심사가 필요합니다.",
+        "sourceIds": [
+          "scenario-baylor-international"
+        ]
+      },
+      "testing": {
+        "policy": "optional",
+        "text": "SAT/ACT is optional, although Baylor encourages submission. Some intended programs have additional criteria; confirm Fall 2028.",
+        "textKo": "SAT/ACT는 선택 제출이지만 학교는 제출을 권장합니다. 일부 전공은 별도 기준이 있으므로 2028년 정책을 확인해야 합니다.",
+        "sourceIds": [
+          "scenario-baylor-testing"
+        ]
+      },
+      "satRange": {
+        "low": 1190,
+        "high": 1368,
+        "cohort": "2026 freshman class, published middle 50% SAT; source does not give a separate international cohort.",
+        "cohortKo": "2026년 신입생의 공개 SAT 중간 50%; 국제학생 별도 분포는 아닙니다.",
+        "sourceIds": [
+          "scenario-baylor-profile"
+        ]
+      },
+      "entry": {
+        "program": "Sociology, B.A.",
+        "programKo": "사회학 B.A.",
+        "unit": "College of Arts and Sciences",
+        "unitKo": "대학 공통 심사 및 전공별 추가 선발",
+        "text": "Most majors are open to students admitted to Baylor. Freshman engineering and pre-health have extra academic criteria; music/theatre and several special programs need additional applications or auditions. No easiest major is verified.",
+        "textKo": "대부분 전공은 대학 합격자에게 열려 있습니다. 신입 공학·프리헬스는 추가 성적 기준, 음악·연극·일부 특별 과정은 별도 지원·오디션이 있습니다. 가장 쉬운 전공은 확인되지 않았습니다.",
+        "easierMajorVerified": false,
+        "sourceIds": [
+          "scenario-baylor-entry",
+          "candidate-baylor-humanities"
+        ]
+      },
+      "applicantScope": {
+        "text": "International first-year admission; citizenship and secondary-school curriculum may lead to different document and English-proficiency requirements. Confirm Fall 2028 rules before applying.",
+        "textKo": "국제 신입학 자료입니다. 시민권과 고교 교육과정에 따라 서류·영어 요건이 달라질 수 있습니다. 지원 전 2028년 가을 입학 요건을 다시 확인하세요.",
+        "sourceIds": [
+          "scenario-baylor-international"
+        ]
+      },
+      "reviewNote": "Most majors open to university-admitted students; Sociology B.A. verified and not listed among freshman Engineering/Pre-Health additional academic requirements. Overall SAT1190–1368 describes2026 freshman class. No minimum does not mean every Ontario grade is eligible.",
+      "inferenceLimit": "A comparison candidate is not a verified admit, Safety/Match prediction, or a school-specific Ontario cutoff. No academically easiest major is established.",
+      "reviewed": "2026-10-22"
+    },
+    {
+      "id": "maryland-college-park",
+      "name": "University of Maryland, College Park",
+      "nameKo": "메릴랜드 대학교 칼리지파크",
+      "academic": {
+        "text": "The university evaluates international secondary credentials and requires evidence of English proficiency when applicable. No Ontario-specific percentage minimum was verified.",
+        "textKo": "국제 고교 학력을 평가하며 해당자는 영어 능력을 증명해야 합니다. 온타리오 전용 최저 백분율은 확인하지 못했습니다.",
+        "sourceIds": [
+          "scenario-maryland-college-park-international"
+        ]
+      },
+      "ontario": {
+        "minimum": null,
+        "basis": "Ontario minimum percentage not verified; the complete school record requires university assessment.",
+        "basisKo": "온타리오 최저 백분율은 확인되지 않았으며 대학의 전체 성적표 심사가 필요합니다.",
+        "sourceIds": [
+          "scenario-maryland-college-park-international"
+        ]
+      },
+      "testing": {
+        "policy": "optional",
+        "text": "UMD is test optional through Fall 2027 and is assessing later cycles. Fall 2028 policy is not confirmed.",
+        "textKo": "SAT/ACT 선택 정책은 2027년 가을까지이며 이후 정책은 검토 중입니다. 2028년 가을 정책은 확정되지 않았습니다.",
+        "sourceIds": [
+          "scenario-maryland-college-park-testing"
+        ]
+      },
+      "satRange": {
+        "low": 1410,
+        "high": 1520,
+        "cohort": "Fall 2025 entering first-time students with SAT used as their reported admission test; university report gives 25th/75th percentiles.",
+        "cohortKo": "2025년 가을 입학 신입생 중 대학 보고서에서 SAT를 입학 시험으로 사용한 학생의 25·75백분위.",
+        "sourceIds": [
+          "scenario-maryland-college-park-profile"
+        ]
+      },
+      "entry": {
+        "program": "History, B.A.",
+        "programKo": "역사학 B.A.",
+        "unit": "College of Arts and Humanities",
+        "unitKo": "대학 공통 입학 및 제한 전공(LEP) 별도 심사",
+        "text": "UMD explicitly says the preferred major does not affect university admissibility. LEP admission is reviewed separately; non-LEP choice is not an easier way into the university. Letters & Sciences does not guarantee later LEP admission.",
+        "textKo": "대학은 희망 전공이 대학 자체 합격 여부에 영향을 주지 않는다고 명시합니다. 제한 전공은 별도 심사하므로 비제한 전공이 대학 입학을 쉽게 만들지는 않습니다. Letters & Sciences 입학도 향후 제한 전공 진입을 보장하지 않습니다.",
+        "easierMajorVerified": false,
+        "sourceIds": [
+          "scenario-maryland-college-park-entry",
+          "candidate-maryland-college-park-humanities"
+        ]
+      },
+      "applicantScope": {
+        "text": "International first-year admission; citizenship and secondary-school curriculum may lead to different document and English-proficiency requirements. Confirm Fall 2028 rules before applying.",
+        "textKo": "국제 신입학 자료입니다. 시민권과 고교 교육과정에 따라 서류·영어 요건이 달라질 수 있습니다. 지원 전 2028년 가을 입학 요건을 다시 확인하세요.",
+        "sourceIds": [
+          "scenario-maryland-college-park-international"
+        ]
+      },
+      "reviewNote": "History is outside the official LEP list. University expressly says major preference does not affect university admissibility; do not label History an easier way into UMD. 1410–1520 is Fall2025 enrolled score-used cohort, broader than international History entrants.",
+      "inferenceLimit": "A comparison candidate is not a verified admit, Safety/Match prediction, or a school-specific Ontario cutoff. No academically easiest major is established.",
+      "reviewed": "2026-10-22"
+    },
+    {
+      "id": "iowa",
+      "name": "University of Iowa",
+      "nameKo": "아이오와 대학교",
+      "academic": {
+        "text": "International applicants educated outside the U.S. need secondary completion, three years of completed high-school work, required academic preparation and English proficiency. The official Ontario equivalency is 70/100 in core academic subjects.",
+        "textKo": "미국 외 고교 출신 국제 신입생은 고교 졸업, 이수한 고교 과정 3년, 필수 학업 준비 및 영어 능력이 필요합니다. 공식 온타리오 성적 대응 기준은 주요 학업 과목 평균 70/100입니다.",
+        "sourceIds": [
+          "scenario-iowa-country",
+          "scenario-iowa-international",
+          "scenario-iowa-courses"
+        ]
+      },
+      "ontario": {
+        "minimum": 70,
+        "comparator": "gte",
+        "basis": "Published Ontario minimum: 70/100 overall average in core academic subjects, such as mathematics, science, language and social science. The page lists OSSD; it does not define this as a Grade 12 top-six average.",
+        "basisKo": "온타리오의 공식 최소 기준은 수학·과학·언어·사회과학 등 주요 학업 과목 전체 평균 70/100입니다. OSSD가 명시되어 있으나 12학년 상위 6과목 평균으로 정의된 기준은 아닙니다.",
+        "sourceIds": [
+          "scenario-iowa-country"
+        ]
+      },
+      "testing": {
+        "policy": "optional",
+        "text": "For international applicants completing secondary school outside the U.S., SAT/ACT are optional for general admission. Direct Tippie business admission, academic scholarships and Honors may separately require them. Current guidance does not explicitly guarantee the Fall 2028 policy.",
+        "textKo": "미국 외 고교 졸업 국제학생의 일반 입학은 SAT/ACT 선택 제출입니다. 티피 경영대 직접 입학·성적 장학금·아너스에는 별도 시험 요건이 있습니다. 현재 안내에서 2028년 가을 정책까지 명시적으로 보장하지는 않습니다.",
+        "sourceIds": [
+          "scenario-iowa-international",
+          "scenario-iowa-clas"
+        ]
+      },
+      "satRange": {
+        "low": 1130,
+        "high": 1320,
+        "cohort": "Fall 2025 enrolled first-year SAT submitters; 22% submitted; middle 50%, not cutoff",
+        "cohortKo": "2025년 가을 등록 신입생 SAT 제출자 중간 50%; 제출 비율 22%; 합격선 아님",
+        "sourceIds": [
+          "candidate-iowa-cds-2025"
+        ]
+      },
+      "entry": {
+        "program": "History, B.A.",
+        "programKo": "역사학 B.A.",
+        "unit": "College of Liberal Arts and Sciences",
+        "unitKo": "인문·자연과학대학",
+        "text": "English B.A. is an official degree. The open-major option requires CLAS admission. International CLAS admission reviews courses, GPA and English proficiency with optional SAT/ACT; no lowest-admitted Ontario mark or least-selective-major ranking is published.",
+        "textKo": "영문학 B.A.는 공식 학위이며 전공 미정 지원도 인문·자연과학대학 입학 요건을 따릅니다. 국제학생은 과목·성적·영어 능력을 심사받고 SAT/ACT는 선택입니다. 온타리오 최저 합격점이나 가장 쉬운 전공 순위는 제시하지 않습니다.",
+        "easierMajorVerified": false,
+        "sourceIds": [
+          "scenario-iowa-english",
+          "scenario-iowa-open-major",
+          "scenario-iowa-clas",
+          "candidate-iowa-humanities"
+        ]
+      },
+      "applicantScope": {
+        "text": "International first-year applicant who attended high school outside the U.S.; Ontario-credential rules apply to the academic record. Course, diploma, English and any program-specific requirements remain, and the minimum is not an admission guarantee.",
+        "textKo": "미국 외 고교에서 공부한 국제 신입생의 온타리오 학력을 기준으로 합니다. 과목·졸업·영어 능력·전공별 요건을 별도로 충족해야 하며 최소 기준은 합격 보장이 아닙니다.",
+        "sourceIds": [
+          "scenario-iowa-country",
+          "scenario-iowa-international",
+          "scenario-iowa-clas"
+        ]
+      },
+      "reviewNote": "Useful direct Ontario evidence: minimum70/100 in core academic subjects. Applicant must actually satisfy this specific formula and other CLAS requirements. History admission follows CLAS. University-wide1130–1320 SAT range does not create a separate grade-by-SAT cutoff.",
+      "inferenceLimit": "A comparison candidate is not a verified admit, Safety/Match prediction, or a school-specific Ontario cutoff. No academically easiest major is established.",
+      "reviewed": "2026-10-22"
+    },
+    {
+      "id": "northern-iowa",
+      "name": "University of Northern Iowa",
+      "nameKo": "노던 아이오와 대학교",
+      "academic": {
+        "text": "The official Canada page names the OSSD and specifies a 75(B) cumulative average in secondary-level academic subjects.",
+        "textKo": "공식 캐나다 지원 기준에 OSSD가 명시되어 있으며, 중등학교 학업 과목의 누적 평균 75(B)를 최소 기준으로 제시합니다.",
+        "sourceIds": [
+          "scenario-uni-canada"
+        ]
+      },
+      "ontario": {
+        "minimum": 75,
+        "basis": "Canada country page explicitly accepts OSSD; minimum 75(B) cumulative GPA in secondary academic subjects, not a Grade 12 top-six rule.",
+        "basisKo": "OSSD를 명시한 캐나다 국가별 페이지 기준: 중등학교 학업 과목 누적 평균 75(B). 12학년 상위 6과목 기준으로 제시된 수치는 아닙니다.",
+        "sourceIds": [
+          "scenario-uni-canada"
+        ]
+      },
+      "testing": {
+        "policy": "optional",
+        "text": "SAT/ACT are not required for international first-year admission; they may be considered for scholarships.",
+        "textKo": "국제 신입생 입학은 SAT/ACT 필수가 아니며 장학금 심사에 활용될 수 있습니다.",
+        "sourceIds": [
+          "scenario-uni-policy"
+        ]
+      },
+      "satRange": null,
+      "entry": {
+        "program": "English, B.A.",
+        "programKo": "영문학 B.A.",
+        "unit": "College of Humanities, Arts and Sciences",
+        "unitKo": "인문·예술·자연과학대학",
+        "text": "An official cataloged English B.A. is available. No major-level lowest admitted Ontario mark was verified.",
+        "textKo": "공식 학사요람에서 영문학 B.A.가 확인됩니다. 이 학과의 온타리오 최저 합격점은 확인되지 않았습니다.",
+        "easierMajorVerified": false,
+        "sourceIds": [
+          "scenario-uni-english"
+        ]
+      },
+      "applicantScope": {
+        "text": "International first-year applicant; university evaluates foreign credentials. English proficiency, final graduation and program requirements remain separate.",
+        "textKo": "국제 신입생 지원 기준입니다. 대학의 해외 성적 평가, 영어 능력, 최종 졸업 및 전공 요건을 별도로 충족해야 합니다.",
+        "sourceIds": [
+          "scenario-uni-canada"
+        ]
+      },
+      "reviewNote": "Useful direct Ontario evidence: OSSD and cumulative75(B) in secondary academic subjects. This is not Grade12 top-six. Existing English B.A. program retained; no verified SAT range in this review. Not to be ranked in National Universities category without category-matched evidence.",
+      "inferenceLimit": "A comparison candidate is not a verified admit, Safety/Match prediction, or a school-specific Ontario cutoff. No academically easiest major is established.",
+      "reviewed": "2026-10-22"
+    }
+  ],
+  "programUpdates": [
+    {
+      "id": "temple",
+      "program": "Sociology, B.A.",
+      "programKo": "사회학 B.A.",
+      "unit": "College of Liberal Arts",
+      "sourceIds": [
+        "candidate-temple-humanities"
+      ]
+    },
+    {
+      "id": "delaware",
+      "program": "History, B.A.; University Studies available",
+      "programKo": "역사학 B.A.; 전공 미정 경로도 제공",
+      "unit": "College of Arts and Sciences",
+      "sourceIds": [
+        "candidate-delaware-humanities"
+      ]
+    },
+    {
+      "id": "south-carolina",
+      "program": "Sociology, B.A.",
+      "programKo": "사회학 B.A.",
+      "unit": "McCausland College of Arts and Sciences",
+      "sourceIds": [
+        "candidate-south-carolina-humanities"
+      ]
+    },
+    {
+      "id": "miami-ohio",
+      "program": "History, B.A.",
+      "programKo": "역사학 B.A.",
+      "unit": "College of Arts and Science",
+      "sourceIds": [
+        "candidate-miami-ohio-humanities"
+      ]
+    },
+    {
+      "id": "syracuse",
+      "program": "Sociology, B.A.",
+      "programKo": "사회학 B.A.",
+      "unit": "College of Arts and Sciences / Maxwell School",
+      "sourceIds": [
+        "candidate-syracuse-humanities"
+      ]
+    },
+    {
+      "id": "fordham",
+      "program": "History",
+      "programKo": "역사학",
+      "unit": "Fordham liberal arts colleges",
+      "sourceIds": [
+        "candidate-fordham-humanities"
+      ]
+    },
+    {
+      "id": "baylor",
+      "program": "Sociology, B.A.",
+      "programKo": "사회학 B.A.",
+      "unit": "College of Arts and Sciences",
+      "sourceIds": [
+        "candidate-baylor-humanities"
+      ]
+    },
+    {
+      "id": "maryland-college-park",
+      "program": "History, B.A.",
+      "programKo": "역사학 B.A.",
+      "unit": "College of Arts and Humanities",
+      "sourceIds": [
+        "candidate-maryland-college-park-humanities"
+      ]
+    },
+    {
+      "id": "iowa",
+      "program": "History, B.A.",
+      "programKo": "역사학 B.A.",
+      "unit": "College of Liberal Arts and Sciences",
+      "sourceIds": [
+        "candidate-iowa-humanities"
+      ]
+    }
+  ],
+  "rangeUpdates": [
+    {
+      "id": "delaware",
+      "satRange": {
+        "low": 1220,
+        "high": 1370,
+        "cohort": "Fall 2024 enrolled first-year SAT submitters; 19.1% submitted; middle 50%, not cutoff",
+        "cohortKo": "2024년 가을 등록 신입생 SAT 제출자 중간 50%; 제출 비율 19.1%; 합격선 아님",
+        "sourceIds": [
+          "candidate-delaware-cds-2024"
+        ]
+      }
+    },
+    {
+      "id": "iowa",
+      "satRange": {
+        "low": 1130,
+        "high": 1320,
+        "cohort": "Fall 2025 enrolled first-year SAT submitters; 22% submitted; middle 50%, not cutoff",
+        "cohortKo": "2025년 가을 등록 신입생 SAT 제출자 중간 50%; 제출 비율 22%; 합격선 아님",
+        "sourceIds": [
+          "candidate-iowa-cds-2025"
+        ]
+      }
+    }
+  ],
+  "sources": [
+    {
+      "id": "candidate-baylor-humanities",
+      "title": "Sociology, B.A. official degree and department",
+      "url": "https://admissions.web.baylor.edu/degrees/sociology",
+      "publisher": "Baylor University",
+      "verified": "2026-10-22",
+      "cycle": "Current official undergraduate program page; checked 2026-10-22"
+    },
+    {
+      "id": "candidate-delaware-cds-2024",
+      "title": "University of Delaware Common Data Set 2024–25, C9, PDF page 19",
+      "url": "https://bpb-us-w2.wpmucdn.com/sites.udel.edu/dist/e/2019/files/2025/07/CDS2425_UDelaware.pdf",
+      "publisher": "University of Delaware",
+      "verified": "2026-10-22",
+      "cycle": "Fall 2024 enrolled first-time, first-year SAT submitters; 19.1% submitted SAT"
+    },
+    {
+      "id": "candidate-delaware-humanities",
+      "title": "History, B.A.; University Studies available official degree and department",
+      "url": "https://www.udel.edu/academics/colleges/cas/units/departments/history/undergraduate-programs/",
+      "publisher": "University of Delaware",
+      "verified": "2026-10-22",
+      "cycle": "Current official undergraduate program page; checked 2026-10-22"
+    },
+    {
+      "id": "candidate-fordham-humanities",
+      "title": "History official degree and department",
+      "url": "https://www.fordham.edu/academics/departments/history/undergraduate/",
+      "publisher": "Fordham University",
+      "verified": "2026-10-22",
+      "cycle": "Current official undergraduate program page; checked 2026-10-22"
+    },
+    {
+      "id": "candidate-iowa-cds-2025",
+      "title": "University of Iowa Common Data Set 2025–26, C9, PDF page 16",
+      "url": "https://provost.uiowa.edu/sites/provost.uiowa.edu/files/2026-04/CDS_2526.pdf",
+      "publisher": "University of Iowa",
+      "verified": "2026-10-22",
+      "cycle": "Fall 2025 enrolled first-time, first-year SAT submitters; 22% submitted SAT"
+    },
+    {
+      "id": "candidate-iowa-humanities",
+      "title": "History, B.A. official degree and department",
+      "url": "https://admissions.uiowa.edu/academics/history",
+      "publisher": "University of Iowa",
+      "verified": "2026-10-22",
+      "cycle": "Current official undergraduate program page; checked 2026-10-22"
+    },
+    {
+      "id": "candidate-maryland-college-park-humanities",
+      "title": "History, B.A. official degree and department",
+      "url": "https://history.umd.edu/academics/undergraduate/advising",
+      "publisher": "University of Maryland, College Park",
+      "verified": "2026-10-22",
+      "cycle": "Current official undergraduate program page; checked 2026-10-22"
+    },
+    {
+      "id": "candidate-miami-ohio-humanities",
+      "title": "History, B.A. official degree and department",
+      "url": "https://bulletin.miamioh.edu/arts-science/history-ba/",
+      "publisher": "Miami University, Oxford",
+      "verified": "2026-10-22",
+      "cycle": "Current official undergraduate program page; checked 2026-10-22"
+    },
+    {
+      "id": "candidate-south-carolina-current-profile",
+      "title": "Freshman Applicants: current academic profile",
+      "url": "https://www.sc.edu/about/offices_and_divisions/undergraduate_admissions/apply/for_freshmen/index.php",
+      "publisher": "University of South Carolina",
+      "verified": "2026-10-22",
+      "cycle": "Current page accessed 2026-10-22; cohort year not explicitly printed beside table"
+    },
+    {
+      "id": "candidate-south-carolina-humanities",
+      "title": "Sociology, B.A. official degree and department",
+      "url": "https://academicbulletins.sc.edu/undergraduate/arts-sciences/sociology/sociology-ba/",
+      "publisher": "University of South Carolina, Columbia",
+      "verified": "2026-10-22",
+      "cycle": "Current official undergraduate program page; checked 2026-10-22"
+    },
+    {
+      "id": "candidate-syracuse-humanities",
+      "title": "Sociology, B.A. official degree and department",
+      "url": "https://www.syracuse.edu/academics/programs/sociology/",
+      "publisher": "Syracuse University",
+      "verified": "2026-10-22",
+      "cycle": "Current official undergraduate program page; checked 2026-10-22"
+    },
+    {
+      "id": "candidate-temple-humanities",
+      "title": "Sociology, B.A. official degree and department",
+      "url": "https://bulletin.temple.edu/undergraduate/liberal-arts/sociology-ba/",
+      "publisher": "Temple University",
+      "verified": "2026-10-22",
+      "cycle": "Current official undergraduate program page; checked 2026-10-22"
+    },
+    {
+      "id": "scenario-alabama-huntsville-cds",
+      "title": "Common Data Set 2025-2026, C9",
+      "url": "https://www.uah.edu/images/administrative/provost/oir/university_of_alabama_in_huntsville_cds_2025-2026.pdf",
+      "publisher": "University of Alabama in Huntsville",
+      "verified": "2026-10-22",
+      "cycle": "Fall 2025 enrolled first-year SAT submitters; 8% submitted SAT"
+    },
+    {
+      "id": "scenario-alabama-huntsville-english",
+      "title": "Bachelor of Arts in English",
+      "url": "https://www.uah.edu/ahs/departments/english/programs/undergraduate",
+      "publisher": "University of Alabama in Huntsville",
+      "verified": "2026-10-22",
+      "cycle": "Current policy viewed 2026-10-22; Fall 2028 not separately confirmed"
+    },
+    {
+      "id": "scenario-alabama-huntsville-international",
+      "title": "International Undergraduate Admission",
+      "url": "https://www.uah.edu/admissions/undergraduate/apply-for-admission/international",
+      "publisher": "University of Alabama in Huntsville",
+      "verified": "2026-10-22",
+      "cycle": "Current policy viewed 2026-10-22; Fall 2028 not separately confirmed"
+    },
+    {
+      "id": "scenario-alabama-huntsville-testing",
+      "title": "Test Optional Policy for Admission to UAH",
+      "url": "https://www.uah.edu/admissions/undergraduate/apply-for-admission/test-optional",
+      "publisher": "University of Alabama in Huntsville",
+      "verified": "2026-10-22",
+      "cycle": "Spring 2028 and later: SAT/ACT required"
+    },
+    {
+      "id": "scenario-baylor-entry",
+      "title": "Major-Specific Admission Requirements",
+      "url": "https://admissions.web.baylor.edu/admission/incoming-freshman/major-specific-admission-requirements",
+      "publisher": "Baylor University",
+      "verified": "2026-10-22",
+      "cycle": "Current page, reviewed October 22, 2026"
+    },
+    {
+      "id": "scenario-baylor-international",
+      "title": "Application Process for International Students",
+      "url": "https://admissions.web.baylor.edu/admission/international/application-process-international-students",
+      "publisher": "Baylor University",
+      "verified": "2026-10-22",
+      "cycle": "Current page, reviewed October 22, 2026"
+    },
+    {
+      "id": "scenario-baylor-profile",
+      "title": "Incoming Freshman profile",
+      "url": "https://admissions.web.baylor.edu/incoming-freshman",
+      "publisher": "Baylor University",
+      "verified": "2026-10-22",
+      "cycle": "2026 freshman class"
+    },
+    {
+      "id": "scenario-baylor-testing",
+      "title": "Test Optional Process",
+      "url": "https://admissions.web.baylor.edu/admission/incoming-freshman/test-optional-process",
+      "publisher": "Baylor University",
+      "verified": "2026-10-22",
+      "cycle": "Current application instructions with 2026 test dates"
+    },
+    {
+      "id": "scenario-delaware-international",
+      "title": "International Admissions",
+      "url": "https://www.udel.edu/apply/undergraduate-admissions/apply-to-ud/international-admissions/",
+      "publisher": "University of Delaware",
+      "verified": "2026-10-22",
+      "cycle": "Current page, reviewed October 22, 2026"
+    },
+    {
+      "id": "scenario-fordham-entry",
+      "title": "Entering Fordham Undecided",
+      "url": "https://www.fordham.edu/undergraduate-admission/majors-and-minors/undecided/",
+      "publisher": "Fordham University",
+      "verified": "2026-10-22",
+      "cycle": "Current page, reviewed October 22, 2026"
+    },
+    {
+      "id": "scenario-fordham-international",
+      "title": "International Students",
+      "url": "https://www.fordham.edu/undergraduate-admission/international-students/",
+      "publisher": "Fordham University",
+      "verified": "2026-10-22",
+      "cycle": "Current page, reviewed October 22, 2026"
+    },
+    {
+      "id": "scenario-fordham-profile",
+      "title": "Undergraduate Admission Facts, Class of 2030",
+      "url": "https://www.fordham.edu/undergraduate-admission/why-fordham/admission-facts/",
+      "publisher": "Fordham University",
+      "verified": "2026-10-22",
+      "cycle": "Fall 2026 entering class; updated September 23, 2026"
+    },
+    {
+      "id": "scenario-iowa-clas",
+      "title": "College of Liberal Arts and Sciences First-Year Admissions",
+      "url": "https://admissions.uiowa.edu/college-liberal-arts-and-sciences-first-year-admissions",
+      "publisher": "University of Iowa",
+      "verified": "2026-10-22",
+      "cycle": "Current college admissions requirements"
+    },
+    {
+      "id": "scenario-iowa-country",
+      "title": "Academic Requirements by Country: Canada / Ontario",
+      "url": "https://admissions.uiowa.edu/apply/academic-requirements-country",
+      "publisher": "University of Iowa",
+      "verified": "2026-10-22",
+      "cycle": "Current international country requirements; Fall 2028 reconfirmation required"
+    },
+    {
+      "id": "scenario-iowa-courses",
+      "title": "High School Course Requirements for International Applicants",
+      "url": "https://admissions.uiowa.edu/high-school-course-requirements-international-applicants",
+      "publisher": "University of Iowa",
+      "verified": "2026-10-22",
+      "cycle": "Current undergraduate curriculum requirements"
+    },
+    {
+      "id": "scenario-iowa-english",
+      "title": "Bachelor of Arts in English",
+      "url": "https://english.uiowa.edu/undergraduate/ba-english",
+      "publisher": "University of Iowa",
+      "verified": "2026-10-22",
+      "cycle": "Current undergraduate English program"
+    },
+    {
+      "id": "scenario-iowa-international",
+      "title": "International First-Year Admission Requirements",
+      "url": "https://admissions.uiowa.edu/international-first-year-admission-requirements",
+      "publisher": "University of Iowa",
+      "verified": "2026-10-22",
+      "cycle": "Current international first-year requirements; Fall 2028 reconfirmation required"
+    },
+    {
+      "id": "scenario-iowa-open-major",
+      "title": "Open Major",
+      "url": "https://admissions.uiowa.edu/academics/open-major",
+      "publisher": "University of Iowa",
+      "verified": "2026-10-22",
+      "cycle": "Current CLAS open-major admission route"
+    },
+    {
+      "id": "scenario-kansas-state-cds",
+      "title": "Common Data Set 2024-2025, C9",
+      "url": "https://www.k-state.edu/data/institutional-research/resources/common-data-set/CDS_2024_2025.pdf",
+      "publisher": "Kansas State University",
+      "verified": "2026-10-22",
+      "cycle": "Fall 2024 enrolled first-year SAT submitters; 6% submitted SAT"
+    },
+    {
+      "id": "scenario-kansas-state-history",
+      "title": "Undergraduate Program: Degrees in History",
+      "url": "https://www.k-state.edu/history/academics/undergrad/",
+      "publisher": "Kansas State University",
+      "verified": "2026-10-22",
+      "cycle": "Current policy viewed 2026-10-22; Fall 2028 not separately confirmed"
+    },
+    {
+      "id": "scenario-kansas-state-international",
+      "title": "Detailed Requirements for International Students",
+      "url": "https://www.k-state.edu/admissions/undergrad/manhattan/apply/international/requirements.html",
+      "publisher": "Kansas State University",
+      "verified": "2026-10-22",
+      "cycle": "Current policy viewed 2026-10-22; Fall 2028 not separately confirmed"
+    },
+    {
+      "id": "scenario-kansas-state-testing",
+      "title": "Detailed Requirements for Incoming Freshmen",
+      "url": "https://www.k-state.edu/admissions/undergrad/manhattan/apply/incoming-freshmen/requirements.html",
+      "publisher": "Kansas State University",
+      "verified": "2026-10-22",
+      "cycle": "Current policy viewed 2026-10-22; Fall 2028 not separately confirmed"
+    },
+    {
+      "id": "scenario-maryland-college-park-entry",
+      "title": "Limited Enrollment Programs",
+      "url": "https://admissions.umd.edu/academics/limited-enrollment-programs",
+      "publisher": "University of Maryland, College Park",
+      "verified": "2026-10-22",
+      "cycle": "Current page, reviewed October 22, 2026"
+    },
+    {
+      "id": "scenario-maryland-college-park-international",
+      "title": "International Student Admission, 2026–2027 Catalog",
+      "url": "https://academiccatalog.umd.edu/undergraduate/requirements-application-procedures/international-student-admission/",
+      "publisher": "University of Maryland, College Park",
+      "verified": "2026-10-22",
+      "cycle": "2026–2027 undergraduate catalog"
+    },
+    {
+      "id": "scenario-maryland-college-park-profile",
+      "title": "Undergraduate Application Summary – Fall 2025",
+      "url": "https://irpa.umd.edu/CampusCounts/Admissions/apps_ug.pdf",
+      "publisher": "University of Maryland, College Park",
+      "verified": "2026-10-22",
+      "cycle": "Fall 2025 entering students; prepared November 2025"
+    },
+    {
+      "id": "scenario-maryland-college-park-testing",
+      "title": "Freshman Application FAQs",
+      "url": "https://admissions.umd.edu/apply/freshman-application-faqs",
+      "publisher": "University of Maryland, College Park",
+      "verified": "2026-10-22",
+      "cycle": "Test-optional policy through Fall 2027"
+    },
+    {
+      "id": "scenario-miami-ohio-international",
+      "title": "International Student Eligibility Requirements",
+      "url": "https://miamioh.edu/admission-aid/apply/international-students/eligibility.html",
+      "publisher": "Miami University, Oxford",
+      "verified": "2026-10-22",
+      "cycle": "Current page, reviewed October 22, 2026"
+    },
+    {
+      "id": "scenario-miami-ohio-profile",
+      "title": "Admitted Students Statistics, Fall 2026",
+      "url": "https://miamioh.edu/admission-aid/apply/first-year-students/admitted-student-statistics.html",
+      "publisher": "Miami University, Oxford",
+      "verified": "2026-10-22",
+      "cycle": "Fall 2026 admitted students"
+    },
+    {
+      "id": "scenario-miami-ohio-requirements",
+      "title": "First-Year Student Application Requirements",
+      "url": "https://miamioh.edu/admission-aid/apply/first-year-students/",
+      "publisher": "Miami University, Oxford",
+      "verified": "2026-10-22",
+      "cycle": "Current page, reviewed October 22, 2026"
+    },
+    {
+      "id": "scenario-miami-ohio-testing",
+      "title": "College Entrance Testing",
+      "url": "https://miamioh.edu/admission-aid/apply/first-year-students/college-entrance-testing.html",
+      "publisher": "Miami University, Oxford",
+      "verified": "2026-10-22",
+      "cycle": "Current policy; scholarship exception begins 2026–2027"
+    },
+    {
+      "id": "scenario-nebraska-lincoln-cds",
+      "title": "First-Time, First-Year Profile: Common Data Set 2025-2026",
+      "url": "https://iea.unl.edu/common-data-set-2025-2026/c-first-time-first-year-admission/first-time-first-year-profile/",
+      "publisher": "University of Nebraska–Lincoln",
+      "verified": "2026-10-22",
+      "cycle": "Fall 2025 enrolled first-year SAT submitters; 7% submitted SAT"
+    },
+    {
+      "id": "scenario-nebraska-lincoln-history",
+      "title": "History: Undergraduate Catalog",
+      "url": "https://catalog.unl.edu/undergraduate/arts-sciences/history/",
+      "publisher": "University of Nebraska–Lincoln",
+      "verified": "2026-10-22",
+      "cycle": "2026-2027 undergraduate catalog"
+    },
+    {
+      "id": "scenario-nebraska-lincoln-international",
+      "title": "International Student Admission Requirements",
+      "url": "https://admissions.unl.edu/apply/admission-requirements/international/",
+      "publisher": "University of Nebraska–Lincoln",
+      "verified": "2026-10-22",
+      "cycle": "Spring/Fall 2027 application requirements; Fall 2028 not separately confirmed"
+    },
+    {
+      "id": "scenario-oklahoma-state-cds",
+      "title": "Common Data Set 2025-2026, C9",
+      "url": "https://ira.okstate.edu/site-files/documents/cds/CDS-2025-2026-PDF.pdf",
+      "publisher": "Oklahoma State University",
+      "verified": "2026-10-22",
+      "cycle": "Fall 2025 enrolled first-year SAT submitters; CDS 2025-2026"
+    },
+    {
+      "id": "scenario-oklahoma-state-english",
+      "title": "English: Undergraduate Major",
+      "url": "https://go.okstate.edu/undergraduate-academics/majors/english",
+      "publisher": "Oklahoma State University",
+      "verified": "2026-10-22",
+      "cycle": "Current policy viewed 2026-10-22; Fall 2028 not separately confirmed"
+    },
+    {
+      "id": "scenario-oklahoma-state-international",
+      "title": "International Freshman Admission Process",
+      "url": "https://go.okstate.edu/admissions/international/freshman",
+      "publisher": "Oklahoma State University",
+      "verified": "2026-10-22",
+      "cycle": "Current policy viewed 2026-10-22; Fall 2028 not separately confirmed"
+    },
+    {
+      "id": "scenario-oklahoma-state-testing",
+      "title": "Freshmen Admission Requirements",
+      "url": "https://go.okstate.edu/admissions/freshman/admission-requirements",
+      "publisher": "Oklahoma State University",
+      "verified": "2026-10-22",
+      "cycle": "Current policy viewed 2026-10-22; Fall 2028 not separately confirmed"
+    },
+    {
+      "id": "scenario-south-carolina-international",
+      "title": "International Applicants",
+      "url": "https://www.sc.edu/about/offices_and_divisions/undergraduate_admissions/apply/for_international_students/index.php",
+      "publisher": "University of South Carolina, Columbia",
+      "verified": "2026-10-22",
+      "cycle": "Spring, Summer and Fall 2027 testing policy"
+    },
+    {
+      "id": "scenario-south-carolina-profile",
+      "title": "2024 Application Guide, academic profile",
+      "url": "https://cms.sc.edu/about/offices_and_divisions/undergraduate_admissions/documents/2024_application_guide.pdf",
+      "publisher": "University of South Carolina, Columbia",
+      "verified": "2026-10-22",
+      "cycle": "Fall 2024 admitted students, nonresident profile"
+    },
+    {
+      "id": "scenario-syracuse-entry",
+      "title": "College-Specific Requirements and Standardized Test Policy",
+      "url": "https://www.syracuse.edu/admissions-aid/application-process/undergraduate/college-specific-requirements/",
+      "publisher": "Syracuse University",
+      "verified": "2026-10-22",
+      "cycle": "Current page, reviewed October 22, 2026"
+    },
+    {
+      "id": "scenario-syracuse-international",
+      "title": "International Undergraduate Requirements",
+      "url": "https://www.syracuse.edu/admissions-aid/application-process/international/undergraduate/requirements/",
+      "publisher": "Syracuse University",
+      "verified": "2026-10-22",
+      "cycle": "Current page, reviewed October 22, 2026"
+    },
+    {
+      "id": "scenario-syracuse-requirements",
+      "title": "First-Year Admission Requirements",
+      "url": "https://www.syracuse.edu/admissions-aid/application-process/undergraduate/first-year/requirements/",
+      "publisher": "Syracuse University",
+      "verified": "2026-10-22",
+      "cycle": "Fall 2026 through Spring 2028 specified testing cycles"
+    },
+    {
+      "id": "scenario-temple-cds",
+      "title": "Common Data Set 2025–2026, C9",
+      "url": "https://ira.temple.edu/sites/ira/files/media/document/CDS%202025-26_Temple%20University_26-27_Class-Rank-Update.pdf",
+      "publisher": "Temple University",
+      "verified": "2026-10-22",
+      "cycle": "Fall 2025 enrolled first-year students at domestic campuses"
+    },
+    {
+      "id": "scenario-temple-international",
+      "title": "First-year International Students",
+      "url": "https://admissions.temple.edu/apply/international-students/first-year-international-students",
+      "publisher": "Temple University",
+      "verified": "2026-10-22",
+      "cycle": "Current page, reviewed October 22, 2026"
+    },
+    {
+      "id": "scenario-uni-canada",
+      "title": "Canada: Country-Specific Undergraduate Requirements",
+      "url": "https://admissions.uni.edu/international/undergraduate-students/country-specific-requirements/canada",
+      "publisher": "University of Northern Iowa",
+      "verified": "2026-10-22",
+      "cycle": "Current undergraduate admissions page; Fall 2028 reconfirmation required"
+    },
+    {
+      "id": "scenario-uni-english",
+      "title": "English B.A.",
+      "url": "https://catalog.uni.edu/chas/englishba/",
+      "publisher": "University of Northern Iowa",
+      "verified": "2026-10-22",
+      "cycle": "Current university catalog"
+    },
+    {
+      "id": "scenario-uni-policy",
+      "title": "International Undergraduate Admission Policies",
+      "url": "https://admissions.uni.edu/international/undergraduate-students/admission-policies",
+      "publisher": "University of Northern Iowa",
+      "verified": "2026-10-22",
+      "cycle": "Current undergraduate admissions page; Fall 2028 reconfirmation required"
+    }
+  ],
+  "editorialMethodLimits": [
+    "Published SAT distributions can place a score below, within, or above a historical cohort range. They cannot establish full admission likelihood.",
+    "A 75–90 Ontario band alone cannot rank these institutions by attainable quality; most have no Ontario-specific percentage floor. Grade-band-specific recommendations require explicitly labeled editorial judgment, not invented percentage thresholds.",
+    "Identify broad humanities programs and extra-material differences. Never label the absolute easiest major unless comparative admission data supports that claim.",
+    "Do not mix National Universities rankings with Regional Universities rankings.",
+    "University of Iowa and UNI have real Ontario requirements with different formulas; display them separately from unknown school-specific evaluation."
+  ]
+}

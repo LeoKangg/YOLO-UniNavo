@@ -45,7 +45,7 @@ export interface ScenarioSchool {
   ontario: Omit<PercentageRule, "minimum"> & { minimum: number | null };
   academic: SourcedText;
   testing: SourcedText & {
-    policy: "optional" | "required" | "not-considered" | "unknown";
+    policy: "optional" | "required" | "expected" | "not-considered" | "unknown";
   };
   satRange: null | {
     low: number;

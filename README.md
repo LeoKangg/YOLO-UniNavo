@@ -2,7 +2,7 @@
 
 [Live site](https://ivyparc.github.io/UniNavo/) · [Implementation PR](https://github.com/ivyparc/UniNavo/pull/1)
 
-A bilingual U.S. university admission planner for an Ontario Grade11 student in October2026, targeting Fall2028. The university explorer compares published academic/test components. It cannot establish complete admission eligibility or an acceptance outcome.
+A bilingual U.S. university admission planner for an Ontario Grade11 student in October2026, targeting Fall2028. The university explorer offers ten explicitly editorial research candidates per Ontario/SAT combination, with sourced requirements and score cohorts. It cannot establish complete admission eligibility or an acceptance outcome.
 
 ## Run and verify
 
@@ -23,39 +23,34 @@ No account, API key, database or backend is required. Plans, language, saved sch
 ## Experience
 
 - **Monthly roadmap:**23months, October2026–August2028;72original tasks. All months and instructions are expanded. Add, edit, move, delete, complete, hide completed, undo and back up/restore. Edited official reminders retain their original guidance and sources. The stage dropdown defaults to Select.
-- **University explorer:** an expanding research pool of63schools, including20with extended detail records. Eight Ontario bands and five SAT scenarios produce40combinations. At most10records appear when applicable published components can be compared. A shortage is explicit; unverified institutions do not fill missing places.
-- **All scenarios:**40cells show match counts and shortages under the selected averaging basis and applicant route. Click a cell to inspect its evidence; download all40results as CSV.
+- **University explorer:** 71 researched universities; eight Ontario bands × five SAT scenarios, with ten research candidates per combination. SAT is the only profile input. The applicant context is Korean citizenship / U.S. international first-year / humanities, sociology and history.
+- **All scenarios:** each of 40 cells previews three names and opens ten candidates with programs, academic conditions, testing policies and evidence. CSV exports all 400 candidate entries, including uncertainty and selection method.
 - **Research catalog:** all reviewed schools remain searchable, including schools excluded from strict recommendations. Cards link program/entry structure and primary evidence. School details distinguish current rules, score-cohort scope, unknown Ontario equivalencies and future-cycle uncertainty.
 - **SAT distribution table:** the full research pool is reorganized by SAT bands1100–1600. These are score positions, never an independent admission recommendation.
 - **SAT/AP and resources:** official practice, sourced exam calendars, AP priorities and credit examples, study materials and book editions.
 - **Sources:** searchable exact URLs, publisher, actual review date and cycle. Korean/English toggle persists without changing IDs or saved inputs. Official source titles and publishers retain original wording.
 
-Body and control text stays readable; mobile tables scroll within their containers. The selected averaging basis is required because cumulative academic, core-subject, overall and Grade12top-six averages are not interchangeable. Each university percentage rule also needs its own calculation confirmation, unchecked by default. Each scenario then conditionally represents an average calculated by that university’s method; it does not convert an actual top-six mark. Contradictory SAT totals/sections block all matches.
+Body and controls remain readable; mobile tables scroll within their containers. The SAT field accepts valid 400–1600 totals in increments of ten. Curated lists cover 1100–1600. A score between reference points uses the lower reference list, while evidence comparison uses the actual score. Old saved citizenship, GPA-calculation confirmations and section assumptions are cleared from candidate state.
 
-## Strict recommendation policy
+## Candidate selection and accuracy
 
-The user explicitly requested **only officially confirmed criteria and a visible shortage when fewer than ten are supported**. The live explorer no longer uses the earlier editorial six-pick or manually assigned grade-category model.
+The live lists are **editorial research priorities, not confirmed eligibility, Safety/Match classifications, admission probabilities or the ten best attainable universities nationwide**. This distinction appears above the matrix, above results, in details and in every CSV record. Official facts and editorial grade-band placement are separate. No Ontario percentage is converted to U.S. GPA, and no missing fact is turned into a satisfied requirement.
 
-A record needs a resolvable current testing rule and one of:
+Lower-grade cases investigate lower published GPA requirements, alternative SAT routes, special review and foundation options. Stronger-grade cases broaden to selective universities and college-specific profiles. SAT policy, cohort scope and academic review remain explicit; a higher SAT does not override an academic minimum. Some lower-grade lists therefore repeat at higher SAT scores.
 
-1. An explicit Ontario percentage requirement, compared on the correct basis.
-2. A university-published international100-point rule, compared on its stated core-course basis.
-3. An applicable international SAT alternative that replaces the GPA component, with any section minima checked.
+Toledo publishes lower GPA requirements for its general arts/social-sciences college than several professional programs; Purdue publishes separate Liberal Arts and Engineering profiles. Neither proves the absolute easiest individual major. Maryland and Florida expressly do not provide a university-admission advantage merely from choosing humanities. All records retain the unknown easiest-major status.
 
-Missing Ontario equivalencies, mismatched averaging methods, unresolved source conflicts and an unreviewed U.S.domestic route cannot produce a strict match. Historical SAT percentiles, university rank and choosing humanities do not create eligibility. No Ontario percentage is converted to a U.S.GPA.
+Ranking references are historical 2026 U.S. News National Universities evidence, not a current-edition or Korean-recognition ranking. A current policy is not automatically a Fall 2028 commitment. Minnesota's profile year inconsistency remains visible. Detailed school and SAT views share the updated catalog to avoid conflicting profiles.
 
-The output says **published component comparison**, not complete qualification. Coursework, English, graduation, program requirements, documents and finances remain separate. A current rule is not automatically a Fall2028 commitment. An empty list is not a rejection decision.
-
-Verified2026U.S.NewsNationalUniversities ranks order matching records where available; unverified ranks follow by name. This ranks the matching researched pool, not every U.S.university. Categories/editions are not mixed. No representative Korean recognition ranking or unique easiest-admission major was established. Program names and actual admission structures are given with sources; unknown lowest cutoffs remain unknown.
-
-Read [research/scenario-method.md](research/scenario-method.md) for exact scope, strict inequalities, test-alternative logic and limitations.
+Read [research/candidate-method.md](research/candidate-method.md) for current selection scope. [research/scenario-method.md](research/scenario-method.md) documents the retained strict component engine; that engine does not drive the live shortlist.
 
 ## Data and source structure
 
 ```text
 src/main.ts                    Navigation, editable timeline, local persistence
-src/university-explorer.ts     Evidence-only university views and detail dialogs
-src/scenarios.ts               Strict component checks, shortages,40-case CSV
+src/university-explorer.ts     Research candidate views and detail dialogs
+src/candidate-plans.ts         40 curated lists, evidence explanations,400-row CSV
+src/scenarios.ts               Retained strict component engine (not live selection)
 src/scenario-types.ts          Evidence and input types
 src/data/scenario-catalog.ts   Original records plus expanded research
 src/data/scenario-raw.ts       Raw research files and source collection
@@ -74,7 +69,7 @@ scripts/validate.ts             Source/calendar/extended-data validation
 
 Research was reviewed October21–22,2026. University admissions pages, official catalogs, institutional profiles and Common Data Sets establish consequential facts. Original ranking reports identify secondary sourcing when applicable. Every source keeps its exact URL, publisher, review date and reference cycle. Not verified means this review did not establish a value; it does not claim the school never publishes it. An HTTP success code alone does not audit the claim.
 
-Original strategy/recommendation modules retain historical metadata and tests for earlier behavior and storage compatibility; their editorial categories are not used by the live university explorer.
+Original strategy/recommendation modules and the strict component engine retain historical tests; they do not select the live candidate lists.
 
 ## Known limits
 

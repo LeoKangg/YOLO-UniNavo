@@ -1,0 +1,32 @@
+# Ten research candidates per Ontario × SAT scenario
+
+Reviewed 22 October 2026. The live explorer contains 71 researched universities and 40 editorial shortlists (eight Ontario bands × SAT1100/1200/1300/1400/1500), each with ten distinct universities. The source is `src/candidate-plans.ts`; these lists are not an eligibility engine. The applicant is a Korean citizen studying in Ontario, applying as an international first-year student, with humanities/history/sociology as the program focus.
+
+## Evidence and judgment are separate
+
+A source can establish a program's existence, an international admission requirement, a school's own grading scale, a testing policy or a historical cohort distribution. It usually cannot establish that an Ontario average plus an SAT score admits the student, nor which humanities major is easiest. Most schools do not publish an Ontario aggregate-percentage cutoff. Grade-band placement is therefore an explicit editorial research priority, not a verified equivalency, probability or exhaustive nationwide optimization. Every live result and CSV entry retains this distinction.
+
+The low-band research begins with lower published international GPA thresholds and published alternatives: Toledo, Marshall, Central Missouri and Murray State provide 2.0-related criteria; Youngstown provides discretionary special review; Washington State separates direct entry from its foundation route; Iowa State and Wichita have specifically audited SAT alternatives. These are not all direct-entry qualifications, and 2.0 is never equated with Ontario60%. The first four schools' general or international requirements have different conditions; Murray's 2.0–2.74 review is not assured admission, and Marshall/UCM unresolved program-year testing remains explicit.
+
+At70–80%, lists include Ontario-percentage routes (Iowa, James Madison, Portland State, Northern Iowa where applicable), international transcript assessment and the school-specific Texas State course scale. Portland State requires **greater than70**, not70-or-more. The70–75% list does not establish eligibility at its lower endpoint. Texas State requires course-level recalculation across three years, not conversion of a single average; its scale is not portable to another university.
+
+At80–90%, lists broaden across general liberal-arts entries and named college profiles. At90–100%, more selective institutions are research options, with required vs optional tests and score position displayed. Strong grades are not assumed to compensate for a below-range test. Some high-rank choices are ambitious research, not safe or matched universities. SAT above a cohort's75th percentile is not a guarantee. A test-optional policy's actual entry-year scope is displayed; future Fall2028 policies remain unconfirmed where appropriate.
+
+Selection order is editorial research order. Historical2026 National Universities ranks are displayed separately when verified. Regional university ranks are not mixed into that column. No measured Korean-recognition rank is claimed. Some low-grade lists repeat across higher SAT totals because higher scores do not remove academic requirements. No artificial list rotation is used to imply an unsupported admission advantage.
+
+## Current evidence updates
+
+- `candidate-low-review.json`: eight new school records and research notes. Toledo History is verified; its current Sociology listing is a minor, not a BA. Marshall's international page says2.00 and university conversion; Murray's SAT960 is an English option, not a GPA alternative. FHSU's2.0 route is for24+ U.S.college credits, not high-school first-year admission.
+- `candidate-middle-review.json`:14 official reviews,9 program updates and Iowa/Delaware cohort updates. Existing independently audited Ontario percentage rules are preserved when merging records.
+- `candidate-high-review.json`:12 official reviews, with campus, college, year and applicant scope. Purdue uses the plural admissions.purdue.edu host and current2026 profile, CLA1110–1348. Minnesota CLA1330–1470 retains the2026-heading/2025-footnote inconsistency. FSU uses2026admitted1380–1480. NYU has no invented current New York score range or policy borrowed from Abu Dhabi.
+- `candidate-updates.json`: bilingual normalized high-school review updates. Source IDs and unresolved values are retained.
+
+The UCO SAT1030 route was discovered in an official search result, but the underlying page returned403 and uses legacy score terminology. It has not been promoted to a new numeric rule or recommendation record. Arkansas State's inconsistent general/program GPA requirements similarly remain research-only.
+
+## Implementation and validation
+
+Only SAT is an editable profile field. Existing stored route, grading-basis confirmations, exact grade and SAT section assumptions are cleared for this view. Grade selection is through the matrix. Scores400–1600 are accepted in steps of10; researched lists cover1100–1600. Interstitial totals use the lower reference scenario, clearly labeled, and actual SAT values are used for cohort comparisons. Scores below1100 are not promoted to the1100 shortlist.
+
+The matrix previews names and opens ten cards. Cards show program, official academic rule, testing policy, score comparison and cohort, with primary-source links. The CSV includes400 entries, official requirements, source URLs and explicit editorial status. The strict component engine remains separately tested and does not supply the live candidate count. SAT study-reference cards share the updated scenario catalog, and stale duplicate academic/testing fields are omitted from supplemental original-school details.
+
+Tests cover40×10 unique records, source existence, distinct grade/SAT lists, stale profile normalization, no SAT advantage for test-blind schools, conditional SAT alternatives, scope/year retention, SAT-only UI and400-row CSV. Browser checks cover low/middle/high cases, details, Korean/English and narrow-screen containment.

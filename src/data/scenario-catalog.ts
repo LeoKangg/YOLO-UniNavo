@@ -7,6 +7,10 @@ import comparisonContext from "../../research/comparison-context.json" with { ty
 import {
   additionalScenarioSchools,
   scenarioRuleUpdates,
+  reviewedSchoolUpdates,
+  reviewedPrograms,
+  reviewedRanges,
+  additionalScenarioSources,
 } from "./scenario-raw.ts";
 import type { ScenarioSchool, AverageBasis } from "../scenario-types.ts";
 
@@ -199,10 +203,55 @@ export const scenarioSchools = [
   ...originalSchools,
   ...additionalScenarioSchools,
 ];
+const reviewSources = new Map(additionalScenarioSources.map((s) => [s.id, s]));
+for (const school of scenarioSchools) {
+  for (const update of reviewedSchoolUpdates.filter(
+    (u) => u.id === school.id,
+  )) {
+    for (const key of [
+      "academic",
+      "testing",
+      "entry",
+      "satRange",
+      "applicantScope",
+    ] as const) {
+      if (key in update) Object.assign(school, { [key]: update[key] });
+    }
+    // Preserve separately audited Ontario percentage rules and their exact basis.
+  }
+  const program = reviewedPrograms.find((u) => u.id === school.id);
+  if (program)
+    school.entry = {
+      ...school.entry,
+      ...program,
+      sourceIds: [
+        ...new Set([...school.entry.sourceIds, ...program.sourceIds]),
+      ],
+    };
+  const range = reviewedRanges.find((u) => u.id === school.id);
+  if (range) school.satRange = range.satRange;
+  const ids = Object.values(school).flatMap((v) =>
+    v && typeof v === "object" && "sourceIds" in v
+      ? (v.sourceIds as string[])
+      : [],
+  );
+  school.sources = [
+    ...new Map(
+      [
+        ...school.sources,
+        ...ids.flatMap((id) => {
+          const source = reviewSources.get(id) ?? sourceMap.get(id);
+          return source ? [source] : [];
+        }),
+      ].map((s) => [s.id, s]),
+    ).values(),
+  ];
+}
 export const scenarioSchoolMap = new Map(scenarioSchools.map((s) => [s.id, s]));
 export const scenarioSourceMap = new Map([
   ...sourceMap,
   ...scenarioSchools.flatMap((s) =>
     s.sources.map((source) => [source.id, source] as const),
   ),
+  ...reviewSources,
 ]);

@@ -1,0 +1,1024 @@
+{
+  "checked": "2026-10-22",
+  "scope": "Korean citizen educated in Ontario; international first-year applicants, not Canadian-citizen-only rules. Candidate research, not admissions guarantees.",
+  "method": "A published U.S. GPA minimum is not an Ontario percentage cutoff. No school below may be marked eligible from a single Ontario average unless the published school-specific assessment is actually satisfied. SAT totals do not replace an academic minimum unless explicitly stated.",
+  "newSchools": [
+    {
+      "id": "toledo",
+      "name": "The University of Toledo",
+      "nameKo": "톨레도 대학교",
+      "state": "Ohio",
+      "city": "Toledo",
+      "type": "Public",
+      "rank": {
+        "edition": "2026",
+        "value": null,
+        "sourceIds": []
+      },
+      "ontario": {
+        "minimum": null,
+        "basis": "No published Ontario aggregate-percentage admission minimum verified. University or credential evaluator assesses the transcript.",
+        "basisKo": "온타리오 평균 백분율 입학 기준은 확인되지 않았습니다. 대학 또는 학력 평가 기관이 성적표를 심사합니다.",
+        "sourceIds": ["candidate-toledo-intl"]
+      },
+      "academic": {
+        "text": "The international freshman minimum for most Arts, Social Sciences and Education majors is cumulative U.S.-equivalent GPA 2.0. Criminal Justice/Paralegal Studies require 2.5, education 2.7, business 2.8, and engineering science 3.0 plus a math benchmark.",
+        "textKo": "국제 신입생 기준에서 예술·사회과학·교육대학의 일반 전공은 누적 환산 GPA 2.0입니다. 형사사법·법률보조 2.5, 교원양성 2.7, 경영 2.8, 공학 3.0 및 수학 기준보다 공개 기준이 낮습니다.",
+        "sourceIds": ["candidate-toledo-intl"]
+      },
+      "testing": {
+        "policy": "optional",
+        "text": "History has no SAT minimum in the international program requirements. SAT Reading/Writing 510 is one English-proficiency option, not an academic GPA replacement.",
+        "textKo": "역사학 국제 입학 기준에는 SAT 최저점이 없습니다. Reading/Writing 510은 영어 능력 증명 방법 중 하나이며 내신 요건을 대체하지 않습니다.",
+        "sourceIds": [
+          "candidate-toledo-intl",
+          "candidate-toledo-apply",
+          "candidate-toledo-english"
+        ]
+      },
+      "satRange": null,
+      "entry": {
+        "program": "History, B.A.",
+        "programKo": "역사학 B.A.",
+        "unit": "Judith Herb College of Arts, Social Sciences and Education",
+        "unitKo": "주디스 허브 예술·사회과학·교육대학",
+        "easierMajorVerified": false,
+        "text": "History belongs to the college whose general international entry minimum is GPA 2.0. This verifies a lower published threshold than the listed professional majors, not a higher acceptance probability. The current sociology department lists Sociology as a minor, so do not recommend a Sociology B.A.",
+        "textKo": "역사학은 국제 신입생 일반 기준 GPA 2.0을 적용하는 대학 소속입니다. 위 전문 전공보다 낮은 공개 기준은 확인되지만 합격률 우위는 확인되지 않았습니다. 현재 사회학은 부전공으로 기재되어 있어 사회학 B.A.로 안내하지 않습니다.",
+        "sourceIds": [
+          "candidate-toledo-history",
+          "candidate-toledo-intl",
+          "candidate-toledo-sociology"
+        ]
+      },
+      "applicantScope": {
+        "text": "International first-year route applicable to non-U.S. applicants. Graduation, official transcripts, English proficiency and program requirements remain; Ontario attendance alone does not prove a citizenship-based English waiver.",
+        "textKo": "미국 외 국적 국제 신입생 전형입니다. 졸업·공식 성적표·영어 능력·학과 요건을 별도로 충족해야 합니다. 온타리오 재학만으로 국적 기준 영어 면제를 적용하지 않습니다.",
+        "sourceIds": ["candidate-toledo-intl"]
+      },
+      "sources": [
+        {
+          "id": "candidate-toledo-intl",
+          "title": "International Freshman Admission Requirements",
+          "url": "https://www.utoledo.edu/admission/international/admissionrequirements/freshman.html",
+          "publisher": "The University of Toledo",
+          "verified": "2026-10-22",
+          "cycle": "Current official page; Fall 2028 requirements must be reconfirmed"
+        },
+        {
+          "id": "candidate-toledo-apply",
+          "title": "How to Apply: International Undergraduate Admission",
+          "url": "https://www.utoledo.edu/admission/international/how-to-apply.html",
+          "publisher": "The University of Toledo",
+          "verified": "2026-10-22",
+          "cycle": "Page lists Fall 2027 dates; Fall 2028 reconfirmation required"
+        },
+        {
+          "id": "candidate-toledo-history",
+          "title": "Undergraduate Degrees in History",
+          "url": "https://www.utoledo.edu/jhc/history/undergraduate/",
+          "publisher": "The University of Toledo",
+          "verified": "2026-10-22",
+          "cycle": "Page last updated August 7, 2026"
+        },
+        {
+          "id": "candidate-toledo-english",
+          "title": "English Language Requirements",
+          "url": "https://www.utoledo.edu/admission/international/englishlanguageproficiency/",
+          "publisher": "The University of Toledo",
+          "verified": "2026-10-22",
+          "cycle": "Current official page; Fall 2028 requirements must be reconfirmed"
+        },
+        {
+          "id": "candidate-toledo-sociology",
+          "title": "Sociology and Anthropology: current undergraduate programs",
+          "url": "https://www.utoledo.edu/jhc/sociology-anthropology/",
+          "publisher": "The University of Toledo",
+          "verified": "2026-10-22",
+          "cycle": "Current official page; Fall 2028 requirements must be reconfirmed"
+        }
+      ]
+    },
+    {
+      "id": "youngstown-state",
+      "name": "Youngstown State University",
+      "nameKo": "영스타운 주립대학교",
+      "state": "Ohio",
+      "city": "Youngstown",
+      "type": "Public",
+      "rank": {
+        "edition": "2026",
+        "value": null,
+        "sourceIds": []
+      },
+      "ontario": {
+        "minimum": null,
+        "basis": "No published Ontario aggregate-percentage admission minimum verified. University or credential evaluator assesses the transcript.",
+        "basisKo": "온타리오 평균 백분율 입학 기준은 확인되지 않았습니다. 대학 또는 학력 평가 기관이 성적표를 심사합니다.",
+        "sourceIds": ["candidate-ysu-intl", "candidate-ysu-catalog"]
+      },
+      "academic": {
+        "text": "International freshmen: minimum U.S.-equivalent GPA 2.0. The 2026–27 international catalog also allows Special Admission consideration at GPA 2.0 or below with additional evidence; this is discretionary. Credential evaluation is required for Canadian-school records under the current country rules.",
+        "textKo": "국제 신입생은 미국 환산 GPA 2.0 이상이 기본 기준입니다. 2026–27 국제 입학 학칙은 GPA 2.0 이하도 추가 자료를 통해 특별 심사할 수 있다고 명시합니다. 캐나다 학교 성적은 현재 국가별 규칙상 학력 평가가 필요합니다.",
+        "sourceIds": ["candidate-ysu-intl", "candidate-ysu-catalog"]
+      },
+      "testing": {
+        "policy": "optional",
+        "text": "The freshman page makes SAT/ACT submission optional; some restricted majors require scores. A high SAT does not by itself satisfy the international GPA/credential review.",
+        "textKo": "신입생 안내는 SAT/ACT 선택 제출을 명시하며 일부 제한 전공은 시험 성적을 요구합니다. SAT 고득점만으로 국제 GPA·성적표 심사를 충족하지는 않습니다.",
+        "sourceIds": ["candidate-ysu-freshmen"]
+      },
+      "satRange": null,
+      "entry": {
+        "program": "Sociology, B.A. / History",
+        "programKo": "사회학 B.A. / 역사학",
+        "unit": "Beeghly College of Liberal Arts, Social Sciences & Education",
+        "unitKo": "비글리 인문·사회과학·교육대학",
+        "easierMajorVerified": false,
+        "text": "Official college pages list Sociology and History bachelor’s majors. No evidence establishes either as the university’s easiest major. Special Admission is a university review route, not automatic entry into these majors.",
+        "textKo": "공식 단과대학 페이지에서 사회학과 역사학 학사 전공을 확인했습니다. 두 학과가 대학 내 가장 쉬운 학과라는 근거는 없습니다. 특별 심사는 대학의 재량 심사이며 전공 자동 입학이 아닙니다.",
+        "sourceIds": ["candidate-ysu-programs"]
+      },
+      "applicantScope": {
+        "text": "International first-year route applicable to non-U.S. applicants. Graduation, official transcripts, English proficiency and program requirements remain; Ontario attendance alone does not prove a citizenship-based English waiver.",
+        "textKo": "미국 외 국적 국제 신입생 전형입니다. 졸업·공식 성적표·영어 능력·학과 요건을 별도로 충족해야 합니다. 온타리오 재학만으로 국적 기준 영어 면제를 적용하지 않습니다.",
+        "sourceIds": ["candidate-ysu-intl", "candidate-ysu-catalog"]
+      },
+      "sources": [
+        {
+          "id": "candidate-ysu-intl",
+          "title": "Apply as an International Freshman",
+          "url": "https://ysu.edu/international-programs-office/apply-now/quick-menu/apply-as-international-freshman",
+          "publisher": "Youngstown State University",
+          "verified": "2026-10-22",
+          "cycle": "Current official page; Fall 2028 requirements must be reconfirmed"
+        },
+        {
+          "id": "candidate-ysu-catalog",
+          "title": "International Undergraduate Admission",
+          "url": "https://catalog.ysu.edu/undergraduate/general-information/admission/international-undergraduate-admission/",
+          "publisher": "Youngstown State University",
+          "verified": "2026-10-22",
+          "cycle": "2026–2027 catalog"
+        },
+        {
+          "id": "candidate-ysu-freshmen",
+          "title": "New Freshmen",
+          "url": "https://ysu.edu/admissions/apply-to-ysu/new-freshmen",
+          "publisher": "Youngstown State University",
+          "verified": "2026-10-22",
+          "cycle": "Current official page; Fall 2028 requirements must be reconfirmed"
+        },
+        {
+          "id": "candidate-ysu-programs",
+          "title": "Beeghly College of Liberal Arts, Social Sciences & Education",
+          "url": "https://ysu.edu/academics/beeghly-college-liberal-arts-social-sciences-education",
+          "publisher": "Youngstown State University",
+          "verified": "2026-10-22",
+          "cycle": "Current official page; Fall 2028 requirements must be reconfirmed"
+        }
+      ]
+    },
+    {
+      "id": "texas-state",
+      "name": "Texas State University",
+      "nameKo": "텍사스 주립대학교",
+      "state": "Texas",
+      "city": "San Marcos",
+      "type": "Public",
+      "rank": {
+        "edition": "2026",
+        "value": null,
+        "sourceIds": []
+      },
+      "ontario": {
+        "minimum": null,
+        "basis": "No published Ontario aggregate-percentage admission minimum verified. University or credential evaluator assesses the transcript.",
+        "basisKo": "온타리오 평균 백분율 입학 기준은 확인되지 않았습니다. 대학 또는 학력 평가 기관이 성적표를 심사합니다.",
+        "sourceIds": ["candidate-txst-canada"]
+      },
+      "academic": {
+        "text": "Canada page requires B-average work and recalculated GPA at least 2.74 over the last three years. Its Ontario course scale is 80–100→4, 70–79→3, 56–69→2, 50–55→1, 0–49→0. Apply this to coursework; a single overall percentage cannot safely be converted.",
+        "textKo": "캐나다 기준은 최근 3년 B 평균 및 대학 재계산 GPA 2.74 이상입니다. 온타리오 과목별 환산은 80–100→4, 70–79→3, 56–69→2, 50–55→1, 0–49→0입니다. 전체 평균 하나를 이 표에 대입해 GPA로 바꾸면 안 됩니다.",
+        "sourceIds": ["candidate-txst-canada"]
+      },
+      "testing": {
+        "policy": "optional",
+        "text": "International test scores are required only when needed for English proficiency. SAT Reading/Writing 520 is one option. The Canada credentials page exempts Ontario educational credentials from English testing.",
+        "textKo": "국제 전형 시험 성적은 영어 능력 증명이 필요한 경우에 요구됩니다. SAT Reading/Writing 520은 한 방법입니다. 캐나다 학력 안내는 온타리오 학력을 영어 시험 면제 대상으로 기재합니다.",
+        "sourceIds": ["candidate-txst-intl", "candidate-txst-canada"]
+      },
+      "satRange": null,
+      "entry": {
+        "program": "Sociology, B.A.",
+        "programKo": "사회학 B.A.",
+        "unit": "College of Liberal Arts",
+        "unitKo": "인문대학",
+        "easierMajorVerified": false,
+        "text": "The department confirms a Sociology B.A. No separate lower first-year admission cutoff or easier-major advantage is published in the cited program material.",
+        "textKo": "학과 공식 자료에서 사회학 B.A.를 확인했습니다. 인용한 전공 자료에는 별도의 더 낮은 신입생 입학 기준이나 쉬운 학과 우위가 공개되어 있지 않습니다.",
+        "sourceIds": ["candidate-txst-sociology"]
+      },
+      "applicantScope": {
+        "text": "International first-year route applicable to non-U.S. applicants. Graduation, official transcripts, English proficiency and program requirements remain; Ontario attendance alone does not prove a citizenship-based English waiver.",
+        "textKo": "미국 외 국적 국제 신입생 전형입니다. 졸업·공식 성적표·영어 능력·학과 요건을 별도로 충족해야 합니다. 온타리오 재학만으로 국적 기준 영어 면제를 적용하지 않습니다.",
+        "sourceIds": ["candidate-txst-canada"]
+      },
+      "sources": [
+        {
+          "id": "candidate-txst-canada",
+          "title": "Secondary Credentials – Canada",
+          "url": "https://www.admissions.txst.edu/future-students/international/secondary-credentials/list-by-country/canada.html",
+          "publisher": "Texas State University",
+          "verified": "2026-10-22",
+          "cycle": "Current official page; Fall 2028 requirements must be reconfirmed"
+        },
+        {
+          "id": "candidate-txst-intl",
+          "title": "International Admissions Requirements",
+          "url": "https://www.admissions.txst.edu/future-students/international/admissions-requirements.html",
+          "publisher": "Texas State University",
+          "verified": "2026-10-22",
+          "cycle": "Current official page; Fall 2028 requirements must be reconfirmed"
+        },
+        {
+          "id": "candidate-txst-sociology",
+          "title": "Undergraduate Degree Programs and Minors",
+          "url": "https://www.soci.txst.edu/Undergraduate-Degree/Undergraduate-Degree-Programs---Minors.html",
+          "publisher": "Texas State University",
+          "verified": "2026-10-22",
+          "cycle": "Current official page; Fall 2028 requirements must be reconfirmed"
+        }
+      ]
+    },
+    {
+      "id": "washington-state",
+      "name": "Washington State University",
+      "nameKo": "워싱턴 주립대학교",
+      "state": "Washington",
+      "city": "Pullman",
+      "type": "Public",
+      "rank": {
+        "edition": "2026",
+        "value": null,
+        "sourceIds": []
+      },
+      "ontario": {
+        "minimum": null,
+        "basis": "No published Ontario aggregate-percentage admission minimum verified. University or credential evaluator assesses the transcript.",
+        "basisKo": "온타리오 평균 백분율 입학 기준은 확인되지 않았습니다. 대학 또는 학력 평가 기관이 성적표를 심사합니다.",
+        "sourceIds": ["candidate-wsu-firstyear", "candidate-wsu-foundation"]
+      },
+      "academic": {
+        "text": "International direct entry requires GPA 2.70. Students with GPA 2.30–2.69 can apply to the university’s Undergraduate Foundation program; WSU evaluates foreign grades. No Ontario percentage threshold is verified.",
+        "textKo": "국제 신입생 직접 입학은 GPA 2.70입니다. GPA 2.30–2.69는 대학의 Undergraduate Foundation 과정에 지원할 수 있으며 해외 성적은 WSU가 평가합니다. 온타리오 백분율 기준은 확인되지 않았습니다.",
+        "sourceIds": ["candidate-wsu-firstyear", "candidate-wsu-foundation"]
+      },
+      "testing": {
+        "policy": "not-considered",
+        "text": "WSU’s current first-year page says SAT/ACT scores are not used in admission decisions. The international page separately accepts SAT Reading/Writing 500 as one English-proficiency method; it is not a GPA replacement.",
+        "textKo": "WSU의 현재 신입생 안내는 SAT/ACT를 입학 결정에 사용하지 않는다고 명시합니다. 국제 전형은 Reading/Writing 500을 영어 능력 증명 방법으로 별도 인정하며 GPA를 대체하지 않습니다.",
+        "sourceIds": ["candidate-wsu-current-tests", "candidate-wsu-firstyear"]
+      },
+      "satRange": null,
+      "entry": {
+        "program": "Sociology, B.A. / Undergraduate Foundation social-sciences track",
+        "programKo": "사회학 B.A. / Undergraduate Foundation 사회과학 과정",
+        "unit": "College of Arts and Sciences",
+        "unitKo": "인문·자연과학대학",
+        "easierMajorVerified": false,
+        "text": "Students can enter the Sociology major by declaring their intent to the department. This is evidence of no additional competitive major-selection step in that page, not easier university admission. Foundation is a separate supported first-year route with its own English placement.",
+        "textKo": "사회학 전공은 학과에 전공 의사를 신고하여 진입할 수 있습니다. 이는 학과 추가 경쟁 선발이 명시되지 않았다는 근거이며 대학 합격이 쉽다는 뜻은 아닙니다. Foundation은 영어 배치 기준이 있는 별도의 지원형 1학년 과정입니다.",
+        "sourceIds": ["candidate-wsu-sociology", "candidate-wsu-foundation"]
+      },
+      "applicantScope": {
+        "text": "International first-year route applicable to non-U.S. applicants. Graduation, official transcripts, English proficiency and program requirements remain; Ontario attendance alone does not prove a citizenship-based English waiver.",
+        "textKo": "미국 외 국적 국제 신입생 전형입니다. 졸업·공식 성적표·영어 능력·학과 요건을 별도로 충족해야 합니다. 온타리오 재학만으로 국적 기준 영어 면제를 적용하지 않습니다.",
+        "sourceIds": ["candidate-wsu-firstyear", "candidate-wsu-foundation"]
+      },
+      "sources": [
+        {
+          "id": "candidate-wsu-firstyear",
+          "title": "International First-Year",
+          "url": "https://ip.wsu.edu/future-students/about-wsu-programs/international-first-year/",
+          "publisher": "Washington State University",
+          "verified": "2026-10-22",
+          "cycle": "Current official page; Fall 2028 requirements must be reconfirmed"
+        },
+        {
+          "id": "candidate-wsu-foundation",
+          "title": "Undergraduate Foundation Program",
+          "url": "https://ip.wsu.edu/future-students/about-wsu-programs/foundation/",
+          "publisher": "Washington State University",
+          "verified": "2026-10-22",
+          "cycle": "Current official page; Fall 2028 requirements must be reconfirmed"
+        },
+        {
+          "id": "candidate-wsu-sociology",
+          "title": "Sociology Degree Plan",
+          "url": "https://cas.wsu.edu/undergraduate-studies/degree-plans/afs-sociology/",
+          "publisher": "Washington State University",
+          "verified": "2026-10-22",
+          "cycle": "Current official page; Fall 2028 requirements must be reconfirmed"
+        },
+        {
+          "id": "candidate-wsu-current-tests",
+          "title": "First-Year Students",
+          "url": "https://admission.wsu.edu/apply/first-year-students/",
+          "publisher": "Washington State University",
+          "verified": "2026-10-22",
+          "cycle": "Current first-year admissions page; Fall 2028 reconfirmation required"
+        }
+      ]
+    },
+    {
+      "id": "marshall",
+      "name": "Marshall University",
+      "nameKo": "마셜 대학교",
+      "city": "Huntington",
+      "state": "West Virginia",
+      "type": "Public",
+      "rank": {
+        "edition": "2026",
+        "value": null,
+        "sourceIds": []
+      },
+      "ontario": {
+        "minimum": null,
+        "basis": "No Ontario aggregate percentage equivalency verified; institutional transcript assessment required.",
+        "basisKo": "온타리오 전체 평균 백분율 환산 기준 미확인. 대학의 성적표 평가가 필요합니다.",
+        "sourceIds": ["candidate-marshall-intl"]
+      },
+      "academic": {
+        "text": "Minimum international high-school GPA 2.0, converted by Marshall; SAT/ACT required only for some majors.",
+        "textKo": "국제 신입생은 GPA 2.0 이상을 요구하며 해외 성적은 마셜 국제입학처가 환산합니다. 온타리오 백분율 최저점은 미확인입니다.",
+        "sourceIds": ["candidate-marshall-intl"]
+      },
+      "testing": {
+        "policy": "unknown",
+        "text": "SAT/ACT may be required depending on the chosen major; confirm History and the entry-year policy.",
+        "textKo": "SAT/ACT는 선택 전공에 따라 요구될 수 있습니다. 역사학의 적용 여부와 2028년 규정을 입학처에 확인해야 합니다.",
+        "sourceIds": ["candidate-marshall-intl"]
+      },
+      "satRange": null,
+      "entry": {
+        "program": "History, B.A.",
+        "programKo": "역사학 BA",
+        "unit": "College of Liberal Arts",
+        "unitKo": "문과대학",
+        "easierMajorVerified": false,
+        "text": "The official degree page verifies this bachelor program. It does not establish that the major has the lowest freshman admission threshold. University and program requirements still apply.",
+        "textKo": "공식 학과 페이지에서 학사 과정을 확인했습니다. 이 전공이 신입학 최저 합격선이 가장 낮다는 근거는 없으며 대학·전공별 요건을 별도로 충족해야 합니다.",
+        "sourceIds": ["candidate-marshall-program"]
+      },
+      "applicantScope": {
+        "text": "International first-year route. University transcript evaluation, high-school completion, English and financial documentation remain. Canadian-school attendance does not automatically establish a citizenship-based English waiver.",
+        "textKo": "국제 신입생 전형입니다. 성적표 평가·고교 졸업·영어·재정 증빙이 필요합니다. 캐나다 학교 재학만으로 국적에 따른 영어 면제를 적용하지 않습니다.",
+        "sourceIds": ["candidate-marshall-intl"]
+      },
+      "sources": [
+        {
+          "id": "candidate-marshall-intl",
+          "title": "International undergraduate requirements",
+          "url": "https://www.marshall.edu/international-admissions/international-admissions-requirements/",
+          "publisher": "Marshall University",
+          "verified": "2026-10-22",
+          "cycle": "Current official page; Fall 2028 requirements must be reconfirmed"
+        },
+        {
+          "id": "candidate-marshall-program",
+          "title": "History, B.A.",
+          "url": "https://catalog.marshall.edu/undergraduate/programs-az/liberal-arts/history/history-ba/",
+          "publisher": "Marshall University",
+          "verified": "2026-10-22",
+          "cycle": "Current official page; Fall 2028 requirements must be reconfirmed"
+        }
+      ]
+    },
+    {
+      "id": "central-missouri",
+      "name": "University of Central Missouri",
+      "nameKo": "센트럴 미주리 대학교",
+      "city": "Warrensburg",
+      "state": "Missouri",
+      "type": "Public",
+      "rank": {
+        "edition": "2026",
+        "value": null,
+        "sourceIds": []
+      },
+      "ontario": {
+        "minimum": null,
+        "basis": "No Ontario aggregate percentage equivalency verified; institutional transcript assessment required.",
+        "basisKo": "온타리오 전체 평균 백분율 환산 기준 미확인. 대학의 성적표 평가가 필요합니다.",
+        "sourceIds": ["candidate-central-missouri-intl"]
+      },
+      "academic": {
+        "text": "International high-school GPA minimum 2.0. No Ontario percentage conversion verified.",
+        "textKo": "국제 학부 입학 페이지는 고교 GPA 2.0 이상을 요구합니다. 온타리오 백분율 환산표는 확인되지 않았습니다.",
+        "sourceIds": ["candidate-central-missouri-intl"]
+      },
+      "testing": {
+        "policy": "unknown",
+        "text": "No composite SAT requirement was verified in the international checklist. An omission does not establish a waiver; confirm the entry-year rule.",
+        "textKo": "국제 입학 체크리스트에서 SAT 총점 기준을 확인하지 못했습니다. 미기재를 시험 면제라고 단정하지 않고 해당 연도 요구 여부를 확인해야 합니다.",
+        "sourceIds": ["candidate-central-missouri-intl"]
+      },
+      "satRange": null,
+      "entry": {
+        "program": "History, B.A.",
+        "programKo": "역사학 BA",
+        "unit": "College of Art, Humanities, and Social Sciences",
+        "unitKo": "예술·인문·사회과학대학",
+        "easierMajorVerified": false,
+        "text": "The official degree page verifies this bachelor program. It does not establish that the major has the lowest freshman admission threshold. University and program requirements still apply.",
+        "textKo": "공식 학과 페이지에서 학사 과정을 확인했습니다. 이 전공이 신입학 최저 합격선이 가장 낮다는 근거는 없으며 대학·전공별 요건을 별도로 충족해야 합니다.",
+        "sourceIds": ["candidate-central-missouri-program"]
+      },
+      "applicantScope": {
+        "text": "International first-year route. University transcript evaluation, high-school completion, English and financial documentation remain. Canadian-school attendance does not automatically establish a citizenship-based English waiver.",
+        "textKo": "국제 신입생 전형입니다. 성적표 평가·고교 졸업·영어·재정 증빙이 필요합니다. 캐나다 학교 재학만으로 국적에 따른 영어 면제를 적용하지 않습니다.",
+        "sourceIds": ["candidate-central-missouri-intl"]
+      },
+      "sources": [
+        {
+          "id": "candidate-central-missouri-intl",
+          "title": "International undergraduate requirements",
+          "url": "https://www.ucmo.edu/future-students/admissions/international-admissions/international-prospective-students/prospective-undergraduate-international/",
+          "publisher": "University of Central Missouri",
+          "verified": "2026-10-22",
+          "cycle": "Current official page; Fall 2028 requirements must be reconfirmed"
+        },
+        {
+          "id": "candidate-central-missouri-program",
+          "title": "History, B.A.",
+          "url": "https://www.ucmo.edu/academics/programs/majors/cahss/history/history-ba/",
+          "publisher": "University of Central Missouri",
+          "verified": "2026-10-22",
+          "cycle": "Current official page; Fall 2028 requirements must be reconfirmed"
+        }
+      ]
+    },
+    {
+      "id": "murray-state",
+      "name": "Murray State University",
+      "nameKo": "머리 주립대학교",
+      "city": "Murray",
+      "state": "Kentucky",
+      "type": "Public",
+      "rank": {
+        "edition": "2026",
+        "value": null,
+        "sourceIds": []
+      },
+      "ontario": {
+        "minimum": null,
+        "basis": "No Ontario aggregate percentage equivalency verified; institutional transcript assessment required.",
+        "basisKo": "온타리오 전체 평균 백분율 환산 기준 미확인. 대학의 성적표 평가가 필요합니다.",
+        "sourceIds": ["candidate-murray-state-intl"]
+      },
+      "academic": {
+        "text": "International bachelor checklist requires high-school GPA 2.0; the general freshman page specifies holistic review for GPA 2.0–2.74. Do not describe 2.0 as assured admission.",
+        "textKo": "국제 학부 체크리스트는 고교 GPA 2.0 이상을 요구합니다. 일반 신입학 페이지는 GPA 2.0–2.74를 종합 심사한다고 명시합니다. 2.0을 자동 입학으로 해석하지 않습니다.",
+        "sourceIds": ["candidate-murray-state-intl", "candidate-murray-review"]
+      },
+      "testing": {
+        "policy": "optional",
+        "text": "General first-year admission is test-optional. International SAT 960 is an English-proficiency option, not a substitute for the academic GPA requirement. Recheck Fall 2028.",
+        "textKo": "일반 신입학은 선택 제출입니다. 국제 입학 페이지의 SAT 960은 영어 능력 증빙 옵션이며 학업 GPA 요건을 대체하지 않습니다. 2028년 적용은 재확인해야 합니다.",
+        "sourceIds": ["candidate-murray-state-intl", "candidate-murray-review"]
+      },
+      "satRange": null,
+      "entry": {
+        "program": "Sociology, B.A./B.S.",
+        "programKo": "사회학 BA/BS",
+        "unit": "College of Humanities and Fine Arts",
+        "unitKo": "인문·예술대학",
+        "easierMajorVerified": false,
+        "text": "The official degree page verifies this bachelor program. It does not establish that the major has the lowest freshman admission threshold. University and program requirements still apply.",
+        "textKo": "공식 학과 페이지에서 학사 과정을 확인했습니다. 이 전공이 신입학 최저 합격선이 가장 낮다는 근거는 없으며 대학·전공별 요건을 별도로 충족해야 합니다.",
+        "sourceIds": ["candidate-murray-state-program"]
+      },
+      "applicantScope": {
+        "text": "International first-year route. University transcript evaluation, high-school completion, English and financial documentation remain. Canadian-school attendance does not automatically establish a citizenship-based English waiver.",
+        "textKo": "국제 신입생 전형입니다. 성적표 평가·고교 졸업·영어·재정 증빙이 필요합니다. 캐나다 학교 재학만으로 국적에 따른 영어 면제를 적용하지 않습니다.",
+        "sourceIds": ["candidate-murray-state-intl"]
+      },
+      "sources": [
+        {
+          "id": "candidate-murray-state-intl",
+          "title": "International undergraduate requirements",
+          "url": "https://www.murraystate.edu/admissions/international/Admissions/index.aspx",
+          "publisher": "Murray State University",
+          "verified": "2026-10-22",
+          "cycle": "Current official page; Fall 2028 requirements must be reconfirmed"
+        },
+        {
+          "id": "candidate-murray-state-program",
+          "title": "Sociology, B.A./B.S.",
+          "url": "https://www.murraystate.edu/academics/CollegesDepartments/CollegeOfHumanitiesAndFineArts/politicalScienceandSociology/Programs/Sociology.aspx",
+          "publisher": "Murray State University",
+          "verified": "2026-10-22",
+          "cycle": "Current official page; Fall 2028 requirements must be reconfirmed"
+        },
+        {
+          "id": "candidate-murray-review",
+          "title": "First-time Freshman Admission Requirements",
+          "url": "https://www.murraystate.edu/admissions/ftf/requirements.aspx",
+          "publisher": "Murray State University",
+          "verified": "2026-10-22",
+          "cycle": "Current official page; Fall 2028 requirements must be reconfirmed"
+        }
+      ]
+    },
+    {
+      "id": "fort-hays-state",
+      "name": "Fort Hays State University",
+      "nameKo": "포트 헤이스 주립대학교",
+      "city": "Hays",
+      "state": "Kansas",
+      "type": "Public",
+      "rank": {
+        "edition": "2026",
+        "value": null,
+        "sourceIds": []
+      },
+      "ontario": {
+        "minimum": null,
+        "basis": "No Ontario aggregate percentage equivalency verified; institutional transcript assessment required.",
+        "basisKo": "온타리오 전체 평균 백분율 환산 기준 미확인. 대학의 성적표 평가가 필요합니다.",
+        "sourceIds": ["candidate-fort-hays-state-intl"]
+      },
+      "academic": {
+        "text": "International first-year GPA minimum 2.5. SAT/ACT not required per international FAQ.",
+        "textKo": "국제 고교 출신의 대면 학부 입학은 누적 GPA 2.5 이상을 요구합니다. 미국 대학 24학점 이수자의 2.0 기준은 고교 신입 지원자에게 적용하지 않습니다.",
+        "sourceIds": ["candidate-fort-hays-state-intl"]
+      },
+      "testing": {
+        "policy": "optional",
+        "text": "International FAQ says ACT/SAT is not required; scores may support scholarships. GPA and English requirements remain.",
+        "textKo": "국제 입학 FAQ는 SAT/ACT가 필수가 아니라고 명시합니다. 시험 점수는 장학금에 쓰일 수 있으며 GPA·영어 요건은 별도입니다.",
+        "sourceIds": [
+          "candidate-fort-hays-state-intl",
+          "candidate-fort-hays-sat"
+        ]
+      },
+      "satRange": null,
+      "entry": {
+        "program": "History, B.A.",
+        "programKo": "역사학 BA",
+        "unit": "History program",
+        "unitKo": "역사학 과정",
+        "easierMajorVerified": false,
+        "text": "The official degree page verifies this bachelor program. It does not establish that the major has the lowest freshman admission threshold. University and program requirements still apply.",
+        "textKo": "공식 학과 페이지에서 학사 과정을 확인했습니다. 이 전공이 신입학 최저 합격선이 가장 낮다는 근거는 없으며 대학·전공별 요건을 별도로 충족해야 합니다.",
+        "sourceIds": ["candidate-fort-hays-state-program"]
+      },
+      "applicantScope": {
+        "text": "International first-year route. University transcript evaluation, high-school completion, English and financial documentation remain. Canadian-school attendance does not automatically establish a citizenship-based English waiver.",
+        "textKo": "국제 신입생 전형입니다. 성적표 평가·고교 졸업·영어·재정 증빙이 필요합니다. 캐나다 학교 재학만으로 국적에 따른 영어 면제를 적용하지 않습니다.",
+        "sourceIds": ["candidate-fort-hays-state-intl"]
+      },
+      "sources": [
+        {
+          "id": "candidate-fort-hays-state-intl",
+          "title": "International undergraduate requirements",
+          "url": "https://www.fhsu.edu/admissions/admissions-application/international-undergrad",
+          "publisher": "Fort Hays State University",
+          "verified": "2026-10-22",
+          "cycle": "Current official page; Fall 2028 requirements must be reconfirmed"
+        },
+        {
+          "id": "candidate-fort-hays-state-program",
+          "title": "History, B.A.",
+          "url": "https://www.fhsu.edu/programs/history/",
+          "publisher": "Fort Hays State University",
+          "verified": "2026-10-22",
+          "cycle": "Current official page; Fall 2028 requirements must be reconfirmed"
+        },
+        {
+          "id": "candidate-fort-hays-sat",
+          "title": "International Admissions FAQ",
+          "url": "https://www.fhsu.edu/international/admissions/FAQ/",
+          "publisher": "Fort Hays State University",
+          "verified": "2026-10-22",
+          "cycle": "Current official page; Fall 2028 requirements must be reconfirmed"
+        }
+      ]
+    }
+  ],
+  "reviews": [
+    {
+      "id": "toledo",
+      "name": "The University of Toledo",
+      "route": "direct-with-credential-review",
+      "verifiedAcademicRequirement": "The international freshman minimum for most Arts, Social Sciences and Education majors is cumulative U.S.-equivalent GPA 2.0. Criminal Justice/Paralegal Studies require 2.5, education 2.7, business 2.8, and engineering science 3.0 plus a math benchmark.",
+      "ontarioPercentageMinimum": null,
+      "scenarioUse": "Candidate to investigate, not confirmed eligible from Ontario average + SAT.",
+      "program": "History, B.A.",
+      "sourceIds": [
+        "candidate-toledo-intl",
+        "candidate-toledo-apply",
+        "candidate-toledo-history",
+        "candidate-toledo-english",
+        "candidate-toledo-sociology"
+      ]
+    },
+    {
+      "id": "youngstown-state",
+      "name": "Youngstown State University",
+      "route": "individual-review",
+      "verifiedAcademicRequirement": "International freshmen: minimum U.S.-equivalent GPA 2.0. The 2026–27 international catalog also allows Special Admission consideration at GPA 2.0 or below with additional evidence; this is discretionary. Credential evaluation is required for Canadian-school records under the current country rules.",
+      "ontarioPercentageMinimum": null,
+      "scenarioUse": "Candidate to investigate, not confirmed eligible from Ontario average + SAT.",
+      "program": "Sociology, B.A. / History",
+      "sourceIds": [
+        "candidate-ysu-intl",
+        "candidate-ysu-catalog",
+        "candidate-ysu-freshmen",
+        "candidate-ysu-programs"
+      ]
+    },
+    {
+      "id": "texas-state",
+      "name": "Texas State University",
+      "route": "direct-with-credential-review",
+      "verifiedAcademicRequirement": "Canada page requires B-average work and recalculated GPA at least 2.74 over the last three years. Its Ontario course scale is 80–100→4, 70–79→3, 56–69→2, 50–55→1, 0–49→0. Apply this to coursework; a single overall percentage cannot safely be converted.",
+      "ontarioPercentageMinimum": null,
+      "scenarioUse": "Candidate to investigate, not confirmed eligible from Ontario average + SAT.",
+      "program": "Sociology, B.A.",
+      "sourceIds": [
+        "candidate-txst-canada",
+        "candidate-txst-intl",
+        "candidate-txst-sociology"
+      ]
+    },
+    {
+      "id": "washington-state",
+      "name": "Washington State University",
+      "route": "pathway-and-direct",
+      "verifiedAcademicRequirement": "International direct entry requires GPA 2.70. Students with GPA 2.30–2.69 can apply to the university’s Undergraduate Foundation program; WSU evaluates foreign grades. No Ontario percentage threshold is verified.",
+      "ontarioPercentageMinimum": null,
+      "scenarioUse": "Candidate to investigate, not confirmed eligible from Ontario average + SAT.",
+      "program": "Sociology, B.A. / Undergraduate Foundation social-sciences track",
+      "sourceIds": [
+        "candidate-wsu-firstyear",
+        "candidate-wsu-foundation",
+        "candidate-wsu-sociology",
+        "candidate-wsu-current-tests"
+      ]
+    },
+    {
+      "id": "marshall",
+      "name": "Marshall University",
+      "route": "direct-with-credential-review",
+      "verifiedAcademicRequirement": "Minimum international high-school GPA 2.0, converted by Marshall; SAT/ACT required only for some majors.",
+      "ontarioPercentageMinimum": null,
+      "scenarioUse": "Review only; cannot map Ontario60–75% to this GPA without university assessment. Do not use SAT as a grade replacement.",
+      "program": "History, B.A.",
+      "sourceIds": ["candidate-marshall-intl", "candidate-marshall-program"]
+    },
+    {
+      "id": "central-missouri",
+      "name": "University of Central Missouri",
+      "route": "direct-with-credential-review",
+      "verifiedAcademicRequirement": "International high-school GPA minimum 2.0. No Ontario percentage conversion verified.",
+      "ontarioPercentageMinimum": null,
+      "scenarioUse": "Review only; cannot map Ontario60–75% to this GPA without university assessment. Do not use SAT as a grade replacement.",
+      "program": "History, B.A.",
+      "sourceIds": [
+        "candidate-central-missouri-intl",
+        "candidate-central-missouri-program"
+      ]
+    },
+    {
+      "id": "murray-state",
+      "name": "Murray State University",
+      "route": "individual-review",
+      "verifiedAcademicRequirement": "International bachelor checklist requires high-school GPA 2.0; the general freshman page specifies holistic review for GPA 2.0–2.74. Do not describe 2.0 as assured admission.",
+      "ontarioPercentageMinimum": null,
+      "scenarioUse": "Review only; cannot map Ontario60–75% to this GPA without university assessment. Do not use SAT as a grade replacement.",
+      "program": "Sociology, B.A./B.S.",
+      "sourceIds": [
+        "candidate-murray-state-intl",
+        "candidate-murray-state-program",
+        "candidate-murray-review"
+      ]
+    },
+    {
+      "id": "fort-hays-state",
+      "name": "Fort Hays State University",
+      "route": "direct-with-credential-review",
+      "verifiedAcademicRequirement": "International first-year GPA minimum 2.5. SAT/ACT not required per international FAQ.",
+      "ontarioPercentageMinimum": null,
+      "scenarioUse": "Review only; cannot map Ontario60–75% to this GPA without university assessment. Do not use SAT as a grade replacement.",
+      "program": "History, B.A.",
+      "sourceIds": [
+        "candidate-fort-hays-state-intl",
+        "candidate-fort-hays-state-program",
+        "candidate-fort-hays-sat"
+      ]
+    },
+    {
+      "id": "arkansas-state",
+      "name": "Arkansas State University",
+      "route": "conflicting-program-scope",
+      "verifiedAcademicRequirement": "International freshman page says GPA 2.3 but current BA History page lists 3.0. Could be a generic domestic-page rule, but unresolved; do not claim international History admission at GPA2.3 without clarification.",
+      "ontarioPercentageMinimum": null,
+      "scenarioUse": "Review only; cannot map Ontario60–75% to this GPA without university assessment. Do not use SAT as a grade replacement.",
+      "program": "History, B.A.",
+      "sourceIds": [
+        "candidate-arkansas-state-intl",
+        "candidate-arkansas-state-program"
+      ]
+    },
+    {
+      "id": "iowa",
+      "name": "University of Iowa",
+      "route": "direct-percentage-condition",
+      "verifiedAcademicRequirement": "Minimum Ontario average on core academic subjects, including math/science/language/social science.",
+      "ontarioPercentageMinimum": 70,
+      "scenarioUse": "Verified percentage component only; remaining academic/English/program requirements apply. Existing catalog already includes program evidence.",
+      "program": "See existing scenario catalog",
+      "sourceIds": ["candidate-reverify-iowa"]
+    },
+    {
+      "id": "northern-iowa",
+      "name": "University of Northern Iowa",
+      "route": "direct-percentage-condition",
+      "verifiedAcademicRequirement": "Cumulative academic subjects at secondary level; not Ontario Grade12top6.",
+      "ontarioPercentageMinimum": 75,
+      "scenarioUse": "Verified percentage component only; remaining academic/English/program requirements apply. Existing catalog already includes program evidence.",
+      "program": "See existing scenario catalog",
+      "sourceIds": ["candidate-reverify-northern-iowa"]
+    },
+    {
+      "id": "portland-state",
+      "name": "Portland State University",
+      "route": "direct-percentage-condition",
+      "verifiedAcademicRequirement": "Strictly greater than70 overall average with OSSD, not greater-than-or-equal70.",
+      "ontarioPercentageMinimum": 70,
+      "scenarioUse": "Verified percentage component only; remaining academic/English/program requirements apply. Existing catalog already includes program evidence.",
+      "program": "See existing scenario catalog",
+      "sourceIds": ["candidate-reverify-portland-state"]
+    }
+  ],
+  "sources": [
+    {
+      "id": "candidate-toledo-intl",
+      "title": "International Freshman Admission Requirements",
+      "url": "https://www.utoledo.edu/admission/international/admissionrequirements/freshman.html",
+      "publisher": "The University of Toledo",
+      "verified": "2026-10-22",
+      "cycle": "Current official page; Fall 2028 requirements must be reconfirmed"
+    },
+    {
+      "id": "candidate-toledo-apply",
+      "title": "How to Apply: International Undergraduate Admission",
+      "url": "https://www.utoledo.edu/admission/international/how-to-apply.html",
+      "publisher": "The University of Toledo",
+      "verified": "2026-10-22",
+      "cycle": "Page lists Fall 2027 dates; Fall 2028 reconfirmation required"
+    },
+    {
+      "id": "candidate-toledo-history",
+      "title": "Undergraduate Degrees in History",
+      "url": "https://www.utoledo.edu/jhc/history/undergraduate/",
+      "publisher": "The University of Toledo",
+      "verified": "2026-10-22",
+      "cycle": "Page last updated August 7, 2026"
+    },
+    {
+      "id": "candidate-toledo-english",
+      "title": "English Language Requirements",
+      "url": "https://www.utoledo.edu/admission/international/englishlanguageproficiency/",
+      "publisher": "The University of Toledo",
+      "verified": "2026-10-22",
+      "cycle": "Current official page; Fall 2028 requirements must be reconfirmed"
+    },
+    {
+      "id": "candidate-toledo-sociology",
+      "title": "Sociology and Anthropology: current undergraduate programs",
+      "url": "https://www.utoledo.edu/jhc/sociology-anthropology/",
+      "publisher": "The University of Toledo",
+      "verified": "2026-10-22",
+      "cycle": "Current official page; Fall 2028 requirements must be reconfirmed"
+    },
+    {
+      "id": "candidate-ysu-intl",
+      "title": "Apply as an International Freshman",
+      "url": "https://ysu.edu/international-programs-office/apply-now/quick-menu/apply-as-international-freshman",
+      "publisher": "Youngstown State University",
+      "verified": "2026-10-22",
+      "cycle": "Current official page; Fall 2028 requirements must be reconfirmed"
+    },
+    {
+      "id": "candidate-ysu-catalog",
+      "title": "International Undergraduate Admission",
+      "url": "https://catalog.ysu.edu/undergraduate/general-information/admission/international-undergraduate-admission/",
+      "publisher": "Youngstown State University",
+      "verified": "2026-10-22",
+      "cycle": "2026–2027 catalog"
+    },
+    {
+      "id": "candidate-ysu-freshmen",
+      "title": "New Freshmen",
+      "url": "https://ysu.edu/admissions/apply-to-ysu/new-freshmen",
+      "publisher": "Youngstown State University",
+      "verified": "2026-10-22",
+      "cycle": "Current official page; Fall 2028 requirements must be reconfirmed"
+    },
+    {
+      "id": "candidate-ysu-programs",
+      "title": "Beeghly College of Liberal Arts, Social Sciences & Education",
+      "url": "https://ysu.edu/academics/beeghly-college-liberal-arts-social-sciences-education",
+      "publisher": "Youngstown State University",
+      "verified": "2026-10-22",
+      "cycle": "Current official page; Fall 2028 requirements must be reconfirmed"
+    },
+    {
+      "id": "candidate-txst-canada",
+      "title": "Secondary Credentials – Canada",
+      "url": "https://www.admissions.txst.edu/future-students/international/secondary-credentials/list-by-country/canada.html",
+      "publisher": "Texas State University",
+      "verified": "2026-10-22",
+      "cycle": "Current official page; Fall 2028 requirements must be reconfirmed"
+    },
+    {
+      "id": "candidate-txst-intl",
+      "title": "International Admissions Requirements",
+      "url": "https://www.admissions.txst.edu/future-students/international/admissions-requirements.html",
+      "publisher": "Texas State University",
+      "verified": "2026-10-22",
+      "cycle": "Current official page; Fall 2028 requirements must be reconfirmed"
+    },
+    {
+      "id": "candidate-txst-sociology",
+      "title": "Undergraduate Degree Programs and Minors",
+      "url": "https://www.soci.txst.edu/Undergraduate-Degree/Undergraduate-Degree-Programs---Minors.html",
+      "publisher": "Texas State University",
+      "verified": "2026-10-22",
+      "cycle": "Current official page; Fall 2028 requirements must be reconfirmed"
+    },
+    {
+      "id": "candidate-wsu-firstyear",
+      "title": "International First-Year",
+      "url": "https://ip.wsu.edu/future-students/about-wsu-programs/international-first-year/",
+      "publisher": "Washington State University",
+      "verified": "2026-10-22",
+      "cycle": "Current official page; Fall 2028 requirements must be reconfirmed"
+    },
+    {
+      "id": "candidate-wsu-foundation",
+      "title": "Undergraduate Foundation Program",
+      "url": "https://ip.wsu.edu/future-students/about-wsu-programs/foundation/",
+      "publisher": "Washington State University",
+      "verified": "2026-10-22",
+      "cycle": "Current official page; Fall 2028 requirements must be reconfirmed"
+    },
+    {
+      "id": "candidate-wsu-sociology",
+      "title": "Sociology Degree Plan",
+      "url": "https://cas.wsu.edu/undergraduate-studies/degree-plans/afs-sociology/",
+      "publisher": "Washington State University",
+      "verified": "2026-10-22",
+      "cycle": "Current official page; Fall 2028 requirements must be reconfirmed"
+    },
+    {
+      "id": "candidate-marshall-intl",
+      "title": "International undergraduate requirements",
+      "url": "https://www.marshall.edu/international-admissions/international-admissions-requirements/",
+      "publisher": "Marshall University",
+      "verified": "2026-10-22",
+      "cycle": "Current official page; Fall 2028 requirements must be reconfirmed"
+    },
+    {
+      "id": "candidate-marshall-program",
+      "title": "History, B.A.",
+      "url": "https://catalog.marshall.edu/undergraduate/programs-az/liberal-arts/history/history-ba/",
+      "publisher": "Marshall University",
+      "verified": "2026-10-22",
+      "cycle": "Current official page; Fall 2028 requirements must be reconfirmed"
+    },
+    {
+      "id": "candidate-central-missouri-intl",
+      "title": "International undergraduate requirements",
+      "url": "https://www.ucmo.edu/future-students/admissions/international-admissions/international-prospective-students/prospective-undergraduate-international/",
+      "publisher": "University of Central Missouri",
+      "verified": "2026-10-22",
+      "cycle": "Current official page; Fall 2028 requirements must be reconfirmed"
+    },
+    {
+      "id": "candidate-central-missouri-program",
+      "title": "History, B.A.",
+      "url": "https://www.ucmo.edu/academics/programs/majors/cahss/history/history-ba/",
+      "publisher": "University of Central Missouri",
+      "verified": "2026-10-22",
+      "cycle": "Current official page; Fall 2028 requirements must be reconfirmed"
+    },
+    {
+      "id": "candidate-murray-state-intl",
+      "title": "International undergraduate requirements",
+      "url": "https://www.murraystate.edu/admissions/international/Admissions/index.aspx",
+      "publisher": "Murray State University",
+      "verified": "2026-10-22",
+      "cycle": "Current official page; Fall 2028 requirements must be reconfirmed"
+    },
+    {
+      "id": "candidate-murray-state-program",
+      "title": "Sociology, B.A./B.S.",
+      "url": "https://www.murraystate.edu/academics/CollegesDepartments/CollegeOfHumanitiesAndFineArts/politicalScienceandSociology/Programs/Sociology.aspx",
+      "publisher": "Murray State University",
+      "verified": "2026-10-22",
+      "cycle": "Current official page; Fall 2028 requirements must be reconfirmed"
+    },
+    {
+      "id": "candidate-murray-review",
+      "title": "First-time Freshman Admission Requirements",
+      "url": "https://www.murraystate.edu/admissions/ftf/requirements.aspx",
+      "publisher": "Murray State University",
+      "verified": "2026-10-22",
+      "cycle": "Current official page; Fall 2028 requirements must be reconfirmed"
+    },
+    {
+      "id": "candidate-fort-hays-state-intl",
+      "title": "International undergraduate requirements",
+      "url": "https://www.fhsu.edu/admissions/admissions-application/international-undergrad",
+      "publisher": "Fort Hays State University",
+      "verified": "2026-10-22",
+      "cycle": "Current official page; Fall 2028 requirements must be reconfirmed"
+    },
+    {
+      "id": "candidate-fort-hays-state-program",
+      "title": "History, B.A.",
+      "url": "https://www.fhsu.edu/programs/history/",
+      "publisher": "Fort Hays State University",
+      "verified": "2026-10-22",
+      "cycle": "Current official page; Fall 2028 requirements must be reconfirmed"
+    },
+    {
+      "id": "candidate-fort-hays-sat",
+      "title": "International Admissions FAQ",
+      "url": "https://www.fhsu.edu/international/admissions/FAQ/",
+      "publisher": "Fort Hays State University",
+      "verified": "2026-10-22",
+      "cycle": "Current official page; Fall 2028 requirements must be reconfirmed"
+    },
+    {
+      "id": "candidate-arkansas-state-intl",
+      "title": "International undergraduate requirements",
+      "url": "https://www.astate.edu/admissions-and-aid/international-student-admission/undergraduate-students.html",
+      "publisher": "Arkansas State University",
+      "verified": "2026-10-22",
+      "cycle": "Current official page; Fall 2028 requirements must be reconfirmed"
+    },
+    {
+      "id": "candidate-arkansas-state-program",
+      "title": "History, B.A.",
+      "url": "https://www.astate.edu/programs/ba-in-history.html",
+      "publisher": "Arkansas State University",
+      "verified": "2026-10-22",
+      "cycle": "Current official page; Fall 2028 requirements must be reconfirmed"
+    },
+    {
+      "id": "candidate-reverify-iowa",
+      "title": "Country-specific academic minimum",
+      "url": "https://admissions.uiowa.edu/apply/academic-requirements-country",
+      "publisher": "University of Iowa",
+      "verified": "2026-10-22",
+      "cycle": "Current official page; Fall 2028 requirements must be reconfirmed"
+    },
+    {
+      "id": "candidate-reverify-northern-iowa",
+      "title": "Country-specific academic minimum",
+      "url": "https://admissions.uni.edu/international/undergraduate-students/country-specific-requirements/canada",
+      "publisher": "University of Northern Iowa",
+      "verified": "2026-10-22",
+      "cycle": "Current official page; Fall 2028 requirements must be reconfirmed"
+    },
+    {
+      "id": "candidate-reverify-portland-state",
+      "title": "Country-specific academic minimum",
+      "url": "https://www.pdx.edu/admissions/international/academic-requirements-country",
+      "publisher": "Portland State University",
+      "verified": "2026-10-22",
+      "cycle": "Current official page; Fall 2028 requirements must be reconfirmed"
+    },
+    {
+      "id": "candidate-wsu-current-tests",
+      "title": "First-Year Students",
+      "url": "https://admission.wsu.edu/apply/first-year-students/",
+      "publisher": "Washington State University",
+      "verified": "2026-10-22",
+      "cycle": "Current first-year admissions page; Fall 2028 reconfirmation required"
+    }
+  ],
+  "notes": [
+    "12 schools reviewed: four full new catalog records, five additional GPA-review candidates, three reverified Ontario-specific candidates.",
+    "Toledo currently lists Sociology only as a minor; use History B.A. instead.",
+    "Youngstown Special Admission is discretionary and does not guarantee admission.",
+    "No official evidence found that 10 U.S. universities guarantee admission for every Ontario60–65/SAT1100 scenario. These new sources support a broader investigation list with explicit review status.",
+    "No Ontario GPA conversion may be borrowed from Texas State and applied to another university.",
+    "Arkansas State History threshold has unresolved page-scope discrepancy and should not be used as verified low-entry eligibility."
+  ]
+}

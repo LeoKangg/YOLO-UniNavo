@@ -3905,3 +3905,107 @@ footer > a {
 .scenario-calculation .scenario-refs {
   padding-left: 34px;
 }
+
+/* Source-backed research candidates; editorial selection is stated separately. */
+.scenario-selectors.sat-only {
+  grid-template-columns: minmax(180px, 280px) 1fr;
+  align-items: center;
+}
+.sat-only p {
+  margin: 0;
+  font-size: 18px;
+  line-height: 1.7;
+}
+.sat-only p span {
+  color: #546b64;
+  font-size: 16px;
+}
+.candidate-selection-note {
+  font-size: 18px;
+  line-height: 1.8;
+  margin: 24px 0 32px;
+}
+.candidate-route {
+  display: inline-block;
+  margin: 20px 0 0;
+  padding: 8px 12px;
+  border-radius: 7px;
+  background: #eef2f8;
+  color: #36536c;
+  font-size: 16px;
+  font-weight: 600;
+}
+.candidate-facts {
+  display: grid;
+  gap: 24px;
+  margin: 24px 0;
+}
+.candidate-facts dt {
+  font-size: 17px;
+  font-weight: 700;
+  color: #32594f;
+  margin-bottom: 8px;
+}
+.candidate-facts dd {
+  margin: 0;
+  font-size: 18px;
+  line-height: 1.8;
+}
+.candidate-cohort {
+  display: block;
+  margin-top: 10px;
+  color: #5b6c64;
+  font-size: 16px;
+}
+.candidate-matrix {
+  min-width: 920px;
+  table-layout: fixed;
+}
+.candidate-matrix th:first-child {
+  width: 120px;
+}
+.candidate-matrix td {
+  vertical-align: top;
+}
+.candidate-matrix button {
+  min-height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 20px;
+  background: #fff;
+}
+.candidate-matrix button:focus-visible {
+  outline: 3px solid #2d7772;
+  outline-offset: -3px;
+}
+.candidate-matrix .candidate-preview {
+  margin: 0;
+}
+.candidate-matrix .candidate-preview > span {
+  font-size: 16px;
+  line-height: 1.45;
+  margin: 0 0 9px;
+  color: #2d4542;
+}
+.candidate-matrix button strong {
+  font-size: 16px;
+  color: #286353;
+}
+.candidate-matrix-wrap {
+  margin-top: 26px;
+}
+@media (max-width: 640px) {
+  .scenario-selectors.sat-only {
+    grid-template-columns: 1fr;
+    padding: 18px;
+  }
+  .scenario-result-head {
+    align-items: flex-start;
+    gap: 20px;
+    flex-direction: column;
+  }
+  .candidate-facts dd {
+    font-size: 17px;
+  }
+}

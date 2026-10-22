@@ -1,0 +1,791 @@
+{
+  "verified": "2026-10-22",
+  "purpose": "Reverified official evidence for editorial strong-academic research candidates, not confirmed eligible or admission forecasts.",
+  "records": [
+    {
+      "id": "michigan-ann-arbor",
+      "name": "University of Michigan–Ann Arbor",
+      "verified": "2026-10-22",
+      "applicantScope": "Korean citizen attending Ontario secondary school; U.S. international first-year applicant",
+      "ontarioMinimum": null,
+      "ontarioMinimumNote": "No Ontario percentage cutoff or formula connecting Ontario average with this SAT range was verified. Grade-band placement is editorial research triage, never official eligibility.",
+      "testing": {
+        "policy": "optional",
+        "cycle": "Fall 2027; Fall 2028 unconfirmed"
+      },
+      "satRange": {
+        "low": 1370,
+        "high": 1530,
+        "cohort": "Fall 2025 enrolled first-year SAT submitters; CDS 2025–26 C9, Ann Arbor. University-wide, not LSA-specific."
+      },
+      "program": "History; Sociology",
+      "unit": "College of Literature, Science, and the Arts",
+      "academicReview": "Reviews curriculum, cumulative academic record, essays, recommendations and activities; no single score decides admission.",
+      "entryNote": "Apply to LSA; program declaration after enrollment has its own requirements. No evidence that History is the lowest-entry major.",
+      "easiestMajorVerified": false,
+      "caveat": "",
+      "sourceIds": [
+        "high-umich-changes",
+        "high-umich-selection",
+        "umich-cds",
+        "umich-history",
+        "umich-majors"
+      ]
+    },
+    {
+      "id": "nyu",
+      "name": "New York University",
+      "verified": "2026-10-22",
+      "applicantScope": "Korean citizen attending Ontario secondary school; U.S. international first-year applicant",
+      "ontarioMinimum": null,
+      "ontarioMinimumNote": "No Ontario percentage cutoff or formula connecting Ontario average with this SAT range was verified. Grade-band placement is editorial research triage, never official eligibility.",
+      "testing": {
+        "policy": "unknown",
+        "cycle": "New York campus Fall 2028 not verified; current MEET NYU article explicitly covers 2025–26 application process"
+      },
+      "satRange": null,
+      "program": "Sociology BA",
+      "unit": "College of Arts and Science",
+      "academicReview": "Whole application and secondary-school completion evaluated; Ontario cutoff unknown.",
+      "entryNote": "Sociology exists in CAS. A university-wide test-optional statement on the Abu Dhabi admissions site is not sufficient proof for the future New York campus cycle.",
+      "easiestMajorVerified": false,
+      "caveat": "Do not copy a third-party SAT middle-50 range or an Abu Dhabi policy into New York records. Current article is historical evidence only.",
+      "sourceIds": [
+        "nyu-test",
+        "nyu-sociology",
+        "nyu-majors"
+      ]
+    },
+    {
+      "id": "wisconsin-madison",
+      "name": "University of Wisconsin–Madison",
+      "verified": "2026-10-22",
+      "applicantScope": "Korean citizen attending Ontario secondary school; U.S. international first-year applicant",
+      "ontarioMinimum": null,
+      "ontarioMinimumNote": "No Ontario percentage cutoff or formula connecting Ontario average with this SAT range was verified. Grade-band placement is editorial research triage, never official eligibility.",
+      "testing": {
+        "policy": "optional",
+        "cycle": "Through Spring 2028; Fall 2028 explicitly not decided"
+      },
+      "satRange": {
+        "low": 1400,
+        "high": 1490,
+        "cohort": "Fall 2025 enrolled first-year SAT submitters; CDS 2025–26 C9. University-wide, not Letters & Science-specific."
+      },
+      "program": "History BA; Sociology BA",
+      "unit": "College of Letters & Science",
+      "academicReview": "Academic achievement, rigorous coursework and broader application are assessed holistically.",
+      "entryNote": "History and Sociology BA are available; no verified major-specific lower admission cutoff.",
+      "easiestMajorVerified": false,
+      "caveat": "",
+      "sourceIds": [
+        "high-wisc-testing",
+        "wisc-review",
+        "wisc-history",
+        "wisc-soc",
+        "sat-band-wisc-cds-2025-26"
+      ]
+    },
+    {
+      "id": "ohio-state-columbus",
+      "name": "The Ohio State University–Columbus",
+      "verified": "2026-10-22",
+      "applicantScope": "Korean citizen attending Ontario secondary school; U.S. international first-year applicant",
+      "ontarioMinimum": null,
+      "ontarioMinimumNote": "No Ontario percentage cutoff or formula connecting Ontario average with this SAT range was verified. Grade-band placement is editorial research triage, never official eligibility.",
+      "testing": {
+        "policy": "required",
+        "cycle": "Current Columbus first-year policy; recheck Fall 2028"
+      },
+      "satRange": {
+        "low": 1300,
+        "high": 1440,
+        "cohort": "Fall 2025 enrolled first-year SAT submitters; Columbus CDS 2025–26 C9. Different cohort from admitted-student publicity figures."
+      },
+      "program": "History; Sociology",
+      "unit": "College of Arts and Sciences",
+      "academicReview": "Reviews secondary curriculum, academic performance and applicant context.",
+      "entryNote": "General university admission and any major-specific enrollment criteria must both be checked. No lowest-entry major established.",
+      "easiestMajorVerified": false,
+      "caveat": "",
+      "sourceIds": [
+        "osu-review",
+        "osu-app",
+        "osu-units",
+        "osu-history",
+        "osu-soc",
+        "sat-band-osu-cds-2025-26"
+      ]
+    },
+    {
+      "id": "purdue-west-lafayette",
+      "name": "Purdue University–West Lafayette",
+      "verified": "2026-10-22",
+      "applicantScope": "Korean citizen attending Ontario secondary school; U.S. international first-year applicant",
+      "ontarioMinimum": null,
+      "ontarioMinimumNote": "No Ontario percentage cutoff or formula connecting Ontario average with this SAT range was verified. Grade-band placement is editorial research triage, never official eligibility.",
+      "testing": {
+        "policy": "expected",
+        "cycle": "Current guide expects SAT/ACT/CLT; exceptional inability to test allowed; recheck Fall 2028"
+      },
+      "satRange": {
+        "low": 1110,
+        "high": 1348,
+        "cohort": "2026 College of Liberal Arts middle 50%, official current Class Profile under Our Applicants for2026 and University Enrollment forFall2026. Profile covers West Lafayette and Indianapolis. College aggregate, not individual-major cutoff."
+      },
+      "program": "History BA; Sociology BA",
+      "unit": "College of Liberal Arts",
+      "academicReview": "Review considers intended-major readiness, subject grades, rigor, trends, tests and space in the desired program.",
+      "entryNote": "Official degree pages place both History BA and Sociology BA in Liberal Arts at West Lafayette. Applicants choose location and major. College-level published outcomes permit comparing Liberal Arts with Engineering but do not prove either individual major is easiest. Later changes of major are not guaranteed.",
+      "easiestMajorVerified": false,
+      "caveat": "Do not describe the college SAT interval as a guarantee or as Ontario grade conversion. The plural admissions.purdue.edu host currently publishes2026; the singular admission.purdue.edu page returned older2025 data during this review. Use the2026 source URL.",
+      "sourceIds": [
+        "purdue-criteria",
+        "purdue-guide",
+        "purdue-profile",
+        "purdue-history",
+        "purdue-soc"
+      ],
+      "collegeComparison": {
+        "year": 2026,
+        "liberalArts": {
+          "admitRate": 72.7,
+          "sat": [
+            1110,
+            1348
+          ]
+        },
+        "engineering": {
+          "admitRate": 37.9,
+          "sat": [
+            1390,
+            1520
+          ]
+        },
+        "university": {
+          "admitRate": 53.3,
+          "sat": [
+            1230,
+            1480
+          ]
+        },
+        "meaning": "Historical aggregate college comparison only, not a causal major-selection advantage or a personal probability."
+      }
+    },
+    {
+      "id": "minnesota-twin-cities",
+      "name": "University of Minnesota Twin Cities",
+      "verified": "2026-10-22",
+      "applicantScope": "Korean citizen attending Ontario secondary school; U.S. international first-year applicant",
+      "ontarioMinimum": null,
+      "ontarioMinimumNote": "No Ontario percentage cutoff or formula connecting Ontario average with this SAT range was verified. Grade-band placement is editorial research triage, never official eligibility.",
+      "testing": {
+        "policy": "optional",
+        "cycle": "Dedicated ACT/SAT page extends optional policy through Fall 2029"
+      },
+      "satRange": {
+        "low": 1330,
+        "high": 1470,
+        "cohort": "Profile heading and CLA table say Fall 2026 admitted applicants; explanatory SAT footnote still refers to Fall 2025. Date inconsistency must remain visible."
+      },
+      "program": "History; Sociology",
+      "unit": "College of Liberal Arts",
+      "academicReview": "Admissions calculates core academic GPA itself; applicants should not convert their Ontario average. Colleges selected are reviewed in order, with other fitting colleges also considered.",
+      "entryNote": "CLA has its own published profile; no individual humanities-major easiest-entry claim.",
+      "easiestMajorVerified": false,
+      "caveat": "Dedicated testing policy is newer than the profile page footnote saying optional through Fall 2027.",
+      "sourceIds": [
+        "umn-testing",
+        "high-umn-profile",
+        "umn-profile",
+        "umn-majors"
+      ]
+    },
+    {
+      "id": "maryland-college-park",
+      "name": "University of Maryland, College Park",
+      "verified": "2026-10-22",
+      "applicantScope": "Korean citizen attending Ontario secondary school; U.S. international first-year applicant",
+      "ontarioMinimum": null,
+      "ontarioMinimumNote": "No Ontario percentage cutoff or formula connecting Ontario average with this SAT range was verified. Grade-band placement is editorial research triage, never official eligibility.",
+      "testing": {
+        "policy": "optional",
+        "cycle": "Through Spring/Fall 2027; later cycles being assessed"
+      },
+      "satRange": {
+        "low": 1410,
+        "high": 1520,
+        "cohort": "Fall 2025 entering first-time students in institutional admissions report; university-wide."
+      },
+      "program": "History",
+      "unit": "College of Arts and Humanities",
+      "academicReview": "Individual holistic review uses 23 factors.",
+      "entryNote": "UMD explicitly says preferred major does not affect admissibility to the university. Choosing a non-LEP does not make university admission easier.",
+      "easiestMajorVerified": false,
+      "caveat": "",
+      "sourceIds": [
+        "scenario-maryland-college-park-testing",
+        "scenario-maryland-college-park-profile",
+        "scenario-maryland-college-park-entry",
+        "scenario-maryland-college-park-international",
+        "high-umd-history"
+      ]
+    },
+    {
+      "id": "florida",
+      "name": "University of Florida",
+      "verified": "2026-10-22",
+      "applicantScope": "Korean citizen attending Ontario secondary school; U.S. international first-year applicant",
+      "ontarioMinimum": null,
+      "ontarioMinimumNote": "No Ontario percentage cutoff or formula connecting Ontario average with this SAT range was verified. Grade-band placement is editorial research triage, never official eligibility.",
+      "testing": {
+        "policy": "required",
+        "cycle": "ACT/CLT/SAT required under current first-year rules; recheck Fall 2028"
+      },
+      "satRange": {
+        "low": 1420,
+        "high": 1520,
+        "cohort": "Fall 2026 admitted Class of 2030; official profile as of July 2026. Not minimum criteria."
+      },
+      "program": "History BA",
+      "unit": "College of Liberal Arts and Sciences",
+      "academicReview": "Evaluates academic and nonacademic factors, curriculum, essay and activities; university recalculates weighted core GPA.",
+      "entryNote": "UF says it does not admit freshmen by major. Selecting humanities does not provide a verified admission advantage.",
+      "easiestMajorVerified": false,
+      "caveat": "",
+      "sourceIds": [
+        "scenario-florida-international",
+        "scenario-florida-profile",
+        "scenario-florida-entry",
+        "high-uf-history"
+      ]
+    },
+    {
+      "id": "florida-state",
+      "name": "Florida State University",
+      "verified": "2026-10-22",
+      "applicantScope": "Korean citizen attending Ontario secondary school; U.S. international first-year applicant",
+      "ontarioMinimum": null,
+      "ontarioMinimumNote": "No Ontario percentage cutoff or formula connecting Ontario average with this SAT range was verified. Grade-band placement is editorial research triage, never official eligibility.",
+      "testing": {
+        "policy": "required",
+        "cycle": "ACT/CLT/SAT required under current international first-year rules; recheck Fall 2028"
+      },
+      "satRange": {
+        "low": 1380,
+        "high": 1480,
+        "cohort": "Fall 2026 admitted students, current What We Are Looking For page. Supersedes older 2025 guide range1340–1450."
+      },
+      "program": "History BA",
+      "unit": "College of Arts and Sciences",
+      "academicReview": "Holistic and selective review considers academic rigor, grades, school context, activities and character.",
+      "entryNote": "History BA is a published undergraduate degree. Its program guide describes upper-division academic progression; those college-course conditions are not high-school freshman admission cutoffs. No lower university freshman admission threshold for History was verified.",
+      "easiestMajorVerified": false,
+      "caveat": "",
+      "sourceIds": [
+        "scenario-florida-state-international",
+        "high-fsu-profile",
+        "scenario-florida-state-entry",
+        "high-fsu-history"
+      ]
+    },
+    {
+      "id": "texas-austin",
+      "name": "The University of Texas at Austin",
+      "verified": "2026-10-22",
+      "applicantScope": "Korean citizen attending Ontario secondary school; U.S. international first-year applicant",
+      "ontarioMinimum": null,
+      "ontarioMinimumNote": "No Ontario percentage cutoff or formula connecting Ontario average with this SAT range was verified. Grade-band placement is editorial research triage, never official eligibility.",
+      "testing": {
+        "policy": "required",
+        "cycle": "Current international freshman page accepts official SAT/ACT/CLT; recheck Fall 2028"
+      },
+      "satRange": null,
+      "program": "History BA",
+      "unit": "College of Liberal Arts",
+      "academicReview": "Requires secondary transcript, prerequisite coursework, essay/short answers and tests; major-specific materials may apply.",
+      "entryNote": "History BA is available. No Ontario cutoff or verified lowest-entry major was found.",
+      "easiestMajorVerified": false,
+      "caveat": "Do not apply Texas automatic-admission rules to a Korean applicant educated in Ontario.",
+      "sourceIds": [
+        "scenario-ut-austin-international",
+        "scenario-ut-austin-history"
+      ]
+    },
+    {
+      "id": "southern-california",
+      "name": "University of Southern California",
+      "verified": "2026-10-22",
+      "applicantScope": "Korean citizen attending Ontario secondary school; U.S. international first-year applicant",
+      "ontarioMinimum": null,
+      "ontarioMinimumNote": "No Ontario percentage cutoff or formula connecting Ontario average with this SAT range was verified. Grade-band placement is editorial research triage, never official eligibility.",
+      "testing": {
+        "policy": "optional",
+        "cycle": "2027–28 academic year; Fall 2028 unconfirmed"
+      },
+      "satRange": {
+        "low": 1470,
+        "high": 1540,
+        "cohort": "Fall 2026 enrolled Class of2030, superscored; combined Los Angeles and Washington DC campuses. University-wide, not Dornsife-specific."
+      },
+      "program": "History BA",
+      "unit": "Dornsife College of Letters, Arts and Sciences",
+      "academicReview": "International records and English proficiency assessed; optional SAT considered with other academic information.",
+      "entryNote": "Dornsife History BA exists, but lower-entry or easiest-major status not verified.",
+      "easiestMajorVerified": false,
+      "caveat": "SAT submitted for English proficiency is also evaluated in general admission.",
+      "sourceIds": [
+        "scenario-usc-international",
+        "scenario-usc-profile",
+        "scenario-usc-history"
+      ]
+    },
+    {
+      "id": "rutgers-new-brunswick",
+      "name": "Rutgers University–New Brunswick",
+      "verified": "2026-10-22",
+      "applicantScope": "Korean citizen attending Ontario secondary school; U.S. international first-year applicant",
+      "ontarioMinimum": null,
+      "ontarioMinimumNote": "No Ontario percentage cutoff or formula connecting Ontario average with this SAT range was verified. Grade-band placement is editorial research triage, never official eligibility.",
+      "testing": {
+        "policy": "optional",
+        "cycle": "Current first-year test-optional policy; Fall 2028 recheck"
+      },
+      "satRange": {
+        "low": 1380,
+        "high": 1520,
+        "cohort": "Fall 2026 admitted School of Arts and Sciences SAT submitters; not minimum criteria."
+      },
+      "program": "History BA; Sociology BA",
+      "unit": "School of Arts and Sciences, New Brunswick",
+      "academicReview": "Holistic review emphasizes courses, grades/trends, rigor and available places in each school; activities and essay also considered.",
+      "entryNote": "School admission precedes major declaration; no verified benefit from selecting History rather than Sociology.",
+      "easiestMajorVerified": false,
+      "caveat": "",
+      "sourceIds": [
+        "rutgers-new-brunswick-profile",
+        "rutgers-new-brunswick-apply",
+        "rutgers-new-brunswick-majors",
+        "rutgers-new-brunswick-sociology",
+        "rutgers-new-brunswick-history"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "high-umich-changes",
+      "title": "Application Changes",
+      "url": "https://admissions.umich.edu/apply/first-year-applicants/requirements-deadlines/application-changes",
+      "publisher": "University of Michigan",
+      "verified": "2026-10-22",
+      "cycle": "2026–2027 application cycle; Fall 2027 entry"
+    },
+    {
+      "id": "high-umich-selection",
+      "title": "Selection Process",
+      "url": "https://admissions.umich.edu/apply/first-year-applicants/selection-process",
+      "publisher": "University of Michigan",
+      "verified": "2026-10-22",
+      "cycle": "Current policy; Fall 2028 not separately confirmed"
+    },
+    {
+      "id": "umich-cds",
+      "title": "Common Data Set2025–2026, C9",
+      "publisher": "University of Michigan Office of Budget and Planning",
+      "url": "https://obp.umich.edu/wp-content/uploads/pubdata/cds/cds_2025-26_umaa.pdf",
+      "verified": "2026-10-22",
+      "cycle": "Fall2025 enrolled first-year cohort"
+    },
+    {
+      "id": "umich-history",
+      "title": "History major",
+      "publisher": "University of Michigan College of LSA",
+      "url": "https://lsa.umich.edu/lsa/academics/majors-minors/history-major.html",
+      "verified": "2026-10-22",
+      "cycle": "Current major requirements"
+    },
+    {
+      "id": "umich-majors",
+      "title": "LSA major declaration guidelines",
+      "publisher": "University of Michigan College of LSA",
+      "url": "https://lsa.umich.edu/lsa/academics/lsa-requirements/majors.html",
+      "verified": "2026-10-22",
+      "cycle": "Current LSA degree rules"
+    },
+    {
+      "id": "nyu-test",
+      "title": "Test optional at NYU",
+      "publisher": "NYU Undergraduate Admissions — Meet NYU",
+      "url": "https://meet.nyu.edu/advice/test-optional-at-nyu-what-it-is-and-isnt/",
+      "verified": "2026-10-22",
+      "cycle": "Explicitly 2025–26 application process; historical reference"
+    },
+    {
+      "id": "nyu-sociology",
+      "title": "Sociology BA policies",
+      "publisher": "NYU University Bulletin",
+      "url": "https://bulletins.nyu.edu/undergraduate/arts-science/programs/sociology-ba/",
+      "verified": "2026-10-22",
+      "cycle": "Current page; Fall 2028 not confirmed"
+    },
+    {
+      "id": "nyu-majors",
+      "title": "Applying undecided at NYU",
+      "publisher": "NYU Undergraduate Admissions — Meet NYU",
+      "url": "https://meet.nyu.edu/academics/how-to-apply-undecided-to-nyu/",
+      "verified": "2026-10-22",
+      "cycle": "Published November 21, 2025"
+    },
+    {
+      "id": "high-wisc-testing",
+      "title": "ACT/SAT Test Optional FAQs",
+      "url": "https://admissions.wisc.edu/act_sat_faq/",
+      "publisher": "University of Wisconsin–Madison",
+      "verified": "2026-10-22",
+      "cycle": "Optional through Spring 2028; Fall 2028 explicitly undecided"
+    },
+    {
+      "id": "wisc-review",
+      "title": "What we look for",
+      "publisher": "UW–Madison Admissions",
+      "url": "https://admissions.wisc.edu/can-i-get-in-to-uw-madison/",
+      "verified": "2026-10-22",
+      "cycle": "Current holistic review and direct-entry policy"
+    },
+    {
+      "id": "wisc-history",
+      "title": "History BA",
+      "publisher": "UW–Madison Guide",
+      "url": "https://guide.wisc.edu/undergraduate/letters-science/history/history-ba/",
+      "verified": "2026-10-22",
+      "cycle": "2026–27 catalog"
+    },
+    {
+      "id": "wisc-soc",
+      "title": "Sociology BA",
+      "publisher": "UW–Madison Guide",
+      "url": "https://guide.wisc.edu/undergraduate/letters-science/sociology/sociology-ba/",
+      "verified": "2026-10-22",
+      "cycle": "2026–27 catalog"
+    },
+    {
+      "id": "sat-band-wisc-cds-2025-26",
+      "title": "UW–Madison Common Data Set 2025–2026, CDS-C C9 (rows 160–179)",
+      "url": "https://uwmadison.box.com/index.php?file_id=f_2339108500297&rm=box_download_shared_file&shared_name=ilx9kil11ninf8vwj1z87vumhuvpw4px",
+      "publisher": "University of Wisconsin–Madison, Data, Academic Planning & Institutional Research",
+      "verified": "2026-10-22",
+      "cycle": "2025–2026 CDS; Fall 2025 enrolled first-time, first-year students"
+    },
+    {
+      "id": "osu-review",
+      "title": "Who gets in — international first-years",
+      "publisher": "Ohio State Undergraduate Admissions",
+      "url": "https://undergrad.osu.edu/apply/international-freshmen/who-gets-in",
+      "verified": "2026-10-22",
+      "cycle": "Current page; admitted-score chart year not identified"
+    },
+    {
+      "id": "osu-app",
+      "title": "Apply step-by-step — international first-years",
+      "publisher": "Ohio State Undergraduate Admissions",
+      "url": "https://undergrad.osu.edu/apply/international-freshmen/apply-step-by-step",
+      "verified": "2026-10-22",
+      "cycle": "Autumn2027 application; Fall2028 unconfirmed"
+    },
+    {
+      "id": "osu-units",
+      "title": "International enrollment criteria",
+      "publisher": "Ohio State Undergraduate Admissions",
+      "url": "https://undergrad.osu.edu/apply/international-enrollment-criteria",
+      "verified": "2026-10-22",
+      "cycle": "Current college/major enrollment rules"
+    },
+    {
+      "id": "osu-history",
+      "title": "History BA",
+      "publisher": "Ohio State Undergraduate Admissions",
+      "url": "https://undergrad.osu.edu/majors-and-academics/majors/detail/80",
+      "verified": "2026-10-22",
+      "cycle": "Current undergraduate program"
+    },
+    {
+      "id": "osu-soc",
+      "title": "Sociology BA/BS",
+      "publisher": "Ohio State Undergraduate Admissions",
+      "url": "https://undergrad.osu.edu/majors-and-academics/majors/detail/147",
+      "verified": "2026-10-22",
+      "cycle": "Current undergraduate program"
+    },
+    {
+      "id": "sat-band-osu-cds-2025-26",
+      "title": "Ohio State Columbus Common Data Set 2025–2026, C9 (page 19)",
+      "url": "https://irp.osu.edu/sites/default/files/documents/2026/03/CDS-2025-2026-OSU-Columbus-Campus.pdf",
+      "publisher": "The Ohio State University, Institutional Research and Planning",
+      "verified": "2026-10-22",
+      "cycle": "2025–2026 CDS; Fall 2025 enrolled first-time, first-year students"
+    },
+    {
+      "id": "purdue-criteria",
+      "title": "First-year admission criteria",
+      "publisher": "Purdue Undergraduate Admissions",
+      "url": "https://admissions.purdue.edu/become-student/first-year-criteria/",
+      "verified": "2026-10-22",
+      "cycle": "Current holistic program-based review"
+    },
+    {
+      "id": "purdue-guide",
+      "title": "Application guide",
+      "publisher": "Purdue Undergraduate Admissions",
+      "url": "https://admissions.purdue.edu/become-student/guide/",
+      "verified": "2026-10-22",
+      "cycle": "Current page; includes2026 test-submission data"
+    },
+    {
+      "id": "purdue-profile",
+      "title": "Class profile",
+      "publisher": "Purdue Undergraduate Admissions",
+      "url": "https://admissions.purdue.edu/become-student/class-profile/",
+      "verified": "2026-10-22",
+      "cycle": "2026 applicant and Fall2026 profile; West Lafayette and Indianapolis"
+    },
+    {
+      "id": "purdue-history",
+      "title": "History BA",
+      "publisher": "Purdue Undergraduate Admissions",
+      "url": "https://admissions.purdue.edu/majors/history/",
+      "verified": "2026-10-22",
+      "cycle": "Current West Lafayette program"
+    },
+    {
+      "id": "purdue-soc",
+      "title": "Sociology BA",
+      "publisher": "Purdue Undergraduate Admissions",
+      "url": "https://admissions.purdue.edu/majors/sociology/",
+      "verified": "2026-10-22",
+      "cycle": "Current West Lafayette program"
+    },
+    {
+      "id": "umn-testing",
+      "title": "ACT/SAT information",
+      "publisher": "University of Minnesota Twin Cities",
+      "url": "https://admissions.tc.umn.edu/admissions/freshman-admission/act-sat-information",
+      "verified": "2026-10-22",
+      "cycle": "Test optional through Fall 2029; includes Fall 2028"
+    },
+    {
+      "id": "high-umn-profile",
+      "title": "Academic Profile of Fall 2026 Admitted Freshman Applicants by College",
+      "url": "https://admissions.tc.umn.edu/academic-profile-fall-2026-admitted-freshman-applicants-college",
+      "publisher": "University of Minnesota Twin Cities",
+      "verified": "2026-10-22",
+      "cycle": "Heading/table Fall 2026; explanatory SAT footnote still says Fall 2025"
+    },
+    {
+      "id": "umn-profile",
+      "title": "College admission and Fall 2026 admitted student profiles",
+      "publisher": "University of Minnesota Twin Cities",
+      "url": "https://admissions.tc.umn.edu/admissions/freshman-admission/frequently-asked-questions-about-how-we-determine-college-admissions",
+      "verified": "2026-10-22",
+      "cycle": "Fall 2026 admitted students; older testing footnote superseded by testing policy"
+    },
+    {
+      "id": "umn-majors",
+      "title": "College of Liberal Arts majors, minors and programs",
+      "publisher": "University of Minnesota Twin Cities",
+      "url": "https://cla.umn.edu/academics/majors-minors-programs",
+      "verified": "2026-10-22",
+      "cycle": "Current program directory"
+    },
+    {
+      "id": "scenario-maryland-college-park-testing",
+      "title": "Freshman Application FAQs",
+      "url": "https://admissions.umd.edu/apply/freshman-application-faqs",
+      "publisher": "University of Maryland, College Park",
+      "verified": "2026-10-22",
+      "cycle": "Test-optional policy through Fall 2027"
+    },
+    {
+      "id": "scenario-maryland-college-park-profile",
+      "title": "Undergraduate Application Summary – Fall 2025",
+      "url": "https://irpa.umd.edu/CampusCounts/Admissions/apps_ug.pdf",
+      "publisher": "University of Maryland, College Park",
+      "verified": "2026-10-22",
+      "cycle": "Fall 2025 entering students; prepared November 2025"
+    },
+    {
+      "id": "scenario-maryland-college-park-entry",
+      "title": "Limited Enrollment Programs",
+      "url": "https://admissions.umd.edu/academics/limited-enrollment-programs",
+      "publisher": "University of Maryland, College Park",
+      "verified": "2026-10-22",
+      "cycle": "Current page, reviewed October 22, 2026"
+    },
+    {
+      "id": "scenario-maryland-college-park-international",
+      "title": "International Student Admission, 2026–2027 Catalog",
+      "url": "https://academiccatalog.umd.edu/undergraduate/requirements-application-procedures/international-student-admission/",
+      "publisher": "University of Maryland, College Park",
+      "verified": "2026-10-22",
+      "cycle": "2026–2027 undergraduate catalog"
+    },
+    {
+      "id": "scenario-florida-international",
+      "title": "Freshman International Applicants",
+      "url": "https://www.admissions.ufl.edu/apply/freshman/international",
+      "publisher": "University of Florida",
+      "verified": "2026-10-22",
+      "cycle": "Current page, reviewed October 22, 2026"
+    },
+    {
+      "id": "scenario-florida-profile",
+      "title": "Freshman Decision Process, Class of 2030",
+      "url": "https://admissions.ufl.edu/apply/freshman/our-decision-process",
+      "publisher": "University of Florida",
+      "verified": "2026-10-22",
+      "cycle": "Fall 2026 admitted students; accurate as of July 2026"
+    },
+    {
+      "id": "scenario-florida-entry",
+      "title": "Freshman Early Decision – major admission FAQ",
+      "url": "https://admissions.ufl.edu/apply/freshman/early-decision",
+      "publisher": "University of Florida",
+      "verified": "2026-10-22",
+      "cycle": "Fall 2027 application instructions"
+    },
+    {
+      "id": "scenario-florida-state-international",
+      "title": "International First-Year Applicants",
+      "url": "https://admissions.fsu.edu/international/first-year",
+      "publisher": "Florida State University",
+      "verified": "2026-10-22",
+      "cycle": "Current page, reviewed October 22, 2026"
+    },
+    {
+      "id": "high-fsu-profile",
+      "title": "What We Are Looking For",
+      "url": "https://admissions.fsu.edu/first-year/wwlf",
+      "publisher": "Florida State University",
+      "verified": "2026-10-22",
+      "cycle": "Fall 2026 admitted students; current review factors"
+    },
+    {
+      "id": "scenario-florida-state-entry",
+      "title": "Questions about Majors",
+      "url": "https://admissions.fsu.edu/first-year/academics/majors-faq",
+      "publisher": "Florida State University",
+      "verified": "2026-10-22",
+      "cycle": "Current page, reviewed October 22, 2026"
+    },
+    {
+      "id": "scenario-ut-austin-international",
+      "title": "International Students — Freshman",
+      "url": "https://admissions.utexas.edu/apply/international-students/",
+      "publisher": "The University of Texas at Austin",
+      "verified": "2026-10-22",
+      "cycle": "Current page gives Fall2027 decision dates; not Fall2028"
+    },
+    {
+      "id": "scenario-ut-austin-history",
+      "title": "History B.A. Undergraduate Program",
+      "url": "https://liberalarts.utexas.edu/history/undergraduate-program/",
+      "publisher": "The University of Texas at Austin",
+      "verified": "2026-10-22",
+      "cycle": "Current official page reviewed 2026-10-22; Fall 2028 applicability needs confirmation"
+    },
+    {
+      "id": "scenario-usc-international",
+      "title": "International Students",
+      "url": "https://admission.usc.edu/prospective-students/how-to-apply/international-students/",
+      "publisher": "University of Southern California",
+      "verified": "2026-10-22",
+      "cycle": "SAT optional2027–28 academic year; Fall2028 not confirmed"
+    },
+    {
+      "id": "scenario-usc-profile",
+      "title": "First-Year Student Profile and Admission Information2026–2027",
+      "url": "https://admission.usc.edu/wp-content/uploads/first-year-student-profile.pdf",
+      "publisher": "University of Southern California",
+      "verified": "2026-10-22",
+      "cycle": "Fall2026 enrolled score submitters; LosAngeles and WashingtonDC campus aggregate"
+    },
+    {
+      "id": "scenario-usc-history",
+      "title": "History BA",
+      "url": "https://dornsife.usc.edu/hist/undergraduate-studies/department-majors/history-ba/",
+      "publisher": "University of Southern California",
+      "verified": "2026-10-22",
+      "cycle": "Current official page reviewed 2026-10-22; Fall 2028 applicability needs confirmation"
+    },
+    {
+      "id": "rutgers-new-brunswick-profile",
+      "title": "Admission review, course requirements and Fall 2026 school profiles",
+      "publisher": "Rutgers University–New Brunswick",
+      "url": "https://admissions.rutgers.edu/apply/how-we-make-decisions",
+      "verified": "2026-10-22",
+      "cycle": "Fall 2026 admitted cohort; current requirements"
+    },
+    {
+      "id": "rutgers-new-brunswick-apply",
+      "title": "Required credentials for first-year applicants",
+      "publisher": "Rutgers University–New Brunswick",
+      "url": "https://admissions.rutgers.edu/apply/first-year-applicants",
+      "verified": "2026-10-22",
+      "cycle": "Testing explicitly through 2027; Fall 2028 unconfirmed"
+    },
+    {
+      "id": "rutgers-new-brunswick-majors",
+      "title": "SAS first-year major declaration and AP guidance",
+      "publisher": "Rutgers University–New Brunswick",
+      "url": "https://sasundergrad.rutgers.edu/resources/faq/first-year-faqs",
+      "verified": "2026-10-22",
+      "cycle": "Current SAS policy"
+    },
+    {
+      "id": "rutgers-new-brunswick-sociology",
+      "title": "Sociology major requirements",
+      "publisher": "Rutgers University–New Brunswick",
+      "url": "https://sociology.sas.rutgers.edu/academics/undergraduate/major-or-minor-in-sociology",
+      "verified": "2026-10-22",
+      "cycle": "Current undergraduate major"
+    },
+    {
+      "id": "rutgers-new-brunswick-history",
+      "title": "History major requirements",
+      "publisher": "Rutgers University–New Brunswick",
+      "url": "https://history.rutgers.edu/academics/undergraduate/major-requirements",
+      "verified": "2026-10-22",
+      "cycle": "Current undergraduate major"
+    },
+    {
+      "id": "high-umd-history",
+      "title": "History Major,2026–2027 Catalog",
+      "url": "https://academiccatalog.umd.edu/undergraduate/colleges-schools/arts-humanities/history/history-major/",
+      "publisher": "University of Maryland",
+      "verified": "2026-10-22",
+      "cycle": "Current undergraduate program; university freshman admission rules remain separate"
+    },
+    {
+      "id": "high-uf-history",
+      "title": "History BA",
+      "url": "https://catalog.ufl.edu/UGRD/colleges-schools/UGLAS/HY_BA/",
+      "publisher": "University of Florida",
+      "verified": "2026-10-22",
+      "cycle": "Current undergraduate program; university freshman admission rules remain separate"
+    },
+    {
+      "id": "high-fsu-history",
+      "title": "Department of History, Undergraduate Catalog",
+      "url": "https://as.bulletin.fsu.edu/as-bulletin/history",
+      "publisher": "Florida State University",
+      "verified": "2026-10-22",
+      "cycle": "Current undergraduate program; university freshman admission rules remain separate"
+    }
+  ],
+  "methodNotes": [
+    "No school in this file has a verified Ontario percent-to-admission formula.90–100 placements must be explicitly editorial.",
+    "SAT middle-50 bounds describe past cohorts, not minimum requirements or admission probability.",
+    "For test-optional schools, a low SAT should not automatically exclude a strong transcript; a no-score route may be compared while honoring entry-cycle policy.",
+    "For required/expected-score schools, report below/within/above historical range without converting it to safety/match/reach certainty.",
+    "Do not fill10slots by calling weakly supported schools officially eligible. Research-candidate and official-component-match views are distinct."
+  ]
+}
