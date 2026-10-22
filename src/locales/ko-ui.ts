@@ -2,7 +2,31 @@
 export const uiKo: Record<string, string> = Object.fromEntries(
   `
 Source document titles, publishers and reference cycles retain their original wording for verification.	출처 문서명·발행기관·적용 시기는 원문 대조를 위해 원래 표기를 유지합니다.
-Overview	한눈에 보기
+October 2026 · Grade 11	2026년 10월 · 11학년
+Grade 11 → Fall 2028	11학년 → 2028년 가을 입학
+Start with these three. Check them off as you go.	이 세 가지만 먼저. 끝내면 체크하세요.
+This month's priorities	이번 달 우선 할 일
+Next steps	다음 단계
+Find universities	대학 찾기
+Choose a grade range. Explore your options.	성적 범위를 고르고 나에게 맞는 대학을 찾아보세요.
+Pick your next test or practice session.	다음 시험과 연습 계획을 정하세요.
+More preparation & Ontario requirements	추가 준비 · 온타리오 졸업 요건
+How to do it	어떻게 하면 되나요?
+Fall 2028 policies need checking.	2028년 입학 정책은 재확인이 필요합니다.
+About the SAT	SAT 기본 정보
+Sending scores & test policies	점수 제출과 대학별 정책
+AP course or exam only?	AP 수업과 시험만 응시하는 것의 차이
+Preparation & credit details	준비 방법 · 학점 인정 상세
+About this resource	자료 설명 · 판본 정보
+Planning guidance, not an admission guarantee.	입학 준비를 위한 안내이며 합격을 보장하지 않습니다.
+Sources & important notes	출처와 유의사항
+Your checklist and profile stay in this browser.	체크리스트와 프로필은 이 브라우저에 저장됩니다.
+Browser storage is unavailable. Changes are kept for this session only.	브라우저 저장소를 사용할 수 없어 변경 사항은 현재 세션에만 유지됩니다.
+Start with one practice test.	모의시험 한 번부터 시작하세요.
+Take a timed Bluebook test. Then practice your weak areas.	Bluebook으로 시간을 재고 풀어본 뒤, 약한 부분을 연습하세요.
+Your SAT routine	SAT 공부 계획 자세히 보기
+Choose one or two AP subjects.	AP는 한두 과목부터 고르세요.
+Overview	지금 할 일
 My timeline	월별 준비 일정
 Universities	대학교 찾기
 SAT & AP	SAT · AP 준비

@@ -33,6 +33,7 @@ let phase = "all",
   sourceSearch = "";
 let profileExpanded = false,
   advancedExpanded = false;
+const openedDetails = new Set<string>();
 const openedMonths = new Set(["2026-10"]);
 const nav = [
   { id: "overview", label: "Overview", icon: "⌂" },
@@ -86,7 +87,10 @@ function refs(ids: string[]) {
     .join("")}</span>`;
 }
 function fact(f: Fact, title?: string) {
-  return `<div class="fact">${title ? `<h3>${esc(title)}</h3>` : ""}<p>${esc(f.text)}</p><span class="fact-status">${esc(f.status.replaceAll("-", " "))}</span>${refs(f.sourceIds)}</div>`;
+  const body = `<p>${esc(f.text)}</p><span class="fact-status">${esc(f.status.replaceAll("-", " "))}</span><details class="source-disclosure"><summary>Sources</summary>${refs(f.sourceIds)}</details>`;
+  return title
+    ? `<details class="fact fact-fold"><summary>${esc(title)}</summary>${body}</details>`
+    : `<div class="fact">${body}</div>`;
 }
 function planFact(id: string) {
   const f = planning.facts.find((f) => f.id === id);
@@ -95,16 +99,6 @@ function planFact(id: string) {
 function badge(id: string) {
   const c = categoryFor(id, profile);
   return `<span class="badge ${c === "Reach" || c === "Very High Reach" ? "reach" : c === "More Realistic" ? "realistic" : ""}">${c ?? "Select your grade range"}</span>`;
-}
-function targetInfo() {
-  const picks = recommend(universities, profile);
-  const ranges = picks.flatMap((u) =>
-    strategies[u.id].range ? [strategies[u.id].range!] : [],
-  );
-  return {
-    value: ranges.length ? Math.max(...ranges.map((r) => r.high)) : null,
-    ranges,
-  };
 }
 function profilePanel() {
   return `<section class="profile-panel" aria-label="Your planning profile"><div class="profile-main"><div><span class="eyebrow">YOUR STARTING POINT</span><label for="grade-band">Expected Ontario average</label></div><select id="grade-band"><option value="">Choose your range</option>${GRADE_BANDS.map((b) => `<option ${profile.band === b ? "selected" : ""}>${b}</option>`).join("")}</select><span class="profile-hint">An exploration filter. No GPA conversion.</span><button id="profile-toggle" class="text-button" aria-expanded="${profileExpanded}">Refine profile <span aria-hidden="true">${profileExpanded ? "−" : "+"}</span></button></div>
@@ -137,43 +131,31 @@ function profilePanel() {
      : ""
  }</section>`;
 }
-function card(u: University, compact = false) {
+function card(u: University) {
   const s = strategies[u.id];
-  const testingFact = u.facts.testing ?? u.facts.sat;
-  return `<article class="university-card"><div class="card-top"><span class="monogram" style="--school:${s.color}">${s.initials}</span><button class="save-button ${saved.has(u.id) ? "saved" : ""}" data-save="${u.id}" aria-label="${saved.has(u.id) ? "Remove" : "Save"} ${esc(u.name)} ${saved.has(u.id) ? "from" : "to"} my shortlist" aria-pressed="${saved.has(u.id)}">${saved.has(u.id) ? "✓" : "+"}</button></div><span class="small muted">${esc(u.city)}, ${esc(u.state)} · ${u.type.toLowerCase().includes("private") ? "Private" : "Public"}</span><h3>${esc(u.name)}</h3>${badge(u.id)}<p class="fit">${esc(s.fit)}</p><dl class="card-meta"><div><dt>Brand reference</dt><dd>${s.recognition} <span title="Editorial judgment; not a measured Korean recognition rate">ⓘ</span></dd></div><div><dt>Published SAT / ACT</dt><dd>${s.testing}</dd></div><div><dt>Fall 2028 deadline</dt><dd>Not yet confirmed</dd></div></dl><p class="small muted">Recheck testing for 2028. ${compact ? "" : esc(s.majors.join(" · "))}</p>${refs(testingFact?.sourceIds.slice(0, 1) ?? [])}<button class="detail-button" data-detail="${u.id}">View details <span aria-hidden="true">↗</span></button></article>`;
+  return `<article class="university-card"><div class="card-top"><span class="monogram" style="--school:${s.color}">${s.initials}</span><button class="save-button ${saved.has(u.id) ? "saved" : ""}" data-save="${u.id}" aria-label="${saved.has(u.id) ? "Remove" : "Save"} ${esc(u.name)} ${saved.has(u.id) ? "from" : "to"} my shortlist" aria-pressed="${saved.has(u.id)}">${saved.has(u.id) ? "✓" : "+"}</button></div><span class="small muted">${esc(u.state)} · ${u.type.toLowerCase().includes("private") ? "Private" : "Public"}</span><h3>${esc(u.name)}</h3>${badge(u.id)}<p class="card-subjects">${esc(s.majors.join(" · "))}</p><p class="small muted">Fall 2028 policies need checking.</p><button class="detail-button" data-detail="${u.id}">View details <span aria-hidden="true">↗</span></button></article>`;
 }
 function taskRow(t: Task) {
-  return `<div class="task-row ${checked.has(t.id) ? "is-complete" : ""}"><label><input type="checkbox" data-task="${t.id}" ${checked.has(t.id) ? "checked" : ""}><span>${esc(t.title)}</span></label><div class="task-detail"><p>${esc(t.detail)}</p><span class="fact-status">${t.kind}</span>${refs(t.sourceIds)}</div></div>`;
+  return `<div class="task-row ${checked.has(t.id) ? "is-complete" : ""}"><label><input type="checkbox" data-task="${t.id}" ${checked.has(t.id) ? "checked" : ""}><span>${esc(t.title)}</span></label><details class="task-help" data-disclosure="task-${t.id}"><summary>How to do it</summary><div class="task-detail"><p>${esc(t.detail)}</p><span class="fact-status">${t.kind}</span>${refs(t.sourceIds)}</div></details></div>`;
 }
 function pathwayPanel() {
   return `<aside class="pathway"><span class="eyebrow">A DIFFERENT ROUTE</span><h3>Build options, not false certainty.</h3><p>At 60–70%, this research does not support a balanced direct-entry shortlist at the featured universities. At 70–75%, the few options shown are research leads, not targets. Prioritize stronger marks and a transcript assessment.</p>${pathways.facts.map((f) => fact(f)).join("")}<p class="small">Conditional English admission is not an academic waiver. A branch-campus offer is not an offer at the flagship campus. Check the exact campus, pathway contract and progression rules.</p></aside>`;
 }
 function overview() {
-  const picks = recommend(universities, profile),
-    target = targetInfo();
   const now = timeline[0];
-  const done = now.tasks.filter((t) => checked.has(t.id)).length;
-  return `<section class="hero"><div class="hero-copy"><span class="eyebrow">ONTARIO → UNITED STATES</span><p class="hero-now"><strong>Do this now</strong>Review your courses · Take a SAT diagnostic · Confirm an AP host</p><a class="button" href="#timeline">Open my timeline <span aria-hidden="true">↗</span></a></div><div class="journey" aria-label="Your roadmap: Grade 11 in 2026–27, Grade 12 in 2027–28, university entry Fall 2028"><span class="eyebrow">THE JOURNEY AHEAD</span><div class="journey-step active"><span class="journey-dot"></span><div><small>YOU ARE HERE · OCT 2026</small><strong>Grade 11</strong><span>Explore & build your foundation</span></div><b>01</b></div><div class="journey-step"><span class="journey-dot"></span><div><small>2027–2028</small><strong>Grade 12</strong><span>Apply with intention</span></div><b>02</b></div><div class="journey-step"><span class="journey-dot"></span><div><small>FALL 2028</small><strong>Your U.S. university</strong><span>A new beginning</span></div><b>03</b></div><p class="small">Planning assumes normal grade progression and graduation in June 2028.</p></div></section>
- ${profilePanel()}<div class="snapshot"><div><span>ENTRY GOAL</span><strong>Fall 2028</strong><small>Grade 11 → Grade 12 → university</small></div><div><span>WORKING SHORTLIST</span><strong>${profile.band ? picks.length : "—"} <small>/ up to 6</small></strong><small>${profile.band ? "Conditional planning suggestions" : "Select your grade range"}</small></div><div><span>SAT STRATEGIC GOAL</span><strong>${target.value ?? "Diagnostic first"}</strong><small>${target.value ? "Upper-range reference · not a cutoff" : "Choose schools before setting a score"}</small></div><div><span>NEXT PLANNING CHECKPOINT</span><strong>AP registration</strong><small>Ask your host now · school order Nov 13</small></div></div><div class="small context-line">${target.value ? "SAT goal covers only shortlisted schools with verified distributions; other schools still need research. " : ""}${refs(target.ranges.flatMap((r) => r.sourceIds))}${refs(["ap-order"])}</div>
- <section class="now-layout"><div><div class="section-heading"><div><span class="eyebrow">DO THIS NOW</span><h2>Small steps. Real progress.</h2></div><span class="progress-label">${done} / ${now.tasks.length} complete</span></div><p class="muted">October 2026 · Your first three priorities, plus one useful habit.</p><div class="now-tasks">${now.tasks.map(taskRow).join("")}</div><a class="text-link" href="#timeline">See the full monthly plan →</a><details class="methodology"><summary>Ontario diploma & transcript checklist</summary>${planFact("ossd-cohort")}${planFact("ossd-financial-literacy")}${planFact("ontario-um")}${planFact("ontario-gpa")}</details></div><aside class="note-card"><span class="eyebrow">THE ONTARIO DIFFERENCE</span><h3>Your transcript.<br>Your context.</h3><p>Keep your Ontario grades in their original scale. U.S. universities assess your courses, academic history and school context individually.</p>${refs(["common-gpa", "ontario-courses"])}<hr><h4>Do this next</h4><p>Build a focused SAT routine and confirm your Grade 12 course choices.</p><h4>Later</h4><p>Summer 2027: essays and application preparation. Recheck Fall 2028 policies before applying.</p><a class="text-link" href="#exams">Plan SAT & AP →</a></aside></section>
- <section class="section"><div class="section-heading"><div><span class="eyebrow">FIND YOUR DIRECTION</span><h2>A thoughtful university shortlist.</h2></div><a href="#universities" class="text-link">Explore all ${universities.length} →</a></div><p class="muted">University name matters to you. Academic fit and a realistic application plan matter too.</p>${
-   !profile.band
-     ? `<div class="empty-state"><h3>Start with your expected average.</h3><p>Choose a range above to see conditional picks. We will not turn an Ontario average into an admission probability.</p></div>`
-     : picks.length
-       ? `<div class="cards">${picks
-           .slice(0, 3)
-           .map((u) => card(u, true))
-           .join(
-             "",
-           )}</div><button data-top-picks class="text-button">View all ${picks.length} working picks →</button>`
-       : pathwayPanel()
- }</section>`;
+  const priorities = now.tasks.slice(0, 3);
+  const done = priorities.filter((t) => checked.has(t.id)).length;
+  return `<div class="home-focus"><header class="focus-heading"><div><span class="eyebrow">October 2026 · Grade 11</span><h1>Do this now</h1><p>Start with these three. Check them off as you go.</p></div><span class="progress-label">${done} / ${priorities.length} complete</span></header>
+  <section class="priority-list" aria-label="This month's priorities">${priorities.map(taskRow).join("")}</section>
+  <a class="text-link full-plan" href="#timeline">See the full monthly plan →</a>
+  <nav class="next-destinations" aria-label="Next steps"><a href="#universities"><strong>Find universities</strong><span>Choose a grade range. Explore your options.</span><b aria-hidden="true">↗</b></a><a href="#exams"><strong>SAT & AP</strong><span>Pick your next test or practice session.</span><b aria-hidden="true">↗</b></a></nav>
+  <details class="methodology home-extra" data-disclosure="home-extra"><summary>More preparation & Ontario requirements</summary>${now.tasks.slice(3).map(taskRow).join("")}<h2>Ontario diploma & transcript checklist</h2>${planFact("ossd-cohort")}${planFact("ossd-financial-literacy")}${planFact("ontario-um")}${planFact("ontario-gpa")}<p>Planning assumes normal grade progression and graduation in June 2028.</p></details></div>`;
 }
 function timelinePage() {
   const tasks = timeline.flatMap((m) => m.tasks),
     count = tasks.filter((t) => checked.has(t.id)).length;
   const shown = timeline.filter((m) => phase === "all" || m.phase === phase);
-  return `<div class="page-intro"><span class="eyebrow">ONE MONTH AT A TIME</span><h1>My U.S. College Timeline</h1><p>From October 2026 to your Fall 2028 arrival. A clear next step, every month.</p></div><div class="timeline-toolbar"><div><strong>${count} of ${tasks.length} tasks complete</strong><progress value="${count}" max="${tasks.length}" aria-label="Timeline completion"></progress><span class="small muted">Saved in this browser · no account needed</span></div><label>Show a stage<select id="phase"><option value="all">Entire journey</option>${[...new Set(timeline.map((m) => m.phase))].map((p) => `<option ${phase === p ? "selected" : ""}>${p}</option>`).join("")}</select></label><label class="checkline"><input type="checkbox" id="hide-completed" ${hideCompleted ? "checked" : ""}>Hide completed tasks</label></div><div class="notice">This is a planning calendar anchored to October 21, 2026. College application dates for Fall 2028 remain unconfirmed; future task months are preparation windows, not official deadlines. ${refs(["sat-dates", "ap-order"])}</div><div class="timeline">${shown
+  return `<div class="page-intro"><h1>My timeline</h1><p>From October 2026 to your Fall 2028 arrival. A clear next step, every month.</p></div><div class="timeline-toolbar"><div><strong>${count} of ${tasks.length} tasks complete</strong><progress value="${count}" max="${tasks.length}" aria-label="Timeline completion"></progress><span class="small muted">Saved in this browser · no account needed</span></div><label>Show a stage<select id="phase"><option value="all">Entire journey</option>${[...new Set(timeline.map((m) => m.phase))].map((p) => `<option ${phase === p ? "selected" : ""}>${p}</option>`).join("")}</select></label><label class="checkline"><input type="checkbox" id="hide-completed" ${hideCompleted ? "checked" : ""}>Hide completed tasks</label></div><div class="notice">This is a planning calendar anchored to October 21, 2026. College application dates for Fall 2028 remain unconfirmed; future task months are preparation windows, not official deadlines. ${refs(["sat-dates", "ap-order"])}</div><div class="timeline">${shown
     .map((m) => {
       const allDone = m.tasks.every((t) => checked.has(t.id));
       const visible = m.tasks.filter(
@@ -206,7 +188,7 @@ function universitiesPage() {
           .includes(universitySearch.toLowerCase()))
     );
   });
-  return `<div class="page-intro"><span class="eyebrow">FIND YOUR DIRECTION</span><h1>A name you know.<br><em>A path that fits.</em></h1><p>Explore ${universities.length} U.S. universities through an Ontario lens. Every important claim connects to its source.</p></div>${profilePanel()}<div class="tabs" aria-label="University view">${[
+  return `<div class="page-intro"><h1>Find universities</h1><p>Choose a grade range. Explore your options.</p></div>${profilePanel()}<div class="tabs" aria-label="University view">${[
     ["explore", "All universities"],
     ["picks", "My 6 picks"],
     ["saved", `Saved (${saved.size})`],
@@ -229,7 +211,7 @@ function filterSelect(
 }
 function examsPage() {
   const ranged = universities.filter((u) => strategies[u.id].range);
-  return `<div class="page-intro"><span class="eyebrow">PREPARE WITH PURPOSE</span><h1>Make testing work for you.</h1><p>School grades first. Focused preparation next. A score is one part of your application.</p></div><div class="tabs">${[
+  return `<div class="page-intro"><h1>SAT & AP</h1><p>School grades first. Focused preparation next. A score is one part of your application.</p></div><div class="tabs">${[
     ["sat", "SAT strategy"],
     ["ap", "AP priorities"],
   ]
@@ -239,7 +221,7 @@ function examsPage() {
     )
     .join("")}</div>${
     examTab === "sat"
-      ? `<section class="exam-hero"><span class="eyebrow">START WITH A DIAGNOSTIC</span><h2>Know your baseline.<br>Then choose your goal.</h2>${planFact("sat-definition")}${planFact("sat-plan")}<a class="button" href="https://satsuite.collegeboard.org/practice/practice-tests/bluebook" target="_blank" rel="noopener noreferrer">Start with official practice ↗</a></section><section class="section"><h2>Your SAT goals, grounded in real cohorts.</h2><p>These are strategic references, not official cutoffs. The lower end is a baseline comparison, not an admission minimum; the upper end is a strong study goal. Above that is a stretch goal without a promise of admission. Only verified distributions are used.</p><div class="cards">${ranged
+      ? `<section class="exam-hero"><h2>Start with one practice test.</h2><p>Take a timed Bluebook test. Then practice your weak areas.</p><details class="methodology"><summary>Your SAT routine</summary>${planFact("sat-plan")}</details><details class="methodology"><summary>About the SAT</summary>${planFact("sat-definition")}</details><a class="button" href="https://satsuite.collegeboard.org/practice/practice-tests/bluebook" target="_blank" rel="noopener noreferrer">Start with official practice ↗</a></section><details class="section section-fold"><summary>Your SAT goals, grounded in real cohorts.</summary><p>These are strategic references, not official cutoffs. The lower end is a baseline comparison, not an admission minimum; the upper end is a strong study goal. Above that is a stretch goal without a promise of admission. Only verified distributions are used.</p><div class="cards">${ranged
           .map((u) => {
             const s = strategies[u.id],
               r = s.range!;
@@ -247,7 +229,7 @@ function examsPage() {
           })
           .join(
             "",
-          )}</div><p class="small muted">For other schools, an official range was not verified here. No numerical target is assigned. An optional-test policy does not waive English proficiency requirements.</p></section><section class="section"><h2>Confirmed SAT dates · 2026–27</h2>${planFact("sat-registration")}<div class="table-wrap"><table><caption>Remaining test dates as of October 21, 2026 · times in Eastern Time</caption><thead><tr><th>Test date</th><th>Register by</th><th>Late / changes</th><th>Score release</th></tr></thead><tbody>${planning.satDates
+          )}</div><p class="small muted">For other schools, an official range was not verified here. No numerical target is assigned. An optional-test policy does not waive English proficiency requirements.</p></details><section class="section"><h2>Confirmed SAT dates · 2026–27</h2>${planFact("sat-registration")}<div class="table-wrap"><table><caption>Remaining test dates as of October 21, 2026 · times in Eastern Time</caption><thead><tr><th>Test date</th><th>Register by</th><th>Late / changes</th><th>Score release</th></tr></thead><tbody>${planning.satDates
           .filter((d) => d.date >= RESEARCH_DATE)
           .map(
             (d) =>
@@ -255,12 +237,12 @@ function examsPage() {
           )
           .join(
             "",
-          )}</tbody></table></div>${refs(["sat-dates", "sat-release"])}<details class="methodology"><summary>2027–28 anticipated dates — not confirmed</summary>${planFact("sat-future")}<p>${planning.satAnticipatedDates.map((d) => date(d.date)).join(" · ")}</p></details></section><section class="two-column section"><div><h2>Sending scores</h2>${planFact("sat-score-choice")}${planFact("sat-superscore")}</div><div><h2>What “test optional” means</h2><p>You may choose whether SAT/ACT scores are considered where the applicable policy allows. Program admission, scholarships, placement and English evidence may have separate rules. Check the entry year and campus.</p>${refs(["msu-apply", "isu-merit", "psu-requirements"])}<p>Penn State currently uses the best combined score from a single sitting rather than superscoring.</p>${refs(["psu-requirements"])}<a href="#universities" class="text-link">Read school-specific policies →</a></div></section>`
-      : `<section class="exam-hero"><span class="eyebrow">A SHORTLIST, NOT A CHECKLIST</span><h2>Choose APs that strengthen<br>the work you already do.</h2>${planFact("ap-selection")}${planFact("ap-course-exam")}</section><section class="section"><h2>Four priorities to consider</h2><p>Priorities and workload descriptions are editorial planning advice. AP courses can demonstrate advanced work, but each college evaluates rigor in school context. An exam-only score does not add a completed AP course to your transcript.</p><div class="ap-grid">${planning.apPriorities.map((a) => `<article class="ap-card"><span class="eyebrow">PRIORITY 0${a.priority} ${a.priority === 4 ? "· OPTIONAL" : ""}</span><h3>${esc(a.name)}</h3><p>${esc(a.reason)}</p><dl class="stacked"><dt>Workload & preparation</dt><dd>${esc(a.difficulty)}</dd><dt>When to consider it</dt><dd>${esc(a.timing)}</dd><dt>2027 exam</dt><dd>${date(a.examDate)} · ${esc(a.session)}</dd><dt>Score goal & credit relevance</dt><dd>${esc(a.target)}. ${esc(a.credit)}</dd></dl>${refs(a.sourceIds)}</article>`).join("")}</div><p class="small">These ASU credit examples do not transfer automatically to other universities. NYU CAS, for example, awards no credit for AP English Language; its Statistics credit does not replace Sociology’s required statistics course.</p>${refs(["nyu-ap", "nyu-sociology"])}</section><section class="section"><h2>Arrange your exam before preparing for it.</h2>${planFact("ap-order-deadline")}${planFact("ap-local-deadline")}${planFact("ap-2028")}${planFact("ap-score-policy")}</section>`
+          )}</tbody></table></div>${refs(["sat-dates", "sat-release"])}<details class="methodology"><summary>2027–28 anticipated dates — not confirmed</summary>${planFact("sat-future")}<p>${planning.satAnticipatedDates.map((d) => date(d.date)).join(" · ")}</p></details></section><details class="section section-fold"><summary>Sending scores & test policies</summary><div><h2>Sending scores</h2>${planFact("sat-score-choice")}${planFact("sat-superscore")}</div><div><h2>What “test optional” means</h2><p>You may choose whether SAT/ACT scores are considered where the applicable policy allows. Program admission, scholarships, placement and English evidence may have separate rules. Check the entry year and campus.</p>${refs(["msu-apply", "isu-merit", "psu-requirements"])}<p>Penn State currently uses the best combined score from a single sitting rather than superscoring.</p>${refs(["psu-requirements"])}<a href="#universities" class="text-link">Read school-specific policies →</a></div></details>`
+      : `<section class="exam-hero"><h2>Choose one or two AP subjects.</h2>${planFact("ap-selection")}<details class="methodology"><summary>AP course or exam only?</summary>${planFact("ap-course-exam")}</details></section><section class="section"><h2>Four priorities to consider</h2><p>Priorities and workload descriptions are editorial planning advice. AP courses can demonstrate advanced work, but each college evaluates rigor in school context. An exam-only score does not add a completed AP course to your transcript.</p><div class="ap-grid">${planning.apPriorities.map((a) => `<article class="ap-card"><span class="eyebrow">PRIORITY 0${a.priority} ${a.priority === 4 ? "· OPTIONAL" : ""}</span><h3>${esc(a.name)}</h3><p>${esc(a.reason)}</p><details class="ap-details"><summary>Preparation & credit details</summary><dl class="stacked"><dt>Workload & preparation</dt><dd>${esc(a.difficulty)}</dd><dt>When to consider it</dt><dd>${esc(a.timing)}</dd><dt>2027 exam</dt><dd>${date(a.examDate)} · ${esc(a.session)}</dd><dt>Score goal & credit relevance</dt><dd>${esc(a.target)}. ${esc(a.credit)}</dd></dl>${refs(a.sourceIds)}</details></article>`).join("")}</div><p class="small">These ASU credit examples do not transfer automatically to other universities. NYU CAS, for example, awards no credit for AP English Language; its Statistics credit does not replace Sociology’s required statistics course.</p>${refs(["nyu-ap", "nyu-sociology"])}</section><section class="section"><h2>Arrange your exam before preparing for it.</h2>${planFact("ap-order-deadline")}${planFact("ap-local-deadline")}${planFact("ap-2028")}${planFact("ap-score-policy")}</section>`
   }`;
 }
 function resourcesPage() {
-  return `<div class="page-intro"><span class="eyebrow">A SMALL, USEFUL TOOLKIT</span><h1>Start free.<br><em>Buy with a purpose.</em></h1><p>Official practice comes first. Choose a book only when you know the gap it needs to fill.</p></div><div class="resource-grid">${planning.resources.map((r, i) => `<article class="resource-card"><div class="resource-number">${String(i + 1).padStart(2, "0")}</div><div><span class="eyebrow">${esc(r.priority)}</span><h2>${esc(r.title)}</h2><p class="byline">${esc(r.author)} · ${esc(r.edition)}</p><p>${esc(r.reason)}</p><p class="small"><strong>Use for:</strong> ${esc(r.purpose)}</p>${link(r.url, r.priority.includes("free") ? "Open free resource" : "View publisher / edition", "text-link")}${refs(r.sourceIds)}</div></article>`).join("")}</div><p class="notice">Editions and availability were reviewed on October 21, 2026. No live prices or affiliate links. College Essay Essentials’ November 2026 edition was still forthcoming at this review.</p>`;
+  return `<div class="page-intro"><h1>Study resources</h1><p>Official practice comes first. Choose a book only when you know the gap it needs to fill.</p></div><div class="resource-grid">${planning.resources.map((r, i) => `<article class="resource-card"><div class="resource-number">${String(i + 1).padStart(2, "0")}</div><div><span class="eyebrow">${esc(r.priority)}</span><h2>${esc(r.title)}</h2><p>${esc(r.purpose)}</p><details class="resource-details"><summary>About this resource</summary><p class="byline">${esc(r.author)} · ${esc(r.edition)}</p><p>${esc(r.reason)}</p>${refs(r.sourceIds)}</details>${link(r.url, r.priority.includes("free") ? "Open free resource" : "View publisher / edition", "text-link")}</div></article>`).join("")}</div><p class="notice">Editions and availability were reviewed on October 21, 2026. No live prices or affiliate links. College Essay Essentials’ November 2026 edition was still forthcoming at this review.</p>`;
 }
 function sourcesPage() {
   const list = sources.filter((s) =>
@@ -271,14 +253,20 @@ function sourcesPage() {
       .toLowerCase()
       .includes(sourceSearch.toLowerCase()),
   );
-  return `<div class="page-intro"><span class="eyebrow">FOLLOW THE EVIDENCE</span><h1>Clear sources.<br><em>Honest unknowns.</em></h1><p>Admissions offices, university catalogs, College Board, Ontario education and official government guidance. Every link opens the underlying page.</p><p class="small muted">Source document titles, publishers and reference cycles retain their original wording for verification.</p></div><div class="source-summary"><div><strong>${universities.length}</strong><span>universities researched</span></div><div><strong>${sources.length}</strong><span>source records</span></div><div><strong>Oct 21, 2026</strong><span>research snapshot</span></div></div><div class="notice">“Verified” records when a source was reviewed, not a guarantee that every field is known or still current. Source cycle and each fact’s status distinguish historical references, conflicts, editorial guidance and unverified information.</div><div class="filter-bar"><label class="search-field"><span class="sr-only">Search sources</span><input type="search" id="source-search" placeholder="Search publisher, topic or university" value="${esc(sourceSearch)}"></label><span role="status" class="small muted">${list.length} source records</span></div><div class="source-list">${list.map((s) => `<article><div><span class="eyebrow" data-original-language lang="en">${esc(s.publisher)}</span><h2 data-original-language lang="en">${link(s.url, s.title)}</h2><p class="source-url">${esc(s.url)}</p><p class="small" data-original-language lang="en">${esc(s.cycle)}</p></div><span class="small muted">Reviewed<br>${date(s.verified)}</span></article>`).join("") || '<p class="empty-state">No sources match this search.</p>'}</div><details class="methodology"><summary>Research method & known limitations</summary><p>University admissions and program pages take precedence over aggregators. Official testing bodies, government agencies and publishers support testing, travel and materials. Books and essay advice are supplemental, not admissions requirements. An inaccessible or conflicting source is disclosed rather than filled with a guessed fact.</p><p>Fall 2028 application deadlines and most testing-policy commitments require rechecking. 2027–28 SAT dates are anticipated; 2028 AP dates are not yet published in the reviewed schedule. Cost figures retain their published year and exclusions. Ontario equivalents and English waivers require school-specific assessment.</p><p>This is an independently prepared planning tool, not a university service or an admissions prediction model.</p></details>`;
+  return `<div class="page-intro"><h1>Sources</h1><p>Admissions offices, university catalogs, College Board, Ontario education and official government guidance. Every link opens the underlying page.</p><p class="small muted">Source document titles, publishers and reference cycles retain their original wording for verification.</p></div><div class="source-summary"><div><strong>${universities.length}</strong><span>universities researched</span></div><div><strong>${sources.length}</strong><span>source records</span></div><div><strong>Oct 21, 2026</strong><span>research snapshot</span></div></div><div class="notice">“Verified” records when a source was reviewed, not a guarantee that every field is known or still current. Source cycle and each fact’s status distinguish historical references, conflicts, editorial guidance and unverified information.</div><div class="filter-bar"><label class="search-field"><span class="sr-only">Search sources</span><input type="search" id="source-search" placeholder="Search publisher, topic or university" value="${esc(sourceSearch)}"></label><span role="status" class="small muted">${list.length} source records</span></div><div class="source-list">${list.map((s) => `<article><div><span class="eyebrow" data-original-language lang="en">${esc(s.publisher)}</span><h2 data-original-language lang="en">${link(s.url, s.title)}</h2><p class="source-url">${esc(s.url)}</p><p class="small" data-original-language lang="en">${esc(s.cycle)}</p></div><span class="small muted">Reviewed<br>${date(s.verified)}</span></article>`).join("") || '<p class="empty-state">No sources match this search.</p>'}</div><details class="methodology"><summary>Research method & known limitations</summary><p>University admissions and program pages take precedence over aggregators. Official testing bodies, government agencies and publishers support testing, travel and materials. Books and essay advice are supplemental, not admissions requirements. An inaccessible or conflicting source is disclosed rather than filled with a guessed fact.</p><p>Fall 2028 application deadlines and most testing-policy commitments require rechecking. 2027–28 SAT dates are anticipated; 2028 AP dates are not yet published in the reviewed schedule. Cost figures retain their published year and exclusions. Ontario equivalents and English waivers require school-specific assessment.</p><p>This is an independently prepared planning tool, not a university service or an admissions prediction model.</p></details>`;
 }
 function render(restoreFocus = false) {
   const active = document.activeElement as HTMLInputElement | null;
   const focusId = restoreFocus ? active?.id : "";
   const selection = active?.type === "search" ? active.selectionStart : null;
+  app
+    .querySelectorAll<HTMLDetailsElement>("details[data-disclosure]")
+    .forEach((d) => {
+      if (d.open) openedDetails.add(d.dataset.disclosure!);
+      else openedDetails.delete(d.dataset.disclosure!);
+    });
   const r = route();
-  app.innerHTML = `<aside class="sidebar"><a class="brand" href="#overview" aria-label="UniNavo home"><span class="brand-symbol">u<span>↗</span></span><span>UniNavo<span class="brand-sub">YOUR NEXT CHAPTER</span></span></a><nav aria-label="Main navigation">${nav.map((n) => `<a href="#${n.id}" ${r === n.id ? 'aria-current="page"' : ""}><span aria-hidden="true">${n.icon}</span>${n.label}${n.id === "timeline" ? "<i></i>" : ""}</a>`).join("")}</nav><div class="sidebar-bottom"><div class="student-icon">11</div><strong>Ontario, Canada</strong><span>Grade 11 · Semester 1</span><span class="sidebar-tag">FALL 2028 ENTRY</span><p>One thoughtful step<br>at a time.</p></div></aside><div class="workspace"><header class="topbar"><span>YOUR U.S. UNIVERSITY PLANNER</span><div class="top-actions"><span class="top-status"><i></i> Planning from October 2026</span><button id="language-toggle" class="language-toggle" lang="${getLanguage() === "en" ? "ko" : "en"}" aria-label="${getLanguage() === "en" ? "한국어로 보기" : "Switch to English"}"><span aria-hidden="true">◎</span> ${getLanguage() === "en" ? "한국어" : "English"}</button></div></header><main id="main" tabindex="-1">${r === "overview" ? overview() : r === "timeline" ? timelinePage() : r === "universities" ? universitiesPage() : r === "exams" ? examsPage() : r === "resources" ? resourcesPage() : sourcesPage()}</main><footer><a class="footer-brand" href="#overview">UniNavo</a><div><strong>Built around your next step.</strong><p>Last verified: October 21, 2026. Admission policies and deadlines can change. Always confirm final requirements on the university’s official admissions website before applying.</p><span>This is planning guidance, not an admission guarantee. ${persistenceAvailable ? "Your checklist and profile stay in this browser." : "Browser storage is unavailable. Changes are kept for this session only."}</span></div><a href="#sources">View sources ↗</a></footer></div><dialog id="university-dialog" aria-labelledby="dialog-title"></dialog><div id="live-status" class="sr-only" role="status" aria-live="polite"></div>`;
+  app.innerHTML = `<aside class="sidebar"><a class="brand" href="#overview" aria-label="UniNavo home"><span class="brand-symbol">u<span>↗</span></span><span>UniNavo<span class="brand-sub">YOUR NEXT CHAPTER</span></span></a><nav aria-label="Main navigation">${nav.map((n) => `<a href="#${n.id}" ${r === n.id ? 'aria-current="page"' : ""}><span aria-hidden="true">${n.icon}</span>${n.label}${n.id === "timeline" ? "<i></i>" : ""}</a>`).join("")}</nav></aside><div class="workspace"><header class="topbar"><span>Grade 11 → Fall 2028</span><div class="top-actions"><button id="language-toggle" class="language-toggle" lang="${getLanguage() === "en" ? "ko" : "en"}" aria-label="${getLanguage() === "en" ? "한국어로 보기" : "Switch to English"}"><span aria-hidden="true">◎</span> ${getLanguage() === "en" ? "한국어" : "English"}</button></div></header><main id="main" tabindex="-1">${r === "overview" ? overview() : r === "timeline" ? timelinePage() : r === "universities" ? universitiesPage() : r === "exams" ? examsPage() : r === "resources" ? resourcesPage() : sourcesPage()}</main><footer><p>Planning guidance, not an admission guarantee.</p><details class="footer-notes"><summary>Sources & important notes</summary><p>Last verified: October 21, 2026. Admission policies and deadlines can change. Always confirm final requirements on the university’s official admissions website before applying.</p><p>${persistenceAvailable ? "Your checklist and profile stay in this browser." : "Browser storage is unavailable. Changes are kept for this session only."}</p></details><a href="#sources">View sources ↗</a></footer></div><dialog id="university-dialog" aria-labelledby="dialog-title"></dialog><div id="live-status" class="sr-only" role="status" aria-live="polite"></div>`;
   document.documentElement.lang = getLanguage();
   document.title =
     getLanguage() === "ko"
@@ -287,6 +275,11 @@ function render(restoreFocus = false) {
   const skip = document.querySelector(".skip");
   if (skip) skip.textContent = translate("Skip to content");
   localize(app);
+  app
+    .querySelectorAll<HTMLDetailsElement>("details[data-disclosure]")
+    .forEach((d) => {
+      d.open = openedDetails.has(d.dataset.disclosure!);
+    });
   bind();
   if (focusId) {
     const node = document.getElementById(focusId) as HTMLInputElement | null;
@@ -501,7 +494,7 @@ function openUniversity(id: string) {
     .map(([key, f]) => fact(f, factLabels[key] ?? key))
     .join(
       "",
-    )}</div><section class="detail-sources"><h3>Official sources</h3>${u.sources.map((source) => `<div>${link(source.url, source.title)}<p class="source-url">${esc(source.url)}</p><small><span data-original-language lang="en">${esc(source.publisher)} · ${esc(source.cycle)}</span> · <span>Reviewed</span> ${date(source.verified)}</small></div>`).join("")}</section></div>`;
+    )}</div><details class="detail-sources"><summary>Official sources</summary>${u.sources.map((source) => `<div><span data-original-language lang="en">${link(source.url, source.title)}</span><p class="source-url">${esc(source.url)}</p><small><span data-original-language lang="en">${esc(source.publisher)} · ${esc(source.cycle)}</span> · <span>Reviewed</span> ${date(source.verified)}</small></div>`).join("")}</details></div>`;
   dialog
     .querySelector(".close-dialog")!
     .addEventListener("click", () => dialog.close());
