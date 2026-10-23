@@ -47,9 +47,7 @@ let scenarioInput = normalizeCandidateInput(
     sat: profile.sat ?? 1100,
   },
 );
-let phase = "all",
-  hideCompleted = true,
-  sourceSearch = "";
+let sourceSearch = "";
 const openedDetails = new Set<string>();
 
 const nav = [
@@ -122,7 +120,6 @@ function timelinePage() {
   const months = personalTimeline(timeline, planner);
   const tasks = months.flatMap((m) => m.tasks),
     count = tasks.filter((t) => checked.has(t.id)).length;
-  const shown = months.filter((m) => phase === "all" || m.phase === phase);
   return `<div class="planner-heading"><div><span class="eyebrow">${words("ROADMAP · 2026—2028", "태율이의 로드맵 · 2026—2028")}</span><h1>${words("One step at a time.", "한 달씩, 하나씩.")}</h1><p>${words("Change the plan. Check things off. Keep moving.", "계획은 바꿔도 괜찮아요. 끝낸 일은 체크하고, 다음 할 일로.")}</p></div><div class="planner-total"><strong>${Math.round((count / Math.max(tasks.length, 1)) * 100)}<span>%</span></strong><span>${count} / ${tasks.length} ${words("complete", "완료")}</span></div></div>
   <section class="journey-chart" aria-label="${words("Monthly progress chart", "월별 진행률 차트")}">${months
     .map((m) => {
@@ -130,16 +127,11 @@ function timelinePage() {
       return `<a href="#month-${m.id}" data-jump-month="${m.id}" aria-label="${esc(month(m.id))}: ${done}/${m.tasks.length}" title="${esc(month(m.id))}: ${done}/${m.tasks.length}"><span class="chart-track"><i style="height:${Math.max((done / Math.max(m.tasks.length, 1)) * 100, 4)}%"></i></span><small>${m.id.slice(5)}</small><span class="chart-year">${m.id.endsWith("-01") || m.id === "2026-10" ? m.id.slice(0, 4) : ""}</span></a>`;
     })
     .join("")}</section>
-  <div class="timeline-toolbar"><label>Show a stage<select id="phase"><option value="all">Select</option>${[...new Set(timeline.map((m) => m.phase))].map((p) => `<option ${phase === p ? "selected" : ""}>${p}</option>`).join("")}</select></label><label class="checkline"><input type="checkbox" id="hide-completed" ${hideCompleted ? "checked" : ""}>Hide completed tasks</label><button class="text-button" id="export-plan">${words("Back up plan ↓", "계획 백업 ↓")}</button><label class="import-plan">${words("Restore backup", "백업 불러오기")}<input id="import-plan" type="file" accept="application/json,.json" class="sr-only"></label></div>
-  <div class="planner-save-note">${words("Automatically saved in this browser. Back up your plan before changing devices or clearing browser data.", "이 브라우저에 자동 저장됩니다. 기기를 바꾸거나 브라우저 데이터를 지우기 전에는 백업하세요.")}</div>
   ${plannerNotice ? `<div class="planner-notice" role="status">${esc(plannerNotice)} ${undoPlanner ? `<button id="undo-plan" class="text-button">${words("Undo", "실행 취소")}</button>` : ""}</div>` : ""}
-  <div class="timeline editable-timeline">${shown
+  <div class="timeline editable-timeline">${months
     .map((m, i) => {
       const done = m.tasks.filter((t) => checked.has(t.id)).length;
-      const visible = m.tasks.filter(
-        (t) => !hideCompleted || !checked.has(t.id),
-      );
-      return `<section class="month-card ${m.id === "2026-10" ? "current" : ""}" id="month-${m.id}"><header class="month-header"><div class="month-date"><span class="month-number">${m.id.slice(5)}</span><span>${esc(month(m.id))}</span><small>${esc(m.phase)}</small></div><div class="month-summary"><span class="eyebrow">${String(i + 1).padStart(2, "0")} / ${String(shown.length).padStart(2, "0")}</span><h2>${esc(m.title)}</h2><p>${esc(m.focus)}</p><div class="month-progress"><progress value="${done}" max="${Math.max(m.tasks.length, 1)}" aria-label="${esc(month(m.id))}"></progress><span>${done}/${m.tasks.length}</span></div></div></header><div class="month-tasks">${visible.length ? visible.map(taskRow).join("") : `<div class="month-finished"><span>✓</span><p>${words("Nothing left here. Add a new task whenever plans change.", "남은 할 일이 없어요. 계획이 바뀌면 새로 추가하세요.")}</p></div>`}<button class="add-task" data-add-task="${m.id}">＋ ${words("Add a task", "할 일 추가")}</button></div></section>`;
+      return `<section class="month-card ${m.id === "2026-10" ? "current" : ""}" id="month-${m.id}"><header class="month-header"><div class="month-date"><span class="month-number">${m.id.slice(5)}</span><span>${esc(month(m.id))}</span><small>${esc(m.phase)}</small></div><div class="month-summary"><span class="eyebrow">${String(i + 1).padStart(2, "0")} / ${String(months.length).padStart(2, "0")}</span><h2>${esc(m.title)}</h2><p>${esc(m.focus)}</p><div class="month-progress"><progress value="${done}" max="${Math.max(m.tasks.length, 1)}" aria-label="${esc(month(m.id))}"></progress><span>${done}/${m.tasks.length}</span></div></div></header><div class="month-tasks">${m.tasks.length ? m.tasks.map(taskRow).join("") : `<div class="month-finished"><span>✓</span><p>${words("Nothing left here. Add a new task whenever plans change.", "남은 할 일이 없어요. 계획이 바뀌면 새로 추가하세요.")}</p></div>`}<button class="add-task" data-add-task="${m.id}">＋ ${words("Add a task", "할 일 추가")}</button></div></section>`;
     })
     .join("")}</div>
   <details class="methodology"><summary>${words("Official dates & Ontario requirements", "공식 일정과 온타리오 준비 기준")}</summary><p>This is a planning calendar anchored to October 21, 2026. College application dates for Fall 2028 remain unconfirmed; future task months are preparation windows, not official deadlines.</p>${planFact("ossd-cohort")}${planFact("ontario-um")}${planFact("early-options")}${planFact("canadian-entry")}${planFact("federal-aid")}</details>`;
@@ -388,64 +380,12 @@ function bind() {
     .forEach((a) =>
       a.addEventListener("click", (e) => {
         e.preventDefault();
-        phase = "all";
         render();
         document
           .getElementById(`month-${a.dataset.jumpMonth}`)
           ?.scrollIntoView({ behavior: "smooth", block: "start" });
       }),
     );
-  document.querySelector("#export-plan")?.addEventListener("click", () => {
-    const blob = new Blob(
-      [
-        JSON.stringify(
-          { app: "UniNavo", planner, checked: [...checked] },
-          null,
-          2,
-        ),
-      ],
-      { type: "application/json" },
-    );
-    const url = URL.createObjectURL(blob),
-      a = document.createElement("a");
-    a.href = url;
-    a.download = "uninavo-plan.json";
-    a.click();
-    setTimeout(() => URL.revokeObjectURL(url), 1000);
-  });
-  document
-    .querySelector<HTMLInputElement>("#import-plan")
-    ?.addEventListener("change", async (e) => {
-      const file = (e.target as HTMLInputElement).files?.[0];
-      if (!file) return;
-      try {
-        if (file.size > 2000000) throw new Error("size");
-        const data = JSON.parse(await file.text());
-        if (
-          data.app !== "UniNavo" ||
-          data.planner?.version !== 1 ||
-          !Array.isArray(data.planner.edits) ||
-          !Array.isArray(data.planner.deleted) ||
-          !Array.isArray(data.checked)
-        )
-          throw new Error("format");
-        rememberPlan();
-        planner = normalizePlanner(data.planner, timeline);
-        checked.clear();
-        data.checked
-          .filter((x: unknown) => typeof x === "string")
-          .forEach((id: string) => checked.add(id));
-        plannerNotice = words("Backup restored.", "백업을 불러왔어요.");
-        persistPlan();
-      } catch {
-        plannerNotice = words(
-          "Could not read this backup. Your plan was not changed.",
-          "백업 파일을 읽을 수 없어요. 기존 계획은 그대로입니다.",
-        );
-        render();
-      }
-    });
-
   document.getElementById("language-toggle")?.addEventListener("click", () => {
     persistenceAvailable =
       setLanguage(getLanguage() === "en" ? "ko" : "en") && persistenceAvailable;
@@ -486,18 +426,6 @@ function bind() {
         ?.focus({ preventScroll: true });
     }),
   );
-  document
-    .querySelector<HTMLSelectElement>("#phase")
-    ?.addEventListener("change", (e) => {
-      phase = (e.target as HTMLSelectElement).value;
-      render(true);
-    });
-  document
-    .querySelector<HTMLInputElement>("#hide-completed")
-    ?.addEventListener("change", (e) => {
-      hideCompleted = (e.target as HTMLInputElement).checked;
-      render(true);
-    });
   document
     .querySelector<HTMLInputElement>("#source-search")
     ?.addEventListener("input", (e) => {
