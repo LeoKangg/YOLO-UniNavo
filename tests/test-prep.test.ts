@@ -27,7 +27,10 @@ test("schools with a published SAT range are grouped by the middle of that range
   );
   for (const b of bands) {
     const mids = b.schools.map((s) => s.satRange!.low + s.satRange!.high);
-    assert.deepEqual(mids, [...mids].sort((x, y) => x - y));
+    assert.deepEqual(
+      mids,
+      [...mids].sort((x, y) => x - y),
+    );
   }
   assert.ok(satBands(scenarioSchools, null).every((b) => !b.containsScore));
   assert.equal(satBands(scenarioSchools, 1600)[4].containsScore, true);
@@ -54,7 +57,10 @@ test("a target SAT is kept only as a valid total and survives storage", () => {
   );
   assert.equal(setSatTarget(emptyGrades(), 1305).satTarget, null);
   assert.equal(setSatTarget(withTarget, null).satTarget, null);
-  assert.equal(normalizeGrades({ version: 1, satTarget: 2000 }).satTarget, null);
+  assert.equal(
+    normalizeGrades({ version: 1, satTarget: 2000 }).satTarget,
+    null,
+  );
   assert.equal(emptyGrades().satTarget, null);
 });
 

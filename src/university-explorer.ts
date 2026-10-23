@@ -195,7 +195,7 @@ function browse(
 function compare(ctx: ExplorerContext, saved: Set<string>) {
   const schools = scenarioSchools.filter((s) => saved.has(s.id)).sort(qsOrder);
   if (!schools.length)
-    return `<div class="comparison-empty panel"><h2>${w("Nothing saved yet", "아직 저장한 대학이 없어요")}</h2><p class="muted">${w("Press + on a school to compare it here.", "대학의 + 버튼을 누르면 여기서 나란히 비교할 수 있어요.")}</p><button class="text-button" data-explorer-mode="browse">${w("Browse universities →", "대학 둘러보기 →")}</button></div>`;
+    return `<div class="compare-empty panel"><div class="compare-empty-art" aria-hidden="true"><span></span><span></span><span></span></div><h2>${w("Nothing saved yet", "아직 저장한 대학이 없어요")}</h2><p class="muted">${w("Press + on any school and it lines up here, side by side.", "대학 카드나 목록의 + 버튼을 누르면 여기에 나란히 모여요.")}</p><div class="compare-empty-actions"><button class="button" data-explorer-mode="scenario">${w("From my shortlist", "내 후보 10곳에서 고르기")}</button><button class="button button-light" data-explorer-mode="browse">${w("Browse universities", "대학 둘러보기")}</button></div></div>`;
   const sat = ctx.mine?.sat ?? null;
   const policy = (s: ScenarioSchool) =>
     ({
@@ -233,6 +233,23 @@ function matching(input: ScenarioInput, saved: Set<string>) {
       "",
     )}</tbody></table></div><p class="small muted shortlist-note">${w("Research candidates, not an admission prediction. Confirm each university's official requirements before applying.", "합격 가능성 판정이 아닌 검토 후보입니다. 지원 전 각 대학 공식 요건을 확인하세요.")}</p><details class="methodology"><summary>${w("About this list", "이 목록에 대해")}</summary>${disclosure()}<p class="candidate-selection-note">${esc(gradeResearchNote(input.band, getLanguage() === "ko"))}</p></details>`;
 }
+// Compact labels for dense grids: "캘리포니아 대학교 데이비스" → "UC 데이비스".
+function shortName(s: ScenarioSchool) {
+  if (shortNames[s.id]) return w(...shortNames[s.id]);
+  if (getLanguage() !== "ko")
+    return s.name
+      .replace(/^University of California,\s*/, "UC ")
+      .replace(/^The\s+/, "")
+      .replace(/^University of\s+/, "")
+      .replace(/\s+University$/, "")
+      .replace(/^(.*) State University$/, "$1 State");
+  return s.nameKo
+    .replace(/^캘리포니아 대학교\s*/, "UC ")
+    .replace(/주립대학교/, "주립")
+    .replace(/\s*대학교/, "")
+    .replace(/\s*\(.*\)$/, "")
+    .trim();
+}
 const shortNames: Record<string, [string, string]> = {
   harvard: ["Harvard", "하버드"],
   "michigan-ann-arbor": ["Michigan–Ann Arbor", "미시간 앤아버"],
@@ -263,7 +280,7 @@ function matrix(input: ScenarioInput, ctx: ExplorerContext) {
     (r) => r.band === selBand && String(r.sat) === selSat,
   );
   const cellName = (s: ScenarioSchool) =>
-    esc(shortNames[s.id] ? w(...shortNames[s.id]) : name(s));
+    `<span title="${esc(name(s))}">${esc(shortName(s))}</span>`;
   const grid = `<div class="matrix-grid">${"<span></span>"}${SAT_SCENARIOS.map((n) => `<span class="matrix-col">SAT ${n}${n === mineRef ? ` · ${w("me", "나")}` : n === targetRef ? ` · ${w("target", "목표")}` : ""}</span>`).join("")}${VISIBLE_GRADE_BANDS.map(
     (b) =>
       `<span class="matrix-row ${b === mineBand ? "is-mine" : ""}">${b}${b === mineBand ? ` · ${w("me", "나")}` : ""}</span>${SAT_SCENARIOS.map(
@@ -280,7 +297,7 @@ function matrix(input: ScenarioInput, ctx: ExplorerContext) {
             .join(" ");
           return `<button class="${cls}" data-scenario-choice="${b}|${sat}" aria-pressed="${isSel}" aria-label="${esc(b)} SAT ${sat} ${w("view 10 candidates", "후보 10곳 보기")}">${cell.selected
             .slice(0, 2)
-            .map((s) => `<span>${cellName(s)}</span>`)
+            .map(cellName)
             .join("")}<small>+${cell.selected.length - 2}</small></button>`;
         },
       ).join("")}`,
@@ -289,13 +306,13 @@ function matrix(input: ScenarioInput, ctx: ExplorerContext) {
     ? `<aside class="matrix-panel panel" aria-labelledby="cell-title"><span class="small muted">${esc(selected.band)} · SAT ${selected.sat}</span><h2 id="cell-title">${w("10 schools to investigate", "검토 후보 10곳")}</h2>${selected.selected
         .map(
           (s) =>
-            `<div class="date-row"><button class="link-button" data-detail="${s.id}">${esc(name(s))}</button>${mineSat !== null ? positionChipOnly(s, mineSat) : ""}</div>`,
+            `<div class="date-row"><button class="link-button" data-detail="${s.id}">${esc(name(s))}</button>${mineSat !== null ? positionChipOnly(s, mineSat) : `<span class="small muted">${s.satRange ? `SAT ${s.satRange.low}–${s.satRange.high}` : "—"}</span>`}</div>`,
         )
         .join(
           "",
         )}<button class="button matrix-open" data-open-cell="${esc(selected.band)}|${selected.sat}">${w("Open this combination", "이 조합으로 자세히 보기")}</button></aside>`
     : "";
-  return `<div class="matrix-layout"><section class="panel">${grid}<div class="matrix-legend small muted"><span><i class="lg-sel"></i>${w("Selected", "지금 보는 칸")}</span><span><i class="lg-target"></i>${w("Target SAT", "목표 SAT")}</span><span><i class="lg-mine"></i>${w("My grade row", "내 내신 줄")}</span></div></section>${panel}</div><details class="methodology"><summary>${w("How this table was made", "이 표는 어떻게 만들었나요")}</summary>${disclosure()}<p>${w("Each row is lower-inclusive and upper-exclusive, except100% is included in the last row. Some low-grade rows repeat at higher SAT scores because academic requirements remain.", "내신 구간의 시작점은 포함, 끝점은 다음 구간에 포함하며 100%는 마지막 구간입니다. 낮은 내신 구간은 SAT가 올라도 학업 요건이 남아 일부 목록이 같습니다.")}</p><button class="text-button" id="export-scenarios">${w("Download all 250 candidate entries ↓", "전체 250개 후보 항목 내려받기 ↓")}</button></details>`;
+  return `<div class="matrix-layout"><section class="panel">${grid}<div class="matrix-legend small muted"><span><i class="lg-sel"></i>${w("Selected", "지금 보는 칸")}</span><span><i class="lg-target"></i>${w("Target SAT", "목표 SAT")}</span><span><i class="lg-mine"></i>${w("My grade row", "내 내신 줄")}</span></div></section>${panel}</div><details class="methodology matrix-method"><summary>${w("How this table was made", "이 표는 어떻게 만들었나요")}</summary>${disclosure()}<p>${w("Each row is lower-inclusive and upper-exclusive, except100% is included in the last row. Some low-grade rows repeat at higher SAT scores because academic requirements remain.", "내신 구간의 시작점은 포함, 끝점은 다음 구간에 포함하며 100%는 마지막 구간입니다. 낮은 내신 구간은 SAT가 올라도 학업 요건이 남아 일부 목록이 같습니다.")}</p><button class="text-button" id="export-scenarios">${w("Download all 250 candidate entries ↓", "전체 250개 후보 항목 내려받기 ↓")}</button></details>`;
 }
 function eliteScoreTable(input: ScenarioInput) {
   const score = input.sat ?? 1500;
@@ -415,7 +432,7 @@ export function renderExplorer(
             : mode === "sat-map"
               ? selectors(input) + scoreMap(input)
               : manual + matching(input, saved);
-  return `<div class="uni-head"><div><h1 class="home-title">${w("Universities", "대학")}</h1><p class="basis-line">${basis}</p></div><div class="segmented uni-tabs" role="group" aria-label="${w("University view", "대학 보기")}">${tabs}</div></div>${body}${renderReviewNotes()}<details class="methodology"><summary>${w("How the ten candidates were selected", "10곳 선정 방법 · 사실과 판단의 구분")}</summary><p>${w("These are manually curated research shortlists from the displayed pool. Lower-grade cases prioritize published lower GPA requirements, alternative routes and individual review; stronger-grade cases broaden to selective universities, college-specific SAT profiles and testing policies. A place in a grade band is editorial judgment, not a verified Ontario equivalency or a probability model. We do not claim these are the ten best attainable universities in the entire United States.", "표시된 조사 목록에서 검토 후보를 직접 선정했습니다. 낮은 내신 구간은 낮은 공개 GPA 요건·대체 경로·개별 심사부터 조사하고, 높은 구간은 선발적인 대학·단과대학별 SAT 분포·시험 정책까지 넓힙니다. 구간 배치는 편집 판단이며 확인된 온타리오 환산값이나 합격 예측 모델이 아닙니다. 미국 전체에서 입학 가능한 최상위 10곳이라고 단정하지 않습니다.")}</p><p>${w("Official program availability is verified. Toledo publishes different entry GPA requirements by college; Purdue publishes college-level profiles. These comparisons do not identify the absolute easiest major. At schools such as Maryland and Florida, choosing a humanities major does not lower university admission requirements.", "전공 운영 여부는 공식 안내로 확인했습니다. 톨레도는 단과대학별 GPA 요건, 퍼듀는 단과대학별 입학 집단 자료를 공개합니다. 이것만으로 가장 쉬운 학과를 확정하지 않습니다. 메릴랜드·플로리다처럼 인문계 선택이 대학 입학 조건을 낮추지 않는 곳도 표시했습니다.")}</p><p>${w("SAT ranges retain their cohort, campus and year. Current policies are not necessarily Fall 2028 policies. Ranks use historical 2026 U.S.News National Universities evidence; no measured Korean-recognition ranking was established.", "SAT 수치는 집단·캠퍼스·연도를 함께 표시합니다. 현행 정책이 2028년 가을에도 같다고 가정하지 않습니다. 순위는 비교용 U.S. News 2026 종합대학 자료이며 한국 인지도 조사 순위는 확인되지 않았습니다.")}</p></details>`;
+  return `<div class="uni-head"><div><h1 class="home-title">${w("Universities", "대학")}</h1><p class="basis-line">${basis}</p></div><div class="segmented uni-tabs" role="group" aria-label="${w("University view", "대학 보기")}">${tabs}</div></div>${body}<section class="method-notes" aria-label="${w("Sources and method", "자료와 선정 방법")}"><h2>${w("Sources and method", "자료와 선정 방법")}</h2>${renderReviewNotes()}<details class="methodology"><summary>${w("How the ten candidates were selected", "10곳 선정 방법 · 사실과 판단의 구분")}</summary><p>${w("These are manually curated research shortlists from the displayed pool. Lower-grade cases prioritize published lower GPA requirements, alternative routes and individual review; stronger-grade cases broaden to selective universities, college-specific SAT profiles and testing policies. A place in a grade band is editorial judgment, not a verified Ontario equivalency or a probability model. We do not claim these are the ten best attainable universities in the entire United States.", "표시된 조사 목록에서 검토 후보를 직접 선정했습니다. 낮은 내신 구간은 낮은 공개 GPA 요건·대체 경로·개별 심사부터 조사하고, 높은 구간은 선발적인 대학·단과대학별 SAT 분포·시험 정책까지 넓힙니다. 구간 배치는 편집 판단이며 확인된 온타리오 환산값이나 합격 예측 모델이 아닙니다. 미국 전체에서 입학 가능한 최상위 10곳이라고 단정하지 않습니다.")}</p><p>${w("Official program availability is verified. Toledo publishes different entry GPA requirements by college; Purdue publishes college-level profiles. These comparisons do not identify the absolute easiest major. At schools such as Maryland and Florida, choosing a humanities major does not lower university admission requirements.", "전공 운영 여부는 공식 안내로 확인했습니다. 톨레도는 단과대학별 GPA 요건, 퍼듀는 단과대학별 입학 집단 자료를 공개합니다. 이것만으로 가장 쉬운 학과를 확정하지 않습니다. 메릴랜드·플로리다처럼 인문계 선택이 대학 입학 조건을 낮추지 않는 곳도 표시했습니다.")}</p><p>${w("SAT ranges retain their cohort, campus and year. Current policies are not necessarily Fall 2028 policies. Ranks use historical 2026 U.S.News National Universities evidence; no measured Korean-recognition ranking was established.", "SAT 수치는 집단·캠퍼스·연도를 함께 표시합니다. 현행 정책이 2028년 가을에도 같다고 가정하지 않습니다. 순위는 비교용 U.S. News 2026 종합대학 자료이며 한국 인지도 조사 순위는 확인되지 않았습니다.")}</p></details></section>`;
 }
 export type DetailTab =
   | "summary"

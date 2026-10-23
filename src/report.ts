@@ -49,7 +49,22 @@ export interface Report {
   coursesUpdated: number;
   notes: Note[];
   meetings: Meeting[];
+  meetingMinutes: number;
   tone: "good" | "watch" | "quiet";
+}
+// The n periods ending with the one containing the anchor, oldest first.
+export function periodSeries(period: Period, anchor: string, n: number) {
+  const list = [rangeFor(period, anchor)];
+  while (list.length < n) list.unshift(previousRange(period, list[0]));
+  return list;
+}
+export const reportHash = (period: Period, r: Range) =>
+  `#report/${period}/${r.start}`;
+export function parseReportHash(
+  hash: string,
+): { period: Period; anchor: string } | null {
+  const m = hash.match(/^#report\/(week|month)\/(\d{4}-\d{2}-\d{2})$/);
+  return m ? { period: m[1] as Period, anchor: m[2] } : null;
 }
 
 export function buildReport(input: {
@@ -100,6 +115,7 @@ export function buildReport(input: {
     coursesUpdated,
     notes,
     meetings,
+    meetingMinutes: meetings.reduce((n, m) => n + m.minutes, 0),
     tone,
   };
 }

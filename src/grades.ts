@@ -39,6 +39,13 @@ export interface GradesState {
   sat: SatAttempt[];
   ap: ApPlan[];
   satTarget: number | null;
+  // Earlier marks, kept when a course's mark changes, for monthly reports.
+  history: MarkRecord[];
+}
+export interface MarkRecord {
+  courseId: string;
+  date: string;
+  value: number;
 }
 export const emptyGrades = (): GradesState => ({
   version: 1,
@@ -46,6 +53,7 @@ export const emptyGrades = (): GradesState => ({
   sat: [],
   ap: [],
   satTarget: null,
+  history: [],
 });
 const validTotal = (v: unknown): v is number =>
   typeof v === "number" &&
@@ -99,14 +107,58 @@ const replaceById = <T extends { id: string }>(list: T[], item: T) =>
   list.some((x) => x.id === item.id)
     ? list.map((x) => (x.id === item.id ? item : x))
     : [...list, item];
-export const saveCourse = (s: GradesState, c: CourseGrade): GradesState => ({
-  ...s,
-  courses: replaceById(s.courses, c),
-});
+export function saveCourse(s: GradesState, c: CourseGrade): GradesState {
+  const before = s.courses.find((x) => x.id === c.id);
+  const old = before ? courseScore(before) : null;
+  const changed = before && old !== null && old !== courseScore(c);
+  return {
+    ...s,
+    courses: replaceById(s.courses, c),
+    history: changed
+      ? [...s.history, { courseId: c.id, date: before.updatedAt, value: old }]
+      : s.history,
+  };
+}
 export const removeCourse = (s: GradesState, id: string): GradesState => ({
   ...s,
   courses: s.courses.filter((c) => c.id !== id),
+  history: s.history.filter((h) => h.courseId !== id),
 });
+// The mark that was current on a date: the course's own mark once it was
+// entered, otherwise the latest earlier record.
+export function scoreAt(
+  s: GradesState,
+  courseId: string,
+  date: string,
+): number | null {
+  const c = s.courses.find((x) => x.id === courseId);
+  if (c && c.updatedAt <= date) return courseScore(c);
+  const past = s.history
+    .filter((h) => h.courseId === courseId && h.date <= date)
+    .sort((a, b) => a.date.localeCompare(b.date))
+    .at(-1);
+  return past ? past.value : null;
+}
+export function courseChanges(
+  s: GradesState,
+  range: { start: string; end: string },
+) {
+  const d = new Date(`${range.start}T12:00:00Z`);
+  d.setUTCDate(d.getUTCDate() - 1);
+  const before = d.toISOString().slice(0, 10);
+  const levels = s.courses
+    .filter((c) => courseScore(c) !== null)
+    .map((c) => c.grade);
+  const latest = levels.length ? Math.max(...levels) : null;
+  return s.courses
+    .filter((c) => c.grade === latest)
+    .map((course) => ({
+      course,
+      before: scoreAt(s, course.id, before),
+      after: scoreAt(s, course.id, range.end),
+    }))
+    .filter((c) => c.after !== null);
+}
 export const saveSat = (s: GradesState, a: SatAttempt): GradesState => ({
   ...s,
   sat: replaceById(s.sat, a).sort((x, y) => x.date.localeCompare(y.date)),
@@ -236,5 +288,17 @@ export function normalizeGrades(input: unknown): GradesState {
     sat: sat.sort((x, y) => x.date.localeCompare(y.date)),
     ap,
     satTarget: validTotal(g.satTarget) ? g.satTarget : null,
+    history: list(g.history)
+      .filter(
+        (h) =>
+          validId(h.courseId) &&
+          validDate(h.date) &&
+          typeof mark(h.value) === "number",
+      )
+      .map((h) => ({
+        courseId: h.courseId as string,
+        date: h.date as string,
+        value: h.value as number,
+      })),
   };
 }

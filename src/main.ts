@@ -33,6 +33,7 @@ import {
   type ReportUi,
 } from "./report-page.ts";
 import { gradeInput } from "./matching.ts";
+import { parseReportHash, rangeFor, reportHash } from "./report.ts";
 import {
   bindTestPrep,
   renderTestPrep,
@@ -77,7 +78,10 @@ const gradesUi: GradesUi = {
 };
 let journal: JournalState = normalizeJournal(readLocal("journal"));
 const today = todayIso();
-const reportUi: ReportUi = { period: "week", anchor: today };
+const reportUi: ReportUi = parseReportHash(location.hash) ?? {
+  period: "week",
+  anchor: today,
+};
 const prepUi: PrepUi = {
   sat: "targets",
   ap: "picks",
@@ -131,9 +135,11 @@ const esc = (s: unknown) =>
 const route = () =>
   location.hash === "#exams"
     ? "sat"
-    : routes.includes(location.hash.slice(1))
-      ? location.hash.slice(1)
-      : "home";
+    : location.hash.startsWith("#report")
+      ? "report"
+      : routes.includes(location.hash.slice(1))
+        ? location.hash.slice(1)
+        : "home";
 const navFor = (r: string) =>
   examTabs.includes(r) ? "sat" : r === "timeline" ? "home" : r;
 const date = (s: string) =>
@@ -616,7 +622,9 @@ function bind() {
           words("Added to this month's tasks.", "이번 달 할 일에 추가했어요."),
         );
       },
-      rerender: () => render(),
+      go: (period, anchor) => {
+        location.hash = reportHash(period, rangeFor(period, anchor));
+      },
       announce,
     });
 }
@@ -763,6 +771,8 @@ document.querySelector(".skip")?.addEventListener("click", (event) => {
   document.getElementById("main")?.focus();
 });
 window.addEventListener("hashchange", () => {
+  const linked = parseReportHash(location.hash);
+  if (linked) Object.assign(reportUi, linked);
   gradesUi.notice = "";
   gradesUi.canUndo = false;
   render();
