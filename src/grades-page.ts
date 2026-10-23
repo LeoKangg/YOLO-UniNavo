@@ -1,6 +1,5 @@
 import { getLanguage, localize } from "./i18n.ts";
 import {
-  EDITORS,
   coreAverage,
   gradeBand,
   removeAp,
@@ -36,13 +35,6 @@ const shortDate = (iso: string) =>
     { month: "short", day: "numeric", timeZone: "UTC" },
   );
 
-const editorLabels: Record<EditorId, [string, string]> = {
-  student: ["Taeyul", "태율"],
-  mom: ["Mom", "엄마"],
-  dad: ["Dad", "아빠"],
-  teacher: ["Teacher", "선생님"],
-};
-const editorName = (id: EditorId) => w(...editorLabels[id]);
 const tagLabels: Record<CourseTag, [string, string]> = {
   required: ["Required", "필수"],
   major: ["Major-related", "전공 관련"],
@@ -65,10 +57,10 @@ export interface GradesUi {
 function courseTable(courses: CourseGrade[]) {
   if (!courses.length)
     return `<p class="empty-state grades-empty">${w("No courses for this grade yet. Add the first one.", "이 학년에 입력한 과목이 아직 없어요. 첫 과목을 추가하세요.")}</p>`;
-  return `<div class="table-wrap"><table class="grades-table"><thead><tr><th>${w("Code", "코드")}</th><th>${w("Course", "과목")}</th><th class="num">${w("Midterm", "중간")}</th><th class="num">${w("Final", "최종")}</th><th>${w("Last entry", "마지막 입력")}</th><th><span class="sr-only">${w("Actions", "관리")}</span></th></tr></thead><tbody>${courses
+  return `<div class="table-wrap"><table class="grades-table"><thead><tr><th>${w("Code", "코드")}</th><th>${w("Course", "과목")}</th><th class="num">${w("Midterm", "중간")}</th><th class="num">${w("Final", "최종")}</th><th>${w("Updated", "마지막 수정")}</th><th><span class="sr-only">${w("Actions", "관리")}</span></th></tr></thead><tbody>${courses
     .map(
       (c) =>
-        `<tr><td class="muted" data-original-language>${esc(c.code) || "—"}</td><td><span data-original-language>${esc(c.name)}</span> <span class="grade-tag tag-${c.tag}">${w(...tagLabels[c.tag])}</span></td><td class="num ${c.final === null ? "strong" : "muted"}">${c.midterm ?? "—"}</td><td class="num ${c.final === null ? "muted" : "strong"}">${c.final ?? "—"}</td><td class="small muted">${editorName(c.updatedBy)} · ${shortDate(c.updatedAt)}</td><td class="row-actions"><button class="text-button" data-edit-course="${c.id}">${w("Edit", "수정")}</button><button class="text-button" data-delete-course="${c.id}" aria-label="${esc(w(`Delete ${c.name}`, `${c.name} 삭제`))}">${w("Delete", "삭제")}</button></td></tr>`,
+        `<tr><td class="muted" data-original-language>${esc(c.code) || "—"}</td><td><span data-original-language>${esc(c.name)}</span> <span class="grade-tag tag-${c.tag}">${w(...tagLabels[c.tag])}</span></td><td class="num ${c.final === null ? "strong" : "muted"}">${c.midterm ?? "—"}</td><td class="num ${c.final === null ? "muted" : "strong"}">${c.final ?? "—"}</td><td class="small muted">${shortDate(c.updatedAt)}</td><td class="row-actions"><button class="text-button" data-edit-course="${c.id}">${w("Edit", "수정")}</button><button class="text-button" data-delete-course="${c.id}" aria-label="${esc(w(`Delete ${c.name}`, `${c.name} 삭제`))}">${w("Delete", "삭제")}</button></td></tr>`,
     )
     .join("")}</tbody></table></div>`;
 }
@@ -109,9 +101,6 @@ function apSection(state: GradesState) {
       : `<p class="muted">${w("No AP subjects planned yet.", "아직 계획한 AP 과목이 없어요.")}</p>`
   }<form id="ap-form" class="ap-add"><label>${w("AP subject", "AP 과목")}<input name="course" required maxlength="80" placeholder="${w("e.g. AP Statistics", "예: AP Statistics")}"></label><label>${w("How", "방식")}<select name="mode"><option value="exam-only">${w("Exam only", "시험만 응시")}</option><option value="course">${w("Course and exam", "수업과 시험")}</option></select></label><button class="button" type="submit">${w("Add", "추가")}</button></form></section>`;
 }
-
-export const editorPicker = (editor: EditorId) =>
-  `<label class="editor-pick">${w("Who is entering", "입력하는 사람")}<select id="editor-pick">${EDITORS.map((id) => `<option value="${id}" ${id === editor ? "selected" : ""}>${editorName(id)}</option>`).join("")}</select></label>`;
 
 export function renderGradesPage(state: GradesState, ui: GradesUi) {
   const courses = state.courses.filter((c) => c.grade === ui.grade);

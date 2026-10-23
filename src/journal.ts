@@ -7,6 +7,7 @@ export interface Note {
   author: EditorId;
   date: string;
   text: string;
+  schoolId?: string;
 }
 export interface Meeting {
   id: string;
@@ -44,6 +45,8 @@ export const addNote = (s: JournalState, note: Note): JournalState => ({
   ...s,
   notes: byDate([...s.notes.filter((n) => n.id !== note.id), note]),
 });
+export const schoolNotes = (s: JournalState, schoolId: string) =>
+  s.notes.filter((n) => n.schoolId === schoolId);
 export const removeNote = (s: JournalState, id: string): JournalState => ({
   ...s,
   notes: s.notes.filter((n) => n.id !== id),
@@ -85,6 +88,7 @@ export function normalizeJournal(input: unknown): JournalState {
       author: author(n.author),
       date: n.date as string,
       text: text(n.text, 2000),
+      ...(validId(n.schoolId) ? { schoolId: n.schoolId } : {}),
     }));
   const meetings: Meeting[] = list(j.meetings)
     .filter(

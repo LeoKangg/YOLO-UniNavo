@@ -3,7 +3,8 @@ import { getLanguage, setLanguage, translate, localize } from "./i18n.ts";
 import { universities, sources, sourceMap, planning } from "./data/index.ts";
 import { evidenceMap } from "./data/evidence.ts";
 import { renderExplorer, renderScenarioDetail } from "./university-explorer.ts";
-import type { ExplorerMode } from "./university-explorer.ts";
+import type { DetailTab, ExplorerMode } from "./university-explorer.ts";
+import { emptyBrowse, type BrowseFilters } from "./school-browse.ts";
 import { normalizeCandidateInput, candidateCsv } from "./candidate-plans.ts";
 import { scenarioSchools, scenarioSchoolMap } from "./data/scenario-catalog.ts";
 import comparisonContext from "../research/comparison-context.json" with { type: "json" };
@@ -11,22 +12,18 @@ import { timeline } from "./data/timeline.ts";
 import { normalizePlanner, personalTimeline, saveTaskEdit } from "./planner.ts";
 import type { PersonalTask } from "./planner.ts";
 import type { Fact, University } from "./types.ts";
-import {
-  EDITORS,
-  normalizeGrades,
-  type EditorId,
-  type GradesState,
-} from "./grades.ts";
+import { normalizeGrades, type EditorId, type GradesState } from "./grades.ts";
 import {
   bindGradesPage,
-  editorPicker,
   renderGradesPage,
   todayIso,
   type GradesUi,
 } from "./grades-page.ts";
 import {
+  addNote,
   markCompleted,
   normalizeJournal,
+  schoolNotes,
   type JournalState,
 } from "./journal.ts";
 import { renderHomePage } from "./home-page.ts";
@@ -59,7 +56,7 @@ let planner = normalizePlanner(readLocal("planner"), timeline);
 let undoPlanner: { planner: typeof planner; checked: string[] } | null = null;
 let plannerNotice = "";
 const words = (en: string, ko: string) => (getLanguage() === "ko" ? ko : en);
-let explorerMode: ExplorerMode = "all-scenarios",
+let explorerMode: ExplorerMode = "browse",
   explorerSearch = "";
 let scenarioInput = normalizeCandidateInput(
   readLocal("scenario") ?? {
@@ -71,10 +68,8 @@ let sourceSearch = "";
 const openedDetails = new Set<string>();
 let grades = normalizeGrades(readLocal("grades"));
 let gradesUndo: GradesState | null = null;
-const storedEditor = readLocal("editor");
-let editor: EditorId = EDITORS.includes(storedEditor as EditorId)
-  ? (storedEditor as EditorId)
-  : "student";
+// Everyone with the link edits as one shared author; names are not tracked.
+const editor: EditorId = "student";
 const gradesUi: GradesUi = {
   grade: Math.max(0, ...grades.courses.map((c) => c.grade)) || 11,
   notice: "",
@@ -92,6 +87,21 @@ const prepUi: PrepUi = {
 // The shortlist follows entered grades until a matrix cell is chosen by hand.
 let scenarioFromGrades = gradeInput(grades) !== null;
 if (scenarioFromGrades) explorerMode = "scenario";
+const startSat = gradeInput(grades)?.sat ?? null;
+let browseFilters: BrowseFilters = {
+  ...emptyBrowse(),
+  band:
+    startSat === null
+      ? ""
+      : startSat < 1200
+        ? "under-1200"
+        : startSat < 1300
+          ? "1200"
+          : startSat < 1400
+            ? "1300"
+            : "1400",
+};
+let matrixCell: string | null = null;
 
 const nav = [
   { id: "home", label: "Home", icon: "◷" },
@@ -241,6 +251,10 @@ function universitiesPage() {
   return renderExplorer(scenarioInput, explorerMode, explorerSearch, saved, {
     mine,
     fromGrades: scenarioFromGrades,
+    browse: browseFilters,
+    matrixCell,
+    target: grades.satTarget,
+    noteCount: (id) => schoolNotes(journal, id).length,
   });
 }
 function currentMonthId() {
@@ -277,7 +291,7 @@ function render(restoreFocus = false) {
       else openedDetails.delete(d.dataset.disclosure!);
     });
   const r = route();
-  app.innerHTML = `<aside class="sidebar"><a class="brand" href="#home" aria-label="UniNavo home"><span class="brand-symbol">u<span>↗</span></span><span>UniNavo<span class="brand-sub">YOUR NEXT CHAPTER</span></span></a><nav aria-label="Main navigation">${nav.map((n) => `<a href="#${n.id}" ${navFor(r) === n.id ? 'aria-current="page"' : ""}><span aria-hidden="true">${n.icon}</span>${n.label}${n.id === "home" ? "<i></i>" : ""}</a>`).join("")}</nav><a class="education-brand" href="https://yoloedu.ca/" target="_blank" rel="noopener noreferrer" aria-label="YOLO Education" data-original-language><img src="${import.meta.env.BASE_URL}branding/yolo-education.png" width="483" height="194" alt="YOLO Education"></a></aside><div class="workspace"><header class="topbar"><div class="personal-heading"><strong data-original-language lang="ko">태율이의 미국 대학교 입시</strong><span>Grade 11 → Fall 2028</span></div><div class="top-actions">${editorPicker(editor)}<button id="language-toggle" class="language-toggle" lang="${getLanguage() === "en" ? "ko" : "en"}" aria-label="${getLanguage() === "en" ? "한국어로 보기" : "Switch to English"}"><span aria-hidden="true">◎</span> ${getLanguage() === "en" ? "한국어" : "English"}</button></div></header><main id="main" tabindex="-1">${r === "home" ? renderHomePage({ today, months: personalTimeline(timeline, planner), checked, journal, grades }) : r === "timeline" ? timelinePage() : r === "grades" ? renderGradesPage(grades, gradesUi) : r === "universities" ? universitiesPage() : examTabs.includes(r) ? renderTestPrep(r as PrepTab, prepUi, grades, today, { planFact, refs, link }) : r === "report" ? renderReportPage({ ui: reportUi, today, months: personalTimeline(timeline, planner), checked, journal, grades }) : sourcesPage()}</main><footer><p>Planning guidance, not an admission guarantee.</p><details class="footer-notes"><summary>Sources & important notes</summary><p>Research reviewed: October 21–22, 2026. Admission policies and deadlines can change. Always confirm final requirements on the university’s official admissions website before applying.</p><p>${persistenceAvailable ? "Your checklist and profile stay in this browser." : "Browser storage is unavailable. Changes are kept for this session only."}</p></details><a href="#sources">View sources ↗</a></footer></div><dialog id="task-dialog" aria-labelledby="task-dialog-title"></dialog><dialog id="university-dialog" aria-labelledby="dialog-title"></dialog><div id="live-status" class="sr-only" role="status" aria-live="polite"></div>`;
+  app.innerHTML = `<aside class="sidebar"><a class="brand" href="#home" aria-label="UniNavo home"><span class="brand-symbol">u<span>↗</span></span><span>UniNavo<span class="brand-sub">YOUR NEXT CHAPTER</span></span></a><nav aria-label="Main navigation">${nav.map((n) => `<a href="#${n.id}" ${navFor(r) === n.id ? 'aria-current="page"' : ""}><span aria-hidden="true">${n.icon}</span>${n.label}${n.id === "home" ? "<i></i>" : ""}</a>`).join("")}</nav><a class="education-brand" href="https://yoloedu.ca/" target="_blank" rel="noopener noreferrer" aria-label="YOLO Education" data-original-language><img src="${import.meta.env.BASE_URL}branding/yolo-education.png" width="483" height="194" alt="YOLO Education"></a></aside><div class="workspace"><header class="topbar"><div class="personal-heading"><strong data-original-language lang="ko">태율이의 미국 대학교 입시</strong><span>Grade 11 → Fall 2028</span></div><div class="top-actions"><button id="language-toggle" class="language-toggle" lang="${getLanguage() === "en" ? "ko" : "en"}" aria-label="${getLanguage() === "en" ? "한국어로 보기" : "Switch to English"}"><span aria-hidden="true">◎</span> ${getLanguage() === "en" ? "한국어" : "English"}</button></div></header><main id="main" tabindex="-1">${r === "home" ? renderHomePage({ today, months: personalTimeline(timeline, planner), checked, journal, grades }) : r === "timeline" ? timelinePage() : r === "grades" ? renderGradesPage(grades, gradesUi) : r === "universities" ? universitiesPage() : examTabs.includes(r) ? renderTestPrep(r as PrepTab, prepUi, grades, today, { planFact, refs, link }) : r === "report" ? renderReportPage({ ui: reportUi, today, months: personalTimeline(timeline, planner), checked, journal, grades }) : sourcesPage()}</main><footer><p>Planning guidance, not an admission guarantee.</p><details class="footer-notes"><summary>Sources & important notes</summary><p>Research reviewed: October 21–22, 2026. Admission policies and deadlines can change. Always confirm final requirements on the university’s official admissions website before applying.</p><p>${persistenceAvailable ? "Your checklist and profile stay in this browser." : "Browser storage is unavailable. Changes are kept for this session only."}</p></details><a href="#sources">View sources ↗</a></footer></div><dialog id="task-dialog" aria-labelledby="task-dialog-title"></dialog><dialog id="university-dialog" aria-labelledby="dialog-title"></dialog><div id="live-status" class="sr-only" role="status" aria-live="polite"></div>`;
   document.documentElement.lang = getLanguage();
   document.title =
     getLanguage() === "ko"
@@ -339,7 +353,21 @@ function bind() {
     .querySelectorAll<HTMLButtonElement>("[data-scenario-choice]")
     .forEach((button) =>
       button.addEventListener("click", () => {
-        const [band, sat] = button.dataset.scenarioChoice!.split("|");
+        matrixCell = button.dataset.scenarioChoice!;
+        render();
+        document
+          .querySelector<HTMLButtonElement>(
+            `[data-scenario-choice="${matrixCell}"]`,
+          )
+          ?.focus({ preventScroll: true });
+      }),
+    );
+  document
+    .querySelector<HTMLButtonElement>("[data-open-cell]")
+    ?.addEventListener("click", (event) => {
+      {
+        const button = event.currentTarget as HTMLButtonElement;
+        const [band, sat] = button.dataset.openCell!.split("|");
         scenarioFromGrades = false;
         scenarioInput = normalizeCandidateInput({
           ...scenarioInput,
@@ -356,8 +384,48 @@ function bind() {
         document
           .querySelector(".scenario-result-head")
           ?.scrollIntoView({ block: "start" });
+      }
+    });
+  document
+    .querySelector<HTMLInputElement>("#browse-search")
+    ?.addEventListener("input", (event) => {
+      browseFilters.search = (event.target as HTMLInputElement).value;
+      render(true);
+    });
+  document
+    .querySelector<HTMLSelectElement>("#browse-sort")
+    ?.addEventListener("change", (event) => {
+      browseFilters.sort = (event.target as HTMLSelectElement)
+        .value as BrowseFilters["sort"];
+      render(true);
+    });
+  document
+    .querySelectorAll<HTMLButtonElement>("[data-browse-band]")
+    .forEach((b) =>
+      b.addEventListener("click", () => {
+        const band = b.dataset.browseBand as BrowseFilters["band"];
+        browseFilters.band = browseFilters.band === band ? "" : band;
+        render();
       }),
     );
+  document
+    .querySelectorAll<HTMLButtonElement>("[data-browse-flag]")
+    .forEach((b) =>
+      b.addEventListener("click", () => {
+        const flag = b.dataset.browseFlag as
+          | "optionalOnly"
+          | "ucOnly"
+          | "privateOnly";
+        browseFilters[flag] = !browseFilters[flag];
+        // UC campuses do not consider the SAT, so a score band would hide them.
+        if (flag === "ucOnly" && browseFilters.ucOnly) browseFilters.band = "";
+        render();
+      }),
+    );
+  document.querySelector("#browse-clear")?.addEventListener("click", () => {
+    browseFilters = emptyBrowse();
+    render();
+  });
   document
     .querySelector<HTMLInputElement>("#scenario-search")
     ?.addEventListener("input", (event) => {
@@ -430,16 +498,11 @@ function bind() {
     .forEach((b) =>
       b.addEventListener("click", () => openUniversity(b.dataset.detail!)),
     );
-  document.querySelectorAll<HTMLButtonElement>("[data-save]").forEach((b) =>
+  app.querySelectorAll<HTMLButtonElement>("[data-save]").forEach((b) =>
     b.addEventListener("click", () => {
-      const id = b.dataset.save!;
-      if (saved.has(id)) saved.delete(id);
-      else saved.add(id);
-      persistenceAvailable =
-        writeLocal("saved", [...saved]) && persistenceAvailable;
-      render();
-      document
-        .querySelector<HTMLButtonElement>(`[data-save="${id}"]`)
+      toggleSaved(b.dataset.save!);
+      app
+        .querySelector<HTMLButtonElement>(`[data-save="${b.dataset.save}"]`)
         ?.focus({ preventScroll: true });
     }),
   );
@@ -493,13 +556,7 @@ function bind() {
       },
       rerender: () => render(),
     });
-  document
-    .querySelector<HTMLSelectElement>("#editor-pick")
-    ?.addEventListener("change", (e) => {
-      editor = (e.target as HTMLSelectElement).value as EditorId;
-      persistenceAvailable =
-        writeLocal("editor", editor) && persistenceAvailable;
-    });
+
   document.querySelector("#use-my-grades")?.addEventListener("click", () => {
     scenarioFromGrades = true;
     explorerMode = "scenario";
@@ -603,17 +660,21 @@ function researchDetails(u: University) {
     ? `<p>${link(catalog, words("Browse the full official major directory", "공식 전체 학과 목록 보기"), "text-link")}</p>`
     : "";
 }
-function openUniversity(id: string) {
+function toggleSaved(id: string) {
+  if (saved.has(id)) saved.delete(id);
+  else saved.add(id);
+  persistenceAvailable =
+    writeLocal("saved", [...saved]) && persistenceAvailable;
+  render();
+}
+function openUniversity(id: string, tab: DetailTab = "summary") {
   const school = scenarioSchoolMap.get(id);
   if (!school) return;
   const dialog =
     document.querySelector<HTMLDialogElement>("#university-dialog")!;
-  dialog.innerHTML = renderScenarioDetail(school, scenarioInput);
   const legacy = universities.find((u) => u.id === id);
-  if (legacy)
-    dialog.querySelector(".dialog-body")!.insertAdjacentHTML(
-      "beforeend",
-      `<details class="methodology"><summary>${words("Additional application, cost & credit references", "추가 지원 자료 · 비용 · 학점 인정")}</summary>${researchDetails(legacy)}<div class="detail-facts">${Object.entries(
+  const extraRequirements = legacy
+    ? `<details class="methodology"><summary>${words("Application, cost & credit references", "지원 자료 · 비용 · 학점 인정")}</summary><div class="detail-facts">${Object.entries(
         legacy.facts,
       )
         .filter(([key]) =>
@@ -630,11 +691,59 @@ function openUniversity(id: string) {
           ].includes(key),
         )
         .map(([key, f]) => fact(f, factLabels[key] ?? key))
-        .join("")}</div></details>`,
-    );
+        .join("")}</div></details>`
+    : "";
+  dialog.className = "drawer";
+  dialog.innerHTML = renderScenarioDetail(school, scenarioInput, {
+    tab,
+    saved: saved.has(id),
+    sat: gradeInput(grades)?.sat ?? scenarioInput.sat,
+    notes: schoolNotes(journal, id),
+    extraRequirements,
+    extraProgram: legacy ? researchDetails(legacy) : "",
+  });
   dialog
     .querySelector(".close-dialog")!
     .addEventListener("click", () => dialog.close());
+  dialog.querySelectorAll<HTMLButtonElement>("[data-detail-tab]").forEach((b) =>
+    b.addEventListener("click", () => {
+      openUniversity(id, b.dataset.detailTab as DetailTab);
+      const target = b.hasAttribute("data-focus-note")
+        ? dialog.querySelector<HTMLTextAreaElement>(
+            "#school-note-form textarea",
+          )
+        : dialog.querySelector<HTMLButtonElement>(
+            `.drawer-tabs [data-detail-tab="${b.dataset.detailTab}"]`,
+          );
+      target?.focus();
+    }),
+  );
+  dialog
+    .querySelector<HTMLButtonElement>(".drawer-actions [data-save]")
+    ?.addEventListener("click", () => {
+      toggleSaved(id);
+      openUniversity(id, tab);
+    });
+  dialog
+    .querySelector<HTMLFormElement>("#school-note-form")
+    ?.addEventListener("submit", (event) => {
+      event.preventDefault();
+      const text = String(
+        new FormData(event.currentTarget as HTMLFormElement).get("text") ?? "",
+      ).trim();
+      if (!text) return;
+      saveJournal(
+        addNote(journal, {
+          id: `note-${crypto.randomUUID()}`,
+          author: editor,
+          date: today,
+          text,
+          schoolId: id,
+        }),
+      );
+      render();
+      openUniversity(id, "summary");
+    });
   dialog.onclick = (event) => {
     if (event.target !== dialog) return;
     const rect = dialog.getBoundingClientRect();
@@ -647,7 +756,7 @@ function openUniversity(id: string) {
       dialog.close();
   };
   localize(dialog);
-  dialog.showModal();
+  if (!dialog.open) dialog.showModal();
 }
 document.querySelector(".skip")?.addEventListener("click", (event) => {
   event.preventDefault();
