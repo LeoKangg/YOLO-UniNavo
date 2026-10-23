@@ -1,6 +1,6 @@
 # UniNavo
 
-[Live site](https://ivyparc.github.io/UniNavo/) · [Implementation PR](https://github.com/ivyparc/UniNavo/pull/1)
+[Live site](https://yolo-edu.github.io/YOLO-UniNavo/) · [Repository](https://github.com/YOLO-EDU/YOLO-UniNavo)
 
 A bilingual U.S. university admission planner for an Ontario Grade11 student in October2026, targeting Fall2028. The university explorer offers ten explicitly editorial research candidates per Ontario/SAT combination, with sourced requirements and score cohorts. It cannot establish complete admission eligibility or an acceptance outcome.
 
@@ -86,9 +86,12 @@ Open the exact primary source, identify year/campus/program/applicant category, 
 
 ## Repository and deployment
 
-Only repository: https://github.com/ivyparc/UniNavo . Source branch is codex/us-college-planner; main history is preserved. CI validates data, types, lint, tests and build.
+This deployment uses https://github.com/YOLO-EDU/YOLO-UniNavo and its `main` source branch. It shares ancestry with `ivyparc/UniNavo`, but contains newer planner and YOLO Education branding changes. Deploy this repository independently; the original repository is not the publishing destination.
 
-GitHub Pages publishes built static files from codex/site in the same repository. Build with pnpm build:pages for the /UniNavo/ asset base. Publish dist plus .nojekyll as a new commit retaining the artifact branch's previous parent, then fast-forward its ref. A separate worktree or Git data API may publish artifacts without overwriting the source checkout. Never force-push or change repository identity. Check Pages deployment and the live bundle before reporting publication.
+GitHub Pages publishes at https://yolo-edu.github.io/YOLO-UniNavo/. In Settings → Pages, the source must be **GitHub Actions**. `.github/workflows/pages.yml` validates the data, types and behavioral tests, builds with `pnpm build:pages` using the `/YOLO-UniNavo/` asset base, uploads `dist`, and deploys through the `github-pages` environment on every push to `main`. It can also be started manually. Pull requests continue to use the separate validation workflow.
+
+The separate Sites deployment documented in `research/shared-site.md` uses `--base=/` and is not updated by this GitHub Pages workflow.
+
 ## University imagery
 
 University cards and detail dialogs share a locally hosted logo and campus-building photo for each researched school. `src/data/university-media.json` records the original file, identifying caption, author, source page and license; the UI exposes attribution and license links. Files live in `public/university-media/` and load lazily. University logos remain the property of their owners.
