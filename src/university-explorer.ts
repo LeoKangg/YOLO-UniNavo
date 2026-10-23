@@ -10,6 +10,8 @@ import {
   confirmed2028Policies,
 } from "./university-review.ts";
 import { getLanguage, translate } from "./i18n.ts";
+import { satOutlook, satPosition, type SatPosition } from "./matching.ts";
+import { positionLabels } from "./home-page.ts";
 import { VISIBLE_GRADE_BANDS } from "./candidate-plans.ts";
 import { SAT_SCENARIOS } from "./comparison.ts";
 import { bandPosition } from "./sat-bands.ts";
@@ -100,11 +102,46 @@ function selectors(input: ScenarioInput) {
 }
 const disclosure = () =>
   `<div class="scenario-accuracy"><strong>${w("Ten research candidates per combination — eligibility is not confirmed.", "조합당 10곳은 지원 검토 후보입니다. 합격 가능·자격 충족이 확정된 10곳이 아닙니다.")}</strong><p>${w("School requirements and score distributions are sourced facts. Grade-band placement is editorial judgment; lists prioritize verified QS world ranks; this is not an admission likelihood rank. Ontario percentages are not converted to U.S. GPA; university transcript review, English and entry-year policies remain necessary.", "대학 요건·SAT 분포는 출처가 있는 사실이고, 구간별 후보 선정은 편집 판단입니다. 목록은 확인된 QS 세계순위 순이며 합격 가능성 순위가 아닙니다. 온타리오 내신을 미국 GPA로 임의 환산하지 않습니다. 대학별 성적표·영어·지원 연도 규정 확인이 필요합니다.")}</p></div>`;
+const positionClass: Record<SatPosition, string> = {
+  within: "pos-within",
+  below: "pos-below",
+  above: "pos-other",
+  "no-data": "pos-other",
+  "not-considered": "pos-other",
+};
+function positionChip(s: ScenarioSchool, sat: number | null) {
+  const p = satPosition(s, sat);
+  const gap =
+    p === "below" && sat !== null
+      ? w(`${s.satRange!.low - sat} below`, `${s.satRange!.low - sat}점 아래`)
+      : p === "above" && sat !== null
+        ? w(`${sat - s.satRange!.high} above`, `${sat - s.satRange!.high}점 위`)
+        : w(...positionLabels[p]);
+  return `<span class="pos-chip ${positionClass[p]}">${gap}</span>${p === "below" ? `<span class="small muted pos-note">${w(`In range from ${s.satRange!.low}`, `${s.satRange!.low}부터 범위 안`)}</span>` : ""}`;
+}
 function matching(input: ScenarioInput, saved: Set<string>) {
   const plan = candidatePlan(input);
   if (!plan.selected.length)
     return `<div class="comparison-empty"><h2>${w("Choose a combination in the table.", "표에서 내신·SAT 조합을 선택하세요.")}</h2><p>${w("The researched lists cover SAT 1100–1600. Scores below 1100 are not mapped to a higher-score list.", "조사한 목록은 SAT 1100–1600 범위입니다. 1100 미만을 높은 점수 목록에 맞춰 표시하지 않습니다.")}</p><button class="text-button" data-explorer-mode="all-scenarios">${w("View all combinations →", "전체 조합 보기 →")}</button></div>`;
-  return `<section class="scenario-result-head"><div><span class="eyebrow">${esc(input.band)} · SAT ${input.sat}</span><h2>${w("10 schools to investigate", "지원 검토 대학 10곳")}</h2></div><button class="text-button" data-explorer-mode="all-scenarios">${w("← Other combinations", "← 다른 조합 보기")}</button></section>${disclosure()}<p class="candidate-selection-note">${esc(gradeResearchNote(input.band, getLanguage() === "ko"))}${plan.referenceSat !== input.sat ? ` ${w(`Uses the SAT${plan.referenceSat} shortlist; the score comparison below uses your actual score.`, `SAT ${plan.referenceSat} 기준 목록을 사용하며 아래 점수 비교는 입력한 실제 점수를 적용합니다.`)}` : ""}</p><div class="scenario-school-list">${plan.selected.map((s) => schoolCard(s, input, saved)).join("")}</div><p class="small">${w("Candidates prioritize verified QS world ranks; rank is not an admission probability.", "목록은 확인된 QS 세계순위 순이며 합격 가능성 순위가 아닙니다. 카드에 별도 표시된 순위는 U.S. News 2026 종합대학 과거 자료입니다.")}</p>`;
+  const sat = input.sat!;
+  const steps = satOutlook(plan.selected, sat);
+  const nextList = SAT_SCENARIOS.find((n) => n > plan.referenceSat!);
+  const outlook = `<section class="panel sat-outlook" aria-labelledby="outlook-title"><h2 id="outlook-title">${w("If the SAT goes up", "SAT가 오르면")}</h2><div class="outlook-steps">${steps
+    .map(
+      (step, i) =>
+        `<div class="${i === 1 ? "is-next" : ""}"><span class="small muted">${i === 0 ? w(`Now ${step.sat}`, `지금 ${step.sat}`) : step.sat}</span><strong>${w(`${step.within} within range`, `범위 안 ${step.within}곳`)}</strong>${step.added.length ? `<span class="small">+ ${step.added.map((s) => esc(name(s))).join(", ")}</span>` : ""}${i === 1 ? `<button class="text-button" data-try-sat="${step.sat}">${w("View at this score →", "이 점수로 보기 →")}</button>` : ""}</div>`,
+    )
+    .join(
+      "",
+    )}${nextList ? `<div><span class="small muted">${nextList}</span><strong>${w(`Switches to the ${nextList} list`, `${nextList} 목록으로 바뀜`)}</strong><button class="text-button" data-try-sat="${nextList}">${w("See new candidates →", "새 후보 보기 →")}</button></div>` : ""}</div></section>`;
+  return `${outlook}<section class="scenario-result-head"><div><span class="eyebrow">${esc(input.band)} · ${w(`SAT ${plan.referenceSat} list`, `SAT ${plan.referenceSat} 기준 목록`)}</span><h2>${w("10 schools to investigate", "지원 검토 대학 10곳")}</h2></div><button class="text-button" data-explorer-mode="all-scenarios">${w("Other combinations →", "다른 성적 조합 보기 →")}</button></section><div class="table-wrap"><table class="shortlist-table"><thead><tr><th>${w("University", "대학")}</th><th>${w("Program to examine", "검토 전공")}</th><th>${w("SAT middle 50%", "SAT 중간 50%")}</th><th>${w(`Score ${sat}`, `내 점수 ${sat}`)}</th><th><span class="sr-only">${w("Save", "저장")}</span></th></tr></thead><tbody>${plan.selected
+    .map(
+      (s) =>
+        `<tr><th scope="row"><button class="link-button" data-detail="${s.id}">${esc(name(s))}</button><span class="small muted">${esc(s.state)}</span></th><td>${esc(translate(w(s.entry.program, s.entry.programKo)))}</td><td>${s.satRange ? `${s.satRange.low}–${s.satRange.high}` : "—"}</td><td>${positionChip(s, sat)}</td><td class="save-cell"><button class="save-button ${saved.has(s.id) ? "saved" : ""}" data-save="${s.id}" aria-label="${esc(w("Save school", "대학 저장"))} ${esc(name(s))}" aria-pressed="${saved.has(s.id)}">${saved.has(s.id) ? "✓" : "+"}</button></td></tr>`,
+    )
+    .join(
+      "",
+    )}</tbody></table></div><p class="small muted shortlist-note">${w("Research candidates, not an admission prediction. Confirm each university's official requirements before applying.", "합격 가능성 판정이 아닌 검토 후보입니다. 지원 전 각 대학 공식 요건을 확인하세요.")}</p><details class="methodology"><summary>${w("About this list", "이 목록에 대해")}</summary>${disclosure()}<p class="candidate-selection-note">${esc(gradeResearchNote(input.band, getLanguage() === "ko"))}</p></details>`;
 }
 const shortNames: Record<string, [string, string]> = {
   harvard: ["Harvard", "하버드"],
@@ -184,11 +221,22 @@ function renderUcCampuses() {
 function renderReviewNotes() {
   return `<details class="methodology"><summary>${w("QS ranking and shortlist review", "QS 순위 · 후보 목록 재검토")}</summary><p>${w("2027 QS world ranks are verified for 49 schools. Naver and Reddit inform qualitative discovery, not admission cutoffs or a measured Korean awareness ranking. QS rank is a university-wide research ranking, not a humanities admission threshold. Missing exact ranks mean unverified, not unranked. Minnesota's published rank is system-wide.", "49곳의 QS 2027 세계순위를 확인했습니다. 네이버·레딧은 대학 탐색의 참고 자료이며 합격선이나 한국 인지도 조사 순위가 아닙니다. QS는 대학 종합순위이며 인문사회계열 입학 난도 순위가 아닙니다. 정확한 순위 미확인은 순위권 밖이라는 뜻이 아닙니다. 미네소타는 시스템 전체 순위입니다.")}</p><div class="scenario-refs"><a href="https://www.topuniversities.com/where-to-study/north-america/united-states/ranked-top-100-us-universities" target="_blank" rel="noopener noreferrer">QS 2027 ↗</a><a href="https://blog.naver.com/hy_april/224255707648" target="_blank" rel="noopener noreferrer">${w("Naver ASU admissions discussion", "네이버 ASU 입시 소개")} ↗</a><a href="https://blog.naver.com/jamesprep/224083806497" target="_blank" rel="noopener noreferrer">${w("Naver ASU introduction", "네이버 ASU 대학 소개")} ↗</a><a href="https://www.reddit.com/r/ApplyingToCollege/comments/1u8ryu2/qs_world_college_ranking_for_the_us/" target="_blank" rel="noopener noreferrer">Reddit QS discussion ↗</a></div></details><details class="methodology"><summary>${w(`Source recheck · ${universityReviews.length} schools · ${REVIEW_DATE}`, `공식 자료 재검토 · ${universityReviews.length}곳 · ${REVIEW_DATE}`)}</summary><p>${w("The existing72-school catalog was rechecked for testing policies and entry-year scope;14 received additional academic/English-route checks. New UC and selective records include program and applicant requirements. Access failures and conflicting pages remain explicitly unresolved. Historical score distributions retain their cohort year; this does not claim every historical number is the newest dataset.", "기존 72곳의 시험 정책·적용 연도를 다시 점검하고, 그중 14곳의 주요 학업·영어 요건을 추가 확인했습니다. 새로 추가한 UC·상위권 대학은 전공·지원자 요건도 확인했습니다. 열리지 않거나 서로 다른 공식 안내는 미확인으로 남겼습니다. 과거 점수 분포에는 집단·연도를 유지하며 모든 수치가 최신 입학 집단이라는 뜻은 아닙니다.")}</p><p>${w("Naver Korean articles and Reddit discussions were used to discover omissions and policy changes. Admissions facts link to university sources; individual success stories and speculation do not become cutoffs. Historical2026 national ranks are dated references, not current-edition rankings.", "네이버 한글 자료와 레딧에서 누락·정책 변경 쟁점을 찾고 대학 공식 자료로 대조했습니다. 개인 합격 사례·예측을 합격선으로 사용하지 않습니다. 2026년 종합순위는 연도를 표시한 과거 참고 자료입니다.")}</p><div class="scenario-refs"><a href="https://blog.naver.com/korfirst/224441197445" target="_blank" rel="noopener noreferrer">${w("Naver Korean policy discussion · Oct14", "네이버 한글 UC 정책 해설 · 10월 14일")} ↗</a><a href="https://www.reddit.com/r/ucadmissions/comments/1wvll8f/any_idea_of_the_chance_class_of_2028_will_face/" target="_blank" rel="noopener noreferrer">${w("Reddit2028 discussion · opinions", "레딧 2028년 논의 · 개인 의견")} ↗</a></div>${refs(["uc-audit-policy-review"])}</details>`;
 }
+export interface ExplorerContext {
+  mine: { average: number; band: string; sat: number | null } | null;
+  fromGrades: boolean;
+}
+function basisStrip(input: ScenarioInput, ctx: ExplorerContext) {
+  const { mine } = ctx;
+  if (!mine)
+    return `<section class="basis-strip"><div><span class="small muted">${w("No grades entered yet", "아직 입력한 성적이 없어요")}</span><a class="text-link" href="#grades">${w("Enter grades to match automatically →", "성적을 입력하면 자동으로 맞춰져요 →")}</a></div></section>`;
+  return `<section class="basis-strip" aria-label="${w("Current basis", "지금 기준")}"><div><span class="small muted">${w("School average", "내신")}</span><strong>${mine.average}% <small>→ ${esc(mine.band || "—")}</small></strong></div><div><span class="small muted">${w("Best SAT", "SAT 최고점")}</span><strong>${mine.sat ?? "—"}</strong></div><div class="${ctx.fromGrades ? "is-mine" : "is-manual"}">${ctx.fromGrades ? `<span class="small">${w("Matched to entered grades", "입력한 성적 기준")}</span><strong>${esc(input.band)} · SAT ${input.sat}</strong>` : `<span class="small">${w(`Viewing ${input.band} · SAT ${input.sat}`, `${input.band} · SAT ${input.sat} 보는 중`)}</span><button class="text-button" id="use-my-grades">${w("Back to my grades →", "내 성적으로 돌아가기 →")}</button>`}</div></section>`;
+}
 export function renderExplorer(
   input: ScenarioInput,
   mode: ExplorerMode,
   search: string,
   saved: Set<string>,
+  ctx: ExplorerContext = { mine: null, fromGrades: false },
 ) {
   const list = scenarioSchools
     .filter(
@@ -199,7 +247,7 @@ export function renderExplorer(
           .includes(search.toLowerCase()),
     )
     .sort(byRank);
-  return `<div class="page-intro"><span class="eyebrow">${scenarioSchools.length} ${w("UNIVERSITIES RESEARCHED", "개 대학 조사")}</span><h1>${w("Find ten schools to investigate.", "내신·SAT별 대학 10곳")}</h1><p>${w("Compare researched humanities routes, published requirements and SAT profiles for each combination.", "내신·SAT 조합별로 인문사회계열 전공과 공식 입학 요건을 비교하세요.")}</p></div>${selectors(input)}<div class="tabs" aria-label="${w("University view", "대학교 목록 보기")}">${(
+  return `<div class="page-intro"><h1 class="home-title">${w("University shortlist", "대학 후보 10곳")}</h1></div>${basisStrip(input, ctx)}<div class="tabs" aria-label="${w("University view", "대학교 목록 보기")}">${(
     [
       ["scenario", w("Selected combination", "선택한 조합 10곳")],
       ["all-scenarios", w("All 25 scenarios", "전체 25개 조합")],
@@ -221,7 +269,7 @@ export function renderExplorer(
     )
     .join(
       "",
-    )}</div>${mode === "catalog" || mode === "saved" ? `<div class="filter-bar"><label class="search-field"><span>${w("University or program", "대학 · 전공 검색")}</span><input id="scenario-search" type="search" value="${esc(search)}"></label><span role="status">${list.length} ${w("schools", "곳")}</span></div><p class="small">${w("Research coverage is broader than the recommendation list. These records include schools whose Ontario equivalencies remain unverified; no admission-fit label is assigned from an assumed GPA conversion.", "조사 목록과 추천 목록은 다릅니다. 온타리오 환산 기준이 확인되지 않은 학교도 조사 기록으로 남기며, 임의 GPA 환산으로 지원 가능 분류를 붙이지 않습니다.")}</p><div class="scenario-school-list">${list.map((s) => schoolCard(s, input, saved)).join("") || `<p class="empty-state">${w("No schools match.", "해당 대학이 없습니다.")}</p>`}</div>` : mode === "all-scenarios" ? matrix() : mode === "uc" ? renderUcCampuses() : mode === "sat-map" ? scoreMap(input) : matching(input, saved)}${renderReviewNotes()}<details class="methodology"><summary>${w("How the ten candidates were selected", "10곳 선정 방법 · 사실과 판단의 구분")}</summary><p>${w("These are manually curated research shortlists from the displayed pool. Lower-grade cases prioritize published lower GPA requirements, alternative routes and individual review; stronger-grade cases broaden to selective universities, college-specific SAT profiles and testing policies. A place in a grade band is editorial judgment, not a verified Ontario equivalency or a probability model. We do not claim these are the ten best attainable universities in the entire United States.", "표시된 조사 목록에서 검토 후보를 직접 선정했습니다. 낮은 내신 구간은 낮은 공개 GPA 요건·대체 경로·개별 심사부터 조사하고, 높은 구간은 선발적인 대학·단과대학별 SAT 분포·시험 정책까지 넓힙니다. 구간 배치는 편집 판단이며 확인된 온타리오 환산값이나 합격 예측 모델이 아닙니다. 미국 전체에서 입학 가능한 최상위 10곳이라고 단정하지 않습니다.")}</p><p>${w("Official program availability is verified. Toledo publishes different entry GPA requirements by college; Purdue publishes college-level profiles. These comparisons do not identify the absolute easiest major. At schools such as Maryland and Florida, choosing a humanities major does not lower university admission requirements.", "전공 운영 여부는 공식 안내로 확인했습니다. 톨레도는 단과대학별 GPA 요건, 퍼듀는 단과대학별 입학 집단 자료를 공개합니다. 이것만으로 가장 쉬운 학과를 확정하지 않습니다. 메릴랜드·플로리다처럼 인문계 선택이 대학 입학 조건을 낮추지 않는 곳도 표시했습니다.")}</p><p>${w("SAT ranges retain their cohort, campus and year. Current policies are not necessarily Fall 2028 policies. Ranks use historical 2026 U.S.News National Universities evidence; no measured Korean-recognition ranking was established.", "SAT 수치는 집단·캠퍼스·연도를 함께 표시합니다. 현행 정책이 2028년 가을에도 같다고 가정하지 않습니다. 순위는 비교용 U.S. News 2026 종합대학 자료이며 한국 인지도 조사 순위는 확인되지 않았습니다.")}</p></details>`;
+    )}</div>${mode === "catalog" || mode === "saved" ? `<div class="filter-bar"><label class="search-field"><span>${w("University or program", "대학 · 전공 검색")}</span><input id="scenario-search" type="search" value="${esc(search)}"></label><span role="status">${list.length} ${w("schools", "곳")}</span></div><p class="small">${w("Research coverage is broader than the recommendation list. These records include schools whose Ontario equivalencies remain unverified; no admission-fit label is assigned from an assumed GPA conversion.", "조사 목록과 추천 목록은 다릅니다. 온타리오 환산 기준이 확인되지 않은 학교도 조사 기록으로 남기며, 임의 GPA 환산으로 지원 가능 분류를 붙이지 않습니다.")}</p><div class="scenario-school-list">${list.map((s) => schoolCard(s, input, saved)).join("") || `<p class="empty-state">${w("No schools match.", "해당 대학이 없습니다.")}</p>`}</div>` : mode === "all-scenarios" ? matrix() : mode === "uc" ? renderUcCampuses() : mode === "sat-map" ? selectors(input) + scoreMap(input) : matching(input, saved)}${renderReviewNotes()}<details class="methodology"><summary>${w("How the ten candidates were selected", "10곳 선정 방법 · 사실과 판단의 구분")}</summary><p>${w("These are manually curated research shortlists from the displayed pool. Lower-grade cases prioritize published lower GPA requirements, alternative routes and individual review; stronger-grade cases broaden to selective universities, college-specific SAT profiles and testing policies. A place in a grade band is editorial judgment, not a verified Ontario equivalency or a probability model. We do not claim these are the ten best attainable universities in the entire United States.", "표시된 조사 목록에서 검토 후보를 직접 선정했습니다. 낮은 내신 구간은 낮은 공개 GPA 요건·대체 경로·개별 심사부터 조사하고, 높은 구간은 선발적인 대학·단과대학별 SAT 분포·시험 정책까지 넓힙니다. 구간 배치는 편집 판단이며 확인된 온타리오 환산값이나 합격 예측 모델이 아닙니다. 미국 전체에서 입학 가능한 최상위 10곳이라고 단정하지 않습니다.")}</p><p>${w("Official program availability is verified. Toledo publishes different entry GPA requirements by college; Purdue publishes college-level profiles. These comparisons do not identify the absolute easiest major. At schools such as Maryland and Florida, choosing a humanities major does not lower university admission requirements.", "전공 운영 여부는 공식 안내로 확인했습니다. 톨레도는 단과대학별 GPA 요건, 퍼듀는 단과대학별 입학 집단 자료를 공개합니다. 이것만으로 가장 쉬운 학과를 확정하지 않습니다. 메릴랜드·플로리다처럼 인문계 선택이 대학 입학 조건을 낮추지 않는 곳도 표시했습니다.")}</p><p>${w("SAT ranges retain their cohort, campus and year. Current policies are not necessarily Fall 2028 policies. Ranks use historical 2026 U.S.News National Universities evidence; no measured Korean-recognition ranking was established.", "SAT 수치는 집단·캠퍼스·연도를 함께 표시합니다. 현행 정책이 2028년 가을에도 같다고 가정하지 않습니다. 순위는 비교용 U.S. News 2026 종합대학 자료이며 한국 인지도 조사 순위는 확인되지 않았습니다.")}</p></details>`;
 }
 export function renderScenarioDetail(s: ScenarioSchool, input: ScenarioInput) {
   const section = (title: string, text: string, ids: string[]) =>

@@ -8,6 +8,10 @@ Start with these three. Check them off as you go.	이 세 가지만 먼저. 끝�
 This month's priorities	이번 달 우선 할 일
 Next steps	다음 단계
 Find universities	대학 찾기
+Grades	성적
+Home	홈
+Test prep	시험 준비
+Reports	리포트
 Choose a grade range. Explore your options.	성적 범위를 고르고 태율이에게 맞는 대학을 찾아보세요.
 Pick your next test or practice session.	다음 시험과 연습 계획을 정하세요.
 More preparation & Ontario requirements	추가 준비 · 온타리오 졸업 요건
@@ -28,7 +32,7 @@ Your SAT routine	SAT 공부 계획 자세히 보기
 Choose one or two AP subjects.	AP는 한두 과목부터 고르세요.
 Overview	지금 할 일
 My timeline	월별 준비 일정
-Universities	대학교 찾기
+Universities	대학
 SAT & AP	SAT · AP 준비
 Study resources	학습 자료
 Sources	출처
