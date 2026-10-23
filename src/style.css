@@ -3254,7 +3254,7 @@ footer > a {
   margin: 0 0 24px;
 }
 .planner-heading h1 {
-  font-size: clamp(30px, 3vw, 42px);
+  font-size: clamp(24px, 2.2vw, 32px);
 }
 .planner-heading p {
   margin-bottom: 0;
