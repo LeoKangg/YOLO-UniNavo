@@ -10,4 +10,4 @@ Created at user request on 2026-10-23 to provide a sharing URL without ivyparc.g
 - Static directory: dist
 - Version 1 source commit: 9df19bd5081ce678bc5c16bee788bae7e9684a28
 
-This is a separately deployed copy. Future content changes should be published to this Sites project as well as GitHub Pages when both addresses must stay current. Build with base=/ for Sites and /UniNavo/ for GitHub Pages. Reuse the existing project ID; do not create another Site. Use get_site and create_source_repository_write_credential to open the existing source according to the Sites skill.
+This is a separately deployed copy. Future content changes should be published to this Sites project as well as GitHub Pages when both addresses must stay current. Build with base=/ for Sites and /YOLO-UniNavo/ for GitHub Pages. Reuse the existing project ID; do not create another Site. Use get_site and create_source_repository_write_credential to open the existing source according to the Sites skill.
