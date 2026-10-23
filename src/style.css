@@ -3253,7 +3253,8 @@ footer > a {
 .planner-heading {
   margin: 0 0 24px;
 }
-.planner-heading h1 {
+.planner-heading h1,
+html[lang="ko"] .planner-heading h1 {
   font-size: clamp(24px, 2.2vw, 32px);
 }
 .planner-heading p {
@@ -4140,7 +4141,9 @@ footer > a {
   align-items: center;
   gap: 24px;
 }
-.education-brand {
+.sidebar .education-brand {
+  align-self: flex-start;
+  margin: 18px 0 0 48px;
   display: grid;
   justify-items: center;
   gap: 4px;
@@ -4148,12 +4151,12 @@ footer > a {
   text-decoration: none;
   flex-shrink: 0;
 }
-.education-brand img {
+.sidebar .education-brand img {
   display: block;
-  width: 144px;
+  width: 96px;
   height: auto;
 }
-.education-brand span {
+.sidebar .education-brand span {
   font-size: 12px;
   letter-spacing: 0;
 }
@@ -4172,7 +4175,10 @@ footer > a {
     width: 100%;
     justify-content: space-between;
   }
-  .education-brand img {
-    width: 126px;
+  .sidebar .education-brand {
+    margin: 10px 0 0 38px;
+  }
+  .sidebar .education-brand img {
+    width: 80px;
   }
 }
