@@ -1,3 +1,4 @@
+import { qsOrder } from "./qs.ts";
 import { GRADE_BANDS, type GradeBand } from "./types.ts";
 import { SAT_SCENARIOS, compareSat } from "./comparison.ts";
 import {
@@ -7,6 +8,8 @@ import {
 import { ambitiousSchoolIds } from "./university-review.ts";
 import { normalizeScenario } from "./scenarios.ts";
 import type { ScenarioInput, ScenarioSchool } from "./scenario-types.ts";
+
+export const VISIBLE_GRADE_BANDS = GRADE_BANDS.slice(3);
 
 // Editorial research shortlists, not a grade-to-GPA conversion or admission model.
 // Display order is alphabetical; published requirements remain attached to
@@ -204,12 +207,12 @@ const rows: Record<GradeBand, string[][]> = {
       "asu",
       "oregon",
       "iowa",
-      "temple",
-      "northern-iowa",
+      "indiana-bloomington",
+      "buffalo",
       "kansas",
       "nebraska-lincoln",
-      "oklahoma-state",
-      "texas-state",
+      "michigan-state",
+      "washington-state",
     ],
     [
       "arizona",
@@ -217,11 +220,11 @@ const rows: Record<GradeBand, string[][]> = {
       "oregon",
       "iowa",
       "iowa-state",
-      "temple",
-      "northern-iowa",
+      "indiana-bloomington",
+      "buffalo",
       "kansas",
       "nebraska-lincoln",
-      "texas-state",
+      "washington-state",
     ],
     [
       "arizona",
@@ -229,10 +232,10 @@ const rows: Record<GradeBand, string[][]> = {
       "oregon",
       "iowa",
       "iowa-state",
-      "baylor",
-      "miami-ohio",
-      "temple",
-      "northern-iowa",
+      "ohio-state-columbus",
+      "colorado",
+      "indiana-bloomington",
+      "buffalo",
       "kansas",
     ],
     [
@@ -241,10 +244,10 @@ const rows: Record<GradeBand, string[][]> = {
       "oregon",
       "iowa",
       "iowa-state",
-      "baylor",
-      "miami-ohio",
-      "temple",
-      "northern-iowa",
+      "ohio-state-columbus",
+      "colorado",
+      "indiana-bloomington",
+      "buffalo",
       "kansas",
     ],
     [
@@ -253,10 +256,10 @@ const rows: Record<GradeBand, string[][]> = {
       "oregon",
       "iowa",
       "iowa-state",
-      "baylor",
-      "miami-ohio",
-      "temple",
-      "northern-iowa",
+      "ohio-state-columbus",
+      "colorado",
+      "indiana-bloomington",
+      "buffalo",
       "kansas",
     ],
   ],
@@ -268,10 +271,10 @@ const rows: Record<GradeBand, string[][]> = {
       "arizona",
       "asu",
       "oregon",
-      "missouri",
       "iowa",
-      "temple",
+      "indiana-bloomington",
       "iowa-state",
+      "kansas",
     ],
     [
       "uc-merced",
@@ -281,9 +284,9 @@ const rows: Record<GradeBand, string[][]> = {
       "arizona",
       "asu",
       "oregon",
-      "missouri",
       "iowa",
-      "baylor",
+      "ohio-state-columbus",
+      "iowa-state",
     ],
     [
       "uc-merced",
@@ -291,10 +294,10 @@ const rows: Record<GradeBand, string[][]> = {
       "purdue-west-lafayette",
       "michigan-state",
       "colorado",
-      "baylor",
-      "delaware",
+      "ohio-state-columbus",
+      "minnesota-twin-cities",
       "oregon",
-      "missouri",
+      "arizona",
       "iowa",
     ],
     [
@@ -304,10 +307,10 @@ const rows: Record<GradeBand, string[][]> = {
       "penn-state",
       "michigan-state",
       "colorado",
-      "baylor",
-      "delaware",
+      "ohio-state-columbus",
+      "minnesota-twin-cities",
       "oregon",
-      "missouri",
+      "arizona",
     ],
     [
       "uc-merced",
@@ -316,10 +319,10 @@ const rows: Record<GradeBand, string[][]> = {
       "penn-state",
       "michigan-state",
       "colorado",
-      "baylor",
-      "delaware",
+      "ohio-state-columbus",
+      "minnesota-twin-cities",
       "oregon",
-      "missouri",
+      "arizona",
     ],
   ],
   "85–90%": [
@@ -345,7 +348,7 @@ const rows: Record<GradeBand, string[][]> = {
       "colorado",
       "virginia-tech",
       "syracuse",
-      "baylor",
+      "ohio-state-columbus",
     ],
     [
       "uc-santa-cruz",
@@ -356,8 +359,8 @@ const rows: Record<GradeBand, string[][]> = {
       "indiana-bloomington",
       "michigan-state",
       "colorado",
-      "delaware",
-      "baylor",
+      "minnesota-twin-cities",
+      "ohio-state-columbus",
     ],
     [
       "uc-santa-cruz",
@@ -540,11 +543,11 @@ export function candidatePlan(input: ScenarioInput) {
         if (!school) throw new Error(`Missing researched school: ${id}`);
         return school;
       })
-      .sort((a, b) => a.name.localeCompare(b.name, "en")),
+      .sort(qsOrder),
   };
 }
 export function candidateMatrix() {
-  return GRADE_BANDS.flatMap((band) =>
+  return VISIBLE_GRADE_BANDS.flatMap((band) =>
     SAT_SCENARIOS.map((sat) => ({
       band,
       sat,

@@ -1,0 +1,297 @@
+{
+  "mit": {
+    "rank": 1,
+    "edition": 2027,
+    "sourceUrl": "https://www.topuniversities.com/where-to-study/north-america/united-states/ranked-top-100-us-universities",
+    "tied": false
+  },
+  "stanford": {
+    "rank": 2,
+    "edition": 2027,
+    "sourceUrl": "https://www.topuniversities.com/where-to-study/north-america/united-states/ranked-top-100-us-universities",
+    "tied": true
+  },
+  "harvard": {
+    "rank": 5,
+    "edition": 2027,
+    "sourceUrl": "https://www.topuniversities.com/where-to-study/north-america/united-states/ranked-top-100-us-universities",
+    "tied": false
+  },
+  "penn": {
+    "rank": 15,
+    "edition": 2027,
+    "sourceUrl": "https://www.topuniversities.com/where-to-study/north-america/united-states/ranked-top-100-us-universities",
+    "tied": false
+  },
+  "cornell": {
+    "rank": 16,
+    "edition": 2027,
+    "sourceUrl": "https://www.topuniversities.com/where-to-study/north-america/united-states/ranked-top-100-us-universities",
+    "tied": true
+  },
+  "yale": {
+    "rank": 16,
+    "edition": 2027,
+    "sourceUrl": "https://www.topuniversities.com/where-to-study/north-america/united-states/ranked-top-100-us-universities",
+    "tied": true
+  },
+  "uc-berkeley": {
+    "rank": 20,
+    "edition": 2027,
+    "sourceUrl": "https://www.topuniversities.com/where-to-study/north-america/united-states/ranked-top-100-us-universities",
+    "tied": true
+  },
+  "uchicago": {
+    "rank": 24,
+    "edition": 2027,
+    "sourceUrl": "https://www.topuniversities.com/where-to-study/north-america/united-states/ranked-top-100-us-universities",
+    "tied": false
+  },
+  "princeton": {
+    "rank": 27,
+    "edition": 2027,
+    "sourceUrl": "https://www.topuniversities.com/where-to-study/north-america/united-states/ranked-top-100-us-universities",
+    "tied": false
+  },
+  "columbia": {
+    "rank": 43,
+    "edition": 2027,
+    "sourceUrl": "https://www.topuniversities.com/where-to-study/north-america/united-states/ranked-top-100-us-universities",
+    "tied": true
+  },
+  "northwestern": {
+    "rank": 45,
+    "edition": 2027,
+    "sourceUrl": "https://www.topuniversities.com/where-to-study/north-america/united-states/ranked-top-100-us-universities",
+    "tied": true
+  },
+  "uc-los-angeles": {
+    "rank": 49,
+    "edition": 2027,
+    "sourceUrl": "https://www.topuniversities.com/where-to-study/north-america/united-states/ranked-top-100-us-universities",
+    "tied": false
+  },
+  "michigan-ann-arbor": {
+    "rank": 51,
+    "edition": 2027,
+    "sourceUrl": "https://www.topuniversities.com/where-to-study/north-america/united-states/ranked-top-100-us-universities",
+    "tied": false
+  },
+  "nyu": {
+    "rank": 58,
+    "edition": 2027,
+    "sourceUrl": "https://www.topuniversities.com/where-to-study/north-america/united-states/ranked-top-100-us-universities",
+    "tied": false
+  },
+  "brown": {
+    "rank": 66,
+    "edition": 2027,
+    "sourceUrl": "https://www.topuniversities.com/where-to-study/north-america/united-states/ranked-top-100-us-universities",
+    "tied": false
+  },
+  "duke": {
+    "rank": 70,
+    "edition": 2027,
+    "sourceUrl": "https://www.topuniversities.com/where-to-study/north-america/united-states/ranked-top-100-us-universities",
+    "tied": false
+  },
+  "texas-austin": {
+    "rank": 72,
+    "edition": 2027,
+    "sourceUrl": "https://www.topuniversities.com/where-to-study/north-america/united-states/ranked-top-100-us-universities",
+    "tied": false
+  },
+  "uc-san-diego": {
+    "rank": 81,
+    "edition": 2027,
+    "sourceUrl": "https://www.topuniversities.com/where-to-study/north-america/united-states/ranked-top-100-us-universities",
+    "tied": false
+  },
+  "penn-state": {
+    "rank": 92,
+    "edition": 2027,
+    "sourceUrl": "https://www.topuniversities.com/where-to-study/north-america/united-states/ranked-top-100-us-universities",
+    "tied": true
+  },
+  "purdue-west-lafayette": {
+    "rank": 100,
+    "edition": 2027,
+    "sourceUrl": "https://www.topuniversities.com/where-to-study/north-america/united-states/ranked-top-100-us-universities",
+    "tied": true
+  },
+  "wisconsin-madison": {
+    "rank": 131,
+    "edition": 2027,
+    "sourceUrl": "https://www.topuniversities.com/where-to-study/north-america/united-states/ranked-top-100-us-universities",
+    "tied": true
+  },
+  "uc-davis": {
+    "rank": 137,
+    "edition": 2027,
+    "sourceUrl": "https://www.topuniversities.com/where-to-study/north-america/united-states/ranked-top-100-us-universities",
+    "tied": false
+  },
+  "southern-california": {
+    "rank": 153,
+    "edition": 2027,
+    "sourceUrl": "https://www.topuniversities.com/where-to-study/north-america/united-states/ranked-top-100-us-universities",
+    "tied": false
+  },
+  "asu": {
+    "rank": 172,
+    "edition": 2027,
+    "sourceUrl": "https://www.topuniversities.com/where-to-study/north-america/united-states/ranked-top-100-us-universities",
+    "tied": false
+  },
+  "uc-santa-barbara": {
+    "rank": 173,
+    "edition": 2027,
+    "sourceUrl": "https://www.topuniversities.com/where-to-study/north-america/united-states/ranked-top-100-us-universities",
+    "tied": false
+  },
+  "michigan-state": {
+    "rank": 182,
+    "edition": 2027,
+    "sourceUrl": "https://www.topuniversities.com/where-to-study/north-america/united-states/ranked-top-100-us-universities",
+    "tied": false
+  },
+  "ohio-state-columbus": {
+    "rank": 201,
+    "edition": 2027,
+    "sourceUrl": "https://www.topuniversities.com/where-to-study/north-america/united-states/ranked-top-100-us-universities",
+    "tied": true
+  },
+  "florida": {
+    "rank": 228,
+    "edition": 2027,
+    "sourceUrl": "https://www.topuniversities.com/where-to-study/north-america/united-states/ranked-top-100-us-universities",
+    "tied": true
+  },
+  "uc-irvine": {
+    "rank": 252,
+    "edition": 2027,
+    "sourceUrl": "https://www.topuniversities.com/where-to-study/north-america/united-states/ranked-top-100-us-universities",
+    "tied": true
+  },
+  "maryland-college-park": {
+    "rank": 252,
+    "edition": 2027,
+    "sourceUrl": "https://www.topuniversities.com/where-to-study/north-america/united-states/ranked-top-100-us-universities",
+    "tied": true
+  },
+  "minnesota-twin-cities": {
+    "rank": 255,
+    "edition": 2027,
+    "sourceUrl": "https://www.topuniversities.com/universities/university-minnesota-system",
+    "tied": true,
+    "scope": "University of Minnesota (System)"
+  },
+  "umass-amherst": {
+    "rank": 260,
+    "edition": 2027,
+    "sourceUrl": "https://www.topuniversities.com/where-to-study/north-america/united-states/ranked-top-100-us-universities",
+    "tied": false
+  },
+  "vanderbilt": {
+    "rank": 265,
+    "edition": 2027,
+    "sourceUrl": "https://www.topuniversities.com/where-to-study/north-america/united-states/ranked-top-100-us-universities",
+    "tied": false
+  },
+  "dartmouth": {
+    "rank": 270,
+    "edition": 2027,
+    "sourceUrl": "https://www.topuniversities.com/where-to-study/north-america/united-states/ranked-top-100-us-universities",
+    "tied": true
+  },
+  "arizona": {
+    "rank": 313,
+    "edition": 2027,
+    "sourceUrl": "https://www.topuniversities.com/where-to-study/north-america/united-states/ranked-top-100-us-universities",
+    "tied": false
+  },
+  "rutgers-new-brunswick": {
+    "rank": 314,
+    "edition": 2027,
+    "sourceUrl": "https://www.topuniversities.com/where-to-study/north-america/united-states/ranked-top-100-us-universities",
+    "tied": true
+  },
+  "colorado": {
+    "rank": 320,
+    "edition": 2027,
+    "sourceUrl": "https://www.topuniversities.com/where-to-study/north-america/united-states/ranked-top-100-us-universities",
+    "tied": true
+  },
+  "indiana-bloomington": {
+    "rank": 360,
+    "edition": 2027,
+    "sourceUrl": "https://www.topuniversities.com/where-to-study/north-america/united-states/ranked-top-100-us-universities",
+    "tied": true
+  },
+  "virginia-tech": {
+    "rank": 366,
+    "edition": 2027,
+    "sourceUrl": "https://www.topuniversities.com/where-to-study/north-america/united-states/ranked-top-100-us-universities",
+    "tied": false
+  },
+  "uc-riverside": {
+    "rank": 398,
+    "edition": 2027,
+    "sourceUrl": "https://www.topuniversities.com/where-to-study/north-america/united-states/ranked-top-100-us-universities",
+    "tied": false
+  },
+  "buffalo": {
+    "rank": 416,
+    "edition": 2027,
+    "sourceUrl": "https://www.topuniversities.com/where-to-study/north-america/united-states/ranked-top-100-us-universities",
+    "tied": true
+  },
+  "uc-santa-cruz": {
+    "rank": 458,
+    "edition": 2027,
+    "sourceUrl": "https://www.topuniversities.com/where-to-study/north-america/united-states/ranked-top-100-us-universities",
+    "tied": true
+  },
+  "uconn": {
+    "rank": 458,
+    "edition": 2027,
+    "sourceUrl": "https://www.topuniversities.com/where-to-study/north-america/united-states/ranked-top-100-us-universities",
+    "tied": true
+  },
+  "washington-state": {
+    "rank": 510,
+    "edition": 2027,
+    "sourceUrl": "https://www.topuniversities.com/where-to-study/north-america/united-states/ranked-top-100-us-universities",
+    "tied": true
+  },
+  "kansas": {
+    "rank": 515,
+    "edition": 2027,
+    "sourceUrl": "https://www.topuniversities.com/where-to-study/north-america/united-states/ranked-top-100-us-universities",
+    "tied": true
+  },
+  "iowa-state": {
+    "rank": 540,
+    "edition": 2027,
+    "sourceUrl": "https://www.topuniversities.com/where-to-study/north-america/united-states/ranked-top-100-us-universities",
+    "tied": true
+  },
+  "florida-state": {
+    "rank": 546,
+    "edition": 2027,
+    "sourceUrl": "https://www.topuniversities.com/where-to-study/north-america/united-states/ranked-top-100-us-universities",
+    "tied": true
+  },
+  "delaware": {
+    "rank": 575,
+    "edition": 2027,
+    "sourceUrl": "https://www.topuniversities.com/where-to-study/north-america/united-states/ranked-top-100-us-universities",
+    "tied": true
+  },
+  "iowa": {
+    "rank": 597,
+    "edition": 2027,
+    "sourceUrl": "https://www.topuniversities.com/where-to-study/north-america/united-states/ranked-top-100-us-universities",
+    "tied": true
+  }
+}

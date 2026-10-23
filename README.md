@@ -24,7 +24,7 @@ No account, API key, database or backend is required. Plans, language, saved sch
 
 - **Monthly roadmap:**23months, October2026–August2028;72original tasks. All months and instructions are expanded. Add, edit, move, delete, complete, hide completed, undo and back up/restore. Edited official reminders retain their original guidance and sources. The stage dropdown defaults to Select.
 - **University explorer:** 94 researched universities; eight Ontario bands × five SAT scenarios, with ten research candidates per combination. SAT is the only profile input. The applicant context is Korean citizenship / U.S. international first-year / humanities, sociology and history.
-- **All scenarios:** each of 40 cells previews three names and opens ten candidates with programs, academic conditions, testing policies and evidence. CSV exports all 400 candidate entries, including uncertainty and selection method.
+- **All scenarios:** each of 40 cells previews three names and opens ten candidates with programs, academic conditions, testing policies and evidence. CSV exports all 250 candidate entries, including uncertainty and selection method.
 - **Research catalog:** all reviewed schools remain searchable, including schools excluded from strict recommendations. Cards link program/entry structure and primary evidence. School details distinguish current rules, score-cohort scope, unknown Ontario equivalencies and future-cycle uncertainty.
 - **SAT distribution table:** the full research pool is reorganized by SAT bands1100–1600. These are score positions, never an independent admission recommendation.
 - **SAT/AP and resources:** official practice, sourced exam calendars, AP priorities and credit examples, study materials and book editions.
@@ -94,3 +94,5 @@ GitHub Pages publishes built static files from codex/site in the same repository
 University cards and detail dialogs share a locally hosted logo and campus-building photo for each researched school. `src/data/university-media.json` records the original file, identifying caption, author, source page and license; the UI exposes attribution and license links. Files live in `public/university-media/` and load lazily. University logos remain the property of their owners.
 
 Use `python3 scripts/download-university-media.py` only to restore missing files from the reviewed manifest. It preserves existing files, spaces requests and stops on rate limiting; honor the server's Retry-After before resuming. Verify school/campus identity and image rights before replacing an image. `tests/university-media.test.ts` checks full catalog coverage, local file presence and attribution.
+
+QS review: the live matrix displays Ontario 75–100% (25 combinations), with 250 exported entries. Verified QS2027 ranks order candidates and the SAT comparison; QS is not an admission probability. Secondary Naver/Reddit review and official sources are in research/recognition-review.md and research/qs-ranking-review.md.

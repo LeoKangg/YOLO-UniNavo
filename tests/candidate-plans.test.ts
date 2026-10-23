@@ -1,3 +1,4 @@
+import { qsOrder } from "../src/qs.ts";
 import { test } from "node:test";
 import assert from "node:assert/strict";
 import {
@@ -15,11 +16,11 @@ import { renderExplorer } from "../src/university-explorer.ts";
 const input = (band = "60–65%", sat = 1100) =>
   normalizeCandidateInput({ band, sat });
 
-test("all40 cases contain ten unique, source-backed research candidates from a pool larger than20", () => {
+test("all25 cases contain ten unique, source-backed research candidates from a pool larger than20", () => {
   const cells = candidateMatrix();
-  assert.equal(cells.length, 40);
+  assert.equal(cells.length, 25);
   assert.ok(
-    new Set(cells.flatMap((c) => c.selected.map((s) => s.id))).size > 40,
+    new Set(cells.flatMap((c) => c.selected.map((s) => s.id))).size > 30,
   );
   for (const cell of cells) {
     assert.equal(cell.kind, "editorial-review");
@@ -124,8 +125,8 @@ test("reviewed profiles preserve college scope, conflicting dates and current so
 });
 test("live explorer uses names and ten candidates, with one SAT input and no hidden eligibility claim", () => {
   const matrix = renderExplorer(input(), "all-scenarios", "", new Set());
-  assert.equal((matrix.match(/data-scenario-choice=/g) ?? []).length, 40);
-  assert.match(matrix, /Fort Hays State University/);
+  assert.equal((matrix.match(/data-scenario-choice=/g) ?? []).length, 25);
+  assert.doesNotMatch(matrix, /60–65%|65–70%|70–75%/);
   assert.match(matrix, /eligibility is not confirmed/);
   assert.equal((matrix.match(/<input /g) ?? []).length, 1);
   assert.doesNotMatch(
@@ -141,17 +142,17 @@ test("live explorer uses names and ten candidates, with one SAT input and no hid
   assert.match(result, /The University of Toledo/);
   assert.doesNotMatch(result, /verified component matches|short of10/);
 });
-test("CSV exports400 research entries with requirements, official links and explicit editorial status", () => {
+test("CSV exports250 research entries with requirements, official links and explicit editorial status", () => {
   const csv = candidateCsv();
-  assert.equal(csv.split("\r\n").length, 401);
+  assert.equal(csv.split("\r\n").length, 251);
   assert.equal(
     (
       csv.match(/Editorial research candidate, NOT confirmed eligibility/g) ??
       []
     ).length,
-    400,
+    250,
   );
-  assert.match(csv, /https:\/\/www\.utoledo\.edu/);
+  assert.match(csv, /https:\/\/admission\.asu\.edu/);
   assert.match(csv, /college|College/);
 });
 
@@ -171,7 +172,7 @@ test("Harvard is not excluded at1500 or presented as safe at1600; list order is 
     const names = cell.selected.map((s) => s.name);
     assert.deepEqual(
       names,
-      [...names].sort((a, b) => a.localeCompare(b, "en")),
+      [...cell.selected].sort(qsOrder).map((s) => s.name),
     );
   }
   const html = renderExplorer(
@@ -181,7 +182,7 @@ test("Harvard is not excluded at1500 or presented as safe at1600; list order is 
     new Set(),
   );
   assert.match(html, /Harvard University/);
-  assert.match(html, /not recommendation rank/);
+  assert.match(html, /not an admission likelihood rank/);
   assert.doesNotMatch(html, /scenario-order/);
   assert.doesNotMatch(candidateCsv(), /Research order/);
 });
@@ -253,4 +254,14 @@ test("audit coverage is explicit for every school and final updates cannot be ov
     scenarioSchoolMap.get("florida-state")!.applicantScope.text,
     /Regular Decision/,
   );
+});
+
+test("SAT comparison separates UC and retains verified score cohorts and QS ranks", () => {
+  const html = renderExplorer(input("85–90%", 1300), "sat-map", "", new Set());
+  assert.match(html, /Explore universities by SAT score/);
+  assert.match(html, /QS 2027/);
+  assert.match(html, /Within published middle 50%/);
+  assert.match(html, /UC: separate from the SAT table/);
+  assert.match(html, /verified composite profile unavailable/);
+  assert.equal((html.match(/<th scope="row">/g) ?? []).length, 5);
 });
