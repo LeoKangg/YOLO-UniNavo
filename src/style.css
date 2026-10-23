@@ -4113,3 +4113,66 @@ footer > a {
 .elite-sat-table td:nth-child(2) {
   width: 40%;
 }
+
+/* Personal planner heading and official education logo. */
+.topbar {
+  height: auto;
+  min-height: 112px;
+  gap: 24px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+.personal-heading {
+  display: grid;
+  gap: 6px;
+}
+.personal-heading strong {
+  color: #234c4e;
+  font-size: 26px;
+  line-height: 1.4;
+  letter-spacing: -0.04em;
+}
+.personal-heading > span {
+  font-size: 15px;
+}
+.topbar .top-actions {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+.education-brand {
+  display: grid;
+  justify-items: center;
+  gap: 4px;
+  color: #53655c;
+  text-decoration: none;
+  flex-shrink: 0;
+}
+.education-brand img {
+  display: block;
+  width: 144px;
+  height: auto;
+}
+.education-brand span {
+  font-size: 12px;
+  letter-spacing: 0;
+}
+@media (max-width: 760px) {
+  .topbar {
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+  .personal-heading {
+    flex-basis: 100%;
+  }
+  .personal-heading strong {
+    font-size: 24px;
+  }
+  .topbar .top-actions {
+    width: 100%;
+    justify-content: space-between;
+  }
+  .education-brand img {
+    width: 126px;
+  }
+}

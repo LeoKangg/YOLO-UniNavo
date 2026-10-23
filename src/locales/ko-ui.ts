@@ -8,7 +8,7 @@ Start with these three. Check them off as you go.	이 세 가지만 먼저. 끝�
 This month's priorities	이번 달 우선 할 일
 Next steps	다음 단계
 Find universities	대학 찾기
-Choose a grade range. Explore your options.	성적 범위를 고르고 나에게 맞는 대학을 찾아보세요.
+Choose a grade range. Explore your options.	성적 범위를 고르고 태율이에게 맞는 대학을 찾아보세요.
 Pick your next test or practice session.	다음 시험과 연습 계획을 정하세요.
 More preparation & Ontario requirements	추가 준비 · 온타리오 졸업 요건
 How to do it	어떻게 하면 되나요?
@@ -40,8 +40,8 @@ Ontario, Canada	캐나다 온타리오
 Grade 11 · Semester 1	11학년 · 1학기
 FALL 2028 ENTRY	2028년 가을 입학
 One thoughtful step	한 걸음씩 차근차근,
-at a time.	나만의 방향으로.
-YOUR U.S. UNIVERSITY PLANNER	나의 미국 대학 입학 플래너
+at a time.	태율이만의 방향으로.
+YOUR U.S. UNIVERSITY PLANNER	태율이의 미국 대학 입학 플래너
 Planning from October 2026	2026년 10월부터 시작하는 계획
 Built around your next step.	다음 한 걸음을 위한 계획.
 Last verified: October 21, 2026. Admission policies and deadlines can change. Always confirm final requirements on the university’s official admissions website before applying.	최종 확인: 2026년 10월 21일. 입학 정책과 마감일은 변경될 수 있습니다. 지원하기 전에 반드시 해당 대학의 공식 입학 웹사이트에서 최종 요건을 확인하세요.
@@ -51,8 +51,8 @@ View sources ↗	출처 확인하기 ↗
 ONTARIO → UNITED STATES	온타리오 → 미국
 Do this now	지금 할 일
 Review your courses · Take a SAT diagnostic · Confirm an AP host	수강 과목 점검 · SAT 진단 테스트 · AP 응시 학교 확인
-Open my timeline	나의 준비 일정 보기
-Your roadmap: Grade 11 in 2026–27, Grade 12 in 2027–28, university entry Fall 2028	나의 로드맵: 2026~27년 11학년, 2027~28년 12학년, 2028년 가을 대학 입학
+Open my timeline	태율이의 준비 일정 보기
+Your roadmap: Grade 11 in 2026–27, Grade 12 in 2027–28, university entry Fall 2028	태율이의 로드맵: 2026~27년 11학년, 2027~28년 12학년, 2028년 가을 대학 입학
 THE JOURNEY AHEAD	앞으로의 여정
 YOU ARE HERE · OCT 2026	현재 위치 · 2026년 10월
 Grade 11	11학년
@@ -63,8 +63,8 @@ FALL 2028	2028년 가을
 Your U.S. university	미국 대학 입학
 A new beginning	새로운 시작
 Planning assumes normal grade progression and graduation in June 2028.	정상적인 학년 진급과 2028년 6월 졸업을 가정한 계획입니다.
-Your planning profile	나의 준비 프로필
-YOUR STARTING POINT	나의 출발점
+Your planning profile	태율이의 준비 프로필
+YOUR STARTING POINT	태율이의 출발점
 Expected Ontario average	예상 온타리오 평균 성적
 Choose your range	성적 범위를 선택하세요
 An exploration filter. No GPA conversion.	대학 탐색용 필터입니다. GPA로 환산하지 않습니다.
@@ -106,17 +106,17 @@ October 2026 · Your first three priorities, plus one useful habit.	2026년 10�
 See the full monthly plan →	전체 월별 계획 보기 →
 Ontario diploma & transcript checklist	온타리오 졸업·성적표 체크리스트
 THE ONTARIO DIFFERENCE	온타리오 학생이 알아둘 점
-Your transcript.	나의 성적표,
-Your context.	나의 교육 환경.
+Your transcript.	태율이의 성적표,
+Your context.	태율이의 교육 환경.
 Keep your Ontario grades in their original scale. U.S. universities assess your courses, academic history and school context individually.	온타리오 성적은 원래의 척도 그대로 제출하세요. 미국 대학은 수강 과목, 학업 이력, 학교 환경을 개별적으로 평가합니다.
 Do this next	다음 할 일
 Build a focused SAT routine and confirm your Grade 12 course choices.	집중적인 SAT 학습 습관을 만들고 12학년 수강 과목을 확인하세요.
 Later	추후 준비
 Summer 2027: essays and application preparation. Recheck Fall 2028 policies before applying.	2027년 여름에는 에세이와 지원서를 준비하세요. 지원 전에 2028년 가을 입학 정책을 다시 확인하세요.
 Plan SAT & AP →	SAT · AP 계획하기 →
-FIND YOUR DIRECTION	나에게 맞는 방향 찾기
-A thoughtful university shortlist.	신중하게 고르는 나의 대학 목록.
-University name matters to you. Academic fit and a realistic application plan matter too.	대학의 이름만큼, 나에게 맞는 학업 환경과 현실적인 지원 계획도 중요합니다.
+FIND YOUR DIRECTION	태율이에게 맞는 방향 찾기
+A thoughtful university shortlist.	신중하게 고르는 태율이의 대학 목록.
+University name matters to you. Academic fit and a realistic application plan matter too.	대학의 이름만큼, 태율이에게 맞는 학업 환경과 현실적인 지원 계획도 중요합니다.
 Start with your expected average.	예상 평균 성적부터 입력하세요.
 Choose a range above to see conditional picks. We will not turn an Ontario average into an admission probability.	위에서 성적 범위를 선택하면 조건부 추천을 볼 수 있습니다. 온타리오 평균 성적을 합격 확률로 환산하지 않습니다.
 A DIFFERENT ROUTE	다른 진학 경로
@@ -124,7 +124,7 @@ Build options, not false certainty.	가능한 진학 경로를 넓혀 보세요.
 At 60–70%, this research does not support a balanced direct-entry shortlist at the featured universities. At 70–75%, the few options shown are research leads, not targets. Prioritize stronger marks and a transcript assessment.	평균 60~70%에서는 이 조사만으로 소개된 대학들의 균형 잡힌 신입학 목록을 제안하기 어렵습니다. 70~75%에서 보이는 소수의 대학도 적정 지원이 아닌 추가 조사 대상입니다. 성적 향상과 성적표 평가를 먼저 진행하세요.
 Conditional English admission is not an academic waiver. A branch-campus offer is not an offer at the flagship campus. Check the exact campus, pathway contract and progression rules.	영어 조건부 입학이 학업 요건 면제를 뜻하지는 않습니다. 다른 캠퍼스의 합격은 대표 캠퍼스 합격과 다릅니다. 정확한 캠퍼스, 진학 연계 계약, 다음 단계 진입 조건을 확인하세요.
 ONE MONTH AT A TIME	한 달씩 차근차근
-My U.S. College Timeline	나의 미국 대학 준비 일정
+My U.S. College Timeline	태율이의 미국 대학 준비 일정
 From October 2026 to your Fall 2028 arrival. A clear next step, every month.	2026년 10월부터 2028년 가을 입학까지, 매달 다음 할 일을 확인하세요.
 Timeline completion	준비 일정 완료율
 Saved in this browser · no account needed	이 브라우저에 저장 · 계정 불필요
@@ -138,10 +138,10 @@ Regular Decision has a published standard deadline; rolling admission reviews ap
 Check each university’s published reference dates →	대학별 공지된 참고 일정 확인 →
 Before you cross the border	미국 입국 전 확인할 사항
 A name you know.	익숙한 대학 이름,
-A path that fits.	나에게 맞는 진학 경로.
+A path that fits.	태율이에게 맞는 진학 경로.
 University view	대학교 목록 보기
 All universities	전체 대학
-My 6 picks	나의 추천 대학
+My 6 picks	태율이의 추천 대학
 Search universities or majors	대학 또는 전공 검색
 Search a university or subject	대학이나 전공을 검색하세요
 Planning category	지원 계획 분류
@@ -156,7 +156,7 @@ Specialized-program fit requires a separate review.	전문 분야의 전공 적�
 This is planning guidance, not an admission guarantee. Categories are editorial exploration scenarios, not validated Ontario cutoffs. Specialized-program fit requires a separate review.	이 자료는 준비 안내이며 합격을 보장하지 않습니다. 분류는 탐색을 돕기 위한 판단이며 검증된 온타리오 합격선이 아닙니다. 전문 분야의 전공 적합성은 별도로 검토해야 합니다.
 Up to six working picks, balancing available planning categories before brand reference. We do not fill a list with unsuitable names. “Target” still requires a full transcript assessment; “More Realistic” appears only after course checks and strong preparation are reported.	인지도보다 지원 분류의 균형을 우선해 최대 6곳을 제안합니다. 적합하지 않은 대학으로 목록을 채우지 않습니다. ‘적정 검토’도 전체 성적표 평가가 필요하며, ‘상대적으로 현실적’은 과목 요건 확인과 탄탄한 학업 준비를 입력한 경우에만 표시됩니다.
 Choose a grade range to generate your working shortlist.	성적 범위를 선택해 검토할 대학 목록을 만드세요.
-Build your own shortlist.	나만의 관심 대학을 저장하세요.
+Build your own shortlist.	태율이만의 관심 대학을 저장하세요.
 No matching universities.	조건에 맞는 대학이 없습니다.
 Use the + button on a university card to save it here.	대학 카드의 + 버튼을 누르면 여기에 저장됩니다.
 Adjust your filters, or review the separate pathway strategy. An empty shortlist is more honest than an invented fit.	필터를 조정하거나 별도의 진학 경로를 살펴보세요. 근거 없이 대학을 추천하는 대신 목록을 비워 둡니다.
@@ -183,7 +183,7 @@ Not yet confirmed	아직 미확정
 Recheck testing for 2028.	2028년 시험 정책을 다시 확인하세요.
 View details	자세히 보기
 PREPARE WITH PURPOSE	목표에 맞게 준비하기
-Make testing work for you.	나에게 도움이 되는 시험 준비.
+Make testing work for you.	태율이에게 도움이 되는 시험 준비.
 School grades first. Focused preparation next. A score is one part of your application.	학교 성적을 우선하고, 시험은 집중해서 준비하세요. 시험 점수는 지원서의 한 부분입니다.
 SAT strategy	SAT 전략
 AP priorities	AP 우선순위

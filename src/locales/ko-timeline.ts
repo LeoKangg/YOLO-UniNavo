@@ -2,7 +2,7 @@
 export const timelineKo: Record<string, [string, string, [string, string][]]> =
   {
     "2026-10": [
-      "나의 출발점 정리하기",
+      "태율이의 출발점 정리하기",
       "대학 순위보다 성적표부터 살펴보세요.",
       [
         [
@@ -168,7 +168,7 @@ export const timelineKo: Record<string, [string, string, [string, string][]]> =
       ],
     ],
     "2027-07": [
-      "나만의 이야기를 준비할 시간",
+      "태율이만의 이야기를 준비할 시간",
       "학기가 바빠지기 전에 글쓰기를 시작하세요.",
       [
         [
