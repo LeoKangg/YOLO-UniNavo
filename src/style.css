@@ -4087,3 +4087,29 @@ footer > a {
     padding: 12px;
   }
 }
+
+.elite-sat-section {
+  margin-bottom: 40px;
+}
+.elite-sat-table {
+  width: 100%;
+  min-width: 800px;
+  border-collapse: collapse;
+  background: white;
+}
+.elite-sat-table th,
+.elite-sat-table td {
+  border: 1px solid #dce4db;
+  padding: 20px;
+  text-align: left;
+  vertical-align: top;
+}
+.elite-sat-table thead {
+  background: #e5eddf;
+}
+.elite-sat-table th:first-child {
+  width: 24%;
+}
+.elite-sat-table td:nth-child(2) {
+  width: 40%;
+}

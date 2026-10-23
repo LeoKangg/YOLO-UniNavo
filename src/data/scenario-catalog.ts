@@ -1,3 +1,4 @@
+import { eliteSatProfiles, eliteSatSources } from "./elite-sat-review.ts";
 import { universities, sourceMap } from "./index.ts";
 import { strategies } from "./strategies.ts";
 import { evidenceMap } from "./evidence.ts";
@@ -242,6 +243,22 @@ for (const school of scenarioSchools) {
       if (key in update) Object.assign(school, { [key]: update[key] });
     }
   }
+  const eliteProfile = eliteSatProfiles.find((p) => p.id === school.id);
+  if (eliteProfile)
+    school.satRange = {
+      low: eliteProfile.low,
+      high: eliteProfile.high,
+      cohort: eliteProfile.cohort,
+      cohortKo: eliteProfile.cohortKo,
+      sourceIds: [`elite-sat-${school.id}`],
+    };
+  school.sources.push(
+    ...eliteSatSources.filter(
+      (source) =>
+        source.id === `elite-sat-${school.id}` ||
+        (school.id === "harvard" && source.id === "elite-sat-harvard-2025"),
+    ),
+  );
   const ids = Object.values(school).flatMap((v) =>
     v && typeof v === "object" && "sourceIds" in v
       ? (v.sourceIds as string[])

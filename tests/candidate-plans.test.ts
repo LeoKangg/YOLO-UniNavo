@@ -263,5 +263,38 @@ test("SAT comparison separates UC and retains verified score cohorts and QS rank
   assert.match(html, /Within published middle 50%/);
   assert.match(html, /UC: separate from the SAT table/);
   assert.match(html, /verified composite profile unavailable/);
-  assert.equal((html.match(/<th scope="row">/g) ?? []).length, 5);
+  assert.equal(
+    (html.split('class="sat-band-table"')[1]?.match(/<th scope="row">/g) ?? [])
+      .length,
+    5,
+  );
+});
+
+test("1500 SAT view keeps elite schools visible without inventing a Harvard composite", () => {
+  const html = renderExplorer(input("95–100%", 1500), "sat-map", "", new Set());
+  const elite = html.split('class="elite-sat-table"')[1].split("</table>")[0];
+  for (const id of [
+    "harvard",
+    "stanford",
+    "mit",
+    "yale",
+    "princeton",
+    "penn",
+    "duke",
+    "uchicago",
+  ])
+    assert.ok(elite.includes(`data-detail="${id}"`), id);
+  assert.equal(scenarioSchoolMap.get("harvard")!.satRange, null);
+  assert.match(elite, /720–770/);
+  assert.match(elite, /730–790/);
+  assert.match(elite, /740–770/);
+  assert.match(elite, /770–800/);
+  assert.equal(scenarioSchoolMap.get("penn")!.satRange, null);
+  assert.match(
+    scenarioSchoolMap.get("brown")!.satRange!.cohort,
+    /2026 admitted/,
+  );
+  assert.match(elite, /No composite comparison available/);
+  assert.match(elite, /1520–1570/);
+  assert.match(scenarioSchoolMap.get("stanford")!.satRange!.cohort, /2025/);
 });
