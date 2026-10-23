@@ -123,21 +123,27 @@ test("reviewed profiles preserve college scope, conflicting dates and current so
     /Sociology/,
   );
 });
-test("live explorer uses names and ten candidates, with one SAT input and no hidden eligibility claim", () => {
+test("live explorer uses names and ten candidates, with SAT entry only in the score view and no hidden eligibility claim", () => {
   const matrix = renderExplorer(input(), "all-scenarios", "", new Set());
   assert.equal((matrix.match(/data-scenario-choice=/g) ?? []).length, 25);
   assert.doesNotMatch(matrix, /60–65%|65–70%|70–75%/);
   assert.match(matrix, /eligibility is not confirmed/);
-  assert.equal((matrix.match(/<input /g) ?? []).length, 1);
   assert.doesNotMatch(
     matrix,
-    /<select|data-calculation|scenario-route|scenario-basis|scenario-exact/,
+    /<input |<select|data-calculation|scenario-route|scenario-basis|scenario-exact/,
   );
+  const scoreView = renderExplorer(input(), "sat-map", "", new Set());
+  assert.equal((scoreView.match(/id="scenario-sat"/g) ?? []).length, 1);
   const result = renderExplorer(input(), "scenario", "", new Set());
   assert.equal(
-    (result.match(/class="scenario-school-card"/g) ?? []).length,
+    (
+      result.match(
+        /<tr><th scope="row"><button class="link-button" data-detail=/g,
+      ) ?? []
+    ).length,
     10,
   );
+  assert.match(result, /not an admission prediction/);
   assert.match(result, /not confirmed eligible/);
   assert.match(result, /The University of Toledo/);
   assert.doesNotMatch(result, /verified component matches|short of10/);

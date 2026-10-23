@@ -1,27 +1,45 @@
 import "./style.css";
-import { apCourseGroups } from "./data/ap-courses.ts";
 import { getLanguage, setLanguage, translate, localize } from "./i18n.ts";
-import {
-  universities,
-  sources,
-  sourceMap,
-  planning,
-  RESEARCH_DATE,
-} from "./data/index.ts";
+import { universities, sources, sourceMap, planning } from "./data/index.ts";
 import { evidenceMap } from "./data/evidence.ts";
 import { renderExplorer, renderScenarioDetail } from "./university-explorer.ts";
-import type { ExplorerMode } from "./university-explorer.ts";
-import {
-  normalizeCandidateInput,
-  candidateCsv,
-  candidateSatAdvice,
-} from "./candidate-plans.ts";
+import type { DetailTab, ExplorerMode } from "./university-explorer.ts";
+import { emptyBrowse, type BrowseFilters } from "./school-browse.ts";
+import { normalizeCandidateInput, candidateCsv } from "./candidate-plans.ts";
 import { scenarioSchools, scenarioSchoolMap } from "./data/scenario-catalog.ts";
 import comparisonContext from "../research/comparison-context.json" with { type: "json" };
 import { timeline } from "./data/timeline.ts";
 import { normalizePlanner, personalTimeline, saveTaskEdit } from "./planner.ts";
 import type { PersonalTask } from "./planner.ts";
 import type { Fact, University } from "./types.ts";
+import { normalizeGrades, type EditorId, type GradesState } from "./grades.ts";
+import {
+  bindGradesPage,
+  renderGradesPage,
+  todayIso,
+  type GradesUi,
+} from "./grades-page.ts";
+import {
+  addNote,
+  markCompleted,
+  normalizeJournal,
+  schoolNotes,
+  type JournalState,
+} from "./journal.ts";
+import { renderHomePage } from "./home-page.ts";
+import {
+  bindReportPage,
+  renderReportPage,
+  type ReportUi,
+} from "./report-page.ts";
+import { gradeInput } from "./matching.ts";
+import { parseReportHash, rangeFor, reportHash } from "./report.ts";
+import {
+  bindTestPrep,
+  renderTestPrep,
+  type PrepTab,
+  type PrepUi,
+} from "./test-prep-page.ts";
 import {
   loadProfile,
   loadChecked,
@@ -39,7 +57,7 @@ let planner = normalizePlanner(readLocal("planner"), timeline);
 let undoPlanner: { planner: typeof planner; checked: string[] } | null = null;
 let plannerNotice = "";
 const words = (en: string, ko: string) => (getLanguage() === "ko" ? ko : en);
-let explorerMode: ExplorerMode = "all-scenarios",
+let explorerMode: ExplorerMode = "browse",
   explorerSearch = "";
 let scenarioInput = normalizeCandidateInput(
   readLocal("scenario") ?? {
@@ -49,14 +67,62 @@ let scenarioInput = normalizeCandidateInput(
 );
 let sourceSearch = "";
 const openedDetails = new Set<string>();
+let grades = normalizeGrades(readLocal("grades"));
+let gradesUndo: GradesState | null = null;
+// Everyone with the link edits as one shared author; names are not tracked.
+const editor: EditorId = "student";
+const gradesUi: GradesUi = {
+  grade: Math.max(0, ...grades.courses.map((c) => c.grade)) || 11,
+  notice: "",
+  canUndo: false,
+};
+let journal: JournalState = normalizeJournal(readLocal("journal"));
+const today = todayIso();
+const reportUi: ReportUi = parseReportHash(location.hash) ?? {
+  period: "week",
+  anchor: today,
+};
+const prepUi: PrepUi = {
+  sat: "targets",
+  ap: "picks",
+  apSearch: "",
+  apGroup: "",
+};
+// The shortlist follows entered grades until a matrix cell is chosen by hand.
+let scenarioFromGrades = gradeInput(grades) !== null;
+if (scenarioFromGrades) explorerMode = "scenario";
+const startSat = gradeInput(grades)?.sat ?? null;
+let browseFilters: BrowseFilters = {
+  ...emptyBrowse(),
+  band:
+    startSat === null
+      ? ""
+      : startSat < 1200
+        ? "under-1200"
+        : startSat < 1300
+          ? "1200"
+          : startSat < 1400
+            ? "1300"
+            : "1400",
+};
+let matrixCell: string | null = null;
 
 const nav = [
-  { id: "timeline", label: "My timeline", icon: "◷" },
+  { id: "home", label: "Home", icon: "◷" },
+  { id: "grades", label: "Grades", icon: "▥" },
   { id: "universities", label: "Universities", icon: "▦" },
-  { id: "sat", label: "SAT", icon: "✧" },
-  { id: "ap", label: "AP", icon: "✦" },
-  { id: "resources", label: "Study resources", icon: "▤" },
-  { id: "sources", label: "Sources", icon: "↗" },
+  { id: "sat", label: "Test prep", icon: "✧" },
+  { id: "report", label: "Reports", icon: "▤" },
+];
+const examTabs = ["sat", "ap", "resources"];
+const routes = [
+  "home",
+  "timeline",
+  "grades",
+  "universities",
+  "report",
+  "sources",
+  ...examTabs,
 ];
 const esc = (s: unknown) =>
   String(s ?? "").replace(
@@ -69,9 +135,13 @@ const esc = (s: unknown) =>
 const route = () =>
   location.hash === "#exams"
     ? "sat"
-    : nav.some((n) => n.id === location.hash.slice(1))
-      ? location.hash.slice(1)
-      : "timeline";
+    : location.hash.startsWith("#report")
+      ? "report"
+      : routes.includes(location.hash.slice(1))
+        ? location.hash.slice(1)
+        : "home";
+const navFor = (r: string) =>
+  examTabs.includes(r) ? "sat" : r === "timeline" ? "home" : r;
 const date = (s: string) =>
   new Date(`${s}T12:00:00Z`).toLocaleDateString(
     getLanguage() === "ko" ? "ko-KR" : "en-CA",
@@ -181,47 +251,29 @@ function openTaskEditor(id?: string, monthId?: string) {
   dialog.showModal();
 }
 function universitiesPage() {
-  return renderExplorer(scenarioInput, explorerMode, explorerSearch, saved);
+  const mine = gradeInput(grades);
+  if (scenarioFromGrades && mine?.band && mine.sat !== null)
+    scenarioInput = normalizeCandidateInput({ band: mine.band, sat: mine.sat });
+  return renderExplorer(scenarioInput, explorerMode, explorerSearch, saved, {
+    mine,
+    fromGrades: scenarioFromGrades,
+    browse: browseFilters,
+    matrixCell,
+    target: grades.satTarget,
+    noteCount: (id) => schoolNotes(journal, id).length,
+  });
 }
-function apCatalogSection() {
-  return `<section class="section ap-catalog" aria-labelledby="ap-catalog-title"><h2 id="ap-catalog-title">${words("All 42 AP courses · 2026–27", "AP 전체 42과목 · 2026–27년")}</h2><p>${words("Browse College Board’s official courses by subject. Each course links to its official page.", "College Board 공식 과목을 분야별로 살펴보세요. 각 과목에서 공식 안내로 이동할 수 있습니다.")}</p><p class="small muted">${words("Reviewed October 22, 2026. AP Central lists 43 subjects including AP Networking, which is pilot-only in 2026–27 and launches generally in 2027–28. The 42 courses below exclude that pilot. School availability and exam-only eligibility vary.", "2026년 10월 22일 확인. AP Central은 AP Networking을 포함해 43과목을 표시합니다. Networking은 2026–27년 시범 운영, 2027–28년 정식 도입 예정이므로 아래 일반 제공 42과목에서 제외했습니다. 학교별 개설 여부와 시험만 응시할 수 있는지는 따로 확인하세요.")}</p>${refs(["ap-course-catalog", "ap-networking"])}<div class="ap-catalog-grid">${apCourseGroups.map((group) => `<article class="ap-course-group"><h3>${esc(words(group.en, group.ko))} <span class="muted">${group.courses.length}</span></h3><ul>${group.courses.map(([en, ko, slug]) => `<li>${link(`https://apcentral.collegeboard.org/courses/${slug}`, words(`AP ${en}`, `AP ${ko} (${en})`))}</li>`).join("")}</ul></article>`).join("")}</div></section>`;
+function currentMonthId() {
+  const id = today.slice(0, 7);
+  return timeline.some((m) => m.id === id)
+    ? id
+    : id < timeline[0].id
+      ? timeline[0].id
+      : timeline.at(-1)!.id;
 }
-function examsPage(examTab: "sat" | "ap") {
-  const ranged = scenarioSchools.filter(
-    (u) => u.satRange && u.testing.policy !== "not-considered",
-  );
-  const content = `${
-    examTab === "sat"
-      ? `<details class="section section-fold"><summary>Your SAT goals, grounded in real cohorts.</summary><p>These are strategic references, not official cutoffs. The lower end is a baseline comparison, not an admission minimum; the upper end is a strong study goal. Above that is a stretch goal without a promise of admission. Only verified distributions are used.</p><div class="cards">${ranged
-          .map((u) => {
-            const r = u.satRange!;
-            return `<article class="score-card"><span class="eyebrow">${esc(words(u.name, u.nameKo))}</span><h3>${r.low}–${r.high}</h3><p class="small">Official middle 50%<br>${esc(words(r.cohort, r.cohortKo || translate(r.cohort)))}</p><dl><div><dt>Baseline reference</dt><dd>${r.low}</dd></div><div><dt>Strong strategic target</dt><dd>${r.high}</dd></div><div><dt>Excellent / stretch goal</dt><dd>Above ${r.high}</dd></div></dl><p class="small">${esc(candidateSatAdvice(u, scenarioInput.sat, getLanguage() === "ko"))}</p>${refs(r.sourceIds)}</article>`;
-          })
-          .join(
-            "",
-          )}</div><p class="small muted">For other schools, an official range was not verified here. No numerical target is assigned. An optional-test policy does not waive English proficiency requirements.</p></details><section class="section"><h2>Confirmed SAT dates · 2026–27</h2>${planFact("sat-registration")}<div class="table-wrap"><table><caption>Remaining test dates as of October 21, 2026 · times in Eastern Time</caption><thead><tr><th>Test date</th><th>Register by</th><th>Late / changes</th><th>Score release</th></tr></thead><tbody>${planning.satDates
-          .filter((d) => d.date >= RESEARCH_DATE)
-          .map(
-            (d) =>
-              `<tr><th>${date(d.date)}</th><td>${date(d.registrationDeadline)}</td><td>${date(d.lateDeadline)}</td><td>${date(d.scoreRelease)}</td></tr>`,
-          )
-          .join(
-            "",
-          )}</tbody></table></div>${refs(["sat-dates", "sat-release"])}<details class="methodology"><summary>2027–28 anticipated dates — not confirmed</summary>${planFact("sat-future")}<p>${planning.satAnticipatedDates.map((d) => date(d.date)).join(" · ")}</p></details></section><details class="section section-fold"><summary>Sending scores & test policies</summary><div><h2>Sending scores</h2>${planFact("sat-score-choice")}${planFact("sat-superscore")}</div><div><h2>What “test optional” means</h2><p>You may choose whether SAT/ACT scores are considered where the applicable policy allows. Program admission, scholarships, placement and English evidence may have separate rules. Check the entry year and campus.</p>${refs(["msu-apply", "isu-merit", "psu-requirements"])}<p>Penn State currently uses the best combined score from a single sitting rather than superscoring.</p>${refs(["psu-requirements"])}<a href="#universities" class="text-link">Read school-specific policies →</a></div></details><section class="exam-hero"><h2>Start with one practice test.</h2><p>Take a timed Bluebook test. Then practice your weak areas.</p><details class="methodology"><summary>Your SAT routine</summary>${planFact("sat-plan")}</details><details class="methodology"><summary>About the SAT</summary>${planFact("sat-definition")}</details><a class="button" href="https://satsuite.collegeboard.org/practice/practice-tests/bluebook" target="_blank" rel="noopener noreferrer">Start with official practice ↗</a></section>`
-      : `<section class="section"><h2>Four priorities to consider</h2><p>Priorities and workload descriptions are editorial planning advice. AP courses can demonstrate advanced work, but each college evaluates rigor in school context. An exam-only score does not add a completed AP course to your transcript.</p><div class="ap-grid">${planning.apPriorities.map((a) => `<article class="ap-card"><span class="eyebrow">PRIORITY 0${a.priority} ${a.priority === 4 ? "· OPTIONAL" : ""}</span><h3>${esc(a.name)}</h3><p>${esc(a.reason)}</p><details class="ap-details"><summary>Preparation & credit details</summary><dl class="stacked"><dt>Workload & preparation</dt><dd>${esc(a.difficulty)}</dd><dt>When to consider it</dt><dd>${esc(a.timing)}</dd><dt>2027 exam</dt><dd>${date(a.examDate)} · ${esc(a.session)}</dd><dt>Score goal & credit relevance</dt><dd>${esc(a.target)}. ${esc(a.credit)}</dd></dl>${refs(a.sourceIds)}</details></article>`).join("")}</div><p class="small">These ASU credit examples do not transfer automatically to other universities. NYU CAS, for example, awards no credit for AP English Language; its Statistics credit does not replace Sociology’s required statistics course.</p>${refs(["nyu-ap", "nyu-sociology"])}</section><section class="section"><h2>Arrange your exam before preparing for it.</h2>${planFact("ap-order-deadline")}${planFact("ap-local-deadline")}${planFact("ap-2028")}${planFact("ap-score-policy")}</section>${apCatalogSection()}<section class="exam-hero"><h2>Choose one or two AP subjects.</h2>${planFact("ap-selection")}<details class="methodology"><summary>AP course or exam only?</summary>${planFact("ap-course-exam")}</details></section>`
-  }`;
-  const visibleContent =
-    examTab === "sat"
-      ? content
-          .replace(/<details\b([^>]*)>/g, "<section$1>")
-          .replace(/<summary>/g, "<h2>")
-          .replace(/<\/summary>/g, "</h2>")
-          .replace(/<\/details>/g, "</section>")
-      : content;
-  return `<div class="page-intro"><h1>${examTab.toUpperCase()}</h1><p>School grades first. Focused preparation next. A score is one part of your application.</p></div>${visibleContent}`;
-}
-function resourcesPage() {
-  return `<div class="page-intro"><h1>Study resources</h1><p>Official practice comes first. Choose a book only when you know the gap it needs to fill.</p></div><div class="resource-grid">${planning.resources.map((r, i) => `<article class="resource-card"><div class="resource-number">${String(i + 1).padStart(2, "0")}</div><div><span class="eyebrow">${esc(r.priority)}</span><h2>${esc(r.title)}</h2><p>${esc(r.purpose)}</p><details class="resource-details"><summary>About this resource</summary><p class="byline">${esc(r.author)} · ${esc(r.edition)}</p><p>${esc(r.reason)}</p>${refs(r.sourceIds)}</details>${link(r.url, r.priority.includes("free") ? "Open free resource" : "View publisher / edition", "text-link")}</div></article>`).join("")}</div><p class="notice">Editions and availability were reviewed on October 21, 2026. No live prices or affiliate links. College Essay Essentials’ November 2026 edition was still forthcoming at this review.</p>`;
+function saveJournal(next: JournalState) {
+  journal = next;
+  persistenceAvailable = writeLocal("journal", journal) && persistenceAvailable;
 }
 function sourcesPage() {
   const list = sources.filter((s) =>
@@ -245,7 +297,7 @@ function render(restoreFocus = false) {
       else openedDetails.delete(d.dataset.disclosure!);
     });
   const r = route();
-  app.innerHTML = `<aside class="sidebar"><a class="brand" href="#timeline" aria-label="UniNavo home"><span class="brand-symbol">u<span>↗</span></span><span>UniNavo<span class="brand-sub">YOUR NEXT CHAPTER</span></span></a><a class="education-brand" href="https://yoloedu.org/" target="_blank" rel="noopener noreferrer" aria-label="YOLO Education" data-original-language><img src="${import.meta.env.BASE_URL}branding/yolo-education.png" width="483" height="194" alt="YOLO Education"></a><nav aria-label="Main navigation">${nav.map((n) => `<a href="#${n.id}" ${r === n.id ? 'aria-current="page"' : ""}><span aria-hidden="true">${n.icon}</span>${n.label}${n.id === "timeline" ? "<i></i>" : ""}</a>`).join("")}</nav></aside><div class="workspace"><header class="topbar"><div class="personal-heading"><strong data-original-language lang="ko">태율이의 미국 대학교 입시</strong><span>Grade 11 → Fall 2028</span></div><div class="top-actions"><button id="language-toggle" class="language-toggle" lang="${getLanguage() === "en" ? "ko" : "en"}" aria-label="${getLanguage() === "en" ? "한국어로 보기" : "Switch to English"}"><span aria-hidden="true">◎</span> ${getLanguage() === "en" ? "한국어" : "English"}</button></div></header><main id="main" tabindex="-1">${r === "timeline" ? timelinePage() : r === "universities" ? universitiesPage() : r === "sat" || r === "ap" ? examsPage(r) : r === "resources" ? resourcesPage() : sourcesPage()}</main><footer><p>Planning guidance, not an admission guarantee.</p><details class="footer-notes"><summary>Sources & important notes</summary><p>Research reviewed: October 21–22, 2026. Admission policies and deadlines can change. Always confirm final requirements on the university’s official admissions website before applying.</p><p>${persistenceAvailable ? "Your checklist and profile stay in this browser." : "Browser storage is unavailable. Changes are kept for this session only."}</p></details><a href="#sources">View sources ↗</a></footer></div><dialog id="task-dialog" aria-labelledby="task-dialog-title"></dialog><dialog id="university-dialog" aria-labelledby="dialog-title"></dialog><div id="live-status" class="sr-only" role="status" aria-live="polite"></div>`;
+  app.innerHTML = `<aside class="sidebar"><a class="brand" href="#home" aria-label="UniNavo home"><span class="brand-symbol">u<span>↗</span></span><span>UniNavo<span class="brand-sub">YOUR NEXT CHAPTER</span></span></a><nav aria-label="Main navigation">${nav.map((n) => `<a href="#${n.id}" ${navFor(r) === n.id ? 'aria-current="page"' : ""}><span aria-hidden="true">${n.icon}</span>${n.label}${n.id === "home" ? "<i></i>" : ""}</a>`).join("")}</nav><a class="education-brand" href="https://yoloedu.ca/" target="_blank" rel="noopener noreferrer" aria-label="YOLO Education" data-original-language><img src="${import.meta.env.BASE_URL}branding/yolo-education.png" width="483" height="194" alt="YOLO Education"></a></aside><div class="workspace"><header class="topbar"><div class="personal-heading"><strong data-original-language lang="ko">태율이의 미국 대학교 입시</strong><span>Grade 11 → Fall 2028</span></div><div class="top-actions"><button id="language-toggle" class="language-toggle" lang="${getLanguage() === "en" ? "ko" : "en"}" aria-label="${getLanguage() === "en" ? "한국어로 보기" : "Switch to English"}"><span aria-hidden="true">◎</span> ${getLanguage() === "en" ? "한국어" : "English"}</button></div></header><main id="main" tabindex="-1">${r === "home" ? renderHomePage({ today, months: personalTimeline(timeline, planner), checked, journal, grades }) : r === "timeline" ? timelinePage() : r === "grades" ? renderGradesPage(grades, gradesUi) : r === "universities" ? universitiesPage() : examTabs.includes(r) ? renderTestPrep(r as PrepTab, prepUi, grades, today, { planFact, refs, link }) : r === "report" ? renderReportPage({ ui: reportUi, today, months: personalTimeline(timeline, planner), checked, journal, grades }) : sourcesPage()}</main><footer><p>Planning guidance, not an admission guarantee.</p><details class="footer-notes"><summary>Sources & important notes</summary><p>Research reviewed: October 21–22, 2026. Admission policies and deadlines can change. Always confirm final requirements on the university’s official admissions website before applying.</p><p>${persistenceAvailable ? "Your checklist and profile stay in this browser." : "Browser storage is unavailable. Changes are kept for this session only."}</p></details><a href="#sources">View sources ↗</a></footer></div><dialog id="task-dialog" aria-labelledby="task-dialog-title"></dialog><dialog id="university-dialog" aria-labelledby="dialog-title"></dialog><div id="live-status" class="sr-only" role="status" aria-live="polite"></div>`;
   document.documentElement.lang = getLanguage();
   document.title =
     getLanguage() === "ko"
@@ -280,6 +332,7 @@ function bind() {
   if (satField) {
     const saveSat = () => {
       if (!satField.checkValidity()) return false;
+      scenarioFromGrades = false;
       scenarioInput = normalizeCandidateInput({
         ...scenarioInput,
         sat: satField.value === "" ? null : Number(satField.value),
@@ -306,7 +359,22 @@ function bind() {
     .querySelectorAll<HTMLButtonElement>("[data-scenario-choice]")
     .forEach((button) =>
       button.addEventListener("click", () => {
-        const [band, sat] = button.dataset.scenarioChoice!.split("|");
+        matrixCell = button.dataset.scenarioChoice!;
+        render();
+        document
+          .querySelector<HTMLButtonElement>(
+            `[data-scenario-choice="${matrixCell}"]`,
+          )
+          ?.focus({ preventScroll: true });
+      }),
+    );
+  document
+    .querySelector<HTMLButtonElement>("[data-open-cell]")
+    ?.addEventListener("click", (event) => {
+      {
+        const button = event.currentTarget as HTMLButtonElement;
+        const [band, sat] = button.dataset.openCell!.split("|");
+        scenarioFromGrades = false;
         scenarioInput = normalizeCandidateInput({
           ...scenarioInput,
           band,
@@ -322,8 +390,48 @@ function bind() {
         document
           .querySelector(".scenario-result-head")
           ?.scrollIntoView({ block: "start" });
+      }
+    });
+  document
+    .querySelector<HTMLInputElement>("#browse-search")
+    ?.addEventListener("input", (event) => {
+      browseFilters.search = (event.target as HTMLInputElement).value;
+      render(true);
+    });
+  document
+    .querySelector<HTMLSelectElement>("#browse-sort")
+    ?.addEventListener("change", (event) => {
+      browseFilters.sort = (event.target as HTMLSelectElement)
+        .value as BrowseFilters["sort"];
+      render(true);
+    });
+  document
+    .querySelectorAll<HTMLButtonElement>("[data-browse-band]")
+    .forEach((b) =>
+      b.addEventListener("click", () => {
+        const band = b.dataset.browseBand as BrowseFilters["band"];
+        browseFilters.band = browseFilters.band === band ? "" : band;
+        render();
       }),
     );
+  document
+    .querySelectorAll<HTMLButtonElement>("[data-browse-flag]")
+    .forEach((b) =>
+      b.addEventListener("click", () => {
+        const flag = b.dataset.browseFlag as
+          | "optionalOnly"
+          | "ucOnly"
+          | "privateOnly";
+        browseFilters[flag] = !browseFilters[flag];
+        // UC campuses do not consider the SAT, so a score band would hide them.
+        if (flag === "ucOnly" && browseFilters.ucOnly) browseFilters.band = "";
+        render();
+      }),
+    );
+  document.querySelector("#browse-clear")?.addEventListener("click", () => {
+    browseFilters = emptyBrowse();
+    render();
+  });
   document
     .querySelector<HTMLInputElement>("#scenario-search")
     ?.addEventListener("input", (event) => {
@@ -396,16 +504,11 @@ function bind() {
     .forEach((b) =>
       b.addEventListener("click", () => openUniversity(b.dataset.detail!)),
     );
-  document.querySelectorAll<HTMLButtonElement>("[data-save]").forEach((b) =>
+  app.querySelectorAll<HTMLButtonElement>("[data-save]").forEach((b) =>
     b.addEventListener("click", () => {
-      const id = b.dataset.save!;
-      if (saved.has(id)) saved.delete(id);
-      else saved.add(id);
-      persistenceAvailable =
-        writeLocal("saved", [...saved]) && persistenceAvailable;
-      render();
-      document
-        .querySelector<HTMLButtonElement>(`[data-save="${id}"]`)
+      toggleSaved(b.dataset.save!);
+      app
+        .querySelector<HTMLButtonElement>(`[data-save="${b.dataset.save}"]`)
         ?.focus({ preventScroll: true });
     }),
   );
@@ -418,6 +521,7 @@ function bind() {
         : words("Task reopened.", "다시 할 일로 옮겼어요.");
       if (box.checked) checked.add(id);
       else checked.delete(id);
+      saveJournal(markCompleted(journal, id, box.checked ? todayIso() : null));
       persistenceAvailable =
         writeLocal("checked", [...checked]) && persistenceAvailable;
       render();
@@ -432,6 +536,101 @@ function bind() {
       sourceSearch = (e.target as HTMLInputElement).value;
       render(true);
     });
+  if (route() === "grades")
+    bindGradesPage({
+      state: () => grades,
+      editor: () => editor,
+      ui: gradesUi,
+      commit: (next, notice, undoable = false) => {
+        gradesUndo = undoable ? grades : null;
+        grades = next;
+        gradesUi.notice = notice;
+        gradesUi.canUndo = undoable;
+        persistenceAvailable =
+          writeLocal("grades", grades) && persistenceAvailable;
+        render();
+      },
+      undo: () => {
+        if (!gradesUndo) return;
+        grades = gradesUndo;
+        gradesUndo = null;
+        gradesUi.notice = words("Change undone.", "변경을 취소했어요.");
+        gradesUi.canUndo = false;
+        persistenceAvailable =
+          writeLocal("grades", grades) && persistenceAvailable;
+        render();
+      },
+      rerender: () => render(),
+    });
+
+  document.querySelector("#use-my-grades")?.addEventListener("click", () => {
+    scenarioFromGrades = true;
+    explorerMode = "scenario";
+    render();
+  });
+  document.querySelectorAll<HTMLButtonElement>("[data-try-sat]").forEach((b) =>
+    b.addEventListener("click", () => {
+      scenarioFromGrades = false;
+      scenarioInput = normalizeCandidateInput({
+        ...scenarioInput,
+        sat: Number(b.dataset.trySat),
+      });
+      explorerMode = "scenario";
+      render();
+    }),
+  );
+  if (examTabs.includes(route()))
+    bindTestPrep({
+      ui: prepUi,
+      grades: () => grades,
+      editor: () => editor,
+      today,
+      saveGrades: (next) => {
+        grades = next;
+        persistenceAvailable =
+          writeLocal("grades", grades) && persistenceAvailable;
+        render();
+      },
+      rerender: (restoreFocus) => render(restoreFocus),
+    });
+  if (route() === "report")
+    bindReportPage({
+      ui: reportUi,
+      today,
+      editor: () => editor,
+      journal: () => journal,
+      saveJournal: (next) => {
+        saveJournal(next);
+        render();
+      },
+      addTaskFromNote: (text) => {
+        rememberPlan();
+        planner = saveTaskEdit(planner, {
+          id: `custom-${crypto.randomUUID()}`,
+          monthId: currentMonthId(),
+          title: text.split("\n")[0].slice(0, 180),
+          detail: text,
+        });
+        plannerNotice = words(
+          "Task added from a note.",
+          "메모를 할 일로 추가했어요.",
+        );
+        persistenceAvailable =
+          writeLocal("planner", planner) && persistenceAvailable;
+        render();
+        announce(
+          words("Added to this month's tasks.", "이번 달 할 일에 추가했어요."),
+        );
+      },
+      go: (period, anchor) => {
+        location.hash = reportHash(period, rangeFor(period, anchor));
+      },
+      announce,
+    });
+}
+function announce(message: string) {
+  const live = document.querySelector("#live-status");
+  if (live) live.textContent = message;
 }
 const factLabels: Record<string, string> = {
   admission: "Admission review",
@@ -469,17 +668,21 @@ function researchDetails(u: University) {
     ? `<p>${link(catalog, words("Browse the full official major directory", "공식 전체 학과 목록 보기"), "text-link")}</p>`
     : "";
 }
-function openUniversity(id: string) {
+function toggleSaved(id: string) {
+  if (saved.has(id)) saved.delete(id);
+  else saved.add(id);
+  persistenceAvailable =
+    writeLocal("saved", [...saved]) && persistenceAvailable;
+  render();
+}
+function openUniversity(id: string, tab: DetailTab = "summary") {
   const school = scenarioSchoolMap.get(id);
   if (!school) return;
   const dialog =
     document.querySelector<HTMLDialogElement>("#university-dialog")!;
-  dialog.innerHTML = renderScenarioDetail(school, scenarioInput);
   const legacy = universities.find((u) => u.id === id);
-  if (legacy)
-    dialog.querySelector(".dialog-body")!.insertAdjacentHTML(
-      "beforeend",
-      `<details class="methodology"><summary>${words("Additional application, cost & credit references", "추가 지원 자료 · 비용 · 학점 인정")}</summary>${researchDetails(legacy)}<div class="detail-facts">${Object.entries(
+  const extraRequirements = legacy
+    ? `<details class="methodology"><summary>${words("Application, cost & credit references", "지원 자료 · 비용 · 학점 인정")}</summary><div class="detail-facts">${Object.entries(
         legacy.facts,
       )
         .filter(([key]) =>
@@ -496,11 +699,59 @@ function openUniversity(id: string) {
           ].includes(key),
         )
         .map(([key, f]) => fact(f, factLabels[key] ?? key))
-        .join("")}</div></details>`,
-    );
+        .join("")}</div></details>`
+    : "";
+  dialog.className = "drawer";
+  dialog.innerHTML = renderScenarioDetail(school, scenarioInput, {
+    tab,
+    saved: saved.has(id),
+    sat: gradeInput(grades)?.sat ?? scenarioInput.sat,
+    notes: schoolNotes(journal, id),
+    extraRequirements,
+    extraProgram: legacy ? researchDetails(legacy) : "",
+  });
   dialog
     .querySelector(".close-dialog")!
     .addEventListener("click", () => dialog.close());
+  dialog.querySelectorAll<HTMLButtonElement>("[data-detail-tab]").forEach((b) =>
+    b.addEventListener("click", () => {
+      openUniversity(id, b.dataset.detailTab as DetailTab);
+      const target = b.hasAttribute("data-focus-note")
+        ? dialog.querySelector<HTMLTextAreaElement>(
+            "#school-note-form textarea",
+          )
+        : dialog.querySelector<HTMLButtonElement>(
+            `.drawer-tabs [data-detail-tab="${b.dataset.detailTab}"]`,
+          );
+      target?.focus();
+    }),
+  );
+  dialog
+    .querySelector<HTMLButtonElement>(".drawer-actions [data-save]")
+    ?.addEventListener("click", () => {
+      toggleSaved(id);
+      openUniversity(id, tab);
+    });
+  dialog
+    .querySelector<HTMLFormElement>("#school-note-form")
+    ?.addEventListener("submit", (event) => {
+      event.preventDefault();
+      const text = String(
+        new FormData(event.currentTarget as HTMLFormElement).get("text") ?? "",
+      ).trim();
+      if (!text) return;
+      saveJournal(
+        addNote(journal, {
+          id: `note-${crypto.randomUUID()}`,
+          author: editor,
+          date: today,
+          text,
+          schoolId: id,
+        }),
+      );
+      render();
+      openUniversity(id, "summary");
+    });
   dialog.onclick = (event) => {
     if (event.target !== dialog) return;
     const rect = dialog.getBoundingClientRect();
@@ -513,13 +764,17 @@ function openUniversity(id: string) {
       dialog.close();
   };
   localize(dialog);
-  dialog.showModal();
+  if (!dialog.open) dialog.showModal();
 }
 document.querySelector(".skip")?.addEventListener("click", (event) => {
   event.preventDefault();
   document.getElementById("main")?.focus();
 });
 window.addEventListener("hashchange", () => {
+  const linked = parseReportHash(location.hash);
+  if (linked) Object.assign(reportUi, linked);
+  gradesUi.notice = "";
+  gradesUi.canUndo = false;
   render();
   window.scrollTo({ top: 0 });
   document.querySelector<HTMLElement>("#main")?.focus({ preventScroll: true });
