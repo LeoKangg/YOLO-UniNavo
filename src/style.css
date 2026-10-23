@@ -3331,7 +3331,7 @@ footer > a {
   line-height: 1.65;
 }
 .sat-band-table {
-  min-width: 860px;
+  min-width: 460px;
   table-layout: fixed;
   width: 100%;
 }
